@@ -119,7 +119,7 @@ task :tags  => :tag_cloud do
   site.read_posts('')
 
   # Remove tags directory before regenerating
-  FileUtils.rm_rf("tags")
+  FileUtils.rm_rf("_site/tags")
 
   site.tags.sort.each do |tag, posts|
     html = <<-HTML
@@ -138,8 +138,8 @@ syntax-highlighting: yes
   {% endfor %}
 HTML
 
-    FileUtils.mkdir_p("tags/#{tag}")
-    File.open("tags/#{tag}/index.html", 'w+') do |file|
+    FileUtils.mkdir_p("_site/tags/#{tag}")
+    File.open("_site/tags/#{tag}/index.html", 'w+') do |file|
       file.puts html
     end
   end
