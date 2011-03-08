@@ -1,0 +1,13 @@
+---
+layout: default
+title: "tagged: template"
+syntax-highlighting: yes
+---
+  <h1 class="title">template</h1>
+  {% for post in site.posts %}
+		{% for tag in post.tags %}
+			{%if tag == "template" %}
+				{%include post.html%}
+			{%endif%}
+		{%endfor%}
+  {% endfor %}

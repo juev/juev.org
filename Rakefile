@@ -24,6 +24,9 @@ task :build => :tags do
 	options = Jekyll.configuration({})
 	@site = Jekyll::Site.new(options)
 	@site.process
+#	sh "rm _site/css/* _site/js/*; cp js/html5.js _site/js/"
+	sh "juicer merge -f -o _site/css/master.css _css/style.css _css/highlight.css"
+	sh "juicer merge -f -s -o _site/js/master.js _js/jquery.min.js _js/jquery.twittertrackbacks-1.0.js _js/noteit.js"
 end
  
 def globs(source)
