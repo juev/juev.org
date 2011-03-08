@@ -1,0 +1,47 @@
+--- 
+layout: post
+title: !binary |
+  0KDQtdC30YPQu9GM0YLQsNGC0Ysg0YDQsNCx0L7RgtGLINC30LAg0YHQtdC9
+  0YLRj9Cx0YDRjCAyMDEw
+
+---
+За сентябрь очень мало писал. Хвастатьcя особо нечем.
+
+Продолжил эксперименты с операционными системами, программным обеспечением, но времени и сил явно не хватает на полноценную работу. Сентябрь - первый месяц, как я снова вышел на работу. Долгий период отдыха дает о себе знать. 
+
+К тому же нагрузка на работе выросла в два раза. Отнимает теперь больше времени и соответственно сил. 
+
+Не смотря на все это, успел написать следующие статьи.
+
+<!--more-->
+
+<h2>Список статей за сентябрь 2010</h2>
+<ol>
+	<li><a href="http://www.juev.ru/2010/09/07/nginx-apache/">Использование связки Nginx+Apache</a></li>
+	<li><a href="http://www.juev.ru/2010/09/10/wordpress-varnish/">WordPress Speed Up</a></li>
+	<li><a href="http://www.juev.ru/2010/09/20/emacs-on-windows/">Emacs on Windows</a></li>
+	<li><a href="http://www.juev.ru/2010/09/22/varnish-for-wordpress/">Varnish for WordPress</a></li>
+	<li><a href="http://www.juev.ru/2010/09/23/recaptcha/">Recaptcha: Protect your Email</a></li>
+	<li><a href="http://www.juev.ru/2010/09/25/snippets-organizer-for-windows/">Snippets Organizer for Windows</a></li>
+	<li><a href="http://www.juev.ru/2010/09/28/ubuntu-uluchshaem-shrifty/">Ubuntu – улучшаем шрифты</a></li>
+</ol>
+
+Главным достижением этого месяца я считаю свое знакомство с кеширующим прокси-сервером varnish. Который теперь активно используется на моем сайте. Ближе к концу месяца попробовал перейти на использование MacOS, столкнулся с проблемами в определении установленного железа и в конце концов поставил себе Ubuntu 10.04. 
+
+На сегодняший день пытаюсь найти программное обеспечение для работы с фотографиями в формате RAW. 
+
+<h2>Популярные статьи по состоянию на 30 сентября 2010</h2>
+<ol>
+	<li><a href="http://www.juev.ru/2010/09/02/last-mod-by-r0mis/">Модифицированная прошивка Nokia 5800</a></li>
+	<li><a href="http://www.juev.ru/2010/08/25/optimizaciya-vps-servera/">Оптимизация VPS сервера</a></li>
+	<li><a href="http://www.juev.ru/2010/09/07/nginx-apache/">Использование связки Nginx+Apache</a></li>
+	<li><a href="http://www.juev.ru/2010/08/23/test-vps-servera/">Тест производительности VPS сервера</a></li>
+	<li><a href="http://www.juev.ru/2010/07/09/windows-7-lokalnaya-set/">Windows 7: не работает локальная сеть?</a></li>
+	<li><a href="http://www.juev.ru/2009/05/18/awesome-nastrojka/">awesome: настройка и использование</a></li>
+	<li><a href="http://www.juev.ru/2010/01/29/testirovanie-comodo-firewall/">Тестирование Comodo Firewall</a></li>
+	<li><a href="http://www.juev.ru/2010/08/21/nginx-wordpress-in-ubuntu-10-04/">Nginx & WordPress в Ubuntu 10.04</a></li>
+	<li><a href="http://www.juev.ru/2010/01/30/sravnenie-evernote-i-onenote/">Сравнение Evernote и OneNote</a></li>
+	<li><a href="http://www.juev.ru/2009/11/07/ibus/">ibus – переключение раскладки</a></li>
+</ol>
+
+На первом месте, как не странно, статья, связанная с модифицированной прошивкой для nokia 5800. Число посещений более чем в два раза выше последующих статей, посвященных настройке и оптимизации VPS-сервера.

@@ -1,0 +1,9 @@
+--- 
+exclude: [Rakefile, jekyll.pid, depl.sh]
+url: 	     http://www.juev.ru
+future:      true
+lsi:         false
+pygments:    true
+markdown:    rdiscount
+permalink:   pretty
+paginate:    15

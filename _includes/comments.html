@@ -1,0 +1,18 @@
+<div id="fb-root"></div>
+<script>
+  window.fbAsyncInit = function() {
+    FB.init({appId: '584d145c2d0a2cf2b0d72261a894ad7d', status: true, cookie: true,
+             xfbml: true});
+  };
+  (function() {
+    var c = document.createElement('script'); c.async = true;
+    c.src = document.location.protocol +
+      '//connect.facebook.net/en_US/all.js';
+    document.getElementById('fb-root').appendChild(c);
+    var e = document.createElement('fb:comments');
+    e.setAttribute('width', '750');
+    e.setAttribute('numposts', '10');
+    e.setAttribute('publish_feed', 'true');
+    document.getElementById('fb-root').appendChild(e);
+  }());
+</script>

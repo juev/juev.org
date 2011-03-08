@@ -1,0 +1,10 @@
+--- 
+layout: post
+title: !binary |
+  0L3QvtCy0L7RgdGC0Yw=
+
+---
+<pre>[13:32] juev@matrix:~$ uname -a
+Linux matrix 2.6.30 #1 SMP PREEMPT Wed Jun 10 12:56:10 SAMST 2009 i686 Intel(R) Core(TM)2 Duo CPU E8400 @ 3.00GHz GenuineIntel GNU/Linux</pre>
+
+С чем Вас и поздравляю!

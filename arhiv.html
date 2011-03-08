@@ -1,0 +1,32 @@
+---
+layout: default
+title: Archives
+---
+{% assign posts = site.posts %}
+{% for post in posts %}
+
+	{% capture month %}
+		{{ post.date | date:'%B %Y' }}
+	{% endcapture %}
+
+	{% if last_month != month %}
+
+		{% if last_month %}			
+		</div>
+		{% endif %}
+		
+		<h3><a href="/archive/#{{ post.date | date:'%B-%Y' }}" name="{{ post.date | date:'%B-%Y' }}">{{ month }}</a></h3>
+			<div>
+			<div style="float:left">{{ post.date | date_to_string }}</div>
+			<div>&nbsp;&raquo;&nbsp;<a href="{{ post.id }}" title="{{ post.title }}">{{ post.title }}</a></div>
+
+		{% assign last_month = month %}
+		
+	{% else %}
+		
+			<div style="float:left">{{ post.date | date_to_string }}</div>
+			<div>&nbsp;&raquo;&nbsp;<a href="{{ post.id }}" title="{{ post.title }}">{{ post.title }}</a></div>
+			
+	{% endif %}
+						
+{% endfor %}

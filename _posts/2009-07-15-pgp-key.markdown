@@ -1,0 +1,24 @@
+--- 
+layout: post
+title: My PGP key
+---
+Мой PGP ключ <strong>1024D/AB199C39</strong> подпись <strong>FEA6 D6B4 57D1 4774 05EA  5EDA 5CD7 9D5C AB19 9C39</strong>
+
+Скачать публичный ключ можно <a href="/juev_gpg.pub">тут</a> и ссылка на файл ключа располагается  в боковой панели под логотипом  GnuPG.
+
+Для использования моего ключа необходимо выполнить:
+<pre><code>wget -q -O- http:///www.juev.ru/juev_gpg.pub | gpg --import -</code></pre>
+
+или:
+<pre><code>gpg --keyserver subkeys.pgp.net --recv-key AB199C39 </code></pre>
+
+Вы можете проверить мой ключ с помощью команды:
+<pre><code>gpg --fingerprint AB199C39</code></pre>
+
+И конечно же подписать его:
+<pre><code>gpg --sign-key AB199C39</code></pre>
+
+После чего его необходимо загрузить обратно на сервер:
+<pre><code>gpg --keyserver subkeys.pgp.net --send-key AB199C39</code></pre>
+
+Описание сделано по образу и подобию страницы сайта <a href="http://librarian.spb.ru/page/my-pgp-key" target="_blank">librarian</a>.

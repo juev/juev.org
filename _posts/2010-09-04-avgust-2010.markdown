@@ -1,0 +1,54 @@
+--- 
+layout: post
+title: !binary |
+  0KDQtdC30YPQu9GM0YLQsNGC0Ysg0YDQsNCx0L7RgtGLINC30LAg0LDQstCz
+  0YPRgdGCIDIwMTA=
+
+---
+Уже ни раз встречал на сайтах отчеты о проделанной работе, который представляется в конце месяца в виде списка статей, что были опубликованы в течение недели/месяца. Однако мало когда обращал на это серьезное внимание, сам не знаю, почему.
+
+Статья Сердюкова Олега <a href="http://theapplegeek.ru/archives/4413">Результаты работы за август 2010</a> буквально открыла глаза на данный способ самоорганизации. За что ему большое спасибо!
+
+Странно, что не использовал его раньше. Теперь же планирую в последний день календарного месяца публиковать результаты своей работы по сайту. Какие статьи опубликовал, какие статьи являются самыми популярными на текущий момент времени.
+
+Итак, что же я успел сделать за август 2010 года?
+
+<!--more-->
+<h2>Список статей за август 2010</h2>
+<ol>
+	<li><a href="http://www.juev.ru/2010/08/29/wordpress-store-images-in-a-subdomain/">WordPress: store images in a subdomain</a></li>
+	<li><a href="http://www.juev.ru/2010/08/28/mylifeorganized/">Списки задач</a></li>
+	<li><a href="http://www.juev.ru/2010/08/25/optimizaciya-vps-servera/">Оптимизация VPS сервера</a></li>
+	<li><a href="http://www.juev.ru/2010/08/24/windows-amazon-backup/">Резервные копии файлов – Amazon S3</a></li>
+	<li><a href="http://www.juev.ru/2010/08/23/test-vps-servera/">Тест производительности VPS сервера</a></li>
+	<li><a href="http://www.juev.ru/2010/08/22/perexod-na-vps/">Переход на VPS</a></li>
+	<li><a href="http://www.juev.ru/2010/08/21/zapusk-phpmyadmin-pod-nginx/">Запуск phpmyadmin под Nginx</a></li>
+	<li><a href="http://www.juev.ru/2010/08/21/nginx-wordpress-in-ubuntu-10-04/">Nginx &amp; WordPress в Ubuntu 10.04</a></li>
+	<li><a href="http://www.juev.ru/2010/08/20/novye-vozmozhnosti-wp-to-twitter/">Новые возможности WP-to-Twitter</a></li>
+	<li><a href="http://www.juev.ru/2010/08/20/skript-sozdaniya-sajta-na-vps/">Скрипт создания сайта на VPS</a></li>
+	<li><a href="http://www.juev.ru/2010/08/17/wordpress-borba-so-spamom-podvedenie-itogov/">WordPress – борьба со спамом: подведение итогов</a></li>
+	<li><a href="http://www.juev.ru/2010/08/14/knopka-twitter-dlya-wordpress/">Кнопка Twitter для WordPress</a></li>
+	<li><a href="http://www.juev.ru/2010/08/13/rasshireniya-chrome-novyj-etap/">Расширения Chrome: новый этап</a></li>
+	<li><a href="http://www.juev.ru/2010/08/11/povorot/">Поворот</a></li>
+	<li><a href="http://www.juev.ru/2010/08/11/spam-v-bloge-na-wordpress/">Спам в блоге на WordPress</a></li>
+	<li><a href="http://www.juev.ru/2010/08/06/nirvanahq/">Nirvana – как упорядочить свои дела</a></li>
+</ol>
+Месяц выдался довольно продуктивным. Что впрочем обусловлено тем, что вернулся к использованию <em>VPS</em>. Пришлось вспоминать основы настроек сервера и проводить новые эксперименты по оптимизации работы.
+
+Опять же, по рекомендации Сердюкова Олега, выбрал VPS от <a href="http://www.juev.ru/linode/">Linode</a>, где используется технология виртуализации XEN. Выбрал минимальный тариф с 512 мегабайтами оперативной памяти.
+
+Отказ от использования Apache и переход на Nginx позволил увеличить производительность сайта с уменьшением затрат оперативной памяти. Сейчас для работы двух блогов на WordPress расходуется 153 мегабайта оперативной памяти. Все остальное используется под буферы и кэши самой операционной системы.
+<h2>Популярные статьи по состоянию на 4 сентября 2010 года</h2>
+<ol>
+	<li><a href="http://www.juev.ru/2010/01/29/testirovanie-comodo-firewall/">Тестирование Comodo Firewall</a></li>
+	<li><a href="http://www.juev.ru/2010/07/09/windows-7-lokalnaya-set/">Windows 7: не работает локальная сеть?</a></li>
+	<li><a href="http://www.juev.ru/2010/01/30/sravnenie-evernote-i-onenote/">Сравнение Evernote и OneNote</a></li>
+	<li><a href="http://www.juev.ru/2009/05/18/awesome-nastrojka/">awesome: настройка и использование</a></li>
+	<li><a href="http://www.juev.ru/2009/11/07/ibus/">ibus – переключение раскладки</a></li>
+	<li><a href="http://www.juev.ru/2009/03/07/archlinux-sborka-yadra/">archlinux – сборка ядра</a></li>
+	<li><a href="http://www.juev.ru/2009/12/05/gentoo-use-flagi/">Gentoo: USE-флаги</a></li>
+	<li><a href="http://www.juev.ru/2009/10/27/pereklyuchenie-raskladki/">Переключение раскладки</a></li>
+	<li><a href="http://www.juev.ru/2010/08/13/rasshireniya-chrome-novyj-etap/">Расширения Chrome: новый этап</a></li>
+	<li><a href="http://www.juev.ru/2010/04/07/analog-things-dlya-windows/">Аналог Things для Windows</a></li>
+</ol>
+Список в порядке уменьшения популярности. На первых местах статьи, связанные с проблемами в работе операционной системы Windows и тестированию системы безопасности. Чуть меньшую популярность поддерживают статьи, посвященные настройке и использованию программ в операционной системе Linux.
