@@ -11,7 +11,7 @@ title: Varnish for Wordpress
 Сегодня разговаривал с <a href="http://snupt.com/">Дмитрием aka Snupt</a>, он перешел на использование конфигурации Varnish, при которой производится кеширование только статичных файлов (различные медиа файлы, файлы стилей и т.п.), а вся динамика передавалась непосредственно apache для обработки. Я решил попробовать данный вариант.
 
 Файл <code>/etc/varnish/default.vcl</code> изменил на следующий:
-<pre> backend default &#123;
+<pre><code> backend default &#123;
      .host = "127.0.0.1";
      .port = "8080";
  }
@@ -34,12 +34,11 @@ sub vcl_recv &#123;
        unset req.http.cookie;
        set req.url = regsub(req.url, "\?.*$", "");
     }
-}
-</pre>
+}</code></pre>
 Перезапустил Varnish и провел повторный тест с помощью 
 <pre>ab -n 10000 -c 500 http://www.juev.ru/index.php</pre>
 Число обрабатываемых запросов выросло, незначительно, но все же. При этом нагрузка на процессор почти не ощущается.
-<pre>Server Software:        nginx/0.7.65
+<pre><code>Server Software:        nginx/0.7.65
 Server Hostname:        www.juev.ru
 Server Port:            80
 
@@ -65,9 +64,9 @@ Connect:        0    2  30.7      0    3000
 Processing:     1   50  59.8     34     650
 Waiting:        1   50  59.7     34     650
 Total:         28   52  72.3     34    3001
-</pre>
+</code></pre>
 Увеличил число работающих процессов nginx до 4 и получил результат еще лучше:
-<pre>Server Software:        nginx/0.7.65
+<pre><code>Server Software:        nginx/0.7.65
 Server Hostname:        www.juev.ru
 Server Port:            80
 
@@ -93,7 +92,7 @@ Connect:        0    7   7.1      6      45
 Processing:     2   38  67.6     22     381
 Waiting:        2   36  67.3     20     375
 Total:          7   46  72.5     28     412
-</pre>
+</code></pre>
 И самое главное! Изменился процент использования кеша:
 <pre>     10029         0.00        97.37 Client connections accepted
      10029         0.00        97.37 Client requests received

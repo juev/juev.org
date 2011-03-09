@@ -15,7 +15,7 @@ title: !binary |
 Настройки заданные по умолчанию вполне функциональны и безопасны. Теперь нам осталось немного настроить сам сервер, чтобы обеспечить максимальную его безопасность и запустить его...
 
 Для настройки сервера изменяем файл <em>/etc/ssh/sshd_config</em>
-<!--more-->
+
 Во-первых, запрещаем вход на сервер пользователю root и запрещаем использовать пустые пароли. Для этого снимаем комментарии со строк:
 <pre>PasswordAuthentication yes
 PermitEmptyPasswords no
@@ -24,8 +24,8 @@ PermitRootLogin no</pre>
 Тем самым запрещаем вход пользователю, имя которого заранее известно и работа в системе которого может привести к печальным последствиям. Если необходимо будет удаленно изменять настройки системы - существует sudo, предоставляющая необходимый функционал, защищенный паролем пользователя. В том случае его определяли методом перебора, и вдруг каким то образом он был определен, злоумышленник получит доступ к системе, но не сможет воспользоваться sudo. Если вдруг по каким то причинам у вашего пользователя не окажется пароля, то зайти удаленно в систему вы не сможете. Так как доступ пользователю root запрещен, злоумышленнику подбора пароля придется еще подбирать имя пользователя, а это уже далеко не тривиальная задача...
 
 Для того, чтобы свести брутфорс к бесполезной трате времени, можно использовать пакет fail2ban. После небольшой настройки fail2ban отслеживает логи, и при наличии нескольких попыток соединения с одного и того же айпи-адреса, заносит его в список блокируемых. Другой способ - это добавление в iptables следующих правил:
-<pre>iptables -A INPUT -p tcp --syn --dport ssh -m recent --name ssh --set
-iptables -A INPUT -p tcp --syn --dport ssh -m recent --name ssh --rcheck --seconds 30 --hitcount 2 -j DROP</pre>
+    $ iptables -A INPUT -p tcp --syn --dport ssh -m recent --name ssh --set
+    $ iptables -A INPUT -p tcp --syn --dport ssh -m recent --name ssh --rcheck --seconds 30 --hitcount 2 -j DROP
 
 Эти правила позволяют отбрасывать соединения с ip-адресов, с которых происходит более двух попыток соединения  за 30 секунд. Перебор вариантов становиться просто бессмысленным.
 
@@ -48,6 +48,6 @@ $ ssh-copy-id -i $HOME/.ssh/id_rsa.pub user@machine</pre>
 <pre>$ sudo /etc/rc.d/sshd start</pre>
 
 И вносим изменения в файл <em>/etc/rc.conf</em>, добавив <em>sshd</em> в список <em>DAEMONS</em>:
-<pre>DAEMONS=(syslog-ng crond hal iptables network !netfs hddtemp sensors nscd alsa <strong>sshd</strong> mpd mpdscribble xinetd slim uptimed)</pre>
+    DAEMONS=(syslog-ng crond hal iptables network !netfs hddtemp sensors nscd alsa <strong>sshd</strong> mpd mpdscribble xinetd slim uptimed)
 
 Собственно все! Приятной работы!

@@ -11,27 +11,25 @@ title: !binary |
 
 Да, я уже пробовал данную связку, но, как оказалось, она была не совсем корректно настроена. Было не верно выбрано число дочерних процессов apache и не корректно настроена связка Nginx и apache. Что было проделано и какие результаты были получены?
 
-<!--more-->
-
 На число процессов apache, а значит и на потребляемую память влияет параметр <em>MaxClients</em>. По умолчанию используется значение порядка 150. В случае чистого апача это имеет смысл, создавать отдельный процесс для отдачи на каждый запрос, но памяти при этом используется очень много.
 
 В случае же использования Nginx в качестве фронтэнда, когда вся статика отдается Nginx, и он же контролирует входящие соединения, можно данное значение уменьшить. И очень значительно! Я оставил 4 возможных клиента. И как показала практика, этого пока вполне достаточно.
 
 Редактируем файл <code>/etc/apache2/apache2</code>, меняем параметры префорк-модуля и отключаем <em>KeepAlive</em>:
-<pre>&lt;IfModule mpm_prefork_module&gt;
+<pre><code>&lt;IfModule mpm_prefork_module&gt;
     StartServers          1
     MinSpareServers       1
     MaxSpareServers       4
     MaxClients            4
     MaxRequestsPerChild   1000
 &lt;/IfModule&gt;
-KeepAlive Off</pre>
+KeepAlive Off</code></pre>
 Отключать <em>KeepAlive</em> строго обязательно, так как между <em>Nginx</em> и <em>Apache</em> соединения держать просто не имеет смысла. И куда эффективнее их сбрасывать для того, чтобы данный процесс мог тут же получать новое задание на обработку php-скрипта.
 
 Параметр <code>MaxRequestsPerChild</code> установлен в 1000, для того, чтобы после обработки тысячи запросов происходил перезапуск процесса, с целью высвобождения занятой памяти.
 
 Для виртуального хоста создаем примерно следующую конфигурацию, создав файл <code>/etc/apache2/sites-available/juev.ru</code> и затем создав на него символическую ссылку в каталог <code>/etc/apache2/sites-enabled</code>:
-<pre>&lt;VirtualHost *&gt;
+<pre><code>&lt;VirtualHost *&gt;
        ServerName juev.ru
        ServerAdmin webmaster@gmail.com
        ServerAlias www.juev.ru juev.ru
@@ -48,16 +46,16 @@ KeepAlive Off</pre>
        CustomLog /var/www/juev.ru/log/access.log combined
        ErrorLog /var/www/juev.ru/log/error.log
        AddDefaultCharset utf-8
-&lt;/VirtualHost&gt;</pre>
+&lt;/VirtualHost&gt;</code></pre>
 Пару дней сервер проработал со включенной опцией <code>MultiViews</code>. Я еще удивлялся, почему не работает страница SiteMap, просто не показывалась Карта Сайта. Оказалось, что именно эта опция позволят использовать в качестве адресов очень похожие значения. И вместо использования sitemap, сервер пытался обратиться к файлу sitemap.xml.gz. Проблема была решена только после отключения данного параметра.
 
 Теперь указываем на использование Apache только в качестве локального сервера, для этого изменяем файл <code>/etc/apache2/ports.conf</code>:
-<pre>NameVirtualHost *
+<pre><code>NameVirtualHost *
 Listen 127.0.0.1:8080</pre>
 Apache настроен, перезапускаем его:
-<pre># service apache2 restart</pre>
+<pre># service apache2 restart</code></pre>
 Остается настроить Nginx. Приводим файл <code>/etc/nginx/nginx.conf</code> к следующему виду:
-<pre>user www-data;
+<pre><code>user www-data;
 worker_processes  1;
 
 error_log  /var/log/nginx/error.log;
@@ -85,9 +83,9 @@ http &#123;
 
     include /etc/nginx/conf.d/*.conf;
     include /etc/nginx/sites-enabled/*;
-}</pre>
+}</code></pre>
 И теперь настраиваем виртуальный хост, для чего создаем файл <code>/etc/nginx/sites-available/juev.ru</code> и затем создаем на него символическую ссылку в каталог <code>/etc/nginx/sites-enabled</code>:
-<pre>server &#123;
+<pre><code>server &#123;
         listen   80;
         server_name  juev.ru www.juev.ru;
         root   /var/www/juev.ru/web;
@@ -134,8 +132,7 @@ server &#123;
                 expires max;
                 add_header Cache-Control private;
         }
-}
-</pre>
+}</code></pre>
 Как видно из приведенного кода, прописано два хоста. Первый соответствует главному домену, а второй создан для отдачи медиа-файлов из поддомена, как было описано в статье <a href="http://www.juev.ru/2010/08/29/wordpress-store-images-in-a-subdomain/">WordPress: store images in a subdomain</a>.
 
 Перезапускаем Nginx:

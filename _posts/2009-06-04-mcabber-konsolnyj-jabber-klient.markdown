@@ -8,31 +8,31 @@ title: !binary |
 Согласно <a href="http://wiki.mcabber.com/index.php/RU_Main_Page" target="_blank">wiki.mcabber.com</a>:
 <blockquote>mcabber - это текстовый Jabber-клиенкт включающий в себя такие функции как: поддержка <strong>SSL</strong>, <strong>история переписки</strong> (конференции), <strong>автодополнение</strong> команд и возможность создания <strong>собственных команд</strong> (триггеров).</blockquote>
 Он меня заинтересовал после того, как в конференции arch@conference.jabber.ru у многих из присутствующих в качестве клиента оказался именно mcabber.
-<!--more-->
+
 Установил:
-<pre><code>$ yaourt -S mcabber</code></pre>
+    $ yaourt -S mcabber
 
 В репозитории archlinux находиться актуальная версия 0.9.9-1, пакет весит всего 244,35Kb. Дополнительно при установке у меня был загружен пакет libotr, а в зависимостях mcabber прописаны ncurses, glib2, openssl, gpgme, libotr, aspell...
 
 После установки необходимо в домашней директории создать папку ~/.mcabber и скопировать в нее файл <code>/usr/share/mcabber/example/mcabberrc</code>. Для папки <code>~/.mcabber</code> задаем права доступа 0700.
-<pre><code>$ mkdir ~/.mcabber
-$ chmod 0700 ~/.mcabber
-$ cp /usr/share/mcabber/example/mcabberrc<tt> ~/.mcabber/mcabberrc</tt></code></pre>
+    $ mkdir ~/.mcabber
+    $ chmod 0700 ~/.mcabber
+    $ cp /usr/share/mcabber/example/mcabberrc<tt> ~/.mcabber/mcabberrc</tt>
 
 И затем начинаем его редактировать любимым редактором (файл по умолчанию очень хорошо документирован, проблем в настройке возникнуть не должно).
-<strong>!!</strong>mcabber не умеет регистрировать пользователя на сервере, поэтому данную операцию нужно провести заранее с помощью другого клиента.
+*!!*mcabber не умеет регистрировать пользователя на сервере, поэтому данную операцию нужно провести заранее с помощью другого клиента.
 
 Необходимый минимум, который нужно прописать (а точнее изменить в файле <tt>mcabberrc</tt>), это:
-<pre>set username = ваш jid
-set password = ваш пароль (если не указать, будет запрошен при connect)
-set server = ваш сервер
-set lang = ru</pre>
+    set username = ваш jid
+    set password = ваш пароль (если не указать, будет запрошен при connect)
+    set server = ваш сервер
+    set lang = ru
 
 Последняя строка необходима для того, чтобы mcabber был локализован для русского языка (не обязательный параметр).
 
 Для использования SSL прописываем следующее (только в том случае, если сервер поддерживает SSL):
-<pre>set ssl = 1
-set ssl_verify = 0</pre>
+    set ssl = 1
+    set ssl_verify = 0
 
 Сертификаты с сервера будут подгружены автоматически.
 

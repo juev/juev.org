@@ -7,7 +7,7 @@ title: !binary |
 ...или рельсы на Emacs'е. Речь пойдет о том, как использовать emacs для разработки веб-приложений в среде RubyOnRails.
 
 Многие сравнивают Emacs с текстовыми редакторами, такими как vim и т.п. На форумах уже пролилось не мало крови по этому поводу, что лучше, что удобнее... Но все почему то забывают тот простой факт, что Emacs - это не текстовый редактор и даже не текстовый процессор... Emacs - это интерпретатор языка Lisp! И так уж получилось, что основная мощь данного языка именно в случае с Emacs направлена именно на редактирование текстов. Хотя помимо этого существует еще целый набор программ на Lisp, которые позволяют проигрывать музыку, осуществлять удаленный доступ и т.д. и т.п.
-<!--more-->
+
 Для того, чтобы эффективно использовать Emacs в разработке приложений в среде RubyOnRails достаточно установить ряд пакетов и прописать их использование в конфигурации Emacs. Этим и займемся...
 <pre><code>$ yaourt -S emacs-rails-mode-git emacs-snippet-template-mode  emacs-find-recursive  emacs-ruby-mode</code></pre>
 
@@ -28,7 +28,7 @@ title: !binary |
 
 После чего откроется два буфера, в одном результат операции, то есть будет подробно указано, какие файлы и директории были созданы, а в другом откроется файл <em>application_controler.rb</em>, то есть файл, отвечающий за основу приложения.
 
-[caption id="attachment_514" align="aligncenter" width="300" caption="Вид Emacs после создания приложения"]<a href="http://static.juev.ru/2009/08/emacs_ror.png"><img class="size-medium wp-image-514" title="emacs_ror" src="http://static.juev.ru/2009/08/emacs_ror-300x240.png" alt="Вид Emacs после создания приложения" width="300" height="240" /></a>[/caption]
+<a href="http://static.juev.ru/2009/08/emacs_ror.png"><img class="size-medium wp-image-514" title="emacs_ror" src="http://static.juev.ru/2009/08/emacs_ror-300x240.png" alt="Вид Emacs после создания приложения" width="300" height="240" /></a>
 
 Как видно из представленного скриншота, появляется целый набор пунктов меню, отвечающих за определенный круг задач. Тут и управление базой данных, и управление приложением и управление веб-сервером... Все необходимые операции, которые обычно выполняются в консоли, доступны непосредственно из самого Emacs.
 
@@ -36,7 +36,7 @@ title: !binary |
 
 Snippets... Как много в этом слове! Это сокращения, которые позволяют введя короткую аббревиатуру, развернуть ее в целую конструкцию, тем самым сокращая массу времени.
 
-[caption id="attachment_515" align="aligncenter" width="300" caption="Меню snippets"]<a href="http://static.juev.ru/2009/08/snippets.png"><img class="size-medium wp-image-515" title="snippets" src="http://static.juev.ru/2009/08/snippets-300x240.png" alt="Меню snippets, раскрывающее основные сокращения" width="300" height="240" /></a>[/caption]
+<a href="http://static.juev.ru/2009/08/snippets.png"><img class="size-medium wp-image-515" title="snippets" src="http://static.juev.ru/2009/08/snippets-300x240.png" alt="Меню snippets, раскрывающее основные сокращения" width="300" height="240" /></a>
 
 На скриншоте показана лишь малая часть доступных сокращений...
 
