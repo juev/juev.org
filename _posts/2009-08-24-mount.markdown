@@ -11,9 +11,9 @@ title: !binary |
 <pre>$ yaourt -S hal dbus udev</pre>
 
 Не забываем запускать hal при старте системы, для этого добавляем его в строку DAEMONS файла <em>/etc/rc.conf</em>.
-<!--more-->
+
 Теперь необходимо прописать правила <strong>PolicyKit</strong>, для этого в файле <em>/etc/PolicyKit/PolicyKit.conf</em> прописываем следующее:
-<pre>&lt;match user="juev"&gt;
+<pre><code>&lt;match user="juev"&gt;
  &lt;!-- replace with your login or delete the line if you want to allow all users to manipulate devices (keep security issues in mind though) --&gt;
  &lt;match action="org.freedesktop.hal.storage.*"&gt;
    &lt;return result="yes"/&gt;
@@ -26,7 +26,7 @@ title: !binary |
  &lt;!-- for external devices mounted with extra options like a wished mount point --&gt;
    &lt;return result="yes" /&gt;
  &lt;/match&gt;
-&lt;/match&gt; &lt;!-- don't forget to delete this line if you deleted the first one --&gt;</pre>
+&lt;/match&gt; &lt;!-- don't forget to delete this line if you deleted the first one --&gt;</code></pre>
 
 Как видно из комментариев, чтобы все пользователи имели возможность автоматического монтирования, необходимо удалить первую и последнюю строчки конфигурации.
 
@@ -68,7 +68,7 @@ disk -fstype=auto,async,nodev,nosuid,umask=000,codepage=866 :/dev/sdb1</pre>
 <pre>daemonoptions='--timeout=10'</pre>
 
 То есть по истечении 10 секунд неактивности и свободы раздела, он будет отмонтирован автоматически. Для того, чтобы в логах не получать предупреждения типа таких:
-<pre>Aug 23 13:05:42 matrix automount[2635]: syntax error in nsswitch config near [ syntax error ]</pre>
+<pre><code>Aug 23 13:05:42 matrix automount[2635]: syntax error in nsswitch config near [ syntax error ]</code></pre>
 
 необходимо изменить файл /etc/nsswitch.conf, добавив строку:
 <pre>automount:  files</pre>

@@ -8,10 +8,10 @@ title: !binary |
 
 Довольно долго искал работоспособную конфигурацию, наконец нашел и спешу поделиться с вами.
 
-<!--more-->Оказалось все довольно просто, даже обидно, честное слово. Создаем отдельный поддомен в nginx. Для этого создаем отдельный файл
-<pre>/etc/nginx/sites-available/phpmyadmin.domain.ru</pre>
+Оказалось все довольно просто, даже обидно, честное слово. Создаем отдельный поддомен в nginx. Для этого создаем отдельный файл
+    /etc/nginx/sites-available/phpmyadmin.domain.ru
 Где, как вы помните, имя файла может быть любым, но принято его называть по имени выбранного домена. И прописываем в нем следующее:
-<pre>server &#123;
+<pre><code>server &#123;
         listen   80;
         server_name  phpmyadmin.domain.ru;
 
@@ -28,10 +28,10 @@ title: !binary |
                 fastcgi_param  SCRIPT_FILENAME  /usr/share/phpmyadmin$fastcgi_script_name;
                 include fastcgi_params;
         }
-}</pre>
+}</code></pre>
 Не забываем про уже работающие процессы php-fpm, про которые я описывал в статье <a href="http://www.juev.ru/2010/08/21/nginx-wordpress-in-ubuntu-10-04/">Nginx &amp; WordPress в Ubuntu 10.04</a>.
 
 Теперь запускаем новый сайт, для чего даем следующие команды:
-<pre># ln -s /etc/nginx/sites-available/phpmyadmin.domain.ru /etc/nginx/sites-enabled/phpmyadmin.domain.ru
-# /etc/init.d/nginx reload</pre>
+    # ln -s /etc/nginx/sites-available/phpmyadmin.domain.ru /etc/nginx/sites-enabled/phpmyadmin.domain.ru
+    # /etc/init.d/nginx reload
 И теперь можно работать с myphpadmin, обратившись по адресу phpmyadmin.domain.ru!

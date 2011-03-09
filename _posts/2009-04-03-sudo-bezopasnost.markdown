@@ -67,19 +67,18 @@ root    ALL=(ALL) ALL
 <blockquote>В большинстве случаев грамотная настройка sudo делает работу от имени суперпользователя ненужной (хотя и несколько неудобной, для привыкших работать «в полную силу»).
 
 Программу критикуют, в частности, что невозможно выполнять некоторые команды. К примеру:
-<p style="padding-left: 30px;"><code>sudo cat sources.list &gt; /etc/apt/sources.list</code></p>
+    sudo cat sources.list &gt; /etc/apt/sources.list
 
 выдаст ошибку прав доступа (так как с правами root выполняется только процесс cat, а перенаправление выполняет <a title="Командная оболочка UNIX" href="http://ru.wikipedia.org/wiki/%D0%9A%D0%BE%D0%BC%D0%B0%D0%BD%D0%B4%D0%BD%D0%B0%D1%8F_%D0%BE%D0%B1%D0%BE%D0%BB%D0%BE%D1%87%D0%BA%D0%B0_UNIX">shell</a> с правами обычного пользователя), хотя такое можно сделать, использовав конвейер:
-<p style="padding-left: 30px;"><code>cat sources.list | sudo tee /etc/apt/sources.list</code></p>
+    cat sources.list | sudo tee /etc/apt/sources.list
 
 так-же ничто не мешает выполнить шелл с административными правами и используя параметр шела -с выполнить взяв строку к выполнению в кавычки:
-<p style="padding-left: 30px;"><code>sudo sh -c 'cat sources.list &gt; /etc/apt/sources.list'</code></p>
+    sudo sh -c 'cat sources.list &gt; /etc/apt/sources.list'
 
 или же попасть в шелл интерактивно аналогично работе su используя параметр -s
-<p style="padding-left: 30px;"><code>sudo -s</code></p>
+    sudo -s
 
 или выполнив
-<p style="padding-left: 30px;"><code>sudo sh
-</code>
-</p><p style="text-align: right;"><code>по материалам <a href="http://ru.wikipedia.org/wiki/Sudo" target="_blank">Википедии</a></code></p>
+    sudo sh
+<p style="text-align: right;"><code>по материалам <a href="http://ru.wikipedia.org/wiki/Sudo" target="_blank">Википедии</a></code></p>
 </blockquote>

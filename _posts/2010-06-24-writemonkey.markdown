@@ -11,7 +11,7 @@ title: !binary |
 
 Это показалось настолько удобным, что решил поискать альтернативу среди обычных текстовых редакторов, чтобы можно было работать не только в сети. Как оказалось, на сегодняшний день существует несколько альтернатив.
 
-<!--more-->Первым хотелось бы упомянуть редактор <a href="http://www.creawriter.com/" target="_blank">CreaWriter</a>, который уж не знаю почему, но пришелся по душе редакторам Lifehacker.ru, писали о нем они уже не один раз. Это редактор, который существует в нескольких редакциях, платной и бесплатной. Отличаются тем, что в платной версии можно изменять оформление текста, к примеру набирать жирный текст или курсив. В бесплатной все пункты меню остаются, но при попытке использовать данную функцию, предлагается купить полную версию программы.
+Первым хотелось бы упомянуть редактор <a href="http://www.creawriter.com/" target="_blank">CreaWriter</a>, который уж не знаю почему, но пришелся по душе редакторам Lifehacker.ru, писали о нем они уже не один раз. Это редактор, который существует в нескольких редакциях, платной и бесплатной. Отличаются тем, что в платной версии можно изменять оформление текста, к примеру набирать жирный текст или курсив. В бесплатной все пункты меню остаются, но при попытке использовать данную функцию, предлагается купить полную версию программы.
 
 После запуска, программа разворачивается на полный экран, начинает звучать ненавязчивая музыка, на фоне присутствует изображение природы... При перемещении курсора мыши за пределы текстового поля появляются несколько кнопок, с помощью которых осуществляется управление программой, ее настройка, открытие и сохранение файлов.
 
@@ -21,9 +21,9 @@ title: !binary |
 
 Следующей программой оказалась <a href="http://www.baara.com/q10/" target="_blank">Q10</a>. Очень достойная программа, которая мне показалась намного удобнее, ем CreaWriter. Работает в полноэкранном режиме, представлена в нескольких версиях. Существует версия для установки и версия для работы с флешек, то есть версия, позволяющая работать без установки программы. Выглядит намного скромнее чем CreaWriter. И здесь уже точно можно сказать, что ничего мешать не будет!
 
-[caption id="attachment_1078" align="aligncenter" width="300" caption="q10 в работе"]<a href="http://static.juev.ru/2010/06/q10-main.png"><img class="size-medium wp-image-1078" title="q10 - main" src="http://static.juev.ru/2010/06/q10-main-300x240.png" alt="q10 - main" width="300" height="240" /></a>[/caption]
+<a href="http://static.juev.ru/2010/06/q10-main.png"><img class="size-medium wp-image-1078" title="q10 - main" src="http://static.juev.ru/2010/06/q10-main-300x240.png" alt="q10 - main" width="300" height="240" /></a>
 
-[caption id="attachment_1079" align="aligncenter" width="300" caption="q10 - настройка программы"]<a href="http://static.juev.ru/2010/06/q10-settings.png"><img class="size-medium wp-image-1079" title="q10 - settings" src="http://static.juev.ru/2010/06/q10-settings-300x240.png" alt="q10 - settings" width="300" height="240" /></a>[/caption]
+<a href="http://static.juev.ru/2010/06/q10-settings.png"><img class="size-medium wp-image-1079" title="q10 - settings" src="http://static.juev.ru/2010/06/q10-settings-300x240.png" alt="q10 - settings" width="300" height="240" /></a>
 
 В комплект поставки входит словарь английского и испанского языков. Дополнительно могут быть установлены словари и других языков. В распакованном виде программа требует чуть больше 2 мегабайт дискового пространства. Все управление осуществляется через использование горячих клавиш, которые можно узнать, нажав F1.
 
@@ -31,13 +31,13 @@ title: !binary |
 
 И наконец, еще одна программа, которая позволяет работать с текстом в полноэкранном режиме, которая называется <a href="http://writemonkey.com/" target="_blank">WriteMonkey</a>. Она оказалась самой функциональной из всех мною опробованных. К тому же над ней постоянно идет работа и постепенно в программу происходит добавление новых функций.
 
-[caption id="attachment_1080" align="aligncenter" width="300" caption="WriteMonkey в работе"]<a href="http://static.juev.ru/2010/06/WriteMonkey-main.png"><img class="size-medium wp-image-1080" title="WriteMonkey - main" src="http://static.juev.ru/2010/06/WriteMonkey-main-300x240.png" alt="WriteMonkey - main" width="300" height="240" /></a>[/caption]
+<a href="http://static.juev.ru/2010/06/WriteMonkey-main.png"><img class="size-medium wp-image-1080" title="WriteMonkey - main" src="http://static.juev.ru/2010/06/WriteMonkey-main-300x240.png" alt="WriteMonkey - main" width="300" height="240" /></a>
 
-[caption id="attachment_1081" align="aligncenter" width="300" caption="WriteMonkey - меню программы"]<a href="http://static.juev.ru/2010/06/WriteMonkey-Settings.png"><img class="size-medium wp-image-1081" title="WriteMonkey - menu" src="http://static.juev.ru/2010/06/WriteMonkey-Settings-300x240.png" alt="WriteMonkey - menu" width="300" height="240" /></a>[/caption]
+<a href="http://static.juev.ru/2010/06/WriteMonkey-Settings.png"><img class="size-medium wp-image-1081" title="WriteMonkey - menu" src="http://static.juev.ru/2010/06/WriteMonkey-Settings-300x240.png" alt="WriteMonkey - menu" width="300" height="240" /></a>
 
 Управление программой осуществляется как с помоom. горячих клавиш, так и с помощью меню, которое доступно по щелчку правой кнопкой мыши по окну программы. Список горячих клавиш так же вызывается клавишей F1.
 
-[caption id="attachment_1082" align="aligncenter" width="300" caption="WriteMonkey - help"]<a href="http://static.juev.ru/2010/06/WriteMonkey-help.png"><img class="size-medium wp-image-1082" title="WriteMonkey - help" src="http://static.juev.ru/2010/06/WriteMonkey-help-300x240.png" alt="WriteMonkey - help" width="300" height="240" /></a>[/caption]
+<a href="http://static.juev.ru/2010/06/WriteMonkey-help.png"><img class="size-medium wp-image-1082" title="WriteMonkey - help" src="http://static.juev.ru/2010/06/WriteMonkey-help-300x240.png" alt="WriteMonkey - help" width="300" height="240" /></a>
 
 Количество горячих клавиш на порядок превышает то, что используется в q10, так как WriteMonkey позволяет использовать при написании текстов разметку Markdown или Texfile. Существует экспорт в различные форматы файлов.
 

@@ -34,7 +34,7 @@
           <li><a href="/arhiv/">archives</a></li>
           <li><a href="http://denis.evsyukov.org">contact</a></li>
           <li>(<a href="http://feeds.feedburner.com/Juev">feed</a>)</li>
-          <li>rus/<a href="http://juev.info">eng</a></li>
+		  <li>rus/<a href="http://juev.info{{ page.url }}">eng</a></li>
         </ul>
       </div>
       <div class=body>

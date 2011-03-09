@@ -12,7 +12,7 @@ title: Chromium
 Во-первых, интерфейс очень удобный, минималистский и полностью соответствующий канонам работы в вебе. При этом в GTK-интерфейсе, который у меня основной, Chromium вписался как родной. Я пока не заметил ни одного глюка в интерфейсе.
 
 Во-вторых, скорость работы (то есть отрисовка страниц, выполнение скриптов) просто потрясающая! Такого я еще не видел... В цифрах это бесполезно что-то говорить, а вот поглядеть на это стоит! Особенно после использования Firefox 3.5...
-<!--more-->
+
 В-третьих, использование памяти в несколько раз меньше, чем в огнелисе:
 <pre>25357 juev  20   0  558m 181m  20m S   10  9.1  19:19.42 firefox
 16717 juev  20   0  105m  35m  12m S    1  1.8   0:27.25 chrome</pre>
@@ -23,9 +23,9 @@ title: Chromium
 
 Несколько скринов:
 
-[caption id="attachment_521" align="aligncenter" width="300" caption="Общий вид браузера"]<a href="http://static.juev.ru/2009/08/chromium-1.png"><img class="size-medium wp-image-521" title="chromium-1" src="http://static.juev.ru/2009/08/chromium-1-300x240.png" alt="Общий вид браузера" width="300" height="240" /></a>[/caption]
+<a href="http://static.juev.ru/2009/08/chromium-1.png"><img class="size-medium wp-image-521" title="chromium-1" src="http://static.juev.ru/2009/08/chromium-1-300x240.png" alt="Общий вид браузера" width="300" height="240" /></a>
 
-[caption id="attachment_522" align="aligncenter" width="300" caption="Вид сайта и основное меню"]<a href="http://static.juev.ru/2009/08/chromium-2.png"><img class="size-medium wp-image-522" title="chromium-2" src="http://static.juev.ru/2009/08/chromium-2-300x240.png" alt="Вид сайта и основное меню" width="300" height="240" /></a>[/caption]
+<a href="http://static.juev.ru/2009/08/chromium-2.png"><img class="size-medium wp-image-522" title="chromium-2" src="http://static.juev.ru/2009/08/chromium-2-300x240.png" alt="Вид сайта и основное меню" width="300" height="240" /></a>
 
 Теперь осталось разобраться, как прикрутить менеджер паролей lastpass, который я использую в огнелисе. Более менее уже удалось прикрутить LaterLoop для быстрого сохранения временных закладок. Осталось попробовать еще докрутить Delicious в качестве менеджера закладок.
 
