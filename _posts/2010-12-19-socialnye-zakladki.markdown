@@ -9,14 +9,14 @@ title: !binary |
 Для меня это был небольшой шок! Ведь на протяжении нескольких лет я использовал для хранения своих закладок только Delicious. И не знал никаких проблем. Сами закладки доступны из любой точки мира, нужен только интернет. За все время использования Delicious у меня накопилось чуть больше 1300 закладок. И потерять их было бы очень обидно. 
 
 В тот же день, как узнал новость, начал искать альтернативы. На первый взгляд, не было ничего, что могло бы сравниться по удобству с Delicious. Но спустя несколько часов нашел несколько интересных вариантов.
-<!--more-->
+
 Во-первых, в твиттере мне порекомендовали обратить внимание на <a href="http://www.diigo.com/">Diigo</a>. Бесплатный сервис, который позиционирует себя уже не только как средство хранения закладок, но и как средство хранения заметок, скриншотов, и по сути все больше напоминает Evernote. 
 
-<a href="http://static.juev.ru/2010/12/Library.png"><img src="http://static.juev.ru/2010/12/Library-300x228.png" alt="" title="Library" width="300" height="228" class="aligncenter size-medium wp-image-1293" /></a>
+<a href="http://static.juev.ru/2010/12/Library.png" id="lightbox"><img src="http://static.juev.ru/2010/12/Library-300x228.png" alt="" title="Library" width="300" height="228" class="aligncenter size-medium wp-image-1293" /></a>
 
 Регистрация простая, есть масса расширений для различных браузеров. Попытался импортировать закладки с Delicious, идут уже вторые сутки и все это время сервис мне показывает следующее сообщение:
 
-<a href="http://static.juev.ru/2010/12/Diigo-Tools.png"><img src="http://static.juev.ru/2010/12/Diigo-Tools-300x228.png" alt="" title="Diigo-Tools" width="300" height="228" class="aligncenter size-medium wp-image-1292" /></a>
+<a href="http://static.juev.ru/2010/12/Diigo-Tools.png" id="lightbox"><img src="http://static.juev.ru/2010/12/Diigo-Tools-300x228.png" alt="" title="Diigo-Tools" width="300" height="228" class="aligncenter size-medium wp-image-1292" /></a>
 
 Использовать premium я не собираюсь, в нем нет для меня ничего полезного. А потому Diigo оставил в покое. К тому же, расширение для Google Chrome мне не понравилось. При нажатии на кнопку панели инструментов появляется дополнительная панель, с которой уже и производятся необходимые действия. На мой взгляд, это очень не удобно.
 
@@ -24,7 +24,7 @@ title: !binary |
 
 Рискнул и зарегистрировался. Как и в случае с Diigo, импорт закладок с Delicious проводиться путем импорта файла, созданного Delicious. В тот день было очень много регистраций и сервис меня предупредил, что импорт будет идти чуть дольше, чем обычно. Мне пришлось ждать порядка 4-6 часов до момента окончания импорта. И затем еще ~10 часов для формирования облака тегов.
 
-<a href="http://static.juev.ru/2010/12/Pinboard.png"><img src="http://static.juev.ru/2010/12/Pinboard-300x228.png" alt="" title="Pinboard" width="300" height="228" class="aligncenter size-medium wp-image-1294" /></a>
+<a href="http://static.juev.ru/2010/12/Pinboard.png" id="lightbox"><img src="http://static.juev.ru/2010/12/Pinboard-300x228.png" alt="" title="Pinboard" width="300" height="228" class="aligncenter size-medium wp-image-1294" /></a>
 
 Выглядит сервис очень минималистично. Но работает крайне быстро! Вспоминаю, как неповоротлив в этом отношении был Delicious и становиться даже странно, почему я им пользовался, если есть такая отличная альтернатива! Кстати, один из создателей pinboard.in является со-фаундером Delicious.
 
@@ -32,7 +32,7 @@ title: !binary |
 
 Под дополнительными "фишками" я понимаю интеграцию со множеством сервисов типа instapaper, readitlater, google reader, twitter, delicious:
 
-<a href="http://static.juev.ru/2010/12/Pinboard-settings.png"><img src="http://static.juev.ru/2010/12/Pinboard-settings-300x228.png" alt="" title="Pinboard-settings" width="300" height="228" class="aligncenter size-medium wp-image-1295" /></a>
+<a href="http://static.juev.ru/2010/12/Pinboard-settings.png" id="lightbox"><img src="http://static.juev.ru/2010/12/Pinboard-settings-300x228.png" alt="" title="Pinboard-settings" width="300" height="228" class="aligncenter size-medium wp-image-1295" /></a>
 
 Интеграция заключается либо в указании имени пользователя в данном сервисе, либо в указании адреса feed-потока. После подключения проходит немного времени и в pinboard.in оказываются соответствующие записи, причем соблюдается соответствующий хронологический порядок, что очень удобно. 
 

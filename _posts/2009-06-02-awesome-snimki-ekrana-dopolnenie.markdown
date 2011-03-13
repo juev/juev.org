@@ -9,7 +9,7 @@ title: !binary |
 
 Вот так выглядит это у меня:
 
-<a href="http://static.juev.ru/2009/06/200906021323191280x1024.png" target="_blank"><img src="http://static.juev.ru/2009/06/200906021323191280x1024.th.png" border="0" alt="Awesome" /></a>
+<a href="http://static.juev.ru/2009/06/200906021323191280x1024.png" target="_blank" id="lightbox"><img src="http://static.juev.ru/2009/06/200906021323191280x1024.th.png" border="0" alt="Awesome" /></a>
 
 В качестве IM я использую стандартный Pidgin, тут у меня и аська, и жабер, и гугльмейл... Как видим, окна не перекрывают друг друга, и очень удобно расположены друг относительно друга.
 
