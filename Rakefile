@@ -29,7 +29,7 @@ end
 desc 'Minify & Combi CSS/JS file'
 task :minify do
 	printHeader "Minify file..."
-	sh "juicer merge -f -o css/master.css _css/style.css _css/highlight.css"
+	sh "juicer merge -f -o css/master.css -d . _css/style.css _css/highlight.css"
 	sh "juicer merge -f -s -o js/master.js _js/jquery.min.js _js/jquery.twittertrackbacks-1.0.js _js/noteit.js"
 end
 
