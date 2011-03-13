@@ -216,3 +216,29 @@ li.ttw-inf-10 img{}
 li.ttw-inf-0 strong{}
 /* ...... */
 li.ttw-inf-10 strong{}
+
+/* Sprites*/
+div.meta a#facebook.share{
+	background: url('/images/share.png');
+	background-position: -0px -0px; width: 32px; height: 32px;
+	display:inline-block;
+	margin: 0 1px;
+}
+div.meta a#twitter.share{
+	background: url('/images/share.png');
+	background-position: -0px -37px; width: 32px; height: 32px;
+	display:inline-block;
+	margin: 0 1px;
+}
+div.meta a#digg.share{
+	background: url('/images/share.png');
+	background-position: -0px -74px; width: 32px; height: 32px;
+	display:inline-block;
+	margin: 0 1px;
+}
+div.meta a#evernote.share{
+	background: url('/images/share.png');
+	background-position: -0px -111px; width: 32px; height: 32px;
+	display:inline-block;
+	margin: 0 1px;
+}
