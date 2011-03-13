@@ -43,7 +43,7 @@ def globs(source)
 end
 
 desc 'Enter development mode.'
-task :develop => :build do
+task :local => :build do
 	printHeader "Auto-regenerating enabled."
 	directoryWatcher = DirectoryWatcher.new("./")
 	directoryWatcher.interval = 1
@@ -63,8 +63,6 @@ task :develop => :build do
 	thread = Thread.new { server.start }
 	trap("INT") { server.shutdown }
 	printHeader "Development server started at http://localhost:4000/"
-	printHeader "Opening website in default web browser..."
-	%x[open http://localhost:4000/]
 	printHeader "Development mode entered."
 	thread.join()
 end

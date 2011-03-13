@@ -7,3 +7,6 @@ pygments:    true
 markdown:    rdiscount
 permalink:   pretty
 paginate:    15
+
+description: "Wordpress, Jekyll, Ruby, PHP, Linux, Ubuntu, VPS и многе другое на страницах сайта."
+keywords: "wordpress,jekyll,ruby,php,linux,ubuntu,vps,soft"
