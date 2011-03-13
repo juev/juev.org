@@ -10,8 +10,6 @@ title: Last.fm in Ubuntu
 
 Когда же вернулся на Ubuntu, воспользовался Rhythmbox, у которого есть возможность скробблить музыку на сервис и слушать интернет-радио. Однако с ним у меня возникли небольшие проблемы.
 
-<!--more-->
-
 Проблемы заключались в том, что при прослушивании радиостанций с last.fm наблюдалось нарушение потока, с попыткой воспроизвести html-файл. Под официальным клиентом такого не было. Некоторое время все таки продолжал использовать Rhythmbox, а вчера с удивлением обнаружил, что есть официальный клиент Last.fm под Linux. 
 
 В Ubuntu установить довольно просто:
@@ -26,7 +24,7 @@ $ sudo apt-get install lastfm</code></pre>
 
 Так выглядит открытое окно программы:
 
-<a href="http://static.juev.ru/2010/10/lastfm-main.png"><img src="http://static.juev.ru/2010/10/lastfm-main-300x188.png" alt="" title="lastfm-main" width="300" height="188" class="aligncenter size-medium wp-image-1251" /></a>
+<a href="http://static.juev.ru/2010/10/lastfm-main.png" id="lightbox"><img src="http://static.juev.ru/2010/10/lastfm-main-300x188.png" alt="" title="lastfm-main" width="300" height="188" class="aligncenter size-medium wp-image-1251" /></a>
 
 Как видно, практически ничем не отличается от официального клиента под windows. Работает очень быстро, проблем за сутки работы замечено не было.
 
