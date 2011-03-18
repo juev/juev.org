@@ -16,7 +16,7 @@ title: !binary |
 
 <em><strong>RatPoison</strong></em> (<em>крысиный яд</em>) - именно такое название выбрали разработчики, показывая, что данный менеджер позволяет управлять окнами без использования мыши. По сути, если посмотреть функционал данного оконного менеджера, то становиться понятным, что он очень близок к функционалу <em>screen</em>, консольной программы, позволяющей организовать работу с программами в консоли.
 
-<a href="http://static.juev.ru/2009/09/ratpoison.png"><img class="size-medium wp-image-595" title="ratpoison" src="http://static.juev.ru/2009/09/ratpoison-300x240.png" alt="RatPoison" width="300" height="240" /></a>
+<a href="http://static.juev.ru/2009/09/ratpoison.png" id="lightbox"><img class="aligncenter size-medium wp-image-595" title="ratpoison" src="http://static.juev.ru/2009/09/ratpoison-300x240.png" alt="RatPoison" width="300" height="240" /></a>
 
 Метод работы с клавиатурой очень похож на управление, используемое в emacs, где используются клавиатурные комбинации с префиксами.
 
