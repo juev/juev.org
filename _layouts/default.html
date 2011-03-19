@@ -7,8 +7,8 @@
     <meta name="application-name" content="jekyll">
     <meta name="application-url" content="https://github.com/mojombo/jekyll">
     <title>{{ page.title }} - Open Source Life</title>
-    <link rel="stylesheet" href="/css/master.css" type="text/css">
-    <script type="text/javascript" src="/js/master.js"></script>
+    <link rel="stylesheet" href="http://static.juev.ru/css/master.css" type="text/css">
+	<!--    <script type="text/javascript" src="http://static.juev.ru/js/master03.js.gz"></script> -->
     <link rel="alternate" type="application/rss+xml" title="Open Source Life RSS Feed" href="http://feeds.feedburner.com/Juev" />
     <link rel="icon" type="image/vnd.microsoft.icon" href="/favicon.ico" /> 
     <link rel="sitemap" type="application/xml" href="http://www.juev.ru/sitemap.xml" />
@@ -52,6 +52,12 @@
 	   ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
 	   var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
 	   })();
-     </script>
+    </script>
+    <script type="text/javascript">
+		var script = document.createElement("script")
+		script.type = "text/javascript";
+		script.src = 'http://static.juev.ru/js/master03.js.gz';
+		document.getElementsByTagName("head")[0].appendChild(script);
+    </script>
   </body>
 </html>
