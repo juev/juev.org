@@ -6,4 +6,4 @@ title: "firefox 3.5: a web browser renaissance"
 
 Рисунок рабочего стола на тему новой версии огнелиса.
 
-<a href="http://img38.imageshack.us/i/ff35fs.jpg/" target="_blank" id="lightbox"><img src="http://static.juev.ru/2009/07/ff35fs.th.jpg" border="0" alt="" /></a>
+<a href="http://static.juev.ru/2009/07/ff35fs.jpg" target="_blank" id="lightbox"><img src="http://static.juev.ru/2009/07/ff35fs.th.jpg" border="0" alt="" /></a>
