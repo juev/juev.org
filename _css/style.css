@@ -1,5 +1,5 @@
 /* general style */
-body    { font: 18px/27px 'Georgia', serif;
+body    { font: 16px/24px 'Georgia', serif;
           margin: 0; padding: 0; }
 a       { color: #055580; text-decoration: none;}
 a:hover { color: #0097E8; text-decoration: none;}
@@ -13,9 +13,9 @@ h5 a, h6 a                  { text-decoration: none; }
 /*h1 a:hover, h2 a:hover,
 h3 a:hover, h4 a:hover      { color: #432165; text-decoration: underline; }*/
 h1.title                    { width: 560px; }
-h1, h2                      { margin: 10px 0 25px 0; }
+h1, h2                      { margin: 25px 0 5px 0; }
 h1                          { font-size: 48px; line-height: 52px; }
-h2                          { font-size: 36px; line-height: 40px; }
+h2                          { font-size: 30px; line-height: 30px; }
 
 /* layout elements */
 div.container               { width: 740px; margin: 48px auto; padding: 0; }
@@ -38,7 +38,7 @@ dt                              { margin: 25px 0 16px 0; padding: 0; }
 dd                              { margin: 16px 0 25px 40px; padding: 0; }
 ul ol, ol ul, ul ul, ol ol      { margin: 10px 0; padding: 0 0 0 40px; }
 li                              { padding: 0; }
-h1 + p.date                     { margin-top: -14px; font-style: italic; }
+h1 + p.date                     { margin-top: 0px; font-style: italic; }
 
 /* code formatting.  no monospace because of webkit (bug?) */
 code 			{ font-family: 'Consolas', 'Deja Vu Sans Mono',
@@ -185,36 +185,6 @@ ul.ttw-inner span.ttw-meta a{
 ul.ttw-inner span.ttw-meta a:hover{
 	text-decoration:underline;
 }
-/* customize reply link */
-ul.ttw-inner a.ttw-reply { }
-/* customize retweet link */
-ul.ttw-inner a.ttw-retweet { }
-
-/* customize links */
-ul.ttw-inner a.ttw-link { }
-/* customize @user links */
-ul.ttw-inner a.ttw-at { }
-/* customize #hashtags links */
-ul.ttw-inner a.ttw-hashtag { }
-
-/* Customize tweets of users with influence levels from 0 to 10 */
-li.ttw-inf-0, li.ttw-inf-1, li.ttw-inf-2{ }
-li.ttw-inf-3, li.ttw-inf-4, li.ttw-inf-5, li.ttw-inf-6{ 
-	background:#ececec
-}
-li.ttw-inf-7, li.ttw-inf-8, li.ttw-inf-9, li.ttw-inf-10{
-	background:#e0e0e0
-}
-
-/* Customize users image with influence levels from 0 to 10 */
-li.ttw-inf-0 img{}
-/* ...... */
-li.ttw-inf-10 img{}
-
-/* Customize users name with influence levels from 0 to 10 */
-li.ttw-inf-0 strong{}
-/* ...... */
-li.ttw-inf-10 strong{}
 
 /* Sprites*/
 div.meta a#facebook.share{
