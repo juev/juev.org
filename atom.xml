@@ -5,10 +5,10 @@ layout: nil
 <feed xmlns="http://www.w3.org/2005/Atom">
  
  <title>Open Source Life</title>
- <link href="http://juev.info/atom.xml" rel="self" />
- <link href="http://juev.info/" />
+ <link href="http://juev.ru/atom.xml" rel="self" />
+ <link href="http://juev.ru/" />
  <updated>{{ site.time | date_to_xmlschema }}</updated>
- <id>http://juev.info/</id>
+ <id>http://juev.ru/</id>
  <author>
    <name>Denis Evsyukov</name>
    <email>denis@evsyukov.org</email>
@@ -17,9 +17,9 @@ layout: nil
  {% for post in site.posts limit:20 %}
  <entry>
    <title>{{ post.title }}</title>
-   <link href="http://juev.info{{ post.url }}"/>
+   <link href="http://juev.ru{{ post.url }}"/>
    <updated>{{ post.date | date: "%Y-%m-%dT%H:%M:%S%z" }}</updated>
-   <id>http://juev.info{{ post.url }}</id>
+   <id>http://juev.ru{{ post.url }}</id>
    <content type="html">{{ post.content | xml_escape }}</content>
  </entry>
  {% endfor %}
