@@ -1,2 +1,2 @@
 <div class=pagination>
-{% if page.previous %}<div class="left"><a rel="prev" href="{{ page.previous.url }}" title="View {{ page.previous.title }}">&larr; {{ page.previous.title }}</a></div>{% endif %}  {% if page.next %}<div class="right"><a rel="next" href="{{ page.next.url }}" title="View {{ page.next.title }}">{{ page.next.title }} &rarr;</a></div>{% endif %}</div>
+{% if page.previous %}<div class="left"><a rel="prev" href="{{site.url}}{{ page.previous.url }}" title="View {{ page.previous.title }}">&larr; {{ page.previous.title }}</a></div>{% endif %}  {% if page.next %}<div class="right"><a rel="next" href="{{site.url}}{{ page.next.url }}" title="View {{ page.next.title }}">{{ page.next.title }} &rarr;</a></div>{% endif %}</div>
