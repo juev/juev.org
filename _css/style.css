@@ -1,23 +1,18 @@
-@font-face{font-family:"Palatino";font-weight:bold;font-style:normal;src:url("/fonts/Palatino-Bold.otf");}
-@font-face{font-family:"Palatino";font-weight:normal;font-style:normal;src:url("/fonts/Palatino-Roman.otf");}
-@font-face{font-family:"Palatino";font-weight:normal;font-style:italic;src:url("/fonts/Palatino-Italic.otf");}
-@font-face{font-family:"Palatino";font-weight:bold;font-style:italic;src:url("/fonts/Palatino-BoldItalic.otf");}
-@font-face{font-family:"Cuprum";font-style: normal;font-weight: normal;src: local("Cuprum"), url("/fonts/Cuprum.ttf") format("truetype");}
 /* general style */
-body    { font: 18px/27px 'Palatino', 'Georgia', serif;
+body    { font: 18px/27px 'Georgia', serif;
           margin: 0; padding: 0; }
-a       { color: #055580; text-decoration: none; }
-a:hover { color: #055580; text-decoration: none; text-shadow: gray 1px 0px 3px; }
+a       { color: #055580; text-decoration: none;}
+a:hover { color: #0097E8; text-decoration: none;}
 a#license {	color: #888; text-decoration: none; border-bottom: 1px dashed;}
 
 /* headlines */
-h1, h2, h3, h4, h5, h6      { font-family: 'Palatino', 'Georgia', serif;
+h1, h2, h3, h4, h5, h6      { font-family: 'Georgia', serif;
                               font-weight: normal; color: #222; }
 h1 a, h2 a, h3 a, h4 a,
 h5 a, h6 a                  { text-decoration: none; }
 /*h1 a:hover, h2 a:hover,
 h3 a:hover, h4 a:hover      { color: #432165; text-decoration: underline; }*/
-h1.title                    { width: 560px; text-shadow: gray 1px 1px 2px;}
+h1.title                    { width: 560px; }
 h1, h2                      { margin: 10px 0 25px 0; }
 h1                          { font-size: 48px; line-height: 52px; }
 h2                          { font-size: 36px; line-height: 40px; }
@@ -25,9 +20,9 @@ h2                          { font-size: 36px; line-height: 40px; }
 /* layout elements */
 div.container               { width: 740px; margin: 48px auto; padding: 0; }
 div.header                  { float: left; }
-div.navigation              { float: right; font-family: 'Cuprum'; font-size: 30px; }
-div.navigation a            { text-decoration:none; text-shadow: gray 1px 1px 2px;}
-div.navigation a#rss        { text-decoration:none; text-shadow: gray 1px 1px 2px; color: red; }
+div.navigation              { float: right; font-family: 'Georgia'; font-size: 30px; }
+div.navigation a            { text-decoration:none; }
+div.navigation a#rss        { text-decoration:none; }
 div.header, div.navigation  { height: 25px; margin-bottom: 42px; }
 div.navigation ul           { margin: 10px 0 3px; padding: 0; list-style: none; }
 div.navigation ul li        { display: inline; margin: 0 3px; padding: 0; }
@@ -103,7 +98,7 @@ pre code {
 }
 
 /*h1 a.title { color: red;}*/
-div.header a { font-size: 48px; text-decoration: none; font-weight: bold; text-shadow: gray 1px 1px 2px; }
+div.header a { font-size: 48px; text-decoration: none; font-weight: bold; }
 div.pagination a { font-size: 18px; text-decoration: none; font-weight: bold; }
 .left { text-align: left; }
 .right { text-align: right; }
