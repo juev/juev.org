@@ -30,7 +30,7 @@ desc 'Minify & Combi CSS/JS file'
 task :minify do
 	printHeader "Minify file..."
 	sh "juicer merge -f -o css/master.css -d . _css/style.css _css/highlight.css _css/jquery.fancybox-1.3.4.css"
-	sh "juicer merge -f -s -o js/master.js _js/jquery.min.js _js/jquery.twittertrackbacks-1.0.js _js/noteit.js _js/jquery.fancybox-1.3.4.js _js/jquery.easing-1.3.pack.js _js/main.js"
+	sh "juicer merge -f -s -o js/master.js _js/jquery.twittertrackbacks-1.0.js _js/noteit.js _js/jquery.fancybox-1.3.4.js _js/jquery.easing-1.3.pack.js _js/main.js"
 end
 
 def globs(source)
@@ -84,7 +84,7 @@ end
 
 task :new do
 	title = ask("Title: ")
-	article = {"title" => title, "layout" => "post"}.to_yaml
+	article = {"title" => title, "layout" => "post", "keywords" => "keywords", "description" => "description"}.to_yaml
 	article << "---"
 	fileName = title.gsub(/[\s \( \) \? \[ \] \, \: \< \>]/, '-').downcase
 	path = "_posts/#{Time.now.strftime("%Y-%m-%d")}#{'-' + fileName}.markdown"
