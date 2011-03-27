@@ -5,11 +5,11 @@
     <meta charset="utf-8">
     <meta name="author" content="Evsyukov Denis">
     <title>{{ page.title }} - Open Source Life</title>
-    <link rel="stylesheet" href="/css/master.css" type="text/css">
+	<link rel="stylesheet" href="{{site.url}}/css/master.css" type="text/css">
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js"></script>
-    <script type="text/javascript">$.getScript("/js/master.js");</script>
+    <script type="text/javascript">$.getScript("{{site.url}}/js/master.js");</script>
     <link rel="alternate" type="application/rss+xml" title="Open Source Life RSS Feed" href="http://feeds.feedburner.com/Juev" />
-    <link rel="icon" type="image/ico" href="/favicon.ico" /> 
+    <link rel="icon" type="image/ico" href="{{site.url}}/favicon.ico" /> 
     <link rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/" />
 {% if page.description %}    <meta name="description" content="{{page.description}}" />{% else %}     <meta name="description" content="{{site.description}}" />{% endif %}
 {% if page.keywords %}    <meta name="keywords" content="{{page.keywords}}" />{% else %}    <meta name="keywords" content="{{site.keywords}}" />{% endif %}
@@ -19,11 +19,11 @@
   <body>
     <div class=container>
       <div class=header>
-        <a href="/">Open Source Life</a>
+        <a href="{{site.url}}/">Open Source Life</a>
       </div>
       <div class=navigation>
         <ul>
-          <li><a href="/arhiv/">archives</a></li>
+          <li><a href="{{site.url}}/arhiv/">archives</a></li>
           <li><a href="http://denis.evsyukov.org">contact</a></li>
           <li><a href="http://feeds.feedburner.com/Juev" rel="nofollow" id="rss">rss</a></li>
         </ul>
