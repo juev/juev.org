@@ -24,7 +24,7 @@ div.navigation              { float: right; font-family: 'Georgia'; font-size: 3
 div.navigation a            { text-decoration:none; }
 div.navigation a#rss        { text-decoration:none; }
 div.header, div.navigation  { height: 25px; margin-bottom: 42px; }
-div.navigation ul           { margin: 10px 0 3px; padding: 0; list-style: none; }
+div.navigation ul           { margin: 6px 0 3px; padding: 0; list-style: none; }
 div.navigation ul li        { display: inline; margin: 0 3px; padding: 0; }
 div.body                    { clear: both; }
 div.footer                  { border-top: 1px dotted #ddd; padding-top: 19px;
