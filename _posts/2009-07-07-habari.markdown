@@ -12,7 +12,7 @@ title: !binary |
 
 В итоге я понял, что в следующий раз для построения сложного сайта я буду использовать уже не <em>Joomla</em>, а именно <em>Drupal</em>. Но для решения текущей задачи <em>Drupal</em> оказался чересчур крут.
 
-Решил попробовать что-нибудь попроще, но вот что? Сделал запрос рекомендации в Twitter, на что <a title="Владислав Семенов" href="http://twitter.com/Semenov">@Semenov</a> указал мне в сторону <span><a rel="nofollow" href="http://habariproject.org/" target="_blank">http://habariproject.org/</a></span>.
+Решил попробовать что-нибудь попроще, но вот что? Сделал запрос рекомендации в Twitter, на что <a title="Владислав Семенов" href="http://twitter.com/Semenov">@Semenov</a> указал мне в сторону <span><a href="http://habariproject.org/">http://habariproject.org/</a></span>.
 
 Информации в интернете по данной CMS оказалось очень мало. И основная масса, включая необходимый минимум плагинов и тем, находиться непосредственно на офсайте проекта. Для использования <em>Habari</em> необходимо иметь хостинг с поддержкой PHP и MySQL.
 
@@ -20,7 +20,7 @@ title: !binary |
 
 Все управление осуществляется посредством админки, простой, но очень удобной. Вот так выглядят некоторые страницы админки:
 
-<a href="http://static.juev.ru/2009/07/200907071012261280x1024.png" target="_blank" id="lightbox"><img src="http://static.juev.ru/2009/07/200907071012261280x1024.th.png" border="0" alt="" /> </a><a href="http://static.juev.ru/2009/07/200907071012401280x1024.png" target="_blank"><img src="http://static.juev.ru/2009/07/200907071012401280x1024.th.png" border="0" alt="" /></a><a href="http://static.juev.ru/2009/07/200907071013061280x1024.png" target="_blank"> <img src="http://static.juev.ru/2009/07/200907071013061280x1024.th.png" border="0" alt="" /></a>
+<a href="http://static.juev.ru/2009/07/200907071012261280x1024.png" id="lightbox"><img src="http://static.juev.ru/2009/07/200907071012261280x1024.th.png" border="0" alt="" /> </a><a href="http://static.juev.ru/2009/07/200907071012401280x1024.png"><img src="http://static.juev.ru/2009/07/200907071012401280x1024.th.png" border="0" alt="" /></a><a href="http://static.juev.ru/2009/07/200907071013061280x1024.png"> <img src="http://static.juev.ru/2009/07/200907071013061280x1024.th.png" border="0" alt="" /></a>
 
 На первом скрине показан список тем, на втором - список плагинов, на третьем - список созданных материалов.
 
@@ -28,7 +28,7 @@ title: !binary |
 
 На данный момент  сайт на <em>Habari</em> выглядит вот так:
 
-<a href="http://static.juev.ru/2009/07/200907071118571280x1024.png" target="_blank" id="lightbox"><img src="http://static.juev.ru/2009/07/200907071118571280x1024.th.png" border="0" alt="" /></a>
+<a href="http://static.juev.ru/2009/07/200907071118571280x1024.png" id="lightbox"><img src="http://static.juev.ru/2009/07/200907071118571280x1024.th.png" border="0" alt="" /></a>
 
 Что интересно, обратил внимание на размеры базы данных...
 

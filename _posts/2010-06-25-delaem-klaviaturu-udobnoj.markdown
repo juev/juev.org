@@ -25,9 +25,9 @@ title: !binary |
 
 <a href="http://static.juev.ru/2010/06/keyboard_2.jpg"><img class="aligncenter size-medium wp-image-1086" title="apple-edit" src="http://static.juev.ru/2010/06/keyboard_2-300x85.jpg" alt="apple-edit" width="300" height="85" /></a>
 
-Для совершения данной операции можно воспользоваться или <a href="http://www.autohotkey.com/" target="_blank">AutoHotkey</a>, или <a rel="nofollow" href="http://www.randyrants.com/sharpkeys/" target="_blank">sharpkeys3</a>, о чем я уже описывал в статье <a href="http://www.juev.ru/2010/06/14/korrekciya-raskladki-v-windows/" target="_blank">Коррекция раскладки в Windows</a>. Принцип тот же самый. Используются только другие клавиши. Единственно, хотелось бы обратить внимание, что при использовании AutoHotKey бывает возникают проблемы с определением клавиш и при нажатии на Ctrl вдруг срабатывает Win. Если же использовать программу sharpkeys3, происходит правка реестра и никаких проблем не наблюдается. Именно поэтому я рекомендую использовать именно этот способ.
+Для совершения данной операции можно воспользоваться или <a href="http://www.autohotkey.com/">AutoHotkey</a>, или <a href="http://www.randyrants.com/sharpkeys/">sharpkeys3</a>, о чем я уже описывал в статье <a href="http://www.juev.ru/2010/06/14/korrekciya-raskladki-v-windows/">Коррекция раскладки в Windows</a>. Принцип тот же самый. Используются только другие клавиши. Единственно, хотелось бы обратить внимание, что при использовании AutoHotKey бывает возникают проблемы с определением клавиш и при нажатии на Ctrl вдруг срабатывает Win. Если же использовать программу sharpkeys3, происходит правка реестра и никаких проблем не наблюдается. Именно поэтому я рекомендую использовать именно этот способ.
 
-Пример изменения модификаторов для Linux я рассматривал в статье <a href="http://www.juev.ru/2009/08/18/emacs-keymap/" target="_blank">Emacs keymap</a>.
+Пример изменения модификаторов для Linux я рассматривал в статье <a href="http://www.juev.ru/2009/08/18/emacs-keymap/">Emacs keymap</a>.
 
 Для владельцев обычной клавиатуры придется совершать чуть больше действий.
 

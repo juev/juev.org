@@ -8,7 +8,7 @@ title: "Nginx & WordPress \xD0\xB2 Ubuntu 10.04"
 
 Основная проблема, с которой приходиться сталкиваться любому человеку, желающему завести WordPress на Nginx - это проблема связки самого веб-сервера с PHP.
 
-<!--more-->Есть два варианта решения - использование модуля <em>Spawn-fcgi</em> из комплекта веб-сервера Lighttpd, либо использование <em>php-fpm</em>. Не знаю, почему, но я решил остановиться на втором варианте. Кстати, для Ubuntu 10.04 установить его очень просто. Достаточно лишь подключить репозиторий<a href="https://launchpad.net/~brianmercer/+archive/php/" target="_blank"> Brian's php5-fpm</a>. Для этого прописываем следующие адреса в файл <em>/etc/apt/sources.list</em>:
+<!--more-->Есть два варианта решения - использование модуля <em>Spawn-fcgi</em> из комплекта веб-сервера Lighttpd, либо использование <em>php-fpm</em>. Не знаю, почему, но я решил остановиться на втором варианте. Кстати, для Ubuntu 10.04 установить его очень просто. Достаточно лишь подключить репозиторий<a href="https://launchpad.net/~brianmercer/+archive/php/"> Brian's php5-fpm</a>. Для этого прописываем следующие адреса в файл <em>/etc/apt/sources.list</em>:
 <pre>deb http://ppa.launchpad.net/brianmercer/php/ubuntu lucid main
 deb-src http://ppa.launchpad.net/brianmercer/php/ubuntu lucid main</pre>
 И затем импортируем ключ данного репозитория:
@@ -99,7 +99,7 @@ location / &#123;
 <pre>#/etc/init.d/nginx start</pre>
 И переходить к установке и настройке WordPress. Единственное но: я не проводил тестирование установки вордпреса с данными настройками Nginx. Фактически я сначала только включил поддержку Fastcgi, установил WordPress и только после этого уже прописал в конфиге часть, отвечающую за rewrite. Обратите на это внимание!
 
-Для корректного использования ЧПУ в WordPress под Nginx, нужно дополнительно установить расширение WP под названием <a href="http://wordpress.org/extend/plugins/nginx-compatibility/" target="_blank">nginx Compatibility</a>.
+Для корректного использования ЧПУ в WordPress под Nginx, нужно дополнительно установить расширение WP под названием <a href="http://wordpress.org/extend/plugins/nginx-compatibility/">nginx Compatibility</a>.
 
 Что могу сказать? Памяти стало использоваться больше, под кэш и буферы остается меньше места, чем было при использовании связки nginx+apache+php, так как используется большое количество php и nginx процессов. Однако скорость работы возросла очень значительно! Работать одно удовольствие!
 

@@ -13,14 +13,14 @@ title: !binary |
     $ awesome -k
     awesome: error while loading shared libraries: libxcb-keysyms.so.0: cannot open shared object file: No such file or directory</pre>
 
-Такой ошибки я еще не встречал в своей практике. Гугль выдал 13 результатов. Первый из которых ведет на официальный форум archlinux (<a href="http://bbs.archlinux.org/viewtopic.php?id=70215&amp;p=1" target="_blank">ссылка</a>). Решение сводиться к тому, что нужно собирать awesome из git. Причем пакет libxdg-basedir нужно собирать почти вручную, так как по умолчанию из AUR ставиться старая версия, которая не совместима с текущей версией awesome.
+Такой ошибки я еще не встречал в своей практике. Гугль выдал 13 результатов. Первый из которых ведет на официальный форум archlinux (<a href="http://bbs.archlinux.org/viewtopic.php?id=70215&amp;p=1">ссылка</a>). Решение сводиться к тому, что нужно собирать awesome из git. Причем пакет libxdg-basedir нужно собирать почти вручную, так как по умолчанию из AUR ставиться старая версия, которая не совместима с текущей версией awesome.
 
 Сначала последовательность команд:
     $ yaourt -Rdn awesome wicked-git
     $ cd ~/Temp
     $ mkdir awesome wicked libxdg
 
-Первой командой удаляем установленный awesome. Затем в каталоге Temp домашней директории создаем три каталога с именами awesome wicked и libxdg (для примера, названия можете давать свои). После чего в подготовленные директории сохраняем файлы PKGBUILD, которые качаем со страниц: <a class="external text" title="http://aur.archlinux.org/packages.php?ID=13916" rel="nofollow" href="http://aur.archlinux.org/packages.php?ID=13916">awesome-git</a> и <a class="external text" title="http://aur.archlinux.org/packages.php?ID=17232" rel="nofollow" href="http://aur.archlinux.org/packages.php?ID=17232">wicked-git</a>, а в директории libxdg самостоятельно создаем файл PKGDUILD со следующим содержимым:
+Первой командой удаляем установленный awesome. Затем в каталоге Temp домашней директории создаем три каталога с именами awesome wicked и libxdg (для примера, названия можете давать свои). После чего в подготовленные директории сохраняем файлы PKGBUILD, которые качаем со страниц: <a class="external text" title="http://aur.archlinux.org/packages.php?ID=13916" href="http://aur.archlinux.org/packages.php?ID=13916">awesome-git</a> и <a class="external text" title="http://aur.archlinux.org/packages.php?ID=17232" href="http://aur.archlinux.org/packages.php?ID=17232">wicked-git</a>, а в директории libxdg самостоятельно создаем файл PKGDUILD со следующим содержимым:
     #Contributor: alexandrite (puterbaugh0@gmail.com)
     # From script originally by Ondrej Martinak &lt;omartinak@gmail.com&gt;
     #Just changed pkgver and md5sum

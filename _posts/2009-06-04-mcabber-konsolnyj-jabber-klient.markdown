@@ -5,7 +5,7 @@ title: !binary |
   tdC90YI=
 
 ---
-Согласно <a href="http://wiki.mcabber.com/index.php/RU_Main_Page" target="_blank">wiki.mcabber.com</a>:
+Согласно <a href="http://wiki.mcabber.com/index.php/RU_Main_Page">wiki.mcabber.com</a>:
 <blockquote>mcabber - это текстовый Jabber-клиенкт включающий в себя такие функции как: поддержка <strong>SSL</strong>, <strong>история переписки</strong> (конференции), <strong>автодополнение</strong> команд и возможность создания <strong>собственных команд</strong> (триггеров).</blockquote>
 Он меня заинтересовал после того, как в конференции arch@conference.jabber.ru у многих из присутствующих в качестве клиента оказался именно mcabber.
 
@@ -60,7 +60,7 @@ Ctrl+q - следующее непрочитанное сообщение.
 <span style="font-weight: bold;">/add "name@jabber.ru"</span>
 добавляет "jid" в список контактов</pre>
 
-Небольшой FAQ по программе (взято со страницы <a href="http://wiki.mcabber.com/index.php/RU_Main_Page" target="_blank">wiki.mcabber.com</a>):
+Небольшой FAQ по программе (взято со страницы <a href="http://wiki.mcabber.com/index.php/RU_Main_Page">wiki.mcabber.com</a>):
 <ol>
 	<li> MCabber не хочет соединяться с сервером. Выдает ошибку: <em>jab_start: SSL negotiation failed: self signed certificate.</em>
 Используйте опцию <tt>'ssl_verify = 0'</tt> в файле конфигурации и выставьте правильные опции сертификата.</li>
@@ -77,7 +77,7 @@ set ssl_verify = 0</pre></li>
 	<li> Как мне сделать прозрачный фон?
 Установите <tt>color_background = default.</tt></li>
 	<li> Могу ли я использовать PGP-шифрование?
-Смотрите страницу <a title="OpenPGP" href="http://wiki.mcabber.com/index.php/OpenPGP" target="_blank">OpenPGP</a>.</li>
+Смотрите страницу <a title="OpenPGP" href="http://wiki.mcabber.com/index.php/OpenPGP">OpenPGP</a>.</li>
 	<li>Как отключить идентифицирующую меня информацию в mcabber (показ названия и версии клиента, версии ОС и имени ресурса)?
 Чтобы убрать показ поля "Name" при запросе версии клиента нужно перекомпилировать исходник, предварительно закомментировав в файле jab_iq.c строки под нимером 1510 и 1511 (для версии 0.9.6):
 <pre>//xmlnode_insert_cdata(xmlnode_insert_tag(myquery, "name"), PACKAGE_NAME, -1);

@@ -5,7 +5,7 @@ title: !binary |
   TSDQv9C+IFNNUw==
 
 ---
-Многие слышали о таком удобном online-таскменеджере как <a href="http://www.rememberthemilk.com/" target="_blank">www.rememberthemilk.com</a> (RTM). Некоторые его используют в своей работе. Сервис бесплатный и очень функциональный. В основе RTM лежит система управления задачами Девида Аллена <a href="http://ru.wikipedia.org/wiki/Getting_Things_Done" target="_blank">GTD</a>.
+Многие слышали о таком удобном online-таскменеджере как <a href="http://www.rememberthemilk.com/">www.rememberthemilk.com</a> (RTM). Некоторые его используют в своей работе. Сервис бесплатный и очень функциональный. В основе RTM лежит система управления задачами Девида Аллена <a href="http://ru.wikipedia.org/wiki/Getting_Things_Done">GTD</a>.
 
 Есть масса вариантов оповещения о предстоящих событиях, как по почте, так и по jabber. Единственным недостатком является то, что оповещение по sms работает только в Соединенных Штатах Америки и в России приходиться обходиться без них.
 

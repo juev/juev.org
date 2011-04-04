@@ -12,7 +12,7 @@ title: !binary |
 
 Как раз на этом расширении я хотел бы остановиться поподробнее.
 
-<!--more-->В одной из дискуссий рассказали про расширение <a href="https://chrome.google.com/extensions/detail/fhaledancjhefginmkkondfjpnkhdglh?hl=ru" target="_blank">Fittr Flickr</a>. Описание довольно скудное:
+<!--more-->В одной из дискуссий рассказали про расширение <a href="https://chrome.google.com/extensions/detail/fhaledancjhefginmkkondfjpnkhdglh?hl=ru">Fittr Flickr</a>. Описание довольно скудное:
 <blockquote>Extension for enhancing the awesome photo sharing site, Flickr.  Adds keyboard shortcuts, tag autocomplete, a lightbox for large previews, quick access to EXIF data, easily copy Flic.kr short URL to the clipboard, and a page action that allows you to easily get from a Flickr image URL back to it's photo page.</blockquote>
 Однако после того, как я его поставил и попробовал в работе, понял, насколько он упрощает работу с Flickr.
 
@@ -40,4 +40,4 @@ title: !binary |
 
 В памяти данное расширение занимает чуть более 4 мегабайт.
 
-Но удобство работы на высоте! Однозначно всем пользователям Flickr и Chrome рекомендую <a href="https://chrome.google.com/extensions/detail/fhaledancjhefginmkkondfjpnkhdglh?hl=ru" target="_blank">Fittr Flickr</a>!
+Но удобство работы на высоте! Однозначно всем пользователям Flickr и Chrome рекомендую <a href="https://chrome.google.com/extensions/detail/fhaledancjhefginmkkondfjpnkhdglh?hl=ru">Fittr Flickr</a>!

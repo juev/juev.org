@@ -19,7 +19,7 @@ include WEBrick
 task :default => :develop
  
 desc 'Build site with Jekyll.'
-task :build => :tags do
+task :build do
 	printHeader "Compiling website..."
 	options = Jekyll.configuration({})
 	@site = Jekyll::Site.new(options)
@@ -29,8 +29,8 @@ end
 desc 'Minify & Combi CSS/JS file'
 task :minify do
 	printHeader "Minify file..."
-	sh "juicer merge -f -o css/master.css -d . _css/style.css _css/highlight.css _css/jquery.fancybox-1.3.4.css"
-	sh "juicer merge -f -s -o js/master.js _js/jquery.twittertrackbacks-1.0.js _js/noteit.js _js/jquery.fancybox-1.3.4.js _js/jquery.easing-1.3.pack.js _js/main.js"
+	sh "juicer merge -f -o css/master.css -d . _css/style.css _css/highlight.css _css/jquery.fancybox-1.3.4.css _css/ui.totop.css"
+	sh "juicer merge -f -s -o js/master.js _js/jquery.twittertrackbacks-1.0.js _js/noteit.js _js/jquery.fancybox-1.3.4.js _js/jquery.easing-1.3.pack.js _js/easing.js _js/jquery.ui.totop.js _js/main.js"
 end
 
 def globs(source)
@@ -79,6 +79,7 @@ task :deploy => :build do
   printHeader "Deploying website to #{domain}"
 #  sh "rsync -rtzh _site/ #{host_var['DEPLOY_USER']}@#{host_var['DEPLOY_HOST']}:~/#{domain}/"
   sh "rsync -avz --delete _site/ juev@juev.ru:~/www/juev.ru/web/"
+#  sh '../../github/s3cmd-modification/s3cmd --parallel --workers=30 sync _site/ s3://www.juev.ru --add-header "Expires:30d" -P --delete-removed'
   Rake::Task['clean'].execute
 end
 

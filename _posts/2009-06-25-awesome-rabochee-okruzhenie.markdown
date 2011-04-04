@@ -57,7 +57,7 @@ excerpt: !binary |
 	<li>клиент различных im-сетей - <strong>pidgin</strong>.</li>
 	<li>альтернативный jabber-клиент - <strong>emacs</strong>.</li>
 	<li>в качестве torrent-клиента давно уже использую <strong>deluge</strong>. Ничего лучше пока не нашел.</li>
-	<li>интернет-браузер - непревзойденный <strong>Firefox</strong>. Используемые мной расширения можно найти на странице <a href="https://addons.mozilla.org/ru/firefox/collection/Juev_Extensions" target="_blank">addons.mozilla.org</a></li>
+	<li>интернет-браузер - непревзойденный <strong>Firefox</strong>. Используемые мной расширения можно найти на странице <a href="https://addons.mozilla.org/ru/firefox/collection/Juev_Extensions">addons.mozilla.org</a></li>
 	<li>почтовый клиент - веб-интерфейс <strong>GMail.</strong></li>
 	<li>rss-менеджер - <strong>Google Reader.</strong></li>
 	<li>менеджер паролей - <strong>keepass</strong> и <strong>lastpass</strong> в огнелисе. Причем lastpass в последнее время используется чаще всего.</li>

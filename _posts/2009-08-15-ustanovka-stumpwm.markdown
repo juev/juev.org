@@ -31,6 +31,6 @@ title: !binary |
 
 Если пропустить создание файла <em>.sbcl</em>, то сборка пакета будет не возможна...
 
-Документация и скриншоты располагаются на официальном сайте <a href="http://www.nongnu.org/stumpwm/index.html" target="_blank">www.nongnu.org/stumpwm</a>
+Документация и скриншоты располагаются на официальном сайте <a href="http://www.nongnu.org/stumpwm/index.html">www.nongnu.org/stumpwm</a>
 
 Удачных экспериментов!

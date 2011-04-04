@@ -6,7 +6,7 @@ title: !binary |
 ---
 После сборки firefox-pgo задумался об локализации программы. Проблема заключается только в том, что до сих пор не обновился пакет firefox в archlinux и соответственно не обновляется пакет firefox-i18n, который отвечает за локализацию.
 
-Однако <a href="http://forum.mozilla-russia.org/doku.php?id=firefox:faqs:localization_1.1" target="_blank">forum.mozilla-russia.org</a> быстро показал решение проблемы, путем установки нужно локали и дальнейшем переключении на нее. Перечисленно три способа. Я воспользовался первым.
+Однако <a href="http://forum.mozilla-russia.org/doku.php?id=firefox:faqs:localization_1.1">forum.mozilla-russia.org</a> быстро показал решение проблемы, путем установки нужно локали и дальнейшем переключении на нее. Перечисленно три способа. Я воспользовался первым.
 
 <!--more-->
 
@@ -37,4 +37,4 @@ title: !binary |
 	<li>Запускаете Firefox с параметром: -UIlocale ru</li>
 </ol>
 </blockquote>
-Все локали находятся на странице <a href="http://releases.mozilla.org/pub/mozilla.org/firefox/releases/3.5/win32/xpi/" target="_blank">releases.mozilla.org</a>. Устанавливать можно любое число нужных локалей.
+Все локали находятся на странице <a href="http://releases.mozilla.org/pub/mozilla.org/firefox/releases/3.5/win32/xpi/">releases.mozilla.org</a>. Устанавливать можно любое число нужных локалей.
