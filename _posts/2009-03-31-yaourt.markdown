@@ -15,16 +15,16 @@ title: !binary |
 
 <strong>1. </strong>С использованием стороннего репозитория (это наверное один из тех единственных случаев, когда сторонний репозиторий используется в системе). Для этого в файл /etc/pacman.conf добавляем строки:
 <pre>[archlinuxfr]
-Server = <a class="external free" title="http://repo.archlinux.fr/i686" rel="nofollow" href="http://repo.archlinux.fr/i686">http://repo.archlinux.fr/i686</a></pre>
+Server = <a class="external free" title="http://repo.archlinux.fr/i686" href="http://repo.archlinux.fr/i686">http://repo.archlinux.fr/i686</a></pre>
 
 Для i686 систем, или для систем x86_64:
 <pre>[archlinuxfr]
-Server = <a class="external free" title="http://repo.archlinux.fr/x86_64" rel="nofollow" href="http://repo.archlinux.fr/x86_64">http://repo.archlinux.fr/x86_64</a></pre>
+Server = <a class="external free" title="http://repo.archlinux.fr/x86_64" href="http://repo.archlinux.fr/x86_64">http://repo.archlinux.fr/x86_64</a></pre>
 
 Затем выполняем обновление репозиториев и установку yaourt с помощью команды:
 <pre># pacman -Sy yaourt</pre>
 
-<strong>2</strong>. С использованием AUR. Для этого достаточно скачать файлы <strong>PKBIULD</strong> и <strong>yaourt.install</strong> со <a href="http://aur.archlinux.org/packages/yaourt/yaourt/" target="_blank">страницы AUR</a> в темповую папку в домашней директории. Затем дать команду <strong>$makepkg</strong> в папке, куда скачали файлы и получаем готовый к инсталляции пакет, который устанавливаем с помощью pacman:
+<strong>2</strong>. С использованием AUR. Для этого достаточно скачать файлы <strong>PKBIULD</strong> и <strong>yaourt.install</strong> со <a href="http://aur.archlinux.org/packages/yaourt/yaourt/">страницы AUR</a> в темповую папку в домашней директории. Затем дать команду <strong>$makepkg</strong> в папке, куда скачали файлы и получаем готовый к инсталляции пакет, который устанавливаем с помощью pacman:
 <pre># pacman -U yaourt-0.x.x.pkg.tar.gz</pre>
 
 Обратите внимание: пакман запускаем от имени администратора. После чего йогурт можно использовать. В отличие от пакмана он не требует для запуска прав администратора. Для поиска пакетов используется:

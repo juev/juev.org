@@ -5,7 +5,7 @@ title: !binary |
   0LAg0LIgYXJjaGxpbnV4
 
 ---
-<p>В заметке <a target="_blank" href="http://www.juev.ru/2009/03/07/archlinux-sborka-yadra/">archlinux - сборка ядра</a> благодаря <cite class="fn">Gnomik</cite> (Антон) была выявлена небольшая неточность. О которой спешу рассказать.</p><!--more--><p>Для сборки пакета archlinux используется два файла: PKGBUILD и kernel26.install</p><p>Перед сборкой пакета необходимо изменить файл PKBUILD для указания версии создаваемого пакета и версии используемого ядра. Для этого в самом начале файла меняем следующие строки:</p><pre>pkgname=kernel26-my
+<p>В заметке <a href="http://www.juev.ru/2009/03/07/archlinux-sborka-yadra/">archlinux - сборка ядра</a> благодаря <cite class="fn">Gnomik</cite> (Антон) была выявлена небольшая неточность. О которой спешу рассказать.</p><!--more--><p>Для сборки пакета archlinux используется два файла: PKGBUILD и kernel26.install</p><p>Перед сборкой пакета необходимо изменить файл PKBUILD для указания версии создаваемого пакета и версии используемого ядра. Для этого в самом начале файла меняем следующие строки:</p><pre>pkgname=kernel26-my
 basekernel=2.6.29.3
 pkgver=2.6.29
 pkgrel=1

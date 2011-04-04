@@ -21,4 +21,4 @@ title: My PGP key
 После чего его необходимо загрузить обратно на сервер:
 <pre><code>gpg --keyserver subkeys.pgp.net --send-key AB199C39</code></pre>
 
-Описание сделано по образу и подобию страницы сайта <a href="http://librarian.spb.ru/page/my-pgp-key" target="_blank">librarian</a>.
+Описание сделано по образу и подобию страницы сайта <a href="http://librarian.spb.ru/page/my-pgp-key">librarian</a>.

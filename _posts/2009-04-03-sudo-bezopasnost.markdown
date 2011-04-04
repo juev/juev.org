@@ -10,7 +10,7 @@ title: !binary |
 <!--more-->
 Для выделения привилегированных ресурсов конкретному пользователю системы используется <strong>sudo</strong>.
 <blockquote><strong>sudo</strong> (англ. <em><span lang="en" xml:lang="en">superuser [substitute user] do</span></em>, дословно «выполнить от имени <span class="mw-redirect">суперпользователя</span>») — это программа, разработанная в помощь системному администратору и позволяющая делегировать те или иные привилегированные ресурсы пользователям с ведением протокола работы. Основная идея — дать пользователям как можно меньше прав, но при этом ровно столько, сколько необходимо для решения поставленных задач.
-<p style="text-align: right;">по материалам <a href="http://ru.wikipedia.org/wiki/Sudo" target="_blank">Википедии</a></p>
+<p style="text-align: right;">по материалам <a href="http://ru.wikipedia.org/wiki/Sudo">Википедии</a></p>
 </blockquote>
 В Ubuntu <strong>sudo</strong> используется по умолчанию, при этом аккаунт администратора отключен. В других дистрибутивов sudo необходимо устанавливать. Например в Archlinux:
 <pre>$ yaourt -S sudo</pre>
@@ -57,7 +57,7 @@ root    ALL=(ALL) ALL
 # %users  ALL=/sbin/mount /cdrom,/sbin/umount /cdrom
 # %users  localhost=/sbin/shutdown -h now</pre>
 
-Я не задавал алиасы, которые используются для упрощения описания конфигурации. Более подробно по конфигурации с алиасами можно посмотреть <a href="http://apicom.org.ua/blog/2009/01/09/sudo-ili-ne-sudo/" target="_blank">здесь</a>.
+Я не задавал алиасы, которые используются для упрощения описания конфигурации. Более подробно по конфигурации с алиасами можно посмотреть <a href="http://apicom.org.ua/blog/2009/01/09/sudo-ili-ne-sudo/">здесь</a>.
 
 Как видно из приведенного файла конфигурации, права администратора выдаются пользователю root и группе wheel. Причем пользователи группы wheel при использовании команды sudo должны будут использовать СВОЙ пароль для подтверждения права использования привилегированных ресурсов. А в случае использовании команд shutdown, poweroff, reboot, pacman, pacdiffviewer и pacman-color ввод пароля не требуется.
 
@@ -80,5 +80,5 @@ root    ALL=(ALL) ALL
 
 или выполнив
     sudo sh
-<p style="text-align: right;"><code>по материалам <a href="http://ru.wikipedia.org/wiki/Sudo" target="_blank">Википедии</a></code></p>
+<p style="text-align: right;"><code>по материалам <a href="http://ru.wikipedia.org/wiki/Sudo">Википедии</a></code></p>
 </blockquote>
