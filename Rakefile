@@ -78,7 +78,7 @@ task :deploy => :build do
   domain = "www.juev.ru"
   printHeader "Deploying website to #{domain}"
 #  sh "rsync -rtzh _site/ #{host_var['DEPLOY_USER']}@#{host_var['DEPLOY_HOST']}:~/#{domain}/"
-  sh "rsync -avz --delete _site/ juev@juev.ru:~/www/juev.ru/web/"
+  sh "rsync -avz --delete _site/ ec2:~/www/juev.ru/web/"
 #  sh '../../github/s3cmd-modification/s3cmd --parallel --workers=30 sync _site/ s3://www.juev.ru --add-header "Expires:30d" -P --delete-removed'
   Rake::Task['clean'].execute
 end
