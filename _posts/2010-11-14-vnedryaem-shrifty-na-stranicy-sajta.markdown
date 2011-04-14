@@ -17,10 +17,10 @@ title: !binary |
 
 Использовать довольно просто. Достаточно выбрать из каталога шрифт, который хотим использовать. На странице шрифта выбираем ссылку <code>Get the code</code>. И копируем строку вида:
 
-    &lt;link href='http://fonts.googleapis.com/css?family=Droid+Sans&subset=latin' rel='stylesheet' type='text/css'&gt;
+    <link href='http://fonts.googleapis.com/css?family=Droid+Sans&subset=latin' rel='stylesheet' type='text/css'>
 
 в блок <code>head</code> страниц, на которых собираемся внедрять шрифты. Осталось только прописать в стилях страницы используемый шрифт, например:
 
-    h1 &#123; font-family: 'Droid Sans', arial, serif; }
+    h1 { font-family: 'Droid Sans', arial, serif; }
 
 Приведенные примеры используют шрифт <code>Droid Sans</code>. После данной операции шрифт будет подгружаться с сервера Google и страницы на всех системах будут отображаться одинаково.
