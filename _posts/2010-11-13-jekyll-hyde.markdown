@@ -21,16 +21,16 @@ title: Jekyll &amp; Hyde
 По сути уже все готово для размещения любого статического сайта. Но нам ведь интересн не это. Интересно задействовать <code>jekyll</code>! Сделать это так же довольно просто.
 
 В репозитории создается следующая файловая структура:
-<pre>.
-|-- _config.yml
-|-- _layouts
-|   |-- default.html
-|   `-- post.html
-|-- _posts
-|   |-- 2007-10-29-why-every-programmer-should-play-nethack.textile
-|   `-- 2009-04-26-barcamp-boston-4-roundup.textile
-|-- _site
-`-- index.html</pre>
+     .
+     |-- _config.yml
+     |-- _layouts
+     |   |-- default.html
+     |   `-- post.html
+     |-- _posts
+     |   |-- 2007-10-29-why-every-programmer-should-play-nethack.textile
+     |   `-- 2009-04-26-barcamp-boston-4-roundup.textile
+     |-- _site
+     `-- index.html
 
 Где:
 <strong>_config.yml</strong> - файл, который содержит в себе конфигурацию <code>jekyll</code>, о которой подробно можно прочесть на странице <a href="https://github.com/mojombo/jekyll/wiki/configuration">Configuration</a>. Причем в файле обычно прописываются только какие-то изменения. По умолчанию используется стандартная конфигурация.
