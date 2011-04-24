@@ -80,7 +80,7 @@ task :deploy => :build do
 #  sh "rsync -rtzh _site/ #{host_var['DEPLOY_USER']}@#{host_var['DEPLOY_HOST']}:~/#{domain}/"
   sh "rsync -az --delete _site/ ec2:~/www/juev.ru/web/"
   # Publich to Google
-  sh 'curl -sS "http://www.google.com/webmasters/tools/ping?sitemap=http%3A%2F%2Fwww.juev.ru%2Fsitemap.xml" > /dev/null'
+  #sh 'curl -sS "http://www.google.com/webmasters/tools/ping?sitemap=http%3A%2F%2Fwww.juev.ru%2Fsitemap.xml" > /dev/null'
 #  sh '../../github/s3cmd-modification/s3cmd --parallel --workers=30 sync _site/ s3://www.juev.ru --add-header "Expires:30d" -P --delete-removed'
   Rake::Task['clean'].execute
 end
