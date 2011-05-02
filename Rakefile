@@ -8,7 +8,7 @@ require 'webrick'
 require 'directory_watcher'
 require "term/ansicolor"
 require "jekyll"
-require "rdiscount"
+require "kramdown"
 require "yaml"
 include Term::ANSIColor
 include WEBrick
