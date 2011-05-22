@@ -15,7 +15,7 @@ title: Archives
 		</div>
 		{% endif %}
 		
-		<h3><a href="/archive/#{{ post.date | date:'%B-%Y' }}" name="{{ post.date | date:'%B-%Y' }}">{{ month }}</a></h3>
+		<h2>{{ month }}</h2>
 			<div>
 			<div style="float:left">{{ post.date | date_to_string }}</div>
 			<div>&nbsp;&raquo;&nbsp;<a href="{{ post.id }}" title="{{ post.title }}">{{ post.title }}</a></div>
