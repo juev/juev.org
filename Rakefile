@@ -87,7 +87,7 @@ end
 
 task :new do
 	title = ask("Title: ")
-	article = {"title" => title, "layout" => "post", "keywords" => "keywords", "description" => "description"}.to_yaml
+	article = {"title" => title, "layout" => "post", "keywords" => "keywords", "description" => "description", "date" => "{{ post.date }}"}.to_yaml
 	article << "---"
 	fileName = title.gsub(/[\s \( \) \? \[ \] \, \: \< \>]/, '-').downcase
 	path = "_posts/#{Time.now.strftime("%Y-%m-%d")}#{'-' + fileName}.markdown"
