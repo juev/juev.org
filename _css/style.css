@@ -1,24 +1,26 @@
 /* general style */
-body    { font: 16px/24px 'Georgia', serif;
+body    { font: 12px/18px 'Verdana', 'Georgia', sans-serif;
           margin: 0; padding: 0; }
 a       { color: #055580; text-decoration: none;}
 a:hover { color: #0097E8; text-decoration: none;}
 a#license {	color: #888; text-decoration: none; border-bottom: 1px dashed;}
 
 /* headlines */
-h1, h2, h3, h4, h5, h6      { font-family: 'Georgia', serif;
+h1, h2, h3, h4, h5, h6      { font-family: 'Georgia', sans-serif;
                               font-weight: normal; color: #222; }
 h1 a, h2 a, h3 a, h4 a,
 h5 a, h6 a                  { text-decoration: none; }
 /*h1 a:hover, h2 a:hover,
 h3 a:hover, h4 a:hover      { color: #432165; text-decoration: underline; }*/
-h1.title                    { width: 560px; }
+h1.title                    { width: 560px;}
 h1, h2                      { margin: 25px 0 5px 0; }
-h1                          { font-size: 48px; line-height: 52px; }
+h1                          { font-size: 48px; line-height: 52px; font: 48px/52px 'Georgia';}
 h2                          { font-size: 30px; line-height: 30px; }
+h3                          { font-size: 18px; line-height: 20px; }
+h3 a                        { font: 14px/16px 'Verdana' }
 
 /* layout elements */
-div.container               { width: 740px; margin: 48px auto; padding: 0; }
+div.container               { width: 960px; margin: 18px auto; padding: 0; }
 div.header                  { float: left; }
 div.navigation              { float: right; font-family: 'Georgia'; font-size: 30px; }
 div.navigation a            { text-decoration:none; }
@@ -26,24 +28,26 @@ div.navigation a#rss        { text-decoration:none; }
 div.header, div.navigation  { height: 25px; margin-bottom: 42px; }
 div.navigation ul           { margin: 6px 0 3px; padding: 0; list-style: none; }
 div.navigation ul li        { display: inline; margin: 0 3px; padding: 0; }
-div.body                    { clear: both; }
+div.wraper                 { clear: both; width: 700px; float:left; 
+ border-top: 1px solid #DEDEDE;}
 div.footer                  { border-top: 1px dotted #ddd; padding-top: 19px;
-                              margin-top: 42px; font-size: 16px; color: #888;
-                              text-align: center; overflow: hidden;}
+                              margin-top: 42px; font: 16px/24px 'Georgia'; color: #888;
+                              text-align: center; overflow: hidden; margin-bottom: 18px;}
 div.footer p                { margin: 0; }
 div.article a               { border-bottom: 1px dashed; }
+div.article                 { margin-top: 12px; }
 /* margins and stuff */
 /*p, div.line-block, ul, ol, pre  { margin: 25px 0 25px 0; }*/
 dt                              { margin: 25px 0 16px 0; padding: 0; }
 dd                              { margin: 16px 0 25px 40px; padding: 0; }
 ul ol, ol ul, ul ul, ol ol      { margin: 10px 0; padding: 0 0 0 40px; }
 li                              { padding: 0; }
-h1 + p.date                     { margin-top: 0px; font-style: italic; }
+div.date                   { margin-top: 0px; font-style: italic; }
 
 /* code formatting.  no monospace because of webkit (bug?) */
 code 			{ font-family: 'Consolas', 'Deja Vu Sans Mono',
                   'Bitstream Vera Sans Mono', 'Monaco', 'Courier New';}
-pre code   		{ font-size: 0.82em; }
+pre code   		{ font-size: 0.92em; }
 pre             { line-height: 1.3; border: 1px solid #ddd; padding: 10px;
                   background: #fafafa; }
 code, tt        { background: #eee; 
@@ -56,10 +60,10 @@ td, th          { padding: 2px 12px; border: 1px solid #ddd; }
 
 /* blog overview */
 /* div.entry-overview                  { margin: 25px 122px 25px 102px; } */
-div.entry-overview                  { margin: 50px 5px 25px 5px; }
+div.entry-overview                  { margin: 5px 5px 25px 5px; }
 div.entry-overview h1,
 div.entry-overview div.summary,
-div.entry-overview div.summary p    { display: inline; line-height: 25px; }
+div.entry-overview div.summary p    { display: inline; }
 div.entry-overview h1               { margin: 0; font-size: 20px; }
 div.entry-overview div.summary,
 div.entry-overview div.date,
@@ -67,7 +71,7 @@ div.entry-overview div.summary p    { margin: 0; padding: 0; }
 div.entry-overview div.detail       { margin-left: 140px; }
 div.entry-overview div.date         { float: left; width: 120px; color: #888;
                                       text-align: right; font-style: italic; }
-div.entry-overview h1:after         { content: " —"; }
+/*div.entry-overview h1:after         { content: ":"; }*/
 
 /* other alignment things */
 img.align-center        { margin: 15px auto; display: block; }
@@ -99,11 +103,12 @@ pre code {
 
 /*h1 a.title { color: red;}*/
 div.header a { font-size: 48px; text-decoration: none; font-weight: bold; }
-div.pagination a { font-size: 18px; text-decoration: none; font-weight: bold; }
+div.pagination a { font-size: 14px; text-decoration: none; font-weight: bold; }
 .left { text-align: left; }
 .right { text-align: right; }
 .aligncenter { clear: both; display: block; float:none; margin-left: auto; margin-right: auto; }
 .note{
+  font-size: 14px;
   color: gray;
   text-align: center;
 }
@@ -210,4 +215,32 @@ div.meta a#evernote.share{
 	background-position: -0px -111px; width: 32px; height: 32px;
 	display:inline-block;
 	margin: 0 1px;
+}
+.sidebar {
+  position: fixed;
+  margin-left: 715px;
+  width: 245px;
+  border-top: 1px solid #DEDEDE;
+  padding: 23px 0 0 0;
+}
+.nav {
+  margin-top: 18px;
+  border-top: 1px solid #DEDEDE;
+  padding: 23px 0 0 0;
+}
+ul.nav  {
+  list-style-type: none;
+}
+ul.nav li {
+  text-align: center;
+  list-style-type: none;
+  font: 18px/24px 'Georgia';
+}
+div.recent_posts{
+  margin-top: 15px;
+  border-top: 1px solid #DEDEDE;
+}
+#logo{
+  height:165px;
+  width:245px;
 }

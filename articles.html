@@ -1,32 +1,20 @@
 ---
 layout: default
 title: Archives
+permalink: articles.html
 ---
 {% assign posts = site.posts %}
 {% for post in posts %}
-
 	{% capture month %}
 		{{ post.date | date:'%B %Y' }}
 	{% endcapture %}
-
 	{% if last_month != month %}
-
-		{% if last_month %}			
-		</div>
-		{% endif %}
-		
 		<h2>{{ month }}</h2>
-			<div>
 			<div style="float:left">{{ post.date | date_to_string }}</div>
 			<div>&nbsp;&raquo;&nbsp;<a href="{{ post.id }}" title="{{ post.title }}">{{ post.title }}</a></div>
-
 		{% assign last_month = month %}
-		
 	{% else %}
-		
-			<div style="float:left">{{ post.date | date_to_string }}</div>
-			<div>&nbsp;&raquo;&nbsp;<a href="{{ post.id }}" title="{{ post.title }}">{{ post.title }}</a></div>
-			
+	  	<div style="float:left">{{ post.date | date_to_string }}</div>
+		  <div>&nbsp;&raquo;&nbsp;<a href="{{ post.id }}" title="{{ post.title }}">{{ post.title }}</a></div>
 	{% endif %}
-						
 {% endfor %}

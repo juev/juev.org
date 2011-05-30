@@ -17,9 +17,11 @@ src="http://static.juev.ru/2011/03/webpagetest_nsync.th.png" class="aligncenter"
 Решением проблемы оказалось использование **метода асинхронной загрузки скриптов**.
 
 Для этого достаточно вместо стандартного включения скрипта в разделе `head` файла
+
 	<script type="text/javascript" src="http://url_to_file.js"></script>
 
 прописать перед закрывающим тегом `</body>` следующий блок:
+
 	<script type="text/javascript">
 		var script = document.createElement("script")
 		script.type = "text/javascript";
@@ -34,6 +36,7 @@ src="http://static.juev.ru/2011/03/webpagetest_sync.th.png" class="aligncenter">
 
 В будущем, при использовании `html5` использовать `async` загрузку будет еще проще. Достаточно будет в разделе `head` прописать
 включение скриптов в виде:
+
 	<script async src="someAsyncScript.js" onload="someInit()"></script> 
 	<script defer src="someDeferScript.js" onload="someInit()"></script> 
 

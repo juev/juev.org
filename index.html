@@ -2,14 +2,17 @@
 layout: default
 title: Life is Open Source
 ---
-{% for post in paginator.posts %}
-<div class=entry-overview>
-  <div class=date><abbr>{{ post.date | date: '%b' }}</abbr> {{ post.date | date: '%d' }}, {{ post.date | date: '%Y' }}</div>
-  <div class=detail>
-    <h1><a href="{{ post.url }}" class=title>{{ post.title }}</a></h1>
-    <div class=summary>{{ post.content | strip_html | truncatewords: 20 }}</div>
-  </div>
-</div>{% endfor %}
-<div class=pagination>
-	{% if paginator.previous_page %}{% if paginator.page == 2 %}<strong><a rel="prev" href="/">&#8592; Prev</a></strong>{% else %}<strong><a rel="prev" href="/page/{{ paginator.previous_page }}">&#8592; Prev</a></strong> {% endif %}{% endif %}{% if paginator.next_page %}<strong><a rel="next" href="/page/{{ paginator.next_page }}">Next &#8594;</a></strong>{% endif %}
-</div> 
+{% assign first_post = site.posts.first %}
+<a href="{{site.posts.first.url}}"><h1 class="title">{{ site.posts.first.title }}</h1></a>
+<div class=date>Published &thinsp;&bull; {{ site.posts.first.date | date: '%d' }} <abbr>{{ site.posts.first.date | date: '%b' }}</abbr> {{ site.posts.first.date | date: '%Y' }}</div>
+<div class="article">
+{{ site.posts.first.content | strip_html | truncatewords: 120 }}
+</div>
+<div class="recent_posts">
+  <h2 class="title">Recent Posts</h2>
+    <div>
+		{% for post in site.posts limit:10 %}	
+			<h3 class="posts"><a href="{{ post.url }}">{{ post.title }}</a></h3>
+		{% endfor %}
+    </div>
+</div>

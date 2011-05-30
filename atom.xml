@@ -7,14 +7,14 @@ layout: nil
  <title>Open Source Life</title>
  <link href="{{site.url}}/atom.xml" rel="self" />
  <link href="{{site.url}}/" />
- <updated>{{ site.time | date_to_xmlschema }}</updated>
+ <updated>{{ site.posts.first.date | date_to_xmlschema }}</updated>
  <id>{{site.url}}/</id>
  <author>
    <name>Denis Evsyukov</name>
    <email>denis@evsyukov.org</email>
  </author>
 
- {% for post in site.posts limit:20 %}
+ {% for post in site.posts limit:4 %}
  <entry>
    <title>{{ post.title }}</title>
    <link href="{{site.url}}{{ post.url }}"/>

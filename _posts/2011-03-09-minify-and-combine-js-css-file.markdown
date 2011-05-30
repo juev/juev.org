@@ -11,6 +11,7 @@ keywords: juicer,ruby,css,javascript,webdesign
 ##Инсталяция
 Для установки программы потребуется наличие установленных [Ruby](http://www.ruby-lang.org/en/ "Ruby") и
 [Rubygems](http://www.rubygems.org/ "Rubygems"). После чего используем следующие команды:
+
     $ gem install juicer
     $ juicer install yui_compressor
     $ juicer install jslint
@@ -20,13 +21,14 @@ keywords: juicer,ruby,css,javascript,webdesign
 
 ##CSS-files
 Для уменьшения CSS-файлов достаточно использовать команду:
+
     $ juicer merge myfile.css myotherfile.css css/third.css
 
 При этом `juicer` поддерживает директиву зависимостей `@import file`, замещая директиву содержимым указанного файла.
 
 ##JavaScript files
-В отличие от CSS-файлов, Javascript не поддерживает зависимости. Для исправления данного недостатка была добавлена директива
-`@depends`, использовать ее очень просто:
+В отличие от CSS-файлов, Javascript не поддерживает зависимости. Для исправления данного недостатка была добавлена директива `@depends`, использовать ее очень просто: 
+
     /**
      * @depends prototype.js
      * @depends widgets/lightbox.js
@@ -39,6 +41,7 @@ keywords: juicer,ruby,css,javascript,webdesign
 `juicer merge` использует [JsLint](http://www.jslint.com/ "JsLint") для проверки JavaScript-файлов на наличие ошибок. Если
 ошибки или предупреждения будут обнаружены, то проц прерывается. Однако его можно будет провести принудительно, если
 использовать опцию `-i`:
+
     $ juicer merge -i app.js
     Verifying app.js with JsLint
       Problems detected
@@ -51,6 +54,7 @@ keywords: juicer,ruby,css,javascript,webdesign
       app.js
 
 Если же вы хотите только проверить javascript-файл, можно использовать вызов:
+
     $ juicer verify app.js
 
 ##Мой опыт

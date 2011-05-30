@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta name="author" content="Evsyukov Denis">
     <title>{{ page.title }} - Open Source Life</title>
-    <link rel="stylesheet" href="{{site.url}}/css/master.css" type="text/css">
+    <link rel="stylesheet" href="/assets/master.css" type="text/css">
     <link rel="alternate" type="application/rss+xml" title="Open Source Life RSS Feed" href="http://feeds.feedburner.com/Juev" />
     <link rel="icon" type="image/ico" href="{{site.url}}/favicon.ico" /> 
     <link rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/" />
@@ -16,21 +16,10 @@
   </head>
 
   <body>
-    <div class=container>
-      <div class=header>
-        <a href="{{site.url}}/">Open Source Life</a>
-      </div>
-      <div class=navigation>
-        <ul>
-          <li><a href="{{site.url}}/arhiv/">archives</a></li>
-          <li><a href="http://denis.evsyukov.org">contact</a></li>
-          <li><a href="http://feeds.feedburner.com/Juev" rel="nofollow" id="rss">rss</a></li>
-        </ul>
-      </div>
-      <div class=body>
+    <div class="container">
+      <div class="wraper">
         {{ content }}
-      </div>
-      <div class=footer>
+      <div class="footer">
         <p>&copy; Copyright 2008-2011 by Denis Evsyukov.</p>
 		<p>Content licensed under the <a href="http://creativecommons.org/licenses/by-nc-sa/3.0/" rel="nofollow" id="license">Creative Commons attribution-noncommercial-sharealike License.</a></p>
         <p>Contact me via <a href="&#109;&#97;&#105;&#108;&#116;&#111;&#58;&#100;&#101;&#110;&#105;&#115;&#64;&#101;&#118;&#115;&#121;&#117;&#107;&#111;&#118;&#46;&#111;&#114;&#103;" rel="nofollow">mail</a>,
@@ -38,18 +27,20 @@
 		  <a href="http://github.com/juev" rel="nofollow">github</a></p>
       <p><a href="/humans.txt">humansTXT</a></p>
       </div>
+      </div>
+      <div class="sidebar">
+        <div id="logo">
+          <a href="/"><img src="http://static.juev.ru/images/calvin.png" alt="main"
+            id="logo" /></a>
+        </div>
+        <ul class="nav">
+          <li><a href="/articles.html">Все статьи</a></li>
+          <li><a href="http://denis.evsyukov.org">Об авторе</a></li>
+          <li><a href="http://feeds.feedburner.com/Juev" rel="nofollow" id="rss">RSS</a></li>
+        </ul>
+      </div>
     </div>
-    <script type="text/javascript">
-	  var _gaq = _gaq || [];
-	  _gaq.push(['_setAccount', 'UA-7957198-2']);
-	  _gaq.push(['_trackPageview']);
-	  (function() {
-	   var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-	   ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-	   var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-	   })();
-    </script>
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js"></script>
-    <script type="text/javascript">$.getScript("{{site.url}}/js/master.js");</script>
+    <script type="text/javascript">$.getScript("/assets/master.js");</script>
   </body>
 </html>
