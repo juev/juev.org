@@ -3,7 +3,6 @@ layout: post
 title: !binary |
   0JjRgdC/0L7Qu9GM0LfQvtCy0LDQvdC40LUg0YHQstGP0LfQutC4IE5naW54
   K0FwYWNoZQ==
-
 ---
 Недолго я баловался со связкой Nginx + PHP-Fpm, надоело мне возиться с rewrite. Довольно долго мучился с настройками rewrite для корректной работы расширения WP Super Cache, а пробовать в работе W3 Total Cache не представлялось возможным, так как сложность правил возрастает на порядок.
 
@@ -51,7 +50,7 @@ KeepAlive Off</code></pre>
 
 Теперь указываем на использование Apache только в качестве локального сервера, для этого изменяем файл <code>/etc/apache2/ports.conf</code>:
 <pre><code>NameVirtualHost *
-Listen 127.0.0.1:8080</pre>
+Listen 127.0.0.1:8080</code></pre>
 Apache настроен, перезапускаем его:
 <pre># service apache2 restart</code></pre>
 Остается настроить Nginx. Приводим файл <code>/etc/nginx/nginx.conf</code> к следующему виду:

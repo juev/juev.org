@@ -29,8 +29,7 @@ end
 desc 'Minify & Combi CSS/JS file'
 task :minify do
 	printHeader "Minify file..."
-	sh "juicer merge -f -o css/master.css -d . _css/style.css _css/highlight.css _css/jquery.fancybox-1.3.4.css _css/ui.totop.css"
-	sh "juicer merge -f -s -o js/master.js _js/jquery.twittertrackbacks-1.0.js _js/noteit.js _js/jquery.fancybox-1.3.4.js _js/jquery.easing-1.3.pack.js _js/easing.js _js/jquery.ui.totop.js _js/main.js"
+  sh "jammit -c _assets.yml -u http://www.juev.ru -o assets"
 end
 
 def globs(source)
@@ -87,10 +86,10 @@ end
 
 task :new do
 	title = ask("Title: ")
-	article = {"title" => title, "layout" => "post", "keywords" => "keywords", "description" => "description", "date" => "{{ post.date }}"}.to_yaml
+	article = {"title" => title, "layout" => "post", "keywords" => "keywords", "description" => "description"}.to_yaml
 	article << "---"
 	fileName = title.gsub(/[\s \( \) \? \[ \] \, \: \< \>]/, '-').downcase
-	path = "_posts/#{Time.now.strftime("%Y-%m-%d")}#{'-' + fileName}.markdown"
+	path = "_posts/#{Time.now.strftime("%Y-%m-%d_%k-%M")}#{'-' + fileName}.markdown"
 	unless File.exist?(path)
 		File.open(path, "w") do |file| 
 			file.write article
