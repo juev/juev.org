@@ -35,7 +35,8 @@ div.footer                  { border-top: 1px dotted #ddd; padding-top: 19px;
                               text-align: center; overflow: hidden; margin-bottom: 18px;}
 div.footer p                { margin: 0; }
 div.article a               { border-bottom: 1px dashed; }
-div.article                 { margin-top: 12px; }
+div.article-index           { margin-top: 10px;
+                              min-height: 196px; }
 /* margins and stuff */
 /*p, div.line-block, ul, ol, pre  { margin: 25px 0 25px 0; }*/
 dt                              { margin: 25px 0 16px 0; padding: 0; }
@@ -227,6 +228,7 @@ div.meta a#evernote.share{
   margin-top: 18px;
   border-top: 1px solid #DEDEDE;
   padding: 23px 0 0 0;
+  text-align: center;
 }
 ul.nav  {
   list-style-type: none;
@@ -243,4 +245,7 @@ div.recent_posts{
 #logo{
   height:165px;
   width:245px;
+}
+div.share{
+  margin-top: 10px;
 }
