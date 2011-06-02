@@ -6,6 +6,6 @@ title: "Chrome: Google Translate"
 
 Недавно Google анонсировал новую возможность в бета-версии Chrome, которая позволяет переводить веб-страницы с использованием своего сервиса Google Translate. А буквально вчера у меня появилась эта самая панель перевода.
 
-<!--more--><a href="http://static.juev.ru/2010/03/Twitter.png"><img class="aligncenter size-medium wp-image-961" title="Twitter" src="http://static.juev.ru/2010/03/Twitter-300x225.png" alt="" width="300" height="225" /></a>
+<a href="http://static.juev.ru/2010/03/Twitter.png" id="lightbox"><img class="aligncenter size-medium wp-image-961" title="Twitter" src="http://static.juev.ru/2010/03/Twitter-300x225.png" alt="" width="300" height="225" /></a>
 
 Попробовал в деле, переводит очень хорошо и довольно быстро. Единственно, пока не разобрался, где находятся настройки данной панели, и можно ли будет ее включить, если сейчас запретить браузеру использовать ее при открытии страниц на других языках.

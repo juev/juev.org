@@ -2,7 +2,7 @@
 layout: post
 title: Last.fm in Ubuntu
 ---
-Уже несколько месяцев, как я активно использую <a href="http://www.lastfm.ru/">Last.fm</a> для скробблинга и прослушивания радиостанций по подписке.
+Уже несколько месяцев, как я активно использую <a href="http://www.lastfm.ru/" rel="nofollow">Last.fm</a> для скробблинга и прослушивания радиостанций по подписке.
 
 На мой взгляд те 3$, которые приходиться нам платить, вполне того стоят. Колоссальные объемы разнообразной музыки, на любой вкус. Плюс возможность сервиса анализировать музыку, которую мы слушаем и предлагать рекомендации, на мой взгляд, очень удачные рекомендации. И получаем просто фантастический сервис!
 
@@ -13,11 +13,12 @@ title: Last.fm in Ubuntu
 Проблемы заключались в том, что при прослушивании радиостанций с last.fm наблюдалось нарушение потока, с попыткой воспроизвести html-файл. Под официальным клиентом такого не было. Некоторое время все таки продолжал использовать Rhythmbox, а вчера с удивлением обнаружил, что есть официальный клиент Last.fm под Linux. 
 
 В Ubuntu установить довольно просто:
-<pre>
-<code>$ wget -q http://apt.last.fm/last.fm.repo.gpg -O- | sudo apt-key add -
-$ sudo echo 'deb http://apt.last.fm/ debian stable' > /etc/apt/sources.list.d/last-fm.list
-$ sudo apt-get update
-$ sudo apt-get install lastfm</code></pre>
+
+    $ wget -q http://apt.last.fm/last.fm.repo.gpg -O- | sudo apt-key add -
+    $ sudo echo 'deb http://apt.last.fm/ debian stable' > /etc/apt/sources.list.d/last-fm.list
+    $ sudo apt-get update
+    $ sudo apt-get install lastfm
+
 Для работы приложения используется <em>qt4</em>, поэтому будут установлены соответствующие библиотеки.
 
 После запуска в трее оказывается значок приложения. И при первом запуске необходимо задать свои учетные данные на сервисе last.fm. 

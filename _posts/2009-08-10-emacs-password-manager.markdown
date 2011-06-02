@@ -16,29 +16,31 @@ gpg - используется для указания того, что данн
 
 Заполняем заголовки нужными нам значениями (по сути формируем таблицу так, как считаем нужным), я выбрал следующие поля и начал заполнять значения:
 
-<a href="http://static.juev.ru/2009/08/emacs-pass-1.png"><img class="size-medium wp-image-529" title="emacs-pass-1" src="http://static.juev.ru/2009/08/emacs-pass-1-300x240.png" alt="Создание таблицы" width="300" height="240" /></a>
+<a href="http://static.juev.ru/2009/08/emacs-pass-1.png" id="lightbox"><img class="aligncenter size-medium wp-image-529" title="emacs-pass-1" src="http://static.juev.ru/2009/08/emacs-pass-1-300x240.png" alt="Создание таблицы" width="300" height="240" /></a>
 
 Режим org-mode очень удобен при создании таблиц тем, что при заполнении таблицы ширина столбцов меняется автоматически (обратите внимание на то, как изменилась ширина при изменении содержимого стобцов):
 
-<a href="http://static.juev.ru/2009/08/emacs-pass-2.png"><img class="size-medium wp-image-530" title="emacs-pass-2" src="http://static.juev.ru/2009/08/emacs-pass-2-300x240.png" alt="Изменение ширины столбцов" width="300" height="240" /></a>
+<a href="http://static.juev.ru/2009/08/emacs-pass-2.png" id="lightbox"><img class="aligncenter size-medium wp-image-530" title="emacs-pass-2" src="http://static.juev.ru/2009/08/emacs-pass-2-300x240.png" alt="Изменение ширины столбцов" width="300" height="240" /></a>
 
 После того, как заполнили таблицу, просто сохраняем файл (Ctrl+x Ctrl+s), на что получаем вопрос об используемом ключе:
 
-<a href="http://static.juev.ru/2009/08/emacs-pass-3.png"><img class="size-medium wp-image-531" title="emacs-pass-3" src="http://static.juev.ru/2009/08/emacs-pass-3-300x240.png" alt="Запрос на использование ключа" width="300" height="240" /></a>
+<a href="http://static.juev.ru/2009/08/emacs-pass-3.png" id="lightbox"><img class="aligncenter size-medium wp-image-531" title="emacs-pass-3" src="http://static.juev.ru/2009/08/emacs-pass-3-300x240.png" alt="Запрос на использование ключа" width="300" height="240" /></a>
 
 В зависимости от того, что мы выберем (ключ или просто нажмем ок), будет использоваться различный тип шифрования. Если будет выбран ключ, то используется асимметричное шифрование. Более строгое и надежное, но возникает сложность в том случае, если срок действия ключа не большой, и в том случае, если собираемся использовать файл с паролями вне рабочей машины.
 
 Если же просто нажать ОК, то будет использоваться симметричное шифрование. В данном случае сложность шифрования зависит только от выбранного пароля.
 
-<a href="http://static.juev.ru/2009/08/emacs-pass-4.png"><img class="size-medium wp-image-532" title="emacs-pass-4" src="http://static.juev.ru/2009/08/emacs-pass-4-300x240.png" alt="Ввод пароля" width="300" height="240" /></a>
+<a href="http://static.juev.ru/2009/08/emacs-pass-4.png" id="lightbox"><img class="aligncenter size-medium wp-image-532" title="emacs-pass-4" src="http://static.juev.ru/2009/08/emacs-pass-4-300x240.png" alt="Ввод пароля" width="300" height="240" /></a>
 
 После ввода пароля файл сохраняется на диске уже в закодированном виде. В активном буфере будет все так же отображаться наша таблица. При попытке открытия данного файла сразу будет спрашиваться пароль, который использовался при шифровании.
 
 Далее возможно два варианта: или введенный пароль будет кешироваться и в следующий раз при открытии данного файла пароль уже запрашиваться не будет (в течение текущей сессии), или же пароль будет спрашиваться каждый раз. Регулировать данное поведение можно устанавливая значение переменной <em>epa-file-cache-passphrase-for-symmetric-encryption</em> в файле конфигурации емакса:
-<pre>(setq epa-file-cache-passphrase-for-symmetric-encryption t)</pre>
+
+    (setq epa-file-cache-passphrase-for-symmetric-encryption t)
 
 в данном случае пароль будет кэшироваться, а если
-<pre>(setq epa-file-cache-passphrase-for-symmetric-encryption nil)</pre>
+
+    (setq epa-file-cache-passphrase-for-symmetric-encryption nil)
 
 то пароль не сохраняется... Естественно, в традициях безопасности пароль лучше всего не сохранять, каждый раз спрашивая его у пользователя.
 

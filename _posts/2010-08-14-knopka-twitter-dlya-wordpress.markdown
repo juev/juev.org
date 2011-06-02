@@ -8,14 +8,18 @@ title: !binary |
 
 Однако изменять шаблон для того, чтобы разместить кнопочку очень не хочется. И многие приняли решение дожидаться готового расширения. Ждать пришлось недолго, уже 13 августа, на следующий день, в каталоге расширений Wordpress появилось соответствующее расширение.
 
-<!--more-->Называется оно <a href="http://wordpress.org/extend/plugins/wp-twitter-retweet-button/">WP-Twitter Retweet Button</a>, скачать можно со страницы wordpress.org, либо поиском по каталогу расширений в самом Wordpress.
+Называется оно <a href="http://wordpress.org/extend/plugins/wp-twitter-retweet-button/" rel="nofollow">WP-Twitter Retweet Button</a>, скачать можно со страницы wordpress.org, либо поиском по каталогу расширений в самом Wordpress.
 
 После установки предоставляется возможность небольшой настройки расширения.
 
-<a href="http://static.juev.ru/2010/08/wp-twitter-button.png"><img class="aligncenter size-medium wp-image-1127" title="wp-twitter-button" src="http://static.juev.ru/2010/08/wp-twitter-button-300x98.png" alt="" width="300" height="98" /></a>Можно задать, где отображать кнопку, на всех страницах, либо только на страницах статей, задается позиция и стиль отображения кнопки (по умолчанию используется расположение сверху справа и обычный вид кнопки) и можно задать имя твипользователя, сообщение которого будет ретвититься.
+<a href="http://static.juev.ru/2010/08/wp-twitter-button.png" id="lightbox"><img class="aligncenter size-medium wp-image-1127" title="wp-twitter-button" src="http://static.juev.ru/2010/08/wp-twitter-button-300x98.png" alt="" width="300" height="98" /></a>
+
+Можно задать, где отображать кнопку, на всех страницах, либо только на страницах статей, задается позиция и стиль отображения кнопки (по умолчанию используется расположение сверху справа и обычный вид кнопки) и можно задать имя твипользователя, сообщение которого будет ретвититься.
 
 По умолчанию используется следующий вид кнопки:
-<p style="text-align: center;"><img class="aligncenter size-full wp-image-1128" title="button" src="http://static.juev.ru/2010/08/button.png" alt="" width="86" height="80" /></p>
+
+<img class="aligncenter size-full wp-image-1128" title="button" src="http://static.juev.ru/2010/08/button.png" alt="" width="86" height="80" />
+
 Показывается количество ретвитов данной записи и ниже располагается сама кнопка. Если кликнуть мышкой по полю количества ретвитов, то производиться переход на страницу статистики по данной записи. Показываются все сообщения пользователей, которые осуществили ретвит. Довольно удобно и информативно.
 Сам код кнопки небольшой и почти не сказывается на скорости загрузки страницы.
 

@@ -4,25 +4,24 @@ title: !binary |
   0KLQtdGB0YLQuNGA0L7QstCw0L3QuNC1IENvbW9kbyBGaXJld2FsbA==
 
 ---
-Озадачился проблемой безопасности при работе в Интернете. И как раз встретил очень много обзоров <a href="http://ru.wikipedia.org/wiki/Comodo_Firewall">Comodo Firewall</a>. В которых указывалась беспрецедентная эффективность работы, сравнимая только с платными продуктами и указывалось наличие бесплатной версии.
+Озадачился проблемой безопасности при работе в Интернете. И как раз встретил очень много
+обзоров <a href="http://ru.wikipedia.org/wiki/Comodo_Firewall" rel="nofollow">Comodo Firewall</a>. В которых указывалась беспрецедентная эффективность работы, сравнимая только с платными продуктами и указывалось наличие бесплатной версии.
 
 Естественно захотелось посмотреть, что это за фаервол такой, что Outpost оставляет позади во многих тестах.
 
-Пошел на официальный сайт <a href="http://personalfirewall.comodo.com">personalfirewall.comodo.com</a>, скачал файл установки в 39 мегабайт, который судя по описанию должен содержать три модуля: сам фаервол, антивирус и модуль проактивной защиты.
+Пошел на официальный сайт <a href="http://personalfirewall.comodo.com" rel="nofollow">personalfirewall.comodo.com</a>, скачал файл установки в 39 мегабайт, который судя по описанию должен содержать три модуля: сам фаервол, антивирус и модуль проактивной защиты.
 
 Установка прошла без особых проблем. При этом, я устанавливал только сам фаервол и модуль проактивной защиты, так как об антивирусе отзывались не очень хорошо, и к тому же у меня уже стоял на тот момент avast. После перезагрузки компьютера фаервол показал свою работоспособность, вывалив кучу всплывающих окошек с вопросом, что делать с работающей программой, которая просит доступа в сеть. Таким образом, ответив на вопросы, получил список программ, которым дозволено работать с интернетом.
 
-<!--more-->
-
-<img class="alignleft" style="display: block; margin: 5px; border: 0pt none;" title="image" src="http://static.juev.ru/2010/01/image.png" border="0" alt="image" width="244" height="170" />
+<img class="aligncenter" style="display: block; margin: 5px; border: 0pt none;" title="image" src="http://static.juev.ru/2010/01/image.png" border="0" alt="image" width="244" height="170" />
 
 Настройка фаервола не тривиальна, но все таки довольно проста. Преимущество заключается так же в наличие русского интерфейса. Для тестирования я оставил все настройки в значении по умолчанию, проведя только обучение на работающих программах.
 
 Тестирование проводил на целом ряде online сервисов по тестированию фаерволов:
 <ol>
-	<li><a href="http://scan.sygate.com/">http://scan.sygate.com/</a></li>
-	<li><a href="http://www.pcflank.com/">http://www.pcflank.com/</a></li>
-	<li><a title="https://www.grc.com/x/ne.dll?bh0bkyd2" href="https://www.grc.com/x/ne.dll?bh0bkyd2">https://www.grc.com/x/ne.dll?bh0bkyd2</a></li>
+	<li><a href="http://scan.sygate.com/" rel="nofollow">http://scan.sygate.com/</a></li>
+	<li><a href="http://www.pcflank.com/" rel="nofollow">http://www.pcflank.com/</a></li>
+	<li><a href="https://www.grc.com/x/ne.dll?bh0bkyd2" rel="nofollow">https://www.grc.com/x/ne.dll?bh0bkyd2</a></li>
 </ol>
 Тестирование показало отличную защиту! Видать обзоры писались не зря!
 

@@ -7,44 +7,50 @@ title: !binary |
 Как уже неоднократно мне говорил Григорий (он же OM), для поддержания системы в актуальном состоянии достаточно обновлять только те несколько программ, которые чаще всего используешь. Потихоньку начинаю понимать данную философию. И с переходом на Ubuntu озадачился сборкой новых версий программ.
 
 Систему нужно подготовить к сборке, для этого  устанавливаем следующие пакеты:
-<pre><code>$ sudo aptitude install dpkg-dev autoconf automake</code></pre>
+
+    $ sudo aptitude install dpkg-dev autoconf automake
 
 При этом желательно устанавливать рекомендуемые пакеты, как зависимости, чтобы подтянулись все остальные, нужные для работы, пакеты. После чего необходимо в <em>~/.bashrc</em> добавить следующие строки:
-<pre><code>export DEBFULLNAME='Denis Evsyukov'
-export DEBEMAIL=mymail@gmail.com</code></pre>
+
+    export DEBFULLNAME='Denis Evsyukov'
+    export DEBEMAIL=mymail@gmail.com
 
 В принципе это не обязательное условие, но исходя из значений данных переменных формируется информация о пакете, и ищется ключ для подписи пакета.
-<!--more-->
+
 Теперь для примера рассмотрим сборку Midnight Commander версии 4.7.0-pre4. В темповой директории создаем отдельную папку для работы:
-<pre><code>$ mkdir ~/Temp/mc</code></pre>
+
+    $ mkdir ~/Temp/mc
 
 И загружаем в нее <a href="http://www.midnight-commander.org/downloads/15">исходники</a> с официального сайта. Распаковываем их, архив с исходниками оставляем на месте. Читаем файл INSTALL, где обычно указываются пакеты, необходимые для сборки, и если их в системе нет, устанавливаем. После чего выполняем следующие команды:
-<pre><code>~/Temp/mc$ cd mc-4.7.0-pre4
-~/Temp/mc/mc-4.7.0-pre4$ dh_make -f ../mc-4.7.0-pre4.tar.bz2
-~/Temp/mc/mc-4.7.0-pre4$ vim debian/control
-~/Temp/mc/mc-4.7.0-pre4$ rm debian/*.ex
-~/Temp/mc/mc-4.7.0-pre4$ dpkg-buildpackage -rfakeroot</code></pre>
+
+    ~/Temp/mc$ cd mc-4.7.0-pre4
+    ~/Temp/mc/mc-4.7.0-pre4$ dh_make -f ../mc-4.7.0-pre4.tar.bz2
+    ~/Temp/mc/mc-4.7.0-pre4$ vim debian/control
+    ~/Temp/mc/mc-4.7.0-pre4$ rm debian/*.ex
+    ~/Temp/mc/mc-4.7.0-pre4$ dpkg-buildpackage -rfakeroot
 
 Первой командой переходим в директорию с исходниками. Второй командой подготавливаем служебные файлы, здесь обязательно указывать архив с исходными файлами, которые распаковывали. Во время исполнения данной команды нас спросят, что именно мы собираемся собирать, в нашем случае мы собираем одиночный пакет, поэтому жмем <strong>s</strong> и затем после просмотра значений, жмем <strong>Enter</strong>. Третьей командой необходимо изменить файл debian/control, приводим его примерно к следующему виду:
-<pre><code>Source: mc
-Section: utils
-Priority: extra
-Maintainer: Denis Evsyukov &lt;mymail@gmail.com&gt;
-Build-Depends: debhelper (&gt;= 7), autotools-dev
-Standards-Version: 3.8.1
-Homepage: http://www.juev.ru
 
-Package: mc
-Architecture: amd64
-Depends: $&#123;shlibs:Depends}, $&#123;misc:Depends}
-Description: &lt;insert up to 60 chars description&gt;
- &lt;insert long description, indented with spaces&gt;</code></pre>
+    Source: mc
+    Section: utils
+    Priority: extra
+    Maintainer: Denis Evsyukov <mymail@gmail.com>
+    Build-Depends: debhelper (>= 7), autotools-dev
+    Standards-Version: 3.8.1
+    Homepage: http://www.juev.ru
+
+    Package: mc
+    Architecture: amd64
+    Depends: ${shlibs:Depends}, ${misc:Depends}
+    Description: <insert up to 60 chars description>
+     <insert long description, indented with spaces>
 
 При использовании редактора vim, ошибки будут подсвечиваться красным, что довольно удобно. Поле <em>Maintainer</em> заполняется исходя из значений переменных, которые мы задали в файле <em>~/.bashrc</em> чуть ранее. Изменяем поля Section, прописывая в какой группе программ будет располагаться наш пакет, задаем домашнюю страницу, если она есть, обязательно меняем архитектуру с any на свою (x86 или amd64), иначе сборка не будет завершена корректно и последним шагом задаем описание пакета, в примере оно не заполнено.
 
 Закрываем файл, сохранив изменения и удаляем в папке <em>debian</em> все файлы c расширением <strong>ex</strong>, они для сборки не нужны. Если это необходимо, можно поправить файл <em>debian/rules</em>, прописав нужные опции в строке с <em>configure</em>. И завершающим шагом собираем пакет, дав последнюю команду из приведенного выше списка.
 
 Результатом наших действий является deb-пакет, который будет располагаться в родительской директории, в нашем случае это ~/Temp/mc. Просто устанавливаем его, для того, чтобы начать использовать программу:
-<pre><code>~/Temp/mc$ sudo dpkg -i mc_4.7.0-pre4-1_amd64.deb</code></pre>
+
+    ~/Temp/mc$ sudo dpkg -i mc_4.7.0-pre4-1_amd64.deb
 
 Собственно все! Единственно, что мне так и не удалось сделать - это подписать пакет своим ключом и объяснить системе, что установленный пакет является более новым, чем тот, что располагается в репозитории. Ключ он пока просто не находит, хотя gpg работает с ним без проблем, а с пакетным менеджером я еще не разбирался так плотно.

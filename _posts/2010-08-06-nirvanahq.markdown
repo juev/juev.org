@@ -5,19 +5,19 @@ title: !binary |
   vtC4INC00LXQu9Cw
 
 ---
-Сегодня на сайте lifehacker.com вышла статья <a href="http://lifehacker.com/5605445/nirvana-is-a-stylish-new-gtd-task-manager-and-weve-got-invites">Nirvana is a Stylish, New GTD Task Manager (and We've Got Invites)</a>. Дана рекомендация по использованию онлайн списков todo с помощью сервиса Nirvana, что сейчас находиться в закрытом beta-тесте. И были даны инвайт-коды для регистрации.
+Сегодня на сайте lifehacker.com вышла статья <a href="http://lifehacker.com/5605445/nirvana-is-a-stylish-new-gtd-task-manager-and-weve-got-invites" rel="nofollow">Nirvana is a Stylish, New GTD Task Manager (and We've Got Invites)</a>. Дана рекомендация по использованию онлайн списков todo с помощью сервиса Nirvana, что сейчас находиться в закрытом beta-тесте. И были даны инвайт-коды для регистрации.
 
 Вопрос управления времени меня очень интересует. И я не прекращаю поисков оптимального клиента своих списков задач. Естественно я воспользовался инвайт-кодом и провел регистрацию.
 
-Сама регистрация в <a href="http://www.nirvanahq.com/">Nirvana</a> проходит в два этапа. На первом необходимо ввести свой адрес электронной почты и инвайт-код ( <em>lifehack </em>). После чего в почтовый ящик попадает письмо со ссылкой активации, после чего уже предлагается задать минимальную информацию о себе, в виде имени и фамилии и определить пароль.
+Сама регистрация в <a href="http://www.nirvanahq.com/" rel="nofollow">Nirvana</a> проходит в два этапа. На первом необходимо ввести свой адрес электронной почты и инвайт-код ( <em>lifehack </em>). После чего в почтовый ящик попадает письмо со ссылкой активации, после чего уже предлагается задать минимальную информацию о себе, в виде имени и фамилии и определить пароль.
 
 Первое впечатление, после того, как открылся интерфейс сервиса - полное подобие программы Things, та же организация сайдбара, те же пункты. В целом очень красиво!
 
-<a href="http://static.juev.ru/2010/08/nirvana.png"><img class="size-medium wp-image-1098" title="Nirvana" src="http://static.juev.ru/2010/08/nirvana-300x246.png" alt="Nirvana" width="300" height="246" /></a>
+<a href="http://static.juev.ru/2010/08/nirvana.png" id="lightbox"><img class="aligncenter size-medium wp-image-1098" title="Nirvana" src="http://static.juev.ru/2010/08/nirvana-300x246.png" alt="Nirvana" width="300" height="246" /></a>
 
 Оптимально используются горячие клавиши, к примеру для того, чтобы добавить новую задачу в inbox достаточно нажать <strong>i</strong>. И появляется всплывающее окошко добавления новой задачи.
 
-<a href="http://static.juev.ru/2010/08/nirvana-add.png"><img class="aligncenter size-medium wp-image-1099" title="nirvana-add" src="http://static.juev.ru/2010/08/nirvana-add-300x246.png" alt="" width="300" height="246" /></a>
+<a href="http://static.juev.ru/2010/08/nirvana-add.png" id="lightbox"><img class="aligncenter size-medium wp-image-1099" title="nirvana-add" src="http://static.juev.ru/2010/08/nirvana-add-300x246.png" alt="" width="300" height="246" /></a>
 
 При добавлении тегов используется функции автодополнения, при начале набора будут отображаться возможные варианты, и производиться автоматическое заполнение при использовании клавиши Tab.
 
@@ -35,4 +35,4 @@ title: !binary |
 
 Дал немного скомканное описание возможностей, но лучше посмотреть на все это своими глазами, чем слушать кого-то. Я довольно давно уже использую в своей работе сервис RTM. Достаточно функционален и удобен, если его немного подстроить под себя. А вот Nirvana - это просто нечто! У меня пока самые положительные эмоции. И красиво и очень функционально! Все элементы находятся на своих местах, управлять задачами очень просто.
 
-Если вы заинтересованы в организации своих дел и вы в курсе, что такое GTD, настоятельно рекомендую к использованию <a href="http://www.nirvanahq.com/">Nirvana</a>!
+Если вы заинтересованы в организации своих дел и вы в курсе, что такое GTD, настоятельно рекомендую к использованию <a href="http://www.nirvanahq.com/" rel="nofollow">Nirvana</a>!

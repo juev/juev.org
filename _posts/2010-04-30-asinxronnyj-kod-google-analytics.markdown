@@ -12,40 +12,43 @@ Google помимо предоставления своих сервисов, т
 Так же есть возможность устанавливать определенные цели и отслеживать эффективность тех или иных технологий, служащих повышению трафика. Не использовать GA - на мой взгляд большая ошибка любого веб-мастера.
 
 И вот, не так давно, Google представила общественности новый код GA, который позволяет работать асинхронно. Рассмотрим, в чем его преимущество?
-<!--more-->
-Сама по себе установка кода GA довольно проста. Необходимо пройти регистрацию в системе <a href="http://www.google.com/analytics/">www.google.com/analytics</a> и добавить свой ресурс в систему. После чего взять сгенерированный код скрипта и разместить его на страницах своего сайта. Сделать это намного проще, если используется какой-либо блого-движок.
+
+Сама по себе установка кода GA довольно проста. Необходимо пройти регистрацию в системе <a
+href="http://www.google.com/analytics/" rel="nofollow">www.google.com/analytics</a> и добавить свой ресурс в систему. После чего взять сгенерированный код скрипта и разместить его на страницах своего сайта. Сделать это намного проще, если используется какой-либо блого-движок.
 
 Для wordpress можно установить отдельный плагин (рекомендовать конкретный не буду, так как их довольно много). Или же просто изменить файлы шаблона, добавив код в заголовок генерируемого html-документа или же в конец файла.
 
 До момента выпуска асинхронного кода, скрипт выполнялся последовательно вслед за другими скриптами на странице (после загрузки соответствующих элементов). Что, естественно, сказывалось на времени загрузки страниц.
 
 Обычный код скрипта, который до сих пор предлагают для установки на сайте GA, выглядит вот так:
-<pre><code>&lt;script type="text/javascript"&gt;
-var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
-document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
-&lt;/script&gt;
 
-&lt;script type="text/javascript"&gt;
-try &#123;
-var pageTracker = _gat._getTracker("UA-XXXXX-X");
-pageTracker._trackPageview();
-} catch(err) &#123;}&lt;/script&gt;
-&lt;script type="text/javascript"&gt;var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));&lt;/script&gt;&lt;script type="text/javascript"&gt;try &#123;var pageTracker = _gat._getTracker("UA-7957198-2");pageTracker._trackPageview();} catch(err) &#123;}&lt;/script&gt;</code></pre>
+    <script type="text/javascript">
+    var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+    document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+    </script>
+
+    <script type="text/javascript">
+    try {
+    var pageTracker = _gat._getTracker("UA-XXXXX-X");
+    pageTracker._trackPageview();
+    } catch(err) {}</script>
+    <script type="text/javascript">var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));</script><script type="text/javascript">try {var pageTracker = _gat._getTracker("UA-7957198-2");pageTracker._trackPageview();} catch(err) {}</script>
 
 На странице кода отслеживания появилась еще ссылка для выбора асинхронного кода:
-<pre><code>&lt;script type="text/javascript"&gt;
 
-  var _gaq = _gaq || [];
-  _gaq.push(['_setAccount', 'UA-XXXXX-X']);
-  _gaq.push(['_trackPageview']);
+    <script type="text/javascript">
 
-  (function() &#123;
-    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-  })();
+      var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-XXXXX-X']);
+      _gaq.push(['_trackPageview']);
 
-&lt;/script&gt;</code></pre>
+      (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+      })();
+
+    </script>
 
 Как видно, код представляет собой только один скрипт, а не как раньше два. И сам код значительно сократился.
 

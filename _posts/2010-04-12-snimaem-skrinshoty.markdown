@@ -8,19 +8,17 @@ title: !binary |
 
 Многие из них предоставляют дополнительные возможности, типа выгрузки изображения в интернет-сервисы после создания снимка или редактирования полученного изображения. Мне же хотелось найти бесплатное решение, которое просто позволяет сохранять снимки экрана по нажатию горячей клавиши.
 
-<!--more-->
-
-Перебрав несколько вариантов, остановился на <a href="http://www.gadwin.com/download/">Gadwin PrinScreen</a>. Программа бесплатна, имеет целый ряд настроек, автоматически запускается при старте системы и висит в трее. В памяти занимает от силы чуть более 2 мегабайт.
+Перебрав несколько вариантов, остановился на <a href="http://www.gadwin.com/download/" rel="nofollow">Gadwin PrinScreen</a>. Программа бесплатна, имеет целый ряд настроек, автоматически запускается при старте системы и висит в трее. В памяти занимает от силы чуть более 2 мегабайт.
 
 Основные возможности программы можно оценить исходя из снимков программы:
 
-<a href="http://static.juev.ru/2010/04/gadwin_11.png"><img class="aligncenter size-medium wp-image-984" title="gadwin_1" src="http://static.juev.ru/2010/04/gadwin_11-300x239.png" alt="" width="300" height="239" /></a>
+<a href="http://static.juev.ru/2010/04/gadwin_11.png" id="lightbox"><img class="aligncenter size-medium wp-image-984" title="gadwin_1" src="http://static.juev.ru/2010/04/gadwin_11-300x239.png" alt="" width="300" height="239" /></a>
 
-<a href="http://static.juev.ru/2010/04/gadwin_22.png"><img class="aligncenter size-medium wp-image-986" title="gadwin_2" src="http://static.juev.ru/2010/04/gadwin_22-300x240.png" alt="" width="300" height="240" /></a>
+<a href="http://static.juev.ru/2010/04/gadwin_22.png" id="lightbox"><img class="aligncenter size-medium wp-image-986" title="gadwin_2" src="http://static.juev.ru/2010/04/gadwin_22-300x240.png" alt="" width="300" height="240" /></a>
 
-<a href="http://static.juev.ru/2010/04/gadwin_3.png"><img class="aligncenter size-medium wp-image-982" title="gadwin_3" src="http://static.juev.ru/2010/04/gadwin_3-300x240.png" alt="" width="300" height="240" /></a>
+<a href="http://static.juev.ru/2010/04/gadwin_3.png" id="lightbox"><img class="aligncenter size-medium wp-image-982" title="gadwin_3" src="http://static.juev.ru/2010/04/gadwin_3-300x240.png" alt="" width="300" height="240" /></a>
 
-<a href="http://static.juev.ru/2010/04/gadwin_4.png"><img class="aligncenter size-medium wp-image-983" title="gadwin_4" src="http://static.juev.ru/2010/04/gadwin_4-300x240.png" alt="" width="300" height="240" /></a>
+<a href="http://static.juev.ru/2010/04/gadwin_4.png" id="lightbox"><img class="aligncenter size-medium wp-image-983" title="gadwin_4" src="http://static.juev.ru/2010/04/gadwin_4-300x240.png" alt="" width="300" height="240" /></a>
 
 В настройках можно менять горячую клавишу, по которой производиться снятие скриншота, можно указать, что именно фотографировать, куда складывать результат. Есть возможность сохранения в буфер обмена, как при обычном PrintScreen, так и сразу в файл, при этом указывается нужная папка и имя результирующего файла.
 

@@ -7,24 +7,25 @@ title: xmonad & mplayer
 Да, в xmonad это оказалось проблемой. Если использовать конфигурацию по умолчанию. Проявляется она как красный бордюр по периметру всего экрана, который очень сильно отвлекает внимание от фильма, который смотришь в данный момент времени.
 
 Естественно, попробовал для начала способ, который создан непосредственно разработчиками, то есть использование расширения NoBorder. И с течением времени стал задумываться о покупке новой видеокарты, потому что надоело то, что при переходе от одного рабочего стола на другой мелькал сам рабочий стол, мерцание очень надоедливое и выглядит как тормоза видеосистемы. Продолжалось это до тех пор, пока Bosha не надоумил попробовать xmonad в умолчательной конфигурации, все тормоза пропали. В результате аудита кода выяснилось, что причиной тормозов является именно это расширение, которое убирает бордюр с приложений, развернутых на весь экран.
-<!--more-->
+
 Пришлось отказаться от его использования и искать другие пути. Попробовал задать черный цвет бордюра. В полноэкранном виде все замечательно, ничто уже не отвлекает от просмотра фильма, но вот в тайловом режиме, когда открыто несколько терминалов, определить, где что становиться проблематично, так как все сливается в одну кучу...
 
 В конце концов, в результате экспериментов нашел удачную конфигурацию. Заключается она в том, что бордюр активного окна делаем черным, а вот бордюр неактивного окна делаем светлым. Тогда и фильмы смотреть можно, и по цвету легко различаются окна в тайловом режиме.
-<pre><code>myNormalBorderColor  = "#AEB2C1"
-myFocusedBorderColor = "#000000"
-myBorderWidth   = 1
-main = do
-     xmproc &lt;- spawnPipe "xmobar"
-     xmonad $ withUrgencyHook NoUrgencyHook $ defaultConfig &#123;
-         terminal = myTerminal
-         , normalBorderColor = myNormalBorderColor
-         , focusedBorderColor = myFocusedBorderColor
-         , borderWidth        = myBorderWidth
-         }< .code></code></pre>
+
+    myNormalBorderColor  = "#AEB2C1"
+    myFocusedBorderColor = "#000000"
+    myBorderWidth   = 1
+    main = do
+         xmproc &lt;- spawnPipe "xmobar"
+         xmonad $ withUrgencyHook NoUrgencyHook $ defaultConfig &#123;
+             terminal = myTerminal
+             , normalBorderColor = myNormalBorderColor
+             , focusedBorderColor = myFocusedBorderColor
+             , borderWidth        = myBorderWidth
+             }
 
 Это кусочек конфига, в котором это реализовано.
 
 Выглядит все это в тайловом режиме вот так:
 
-<a href="http://static.juev.ru/2009/11/2009-11-16-162636_1280x1024_scrot.png"><img class="size-medium wp-image-637" title="xmonad" src="http://static.juev.ru/2009/11/2009-11-16-162636_1280x1024_scrot-300x240.png" alt="xmonad" width="300" height="240" /></a>
+<a href="http://static.juev.ru/2009/11/2009-11-16-162636_1280x1024_scrot.png" id="lightbox"><img class="aligncenter size-medium wp-image-637" title="xmonad" src="http://static.juev.ru/2009/11/2009-11-16-162636_1280x1024_scrot-300x240.png" alt="xmonad" width="300" height="240" /></a>

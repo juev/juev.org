@@ -9,20 +9,24 @@ title: !binary |
 
 Теперь он загружается в три раза быстрее, чем раньше, при этом повторные открытия страниц тратят минимум трафика и осуществляются еще быстрее. Расскажу, как я этого добился.
 
-Во-первых, однозначного ответа дать невозможно. В каждом случае приходиться анализировать сам процесс отдачи страниц сервером, и на основании этого анализа уже принимать определенные решения. Для анализа используем уже упоминаемый мной ресурс <a href="http://www.webpagetest.org">www.webpagetest.org</a>. В результате получаем графики загрузок, обращений к серверу, на основании которых становиться понятным, что именно расходует много времени, какой компонент и в принципе уже становиться ясно, что нужно делать.
-<!--more-->
+Во-первых, однозначного ответа дать невозможно. В каждом случае приходиться анализировать
+сам процесс отдачи страниц сервером, и на основании этого анализа уже принимать
+определенные решения. Для анализа используем уже упоминаемый мной ресурс <a
+href="http://www.webpagetest.org" rel="nofollow">www.webpagetest.org</a>. В результате получаем графики загрузок, обращений к серверу, на основании которых становиться понятным, что именно расходует много времени, какой компонент и в принципе уже становиться ясно, что нужно делать.
+
 Напоминаю, до оптимизации ситуация выглядела следующим образом:
 
 Первая загрузка (с чистым кэшем браузера) занимала 8.941s и на графиках выглядела так:
 
-<a href="http://static.juev.ru/2009/12/First-a.png"><img class="aligncenter size-medium wp-image-667" title="Обзор" src="http://static.juev.ru/2009/12/First-a-300x70.png" alt="Обзор" width="300" height="70" /></a>
-<a href="http://static.juev.ru/2009/12/First.png"><img class="aligncenter size-medium wp-image-668" title="First" src="http://static.juev.ru/2009/12/First-300x291.png" alt="First" width="300" height="291" /></a>
+<a href="http://static.juev.ru/2009/12/First-a.png" id="lightbox"><img class="aligncenter size-medium wp-image-667" title="Обзор" src="http://static.juev.ru/2009/12/First-a-300x70.png" alt="Обзор" width="300" height="70" /></a>
+
+<a href="http://static.juev.ru/2009/12/First.png" id="lightbox"><img class="aligncenter size-medium wp-image-668" title="First" src="http://static.juev.ru/2009/12/First-300x291.png" alt="First" width="300" height="291" /></a>
 
 Повторная загрузка проходила быстрее, то есть 3.035s и на графиках выглядела так:
 
-<a href="http://static.juev.ru/2009/12/Two-a.png"><img class="aligncenter size-medium wp-image-669" title="Two a" src="http://static.juev.ru/2009/12/Two-a-300x33.png" alt="Two a" width="300" height="33" /></a>
+<a href="http://static.juev.ru/2009/12/Two-a.png" id="lightbox"><img class="aligncenter size-medium wp-image-669" title="Two a" src="http://static.juev.ru/2009/12/Two-a-300x33.png" alt="Two a" width="300" height="33" /></a>
 
-<a href="http://static.juev.ru/2009/12/Two.png"><img class="aligncenter size-medium wp-image-670" title="Two" src="http://static.juev.ru/2009/12/Two-300x289.png" alt="Two" width="300" height="289" /></a>
+<a href="http://static.juev.ru/2009/12/Two.png" id="lightbox"><img class="aligncenter size-medium wp-image-670" title="Two" src="http://static.juev.ru/2009/12/Two-300x289.png" alt="Two" width="300" height="289" /></a>
 
 Рисунки пришлось разбивать на две части, заголовок и тело, ввиду того, что на экране таблицы не вмещались.
 
@@ -30,13 +34,13 @@ title: !binary |
 
 Первое, что сделал, это выключил те плагины, что тратили время, единственно, оставил в работе WP-SpamFree, просто потому, что альтернативы ему нет. Избавился от всех вариантов статистики, жить стало легче. Затем нашел способ задействовать кеш браузера более полно, для это пришлось прописывать определенные значения в файл .htaccess на сервере:
 
-<pre><code>FileETag MTime Size
-&lt;ifmodule mod_expires.c&gt;
-   &lt;filesmatch "\.(jpg|gif|png|css|js)$"&gt;
-     ExpiresActive on
-     ExpiresDefault "access plus 1 year"
-   &lt;/filesmatch&gt;
-&lt;/ifmodule&gt;</code></pre>
+    FileETag MTime Size
+    &lt;ifmodule mod_expires.c&gt;
+       &lt;filesmatch "\.(jpg|gif|png|css|js)$"&gt;
+         ExpiresActive on
+         ExpiresDefault "access plus 1 year"
+       &lt;/filesmatch&gt;
+    &lt;/ifmodule&gt;
 
 В результате стало видна еще одна проблема, причиной которой была выбранная тема. Для отрисовки заголовков использовался скрипт cufon, который во-первых весит порядка 300 килобайт, и во-вторых довольно долго загружался, отказываясь при этом кешироваться. Выключил в параметрах темы использование данного скрипта. Все изображения, которые подгружались со сторонних серверов перенес к себе.
 
@@ -44,10 +48,10 @@ title: !binary |
 
 Первая загрузка занимает 1.790s  и на графиках выглядит так:
 
-<a href="http://static.juev.ru/2009/12/First-optim.png"><img class="aligncenter size-medium wp-image-671" title="First optim" src="http://static.juev.ru/2009/12/First-optim-300x289.png" alt="First optim" width="300" height="289" /></a>
+<a href="http://static.juev.ru/2009/12/First-optim.png" id="lightbox"><img class="aligncenter size-medium wp-image-671" title="First optim" src="http://static.juev.ru/2009/12/First-optim-300x289.png" alt="First optim" width="300" height="289" /></a>
 
 Последующие загрузки 0.994s и график:
-<a href="http://static.juev.ru/2009/12/Two-optim.png"><img class="aligncenter size-medium wp-image-672" title="Two optim" src="http://static.juev.ru/2009/12/Two-optim-300x93.png" alt="Two optim" width="300" height="93" /></a>
+<a href="http://static.juev.ru/2009/12/Two-optim.png" id="lightbox"><img class="aligncenter size-medium wp-image-672" title="Two optim" src="http://static.juev.ru/2009/12/Two-optim-300x93.png" alt="Two optim" width="300" height="93" /></a>
 
 То есть первое обращение к блоге теперь занимает порядка 2 секунд, а каждое последующее не более одной секунды. То есть в результате анализа были выявлены слабые места и скорость загрузки изменилась примерно в 3-4 раза.
 

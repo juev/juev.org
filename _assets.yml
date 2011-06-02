@@ -12,10 +12,6 @@ stylesheets:
 
 javascripts:
   master:
-    - _js/jquery.twittertrackbacks-1.0.js 
-    - _js/noteit.js 
     - _js/jquery.fancybox-1.3.4.js 
-    - _js/jquery.easing-1.3.pack.js 
-    - _js/easing.js 
     - _js/jquery.ui.totop.js 
     - _js/main.js

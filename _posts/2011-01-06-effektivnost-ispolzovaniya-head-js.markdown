@@ -5,15 +5,15 @@ title: !binary |
   0LDQvdC40Y8gSGVhZC5KUw==
 
 ---
-Недавно познакомился со скриптом <a href="http://headjs.com/">Head.JS</a>, и в последнее время стараюсь использовать его во всех своих проектах. О том, как работать с данным скриптом я описывал в статье <a href="http://www.juev.ru/2010/12/25/use-head-js/">Использование Head.JS</a>. Но тогда не смог провести тестов результативности использования данного скрипта. 
+Недавно познакомился со скриптом <a href="http://headjs.com/" rel="nofollow">Head.JS</a>, и в последнее время стараюсь использовать его во всех своих проектах. О том, как работать с данным скриптом я описывал в статье <a href="/2010/12/25/use-head-js/">Использование Head.JS</a>. Но тогда не смог провести тестов результативности использования данного скрипта. 
 
 Теперь же, я провел исследование и спешу поделиться результатами.
 
-Все эксперименты проводились на одном и том же сайте <a href="http://juev.info">juev.info</a>. Измерение скорости загрузки проводилось с помощью интернет-сервиса <a href="http://www.webpagetest.org/">www.webpagetest.org</a>.
+Все эксперименты проводились на одном и том же сайте <a href="http://juev.info" rel="nofollow">juev.info</a>. Измерение скорости загрузки проводилось с помощью интернет-сервиса <a href="http://www.webpagetest.org/" rel="nofollow">www.webpagetest.org</a>.
 
 Результаты работы представлены на страницах:
-<ol>	<li><a href="http://www.webpagetest.org/result/110103_VR_91d517fd449abfc43ca25ef5a04bc7c7/">стандартное подключение скриптов</a></li>
-	<li><a href="http://www.webpagetest.org/result/110103_VG_1965c3562a67e54876269f264e5424ed/">с использованием Head.JS</a></li></ol>
+<ol>	<li><a href="http://www.webpagetest.org/result/110103_VR_91d517fd449abfc43ca25ef5a04bc7c7/" rel="nofollow">стандартное подключение скриптов</a></li>
+	<li><a href="http://www.webpagetest.org/result/110103_VG_1965c3562a67e54876269f264e5424ed/" rel="nofollow">с использованием Head.JS</a></li></ol>
 
 На странице представлены следующие скрипты:
 <ol>	<li>google analytics</li>

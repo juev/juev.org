@@ -8,9 +8,7 @@ title: Sabayon CoreCD 4.2
 
 С давних пор я обращал внимание на Sabayon Linux, мало того, что это Gentoo, так ведь еще очень красивый дистрибутив. Сделано максимум из возможного для украшения и консоли, и исковых приложений.
 
-<!--more-->
-
-<a href="http://static.juev.ru/2009/07/748px-Screenshot-test_-Running-_-_Sun_VirtualBox-38.png"><img class="aligncenter size-medium wp-image-494" title="748px-Screenshot-test_-Running-_-_Sun_VirtualBox-38" src="http://static.juev.ru/2009/07/748px-Screenshot-test_-Running-_-_Sun_VirtualBox-38-300x240.png" alt="748px-Screenshot-test_-Running-_-_Sun_VirtualBox-38" width="300" height="240" /></a>
+<a href="http://static.juev.ru/2009/07/748px-Screenshot-test_-Running-_-_Sun_VirtualBox-38.png" id="lightbox"><img class="aligncenter size-medium wp-image-494" title="748px-Screenshot-test_-Running-_-_Sun_VirtualBox-38" src="http://static.juev.ru/2009/07/748px-Screenshot-test_-Running-_-_Sun_VirtualBox-38-300x240.png" alt="748px-Screenshot-test_-Running-_-_Sun_VirtualBox-38" width="300" height="240" /></a>
 
 Но каждый раз меня останавливало от его использования то, что установка проходит в полном режиме, то есть кроме базовой системы, устанавливается KDE и кучу программ, которые я в своей работе просто не использую. И вот, свершилось!
 
@@ -21,11 +19,14 @@ title: Sabayon CoreCD 4.2
 	<li> базовая поддержка сети;</li>
 	<li> готовые к использованию пакетные менеджеры Portage и Entropy.</li>
 </ul>
-Все остальное нужно ставить по необходимости. Подробное описание установки располагается на странице <a href="http://wiki.sabayonlinux.org/index.php?title=Visual_Tour:_CoreCD">офсайта</a>.
+
+Все остальное нужно ставить по необходимости. Подробное описание установки располагается
+на странице <a href="http://wiki.sabayonlinux.org/index.php?title=Visual_Tour:_CoreCD"
+rel="nofollow">офсайта</a>.
 
 Я пробовал ставить Sabayon Linux на VirtualBox, установка прошла очень быстро, сеть завелась без проблем, но почему то возникли ошибки при попытке обновления и установке программ штатными средствами. Пока с проблемой не разбирался.
 
-Загрузить образ можно с любого из зеркал, указанных на <a href="http://www.sabayonlinux.org/download">этой странице</a>. Непосредственно в день релиза, то есть 25 июля образ CoreCD я обнаружил только на чешском зеркале. Думаю сейчас ситуация уже изменилась. Присутствует возможность качать не только по http-протоколу, но и с помощью torrent, metalink и rsync протоколов.
+Загрузить образ можно с любого из зеркал, указанных на <a href="http://www.sabayonlinux.org/download" rel="nofollow">этой странице</a>. Непосредственно в день релиза, то есть 25 июля образ CoreCD я обнаружил только на чешском зеркале. Думаю сейчас ситуация уже изменилась. Присутствует возможность качать не только по http-протоколу, но и с помощью torrent, metalink и rsync протоколов.
 
 Собираюсь в ближайшее время разобраться с проблемой установки и обновления программ и затем продолжить эксперименты с данным дистрибутивом.
 

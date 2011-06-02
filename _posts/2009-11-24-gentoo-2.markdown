@@ -24,9 +24,9 @@ title: !binary |
 
 Гибкость заключается в использование флагов USE, я собрал все программы с выключенными флагами consolekit и policykit, то есть как минимум не использую то, что считаю лишним. Что это мне дало?? Простоту настройки использования сменных носителей и сокращение использования оперативной памяти. Для сравнения:
 
-<a href="http://static.juev.ru/2009/11/consolekit.png"><img class="size-medium wp-image-641" title="consolekit" src="http://static.juev.ru/2009/11/consolekit-300x240.png" alt="consolekit" width="300" height="240" /></a>
+<a href="http://static.juev.ru/2009/11/consolekit.png" id="lightbox"><img class="aligncenter size-medium wp-image-641" title="consolekit" src="http://static.juev.ru/2009/11/consolekit-300x240.png" alt="consolekit" width="300" height="240" /></a>
 
-<a href="http://static.juev.ru/2009/11/no_consolekit.png"><img class="size-medium wp-image-642" title="no_consolekit" src="http://static.juev.ru/2009/11/no_consolekit-300x240.png" alt="consolekit disabled" width="300" height="240" /></a>
+<a href="http://static.juev.ru/2009/11/no_consolekit.png" id="lightbox"><img class="aligncenter size-medium wp-image-642" title="no_consolekit" src="http://static.juev.ru/2009/11/no_consolekit-300x240.png" alt="consolekit disabled" width="300" height="240" /></a>
 
 Установка программ очень проста. Функционал emerge просто поражает! Попробуйте запустить одновременно несколько пакетных менеджеров в любом дистре? В генту это просто и без проблем! Компьютер не подключен к интернету? Опять нет проблем, с помощью emerge получаем набор ссылок, по которым качаем пакеты на другой машине, копируем файлы в DISTDIR и без проблем ставим, опять же, все тем же, emerge!
 

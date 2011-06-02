@@ -12,7 +12,9 @@ title: !binary |
 
 <strong>небольшое отступление</strong>: сегодня ради повторного эксперимента установил xmonad, пришлось скачать чуть больше 80 мегабайт пакетов, таких как <em>ghc</em>, <em>xmonad</em> и <em>xmonad-contrib</em>. Работает довольно шустро, но когда попытался изменить конфигурацию по умолчанию - голову сломал. Начал удалять, оказалось, что в установленном виде перечисленные пакеты занимали 289 мегабайт. На мой взгляд тайловому оконному менеджеру отдавать столько пространства - это излишество, проще гном поставить, полноценную DE.
 
-Но сегодня я постараюсь осветить тайловый оконный менеджер <em>RatPoison</em>, о котором в русскоязычном интернете практически ничего не слышно. Появлялись небольшие обзорные статьи <a href="http://muhas.ru">muhas</a>, но он не описывал сам процесс настройки оконного менеджера. А это самое интересное! Кстати, перевод базового руководства <em>ratpoison</em> на русский язык можно найти на <a href="http://muhas.ru/?p=62">странице его  сайта</a>.
+Но сегодня я постараюсь осветить тайловый оконный менеджер <em>RatPoison</em>, о котором в
+русскоязычном интернете практически ничего не слышно. Появлялись небольшие обзорные статьи
+<a href="http://muhas.ru" rel="nofollow">muhas</a>, но он не описывал сам процесс настройки оконного менеджера. А это самое интересное! Кстати, перевод базового руководства <em>ratpoison</em> на русский язык можно найти на <a href="http://muhas.ru/?p=62" rel="nofollow">странице его  сайта</a>.
 
 <em><strong>RatPoison</strong></em> (<em>крысиный яд</em>) - именно такое название выбрали разработчики, показывая, что данный менеджер позволяет управлять окнами без использования мыши. По сути, если посмотреть функционал данного оконного менеджера, то становиться понятным, что он очень близок к функционалу <em>screen</em>, консольной программы, позволяющей организовать работу с программами в консоли.
 
@@ -23,7 +25,8 @@ title: !binary |
 По умолчанию используется префикс <strong>C-t</strong>, который используется для того, чтобы показать оконному менеджеру, что следующая комбинация будет предназначена именно для него. Для того, чтобы <strong>C-t</strong> передать именно текущей программе (например открыть новую вкладку в огнелисе), необходимо использовать комбинацию <strong>C-t t</strong>.
 
 Для изменения префикса используется команда <em>escape</em>, например для использования <strong>win-z</strong>:
-<pre>escape s-z</pre>
+
+    escape s-z
 
 Все окна открываются на весь экран, не перекрывая друг друга. Причем режим плавающих окон в данном оконном менеджере даже не предусмотрен, хотя диалоговые окна показываются корректно. Рабочую область экрана можно разбивать на определенные части, в которых будут размещаться открытые программы. Управление рабочими областями осуществляется путем ввода определенной клавиатурной последовательности. По умолчанию <strong>C-t s</strong> разбивает область на две части по горизонтали, а <strong>C-t S</strong> на две части по вертикали.
 
@@ -32,59 +35,68 @@ title: !binary |
 Настройка оконного менеджера осуществляется путем правки файла конфигурации <em>~/.raptoisonrc</em> в котором размещаются описание внешнего вида диалогов оконного менеджера, время показа всплывающих сообщений и самое главное - описание клавиатурных комбинаций, определенных пользователем.
 
 Для того, чтобы задать оформление основных элементов <em>RatPoison</em>, используются следующие строки:
-<pre><code>unmanage MPlayer                         # делаем MPlayer плавающим
-startup_message off                      # отключаем приветствие
-exec xsetroot -cursor_name left_ptr      # устанавливаем курсор
-# Причем установка курсора действует великолепно, в отличие от awesome.
-exec rpws init 4 -k                      # создаем 4 рабочих стола
-msgwait 3                                # задаем ожидание при показе оповещений
-wrap on                                  #
-set winname name                         # отображение имени окна
-set winliststyle column                  #
-set font -*-terminus-medium-r-normal-*-14-*-*-*-*-*-*-* # используемый шрифт
-set bgcolor #e7e3e7                      # цвет фона
-set fgcolor #737373                      # цвет шрифта
-set inputwidth 300                       # ширина строки ввода по умолчанию
-set border 0                             # толщина обрамления окна
-set wingravity center                    #
-set barborder 1                          # толщина обрамления диалогового окна
-set bargravity center                    # расположение диалогового окна
-set barpadding 2 2                       #</code></pre>
+
+    unmanage MPlayer                         # делаем MPlayer плавающим
+    startup_message off                      # отключаем приветствие
+    exec xsetroot -cursor_name left_ptr      # устанавливаем курсор
+    # Причем установка курсора действует великолепно, в отличие от awesome.
+    exec rpws init 4 -k                      # создаем 4 рабочих стола
+    msgwait 3                                # задаем ожидание при показе оповещений
+    wrap on                                  #
+    set winname name                         # отображение имени окна
+    set winliststyle column                  #
+    set font -*-terminus-medium-r-normal-*-14-*-*-*-*-*-*-* # используемый шрифт
+    set bgcolor #e7e3e7                      # цвет фона
+    set fgcolor #737373                      # цвет шрифта
+    set inputwidth 300                       # ширина строки ввода по умолчанию
+    set border 0                             # толщина обрамления окна
+    set wingravity center                    #
+    set barborder 1                          # толщина обрамления диалогового окна
+    set bargravity center                    # расположение диалогового окна
+    set barpadding 2 2                       #
 
 Теперь нам необходимо определить клавиатурные комбинации для запуска основных программ, переключения между открытыми окнами, и т.д.
 Для этого используется команда <em>bind</em>, например для изменения запуска терминала на другую программу:
-<pre>unbind c
-bind c exec sakura</pre>
+
+    unbind c
+    bind c exec sakura
 
 При использовании <em>bind</em> нужно помнить, что если описывается только клавиатурная комбинация, то она используется вместе с префиксом <em>C-t</em>, для того, чтобы определить комбинацию, которая будет работать без префикса, необходимо перед описанием сочетания клавиш указывать команду <em>definekey</em> с ключевым словом <em>top</em>, например:
-<pre>definekey top s-S-Return exec sakura</pre>
+
+    definekey top s-S-Return exec sakura
 
 Для того, чтобы изменить сочетание клавиш на переключение между окнами на привычные <em>Alt-Tab</em> нужно указать следующие строки:
-<pre>definekey top M-Tab next
-definekey top M-ISO_Left_Tab prev</pre>
+
+    definekey top M-Tab next
+    definekey top M-ISO_Left_Tab prev
 
 Определим довольно сложную задачу, такую как запуск gimp:
-<pre><code># -- gimp (after second command (s-G), to restore gimp in frames, run s-2)
-definekey top s-g exec ratpoison -c "hsplit 1/5" -c "focusright" -c "hsplit 3/4" &amp;&amp; exec gimp
-definekey top s-G exec ratpoison -c "exchangeright" -c "focusleft" -c "select 0" -c "focusleft" -c "select 1" &amp;&amp; exec ratpoison -c "dedicate" -c "focusright" &amp;&amp; exec ratpoison -c "dedicate" -c "focusright" &amp;&amp; exec ratpoison -c "dedicate" -c "focusleft" &amp;&amp; exec ratpoison -c "setenv fs2 `ratpoison -c 'fdump'`"</code></pre>
+
+    # -- gimp (after second command (s-G), to restore gimp in frames, run s-2)
+    definekey top s-g exec ratpoison -c "hsplit 1/5" -c "focusright" -c "hsplit 3/4" &amp;&amp; exec gimp
+    definekey top s-G exec ratpoison -c "exchangeright" -c "focusleft" -c "select 0" -c "focusleft" -c "select 1" &amp;&amp; exec ratpoison -c "dedicate" -c "focusright" &amp;&amp; exec ratpoison -c "dedicate" -c "focusright" &amp;&amp; exec ratpoison -c "dedicate" -c "focusleft" &amp;&amp; exec ratpoison -c "setenv fs2 `ratpoison -c 'fdump'`"
 
 Для переключения между рабочими столами используются сочетания Alt-&#123;F1-F9}, для переопределения можно использовать следующую конструкцию:
-<pre>definekey top s-1 exec rpws 1
-definekey top s-2 exec rpws 2
-definekey top s-3 exec rpws 3
-definekey top s-4 exec rpws 4</pre>
+
+    definekey top s-1 exec rpws 1
+    definekey top s-2 exec rpws 2
+    definekey top s-3 exec rpws 3
+    definekey top s-4 exec rpws 4
 
 Для того, чтобы запустить программу, используется сочетание клавиш <strong>C-t !</strong> Но для того, чтобы организовать более удобный запуск программ, необходимо использовать сторонние программы. На мой взгляд самой удобной является программа <strong>dmenu.</strong>
-<pre>definekey top s-m exec $(dmenu_path | dmenu)</pre>
+
+    definekey top s-m exec $(dmenu_path | dmenu)
 
 С ее же помощью можно получить список открытых окон на текущем рабочем столе:
+
     definekey top s-w exec ratpoison -c "select `ratpoison -c "windows" | dmenu | awk '&#123;print $1}'`"
 
 Эта же функция есть непосредственно в самом оконном менеджере, и по умолчанию назначена на сочетание клавиш <strong>C-t w</strong>.
 
 По умолчанию <em>RatPoison</em> не имеет никаких панелей и для получения служебной информации очень удобно использовать <em>dzen2</em> или <em>conky</em>.
 Для того, чтобы показывать панель, не перекрываемую другими окнами, достаточно в файла конфигурации добавить следующую строку:
-<pre>set padding 0 14 0 0</pre>
+
+    set padding 0 14 0 0
 
 В данном случае показан пример отведения поля в 14 пикселей вверху экрана. И теперь можно в выделенной области выводить панель <em>dzen2</em> или организовывать вывод <em>conky</em>.
 
