@@ -6,8 +6,9 @@ title: !binary |
 
 ---
 Вот и настало время рекорда...
-<pre>juev@matrix:~$ uptime
- 18:52:37 up 33 days,  5:50,  1 user,  load average: 0.35, 1.14, 1.37</pre>
+
+    juev@matrix:~$ uptime
+     18:52:37 up 33 days,  5:50,  1 user,  load average: 0.35, 1.14, 1.37
 
 Жалко только то, что завтра придется компьютер выключить. Отпуск закончился...
 

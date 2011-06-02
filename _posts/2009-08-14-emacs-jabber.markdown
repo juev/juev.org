@@ -5,58 +5,66 @@ title: Emacs jabber
 За время использование операционной системой Linux я перепробовал массу jabber-клиентов. И в конце концов остановился на jabber-el.
 
 Как все созданное для Emacs, этот модуль обладает массой возможностей и потрясающей гибкостью. При работе я сам столкнулся с тем, что некоторые вещи выполняются не так тривиально, как хотелось бы и ответа на эти вопросы в интернете я так и не нашел. Поэтому решился написать эту статью, с описанием некоторых моментов, которые могут пригодиться в работе с jabber-el.
-<!--more-->
+
 Сначала jabber-el необходимо установить. В Archlinux это тривиально, причем существует два пакета <em>emacs-jabber</em> и <em>emacs-jabber-git</em>. Первый является стабильной версией, которая представлена на офсайте, а вот второй пакет, это более новая версия jabber-el от Кирилла Коринского (одного из разработчиков jabber-el). В новой версии появляются группы в ростере, это то, что первым бросается в глаза при использование данной версии. Вот ее и установим:
-<pre>$ yaourt -S emacs-jabber-git</pre>
+
+    $ yaourt -S emacs-jabber-git
 
 После чего нужно в файл конфигурации <em>.emacs</em> прописать:
-<pre>(require 'jabber)</pre>
+
+    (require 'jabber)
 
 В главном меню появляется Jabber, где есть пункт Customize. Выбрав который, можно настроить все необходимые параметры или воспользовавшись командой:
-<pre>M-x jabber-customize</pre>
+
+    M-x jabber-customize
 
 То есть нажимаем <em>Alt-x</em> и набираем<em> jabber-customize</em>, завершая ввод нажатием на RET. Все необходимые параметры можно найти в открывшемся буфере.
 
 Первым делом необходимо задать свою учетную запись, которая будет использоваться. Это же можно сделать добавив в<em> .emacs</em> следующие строки:
-<pre><code>(setq  jabber-account-list
-    (quote (
-           ("user@jabber.ru/emacs" (:password . "mypassword") (:network-server . "jabber.ru") (:connection-type . starttls))
-           ("username@gmail.com" (:password . "gmailpassword") (:network-server . "talk.google.com") (:connection-type . ssl))
-           )
-    )
-)</code></pre>
+
+    (setq  jabber-account-list
+        (quote (
+               ("user@jabber.ru/emacs" (:password . "mypassword") (:network-server . "jabber.ru") (:connection-type . starttls))
+               ("username@gmail.com" (:password . "gmailpassword") (:network-server . "talk.google.com") (:connection-type . ssl))
+               )
+        )
+    )
 
 В данном случае прописаны два аккаунта, один на jabber.ru, второй на gtalk. Вместо значений <em>user, username, password</em> и <em>gmailpassword</em> необходимо внести свои.
 
 Рекомендую для того, чтобы убрать из ростера отображение отключенных пользователей и справки по работе с ростером, прописать в <em>.emacs</em> следующее:
-<pre><code>(jabber-roster-toggle-binding-display)
-(jabber-roster-toggle-offline-display)</code></pre>
+
+    (jabber-roster-toggle-binding-display)
+    (jabber-roster-toggle-offline-display)
 
 В дальнейшем, для вызова списка отключенных пользоваталей используется клавиша <strong>o</strong> в буфере ростера, а справка вызывается клавишей <strong>H</strong>.
 
 Для проверки правописания в буферах jabber и для назначения некоторых комбинаций клавиш используем:
-<pre><code>(add-hook 'jabber-chat-mode-hook 'flyspell-mode)
-(global-set-key "\C-x\C-a" 'jabber-activity-switch-to)
-(global-set-key (kbd "&lt;f12&gt;") 'jabber-switch-to-roster-buffer)</code></pre>
+
+    (add-hook 'jabber-chat-mode-hook 'flyspell-mode)
+    (global-set-key "\C-x\C-a" 'jabber-activity-switch-to)
+    (global-set-key (kbd "&lt;f12&gt;") 'jabber-switch-to-roster-buffer)
 
 В данном случае используется комбинация <em>Ctrl+x Ctrl+A</em> для перехода к буферу, в котором было получено новое сообщение. Клавиша <em>F12</em> используется для быстрого открытия ростера.
 
 На этом простейшая настройка jabber-el заканчивается.
 
 Для установки jabber-el вручную из git Кирилла Коринского (в случае, если используется дистрибутив линукса, в репозитории которого нет новой версии) выполняем следующие действия:
-<pre><code>$ cd Temp
-$ git clone git://catap.ru/emacs-jabber/emacs-jabber.git
-$ cd emacs-jabber
-$ autoreconf -i
-$ ./configure --prefix=/usr --with-gconf-schema-file-dir=/etc/gconf/schemas \
- --libexecdir=/usr/lib/emacs-jabber
-$ make
-# make install</code></pre>
+
+    $ cd Temp
+    $ git clone git://catap.ru/emacs-jabber/emacs-jabber.git
+    $ cd emacs-jabber
+    $ autoreconf -i
+    $ ./configure --prefix=/usr --with-gconf-schema-file-dir=/etc/gconf/schemas \
+     --libexecdir=/usr/lib/emacs-jabber
+    $ make
+    # make install
 
 После чего повторяем действия по конфигурации файла <em>.emacs</em>, что было описано выше.
 
 Установив и отконфигурировав, запускаем jabber-el, используя команду:
-<pre>M-x jabber-connect</pre>
+
+    M-x jabber-connect
 
 Эта запись значит, что нажимаем сочетание клавиш Alt-x и вводим строку jabber-connect, или просто жмем комбинацию клавиш <em>Ctrl+x Ctrl+j Ctrl+c</em>. Вообще практически все комбинации клавиш начинающиеся с <em>Ctrl+x Ctrl+j</em> закреплены за модулем  jabber, если конечно он используется.
 

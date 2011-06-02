@@ -6,9 +6,10 @@ title: !binary |
 ---
 В archlinux сборка ядра довольно простое дело, причем в итоге создается установочный пакет, который затем ставится, как обычный, со всеми возможностями дальнейшего управления, такими как обновление, удаление...
 
-Качаем исходники, я воспользовался <a href="http://mirror.yandex.ru/kernel.org/linux/kernel/v2.6/linux-2.6.27.8.tar.bz2">mirror.yandex.ru</a>.
+Качаем исходники, я воспользовался <a href="http://mirror.yandex.ru/kernel.org/linux/kernel/v2.6/linux-2.6.27.8.tar.bz2" rel="nofollow">mirror.yandex.ru</a>.
 
 Распаковываем их в домашней директории. Использовать системные папки не рекомендуют...
+
     $ cd ~/Temp
     $ tar -xjf linux-2.6.27.8.tar.bz2
     $ cd linux-2.6.27.8
@@ -19,16 +20,18 @@ title: !binary |
 
 После конфигурации создаем в текущей папке два файла (по ссылкам их содержимое):
 
-<a href="http://textsnip.com/1d82d2">PKGBUILD</a>
+<a href="http://textsnip.com/1d82d2" rel="nofollow">PKGBUILD</a>
 
-<a href="http://textsnip.com/8a6399">kernel26.install</a>
+<a href="http://textsnip.com/8a6399" rel="nofollow">kernel26.install</a>
 
-И теперь запускаем компиляцию командой <code>makepkg -f</code>.
+И теперь запускаем компиляцию командой `makepkg -f`.
 
 По окончании в текущей папке будет лежать готовый к установке пакет, который ставим с использованием pacman:
+
     $ sudo pacman -Uf kernel26-my-2.6.27-8-i686.pkg.tar.gz
 
 Осталось только сконфигурировать grub, для этого редактируем файл /boot/grub/menu.lst:
+
     # general configuration:
     timeout   5
     default   0

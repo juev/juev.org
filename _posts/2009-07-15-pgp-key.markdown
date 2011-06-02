@@ -7,18 +7,23 @@ title: My PGP key
 Скачать публичный ключ можно <a href="/juev_gpg.pub">тут</a> и ссылка на файл ключа располагается  в боковой панели под логотипом  GnuPG.
 
 Для использования моего ключа необходимо выполнить:
-<pre><code>wget -q -O- http:///www.juev.ru/juev_gpg.pub | gpg --import -</code></pre>
+
+    wget -q -O- http:///www.juev.ru/juev_gpg.pub | gpg --import -
 
 или:
-<pre><code>gpg --keyserver subkeys.pgp.net --recv-key AB199C39 </code></pre>
+
+    gpg --keyserver subkeys.pgp.net --recv-key AB199C39
 
 Вы можете проверить мой ключ с помощью команды:
-<pre><code>gpg --fingerprint AB199C39</code></pre>
+
+    gpg --fingerprint AB199C39
 
 И конечно же подписать его:
-<pre><code>gpg --sign-key AB199C39</code></pre>
+
+    gpg --sign-key AB199C39
 
 После чего его необходимо загрузить обратно на сервер:
-<pre><code>gpg --keyserver subkeys.pgp.net --send-key AB199C39</code></pre>
 
-Описание сделано по образу и подобию страницы сайта <a href="http://librarian.spb.ru/page/my-pgp-key">librarian</a>.
+    gpg --keyserver subkeys.pgp.net --send-key AB199C39
+
+Описание сделано по образу и подобию страницы сайта <a href="http://librarian.spb.ru/page/my-pgp-key" rel="nofollow">librarian</a>.

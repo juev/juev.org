@@ -19,5 +19,5 @@ title: archlinux!
 Не страшно? Попробуйте! ;)
 Для того, чтобы разобраться достаточно wiki...
 
-<a href="http://www.archlinux.org/">Офсайт</a>
-<a href="http://archlinux.org.ru/">Русскоязычное сообщество</a>
+<a href="http://www.archlinux.org/" rel="nofollow">Офсайт</a>
+<a href="http://archlinux.org.ru/" rel="nofollow">Русскоязычное сообщество</a>

@@ -11,32 +11,35 @@ title: !binary |
 Как устанавливать RoR на машину, я уже рассказывал. И сейчас подразумевается, что ruby и rails установлены на машине и готовы внимать нашим командам.
 
 Переходим в директорию, в которой мы будем создавать наш проект и даем следующие команды:
-<pre><code>$ cd ~/Temp
-$ rails --database=sqlite3 mag
-$ cd mag</code></pre>
+
+    $ cd ~/Temp
+    $ rails --database=sqlite3 mag
+    $ cd mag
 
 Как видно, создаем приложение с использованием базы данных sqlite3, это сделано для упрощения задачи. Теперь нам необходимо протестировать базу данных:
-<pre><code>$ rake db:migrate</code></pre>
+
+    $ rake db:migrate
 
 И теперь создаем таблицу базы данных, с указанием типов данных и одновременным созданием представления для данной базы данных:
-<pre><code>$ ruby script/generate scaffold product \
-             title:string description:text image_url:string</code></pre>
+
+    $ ruby script/generate scaffold product \
+                 title:string description:text image_url:string
 
 Обращаю внимание на то, что все приведенные команды мы даем в обычной командной строке, созданный код мы еще ни разу не трогали и ничего в нем не меняли. Обратите внимание на то, как в последней команде раставлены пробелы. Между наименованием поля и его типом пробелов быть не должно!
 
 Теперь нам остается только применить изменения к нашей базе данных и запустить сервер:
-<pre><code>$ rake db:migrate
-$ ruby script/server</code></pre>
+
+    $ rake db:migrate
+    $ ruby script/server
 
 Открываем браузер по адресу <a href="http://127.0.0.1:3000/product"><em>127.0.0.1:3000/product</em></a> и наблюдаем то, что было создано магией Ruby!
-<p style="text-align: center;">
 
-<a href="http://static.juev.ru/2009/08/2009-08-01-081041_1280x1024_scrot.png"><img class="size-full wp-image-497 " title="Исходный листинг продуктов" src="http://static.juev.ru/2009/08/2009-08-01-081041_1280x1024_scrot.png" alt="Форма при открытии страницы" width="255" height="125" /></a>
+<a href="http://static.juev.ru/2009/08/2009-08-01-081041_1280x1024_scrot.png" id="lightbox"><img class="aligncenter size-full wp-image-497 " title="Исходный листинг продуктов" src="http://static.juev.ru/2009/08/2009-08-01-081041_1280x1024_scrot.png" alt="Форма при открытии страницы" width="255" height="125" /></a>
 
-<a href="http://static.juev.ru/2009/08/2009-08-01-081137_1280x1024_scrot.png"><img class="size-medium wp-image-498" title="Форма добавления нового продукта" src="http://static.juev.ru/2009/08/2009-08-01-081137_1280x1024_scrot-168x300.png" alt="Форма добавления нового продукта" width="168" height="300" /></a>
+<a href="http://static.juev.ru/2009/08/2009-08-01-081137_1280x1024_scrot.png" id="lightbox"><img class="aligncenter size-medium wp-image-498" title="Форма добавления нового продукта" src="http://static.juev.ru/2009/08/2009-08-01-081137_1280x1024_scrot-168x300.png" alt="Форма добавления нового продукта" width="168" height="300" /></a>
 
-<a href="http://static.juev.ru/2009/08/2009-08-01-081132_1280x1024_scrot.png"><img class="size-medium wp-image-499" title="Результат операции" src="http://static.juev.ru/2009/08/2009-08-01-081132_1280x1024_scrot-300x87.png" alt="Результат операции" width="300" height="87" /></a>
+<a href="http://static.juev.ru/2009/08/2009-08-01-081132_1280x1024_scrot.png" id="lightbox"><img class="aligncenter size-medium wp-image-499" title="Результат операции" src="http://static.juev.ru/2009/08/2009-08-01-081132_1280x1024_scrot-300x87.png" alt="Результат операции" width="300" height="87" /></a>
 
-<a href="http://static.juev.ru/2009/08/2009-08-01-081144_1280x1024_scrot.png"><img class="size-medium wp-image-500" title="Исходная страница с добавленым продуктом" src="http://static.juev.ru/2009/08/2009-08-01-081144_1280x1024_scrot-300x51.png" alt="Исходная страница с добавленым продуктом" width="300" height="51" /></a>
+<a href="http://static.juev.ru/2009/08/2009-08-01-081144_1280x1024_scrot.png" id="lightbox"><img class="aligncenter size-medium wp-image-500" title="Исходная страница с добавленым продуктом" src="http://static.juev.ru/2009/08/2009-08-01-081144_1280x1024_scrot-300x51.png" alt="Исходная страница с добавленым продуктом" width="300" height="51" /></a>
 
-Именно про это говорят как о Магии RoR! Впечатляет? Не правда ли?</p>
+Именно про это говорят как о Магии RoR! Впечатляет? Не правда ли?

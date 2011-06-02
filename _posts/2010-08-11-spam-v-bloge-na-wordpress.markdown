@@ -4,15 +4,19 @@ title: !binary |
   0KHQv9Cw0Lwg0LIg0LHQu9C+0LPQtSDQvdCwIFdvcmRwcmVzcw==
 
 ---
-Не так давно я уже описывал методы борьбы со спамом в блоге на Wordpress в своей статье <a href="http://www.juev.ru/2010/01/05/wordpress-antispam/">WordPress AntiSpam</a>. С тех пор мало что изменилось, однако плагин amcaptcha стал давать сбой. Основная нагрузка ложилась на Akismet.
+Не так давно я уже описывал методы борьбы со спамом в блоге на Wordpress в своей статье <a href="/2010/01/05/wordpress-antispam/">WordPress AntiSpam</a>. С тех пор мало что изменилось, однако плагин amcaptcha стал давать сбой. Основная нагрузка ложилась на Akismet.
 
 Что же произошло?
 
-<!--more-->Вероятнее всего, что спам-боты научились обходить простенькую капчу, что стояла в последнее время на блоге. Или же просто блог попал в спам-базу, что показало неэффективность использования amcaptcha, что не было заметно раньше. Сказать наверняка уже не возможно.
+Вероятнее всего, что спам-боты научились обходить простенькую капчу, что стояла в последнее время на блоге. Или же просто блог попал в спам-базу, что показало неэффективность использования amcaptcha, что не было заметно раньше. Сказать наверняка уже не возможно.
 
 Вот так выглядит статистика работы Akismet:
 
-<a href="http://static.juev.ru/2010/08/akismet_dia.png"><img class="aligncenter size-medium wp-image-1113" title="akismet_dia" src="http://static.juev.ru/2010/08/akismet_dia-300x87.png" alt="" width="300" height="87" /></a><a href="http://static.juev.ru/2010/08/akismet_stat.png"><img class="aligncenter size-medium wp-image-1114" title="akismet_stat" src="http://static.juev.ru/2010/08/akismet_stat-300x284.png" alt="" width="300" height="284" /></a>Заметно, что раньше количество спам-комментариев не превышало 50 в день, и после 27 июля происходит резкий скачок до 200-300 спам-комментариев в день.
+<a href="http://static.juev.ru/2010/08/akismet_dia.png" id="lightbox"><img class="aligncenter size-medium wp-image-1113" title="akismet_dia" src="http://static.juev.ru/2010/08/akismet_dia-300x87.png" alt="" width="300" height="87" /></a>
+
+<a href="http://static.juev.ru/2010/08/akismet_stat.png" id="lightbox"><img class="aligncenter size-medium wp-image-1114" title="akismet_stat" src="http://static.juev.ru/2010/08/akismet_stat-300x284.png" alt="" width="300" height="284" /></a>
+
+Заметно, что раньше количество спам-комментариев не превышало 50 в день, и после 27 июля происходит резкий скачок до 200-300 спам-комментариев в день.
 
 Естественно, что если бы не было Akismet, руками обрабатывать подобный поток сообщений было бы просто не реально. Именно поэтому я всегда рекомендовал и буду рекомендовать в качестве основы Akismet, к которому ставится дополнительное расширение, позволяющее расширить существующий функционал.
 
@@ -28,6 +32,8 @@ title: !binary |
 
 Прошло меньше суток с момента закрытия основной массы записей от возможности комментирования и установки Bad Behavior. Но уже можно подвести некоторые итоги.
 
-<a href="http://static.juev.ru/2010/08/bad_behavior.png"><img class="aligncenter size-medium wp-image-1115" title="bad_behavior" src="http://static.juev.ru/2010/08/bad_behavior-300x71.png" alt="" width="300" height="71" /></a>Как видно, расширение Bad Behavior успело отсеять 234 спам-комментария. При этом счетчик Akismet, как стоял на 11618, так и стоит, то есть первая линия обороны пока работает хорошо.
+<a href="http://static.juev.ru/2010/08/bad_behavior.png" id="lightbox"><img class="aligncenter size-medium wp-image-1115" title="bad_behavior" src="http://static.juev.ru/2010/08/bad_behavior-300x71.png" alt="" width="300" height="71" /></a>
+
+Как видно, расширение Bad Behavior успело отсеять 234 спам-комментария. При этом счетчик Akismet, как стоял на 11618, так и стоит, то есть первая линия обороны пока работает хорошо.
 
 Продолжу тестирование. В основном конечно интересует, не возникнет ли проблем с комментариями у обычных читателей. Постараюсь выложить статистику работы и свои отзывы о Bad Behavior спустя две недели.

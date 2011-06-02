@@ -12,12 +12,16 @@ title: !binary |
 Кратко повторюсь, как брать парметры устройства, используемые в правиле и что именно нужно прописывать.
 
 В консоли даем команду:
+
     $ sudo sane-find-scanner
 
 Получаем нечто похожее на это:
+
     found USB scanner (vendor=0×04a9 [Canon], product=0×2220 [CanoScan], chip=LM9832/3) at libusb:004:002
 
-Нас будут интересовать значения, описанные как vendor и product. Их и записываем в правила udev, в файле, который создаем сами, если его нет. Файл <strong>/etc/udev/rules.d/53-sane.rules</strong>:
+Нас будут интересовать значения, описанные как vendor и product. Их и записываем в правила
+udev, в файле, который создаем сами, если его нет. Файл `/etc/udev/rules.d/53-sane.rules`:
+
     #Canon LIDE
     SUBSYSTEM=="usb", ATTRS&#123;idVendor}=="04a9", ATTRS&#123;idProduct}=="2220", MODE="0664", GROUP="scanner"
 

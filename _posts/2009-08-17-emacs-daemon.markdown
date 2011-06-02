@@ -5,35 +5,42 @@ title: emacs --daemon
 Все никак не мог нормально перейти на использование Emacs в режиме демона, по той простой причине, что не мог определиться, как его корректно запускать и как его корректно закрывать...
 
 Для начала немного теории... Emacs запускается  в режиме демона командой:
-<pre>$ emacs --daemon</pre>
+
+    $ emacs --daemon
 
 После чего для того, чтобы открыть новый фрейм Emacs, в котором можно работать используется команда:
-<pre>$ emacsclient -c</pre>
+
+    $ emacsclient -c
 
 или для консоли:
-<pre>$ emacsclient -t</pre>
+
+    $ emacsclient -t
 
 Запускать демон предлагается при загрузке иксов, но существует проблема, которая заключается в том, что если демон по каким либо причинам не был запущен, то вызов emacsclient ни к чему не приведет. Для решения данной проблемы уже неоднократно предлагалось создать отдельный скрипт со следующим содержимым:
-<pre><code>#!/bin/bash
-emacs --daemon &amp;&amp; emacsclient -c</code></pre>
+
+    #!/bin/bash
+    emacs --daemon &amp;&amp; emacsclient -c
 
 И заетм запускать клиентом с дополнительной опцией:
-<pre>$emacsclient -c -a script.sh</pre>
-<!--more-->
+
+    $emacsclient -c -a script.sh
+
 Вроде бы ничего, но дополнительные костыли?? Так вот, как оказалось, все намного проще... Достаточно запускать клиент с такими опциями:
-<pre><code>$ emacsclient -c -a ""</code></pre>
+
+    $ emacsclient -c -a ""
 
 И никакого скрипта не нужно. Демон самостоятельно запуститься, если он не работал до того, отслеживать уже не нужно.
 
 Теперь разберемся за корректным завершением. Для этого в конфиге .emacs прописываем следующую функцию и навешиваем ее на клавиатурную комбинацию:
-<pre><code>;; Kill-server
-(defun my-kill-emacs ()
-(interactive)
-(save-some-buffers)
-(desktop-save-in-desktop-dir)
-(kill-emacs))
 
-(global-set-key (kbd "C-x c") 'my-kill-emacs)</code></pre>
+    ;; Kill-server
+    (defun my-kill-emacs ()
+    (interactive)
+    (save-some-buffers)
+    (desktop-save-in-desktop-dir)
+    (kill-emacs))
+
+    (global-set-key (kbd "C-x c") 'my-kill-emacs)
 
 Как видно, используется сочетание клавиш Ctrl-x c. Перед тем, как завершить работу, нужно будет подтвердить свое действие.
 

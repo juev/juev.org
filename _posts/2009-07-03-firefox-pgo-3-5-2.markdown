@@ -4,12 +4,14 @@ title: firefox-pgo 3.5-2
 ---
 Сегодня в AUR вышло обновление огнелиса 3.5-2, в чем заключаются изменения - я не могу сказать, описание отсутствует. Но сборка пакета прерывалась ошибкой при компиляции.
 
-<!--more-->
-
 В комментариях к пакету появилось описание способа решения данной проблемы. Нужно было в файле PKGBUILD в строке
-<pre>export LDFLAGS="-lgcov -Wl,-rpath,/usr/lib/firefox-3.5 -Wl,--hash-style=gnu,--sort-common,--as-neede"</pre>
+
+    export LDFLAGS="-lgcov -Wl,-rpath,/usr/lib/firefox-3.5 -Wl,--hash-style=gnu,--sort-common,--as-neede"
+
 удалить "--as-neede", то есть привести ее к виду:
-<pre>export LDFLAGS="-lgcov -Wl,-rpath,/usr/lib/firefox-3.5 -Wl,--hash-style=gnu,--sort-common"</pre>
+
+    export LDFLAGS="-lgcov -Wl,-rpath,/usr/lib/firefox-3.5 -Wl,--hash-style=gnu,--sort-common"
+
 Забирать готовый пакет : <a href="http://static.juev.ru/2009/07/firefox-pgo-3.5-2-i686.pkg.tar.gz">firefox-pgo-3.5-2-i686.pkg.tar.gz</a>
 
 Не забудьте после сборки в <strong>about:config</strong> изменить значение параметра "<em>javascript.options.jit.chrome</em>" на "<em>true</em>", для того, чтобы задействовать новый движок java-script.

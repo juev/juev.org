@@ -8,30 +8,33 @@ title: !binary |
 
 Довольно долго искал работоспособную конфигурацию, наконец нашел и спешу поделиться с вами.
 
-Оказалось все довольно просто, даже обидно, честное слово. Создаем отдельный поддомен в nginx. Для этого создаем отдельный файл
-    /etc/nginx/sites-available/phpmyadmin.domain.ru
-Где, как вы помните, имя файла может быть любым, но принято его называть по имени выбранного домена. И прописываем в нем следующее:
-<pre><code>server &#123;
-        listen   80;
-        server_name  phpmyadmin.domain.ru;
+Оказалось все довольно просто, даже обидно, честное слово. Создаем отдельный поддомен в
+nginx. Для этого создаем отдельный файл `/etc/nginx/sites-available/phpmyadmin.domain.ru`. Где, как вы помните, имя файла может быть любым, но принято его называть по имени выбранного домена. И прописываем в нем следующее:
 
-        access_log  /var/log/nginx/phpmyadmin.domain.ru.access.log;
+    server {
+            listen   80;
+            server_name  phpmyadmin.domain.ru;
 
-        location / &#123;
-                root /usr/share/phpmyadmin;
-                index index.php;
-        }
+            access_log  /var/log/nginx/phpmyadmin.domain.ru.access.log;
 
-        location ~ \.php$ &#123;
-                fastcgi_pass   127.0.0.1:9000;
-                fastcgi_index  index.php;
-                fastcgi_param  SCRIPT_FILENAME  /usr/share/phpmyadmin$fastcgi_script_name;
-                include fastcgi_params;
-        }
-}</code></pre>
-Не забываем про уже работающие процессы php-fpm, про которые я описывал в статье <a href="http://www.juev.ru/2010/08/21/nginx-wordpress-in-ubuntu-10-04/">Nginx &amp; WordPress в Ubuntu 10.04</a>.
+            location / {
+                    root /usr/share/phpmyadmin;
+                    index index.php;
+            }
+
+            location ~ \.php$ {
+                    fastcgi_pass   127.0.0.1:9000;
+                    fastcgi_index  index.php;
+                    fastcgi_param  SCRIPT_FILENAME  /usr/share/phpmyadmin$fastcgi_script_name;
+                    include fastcgi_params;
+            }
+    }
+
+Не забываем про уже работающие процессы php-fpm, про которые я описывал в статье <a href="/2010/08/21/nginx-wordpress-in-ubuntu-10-04/">Nginx &amp; WordPress в Ubuntu 10.04</a>.
 
 Теперь запускаем новый сайт, для чего даем следующие команды:
+
     # ln -s /etc/nginx/sites-available/phpmyadmin.domain.ru /etc/nginx/sites-enabled/phpmyadmin.domain.ru
     # /etc/init.d/nginx reload
+
 И теперь можно работать с myphpadmin, обратившись по адресу phpmyadmin.domain.ru!

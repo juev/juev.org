@@ -28,13 +28,13 @@ div.navigation a#rss        { text-decoration:none; }
 div.header, div.navigation  { height: 25px; margin-bottom: 42px; }
 div.navigation ul           { margin: 6px 0 3px; padding: 0; list-style: none; }
 div.navigation ul li        { display: inline; margin: 0 3px; padding: 0; }
-div.wraper                 { clear: both; width: 700px; float:left; 
- border-top: 1px solid #DEDEDE;}
+div.wraper                 { clear: both; width: 700px; float:left; } 
 div.footer                  { border-top: 1px dotted #ddd; padding-top: 19px;
-                              margin-top: 42px; font: 16px/24px 'Georgia'; color: #888;
+                              margin-top: 25px; font: 16px/24px 'Georgia'; color: #888;
                               text-align: center; overflow: hidden; margin-bottom: 18px;}
 div.footer p                { margin: 0; }
 div.article a               { border-bottom: 1px dashed; }
+div.meta                    { border-top: 1px dotted #ddd; }
 div.article-index           { margin-top: 10px;
                               min-height: 196px; }
 /* margins and stuff */
@@ -78,9 +78,29 @@ div.entry-overview div.date         { float: left; width: 120px; color: #888;
 img.align-center        { margin: 15px auto; display: block; }
 
 /* pagination */
-div.pagination          { margin: 36px 0 0 0; text-align: center; }
+/*div.pagination          { margin: 36px 0 0 0; text-align: center; }*/
+div.pagination          { clear: both; margin-top: 20px; }
 div.pagination strong   { font-weight: normal; font-style: italic; }
-
+div.pagination p {
+  display: block;
+  text-transform: uppercase;
+  font-family: 'Verdana', Helvetica, Arial, sans-serif;
+  color: #666 !important;
+  font-size: 10px;
+  height: 22px;
+  line-height: 22px;
+  letter-spacing: 2px;
+  width: 606px; }
+div.pagination a {
+  font-family: 'Verdana', Helvetica, Arial, sans-serif;
+  font-size: 12px;
+  font-weight: bold;
+  color: #055580; text-decoration: none;
+  text-transform: none;
+  text-decoration: none !important;
+  height: 0px;
+  line-height: 18px;
+  letter-spacing: normal; }
 /* tags */
 p.tags          { text-align: right; font-style: italic; }
 ul.tagcloud     { font-size: 16px; margin: 36px 0; padding: 0;
@@ -104,7 +124,7 @@ pre code {
 
 /*h1 a.title { color: red;}*/
 div.header a { font-size: 48px; text-decoration: none; font-weight: bold; }
-div.pagination a { font-size: 14px; text-decoration: none; font-weight: bold; }
+/*div.pagination a { font-size: 14px; text-decoration: none; font-weight: bold; }*/
 .left { text-align: left; }
 .right { text-align: right; }
 .aligncenter { clear: both; display: block; float:none; margin-left: auto; margin-right: auto; }
@@ -192,36 +212,10 @@ ul.ttw-inner span.ttw-meta a:hover{
 	text-decoration:underline;
 }
 
-/* Sprites*/
-div.meta a#facebook.share{
-	background: url('http://static.juev.ru/images/share.png');
-	background-position: -0px -0px; width: 32px; height: 32px;
-	display:inline-block;
-	margin: 0 1px;
-}
-div.meta a#twitter.share{
-	background: url('http://static.juev.ru/images/share.png');
-	background-position: -0px -37px; width: 32px; height: 32px;
-	display:inline-block;
-	margin: 0 1px;
-}
-div.meta a#digg.share{
-	background: url('http://static.juev.ru/images/share.png');
-	background-position: -0px -74px; width: 32px; height: 32px;
-	display:inline-block;
-	margin: 0 1px;
-}
-div.meta a#evernote.share{
-	background: url('http://static.juev.ru/images/share.png');
-	background-position: -0px -111px; width: 32px; height: 32px;
-	display:inline-block;
-	margin: 0 1px;
-}
 .sidebar {
   position: fixed;
   margin-left: 715px;
   width: 245px;
-  border-top: 1px solid #DEDEDE;
   padding: 23px 0 0 0;
 }
 .nav {
@@ -247,5 +241,6 @@ div.recent_posts{
   width:245px;
 }
 div.share{
-  margin-top: 10px;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }

@@ -4,33 +4,31 @@ title: !binary |
   0KHQtdGA0LLQuNGBINCx0LvQvtCz0L7QsiBXb3JkUHJlc3MuY29t
 
 ---
-В своей статье <a href="http://www.juev.ru/2010/02/11/dvizhok-dlya-blogov-chto-vybrat/">Движок для блогов: что выбрать</a> я уже указывал на то, что в современном мире лучше всего использовать LiveJournal или WordPress.com. Основная причина – бесплатность и направленность сервисов на высокие нагрузки в сочетании с использованием функций социальных сетей.
+В своей статье <a href="/2010/02/11/dvizhok-dlya-blogov-chto-vybrat/">Движок для блогов: что выбрать</a> я уже указывал на то, что в современном мире лучше всего использовать LiveJournal или WordPress.com. Основная причина – бесплатность и направленность сервисов на высокие нагрузки в сочетании с использованием функций социальных сетей.
 
 Но если LiveJournal я использую уже на протяжении нескольких лет, то WordPress.com только поверхностно изучил. Для того, чтобы исправить эту ситуацию я сегодня зарегистрировал блог в данном сервисе и немного в нем покопался. И теперь могу с вами поделиться своими впечатлениями и ответить на вопрос, чем отличается платный сервис от бесплатного.
-
-<!--more-->
 
 Так как я давно уже имею аккаунт в сервисе wordpress.com, так как именно его я использовал на своем домене для подключения антиспам-фильтра Akismet и сервиса статистики от WordPress, то регистрация блога прошла всего в несколько шагов. У меня спросили только доменное имя третьего уровня, которое я собираюсь регистрировать, название блога и будет ли блог открытым для индексации поисковых систем. Обращаю внимание, что консоль я выбрал изначально выбрал русскоязычную, поэтому и весь интерфейс и сам wordpress у меня с русским интерфейсом. Кроме того, если выбран русский интерфейс, то блог будет участвовать в рейтинге именно среди русскоязычных блогов.
 
 Ответив на эти вопросы мы попадаем в админку wordpress.
 
-<a href="http://static.juev.ru/2010/02/main.png"><img style="display: block; margin-left: auto; margin-right: auto; border: 0px initial initial;" title="main" src="http://static.juev.ru/2010/02/main_thumb.png" border="0" alt="main" width="451" height="324" /></a>
+<a href="http://static.juev.ru/2010/02/main.png" id="lightbox"><img style="display: block; margin-left: auto; margin-right: auto; border: 0px initial initial;" title="main" src="http://static.juev.ru/2010/02/main_thumb.png" border="0" alt="main" width="451" height="324" /></a>
 
 Обращают на себя внимание новые пункты меню в Консоли, новые пункты меню Обновления, Ratings и Голосования. При этом скорость работы блога и админки намного выше той, что есть сейчас у меня на профессиональном хостинге.
 
-<a href="http://static.juev.ru/2010/02/update.png"><img style="display: block; margin-left: auto; margin-right: auto; border: 0px initial initial;" title="update" src="http://static.juev.ru/2010/02/update_thumb.png" border="0" alt="update" width="451" height="329" /></a>
+<a href="http://static.juev.ru/2010/02/update.png" id="lightbox"><img style="display: block; margin-left: auto; margin-right: auto; border: 0px initial initial;" title="update" src="http://static.juev.ru/2010/02/update_thumb.png" border="0" alt="update" width="451" height="329" /></a>
 
 В обновлениях содержатся информация о платных подписках. Как видим, если Необходимо использовать доменное имя второго уровня, это будет стоить 9.97$ в год. Регистрация доменного имени от данного сервиса обойдется всего в 5$.
 
-<a href="http://static.juev.ru/2010/02/tema.png"><img style="display: block; margin-left: auto; margin-right: auto; border: 0px initial initial;" title="tema" src="http://static.juev.ru/2010/02/tema_thumb.png" border="0" alt="tema" width="451" height="330" /></a>
+<a href="http://static.juev.ru/2010/02/tema.png" id="lightbox"><img style="display: block; margin-left: auto; margin-right: auto; border: 0px initial initial;" title="tema" src="http://static.juev.ru/2010/02/tema_thumb.png" border="0" alt="tema" width="451" height="330" /></a>
 
 Количество тем очень велико, как и в любом блоге на wordpress, единственно что, нет возможности использования своих собственных тем оформления. Зато по умолчанию имеется возможность использования сервиса Typekit Fonts, который предоставляет множество различных шрифтов для использования их в оформлении блога. И есть возможность редактирования CSS. Таким образом и в случае бесплатного использования сервиса имеется масса вариантов по оформлению своего блога.
 
-<a href="http://static.juev.ru/2010/02/media.png"><img style="display: block; margin-left: auto; margin-right: auto; border: 0px initial initial;" title="media" src="http://static.juev.ru/2010/02/media_thumb.png" border="0" alt="media" width="451" height="331" /></a>
+<a href="http://static.juev.ru/2010/02/media.png" id="lightbox"><img style="display: block; margin-left: auto; margin-right: auto; border: 0px initial initial;" title="media" src="http://static.juev.ru/2010/02/media_thumb.png" border="0" alt="media" width="451" height="331" /></a>
 
 В библиотеке файлов четко прописывается размер выделенного пространства и типы файлов, которые можно использовать на данном сервисе.
 
-<a href="http://static.juev.ru/2010/02/options.png"><img style="display: block; margin-left: auto; margin-right: auto; border: 0px initial initial;" title="options" src="http://static.juev.ru/2010/02/options_thumb.png" border="0" alt="options" width="451" height="328" /></a>
+<a href="http://static.juev.ru/2010/02/options.png" id="lightbox"><img style="display: block; margin-left: auto; margin-right: auto; border: 0px initial initial;" title="options" src="http://static.juev.ru/2010/02/options_thumb.png" border="0" alt="options" width="451" height="328" /></a>
 
 В параметрах блога оставлены только самые основные опции. К примеру нет возможности управлять параметрами ЧПУ, хотя для русского языка прекрасно работает транслитерация по умолчанию. Так же изначально можно использовать адрес своего блога как OpenID ключ. В общих параметрах задается так же favicon, то есть иконка сайта, отображаемая во вкладке браузера рядом с именем сайта.
 

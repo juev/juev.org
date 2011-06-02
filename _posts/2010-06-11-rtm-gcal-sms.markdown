@@ -5,20 +5,26 @@ title: !binary |
   TSDQv9C+IFNNUw==
 
 ---
-Многие слышали о таком удобном online-таскменеджере как <a href="http://www.rememberthemilk.com/">www.rememberthemilk.com</a> (RTM). Некоторые его используют в своей работе. Сервис бесплатный и очень функциональный. В основе RTM лежит система управления задачами Девида Аллена <a href="http://ru.wikipedia.org/wiki/Getting_Things_Done">GTD</a>.
+Многие слышали о таком удобном online-таскменеджере как <a href="http://www.rememberthemilk.com/" rel="nofollow">www.rememberthemilk.com</a> (RTM). Некоторые его используют в своей работе. Сервис бесплатный и очень функциональный. В основе RTM лежит система управления задачами Девида Аллена <a href="http://ru.wikipedia.org/wiki/Getting_Things_Done" rel="nofollow">GTD</a>.
 
 Есть масса вариантов оповещения о предстоящих событиях, как по почте, так и по jabber. Единственным недостатком является то, что оповещение по sms работает только в Соединенных Штатах Америки и в России приходиться обходиться без них.
 
 Однако нашелся способ "прикрутить" оповещения через SMS, да и еще бесплатный! Как это сделать? Сейчас расскажу.
 
-<!--more-->Суть метода заключается в том, что для SMS-оповещения будет использоваться календарь гугла. Нужно лишь передать все события из RTM в Google Calendar и все будет работать как положено!
+Суть метода заключается в том, что для SMS-оповещения будет использоваться календарь гугла. Нужно лишь передать все события из RTM в Google Calendar и все будет работать как положено!
 
 Заходим на RTM в папку <strong>Входящие</strong> и обращаем внимание на ссылки, которые размещены в панели свойств задачи.
-<p style="text-align: center;"><img class="aligncenter size-full wp-image-1054" title="RTM" src="http://static.juev.ru/2010/06/RTM.png" alt="" width="308" height="193" /></p>
+
+<img class="aligncenter size-full wp-image-1054" title="RTM" src="http://static.juev.ru/2010/06/RTM.png" alt="" width="308" height="193" />
+
 Нас интересует ссылка iCalendar. Копируем ее адрес в буфер обмена. И теперь переходим в Google Calendar и в левой части экрана открываем параметры Других календарей.
-<p style="text-align: center;"><img class="aligncenter size-full wp-image-1052" title="gcal-add" src="http://static.juev.ru/2010/06/gcal-add.png" alt="" width="255" height="177" /></p>
+
+<img class="aligncenter size-full wp-image-1052" title="gcal-add" src="http://static.juev.ru/2010/06/gcal-add.png" alt="" width="255" height="177" />
+
 В данном случае нас интересует пункт Добавить по URL. Выбираем этот пункт и появляется поле для ввода адреса:
-<p style="text-align: center;"><a href="http://static.juev.ru/2010/06/gcal-url.png"><img class="aligncenter size-full wp-image-1053" title="gcal-url" src="http://static.juev.ru/2010/06/gcal-url.png" alt="" width="363" height="155" /></a></p>
+
+<a href="http://static.juev.ru/2010/06/gcal-url.png" rel="lightbox"><img class="aligncenter size-full wp-image-1053" title="gcal-url" src="http://static.juev.ru/2010/06/gcal-url.png" alt="" width="363" height="155" /></a>
+
 В который и добавляем тот адрес, что предварительно скопировали из RTM.
 
 Когда я впервые пробовал данный способ, я всегда удивлялся, почему у меня не появляются в календаре мои задачи? Оказалось все очень просто. В календарь переносятся только те задачи, которые были назначены на определенный день и время. Все остальные задачи просто игнорируются.
