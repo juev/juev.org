@@ -18,7 +18,7 @@
 	text-indent:-999px;
 	background:url(http://static.juev.ru/images/ui.totop.png) no-repeat left top;
 }
-
+/*
 #toTopHover {
 	background:url(http://static.juev.ru/images/ui.totop.png) no-repeat left -51px;
 	width:51px;
@@ -30,7 +30,7 @@
 	-moz-opacity: 0;
 	filter:alpha(opacity=0);
 }
-
+*/
 #toTop:active, #toTop:focus {
 	outline:none;
 }
