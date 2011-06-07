@@ -1,12 +1,8 @@
 User-agent: *
-Disallow: /page/
-Disallow: /404/
-Disallow: /arhiv/
+Disallow: /404.html
 Sitemap: http://www.juev.ru/sitemap.xml
 
 User-agent: Yandex
-Disallow: /page/
-Disallow: /404/
-Disallow: /arhiv/
+Disallow: /404.html
 Sitemap: http://www.juev.ru/sitemap.xml
 Host: www.juev.ru
