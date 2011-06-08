@@ -7,7 +7,7 @@ title: !binary |
 ---
 Итак, в прошлой статье <a rel="bookmark" href="/2009/05/18/awesome-ustanovka-i-zapusk/">awesome: установка и запуск</a> мы рассмотрели, как установить awesome и обеспечить его запуск при загрузке системы. Теперь рассмотрим самое интересное - его конфигурацию. Для этого начинаем менять файл `~/.config/awesome/rc.lua`, который скопировали в предыдущей статье.
 
-Полный вариант моего конфигурационного файла можно взять <a href="http://textsnip.com/6e369d" rel="nofollow">здесь</a>.
+Полный вариант моего конфигурационного файла: <a href="https://gist.github.com/1014780" rel="nofollow">gist.github.com/1014780</a>.
 
 Для начала комментируем стандартную тему, устанавливая двойное тире -- в начале нужной строки и прописываем свою:
 
@@ -67,44 +67,44 @@ title: !binary |
 
 Затем меняем описание создания рабочих столов, с указанием используемого на нем layout:
 
-    -- \{\{\{ Tags
-    -- Define tags table.
-    tags = {}
-    for s = 1, screen.count() do
-    -- Each screen has its own tag table.
-    tags[s] = {}
-    -- Create 9 tags per screen.
-    tags[s][1] = tag(1)
-    tags[s][1].screen = s
-    awful.layout.set(awful.layout.suit.tile.bottom, tags[s][1])
-    tags[s][2] = tag(2)
-    tags[s][2].screen = s
-    awful.layout.set(awful.layout.suit.max, tags[s][2])
-    tags[s][3] = tag(3)
-    tags[s][3].screen = s
-    awful.layout.set(awful.layout.suit.max, tags[s][3])
-    tags[s][4] = tag(4)
-    tags[s][4].screen = s
-    awful.layout.set(awful.layout.suit.tile, tags[s][4])
-    tags[s][5] = tag(5)
-    tags[s][5].screen = s
-    awful.layout.set(awful.layout.suit.max, tags[s][5])
-    tags[s][6] = tag(6)
-    tags[s][6].screen = s
-    awful.layout.set(awful.layout.suit.max, tags[s][6])
-    tags[s][7] = tag(7)
-    tags[s][7].screen = s
-    awful.layout.set(awful.layout.suit.max, tags[s][7])
-    tags[s][8] = tag(8)
-    tags[s][8].screen = s
-    awful.layout.set(awful.layout.suit.max, tags[s][8])
-    tags[s][9] = tag(9)
-    tags[s][9].screen = s
-    awful.layout.set(awful.layout.suit.max, tags[s][9])
-    -- I'm sure you want to see at least one tag.
-    tags[s][1].selected = true
-    end
-    -- }}}
+<pre><code>-- &#123;&#123;&#123; Tags
+-- Define tags table.
+tags = {}
+for s = 1, screen.count() do
+-- Each screen has its own tag table.
+tags[s] = {}
+-- Create 9 tags per screen.
+tags[s][1] = tag(1)
+tags[s][1].screen = s
+awful.layout.set(awful.layout.suit.tile.bottom, tags[s][1])
+tags[s][2] = tag(2)
+tags[s][2].screen = s
+awful.layout.set(awful.layout.suit.max, tags[s][2])
+tags[s][3] = tag(3)
+tags[s][3].screen = s
+awful.layout.set(awful.layout.suit.max, tags[s][3])
+tags[s][4] = tag(4)
+tags[s][4].screen = s
+awful.layout.set(awful.layout.suit.tile, tags[s][4])
+tags[s][5] = tag(5)
+tags[s][5].screen = s
+awful.layout.set(awful.layout.suit.max, tags[s][5])
+tags[s][6] = tag(6)
+tags[s][6].screen = s
+awful.layout.set(awful.layout.suit.max, tags[s][6])
+tags[s][7] = tag(7)
+tags[s][7].screen = s
+awful.layout.set(awful.layout.suit.max, tags[s][7])
+tags[s][8] = tag(8)
+tags[s][8].screen = s
+awful.layout.set(awful.layout.suit.max, tags[s][8])
+tags[s][9] = tag(9)
+tags[s][9].screen = s
+awful.layout.set(awful.layout.suit.max, tags[s][9])
+-- I'm sure you want to see at least one tag.
+tags[s][1].selected = true
+end
+-- }}}</code></pre>
 
 Как видно из кода, создаются теже 9 рабочих столов, имена которых соответствуют их порядковым номерам. На первом рабочем столе используется layout tile.bottom, на четвертом используется обычный tile, а на остальных max. Чем отличаются различные layout я описывать не буду, лучше посмотрите на практике.
 
@@ -217,7 +217,7 @@ title: !binary |
 
 Для того, чтобы между окнами в тайловом режиме не было свободных промежутков, убираем коментарий со строки:
 
-    -- Honor size hints: if you want to drop the gaps between       -- Honor size hints: if you want to drop the gaps between
+    -- Honor size hints: if you want to drop the gaps between 
     c.size_hints_honor = false
 
 Для того, чтобы использовать вывод консольных программ в авесоме прописываем дополнительную функцию:
