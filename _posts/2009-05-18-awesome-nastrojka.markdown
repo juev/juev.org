@@ -67,44 +67,48 @@ title: !binary |
 
 Затем меняем описание создания рабочих столов, с указанием используемого на нем layout:
 
-<pre><code>-- &#123;&#123;&#123; Tags
--- Define tags table.
-tags = {}
-for s = 1, screen.count() do
--- Each screen has its own tag table.
-tags[s] = {}
--- Create 9 tags per screen.
-tags[s][1] = tag(1)
-tags[s][1].screen = s
-awful.layout.set(awful.layout.suit.tile.bottom, tags[s][1])
-tags[s][2] = tag(2)
-tags[s][2].screen = s
-awful.layout.set(awful.layout.suit.max, tags[s][2])
-tags[s][3] = tag(3)
-tags[s][3].screen = s
-awful.layout.set(awful.layout.suit.max, tags[s][3])
-tags[s][4] = tag(4)
-tags[s][4].screen = s
-awful.layout.set(awful.layout.suit.tile, tags[s][4])
-tags[s][5] = tag(5)
-tags[s][5].screen = s
-awful.layout.set(awful.layout.suit.max, tags[s][5])
-tags[s][6] = tag(6)
-tags[s][6].screen = s
-awful.layout.set(awful.layout.suit.max, tags[s][6])
-tags[s][7] = tag(7)
-tags[s][7].screen = s
-awful.layout.set(awful.layout.suit.max, tags[s][7])
-tags[s][8] = tag(8)
-tags[s][8].screen = s
-awful.layout.set(awful.layout.suit.max, tags[s][8])
-tags[s][9] = tag(9)
-tags[s][9].screen = s
-awful.layout.set(awful.layout.suit.max, tags[s][9])
--- I'm sure you want to see at least one tag.
-tags[s][1].selected = true
-end
--- }}}</code></pre>
+{% raw %}
+
+    -- {{{ Tags
+    -- Define tags table.
+    tags = {}
+    for s = 1, screen.count() do
+    -- Each screen has its own tag table.
+    tags[s] = {}
+    -- Create 9 tags per screen.
+    tags[s][1] = tag(1)
+    tags[s][1].screen = s
+    awful.layout.set(awful.layout.suit.tile.bottom, tags[s][1])
+    tags[s][2] = tag(2)
+    tags[s][2].screen = s
+    awful.layout.set(awful.layout.suit.max, tags[s][2])
+    tags[s][3] = tag(3)
+    tags[s][3].screen = s
+    awful.layout.set(awful.layout.suit.max, tags[s][3])
+    tags[s][4] = tag(4)
+    tags[s][4].screen = s
+    awful.layout.set(awful.layout.suit.tile, tags[s][4])
+    tags[s][5] = tag(5)
+    tags[s][5].screen = s
+    awful.layout.set(awful.layout.suit.max, tags[s][5])
+    tags[s][6] = tag(6)
+    tags[s][6].screen = s
+    awful.layout.set(awful.layout.suit.max, tags[s][6])
+    tags[s][7] = tag(7)
+    tags[s][7].screen = s
+    awful.layout.set(awful.layout.suit.max, tags[s][7])
+    tags[s][8] = tag(8)
+    tags[s][8].screen = s
+    awful.layout.set(awful.layout.suit.max, tags[s][8])
+    tags[s][9] = tag(9)
+    tags[s][9].screen = s
+    awful.layout.set(awful.layout.suit.max, tags[s][9])
+    -- I'm sure you want to see at least one tag.
+    tags[s][1].selected = true
+    end
+    -- }}}
+
+{% endraw %}
 
 Как видно из кода, создаются теже 9 рабочих столов, имена которых соответствуют их порядковым номерам. На первом рабочем столе используется layout tile.bottom, на четвертом используется обычный tile, а на остальных max. Чем отличаются различные layout я описывать не буду, лучше посмотрите на практике.
 
