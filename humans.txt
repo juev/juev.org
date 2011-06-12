@@ -13,5 +13,5 @@
 /* SITE */
   Language: Russia
   Doctype: HTML5
-  Components: jQuery, FancyBox, Twitter Trackbacks Widget, jquery.ui.totop
+  Components: jQuery, FancyBox, jquery.ui.totop
   Software: Vim, Gimp, Jekyll 
