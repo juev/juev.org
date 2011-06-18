@@ -8,7 +8,10 @@ javascript_compressor:  closure     # (yui, closure)
 
 stylesheets:
   master:
-    - _css/*.css 
+    - _css/style.css 
+    - _css/jquery.fancybox-1.3.4.css
+    - _css/ui.totop.css
+    - _css/highlight.css      
 
 javascripts:
   master:

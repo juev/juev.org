@@ -57,6 +57,6 @@ task :new do
     f.puts ""
   end
   
-  `gvim #{path}`
+  `gvim #{path} &`
   exit
 end

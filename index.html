@@ -5,7 +5,7 @@ title: Life is Open Source
 {% assign first_post = site.posts.first %}
 <a href="{{site.posts.first.url}}"><h1 class="title">{{ site.posts.first.title }}</h1></a>
 <div class=date>Published &thinsp;&bull; {{ site.posts.first.date | date: '%d' }} <abbr>{{ site.posts.first.date | date: '%b' }}</abbr> {{ site.posts.first.date | date: '%Y' }}</div>
-<div class="article-index">
+<div class="article">
 {{ site.posts.first.content | strip_html | truncatewords: 130 }}
 </div>
 <div class="recent_posts">
