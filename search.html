@@ -1,139 +1,90 @@
----
-layout: default
-title: Search on Life is Open Source
-permalink: search.html
----
-<h2 class="title">Поиск по сайту</h2>
+<!doctype html>
+<!--[if lt IE 7 ]> <html lang="en" class="no-js ie6"> <![endif]-->
+<!--[if IE 7 ]>    <html lang="en" class="no-js ie7"> <![endif]-->
+<!--[if IE 8 ]>    <html lang="en" class="no-js ie8"> <![endif]-->
+<!--[if IE 9 ]>    <html lang="en" class="no-js ie9"> <![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!--> <html lang="ru" class="no-js"> <!--<![endif]-->
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	
+	<title>Search on Open Source Life</title>
+	<meta name="author" content="Evsyukov Denis">
+  <link rel="author" href="/humans.txt" />
+	
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
+	<link rel="shortcut icon" href="/favicon.ico">
+	<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+	<link rel="stylesheet" href="/assets/master.css?v=2">
+	<link rel="stylesheet" media="handheld" href="/assets/handheld.css?v=2">
+  <link rel="alternate" type="application/rss+xml" title="Open Source Life RSS Feed" href="http://feeds.feedburner.com/Juev" />
 
-<div class="search">
-<div id="cse" style="width: 100%;">Loading</div>
-</div>
-<script src="http://www.google.com/jsapi" type="text/javascript"></script>
-<script type="text/javascript"> 
-  google.load('search', '1', {language : 'ru'});
-  google.setOnLoadCallback(function() {
-    var customSearchControl = new google.search.CustomSearchControl('partner-pub-4014338488487623:4554962473');
-    customSearchControl.setResultSetSize(google.search.Search.FILTERED_CSE_RESULTSET);
-    customSearchControl.draw('cse');
-  }, true);
-</script>
-<link rel="stylesheet" href="http://www.google.com/cse/style/look/default.css" type="text/css" /> <style type="text/css">
-  div.search{
-    margin-top: 30px;
-    min-height: 250px;
-  }
-  .gsc-control-cse {
-    font-family: Arial, sans-serif;
-    border-color: #336699;
-    background-color: #FFFFFF;
-  }
-  input.gsc-input {
-    border-color: #BCCDF0;
-  }
-  input.gsc-search-button {
-    border-color: #666666;
-    background-color: #CECECE;
-  }
-  .gsc-tabHeader.gsc-tabhInactive {
-    border-color: #E9E9E9;
-    background-color: #E9E9E9;
-  }
-  .gsc-tabHeader.gsc-tabhActive {
-    border-top-color: #FF9900;
-    border-left-color: #E9E9E9;
-    border-right-color: #E9E9E9;
-    background-color: #FFFFFF;
-  }
-  .gsc-tabsArea {
-    border-color: #E9E9E9;
-  }
-  .gsc-webResult.gsc-result {
-    border-color: #FFFFFF;
-    background-color: #FFFFFF;
-  }
-  .gsc-webResult.gsc-result:hover {
-    border-color: #FFFFFF;
-    background-color: #FFFFFF;
-  }
-  .gs-webResult.gs-result a.gs-title:link,
-  .gs-webResult.gs-result a.gs-title:link b {
-    color: #0000FF;
-  }
-  .gs-webResult.gs-result a.gs-title:visited,
-  .gs-webResult.gs-result a.gs-title:visited b {
-    color: #663399;
-  }
-  .gs-webResult.gs-result a.gs-title:hover,
-  .gs-webResult.gs-result a.gs-title:hover b {
-    color: #0000CC;
-  }
-  .gs-webResult.gs-result a.gs-title:active,
-  .gs-webResult.gs-result a.gs-title:active b {
-    color: #0000CC;
-  }
-  .gsc-cursor-page {
-    color: #0000FF;
-  }
-  a.gsc-trailing-more-results:link {
-    color: #0000FF;
-  }
-  .gs-webResult .gs-snippet {
-    color: #000000;
-  }
-  .gs-webResult div.gs-visibleUrl {
-    color: #008000;
-  }
-  .gs-webResult div.gs-visibleUrl-short {
-    color: #008000;
-  }
-  .gs-webResult div.gs-visibleUrl-short {
-    display: none;
-  }
-  .gs-webResult div.gs-visibleUrl-long {
-    display: block;
-  }
-  .gsc-cursor-box {
-    border-color: #FFFFFF;
-  }
-  .gsc-results .gsc-cursor-page {
-    border-color: #E9E9E9;
-    background-color: #FFFFFF;
-  }
-  .gsc-results .gsc-cursor-page.gsc-cursor-current-page {
-    border-color: #FF9900;
-    background-color: #FFFFFF;
-  }
-  .gs-promotion {
-    border-color: #336699;
-    background-color: #FFFFFF;
-  }
-  .gs-promotion a.gs-title:link,
-  .gs-promotion a.gs-title:link *,
-  .gs-promotion .gs-snippet a:link {
-    color: #0000CC;
-  }
-  .gs-promotion a.gs-title:visited,
-  .gs-promotion a.gs-title:visited *,
-  .gs-promotion .gs-snippet a:visited {
-    color: #0000CC;
-  }
-  .gs-promotion a.gs-title:hover,
-  .gs-promotion a.gs-title:hover *,
-  .gs-promotion .gs-snippet a:hover {
-    color: #0000CC;
-  }
-  .gs-promotion a.gs-title:active,
-  .gs-promotion a.gs-title:active *,
-  .gs-promotion .gs-snippet a:active {
-    color: #0000CC;
-  }
-  .gs-promotion .gs-snippet,
-  .gs-promotion .gs-title .gs-promotion-title-right,
-  .gs-promotion .gs-title .gs-promotion-title-right *  {
-    color: #000000;
-  }
-  .gs-promotion .gs-visibleUrl,
-  .gs-promotion .gs-visibleUrl-short {
-    color: #008000;
-  }
-</style>
+  <script src="https://www.google.com/jsapi?ABQIAAAAKq-lK_SvBOm2-YqNaF5SYxTXesxEg472KmwHWPUv-QbQMDYSjRTZ-caTLgXXhT3aheWqqwlclRJgfw"></script>
+  <script type="text/javascript">
+    google.load('search', '1');
+    google.setOnLoadCallback(function(){
+        var customSearchControl = new google.search.CustomSearchControl('partner-pub-4014338488487623:4849668787');
+        customSearchControl.enableAds('pub-4014338488487623');
+        customSearchControl.draw('cse');
+    }, true);
+  </script>
+	<script src="/js/libs/modernizr-1.7.min.js"></script>
+</head>
+<body>
+	<div id="container">
+		<div id="main" role="main">
+      <div id="content">
+        <h2>Поиск по сайту</h2>
+        <div id="cse" style="width:100%;">Loading...</div>
+      </div>
+      <div id="footer">
+        <p>&copy; Copyright 2008-2011 by Denis Evsyukov.</p>
+        <p>Content licensed under the <a href="http://creativecommons.org/licenses/by-nc-sa/3.0/" rel="nofollow" id="license">Creative Commons attribution-noncommercial-sharealike License.</a></p>
+        <p>Contact me via <a href="&#109;&#97;&#105;&#108;&#116;&#111;&#58;&#100;&#101;&#110;&#105;&#115;&#64;&#101;&#118;&#115;&#121;&#117;&#107;&#111;&#118;&#46;&#111;&#114;&#103;" rel="nofollow">mail</a>,
+        <a href="http://twitter.com/juev" rel="nofollow">twitter</a> or
+        <a href="http://github.com/juev" rel="nofollow">github</a></p>
+        <p><a href="/humans.txt" rel="nofollow">humansTXT</a></p>
+      </div>
+      <div id="sidebar">
+        <div class="logo"><a href="/"></a></div>
+        <ul class="nav">
+          <li><a href="/articles.html" rel="nofollow">Все статьи</a></li>
+          <li><a href="http://denis.evsyukov.org">Об авторе</a></li>
+          <li><a href="/search.html" rel="nofollow">Поиск</a></li>
+        </ul>
+        <div class="nav"><a href="http://feeds.feedburner.com/Juev" rel="nofollow">
+            <img src="http://feeds.feedburner.com/~fc/Juev?bg=FF9900&amp;fg=444444&amp;anim=0" height="26" width="88" style="border:0" alt="" /></a>
+        </div>
+      </div>
+		</div>
+	</div>
+
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js"></script>
+	<script>!window.jQuery && document.write(unescape('%3Cscript src="/js/libs/jquery-1.5.1.min.js"%3E%3C/script%3E'))</script>
+
+	<script src="/assets/master.js"></script>
+<!--	<script src="/js/plugins.js"></script>
+<script src="/js/script.js"></script> -->
+
+	<!--[if lt IE 7 ]>
+	<script src="/js/libs/dd_belatedpng.js"></script>
+	<script> DD_belatedPNG.fix('img, .png_bg');</script>
+	<![endif]-->
+  <!-- Start of StatCounter Code for Default Guide -->
+  <script type="text/javascript">
+    var sc_project=6463114; 
+    var sc_invisible=1; 
+    var sc_security="5694f869"; 
+  </script>
+  <script type="text/javascript" src="http://www.statcounter.com/counter/counter.js"></script>
+  <noscript>
+    <div class="statcounter">
+      <a title="tumblr tracker" href="http://statcounter.com/tumblr/" target="_blank">
+        <img class="statcounter" src="http://c.statcounter.com/6463114/0/5694f869/1/"
+        alt="tumblr tracker"></a>
+    </div>
+  </noscript>
+  <!-- End of StatCounter Code for Default Guide -->
+</body>
+</html>
