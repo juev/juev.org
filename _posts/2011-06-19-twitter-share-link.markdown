@@ -4,7 +4,6 @@ title: Twitter share link
 description: На сегодняшний день twitter несколько изменил метод публикации записи через вызов ссылки. Публикация перестала работать, но появилось больше возможностей.
 keywords: twitter,api,share,link,wordpress
 date: 2011-06-19 11:37:51
-category: web
 tags:
   - twitter
   - web
