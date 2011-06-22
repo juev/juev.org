@@ -124,6 +124,7 @@ div.pagination a            { font-family: 'Verdana', Helvetica, Arial, sans-ser
                               line-height: 18px;
                               letter-spacing: normal; }
 
+em                          { font-style: italic; }
 /* margins and stuff */
 dt                          { margin: 25px 0 16px 0; padding: 0; }
 dd                          { margin: 16px 0 25px 40px; padding: 0; }

@@ -40,7 +40,7 @@ task :new do
   ARGV[1..ARGV.length - 1].each { |v| title += " #{v}" }
   title.strip!
   now = Time.now
-  path = "_posts/#{now.strftime('%F')}_#{now.strftime('%k')}-#{now.strftime('%M')}-#{title.downcase.gsub(/[\s\.]/, '-').gsub(/[^\w\d\-]/, '')}.md"
+  path = "_posts/#{now.strftime('%F')}-#{title.downcase.gsub(/[\s\.]/, '-').gsub(/[^\w\d\-]/, '')}.markdown"
   
   File.open(path, "w") do |f|
     f.puts "---"
@@ -49,7 +49,6 @@ task :new do
     f.puts "description: "
     f.puts "keywords: "
     f.puts "date: #{now.strftime('%F %T')}"
-    f.puts "category: "
     f.puts "tags:"
     f.puts "  - "
     f.puts "---"
@@ -57,6 +56,6 @@ task :new do
     f.puts ""
   end
   
-  `gvim #{path} &`
+  `gvim --remote-silent #{path}`
   exit
 end
