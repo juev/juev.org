@@ -1,0 +1,86 @@
+---
+layout: post
+title: Установка node.js в Debian
+description: Рассмотрим установку node.js в среде debian без использования sudo.
+keywords: debian,node,javascript,server,sudo
+date: 2011-06-26 17:55:31
+tags:
+  - debian
+  - node.js
+  - javascript
+
+---
+**Javascript** это один из самых популярных языков программирования на сервере **GitHub**.
+Каждый, кто хотя бы немного работал с конструированием веб-сайтов, непременно связывался с
+*JavaScript*.
+
+И если раньше данный язык программирования связывали только с динамическими
+веб-страницами, то в последнее время стали появляться довольно серьезные проекты. Чего
+стоит [Javascript PC Emulator][1]{: rel="nofollow"}, который загружает полноценно
+работающую систему Linux в окне браузера.
+
+Одна из таких *значительных* разработок - это **Node.JS**.
+
+> Node.JS — событийно-ориентированный (асинхронный) I/O фреймворк на движке V8 JavaScript от
+Google, дополненный системными библиотеками и прочими вкусностями. И очень, очень быстрый.
+
+Фактически это фреймворк, который позволяет создавать динамические веб-сайты на языке
+*JavaScript*. Попробовать работать с ним можно установив **Node.JS** в домашнюю папку
+пользователя.
+
+##Установка Node.JS
+
+Предварительно установим в системе необходимые пакеты:
+
+    $ sudo aptitude install build-essential
+    $ sudo aptitude install python-software-properties libssl-dev libreadline-dev
+
+Теперь выбираем один из скриптов для установки, что представлены на странице
+[gist.github.com/579814][2]{: rel="nofollow"}. Я взял один из них и изменил директорию
+установки на `~/.node`, получилось следующее:
+
+    #!/bin/bash
+    echo 'export PATH=$HOME/.node/bin:$PATH' >> ~/.bashrc
+    . ~/.bashrc
+    mkdir ~/.node
+    mkdir ~/node-latest-install
+    cd ~/node-latest-install
+    curl http://nodejs.org/dist/node-latest.tar.gz | tar xz --strip-components=1
+    ./configure --prefix=~/.node
+    make install # ok, fine, this step probably takes more than 30 seconds...
+    curl http://npmjs.org/install.sh | sh
+
+Пишут, что устанавливаться будет порядка 30 секунд, но на моей довольно мощной машине
+(Core2DUO E8400, 2GB) компиляция шла несколько минут.
+
+По завершению работы скрипта на машине будут установлены **node.js** и его пакетный менеджер
+**npm**. Так как установка проводилась от имени пользователя и в его домашнюю папку, для
+запуска этих программ не требуется прав администратора. И для удаления потребуется только
+удалить директорию `~/.node` с диска. Единственно, если потребуется запускать node под
+другим пользователем, необходимо будет провести либо провести установку еще раз от его
+имени, либо провести установку node.js от имени суперпользователя.
+
+##Проверка работы
+
+Для того, чтобы проверить работу **node.js** достаточно создать типовой файл `example.js`:
+
+    var http = require('http');
+    http.createServer(function (req, res) {
+        res.writeHead(200, {'Content-Type': 'text/plain'});
+        res.end('Hello World\n');
+    }).listen(1337, "127.0.0.1");
+    console.log('Server running at http://127.0.0.1:1337/');
+
+И теперь запускаем сам сервер командой:
+
+    $ node example.js
+    Server running at http://127.0.0.1:1337/
+
+Запуск совершается мгновенно, после чего можно открывать в браузере адрес
+`http://127.0.0.1:1337/`, и наблюдать строчку `Hello World!`.
+
+Вот так просто можно установить на свою систему **node.js** и начинать создавать свои
+приложения на языке *JavaScript*!
+
+[1]: http://bellard.org/jslinux/ "Javascript PC Emulator"
+[2]: https://gist.github.com/579814 "Scripts for install node.js"
