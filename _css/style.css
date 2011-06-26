@@ -104,7 +104,7 @@ div#footer                  { float:left; border-top: 1px dotted #ddd; padding-t
                               text-align: center; overflow: hidden; padding-bottom: 18px;}
 div#footer > p              { margin: 0; }
 div.meta                    { border-top: 1px dotted #ddd; }
-div.article                 { margin-top: 10px; min-height: 196px; }
+div.article                 { margin-top: 10px; min-height: 144px; }
 div.article a               { border-bottom: 1px dashed; }
 
 div.pagination              { clear: both; margin-top: 20px; }
