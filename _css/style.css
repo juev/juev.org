@@ -183,7 +183,20 @@ div.share{
   margin-top: 20px;
   margin-bottom: 20px;
 }
-
+blockquote {
+  position: relative;
+  margin: 1.5em 4em;
+}
+blockquote::before {
+  left: -.5em;
+  position: absolute;
+  top: .25em;
+  font-family: Constantia, Georgia, 'Hoefler Text', 'Times New Roman', serif;
+  content: "“";
+  font-size: 4em;
+  opacity: .2;
+  filter: alpha(opacity=20);
+}
 /* End My styles              */
 /* ========================== */
 
