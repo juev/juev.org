@@ -10,11 +10,9 @@ stylesheets:
   master:
     - _css/style.css 
     - _css/jquery.fancybox-1.3.4.css
-    - _css/ui.totop.css
     - _css/highlight.css      
 
 javascripts:
   master:
     - _js/jquery.fancybox-1.3.4.js 
-    - _js/jquery.ui.totop.js 
     - _js/main.js

@@ -98,8 +98,9 @@ h2.title                    { margin-bottom: 15px; }
 /* layout elements */
 div#container               { width: 960px; margin: 18px auto; padding: 0; }
 div#content                 { min-height: 400px; width: 700px; float:left; } 
-div#sidebar                 { position: fixed; margin-left: 715px; width: 245px; padding: 23px 0 0 0; float: right; }
-div#footer                  { float:left; border-top: 1px dotted #ddd; padding-top: 19px; width: 700px;
+/*div#sidebar                 { position: fixed; margin-left: 715px; width: 245px; padding: 23px 0 0 0; float: right; }*/
+div#sidebar                 { width: 245px; padding: 23px 0 0 0; float: right; }
+div#footer                  { border-top: 1px dotted #ddd; padding-top: 19px; width: 100%;
                               margin-top: 15px; font: 16px/24px 'Georgia'; color: #888;
                               text-align: center; overflow: hidden; padding-bottom: 18px;}
 div#footer > p              { margin: 0; }
