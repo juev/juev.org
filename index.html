@@ -3,16 +3,12 @@ layout: default
 title: Life is Open Source
 ---
 {% assign first_post = site.posts.first %}
-<a href="{{site.posts.first.url}}"><h1 class="title">{{ site.posts.first.title }}</h1></a>
-<div class=date>Published &thinsp;&bull; {{ site.posts.first.date | date: '%d' }} <abbr>{{ site.posts.first.date | date: '%b' }}</abbr> {{ site.posts.first.date | date: '%Y' }}</div>
+<h1 class="title"><a href="{{site.posts.first.url}}">{{ site.posts.first.title }}</a></h1>
 <div class="article">
-{{ site.posts.first.content | strip_html | truncatewords: 50 }}
+{{ site.posts.first.content }}
 </div>
-<div class="recent_posts">
-  <h2 class="title">Recent Posts</h2>
-    <div>
-		{% for post in site.posts limit:10 %}	
-			<h3 class="posts"><a href="{{ post.url }}">{{ post.title }}</a></h3>
-		{% endfor %}
-    </div>
+<div class="meta">
+  <div class="pagination">
+  <p class="allpostsmeta"><a href="/articles.html" title="Список всех статей" rel="nofollow">Список всех статей</a></p>
+  </div>
 </div>

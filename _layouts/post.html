@@ -1,14 +1,21 @@
 ---
 layout: default
 ---
-<a href="{{page.url}}"><h1 class="title">{{ page.title }}</h1></a>
-<div class=date>Published &thinsp;&bull; {{ page.date | date: '%d' }} <abbr>{{ page.date | date: '%b' }}</abbr> {{ page.date | date: '%Y' }}
-</div>
+<h1 class="title">{{ page.title }}</h1>
 <div class="article">
 {{ content }}
 </div>
-<div class="share">
+<div>
+<span class="share">
 <a href="http://twitter.com/share" class="twitter-share-button" data-count="horizontal" data-via="Juev">Tweet</a><script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script>
+</span>
+<span class="tags">
+{% assign post = page %}
+<strong>tags</strong>: 
+{% for tag in post.tags %}
+  <a href="/tags/{{ tag }}" title="View posts tagged with &quot;{{ tag }}&quot;" rel="nofollow">{{ tag }}</a>{% if forloop.last != true %}, {% endif %}
+{% endfor %}
+</span>
 </div>
 <div class="meta">
   {% include nav.html %}
