@@ -7,7 +7,7 @@ keywords: pdns,dns,daemon,services,archlinux
 date: 2009-03-17
 tags:
   - dns
-  - service
+  - services
   - daemon
 
 ---
