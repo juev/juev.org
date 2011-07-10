@@ -2,6 +2,12 @@
 layout: post
 title: !binary |
   0JbQuNC30L3RjCDQsiDRgdC10YLQuA==
+keywords: life,internet,services,chrome
+date: 2010-07-19
+tags:
+  - internet
+  - services
+  - chrome
 
 ---
 Сегодня с утра, неожиданно для меня, вышел из строя монитор.

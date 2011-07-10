@@ -3,6 +3,11 @@ layout: post
 title: !binary |
   0JTQvtC/0L7Qu9C90LXQvdC40LUg0L/QviDRgdCx0L7RgNC60LUg0Y/QtNGA
   0LAg0LIgYXJjaGxpbnV4
+keywords: archlinux,kernel,build
+date: 2009-05-16
+tags:
+  - archlinux
+  - kernel
 
 ---
 <p>В заметке <a href="/2009/03/07/archlinux-sborka-yadra/">archlinux - сборка ядра</a> благодаря <cite class="fn">Gnomik</cite> (Антон) была выявлена небольшая неточность. О которой спешу рассказать.</p><p>Для сборки пакета archlinux используется два файла: PKGBUILD и kernel26.install</p><p>Перед сборкой пакета необходимо изменить файл PKBUILD для указания версии создаваемого пакета и версии используемого ядра. Для этого в самом начале файла меняем следующие строки:</p>

@@ -2,6 +2,11 @@
 layout: post
 title: !binary |
   0KHQv9Cw0Lwg0LIg0LHQu9C+0LPQtSDQvdCwIFdvcmRwcmVzcw==
+keywords: wordpress,spam,antispam
+date: 2010-08-11
+tags:
+  - wordpess
+  - spam
 
 ---
 Не так давно я уже описывал методы борьбы со спамом в блоге на Wordpress в своей статье <a href="/2010/01/05/wordpress-antispam/">WordPress AntiSpam</a>. С тех пор мало что изменилось, однако плагин amcaptcha стал давать сбой. Основная нагрузка ложилась на Akismet.

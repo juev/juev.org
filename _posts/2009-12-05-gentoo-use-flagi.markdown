@@ -2,6 +2,11 @@
 layout: post
 title: !binary |
   R2VudG9vOiBVU0Ut0YTQu9Cw0LPQuA==
+keywords: gentoo,use,flags,packages
+date: 2009-12-05
+tags:
+  - gentoo
+  - tips
 
 ---
 Одна из сложностей, с которой приходится столкнуться начинающему пользователю Gentoo - это USE-флаги. Откуда их брать? Как прописывать? Где взять готовые списки, чтобы все было хорошо?

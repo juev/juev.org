@@ -1,6 +1,13 @@
 --- 
 layout: post
-title: Google Chrome & Delicious
+title: Google Chrome &amp; Delicious
+keywords: chrome,google,internet,services,social,bookmark
+date: 2010-02-12
+tags:
+  - chrome
+  - services
+  - internet
+
 ---
 Google Chrome с каждым жнем развивается и становиться все интереснее и интереснее.
 

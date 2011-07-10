@@ -1,6 +1,13 @@
 --- 
 layout: post
 title: PolicyKit
+keywords: archlinux,policykit,gentoo
+date: 2009-10-20
+tags:
+  - archlinux
+  - gentoo
+  - security
+
 ---
 Интересно, кто-нибудь использует PolicyKit для обеспечения безопасности на своем компьютере??
 
@@ -10,10 +17,10 @@ title: PolicyKit
 
 Перед установкой необходимо удалить hal из системы:
 
-    $yaourt -Rdn hal
+    $ yaourt -Rdn hal
 
 После чего устанавливаем новый пакет:
 
-    $yaourt -S hal-easy
+    $ yaourt -S hal-easy
 
 Теперь можно о PolicyKit забыть как о страшном сне.

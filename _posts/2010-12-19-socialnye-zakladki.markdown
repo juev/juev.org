@@ -2,6 +2,11 @@
 layout: post
 title: !binary |
   0KHQvtGG0LjQsNC70YzQvdGL0LUg0LfQsNC60LvQsNC00LrQuA==
+keywords: social,internet,bookmark,закладки
+date: 2010-12-19
+tags:
+  - internet
+  - social
 
 ---
 Многих взбудоражили новости от компании Yahoo о закрытии целого ряда их сервисов. В том числе и сервиса социальных закладок Delicious. 

@@ -1,6 +1,12 @@
 --- 
 layout: post
 title: Instapaper
+keywords: internet,services,read,instapaper
+date: 2010-03-08
+tags:
+  - internet
+  - services
+
 ---
 На протяжении нескольких лет в качестве сервиса для хранения "временных" закладок я
 использовал <a href="http://www.laterloop.com/" rel="nofllow">www.laterloop.com</a>. Использовал потому, что у этого сервиса было создано расширение для Firefox, которое позволяло сохранять адрес страницы нажатием на Ctrl+Space, быстро и удобно. Ну и вторая причина - я просто не знал о существовании альтернатив.

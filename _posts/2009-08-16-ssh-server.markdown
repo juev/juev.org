@@ -3,6 +3,12 @@ layout: post
 title: !binary |
   U1NILdGB0LXRgNCy0LXRgDog0LLQvtC/0YDQvtGB0Ysg0LHQtdC30L7Qv9Cw
   0YHQvdC+0YHRgtC4
+keywords: archlinux,ssh,security,server
+date: 2009-08-16
+tags:
+  - archlinux
+  - ssh
+  - security
 
 ---
 Думаю, не стоит объяснять для чего обычно организуется SSH-сервер? Рассмотрим его установку и организацию безопасной работы с ним.

@@ -3,6 +3,10 @@ layout: post
 title: !binary |
   Y29ua2Vyb3IgLSDQstC10LEg0L3QsCDQutC+0L3Rh9C40LrQsNGFINC/0LDQ
   u9GM0YbQtdCy
+keywords: firefox,conkeror
+date: 2009-06-29
+tags:
+  - firefox
 
 ---
 Согласно <a href="http://ru.wikipedia.org/wiki/Conkeror" rel="nofollow">Википедии</a>:

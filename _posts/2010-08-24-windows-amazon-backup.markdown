@@ -3,6 +3,12 @@ layout: post
 title: !binary |
   0KDQtdC30LXRgNCy0L3Ri9C1INC60L7Qv9C40Lgg0YTQsNC50LvQvtCyIC0g
   QW1hem9uIFMz
+keywords: windows,soft,dropbox,cloudberry
+date: 2010-08-24
+tags:
+  - windows
+  - dropbox
+  - cloudberry
 
 ---
 У любого пользователя порой случаются ситуации потери информации. Вышел из строя винчестер/флешка, кто-то злостно потер данные, да мало ли существует причин? Как раз для этого и организуют резервные копии, из которых в дальнейшем можно восстановить потерянную информацию.

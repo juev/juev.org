@@ -3,6 +3,11 @@ layout: post
 title: !binary |
   bWNhYmJlciAtINC60L7QvdGB0L7Qu9GM0L3Ri9C5IGphYmJlciDQutC70LjQ
   tdC90YI=
+keywords: jabber,mcabber
+date: 2009-06-04
+tags:
+  - jabber
+  - mcabber
 
 ---
 Согласно <a href="http://wiki.mcabber.com/index.php/RU_Main_Page" rel="nofollow">wiki.mcabber.com</a>:
@@ -22,7 +27,7 @@ title: !binary |
     $ cp /usr/share/mcabber/example/mcabberrc<tt> ~/.mcabber/mcabberrc</tt>
 
 И затем начинаем его редактировать любимым редактором (файл по умолчанию очень хорошо документирован, проблем в настройке возникнуть не должно).
-**!!** mcabber не умеет регистрировать пользователя на сервере, поэтому данную операцию нужно провести заранее с помощью другого клиента.
+ **!!** mcabber не умеет регистрировать пользователя на сервере, поэтому данную операцию нужно провести заранее с помощью другого клиента.
 
 Необходимый минимум, который нужно прописать (а точнее изменить в файле <tt>mcabberrc</tt>), это:
 

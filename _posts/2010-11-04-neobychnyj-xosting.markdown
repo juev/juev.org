@@ -2,6 +2,12 @@
 layout: post
 title: !binary |
   0J3QtdC+0LHRi9GH0L3Ri9C5INGF0L7RgdGC0LjQvdCz
+keywords: amazon,github,hosting,хостинг
+date: 2010-11-04
+tags:
+  - хостинг
+  - amazon
+  - github
 
 ---
 Продолжаю думать о переносе блога на статическую основу. Пока изучаю emacs muse, решил поискать различные варианты хостинга. 

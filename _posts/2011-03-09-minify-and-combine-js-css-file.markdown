@@ -2,6 +2,13 @@
 layout: post
 title: Juicer - комбинируем CSS и JavaScript файлы
 keywords: juicer,ruby,css,javascript,webdesign
+date: 2011-03-09
+tags:
+  - javascript
+  - css
+  - webdesign
+  - ruby
+
 ---
 Для лучшей производительности, CSS и javaScript файлы должны отдаваться с сервера как можно меньшим размером и с как можно меньшим
 числом запросов. 

@@ -2,6 +2,10 @@
 layout: post
 title: !binary |
   0JDQu9GM0YLQtdGA0L3QsNGC0LjQstCwIGZhbWQ=
+keywords: archlinux,daemon,gamin
+date: 2009-07-26
+tags:
+  - archlinux
 
 ---
 При использовании файловых менеджеров очень удобно бывает отслеживать все изменения в реальном времени.

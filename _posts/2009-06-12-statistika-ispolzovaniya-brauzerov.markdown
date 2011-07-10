@@ -3,6 +3,11 @@ layout: post
 title: !binary |
   0KHRgtCw0YLQuNGB0YLQuNC60LAg0LjRgdC/0L7Qu9GM0LfQvtCy0LDQvdC4
   0Y8g0LHRgNCw0YPQt9C10YDQvtCy
+keywords: firefox,chrome,opera,safari,stat
+date: 2009-06-12
+tags:
+  - firefox
+  - chrome
 
 ---
 Вчера провел опрос среди посетителей своей ЖЖешечки, какой браузер используется на компьютере?

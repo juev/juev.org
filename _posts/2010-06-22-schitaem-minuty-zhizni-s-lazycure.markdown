@@ -3,6 +3,11 @@ layout: post
 title: !binary |
   0KHRh9C40YLQsNC10Lwg0LzQuNC90YPRgtGLINC20LjQt9C90Lgg0YEgTGF6
   eUN1cmU=
+keywords: windows,soft,chrono,time
+date: 2010-06-22
+tags:
+  - windows
+  - soft
 
 ---
 В блоге Управление своим временем и своими делами я описывал, для чего и как обычно ведут

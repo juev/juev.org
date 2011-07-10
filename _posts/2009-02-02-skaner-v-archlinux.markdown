@@ -2,6 +2,10 @@
 layout: post
 title: !binary |
   0YHQutCw0L3QtdGAINCyIGFyY2hsaW51eA==
+keywords: archlinux,scaner,scan
+date: 2009-02-02
+tags:
+  - archlinux
 
 ---
 <strong>Статья содержит ошибки, публикация по теме с исправлениями находиться <a href="/2009/03/14/skaner-v-archlinux-2/">здесь</a>

@@ -5,9 +5,9 @@ description: Рассмотрим установку node.js в среде debia
 keywords: debian,node,javascript,server,sudo
 date: 2011-06-26 17:55:31
 tags:
-  - debian
-  - node.js
-  - javascript
+- debian
+- node.js
+- javascript
 
 ---
 **Javascript** это один из самых популярных языков программирования на сервере **GitHub**.

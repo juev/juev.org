@@ -1,6 +1,13 @@
 --- 
 layout: post
 title: Twitter trackback
+keywords: twitter,webdesign,jquery,plugins
+date: 2011-03-07
+tags:
+  - twitter
+  - webdesign
+  - jquery
+
 ---
 Сегодня занимался тем, что работал над оформлением сайта. Изменил немного стиль, сделал
 его более спокойным и приспособленным для чтения. Пытался реализовать twitter trackback на

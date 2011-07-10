@@ -27,6 +27,12 @@ excerpt: !binary |
   sNCy0L3QtSDRgSDQu9GO0LHRi9C8INC00LXRgdC60YLQvtC/LdC80LXQvdC1
   0LTQttC10YDQvtC8Li4uIA==
 
+keywords: wm,awesome,tiling
+date: 2009-06-25
+tags:
+  - wm
+  - awesome
+
 ---
 Давно собирался написать про свое рабочее окружение в awesome wm. Но все никак не удавалось сесть и довести дело до конца. Сегодня все таки решился.
 

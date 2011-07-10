@@ -3,6 +3,11 @@ layout: post
 title: !binary |
   eWFvdXJ0INC4INGB0LHQvtGA0LrQsCDQv9Cw0LrQtdGC0LAg0LTQu9GPINGD
   0YHRgtCw0L3QvtCy0LrQuA==
+keywords: archlinux,yaourt
+date: 2009-04-22
+tags:
+  - archlinux
+  - yaourt
 
 ---
 Сегодня обновлял firefox-pgo из AUR с применением yaourt. Потратил очень много времени на компиляцию. Ядро компилируется намного быстрее. После компиляции забыл сохранить подготовленный пакет в отдельной папке, чтобы в дальнейшем не приходилось компилировать его заново. И после установки он был просто удален.

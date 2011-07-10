@@ -1,6 +1,12 @@
 --- 
 layout: post
 title: FoxitReader
+keywords: archlinux,soft,foxitreader
+date: 2009-08-18
+tags:
+  - archlinux
+  - soft
+
 ---
 Когда работал под windows в качестве программы просмотра pdf-файлов использовал программу FoxitReader. Мало весит, очень быстро открывает файлы. Альтернативы под данной осью просто не было...
 

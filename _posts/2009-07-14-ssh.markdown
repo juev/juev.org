@@ -3,6 +3,12 @@ layout: post
 title: !binary |
   U1NIINCw0LLRgtC+0YDQuNC30LDRhtC40Y8g0LHQtdC3INC/0LDRgNC+0LvR
   jw==
+keywords: vps,ssh,tips,security
+date: 2009-07-14
+tags:
+  - ssh
+  - vps
+  - tips
 
 ---
 На VPS-серверах обязательно предоставляется доступ к серверу по ssh. Так же как и на некоторых shared hosting...

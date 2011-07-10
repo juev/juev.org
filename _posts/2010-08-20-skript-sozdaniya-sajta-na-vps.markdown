@@ -3,6 +3,10 @@ layout: post
 title: !binary |
   0KHQutGA0LjQv9GCINGB0L7Qt9C00LDQvdC40Y8g0YHQsNC50YLQsCDQvdCw
   IFZQUw==
+keywords: vps,script,bash
+date: 2010-08-20
+tags:
+  - vps
 
 ---
 В последнее время меня очень напрягает как тормозит мой сайт. Не знаю, что там делают на хостинге, но даже с учетом дополнительно оплаченных денег за апгрейд сервера, данная ситуация никуда не годиться.

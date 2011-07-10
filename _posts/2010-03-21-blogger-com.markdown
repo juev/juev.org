@@ -3,6 +3,11 @@ layout: post
 title: !binary |
   QmxvZ2dlci5jb20gLSDQv9C70LDRgtGE0L7RgNC80LAg0LTQu9GPINGB0L7Q
   t9C00LDQvdC40Y8g0LHQu9C+0LPQvtCy
+keywords: google,blogger,хостинг,hosting,blog
+date: 2010-03-21
+tags:
+  - google
+  - хостинг
 
 ---
 В статье <a href="/2010/02/11/dvizhok-dlya-blogov-chto-vybrat/">Движок для блогов: что выбрать</a> я рассматривал возможные варианты выбора хостинг-провайдера и движка для работы блога. В тот момент я остановился на двух вариантах - это Livejournal и WordPress.com.

@@ -2,6 +2,10 @@
 layout: post
 title: !binary |
   0JrQvtC00LjRgNC+0LLQutC4INGE0LDQudC70L7QsiAtIGVuY29udg==
+keywords: linux,soft,enca,enconv
+date: 2009-07-28
+tags:
+  - tips
 
 ---
 В моменты, когда переходишь с windows на linux, или когда приходится одновременно работать в этих двух системах, возникает проблема с кодировкой файлов. Так как windows предпочитает работать с текстовыми файлами в кодировке CP1251, а linux последние несколько лет использует UTF8.

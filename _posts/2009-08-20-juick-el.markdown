@@ -1,6 +1,12 @@
 --- 
 layout: post
 title: Juick-el
+keywords: emacs,juick,elisp
+date: 2009-08-20
+tags:
+  - emacs
+  - juick
+
 ---
 Вы еще не знаете, что такое <strong>juick</strong>?? Ммм... многое теряете...
 

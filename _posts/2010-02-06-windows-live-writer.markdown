@@ -1,6 +1,12 @@
 --- 
 layout: post
 title: Windows Live Writer
+keywords: windows,soft,blogs,live writer
+date: 2010-02-06
+tags:
+  - windows
+  - soft
+
 ---
 После установки Windows 7 предлагается установить несколько дополнительных программ,
 призванных облегчить нашу жизнь. И одной из таких программ является Windows Live

@@ -3,6 +3,12 @@ layout: post
 title: Облачный хостинг
 keywords: хостинг,облака,hosting,cloud
 description: Облачный хостинг в России
+keywords: хостинг,облако,cloud,hosting,selectel,clodo
+date: 2011-03-27
+tags:
+  - хостинг
+  - vps
+
 ---
 Решил я попробовать в деле, что такое облачный хостинг у нас в России. Произвел поиск в интернете, поспрашивал в твиттере. В итоге выбрал
 две компании, предоставляющие эти услуги: [selectel](http://selectel.ru/ "Selectel"){: rel="nofollow"} и [clodo](http://www.clodo.ru/ "Clodo"){: rel="nofollow"}.

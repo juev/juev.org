@@ -2,6 +2,12 @@
 layout: post
 title: !binary |
   0KPRgdGC0LDQvdC+0LLQutCwIHN0dW1wd20=
+keywords: archlinux,wm,stumpwm,lisp,sbcl
+date: 2009-08-15
+tags:
+  - archlinux
+  - wm
+  - lisp
 
 ---
 Среди tilling оконных менеджеров есть уникум, stumpwm. Отличается от всех остальных тем, что он написан на Common Lisp, в связи с чем его не просто конфигурируют, его можно сказать переписывают. Все поведение, внешний вид, все это задается с помощью программного кода на языке программирования Lisp.

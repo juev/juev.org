@@ -1,6 +1,12 @@
 --- 
 layout: post
 title: XNeur
+keywords: linux,soft,xneur
+date: 2009-08-05
+tags:
+  - soft
+  - xneur
+
 ---
 Сегодня увидел новость о том, что вышла новая версия XNeur и GXNeur.
 <blockquote>Выпущен XNeur и gXNeur версии 0.9.5!

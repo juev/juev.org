@@ -3,6 +3,11 @@ layout: post
 title: !binary |
   YXdlc29tZTog0L3QsNGB0YLRgNC+0LnQutCwINC4INC40YHQv9C+0LvRjNC3
   0L7QstCw0L3QuNC1
+keywords: awesome,wm,config
+date: 2009-05-18
+tags:
+  - awesome
+  - wm
 
 ---
 Итак, в прошлой статье <a rel="bookmark" href="/2009/05/18/awesome-ustanovka-i-zapusk/">awesome: установка и запуск</a> мы рассмотрели, как установить awesome и обеспечить его запуск при загрузке системы. Теперь рассмотрим самое интересное - его конфигурацию. Для этого начинаем менять файл `~/.config/awesome/rc.lua`, который скопировали в предыдущей статье.

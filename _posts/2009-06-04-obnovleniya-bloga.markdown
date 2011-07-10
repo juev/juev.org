@@ -2,6 +2,10 @@
 layout: post
 title: !binary |
   0J7QsdC90L7QstC70LXQvdC40Y8g0LHQu9C+0LPQsC4uLg==
+keywords: wordpress,spam,antispam,akismet,plugins
+date: 2009-06-04
+tags:
+  - wordpress
 
 ---
 В течение некоторого времени провел небольшое обновление блога. Устанавливал и тестировал плагины wordpress, а сегодня утром наконец провел частичную русификацию темы блога. Добавил подписку на e-mail рассылку RSS-ленты и добавил счетчик подписчиков.

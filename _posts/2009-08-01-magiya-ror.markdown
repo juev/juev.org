@@ -2,6 +2,10 @@
 layout: post
 title: !binary |
   0JzQsNCz0LjRjyBSb1I=
+keywords: rails,ruby
+date: 2009-08-01
+tags:
+  - rails
 
 ---
 Сегодня я хочу показать чуть-чуть магии, которая кроется в Ruby on Rails. При этом мы создадим приложение, не написав при этом ни строчки кода.

@@ -2,6 +2,11 @@
 layout: post
 title: !binary |
   YXJjaGxpbnV4IC0g0YHQsdC+0YDQutCwINGP0LTRgNCw
+keywords: archlinux,kernel,build
+date: 2009-03-07
+tags:
+  - archlinux
+  - kernel
 
 ---
 В archlinux сборка ядра довольно простое дело, причем в итоге создается установочный пакет, который затем ставится, как обычный, со всеми возможностями дальнейшего управления, такими как обновление, удаление...

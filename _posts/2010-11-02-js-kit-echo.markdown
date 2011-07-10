@@ -3,6 +3,10 @@ layout: post
 title: !binary |
   SnMtS2l0IEVjaG8g0LIg0LrQsNGH0LXRgdGC0LLQtSDRgdC40YHRgtC10LzR
   iyDQutC+0LzQvNC10L3RgtC40YDQvtCy0LDQvdC40Y8=
+keywords: webdesign,comments,js-kit,echo
+date: 2010-11-02
+tags:
+  - webdesign
 
 ---
 В течение нескольких дней тестировал в работе систему комментирования <a href="http://aboutecho.com/" rel="nofollow">Js-Kit Echo</a>. 
@@ -40,7 +44,3 @@ title: !binary |
 В сокращенном виде обеспечивается приток читателей непосредственно на сайт (в том случае, если пишу что-то интересное), и обеспечивается некая безопасность работы, блокируя возможность использования материалов сайта на сторонних ресурсах, подключивших фиды к своей публикации. 
 
 Ваше мнение? 
-
-Приглашаю в группу <a href="http://www.facebook.com/home.php?sk=group_159972560710032&ap=1" rel="nofollow">Open Source Life</a> на FaceBook, где вы можете задавать вопросы, или делиться своим мнением. 
-
-И присоединяйтесь к официальной странице <a href="http://www.facebook.com/pages/Open-Source-Life/155617781147245" rel="nofollow">Open Source Life</a> на Facebook!

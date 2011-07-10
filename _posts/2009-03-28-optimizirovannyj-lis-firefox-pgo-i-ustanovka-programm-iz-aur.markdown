@@ -4,6 +4,12 @@ title: !binary |
   0J7Qv9GC0LjQvNC40LfQuNGA0L7QstCw0L3QvdGL0Lkg0LvQuNGBIC0gZmly
   ZWZveC1wZ28g0Lgg0YPRgdGC0LDQvdC+0LLQutCwINC/0YDQvtCz0YDQsNC8
   0Lwg0LjQtyBBVVI=
+keywords: arhclinux,yaourt,firefox,aur
+date: 2009-03-28
+tags:
+  - archlinux
+  - yaourt
+  - firefox
 
 ---
 Сегодня меня заинтересовал вопрос оптимизации огнелиса. Во всех статьях, что встретил в интернете описывается только изменение настроек профиля (время ожидания перед прорисовкой страницы, изменение требуемого объема памяти и тому подобное).

@@ -1,6 +1,12 @@
 --- 
 layout: post
 title: WordPress &amp; Amazon
+keywords: wordpress,amazon,w3 total cache
+date: 2010-03-03
+tags:
+  - wordpress
+  - amazon
+
 ---
 Уже не раз встречал информацию о том, что есть такой замечательный и дешевый сервис для хранения файлов в сети Amazon S3. Но все никак не мог собраться попробовать его в действии. Цели как таковой не было.
 

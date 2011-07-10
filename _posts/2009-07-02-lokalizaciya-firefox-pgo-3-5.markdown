@@ -2,6 +2,11 @@
 layout: post
 title: !binary |
   0LvQvtC60LDQu9C40LfQsNGG0LjRjyBmaXJlZm94LXBnbyAzLjU=
+keywords: firefox,tips,locale
+date: 2009-07-02
+tags:
+  - firefox
+  - tips
 
 ---
 После сборки firefox-pgo задумался об локализации программы. Проблема заключается только в том, что до сих пор не обновился пакет firefox в archlinux и соответственно не обновляется пакет firefox-i18n, который отвечает за локализацию.

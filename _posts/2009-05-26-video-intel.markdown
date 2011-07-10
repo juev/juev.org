@@ -3,6 +3,11 @@ layout: post
 title: !binary |
   0LTRgNCw0LnQstC10YAg0LLQuNC00LXQviBpbnRlbCDQuCDQutGA0LDRhSB4
   b3JnIA==
+keywords: xorg,intel
+date: 2009-05-26
+tags:
+  - intel
+  - xorg
 
 ---
 На компьютере у меня используется встроенная видокарта Intel X3100. По настройке и использованию драйверов я уже описывал. А сегодня хочу затронуть некоторые проблемы, которые возникают при использовании данной видеокарты с сервером xorg, а также варианты решения проблем.

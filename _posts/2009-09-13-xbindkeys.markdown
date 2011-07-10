@@ -3,6 +3,11 @@ layout: post
 title: !binary |
   eGJpbmRrZXlzIC0g0YHQvtGH0LXRgtCw0L3QuNGPINCyINGB0YLQuNC70LUg
   ZW1hY3M=
+keywords: xbindkeys,hotkeys,linux
+date: 2009-09-13
+tags:
+  - lisp
+  - tips
 
 ---
 В связи с тем, что в последнее время очень часто приходиться менять оконный менеджер в связи с различными экспериментами, захотелось немного унифицировать свою систему клавиатурных комбинаций. А точнее - сделать ее отдельной от самого оконного менеджера.

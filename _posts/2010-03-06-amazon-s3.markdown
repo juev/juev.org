@@ -1,6 +1,12 @@
 --- 
 layout: post
 title: Amazon S3
+keywords: amazon,s3,cloudberry
+date: 2010-03-06
+tags:
+  - amazon
+  - cloudberry
+
 ---
 Хранение данных - очень серьезный вопрос, который ставит перед нами довольно много серьезных вопросов. Один из которых: где хранить.
 

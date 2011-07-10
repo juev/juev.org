@@ -2,6 +2,11 @@
 layout: post
 title: !binary |
   0JjRgdC/0L7Qu9GM0LfQvtCy0LDQvdC40LUgSGVhZC5KUw==
+keywords: headjs,head.js,webdesign,async,javascript,js
+date: 2010-12-25
+tags:
+  - javascript
+  - webdesign
 
 ---
 После того, как подключился к <a href="http://pinboard.in/u:juev" rel="nofollow">pinboard.in</a>, на сервере нашел упоминание интересного проекта - <a href="http://headjs.com/" rel="nofollow">Head JS</a>. 

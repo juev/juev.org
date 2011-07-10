@@ -1,6 +1,13 @@
 --- 
 layout: post
 title: Backup-Manager
+keywords: daemon,services,backup,manager
+date: 2009-06-07
+tags:
+  - daemon
+  - services
+  - backup
+
 ---
 Необходимость бэкапов я думаю обосновывать нет нужды.
 

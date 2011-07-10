@@ -2,6 +2,10 @@
 layout: post
 title: !binary |
   0KDQsNCx0L7RgtCw0LXQvCDRgSBGbGlja3Ig0LIgQ2hyb21l
+keywords: flickr,chrome,client
+date: 2010-05-25
+tags:
+  - chrome
 
 ---
 <strong>Flickr</strong> - крупнейшая социальная сеть фотографов со всего мира. Крупнейшая и лучшая. Первая система, которая стала использовать в своей работе технологии web2.0.

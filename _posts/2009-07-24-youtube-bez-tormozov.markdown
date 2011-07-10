@@ -2,6 +2,11 @@
 layout: post
 title: !binary |
   eW91dHViZSDQsdC10Lcg0YLQvtGA0LzQvtC30L7Qsg==
+keywords: archlinux,linux,download,video,clive
+date: 2009-07-24
+tags:
+  - archlinux
+  - download
 
 ---
 Когда скорость соединения с интернетом оставляет желать лучшего, просмотр видео в интернете становиться практически не возможным. Приходиться ставить на паузу и ждать загрузки самого ролика. Муторно и не удобно.

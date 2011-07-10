@@ -2,6 +2,10 @@
 layout: post
 title: !binary |
   0J7QsdC90L7QstC70LXQvdC40LUgVzMgVG90YWwgQ2FjaGU=
+keywords: wordpress,cache,w3 total cache
+date: 2010-07-23
+tags:
+  - wordpress
 
 ---
 Как это обычно и бывает, в самый не подходящий момент происходит нечто, что полностью рушит все и заставляет активизировать все свои силы для решения возникшей проблемы.

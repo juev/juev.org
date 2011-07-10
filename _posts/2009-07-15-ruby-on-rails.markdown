@@ -2,6 +2,10 @@
 layout: post
 title: !binary |
   QXJjaGxpbnV4INGD0YHRgtCw0L3QvtCy0LrQsCBSdWJ5IG9uIFJhaWxz
+keywords: rails,ruby
+date: 2009-07-15
+tags:
+  - rails
 
 ---
 Заинтересовал меня Ruby. очень интересный язык. Тем более, что с его помощью можно создавать веб-приложения. Причем синтаксис у него несколько легче, чем у питона (мое имхо, как неуча пока)...

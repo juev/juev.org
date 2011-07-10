@@ -3,6 +3,11 @@ layout: post
 title: !binary |
   dXB0aW1lIC0g0LLRgNC10LzRjyDQu9C40YfQvdGL0YUg0YDQtdC60L7RgNC0
   0L7Qsg==
+keywords: news
+date: 2009-07-27
+tags:
+  - news
+
 
 ---
 Вот и настало время рекорда...

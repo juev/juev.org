@@ -2,6 +2,12 @@
 layout: post
 title: !binary |
   0J/RgNC+0LrQsNGH0LjQstCw0LXQvCBEcm9wYm94
+keywords: google,dropbox,adwords,free
+date: 2010-11-25
+tags:
+  - dropbox
+  - adwords
+  - google
 
 ---
 Я думаю представлять Dropbox не стоит. О нем знают почти все. И очень многие используют.

@@ -2,6 +2,10 @@
 layout: post
 title: !binary |
   0KPRh9C10LHQvdC40Log0L/QviBSb1I=
+keywords: rails,tutorial
+date: 2009-07-25
+tags:
+  - rails
 
 ---
 Пытаюсь изучать Rails по учебнику "Гибкая разработка веб-приложений в среде Rails" авторов Д.Томас и Д.Х.Хэнссон...

@@ -1,6 +1,12 @@
 --- 
 layout: post
 title: "firefox 3.5: a web browser renaissance"
+keywords: wallpaper,firefox
+date: 2009-07-01
+tags:
+  - firefox
+  - wallpaper
+
 ---
 В сервисе микроблогинга twitter появились работы <a href="http://twitter.com/mart3ll" rel="nofollow">@mart3ll</a>.
 

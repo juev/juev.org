@@ -2,6 +2,11 @@
 layout: post
 title: !binary |
   0LzQvdC+0LPQvtC/0L7RgtC+0YfQvdGL0LkgZG93bmxvYWQ=
+keywords: download,aria2
+date: 2008-06-26
+tags:
+  - aria2
+  - download
 
 ---
 Давно искал себе доунлоад менеджер, который бы поддерживал несколько потоков. И вот наконец-то! Свершилось...

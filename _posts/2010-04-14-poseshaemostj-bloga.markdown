@@ -3,6 +3,11 @@ layout: post
 title: !binary |
   0JrQsNC6INGD0LLQtdC70LjRh9C40YLRjCDQv9C+0YHQtdGJ0LDQtdC80L7R
   gdGC0Ywg0LHQu9C+0LPQsD8=
+keywords: wordpress,tips,rss
+date: 2010-04-14
+tags:
+  - wordpress
+  - tips
 
 ---
 У многих блоггеров возникает вопрос, как увеличить число посещений своего блога?

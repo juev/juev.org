@@ -2,6 +2,13 @@
 layout: post
 title: !binary |
   0KDQtdC60LvQsNC80LAg0LIg0LjQvdGC0LXRgNC90LXRgtC1Li4u
+keywords: internet,firefox,adblock,privoxy,security
+date: 2009-05-14
+tags:
+  - internet
+  - firefox
+  - daemon
+  - security
 
 ---
 Речь пойдет, естественно не о самой рекламе. А о том, как можно с ней бороться.

@@ -3,6 +3,11 @@ layout: post
 title: !binary |
   0J7Qv9GC0LjQvNC40LfQsNGG0LjRjyBTU0gt0YHQvtC10LTQuNC90LXQvdC4
   0Lk=
+keywords: ssh,tips
+date: 2009-07-27
+tags:
+  - ssh
+  - tips
 
 ---
 Великая вещь - SSH! И безопасность на высоте, и удобство работы, и возможностей море!

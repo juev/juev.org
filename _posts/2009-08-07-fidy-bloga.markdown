@@ -2,6 +2,10 @@
 layout: post
 title: !binary |
   0KTQuNC00Ysg0LHQu9C+0LPQsC4uLg==
+keywords: wordpress,feeds
+date: 2009-08-07
+tags:
+  - wordpress
 
 ---
 Пишу я мало, но прекрасно понимаю, что отслеживать все мои записи бывает просто не интересно.

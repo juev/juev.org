@@ -4,6 +4,11 @@ title: !binary |
   0J/RgNC+0LPRgNCw0LzQvNGLINC/0YDQvtGB0LzQvtGC0YDQsCDQuCDRgNC1
   0LTQsNC60YLQuNGA0L7QstCw0L3QuNGPINC40LfQvtCx0YDQsNC20LXQvdC4
   0Lk=
+keywords: windows,soft,images,acdsee,faststone,xnview
+date: 2010-04-03
+tags:
+  - windows
+  - soft
 
 ---
 В последнее время увлекся цифровой фотографией. И возникла необходимость в программе, которая позволяет быстро просматривать и редактировать изображения. В основном требовались функции автоконтраста и автоуровней.

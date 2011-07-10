@@ -3,6 +3,12 @@ layout: post
 title: !binary |
   0J/QvtC80LjQtNC+0YDQvdC+0LUg0L/Qu9Cw0L3QuNGA0L7QstCw0L3QuNC1
   INCy0YDQtdC80LXQvdC4
+keywords: windows,soft,time,pomodoro,focus booster,cherrytomato
+date: 2010-04-11
+tags:
+  - windows
+  - soft
+  - time
 
 ---
 Уже давно увлекаюсь проблемами планирования собственного времени, а несколько месяцев

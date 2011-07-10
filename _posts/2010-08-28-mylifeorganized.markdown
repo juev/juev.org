@@ -2,6 +2,11 @@
 layout: post
 title: !binary |
   0KHQv9C40YHQutC4INC30LDQtNCw0Yc=
+keywords: windows,soft,task,mylifeorganized 
+date: 2010-08-28
+tags:
+  - windows
+  - soft
 
 ---
 Давно уже убедился в том, что без организации в жизни приходиться довольно сложно. Запомнить все просто не возможно, а куча планов и текущих дел каждый день штурмуют наш мозг.

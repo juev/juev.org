@@ -3,6 +3,10 @@ layout: post
 title: !binary |
   R29vZ2xlIENocm9tZSDQuCDRgNCw0LHQvtGC0LAg0YEg0YHQvtGG0LjQsNC7
   0YzQvdGL0LzQuCDQt9Cw0LrQu9Cw0LTQutCw0LzQuA==
+keywords: google,chrome,social,bookmarks
+date: 2010-02-20
+tags:
+  - chrome
 
 ---
 Прошло немного времени и я уже немного подстроился к системе работы Google Chrome. Родилась своя система работы с социальными закладками.

@@ -2,6 +2,13 @@
 layout: post
 title: !binary |
   0KHQvtC30LTQsNC10Lwg0YTQvtGC0L7RgdCw0LnRgg==
+keywords: internet,images,flickr,services,google,blogger
+date: 2010-03-31
+tags:
+  - internet
+  - flickr
+  - services
+  - google
 
 ---
 Многие из нас мечтают создать свой фотосайт. На котором можно было бы выкладывать свои фотографии, работы...

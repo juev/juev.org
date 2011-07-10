@@ -2,6 +2,12 @@
 layout: post
 title: !binary |
   0JDQvdCw0LvQvtCzIFRoaW5ncyDQtNC70Y8gV2luZG93cw==
+keywords: windows,soft,time,things,doit,mlo,mylifeorganized
+date: 2010-04-07
+tags:
+  - windows
+  - soft
+  - time
 
 ---
 15 февраля 2010 года я завел себе тетрадь для списков задач по системе <a title="Автофокус" href="http://www.markforster.net/autofocus-system/" rel="nofollow">Автофокус</a>. Очень эффективная система, помогает увеличить производительность труда и сконцентрироваться на главных вещах, освобождая голову от массы информации.

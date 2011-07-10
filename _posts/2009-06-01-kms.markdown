@@ -2,6 +2,11 @@
 layout: post
 title: !binary |
   0YHQv9C+0YHQvtCx0Ysg0LLQutC70Y7Rh9C10L3QuNGPIEtNUw==
+keywords: kernel,kms
+date: 2009-06-01
+tags:
+  - kernel
+  - kms
 
 ---
 Существует два способа активации KMS (kernel mode setting):

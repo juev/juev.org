@@ -2,6 +2,12 @@
 layout: post
 title: !binary |
   R29vZ2xlIERvY3Mg0LrQsNC6INCy0LXQsS3RgNC10LTQsNC60YLQvtGA
+keywords: internet,services,google,docs,write
+date: 2010-04-25
+tags:
+  - internet
+  - google
+  - services
 
 ---
 Мало кто сейчас использует Google Docs для своей работы. И еще меньшее количество людей знает о том, что данная система имеет возможность публикации веб-страниц.
