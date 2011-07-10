@@ -2,6 +2,10 @@
 layout: post
 title: !binary |
   0J/RgNC+0YjQuNCy0LrQsCBIVEMgV2lsZGZpcmUg0L7RgiDQnNCi0KE=
+keywords: android,wildfire,flashing,flash,прошивка,огонек
+date: 2011-02-27
+tags:
+  - android
 
 ---
 <h2>Введение</h2>

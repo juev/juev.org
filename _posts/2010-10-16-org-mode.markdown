@@ -3,6 +3,10 @@ layout: post
 title: !binary |
   0KHQvtC30LTQsNC90LjQtSDRgdCw0LnRgtC+0LIg0YEg0L/QvtC80L7RidGM
   0Y4gRW1hY3M=
+keywords: emacs,orgmode,org-mode
+date: 2010-10-16
+tags:
+  - emacs
 
 ---
 Режим <b>Org-Mode</b> в среде emacs может использоваться в целом ряде задач. Таких как ведение списков дел, организация личного времени и подготовка публикаций в различных форматах.

@@ -3,6 +3,11 @@ layout: post
 title: !binary |
   UnV0cmFja2VyLm9yZyDQstCy0L7QtNC40YIg0YHQuNGB0YLQtdC80YMg0YLQ
   sNC50LzQsdC+0L3Rg9GB0L7Qsg==
+keywords: internet,torrent
+date: 2010-04-10
+tags:
+  - internet
+  - torrent
 
 ---
 С сегодняшнего дня крупнейший торрент-трекер rutracker.org вводит систему таймбонусов. Остается понятие рейтинга, но оно уже никак не будет учитываться.

@@ -2,6 +2,12 @@
 layout: post
 title: !binary |
   ZGVsdWdlIC0g0L/RgNC+0LHQu9C10LzQsCDRgSDQstGL0LvQtdGC0LDQvNC4
+keywords: torrent,deluge,tips
+date: 2009-06-13
+tags:
+  - torrent
+  - soft
+  - tips
 
 ---
 Давненько уже использую в качестве torrent-клиента Deluge.

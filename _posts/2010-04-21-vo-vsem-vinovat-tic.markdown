@@ -2,6 +2,10 @@
 layout: post
 title: !binary |
   0JLQviDQstGB0LXQvCDQstC40L3QvtCy0LDRgiDQotCY0KY/PyE=
+keywords: internet,yandex,pr,search
+date: 2010-04-21
+tags:
+  - internet
 
 ---
 С каждым днем в интернете растет число ГС (говносайтов), нормальные сайты обвешиваются рекламными ссылками. Работать становиться все труднее, на фоне ресурсов, которые занимаются копипастом материалов, то есть попросту воруют статьи.

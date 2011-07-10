@@ -2,6 +2,11 @@
 layout: post
 title: !binary |
   REtJTSDQvtGCIEdvb2dsZSDQvdCwINGB0LLQvtC10Lwg0LTQvtC80LXQvdC1
+keywords: dkim,google,vps,mail,domain,почта,домен
+date: 2011-01-07
+tags:
+  - google
+  - dns
 
 ---
 Сегодня Goolge обрадовал всех пользователей Google Apps введением новой функции - функция подписывания сообщений с помощью <a href="http://www.dkim.org/" rel="nofollow">DomainKeys Identified Mail</a> (DKIM).

@@ -2,6 +2,10 @@
 layout: post
 title: !binary |
   0LLRi9Cx0L7RgCB0b3JyZW50LdC60LvQuNC10L3RgtCw
+keywords: torrent,client,rtorrent,deluge
+date: 2008-11-09
+tags:
+  - torrent
 
 ---
 Давно использую для работы с торрентами консольный клиент rtorrent, который запускаю с помощью screen. Но до перехода на ethernet торрентов обычно было мало, порядка 5-10 и все они помещались на экране, легко было отслеживать их состояние.

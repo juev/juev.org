@@ -3,6 +3,10 @@ layout: post
 title: !binary |
   0L7QsdC90L7QstC70LXQvdC40LUg0L/Qu9Cw0LPQuNC90L7QsiB3b3JkcHJl
   c3M=
+keywords: wordpress,antispam,spam,wp-spamfree,tags
+date: 2009-05-19
+tags:
+  - wordpress
 
 ---
 Можно уже подвести некоторые итоги по использованию плагина <a title="Посетить домашнюю

@@ -3,6 +3,10 @@ layout: post
 title: !binary |
   YXJjaGxpbnV4IC0g0LDQstGC0L7QvNC+0L3RgtC40YDQvtCy0LDQvdC40LUg
   0LTQuNGB0LrQvtCy
+keywords: archlinux,mount,automount
+date: 2009-01-22
+tags:
+  - archlinux
 
 ---
 Уже давно использую в качестве оконного менеджера openbox, а в качестве файлового менеджера thunar. Раньше все работало просто замечательно. При запуске оконного менеджера запускался thunar в режиме демона с включенной функцией менеджмента дисков. И монтировались все флешки и cd/dvd, отмонтировались так же, можно сказать на автомате.

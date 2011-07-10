@@ -2,6 +2,10 @@
 layout: post
 title: !binary |
   R29vZ2xlIENocm9tZSAtINGA0LDRgdGI0LjRgNC10L3QuNGP
+keywords: chrome,plugins
+date: 2010-02-28
+tags:
+  - chrome
 
 ---
 В 4-й версии Google Chrome появилась возможность использования расширений браузера, как это реализовано в Firefox. На сегодняшний день уже существует масса расширений под Chrome, но до уровня Firefox пока еще далеко. И функций пока маловато и само качество расширений оставляет желать лучшего. 

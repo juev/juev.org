@@ -1,6 +1,12 @@
 --- 
 layout: post
 title: Chromium vs. Firefox
+keywords: google,chrome,firefox,lastpass,delicious
+date: 2009-12-26
+tags:
+  - chrome
+  - firefox
+
 ---
 Количество браузеров с открытым кодом растет с каждым днем. И это не может не радовать. Увеличивается конкуренция, а значит более активно появляются новые возможности и развитие браузеров не стоит на месте.
 

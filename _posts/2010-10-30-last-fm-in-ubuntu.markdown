@@ -1,6 +1,12 @@
 --- 
 layout: post
 title: Last.fm in Ubuntu
+keywords: lastfm,last.fm,ubuntu
+date: 2010-10-30
+tags:
+  - ubuntu
+  - soft
+
 ---
 Уже несколько месяцев, как я активно использую <a href="http://www.lastfm.ru/" rel="nofollow">Last.fm</a> для скробблинга и прослушивания радиостанций по подписке.
 

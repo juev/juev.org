@@ -3,6 +3,12 @@ layout: post
 title: !binary |
   0J/QvtC/0YvRgtC60LAg0LzQuNCz0YDQsNGG0LjQuCDRgSBXb3JkUHJlc3Mg
   0L3QsCBHaXRIdWIuY29t
+keywords: jekyll,wordpress,ruby,github,миграция,переход
+date: 2010-11-06
+tags:
+  - jekyll
+  - wordpress
+  - ruby
 
 ---
 Не мало уже статей написал про платформу <a href="http://pages.github.com" rel="nofollow">Github.com</a>. И постоянно готовил себя к переносу сайта. 

@@ -3,6 +3,12 @@ layout: post
 title: !binary |
   0JjRgdC/0L7Qu9GM0LfQvtCy0LDQvdC40LUg0YHQstGP0LfQutC4IE5naW54
   K0FwYWNoZQ==
+keywords: nginx,apache,speed
+date: 2010-09-07
+tags:
+  - nginx
+  - apache
+
 ---
 Недолго я баловался со связкой Nginx + PHP-Fpm, надоело мне возиться с rewrite. Довольно долго мучился с настройками rewrite для корректной работы расширения WP Super Cache, а пробовать в работе W3 Total Cache не представлялось возможным, так как сложность правил возрастает на порядок.
 

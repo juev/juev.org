@@ -2,6 +2,10 @@
 layout: post
 title: !binary |
   0J7Qv9GC0LjQvNC40LfQsNGG0LjRjyBXb3JkcHJlc3M=
+keywords: wordpress,plugins
+date: 2009-12-15
+tags:
+  - wordpress
 
 ---
 В прошлой своей статье <a href="/2009/12/14/movable-type/">Movable Type</a> я затронул сервис тестирования веб-сайтов <a href="http://www.webpagetest.org/" rel="nofollow">www.webpagetest.org</a> с помощью которого проводил тестирование двух движков. После написания статьи задумался. Не может быть чтобы разница в загрузке между динамическими и статическими страницами была такой большой. Если конечно что-то другое не вмешивается в результаты.

@@ -3,6 +3,10 @@ layout: post
 title: !binary |
   VGlkeVJlYWQgLSDRg9C70YPRh9GI0LDQtdC8INCy0LjQtCDRgdGC0YDQsNC9
   0LjRhg==
+keywords: internet,services,read
+date: 2010-03-11
+tags:
+  - internet
 
 ---
 Довольно часто встречаются интернет-страницы, которые довольно трудно читать в следствии того, что используется мелкий шрифт, страница перегружена рекламой или посторонними изображениями. Что делать?

@@ -3,6 +3,11 @@ layout: post
 title: !binary |
   0KHQuNGB0YLQtdC80LAg0YLQsNC50LzQsdC+0L3Rg9GB0L7QsiBydXRyYWNr
   ZXIub3Jn
+keywords: internet,torrent,tracker
+date: 2010-05-23
+tags:
+  - internet
+  - torrent
 
 ---
 С 10 апреля крупнейший трекер России rutracker.org ввел в свою практику систему <a href="/2010/04/10/rutracker-org-vvodit-sistemu-tajmbonusov/">таймбонусов</a>. Которую мы уже пытались обсудить. Через несколько дней после данного введения, админами трекера было решено вернуть прежнюю систему рейтинга.

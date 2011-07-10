@@ -2,6 +2,11 @@
 layout: post
 title: !binary |
   0JrQvtC90LLQtdGA0YLQsNGG0LjRjyBhcGUg0LIgbXAz
+keywords: archlinex,music,ape,mp3
+date: 2009-08-02
+tags:
+  - archlinux
+  - music
 
 ---
 Сегодня скачал с торрента произведения Чайковского и обнаружил, что они в формате <strong>ape</strong>... Мой любимый <strong>mplayer</strong> играть их отказался, хотя в конфигурации и показывал поддержку данного формата.

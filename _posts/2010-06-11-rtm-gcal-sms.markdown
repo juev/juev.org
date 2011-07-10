@@ -3,6 +3,12 @@ layout: post
 title: !binary |
   0J3QsNC/0L7QvNC40L3QsNC90LjRjyDQviDRgdC+0LHRi9GC0LjRj9GFIFJU
   TSDQv9C+IFNNUw==
+keywords: rtm,google,calendar,sms,remind
+date: 2010-06-11
+tags:
+  - internet
+  - services
+  - google
 
 ---
 Многие слышали о таком удобном online-таскменеджере как <a href="http://www.rememberthemilk.com/" rel="nofollow">www.rememberthemilk.com</a> (RTM). Некоторые его используют в своей работе. Сервис бесплатный и очень функциональный. В основе RTM лежит система управления задачами Девида Аллена <a href="http://ru.wikipedia.org/wiki/Getting_Things_Done" rel="nofollow">GTD</a>.

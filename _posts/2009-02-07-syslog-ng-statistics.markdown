@@ -1,6 +1,12 @@
 --- 
 layout: post
 title: syslog-ng statistics
+keywords: syslog,syslog-ng,daemon
+date: 2009-02-07
+tags:
+  - daemon
+  - services
+
 ---
 В операционной системе archlinux используется форк системы сборки системных логов syslog-ng, которая отличается более гибкой настройкой и улучшенной функциональностью.
 

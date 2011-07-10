@@ -3,6 +3,12 @@ layout: post
 title: !binary |
   cGRuc2QgLSDQu9C+0LrQsNC70YzQvdGL0Lkg0LrRjdGI0LjRgNGD0Y7RidC4
   0LkgZG5zINGB0LXRgNCy0LXRgA==
+keywords: pdns,dns,daemon,services,archlinux
+date: 2009-03-17
+tags:
+  - dns
+  - service
+  - daemon
 
 ---
 pdnsd - это локальный кэширующий dns-сервер, который используется в основном на машинах с модемным соединением.

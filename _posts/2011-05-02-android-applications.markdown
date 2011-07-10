@@ -3,6 +3,11 @@ layout: post
 title: 15 лучших android приложений
 description: 15 лучших приложений android
 keywords: android,applications,программы,обзор,дайджест,лучшее
+date: 2011-05-02
+tags:
+  - android
+  - soft
+
 ---
 Недавно я перешел на использование телефона на платформе *android*. Уже успел сменить
 прошивку на модифицированную. О чем я уже писал в статьях [Прошивка HTC Wildfire от МТС][] и 

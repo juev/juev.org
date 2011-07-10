@@ -3,6 +3,11 @@ layout: post
 title: !binary |
   0JDRgdC40L3RhdGA0L7QvdC90YvQuSDQutC+0LQgR29vZ2xlIEFuYWx5dGlj
   cw==
+keywords: google,analitics,internet,counter,async
+date: 2010-04-30
+tags:
+  - google
+  - internet
 
 ---
 Google помимо предоставления своих сервисов, типа почты, rss-ридера, google docs и других, предоставляет возможность отслеживать статистику посещений своего сайта. Данный сервис называется Google Analitics.

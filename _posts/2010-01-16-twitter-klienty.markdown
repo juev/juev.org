@@ -2,6 +2,10 @@
 layout: post
 title: !binary |
   VHdpdHRlciDQutC70LjQtdC90YLRiw==
+keywords: twitter,clients,brizzly,seesmic,hootsuite,gravity,digsby,tweetdeck,mixero,twhirl
+date: 2010-01-16
+tags:
+  - twitter
 
 ---
 Twitter является самым популярным сервисом микроблогинга.

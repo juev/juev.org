@@ -1,6 +1,12 @@
 --- 
 layout: post
 title: Varnish for Wordpress
+keywords: wordpress,varnish,speed
+date: 2010-09-22
+tags:
+  - wordpress
+  - varnish
+
 ---
 Я уже описывал в статье <a href="/2010/09/10/wordpress-varnish/">WordPress Speed Up</a>, что использование кеширующего веб-сервера Varnish позволяет существенно увеличить количество обрабатываемых запросов в секунду. Что позволяет справляться с наплывом посетителей даже слабому серверу.
 

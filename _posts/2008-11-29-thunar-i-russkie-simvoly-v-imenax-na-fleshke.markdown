@@ -3,6 +3,12 @@ layout: post
 title: !binary |
   dGh1bmFyINC4INGA0YPRgdGB0LrQuNC1INGB0LjQvNCy0L7Qu9GLINCyINC4
   0LzQtdC90LDRhSDQvdCwINGE0LvQtdGI0LrQtQ==
+keywords: thunar,archlinux,kernel
+date: 2008-11-29
+tags:
+  - archlinux
+  - kernel
+  - thunar
 
 ---
 После того, как установил archlinux и поставил те программы, что использовал на debian, столкнулся со странностью в поведении файлового менеджера Thunar. При монтировании флешки с файловой системой vfat русские символы непоказывались в именах файлов. Вместо них отображадись знаки вопроса...

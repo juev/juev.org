@@ -1,6 +1,11 @@
 --- 
 layout: post
 title: syslog-ng 3.0
+keywords: daemon,syslog,syslog-ng
+date: 2009-03-10
+tags:
+  - daemon
+
 ---
 Компания BalaBit выпустила новый релиз своего продукта syslog-ng (syslog next generation), syslog-ng 3.0 Open Source Edition (OSE), многофункциональный демон протоколирования системных сообщений, альтернатива Syslog Daemon. Программа протоколирует системные сообщения и по сети в зашифрованном виде отправляет логи на центральный сервер, где они могут быть отфильтрованы и сохранены в базе данных.
 

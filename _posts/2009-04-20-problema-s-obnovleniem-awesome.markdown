@@ -3,6 +3,12 @@ layout: post
 title: !binary |
   0J/RgNC+0LHQu9C10LzQsCDRgSDQvtCx0L3QvtCy0LvQtdC90LjQtdC8IGF3
   ZXNvbWU=
+keywords: archlinux,awesome,wm,problem
+date: 2009-04-20
+tags:
+  - awesome
+  - wm 
+  - archlinux
 
 ---
 На днях обновился awesome, тайловый оконный менеджер. Сегодня после того, как перезагрузил компьютер, обнаружил, что иксы не грузятся.

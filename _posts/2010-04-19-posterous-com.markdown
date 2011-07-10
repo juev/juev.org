@@ -1,6 +1,12 @@
 --- 
 layout: post
 title: Posterous.com
+keywords: internet,sevrvices,blog,posterous
+date: 2010-04-19
+tags:
+  - internet
+  - services
+
 ---
 Я уже рассказывал о сервисах ведения блогов livejournal и blogspot. Указывал на недостатки и достоинства каждого их них.
 

@@ -2,6 +2,12 @@
 layout: post
 title: !binary |
   0JrQvdC+0L/QutCwIFR3aXR0ZXIg0LTQu9GPIFdvcmRwcmVzcw==
+keywords: wordpress,twitter,webdesign,twitter button
+date: 2010-08-14
+tags:
+  - wordpress
+  - twitter
+  - webdesign
 
 ---
 В четверг (12 августа), twitter анонсировал собственную кнопку для размещения на сайтах. До этого использовались альтернативы, в виде кнопок от tweetmeme, addthis и целого ряда других.

@@ -1,6 +1,13 @@
 --- 
 layout: post
 title: Wordpess in Jekyll
+keywords: jekyll,wordpress,git,migrate
+date: 2010-11-13
+tags:
+  - jekyll
+  - wordpress
+  - git
+
 ---
 Про генератор статических сайтов, используемый социальной сети разработчиков программного обеспечения <a href="http://www.github.com" rel="nofollow">Github.com</a>, я уже писал и не раз. В последней статье под названием <a href="/2010/11/13/jekyll-hyde/">Jekyll & Hyde</a>, я попытался описать использование данного движка. И недавно уже указывал на то, что у меня возникли проблемы при попытке миграции с <code>WordPress</code> на <code>Jekyll</code>.
 

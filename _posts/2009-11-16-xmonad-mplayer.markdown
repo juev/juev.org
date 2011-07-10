@@ -1,6 +1,12 @@
 --- 
 layout: post
-title: xmonad & mplayer
+title: xmonad &amp; mplayer
+keywords: xmonad,wm,tiling,xmobar
+date: 2009-11-16
+tags:
+  - xmonad
+  - wm
+
 ---
 На полноценный пост по xmonad я пока не созрел, но вот описать, как сделать комфортным просмотр фильмов в полноэкранном виде...
 

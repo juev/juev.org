@@ -2,6 +2,11 @@
 layout: post
 title: !binary |
   0KPRgdC60L7RgNGP0LXQvCBXb3JkcHJlc3M=
+keywords: wordpress,jquery,lazy load
+date: 2010-03-12
+tags:
+  - wordpress
+  - jquery
 
 ---
 Недавно я <a href="/2010/03/03/wordpress-amazon/">описывал процесс</a> подключения WordPress блога к Amazon, в целях распределения нагрузки и использования CDN. При этом приводил анализ работы блога до подключения амазона и после. Ускорение составило порядка одной секунды.

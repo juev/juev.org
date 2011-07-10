@@ -2,6 +2,11 @@
 layout: post
 title: !binary |
   0YHQvNC10L3QsCDRhNCw0LnQu9C+0LLQvtC5INGB0LjRgdGC0LXQvNGL
+keywords: ext3,reiserfs,fs
+date: 2008-11-11
+tags:
+  - ext3
+  - reiserfs
 
 ---
 На днях натолкнулся в сети на описание, как с убунты перешли на арчлинукс, решил посмотреть, что это такое и с чем его едят...

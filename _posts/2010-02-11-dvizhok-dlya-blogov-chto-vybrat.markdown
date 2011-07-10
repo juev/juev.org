@@ -3,6 +3,11 @@ layout: post
 title: !binary |
   0JTQstC40LbQvtC6INC00LvRjyDQsdC70L7Qs9C+0LI6INGH0YLQviDQstGL
   0LHRgNCw0YLRjD8=
+keywords: internet,wordpress,livejournal
+date: 2010-02-11
+tags:
+  - internet
+  - wordpress
 
 ---
 Первое свое знакомство с блогами я начал в далеком уже 2007 году. Да и создавал блог я тогда только для того, чтобы получить возможность читать подзамочные записи своих знакомых… Да, первый мой блог был в Живом Журнале.

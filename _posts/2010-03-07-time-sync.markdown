@@ -2,6 +2,11 @@
 layout: post
 title: !binary |
   0KHQuNC90YXRgNC+0L3QuNC30LDRhtC40Y8g0LLRgNC10LzQtdC90Lg=
+keywords: windows,soft,time,sync,time.is,neutron
+date: 2010-03-07
+tags:
+  - windows
+  - soft
 
 ---
 В Linux вопрос синхронизации времени решается довольно просто, причем существует масса различных способов. В Windows все сложнее.

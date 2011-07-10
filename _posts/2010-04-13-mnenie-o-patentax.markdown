@@ -2,6 +2,11 @@
 layout: post
 title: !binary |
   0JzQvdC10L3QuNC1INC+INC/0LDRgtC10L3RgtCw0YU=
+keywords: internet,patent,soft
+date: 2010-04-13
+tags:
+  - internet
+  - soft
 
 ---
 Люди любят все доводить до абсурда.

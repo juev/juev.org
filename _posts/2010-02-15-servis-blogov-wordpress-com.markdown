@@ -2,6 +2,12 @@
 layout: post
 title: !binary |
   0KHQtdGA0LLQuNGBINCx0LvQvtCz0L7QsiBXb3JkUHJlc3MuY29t
+keywords: wordpress,internet
+date: 2010-02-15
+tags:
+  - wordpress
+  - internet
+  - хостинг
 
 ---
 В своей статье <a href="/2010/02/11/dvizhok-dlya-blogov-chto-vybrat/">Движок для блогов: что выбрать</a> я уже указывал на то, что в современном мире лучше всего использовать LiveJournal или WordPress.com. Основная причина – бесплатность и направленность сервисов на высокие нагрузки в сочетании с использованием функций социальных сетей.

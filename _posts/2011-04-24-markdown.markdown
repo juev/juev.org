@@ -3,6 +3,11 @@ layout: post
 title: Markdown 
 description: Использование markdown для создания web-страниц. Особенности различных движков. 
 keywords: markdown,rdicount,kramdown,maruku 
+date: 2011-04-24
+tags:
+  - markdown
+  - design
+
 --- 
 **[Markdown][1]{: rel="nofollow"}** — это облегченный язык разметки, призванный облегчить подготовку текстов для публикации в Интернете.
 

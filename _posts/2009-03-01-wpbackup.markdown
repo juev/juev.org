@@ -3,6 +3,11 @@ layout: post
 title: !binary |
   0JHRjdC60LDQvyDQsdCw0LfRiyDQtNCw0L3QvdGL0YUgd29yZHByZXNzINC/
   0L4g0L/QvtGH0YLQtQ==
+keywords: wordpress,backup
+date: 2009-03-01
+tags:
+  - wordpress
+  - backup
 
 ---
 В данной статье я расскажу как организовать создание резервной копии базы данных для wordpress'a, ведь, как говорится в народной мудрости, "ничто не вечно..."

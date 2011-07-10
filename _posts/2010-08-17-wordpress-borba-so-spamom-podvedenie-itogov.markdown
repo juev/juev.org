@@ -3,6 +3,11 @@ layout: post
 title: !binary |
   V29yZFByZXNzIC0g0LHQvtGA0YzQsdCwINGB0L4g0YHQv9Cw0LzQvtC8OiDQ
   v9C+0LTQstC10LTQtdC90LjQtSDQuNGC0L7Qs9C+0LI=
+keywords: wordpress,spam,akismet,wp-spamfree,bad behavior,antispam bee,amcaptcha
+date: 2010-08-17
+tags:
+  - wordpress
+  - spam
 
 ---
 Совсем недавно я публиковал статью <a href="/2010/08/11/spam-v-bloge-na-wordpress/">Спам в блоге на WordPress</a>, в которой описывал новый эксперимент борьбы ос спамом. Через две недели после публикации планировал опубликовать результаты работы нового расширения.

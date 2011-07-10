@@ -2,6 +2,11 @@
 layout: post
 title: !binary |
   0J7Qv9GC0LjQvNC40LfQsNGG0LjRjyBWUFMg0YHQtdGA0LLQtdGA0LA=
+keywords: vps,nginx,php-fpm
+date: 2010-08-25
+tags:
+  - vps
+  - nginx
 
 ---
 После покупки VPS сервера возникает масса проблем. Нужно выбрать веб-сервер, фтп-сервер, почтовый сервер. Нужно продумать принципы организации работы веб-сервера с отдельными модулями.

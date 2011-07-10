@@ -3,6 +3,12 @@ layout: post
 title: !binary |
   0JvRg9GH0YjQuNC1INC80YPQt9GL0LrQsNC70YzQvdGL0LUg0L/Qu9C10LXR
   gNGL
+keywords: best,music,player,windows
+date: 2010-05-08
+tags:
+  - music
+  - soft
+  - windows
 
 ---
 На сегодняшний день существует множество музыкальных плееров, на любой вкус и с различным функционалом.

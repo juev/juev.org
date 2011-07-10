@@ -3,6 +3,12 @@ layout: post
 title: !binary |
   0JLQsNC70LjQtNCw0YbQuNGPIEZhY2VCb29rINC60L7QvNC80LXQvdGC0LDR
   gNC40LXQsg==
+keywords: facebook,javascript,webdesign
+date: 2010-12-26
+tags:
+  - facebook
+  - webdesign
+  - javascript
 
 ---
 Во время разработки <a href="http://juev.info" rel="nofollow">juev.info</a> столкнулся с проблемой системы комментирования. Так как сайт генерируется статический, то приходиться использовать сторонние решения.

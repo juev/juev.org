@@ -2,6 +2,11 @@
 layout: post
 title: !binary |
   0KLQtdGB0YLQuNGA0L7QstCw0L3QuNC1IENvbW9kbyBGaXJld2FsbA==
+keywords: windwos,security,comodo
+date: 2010-01-29
+tags:
+  - security
+  - windows
 
 ---
 Озадачился проблемой безопасности при работе в Интернете. И как раз встретил очень много

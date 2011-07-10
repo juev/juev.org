@@ -3,6 +3,10 @@ layout: post
 title: !binary |
   V2luZG93cyA3OiDQvdC1INGA0LDQsdC+0YLQsNC10YIg0LvQvtC60LDQu9GM
   0L3QsNGPINGB0LXRgtGMPw==
+keywords: windows,lan,решение проблем
+date: 2010-07-09
+tags:
+  - windows
 
 ---
 Операционная система Windows создается уже не одно десятилетие, постоянно развивается, постоянно меняется. И с каждым разом становиться все удобнее и проще.

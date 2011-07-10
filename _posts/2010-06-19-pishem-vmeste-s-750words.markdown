@@ -2,6 +2,11 @@
 layout: post
 title: !binary |
   0J/QuNGI0LXQvCDQstC80LXRgdGC0LUg0YEgNzUwd29yZHM=
+keywords: internet,services,750words,write
+date: 2010-06-19
+tags:
+  - internet
+  - services
 
 ---
 Многие мечтают о том, что когда-нибудь у них появится свободное время и начнут писать. О чем не важно, это могут быть просто жизненные истории, могут быть сказки. Главное, что многие из нас носят в себе идею стать писателем.

@@ -2,6 +2,13 @@
 layout: post
 title: !binary |
   d29yZHByZXNzIC0g0LHQvtGA0YzQsdCwINGB0L4g0YHQv9Cw0LzQvtC8Li4u
+keywords: wordpress,spam,apache
+date: 2009-06-10
+tags:
+  - wordpress
+  - spam
+  - apache
+
 
 ---
 По мере роста популярности сайта проблема спама в комментариях становиться все более и более актуальной.

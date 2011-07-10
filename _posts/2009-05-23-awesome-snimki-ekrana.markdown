@@ -2,6 +2,12 @@
 layout: post
 title: !binary |
   YXdlc29tZTog0YHQvdC40LzQutC4INGN0LrRgNCw0L3QsA==
+keywords: awesome,screen,screenshot,wm
+date: 2009-05-23
+tags:
+  - awesome
+  - wm
+  - screenshot
 
 ---
 Сколько раз уже встречал в сети скриншоты с awesome, но ни разу не встретил нормальной передачи внешнего вида и возможностей данного оконного менеджера. Возможно видео и передало бы всю перелесть, но снимать увы, нет возможности.

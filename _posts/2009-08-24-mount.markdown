@@ -3,6 +3,10 @@ layout: post
 title: !binary |
   0JDQstGC0L7QvNCw0YLQuNGH0LXRgdC60L7QtSDQvNC+0L3RgtC40YDQvtCy
   0LDQvdC40LU=
+keywords: archlinux,hal,mount,automount
+date: 2009-08-24
+tags:
+  - archlinux
 
 ---
 В последнее время все больше и больше делается для упрощения работы в Linux. Это касается и автоматического монтирования сменных носителей. Если в Ubuntu или OpenSuse все работает из коробки, то в Archlinux нужно приложить некоторые усилия для того, чтобы все работало.

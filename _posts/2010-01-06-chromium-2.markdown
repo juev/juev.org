@@ -3,6 +3,10 @@ layout: post
 title: !binary |
   Q2hyb21pdW0gLSDQtdGJ0LUg0L3QtdC80L3QvtCz0L4g0L/RgNC+0LHQu9C1
   0Lw=
+keywords: chrome,linux
+date: 2010-01-06
+tags:
+  - chrome
 
 ---
 Компания Google порадовала нас выпуском беты версии своего браузера Chrome и его опенсур-версии для linux - Chromium. По скорости работы конечно не сравнить с Firefox, по ощущениям все страницы просто летают! Но у него есть еще проблемы с отрисовкой, о чем я писал в статье <a href="/2009/12/26/chromium-vs-firefox/">Chromium vs. Firefox</a>.

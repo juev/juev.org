@@ -2,6 +2,12 @@
 layout: post
 title: !binary |
   RXZlcm5vdGUgLSDQv9C+0LzQvdC40YLRjCDQstGB0ZE=
+keywords: internet,services,evernote
+date: 2010-01-25
+tags:
+  - internet
+  - services
+  - evernote
 
 ---
 Интернет – громадное сборище информации. Именно сборище, тут есть все! Каждый человек отбирает из всей массы информации только то, что интересно или нужно ему в данный момент времени. Для сохранения информации используются закладки.

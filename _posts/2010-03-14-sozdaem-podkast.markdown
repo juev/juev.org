@@ -2,6 +2,13 @@
 layout: post
 title: !binary |
   0KHQvtC30LTQsNC10Lwg0L/QvtC00LrQsNGB0YI=
+keywords: amazon,hosting,internet,services,podcast,хостинг
+date: 2010-03-14
+tags:
+  - amazon
+  - хостинг
+  - internet
+  - services
 
 ---
 Нет, я не собираюсь пока записывать подкасты. Я просто хочу рассмотреть вариант создания собственной "площадки" для ведения подкастов.

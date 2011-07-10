@@ -2,6 +2,12 @@
 layout: post
 title: !binary |
   R2l0SHViLmNvbSDQutCw0Log0YXQvtGB0YLQuNC90LMg0YHQsNC50YLQvtCy
+keywords: github,hosting,хостинг,emacs
+date: 2010-10-17
+tags:
+  - github
+  - хостинг
+  - emacs
 
 ---
 Недавно наткнулся на страницу <a href="http://pages.github.com/" rel="nofollow">pages.github.com</a>, на которой с удивлением узнал о том, что сервис github.com предоставляет услуги хостинга статических сайтов.

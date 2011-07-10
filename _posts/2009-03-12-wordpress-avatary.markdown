@@ -2,6 +2,10 @@
 layout: post
 title: !binary |
   d29yZHByZXNzINCw0LLQsNGC0LDRgNGL
+keywords: wordpress,avatars
+date: 2009-03-12
+tags:
+  - wordpress
 
 ---
 Уже больше года веду дневник на Livejournal.com, еще дольше использую форумы. И везде привык уже к использованию аватаров.

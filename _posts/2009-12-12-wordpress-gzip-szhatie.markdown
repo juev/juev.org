@@ -2,6 +2,10 @@
 layout: post
 title: !binary |
   d29yZHByZXNzOiBnemlwINGB0LbQsNGC0LjQtQ==
+keywords: wordpress,gzip
+date: 2009-12-12
+tags:
+  - wordpress
 
 ---
 Не так давно <a href="http://www.wpbot.ru/?p=1290" rel="nofollow">wpbot</a> рассматривал, как включить gzip-сжатие в wordpress путем правки файлов темы. За счет чего достигалось ускорение работы блога в несколько раз. Естественно не пропустил возможности использовать данный метод у себя.

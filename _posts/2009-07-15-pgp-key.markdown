@@ -1,6 +1,12 @@
 --- 
 layout: post
 title: My PGP key
+keywords: keys,gnupg,pgp,security
+date: 2009-07-15
+tags:
+  - gnupg
+  - security
+
 ---
 Мой PGP ключ <strong>1024D/AB199C39</strong> подпись <strong>FEA6 D6B4 57D1 4774 05EA  5EDA 5CD7 9D5C AB19 9C39</strong>
 

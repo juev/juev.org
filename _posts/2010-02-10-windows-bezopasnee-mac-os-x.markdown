@@ -2,6 +2,10 @@
 layout: post
 title: !binary |
   V2luZG93cyDQsdC10LfQvtC/0LDRgdC90LXQtSBNYWMgT1MgWA==
+keywords: windows,mac,security
+date: 2010-02-10
+tags:
+  - windows
 
 ---
 Именно под таким названием появилась <a href="http://www.3dnews.ru/software-news/windows_bezopasnee_mac_os_x/" rel="nofollow">новость</a> на 3dnews.ru. 

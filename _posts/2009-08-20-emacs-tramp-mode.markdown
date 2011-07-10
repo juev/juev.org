@@ -1,6 +1,11 @@
 --- 
 layout: post
 title: Emacs Tramp-mode
+keywords: emacs,trampmode,tramp
+date: 2009-08-20
+tags:
+  - emacs
+
 ---
 Для работы с системными файлами требуются права суперпользователя. Запускать emacs с такими правами - это не правильно. И именно для этого был создан Tramp-mode.
 

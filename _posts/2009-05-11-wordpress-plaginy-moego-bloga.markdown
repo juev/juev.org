@@ -3,6 +3,10 @@ layout: post
 title: !binary |
   d29yZHByZXNzINC/0LvQsNCz0LjQvdGLINC80L7QtdCz0L4g0LHQu9C+0LPQ
   sC4uLg==
+keywords: wordpress,plugins
+date: 2009-05-11
+tags:
+  - wordpress
 
 ---
 За время моего молчания прозвучало две просьбы. Одна касается вопроса - какой движок используется для блога. А второй - настройка оконного менеджера awesome.

@@ -2,6 +2,10 @@
 layout: post
 title: !binary |
   dXBkOiDQu9GD0YfRiNC40Lkg0L/Qu9C10LXRgCBMaW51eA==
+keywords: linux,music,player
+date: 2008-06-22
+tags:
+  - music
 
 ---
 <span style="font-weight: bold;">И все таки нашел!</span> =)

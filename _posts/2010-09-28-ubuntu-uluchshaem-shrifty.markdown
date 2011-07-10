@@ -2,6 +2,10 @@
 layout: post
 title: !binary |
   VWJ1bnR1IC0g0YPQu9GD0YfRiNCw0LXQvCDRiNGA0LjRhNGC0Ys=
+keywords: ubuntu,fonts,dpi
+date: 2010-09-28
+tags:
+  - ubuntu
 
 ---
 Несколько дней, как вернулся к использованию Ubuntu. Установил lts версию 10.04... При релизе 10.10 обновляться пока не собираюсь, мне нужна рабочая система, а не площадка для экспериментов. 
