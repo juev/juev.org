@@ -2,6 +2,7 @@ User-agent: *
 Disallow: /404.html
 Disallow: /search.html
 Disallow: /tags/
+Allow: /
 Sitemap: http://www.juev.ru/sitemap.xml
 
 User-agent: Yandex
