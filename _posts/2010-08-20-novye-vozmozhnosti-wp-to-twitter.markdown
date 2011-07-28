@@ -6,7 +6,7 @@ title: !binary |
 keywords: wordpress,twitter
 date: 2010-08-20
 tags:
-  - wordress
+  - wordpress
   - twitter
 
 ---
