@@ -3,3 +3,4 @@ layout: none
 permalink: .htaccess
 ---
 Redirect 301 /linode http://www.linode.com
+ErrorDocument 404 /404.html
