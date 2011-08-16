@@ -2,5 +2,13 @@
 layout: none
 permalink: .htaccess
 ---
+ExpiresByType text/html "now"
+ExpiresByType image/gif "modification plus 1 year"
+ExpiresByType image/png "modification plus 1 year"
+ExpiresByType image/jpg "modification plus 1 year"
+ExpiresByType image/ico "modification plus 1 year"
+ExpiresByType text/js "modification plus 1 month"
+ExpiresByType text/css "modification plus 1 month"
+
 Redirect 301 /linode http://www.linode.com
 ErrorDocument 404 /404.html
