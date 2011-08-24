@@ -12,3 +12,8 @@ ExpiresByType text/css "modification plus 1 month"
 
 Redirect 301 /linode http://www.linode.com
 ErrorDocument 404 /404.html
+
+RewriteEngine On
+RewriteCond %{REQUEST_METHOD} ^(HEAD|GET) [NC]
+RewriteCond %{HTTP:Range} ([0-9]*-[0-9]*)(\s*,\s*[0-9]*-[0-9]*)+
+RewriteRule .* - [F]
