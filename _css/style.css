@@ -187,6 +187,15 @@ a#license{
   margin-top: 20px;
 }
 
+.footnotes {
+  border-top: 1px dotted; border-color: lightgray;
+}
+
+.footnotes p {
+  font-size: 14px;
+  color: brown;
+}
+
 .pagination              { clear: both; margin-top: 20px; }
 .pagination strong       { font-weight: normal; font-style: italic; }
 .pagination p            { display: block; text-transform: uppercase; font-family: 'Verdana', Helvetica, Arial, sans-serif;
