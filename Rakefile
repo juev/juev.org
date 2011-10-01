@@ -56,7 +56,7 @@ task :new do
     f.puts ""
   end
   
-  `gvim --remote-silent #{path}`
+  `mvim #{path}`
   exit
 end
 
