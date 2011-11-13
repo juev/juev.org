@@ -12,7 +12,7 @@ reference: www.juev.ru
     </url>
 
     <url>
-        <loc>http://{{ page.reference }}/arhiv/</loc>
+        <loc>http://{{ page.reference }}/articles.html</loc>
         <lastmod>{{ site.time | date_to_xmlschema }}</lastmod>
         <changefreq>daily</changefreq>
         <priority>1.0</priority>
