@@ -2,6 +2,7 @@
 layout: none
 permalink: .htaccess
 ---
+Options -Indexes
 ExpiresByType text/html "now"
 ExpiresByType image/gif "modification plus 1 year"
 ExpiresByType image/png "modification plus 1 year"
