@@ -1,0 +1,83 @@
+---
+layout: post
+title: Фотографии в Фокусе
+keywords: mac, soft, focus, photo, foto, фотография
+date: 2011-11-25 07:26:49
+tags:
+    - mac
+    - soft
+    - screenshot
+    - photo
+
+---
+Больше всего в Mac меня привлекает возможность обработки фотографий. В MacOS возможностей
+намного больше, чем в любой другой системе. Помимо любимого среди фотографов Lightroom здесь
+присутствуют Aperture и масса небольших программ, позволяющих выполнять простые операции.
+
+Программ просто масса, многие из их уже есть в AppStore и найти их можно на странице
+[Photography][]{:rel="nofollow"}.
+
+Одной из таких программ, что привлекла мое внимание -- [Focus][]{:rel="nofollow"} от
+компании Coppertino Inc., кстати разработчики наши соотечественники.  Это программа,
+которая позволяет добавлять к фотографиям эффекты размытия, которые либо акцентируют
+внимание зрителя на определенных объектах, либо создают эффект игрушечного мира.
+
+[Focus]: http://itunes.apple.com/us/app/focus/id432599692?mt=12
+    "Focus By Coppertino Inc."
+[Photography]: http://itunes.apple.com/us/genre/mac-photography/id12013?mt=12
+    "Mac App Store > Photography"
+
+Интерфейс программы очень минималистичный, ничего лишнего и все только самое необходимое.
+
+[![main][]{:class="aligncenter"}](http://static.juev.ru/2011/11/main.png){:id="lightbox"}
+
+[main]: http://static.juev.ru/2011/11/main-th.jpg
+
+После того, как мы добавим фотографии к обработке, в нижней части окна появляются
+несколько кнопок, позволяющих вызывать доступные функции.
+
+[![photo][]{:class="aligncenter"}](http://static.juev.ru/2011/11/photo.png){:id="lightbox"}
+
+[photo]: http://static.juev.ru/2011/11/photo-th.jpg
+
+При выборе каждой из функций в правой части окна появляются соответствующие элементы
+управления, которые позволяют задавать определенные настройки выбранной функции.
+
+При работе в режиме портрета создаем эффект размытия вокруг выбранного человека. Эффект
+очень напоминает фотографии с максимально открытой диафрагмой при использовании дорогой
+оптики.
+
+[![portrait][]{:class="aligncenter"}](http://static.juev.ru/2011/11/portrait.png){:id="lightbox"}
+
+[portrait]: http://static.juev.ru/2011/11/portrait-th.jpg
+
+В режиме природы так же добавляется эффект размытия, но уже а линейной проекции, что
+позволяет сгладить ближние и дальние объекты, и акцентировать внимание на важных деталях
+фотографии.
+
+[![nature][]{:class="aligncenter"}](http://static.juev.ru/2011/11/nature.png){:id="lightbox"}
+
+[nature]: http://static.juev.ru/2011/11/nature-th.jpg
+
+В режиме архитектуры эффект размытия больше ориентирован на вертикальную составляющую.
+
+[![architecture][]{:class="aligncenter"}](http://static.juev.ru/2011/11/architecture.png){:id="lightbox"}
+
+[architecture]: http://static.juev.ru/2011/11/architecture-th.jpg
+
+В режиме макро эффект размытия еще более выражен.
+
+[![macro][]{:class="aligncenter"}](http://static.juev.ru/2011/11/macro.png){:id="lightbox"}
+
+[macro]: http://static.juev.ru/2011/11/macro-th.jpg
+
+И в режиме tilt, на мой взгляд, один из интереснейших эффектов, можно создавать эффект
+игрушечного мира.
+
+[![tilt][]{:class="aligncenter"}](http://static.juev.ru/2011/11/tilt.png){:id="lightbox"}
+
+[tilt]: http://static.juev.ru/2011/11/tilt-th.jpg
+
+Все эти эффекты можно увидеть и в Aperture, но достигаются они дополнительными
+телодвижениями и усложнением простых операций. Focus же позволяет это сделать с
+минимальными затратами сил.
