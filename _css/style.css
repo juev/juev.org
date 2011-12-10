@@ -278,6 +278,10 @@ ol li, ul li {
   line-height: 1.5em;
 }
 
+img{
+  clear: both; display: block; float:none; margin-left: auto; margin-right: auto;
+}
+
 @media screen and (max-device-width: 480px) {
   .wide .body { text-align: left; background: white; margin: 0; width: 100%; }
   #feed { display: none; }
