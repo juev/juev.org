@@ -9,7 +9,7 @@ end
 desc 'Minify & Combi CSS/JS file'
 task :minify do
 	print "Minify file...\n"
-  sh "jammit -c _assets.yml -u http://www.juev.ru -o assets"
+  sh "jammit -c _assets.yml -u http://www.juev.ru -o source/assets"
 end
 
 desc 'Enter development mode.'
@@ -20,18 +20,11 @@ task :local => :build do
   sh "jekyll --auto --server"
 end
 
-desc 'Remove all built files.'
-task :clean do
-	print "Cleaning build directory...\n"
-	sh "rm -rf _site"
-end
-
-desc 'Build, deploy, then clean.'
+desc 'Build, deploy.'
 task :deploy => :build do
   domain = "www.juev.ru"
   print "Deploying website to #{domain}\n"
-  sh "rsync -az --delete _site/ ec2:~/www/juev.ru/web/"
-  Rake::Task['clean'].execute
+  sh "rsync -az --delete public/ ec2:~/www/juev.ru/web/"
 end
 
 task :new do
@@ -40,7 +33,7 @@ task :new do
   ARGV[1..ARGV.length - 1].each { |v| title += " #{v}" }
   title.strip!
   now = Time.now
-  path = "_posts/#{now.strftime('%F')}-#{title.downcase.gsub(/[\s\.]/, '-').gsub(/[^\w\d\-]/, '')}.markdown"
+  path = "source/_posts/#{now.strftime('%F')}-#{title.downcase.gsub(/[\s\.]/, '-').gsub(/[^\w\d\-]/, '')}.markdown"
   
   File.open(path, "w") do |f|
     f.puts "---"
@@ -72,7 +65,7 @@ task :tags  => :tag_cloud do
   site.read_posts('')
 
   # Remove tags directory before regenerating
-  FileUtils.rm_rf("tags")
+  FileUtils.rm_rf("source/tags")
 
   site.tags.sort.each do |tag, posts|
     html = <<-HTML
@@ -85,8 +78,8 @@ syntax-highlighting: yes
   {% for post in site.posts %}{% for tag in post.tags %}{%if tag == "#{tag}" %}<div class="list"><a href="{{ post.url }}">{{ post.title }}</a></div>{%endif%}{%endfor%}{% endfor %}
 HTML
 
-    FileUtils.mkdir_p("tags/#{tag}")
-    File.open("tags/#{tag}/index.html", 'w+') do |file|
+    FileUtils.mkdir_p("source/tags/#{tag}")
+    File.open("source/tags/#{tag}/index.html", 'w+') do |file|
       file.puts html
     end
   end
@@ -111,7 +104,7 @@ task :tag_cloud do
     font_size = ((20 - 10.0*(max_count-s)/max_count)*2).to_i/1.3
     html << "<a href=\"/tags/#{tag.gsub(/ /,"%20")}\" title=\"Postings tagged #{tag}\" style=\"font-size: #{font_size}px; line-height:#{font_size}px\">#{tag}</a> "
   end
-  File.open('_includes/tag_cloud.html', 'w+') do |file|
+  File.open('source/_includes/tag_cloud.html', 'w+') do |file|
     file.puts html
   end
   puts 'Done.'
