@@ -1,11 +1,16 @@
 --- 
-exclude: [Rakefile, jekyll.pid, depl.sh]
 url: 	     http://www.juev.ru
 future:      true
 lsi:         false
-pygments:    true
+#pygments:    true
 markdown:    kramdown
 permalink:   pretty
 
+root:        /
+source:      source
+destination: public
+plugins:     plugins
+pygments:    false # default python pygments have been replaced by pygments.rb
+
 description: "Wordpress, Jekyll, Ruby, PHP, Linux, Ubuntu, VPS и многое другое на страницах сайта."
-keywords: "wordpress,jekyll,ruby,php,linux,ubuntu,vps,soft"
+keywords: "mac, tips, wordpress, jekyll, ruby, php, linux, ubuntu, vps, soft"
