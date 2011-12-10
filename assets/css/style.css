@@ -40,7 +40,7 @@ body.wide {
   margin: 0px 0px 5px;
 }
 .wide .body {
-  text-align: left;
+  text-align: justify;
   background: white;
   margin: 0 50px 0 50px;
 }
@@ -217,7 +217,7 @@ a#license{
 h1, h2, h3, h4, h5, h6 { font-family: 'Georgia', sans-serif; font-weight: normal; color: #222; }
 h1 a, h2 a, h3 a, h4 a,
 h5 a, h6 a                  { text-decoration: none; border-bottom: none; }
-h1.title                    { width: 560px; }
+h1.title                    { width: 560px; text-align: left; }
 h1.title a                  { text-decoration: none; border-bottom: none; color: #444 !important; }
 h1, h2                      { margin: 25px 0 5px 0; }
 h1                          { font-size: 48px; line-height: 52px; font: 48px/52px 'Georgia';}
@@ -283,7 +283,7 @@ img{
 }
 
 @media screen and (max-device-width: 480px) {
-  .wide .body { text-align: left; background: white; margin: 0; width: 100%; }
+  .wide .body { text-align: justify; background: white; margin: 0; width: 100%; }
   #feed { display: none; }
   .footer { display: none; }
   .share { display: none; }
