@@ -24,7 +24,7 @@ tags:
 Осталось всего чуть меньше 300 заметок. Однако чувство неудовлетворенности осталось. Мне
 нужен инструмент, позволяющий создавать быстрые заметки. В основном это обычный текст. 
 
-Тут я вспомнил про [Simplenote][]{:rel="nofollow"}! В Evernote у меня остались заметки
+Тут я вспомнил про [Simplenote][]! В Evernote у меня остались заметки
 двух типов -- это скриншоты экранов с различным оформлением сайтов, которые меня
 заинтересовали. Их достаточно было перенести в Dropbox, в отдельную папку. И
 соответственно -- обычные текстовые заметки.
@@ -35,14 +35,14 @@ tags:
 Решил посмотреть, что есть из программного обеспечения, позволяющего работать с текстовыми
 заметками и желательно, поддерживать Simplenote. Программ, работающих с обычными заметками
 очень много, а вот поддерживающих Simplenote -- минимум. Практически все они перечислены
-на официальной странице [Simplenote Downloads][]{:rel="nofollow"}.
+на официальной странице [Simplenote Downloads][].
 
 [Simplenote Downloads]: http://simplenoteapp.com/downloads/
     "Simplenote Downloads"
 
 Попробовал несколько программ из списка. Бесплатные оказались довольно ущербными, хотя и
 работали довольно стабильно. Решил попробовать платную, не знаю почему, но остановился на
-варианте [Nottingham][]{:rel="nofollow"}. С официального сайта можно скачать
+варианте [Nottingham][]. С официального сайта можно скачать
 полнофункциональный триал на 30 дней. Именно им сейчас я и пользуюсь.
 
 [Nottingham]: http://clickontyler.com/nottingham/
@@ -63,7 +63,7 @@ Evernote, заметки подгружались несколько часов,
 Интерфейс программы прост и очень красив. На скриншоте видно, что у меня программа
 проработает еще 27 дней. 
 
-[![nottingham][]{:class="aligncenter"}](http://static.juev.ru/2011/11/nottingham.png){:id="lightbox"}
+[![nottingham][]](http://static.juev.ru/2011/11/nottingham.png){:id="lightbox"}
 
 [nottingham]: http://static.juev.ru/2011/11/nottingham-th.jpg
 
@@ -76,12 +76,12 @@ Evernote, заметки подгружались несколько часов,
 
 В отличие от других программ, Nottingham поддерживает работу с тегами заметок. 
 
-![tags](http://static.juev.ru/2011/11/tags.png){:class="aligncenter"}
+![tags](http://static.juev.ru/2011/11/tags.png)
 
 Поддерживается автодополнение ранее использованных тегов. Сами теги отображаются в списке
 заметок в левой части окна.
 
-[![nottingham-tag][]{:class="aligncenter"}](http://static.juev.ru/2011/11/nottingham-tag.png){:id="lightbox"}
+[![nottingham-tag][]](http://static.juev.ru/2011/11/nottingham-tag.png){:id="lightbox"}
 
 [nottingham-tag]: http://static.juev.ru/2011/11/nottingham-tag-th.jpg
 
@@ -89,7 +89,7 @@ Evernote, заметки подгружались несколько часов,
 метки. Которые можно использовать для группировки заметок по определенному признаку.
 Причем цветные метки затем используются и в Finder.
 
-[![finder][]{:class="aligncenter"}](http://static.juev.ru/2011/11/finder.png){:id="lightbox"}
+[![finder][]](http://static.juev.ru/2011/11/finder.png){:id="lightbox"}
 
 [finder]: http://static.juev.ru/2011/11/finder-th.jpg
 

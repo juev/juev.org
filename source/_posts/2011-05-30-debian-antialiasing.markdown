@@ -48,7 +48,7 @@ tags:
 После того, как перезапустил Gnome, обратил внимание на то как замечательно стали
 отображаться шрифты!
 
-[![Debian][1]{: class="aligncenter"}](http://static.juev.ru/2011/05/debian_fonts.png "Debian Fonts"){: id="lightbox"}
+[![Debian][1]](http://static.juev.ru/2011/05/debian_fonts.png "Debian Fonts"){: id="lightbox"}
 
 Естественно, что на разных мониторах шрифты будут отображаться по разному и само
 изображение не передаст всего того, что произошло. Но работать стало гораздо приятнее!

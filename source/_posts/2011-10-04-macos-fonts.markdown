@@ -15,8 +15,8 @@ tags:
 довольно не плохой монитор и мне он нравится. Но он официально не поддерживается Apple,
 поэтому отображение шрифтов отличается от того, что можно увидеть на продукции компании.
 
-[ilyabirman.ru](http://ilyabirman.ru/meanwhile/2007/06/13/1/comments/){:rel="nofollow"} и 
-[antigrain.com](http://antigrain.com/research/font_rasterization/index.html){:rel="nofollow"}
+[ilyabirman.ru](http://ilyabirman.ru/meanwhile/2007/06/13/1/comments/) и 
+[antigrain.com](http://antigrain.com/research/font_rasterization/index.html)
 
 > "Когда в Виндоусе только появился СlearType, некоторые не использовали его, говоря, что
 > шрифт выглядит размытым. А некоторые не используют его и сейчас.
@@ -34,7 +34,7 @@ tags:
 >лучше у них выглядят шрифты. Мне раньше и в голову не приходило, что есть люди, которые
 >предпочитают маковскому рендерингу куцый ClearType."
 
-[alexmak.net](http://alexmak.net/blog/2007/06/14/сглаживание-шрифтов-и-под-пиксельная/){:rel="nofollow"}
+[alexmak.net](http://alexmak.net/blog/2007/06/14/сглаживание-шрифтов-и-под-пиксельная/)
 
 >"Apple считает, что цель алгоритма — сохранить дизайн шрифта насколько это возможно, даже
 >за счет небольшой размытости.

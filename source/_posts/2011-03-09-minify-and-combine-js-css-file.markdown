@@ -16,8 +16,8 @@ tags:
 Чтобы добиться этого рекомендуют проводить минимизацию и комбинацию файлов с помощью утилиты `Juicer`.
 
 ##Инсталяция
-Для установки программы потребуется наличие установленных [Ruby](http://www.ruby-lang.org/en/ "Ruby"){: rel="nofollow"} и
-[Rubygems](http://www.rubygems.org/ "Rubygems"){: rel="nofollow"}. После чего используем следующие команды:
+Для установки программы потребуется наличие установленных [Ruby](http://www.ruby-lang.org/en/ "Ruby") и
+[Rubygems](http://www.rubygems.org/ "Rubygems"). После чего используем следующие команды:
 
     $ gem install juicer
     $ juicer install yui_compressor
@@ -45,7 +45,7 @@ tags:
     })(this);
 
 ###Syntax verification
-`juicer merge` использует [JsLint](http://www.jslint.com/ "JsLint"){: rel="nofollow"} для проверки JavaScript-файлов на наличие ошибок. Если
+`juicer merge` использует [JsLint](http://www.jslint.com/ "JsLint") для проверки JavaScript-файлов на наличие ошибок. Если
 ошибки или предупреждения будут обнаружены, то проц прерывается. Однако его можно будет провести принудительно, если
 использовать опцию `-i`:
 
