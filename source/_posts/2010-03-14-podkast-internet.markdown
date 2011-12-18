@@ -1,7 +1,6 @@
 --- 
 layout: post
-title: !binary |
-  0KHQvtC30LTQsNC10Lwg0L/QvtC00LrQsNGB0YI=
+title: Размещение подкаста в интернете
 keywords: amazon,hosting,internet,services,podcast,хостинг
 date: 2010-03-14
 tags:

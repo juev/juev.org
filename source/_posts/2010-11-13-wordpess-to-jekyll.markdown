@@ -1,6 +1,6 @@
 --- 
 layout: post
-title: Wordpess in Jekyll
+title: Wordpess to Jekyll
 keywords: jekyll,wordpress,git,migrate
 date: 2010-11-13
 tags:
