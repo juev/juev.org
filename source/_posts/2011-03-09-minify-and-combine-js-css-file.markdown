@@ -16,7 +16,7 @@ tags:
 Чтобы добиться этого рекомендуют проводить минимизацию и комбинацию файлов с помощью утилиты `Juicer`.
 
 ##Инсталяция
-Для установки программы потребуется наличие установленных [Ruby](http://www.ruby-lang.org/en/ "Ruby"){: rel="nofollow"}и
+Для установки программы потребуется наличие установленных [Ruby](http://www.ruby-lang.org/en/ "Ruby"){: rel="nofollow"} и
 [Rubygems](http://www.rubygems.org/ "Rubygems"){: rel="nofollow"}. После чего используем следующие команды:
 
     $ gem install juicer
