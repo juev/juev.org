@@ -10,7 +10,7 @@ permalink: articles.html
 		{{ post.date | date:'%B %Y' }}
 	{% endcapture %}
 	{% if last_month != month %}
-		<h2>{{ month }}</h2>
+		<h3>{{ month }}</h3>
 			<div class="list"><a href="{{ post.id }}" title="{{ post.title }}">{{ post.title }}</a></div>
 		{% assign last_month = month %}
 	{% else %}

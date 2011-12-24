@@ -214,18 +214,20 @@ a#license{
   line-height: 18px;
   letter-spacing: normal; }
 
-h1, h2, h3, h4, h5, h6 { font-family: 'Georgia', sans-serif; font-weight: normal; color: #222; }
+h1, h2, h3, h4, h5, h6 { font-family: 'Georgia', sans-serif; font-weight: normal; color: #444; }
 h1 a, h2 a, h3 a, h4 a,
 h5 a, h6 a                  { text-decoration: none; border-bottom: none; }
-h1.title                    { width: 560px; text-align: left; }
+h1.title                    { width: 560px; text-align: left; color; #444 !important; }
 h1.title a                  { text-decoration: none; border-bottom: none; color: #444 !important; }
 h1, h2                      { margin: 25px 0 5px 0; }
 h1                          { font-size: 48px; line-height: 52px; font: 48px/52px 'Georgia';}
+/*h2                          { font-size: 48px; line-height: 52px; font: 48px/52px 'Georgia';}*/
 h2                          { font-size: 30px; line-height: 30px; }
+/*h3                          { font-size: 30px; line-height: 30px; }*/
 h3                          { font-size: 18px; line-height: 20px; }
 h3 a                        { font: 14px/16px 'Verdana' }
 h3.posts > a                { font-size: 14px; line-height: 36px; }
-h2.title                    { margin-bottom: 15px; }
+h3.title                    { margin-bottom: 15px; }
 .allpostsmeta a          {
   font-family: Helvetica, sans-serif !important;
   font-weight: bold;
