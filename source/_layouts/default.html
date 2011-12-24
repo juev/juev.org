@@ -4,16 +4,15 @@
   <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
 
   <title>{{ page.title }}</title>
-  {% if page.description %}<meta name="description" content="{{page.description}}" />{% endif %}
   {% if page.keywords %}<meta name="keywords" content="{{page.keywords}}" />{% else %}<meta name="keywords" content="{{site.keywords}}" />{% endif %}
   <meta name="title" content="{{ page.title }}" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="author" content="Evsyukov Denis" />
 
-  <link rel="author" href="/humans.txt" />
+  <link rel="author" href="https://plus.google.com/u/0/116661482374124481456" />
   <link rel="shortcut icon" href="/favicon.ico" />
   <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
-  <link rel="stylesheet" href="/assets/master.css?4" type="text/css" media="screen, projection" />
+  <link rel="stylesheet" href="/assets/master.css?7" type="text/css" media="screen, projection" />
   <!--[if lt IE 8]>
   <link rel="stylesheet" href="/assets/ie.css" type="text/css" media="screen, projection" />
   <![endif]-->
@@ -39,7 +38,9 @@
           </div>
         </div>
         <div class="primary-content width-fix">
-          <div class="content">{{ content }}</div>
+          <div class="entry">
+{{ content }}
+          </div>
         </div>
         <div class="footer">
           <p>&copy; Copyright 2008-2011 by Denis Evsyukov.</p>
@@ -79,6 +80,19 @@
       var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
       ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
         var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+  </script>
+  <script type="text/javascript">
+    var _gauges = _gauges || [];
+    (function() {
+      var t   = document.createElement('script');
+      t.type  = 'text/javascript';
+      t.async = true;
+      t.id    = 'gauges-tracker';
+      t.setAttribute('data-site-id', '4e0ac749f5a1f527f5000001');
+      t.src = '//secure.gaug.es/track.js';
+      var s = document.getElementsByTagName('script')[0];
+      s.parentNode.insertBefore(t, s);
     })();
   </script>
 </body>
