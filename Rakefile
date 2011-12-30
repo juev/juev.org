@@ -1,7 +1,9 @@
-task :default => :local
+task :default => :build
  
 desc 'Build site with Jekyll.'
 task :build  => :tags do
+	print "Minify file...\n"
+  sh "jammit -c _assets.yml -u http://www.juev.ru -o source/assets"
 	print "Compiling website..."
   sh "jekyll"
 end
