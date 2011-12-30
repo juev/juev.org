@@ -4,8 +4,8 @@ html,body.wide {
 body {
   background: url(//static.juev.ru/images/gradient.png) repeat-x #7c7c8a;
   text-align: center;
-  font-size: 16px;
-  line-height: 1.5em;
+  font-size: 17px;
+  line-height: 28px;
   font-family: georgia,serif;
 }
 body.wide {
@@ -40,7 +40,7 @@ body.wide {
   margin: 0px 0px 5px;
 }
 .wide .body {
-  text-align: justify;
+/*  text-align: justify;*/
   background: white;
   margin: 0 50px 0 50px;
 }
@@ -61,14 +61,14 @@ font-family: 'Droid Sans',sans-serif;
   padding: 20px;
 }
 .primary-content p {
-  line-height:1.5em;
-  font-size: 18px;
+  line-height:28px;
+  font-size: 17px;
   font-family: georgia,serif;
 }
 .primary-content a, .primary-content a:visited {
   color: #055580;
   text-decoration: none;
-  /*border-bottom: 1px dashed;*/
+  border-bottom: 1px dashed;
 }
 .primary-content a:hover {
   color: #0097E8;
@@ -79,7 +79,7 @@ font-family: 'Droid Sans',sans-serif;
   /*height: 62px;*/
   background: #393d43;
   color: #fff;
-  font-size: 0.95em;
+  font-size: 15px;
   vertical-align: middle;
 }
 .navigation .navigation-label {
@@ -217,14 +217,14 @@ a#license{
 h1, h2, h3, h4, h5, h6 { font-family: 'Georgia', sans-serif; font-weight: normal; color: #444; }
 h1 a, h2 a, h3 a, h4 a,
 h5 a, h6 a                  { text-decoration: none; border-bottom: none; }
-h1.title                    { width: 560px; text-align: left; color; #444 !important; }
+h1.title                    { width: 660px; text-align: left; color; #444 !important; }
 h1.title a                  { text-decoration: none; border-bottom: none; color: #444 !important; }
 h1, h2                      { margin: 25px 0 5px 0; }
 h1                          { font-size: 48px; line-height: 52px; font: 48px/52px 'Georgia';}
 /*h2                          { font-size: 48px; line-height: 52px; font: 48px/52px 'Georgia';}*/
 h2                          { font-size: 30px; line-height: 30px; }
 /*h3                          { font-size: 30px; line-height: 30px; }*/
-h3                          { font-size: 18px; line-height: 20px; }
+h3                          { font-size: 18px; line-height: 20px; font-weight: bold; }
 h3 a                        { font: 14px/16px 'Verdana' }
 h3.posts > a                { font-size: 14px; line-height: 36px; }
 h3.title                    { margin-bottom: 15px; }
@@ -271,9 +271,13 @@ h3.title                    { margin-bottom: 15px; }
 }
 .tag_cloud a {
   margin: 0 2px;
+  border-bottom: 0px;
 }
 .list {
   line-height: 1.5em;
+}
+.list a{
+  border-bottom: 0px;
 }
 ol li, ul li {
   margin-bottom: 10px;
