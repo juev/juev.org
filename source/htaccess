@@ -2,6 +2,8 @@
 layout: none
 permalink: .htaccess
 ---
+FileETag none
+
 Options -Indexes
 ExpiresByType text/html "now"
 ExpiresByType image/gif "modification plus 1 year"
@@ -13,6 +15,23 @@ ExpiresByType text/css "modification plus 1 month"
 
 Redirect 301 /linode http://www.linode.com
 ErrorDocument 404 /404.html
+
+# 1 YEAR
+<FilesMatch "\.(ico|pdf|flv)$">
+Header set Cache-Control "max-age=29030400, private"
+</FilesMatch>
+# 1 WEEK
+<FilesMatch "\.(jpg|jpeg|png|gif|swf)$">
+Header set Cache-Control "max-age=604800, private"
+</FilesMatch>
+# 2 DAYS
+<FilesMatch "\.(xml|txt|css|js)$">
+Header set Cache-Control "max-age=172800, private, proxy-revalidate"
+</FilesMatch>
+# 1 MIN
+<FilesMatch "\.(html|htm|php)$">
+Header set Cache-Control "max-age=60, private, proxy-revalidate"
+</FilesMatch>
 
 RewriteEngine On
 RewriteCond %{REQUEST_METHOD} ^(HEAD|GET) [NC]
