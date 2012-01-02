@@ -3,10 +3,10 @@ html,body.wide {
 }
 body {
   background: url(//static.juev.ru/images/gradient.png) repeat-x #7c7c8a;
-  text-align: center;
-  font-size: 17px;
-  line-height: 28px;
-  font-family: georgia,serif;
+  /*text-align: center;*/
+  /*font-size: 17px;*/
+  /*line-height: 28px;*/
+  font: 17px/1.5 georgia,serif;
 }
 body.wide {
   padding: 0;
@@ -22,7 +22,7 @@ body.wide {
   text-align: center;
   padding: 10px;
   color: white;
-  font-family: georgia,serif;
+  /*font-family: georgia,serif;*/
 }
 .wide .footer {
   background:#393D43;
@@ -61,9 +61,9 @@ font-family: 'Droid Sans',sans-serif;
   padding: 20px;
 }
 .primary-content p {
-  line-height:28px;
-  font-size: 17px;
-  font-family: georgia,serif;
+  /*line-height:28px;*/
+  /*font-size: 17px;*/
+  /*font-family: georgia,serif;*/
 }
 .primary-content a, .primary-content a:visited {
   color: #055580;
@@ -214,16 +214,16 @@ a#license{
   line-height: 18px;
   letter-spacing: normal; }
 
-h1, h2, h3, h4, h5, h6 { font-family: 'Georgia', sans-serif; font-weight: normal; color: #444; }
+/*h1, h2, h3, h4, h5, h6 { font-family: 'Georgia', sans-serif; font-weight: normal; color: #444; }*/
+h1, h2, h3, h4, h5, h6 { font-weight: normal; color: #444; }
 h1 a, h2 a, h3 a, h4 a,
 h5 a, h6 a                  { text-decoration: none; border-bottom: none; }
 h1.title                    { width: 660px; text-align: left; color; #444 !important; }
 h1.title a                  { text-decoration: none; border-bottom: none; color: #444 !important; }
 h1, h2                      { margin: 25px 0 5px 0; }
-h1                          { font-size: 48px; line-height: 52px; font: 48px/52px 'Georgia';}
-/*h2                          { font-size: 48px; line-height: 52px; font: 48px/52px 'Georgia';}*/
+/*h1                          { font-size: 48px; line-height: 52px; font: 48px/52px 'Georgia';}*/
+h1                          { font-size: 48px; line-height: 52px; }
 h2                          { font-size: 30px; line-height: 30px; }
-/*h3                          { font-size: 30px; line-height: 30px; }*/
 h3                          { font-size: 18px; line-height: 20px; font-weight: bold; }
 h3 a                        { font: 14px/16px 'Verdana' }
 h3.posts > a                { font-size: 14px; line-height: 36px; }
