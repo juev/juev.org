@@ -288,6 +288,10 @@ img{
   clear: both; display: block; float:none; margin-left: auto; margin-right: auto;
 }
 
+#livefyre{
+  min-height: 120px !important;
+}
+
 @media screen and (max-device-width: 480px) {
   .wide .body { text-align: justify; background: white; margin: 0; width: 100%; }
   #feed { display: none; }

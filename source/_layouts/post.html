@@ -24,6 +24,16 @@ layout: default
   <a href="/tags/{{ tag }}" title="View posts tagged with &quot;{{ tag }}&quot;" rel="nofollow">{{ tag }}</a>{% if forloop.last != true %}, {% endif %}
 {% endfor %}
 </span>
+
+<!-- START: Livefyre Embed -->
+<script type='text/javascript' src='http://zor.livefyre.com/wjs/v1.0/javascripts/livefyre_init.js'></script>
+<script type='text/javascript'>
+    var fyre = LF({
+        site_id: 295089
+    });
+</script>
+<!-- END: Livefyre Embed -->
+
 </div>
 <div class="meta">
   {% include nav.html %}
