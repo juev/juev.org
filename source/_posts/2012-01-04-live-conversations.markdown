@@ -1,7 +1,6 @@
 ---
 layout: post
 title: Не комментарии, но живой разговор
-description: 
 keywords: blog, comments, livefire, realtime, facebook, twitter
 date: 2012-01-04 10:02:08
 tags:
