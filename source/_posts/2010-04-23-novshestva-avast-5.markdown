@@ -21,15 +21,15 @@ tags:
 
 Во-первых, это полностью переработанный интерфейс. Если раньше он делился на несколько отдельных программ, каждая из которых выполняла свою определенную функцию, то теперь все собрано в едином месте. Работать стало намного удобнее.
 
-<a href="http://static.juev.ru/2010/04/avast-options.png" id="lightbox"><img class="aligncenter size-medium wp-image-998" title="avast-options" src="http://static.juev.ru/2010/04/avast-options-300x227.png" alt="" width="300" height="227" /></a>
+<a href="http://static.juev.ru/2010/04/avast-options.png"><img class="aligncenter size-medium wp-image-998" title="avast-options" src="http://static.juev.ru/2010/04/avast-options-300x227.png" alt="" width="300" height="227" /></a>
 
 Во-вторых, количество работающих процессов самой программы сократилось до двух. Вместо n-ого, по количеству работающих экранов. Мелочь, а все равно приятно!
 
-<a href="http://static.juev.ru/2010/04/avast-scan.png" id="lightbox"><img class="aligncenter size-medium wp-image-1001" title="avast-scan" src="http://static.juev.ru/2010/04/avast-scan-300x226.png" alt="" width="300" height="226" /></a>
+<a href="http://static.juev.ru/2010/04/avast-scan.png"><img class="aligncenter size-medium wp-image-1001" title="avast-scan" src="http://static.juev.ru/2010/04/avast-scan-300x226.png" alt="" width="300" height="226" /></a>
 
 Регистрация программы упростилась. Теперь не нужно ждать делать запрос регистрации с офсайта программы и затем ждать ответа с ключом по электропочте. Достаточно только заполнить форму в самой программе и при наличии интернета сразу же получить активацию. У меня программа уже активирована, поэтому скринов формы регистрации показать не могу. А так выглядит окно после завершения регистрации:
 
-<a href="http://static.juev.ru/2010/04/avast-reg.png" id="lightbox"><img class="aligncenter size-medium wp-image-999" title="avast-reg" src="http://static.juev.ru/2010/04/avast-reg-300x227.png" alt="" width="300" height="227" /></a>
+<a href="http://static.juev.ru/2010/04/avast-reg.png"><img class="aligncenter size-medium wp-image-999" title="avast-reg" src="http://static.juev.ru/2010/04/avast-reg-300x227.png" alt="" width="300" height="227" /></a>
 
 Появился бесшумный режим (он и был, но теперь стал более ярко выражен), который блокирует все всплывающие окна программы.
 
@@ -37,16 +37,16 @@ tags:
 
 В интерфейсе программы теперь используется flash, поэтому при переходе на вкладку "Экран файловой системы" становятся заметны тормоза на однопроцессорных машинах.
 
-<a href="http://static.juev.ru/2010/04/avast-ekran.png" id="lightbox"><img class="aligncenter size-medium wp-image-997" title="avast-ekran" src="http://static.juev.ru/2010/04/avast-ekran-300x227.png" alt="" width="300" height="227" /></a>
+<a href="http://static.juev.ru/2010/04/avast-ekran.png"><img class="aligncenter size-medium wp-image-997" title="avast-ekran" src="http://static.juev.ru/2010/04/avast-ekran-300x227.png" alt="" width="300" height="227" /></a>
 
 Можно в реальном времени отслеживать статистику работы и обновления программы. Кстати в бесплатном варианте обновления проходят только один раз в сутки, в то время как в платном один раз в час.
 
-<a href="http://static.juev.ru/2010/04/avast-statistics.png" id="lightbox"><img class="aligncenter size-medium wp-image-1002" title="avast-statistics" src="http://static.juev.ru/2010/04/avast-statistics-300x227.png" alt="" width="300" height="227" /></a>
+<a href="http://static.juev.ru/2010/04/avast-statistics.png"><img class="aligncenter size-medium wp-image-1002" title="avast-statistics" src="http://static.juev.ru/2010/04/avast-statistics-300x227.png" alt="" width="300" height="227" /></a>
 
-<a href="http://static.juev.ru/2010/04/avast-update.png" id="lightbox"><img class="aligncenter size-medium wp-image-1003" title="avast-update" src="http://static.juev.ru/2010/04/avast-update-300x227.png" alt="" width="300" height="227" /></a>
+<a href="http://static.juev.ru/2010/04/avast-update.png"><img class="aligncenter size-medium wp-image-1003" title="avast-update" src="http://static.juev.ru/2010/04/avast-update-300x227.png" alt="" width="300" height="227" /></a>
 
 Что самое интересное, в рекламе гугла до сих пор предлагают скачать старую версию Avast. То есть компания Alwil не стремится обновлять свою программу? Почему?
 
-<a href="http://static.juev.ru/2010/04/avast-reklama.png" id="lightbox"><img class="aligncenter size-full wp-image-1000" title="avast-reklama" src="http://static.juev.ru/2010/04/avast-reklama.png" alt="" width="274" height="158" /></a>
+<a href="http://static.juev.ru/2010/04/avast-reklama.png"><img class="aligncenter size-full wp-image-1000" title="avast-reklama" src="http://static.juev.ru/2010/04/avast-reklama.png" alt="" width="274" height="158" /></a>
 
 Очень не плохой продукт получился. Странно только, что распространяют его не так активно, как должны были бы.

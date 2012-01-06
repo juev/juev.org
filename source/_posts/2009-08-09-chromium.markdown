@@ -31,9 +31,9 @@ tags:
 
 Несколько скринов:
 
-<a href="http://static.juev.ru/2009/08/chromium-1.png" id="lightbox"><img class="aligncenter size-medium wp-image-521" title="chromium-1" src="http://static.juev.ru/2009/08/chromium-1-300x240.png" alt="Общий вид браузера" width="300" height="240" /></a>
+<a href="http://static.juev.ru/2009/08/chromium-1.png"><img class="aligncenter size-medium wp-image-521" title="chromium-1" src="http://static.juev.ru/2009/08/chromium-1-300x240.png" alt="Общий вид браузера" width="300" height="240" /></a>
 
-<a href="http://static.juev.ru/2009/08/chromium-2.png" id="lightbox"><img class="aligncenter size-medium wp-image-522" title="chromium-2" src="http://static.juev.ru/2009/08/chromium-2-300x240.png" alt="Вид сайта и основное меню" width="300" height="240" /></a>
+<a href="http://static.juev.ru/2009/08/chromium-2.png"><img class="aligncenter size-medium wp-image-522" title="chromium-2" src="http://static.juev.ru/2009/08/chromium-2-300x240.png" alt="Вид сайта и основное меню" width="300" height="240" /></a>
 
 Теперь осталось разобраться, как прикрутить менеджер паролей lastpass, который я использую в огнелисе. Более менее уже удалось прикрутить LaterLoop для быстрого сохранения временных закладок. Осталось попробовать еще докрутить Delicious в качестве менеджера закладок.
 

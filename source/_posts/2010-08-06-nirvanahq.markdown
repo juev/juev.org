@@ -18,11 +18,11 @@ tags:
 
 Первое впечатление, после того, как открылся интерфейс сервиса - полное подобие программы Things, та же организация сайдбара, те же пункты. В целом очень красиво!
 
-<a href="http://static.juev.ru/2010/08/nirvana.png" id="lightbox"><img class="aligncenter size-medium wp-image-1098" title="Nirvana" src="http://static.juev.ru/2010/08/nirvana-300x246.png" alt="Nirvana" width="300" height="246" /></a>
+<a href="http://static.juev.ru/2010/08/nirvana.png"><img class="aligncenter size-medium wp-image-1098" title="Nirvana" src="http://static.juev.ru/2010/08/nirvana-300x246.png" alt="Nirvana" width="300" height="246" /></a>
 
 Оптимально используются горячие клавиши, к примеру для того, чтобы добавить новую задачу в inbox достаточно нажать <strong>i</strong>. И появляется всплывающее окошко добавления новой задачи.
 
-<a href="http://static.juev.ru/2010/08/nirvana-add.png" id="lightbox"><img class="aligncenter size-medium wp-image-1099" title="nirvana-add" src="http://static.juev.ru/2010/08/nirvana-add-300x246.png" alt="" width="300" height="246" /></a>
+<a href="http://static.juev.ru/2010/08/nirvana-add.png"><img class="aligncenter size-medium wp-image-1099" title="nirvana-add" src="http://static.juev.ru/2010/08/nirvana-add-300x246.png" alt="" width="300" height="246" /></a>
 
 При добавлении тегов используется функции автодополнения, при начале набора будут отображаться возможные варианты, и производиться автоматическое заполнение при использовании клавиши Tab.
 

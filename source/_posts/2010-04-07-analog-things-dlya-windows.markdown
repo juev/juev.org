@@ -18,17 +18,17 @@ tags:
 
 Первая программа бесплатная <a title="Doit.im" href="http://www.doit.im/" rel="nofollow">Doit.im</a>, является AIR-приложением, поэтому может использоваться на любых системах, в которых работает AIR. Интерфейс очень похож на интерфейс Things, так же все удобно организовано и так же удобно работать с программой. Все списки хранятся на сервере, таким образом программа может работать в двух режимах - онлайн и офлайн. В последнем случае производиться синхронизация с сервером при выходе в интернет.
 
-<a href="http://static.juev.ru/2010/04/doit.jpg" id="lightbox"><img class="aligncenter size-medium wp-image-973" title="doit" src="http://static.juev.ru/2010/04/doit-300x224.jpg" alt="" width="300" height="224" /></a>
+<a href="http://static.juev.ru/2010/04/doit.jpg"><img class="aligncenter size-medium wp-image-973" title="doit" src="http://static.juev.ru/2010/04/doit-300x224.jpg" alt="" width="300" height="224" /></a>
 
 Очень разумно организована работа со списками, и если, к примеру, вы поставили отметку о выполнении задачи, она автоматически помещается в раздел Complited, откуда вернуть ее будет уже проблематично.
 
-<a href="http://static.juev.ru/2010/04/doit-task.jpg" id="lightbox"><img class="aligncenter size-medium wp-image-974" title="doit-task" src="http://static.juev.ru/2010/04/doit-task-300x223.jpg" alt="" width="300" height="223" /></a>
+<a href="http://static.juev.ru/2010/04/doit-task.jpg"><img class="aligncenter size-medium wp-image-974" title="doit-task" src="http://static.juev.ru/2010/04/doit-task-300x223.jpg" alt="" width="300" height="223" /></a>
 
 Недостатком является довольно большой расход памяти, что относиться скорее к проблемам AIR, а не самой программы, но все же. Есть функции автоматического запуска при старте системы, автоматической авторизации на сайте программы. Очень удобно!
 
 Вторая программа наверняка известна многим. Про нее писали довольно много, когда речь заходила про списки todo, называется она <a id="yh3s" title="MLO" href="http://www.mylifeorganized.net/" rel="nofollow">MLO</a>. Распространяется в бесплатном и платных вариантах. Причем для жителей России предоставляется очень значительные скидки!
 
-<a href="http://static.juev.ru/2010/04/MLO.png" id="lightbox"><img class="aligncenter size-medium wp-image-975" title="MLO" src="http://static.juev.ru/2010/04/MLO-300x246.png" alt="" width="300" height="246" /></a>
+<a href="http://static.juev.ru/2010/04/MLO.png"><img class="aligncenter size-medium wp-image-975" title="MLO" src="http://static.juev.ru/2010/04/MLO-300x246.png" alt="" width="300" height="246" /></a>
 
 Программа, можно сказать, уникальная!
 
@@ -38,7 +38,7 @@ tags:
 
 В-третьих, имеет великолепную интеграцию с системой, типа сворачивания и закрытия в трей, вызов по горячим клавишам и т.п.
 
-<a href="http://static.juev.ru/2010/04/MLO-task.png" id="lightbox"><img class="aligncenter size-medium wp-image-976" title="MLO-task" src="http://static.juev.ru/2010/04/MLO-task-300x246.png" alt="" width="300" height="246" /></a>
+<a href="http://static.juev.ru/2010/04/MLO-task.png"><img class="aligncenter size-medium wp-image-976" title="MLO-task" src="http://static.juev.ru/2010/04/MLO-task-300x246.png" alt="" width="300" height="246" /></a>
 
 Работать одно удовольствие! Бесплатная версия отличается от версии профессионал тем, что не имеет возможности работать с проектами и есть еще ряд ограничений. В моем случае, для использования системы списков "Автофокус" проекты не нужны, и поэтому я остановился на использовании бесплатной версии программы.
 

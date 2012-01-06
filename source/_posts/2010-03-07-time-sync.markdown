@@ -16,7 +16,7 @@ tags:
 Проверить точность хода часов довольно просто в любой системе, если зайти на сайт <a
 href="http://time.is/" rel="nofollow">time.is</a>
 
-<a href="http://static.juev.ru/2010/03/timeis.png" id="lightbox"><img class="aligncenter size-medium wp-image-933" title="timeis" src="http://static.juev.ru/2010/03/timeis-300x192.png" alt="" width="300" height="192" /></a>
+<a href="http://static.juev.ru/2010/03/timeis.png"><img class="aligncenter size-medium wp-image-933" title="timeis" src="http://static.juev.ru/2010/03/timeis-300x192.png" alt="" width="300" height="192" /></a>
 
 В данном случае время синхронизировано, поэтому показывается сообщение "You have the exact time!", в остальных случаях показывается величина отклонения в секундах.
 
@@ -47,19 +47,19 @@ href="http://time.is/" rel="nofollow">time.is</a>
 
 Для этого переходим в "Панель управления\Все элементы панели управления\Администрирование" и выбираем пункт "Планировщик заданий".
 
-<a href="http://static.juev.ru/2010/03/PlanJob.png" id="lightbox"><img class="aligncenter size-medium wp-image-935" title="PlanJob" src="http://static.juev.ru/2010/03/PlanJob-300x136.png" alt="" width="300" height="136" /></a>
+<a href="http://static.juev.ru/2010/03/PlanJob.png"><img class="aligncenter size-medium wp-image-935" title="PlanJob" src="http://static.juev.ru/2010/03/PlanJob-300x136.png" alt="" width="300" height="136" /></a>
 
 Создаем новое задание:
 
-<a href="http://static.juev.ru/2010/03/main3.png" id="lightbox"><img class="aligncenter size-medium wp-image-936" title="main" src="http://static.juev.ru/2010/03/main3-300x225.png" alt="" width="300" height="225" /></a>
+<a href="http://static.juev.ru/2010/03/main3.png"><img class="aligncenter size-medium wp-image-936" title="main" src="http://static.juev.ru/2010/03/main3-300x225.png" alt="" width="300" height="225" /></a>
 
 Указываем имя задачи (в данном случае я открыл для редактирования существующую задачу, поэтому поле ввода не активно). Указываем, что задача будет запускаться как системный процесс и с наивысшими правами. Затем переходим во вкладки Триггеры и задаем следующие условия запуска:
 
-<a href="http://static.juev.ru/2010/03/trigger.png" id="lightbox"><img class="aligncenter size-medium wp-image-939" title="trigger" src="http://static.juev.ru/2010/03/trigger-300x258.png" alt="" width="300" height="258" /></a>
+<a href="http://static.juev.ru/2010/03/trigger.png"><img class="aligncenter size-medium wp-image-939" title="trigger" src="http://static.juev.ru/2010/03/trigger-300x258.png" alt="" width="300" height="258" /></a>
 
 После чего нам осталось только указать, что именно мы собираемся запускать. Это делается во вкладке действия:
 
-<a href="http://static.juev.ru/2010/03/run.png" id="lightbox"><img class="aligncenter size-medium wp-image-938" title="run" src="http://static.juev.ru/2010/03/run-300x225.png" alt="" width="300" height="225" /></a>
+<a href="http://static.juev.ru/2010/03/run.png"><img class="aligncenter size-medium wp-image-938" title="run" src="http://static.juev.ru/2010/03/run-300x225.png" alt="" width="300" height="225" /></a>
 
 Вот и все. После создания задания оно становиться активным и согласно нашим настройкам Neutron будет автоматически запускаться раз в 3 часа с правами администратора, приводя наше системное время в порядок.
 

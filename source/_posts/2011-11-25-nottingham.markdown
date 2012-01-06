@@ -63,7 +63,7 @@ Evernote, заметки подгружались несколько часов,
 Интерфейс программы прост и очень красив. На скриншоте видно, что у меня программа
 проработает еще 27 дней. 
 
-[![nottingham][]](http://static.juev.ru/2011/11/nottingham.png){:id="lightbox"}
+[![nottingham][]](http://static.juev.ru/2011/11/nottingham.png)
 
 [nottingham]: http://static.juev.ru/2011/11/nottingham-th.jpg
 
@@ -81,7 +81,7 @@ Evernote, заметки подгружались несколько часов,
 Поддерживается автодополнение ранее использованных тегов. Сами теги отображаются в списке
 заметок в левой части окна.
 
-[![nottingham-tag][]](http://static.juev.ru/2011/11/nottingham-tag.png){:id="lightbox"}
+[![nottingham-tag][]](http://static.juev.ru/2011/11/nottingham-tag.png)
 
 [nottingham-tag]: http://static.juev.ru/2011/11/nottingham-tag-th.jpg
 
@@ -89,7 +89,7 @@ Evernote, заметки подгружались несколько часов,
 метки. Которые можно использовать для группировки заметок по определенному признаку.
 Причем цветные метки затем используются и в Finder.
 
-[![finder][]](http://static.juev.ru/2011/11/finder.png){:id="lightbox"}
+[![finder][]](http://static.juev.ru/2011/11/finder.png)
 
 [finder]: http://static.juev.ru/2011/11/finder-th.jpg
 

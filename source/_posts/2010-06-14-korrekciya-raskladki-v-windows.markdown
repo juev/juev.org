@@ -40,6 +40,6 @@ tags:
 
 Другой вариант - использование программы <a href="http://www.randyrants.com/sharpkeys/" rel="nofollow">sharpkeys3</a>, которая позволяет изменять именно реестр операционной системы.
 
-<a href="http://static.juev.ru/2010/06/sharpkey.png" id="lightbox"><img class="aligncenter size-medium wp-image-1057" title="sharpkey" src="http://static.juev.ru/2010/06/sharpkey-300x219.png" alt="" width="300" height="219" /></a>
+<a href="http://static.juev.ru/2010/06/sharpkey.png"><img class="aligncenter size-medium wp-image-1057" title="sharpkey" src="http://static.juev.ru/2010/06/sharpkey-300x219.png" alt="" width="300" height="219" /></a>
 
 Естественно, что функционал данной программы ограничен только изменением значений клавиш, назначить определенное действие с ее помощью уже не возможно.

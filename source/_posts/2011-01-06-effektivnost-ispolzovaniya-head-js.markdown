@@ -27,11 +27,11 @@ tags:
 
 Скрипты небольшие, но из-за того, что они загружались последовательно, скорость загрузки очень сильно падала. Порядок загрузки файлов без использования <code>Head.JS</code> и использования подключения комментариев facebook с помощью обычного скрипта:
 
-<a href="http://static.juev.ru/2011/01/1_waterfall.png" id="lightbox"><img src="http://static.juev.ru/2011/01/1_waterfall-298x300.png" alt="" title="1_waterfall" width="298" height="300" class="aligncenter size-medium wp-image-1309" /></a>
+<a href="http://static.juev.ru/2011/01/1_waterfall.png"><img src="http://static.juev.ru/2011/01/1_waterfall-298x300.png" alt="" title="1_waterfall" width="298" height="300" class="aligncenter size-medium wp-image-1309" /></a>
 
 Порядок загрузки файлов с использованием <code>Head.JS</code> и использования подключения комментариев facebook с помощью асинхронного скрипта:
 
-<a href="http://static.juev.ru/2011/01/1_waterfall_head.png" id="lightbox"><img src="http://static.juev.ru/2011/01/1_waterfall_head-300x170.png" alt="" title="1_waterfall_head" width="300" height="170" class="aligncenter size-medium wp-image-1310" /></a>
+<a href="http://static.juev.ru/2011/01/1_waterfall_head.png"><img src="http://static.juev.ru/2011/01/1_waterfall_head-300x170.png" alt="" title="1_waterfall_head" width="300" height="170" class="aligncenter size-medium wp-image-1310" /></a>
 
 Бросается в глаза, что все скрипты теперь грузятся одновременно и при этом на их загрузку тратиться гораздо меньше времени. А использование асинхронного скрипта facebook позволяет существенно уменьшить количество обращений к серверу и выполнять его обработку во время загрузки других файлов. 
 

@@ -16,11 +16,11 @@ tags:
 кэшированием (расширение WP Super Cache) с использованием сервиса <a
 href="http://www.webpagetest.org" rel="nofollow">www.webpagetest.org</a>. Торопился и провел тесты только по одному разу, поэтому значения получились не совсем точными. 
 
-<a href="http://static.juev.ru/2010/03/main.png" id="lightbox"><img style="border-bottom: 0px; border-left: 0px; display: block; float: none; margin-left: auto; border-top: 0px; margin-right: auto; border-right: 0px" title="WP-Super-Cache" border="0" alt="WP-Super-Cache" src="http://static.juev.ru/2010/03/main_thumb.png" width="240" height="191" /></a>
+<a href="http://static.juev.ru/2010/03/main.png"><img style="border-bottom: 0px; border-left: 0px; display: block; float: none; margin-left: auto; border-top: 0px; margin-right: auto; border-right: 0px" title="WP-Super-Cache" border="0" alt="WP-Super-Cache" src="http://static.juev.ru/2010/03/main_thumb.png" width="240" height="191" /></a>
 
 Первый рисунок показывает результат при включенном кэшировании с расширением WP-Super-Cache.
 
-<a href="http://static.juev.ru/2010/03/main1.png" id="lightbox"><img style="border-bottom: 0px; border-left: 0px; display: block; float: none; margin-left: auto; border-top: 0px; margin-right: auto; border-right: 0px" title="No Cache" border="0" alt="No Cache" src="http://static.juev.ru/2010/03/main_thumb1.png" width="240" height="185" /></a> 
+<a href="http://static.juev.ru/2010/03/main1.png"><img style="border-bottom: 0px; border-left: 0px; display: block; float: none; margin-left: auto; border-top: 0px; margin-right: auto; border-right: 0px" title="No Cache" border="0" alt="No Cache" src="http://static.juev.ru/2010/03/main_thumb1.png" width="240" height="185" /></a> 
 
 А вот тут произошли непонятки, оказалось, что с отключенным кэшированием блог загружается быстрее. Где именно произошла ошибка я так и не проверил. 
 
@@ -48,7 +48,7 @@ href="http://www.webpagetest.org" rel="nofollow">www.webpagetest.org</a>. Тор
 
 Тест блога показал следующие результаты:
 
-<a href="http://static.juev.ru/2010/03/main2.png" id="lightbox"><img style="border-bottom: 0px; border-left: 0px; display: block; float: none; margin-left: auto; border-top: 0px; margin-right: auto; border-right: 0px" title="main" border="0" alt="main" src="http://static.juev.ru/2010/03/main_thumb2.png" width="240" height="183" /></a>
+<a href="http://static.juev.ru/2010/03/main2.png"><img style="border-bottom: 0px; border-left: 0px; display: block; float: none; margin-left: auto; border-top: 0px; margin-right: auto; border-right: 0px" title="main" border="0" alt="main" src="http://static.juev.ru/2010/03/main_thumb2.png" width="240" height="183" /></a>
 
 На мой взгляд не плохая прибавка. Тем более, если учесть, что мой блог малопосещаемый и нагрузка по сути своей минимальная, хотя и канал отдачи сервера хостера 400 мегабит в секунду, а все таки с Амазона загрузка быстрее! Если не использовать CloudFront, то загрузка будет проходить чуть дольше, как с обычного сервера, не распараллеливая ее.
 

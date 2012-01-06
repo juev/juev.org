@@ -35,17 +35,17 @@ tags:
 
 После установки и запуска программы появляется окно регистрации, которое можно просто закрыть, а можно указать свой email-адрес, на который бесплатно высылается ключ. Далее нужно только добавить данные своего сервера, указав ключи и можно работать! Программа довольно простая и выглядит как обычный двухпанельный менеджер файлов.
 
-<a href="http://static.juev.ru/2010/03/CloudBerry.png" id="lightbox"><img class="aligncenter size-medium wp-image-928" title="CloudBerry" src="http://static.juev.ru/2010/03/CloudBerry-300x224.png" alt="" width="300" height="224" /></a>
+<a href="http://static.juev.ru/2010/03/CloudBerry.png"><img class="aligncenter size-medium wp-image-928" title="CloudBerry" src="http://static.juev.ru/2010/03/CloudBerry-300x224.png" alt="" width="300" height="224" /></a>
 
 Причем количество сессий не ограничено, можно использовать одновременно множество аккаунтов S3-серверов. Создание "папки", копирование/перемещение и установка прав доступа интуитивно понятные операции, которые не требуют особых знаний и умений. Но хочется остановиться на возможности синхронизации файлов.
 
 Для этого используется пункт меню Sync Folders:
 
-<a href="http://static.juev.ru/2010/03/CloudBerry-menu.png" id="lightbox"><img class="aligncenter size-medium wp-image-929" title="CloudBerry-menu" src="http://static.juev.ru/2010/03/CloudBerry-menu-300x225.png" alt="" width="300" height="225" /></a>
+<a href="http://static.juev.ru/2010/03/CloudBerry-menu.png"><img class="aligncenter size-medium wp-image-929" title="CloudBerry-menu" src="http://static.juev.ru/2010/03/CloudBerry-menu-300x225.png" alt="" width="300" height="225" /></a>
 
 Достаточно только добавить папку для синхронизации через пункт Add Sync Folders, указать папку, которую будем синхронизировать и где она будет размещаться. Далее появляется небольшое подменю, в котором можно уже выбрать саму операцию синхронизации с указанием направления (то есть откуда и куда копировать при необходимости).
 
-<a href="http://static.juev.ru/2010/03/CloudBerry-Sync.png" id="lightbox"><img class="aligncenter size-medium wp-image-930" title="CloudBerry-Sync" src="http://static.juev.ru/2010/03/CloudBerry-Sync-300x255.png" alt="" width="300" height="255" /></a>
+<a href="http://static.juev.ru/2010/03/CloudBerry-Sync.png"><img class="aligncenter size-medium wp-image-930" title="CloudBerry-Sync" src="http://static.juev.ru/2010/03/CloudBerry-Sync-300x255.png" alt="" width="300" height="255" /></a>
 
 Единственное ограничение заключается в том, что для совершения синхронизации нужно вручную выбрать нужный пункт меню. Программа пока не позволяет это автоматизировать.
 

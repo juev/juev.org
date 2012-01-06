@@ -20,9 +20,9 @@ href="http://www.tidyread.com/" rel="nofollow">tidyread.com</a>. Использ�
 
 Что же происходит и как выглядит страница при использовании этого сервиса??
 
-<a href="http://static.juev.ru/2010/03/no-tidy.png" id="lightbox"><img class="aligncenter size-medium wp-image-946" title="no tidy" src="http://static.juev.ru/2010/03/no-tidy-300x240.png" alt="" width="300" height="240" /></a>
+<a href="http://static.juev.ru/2010/03/no-tidy.png"><img class="aligncenter size-medium wp-image-946" title="no tidy" src="http://static.juev.ru/2010/03/no-tidy-300x240.png" alt="" width="300" height="240" /></a>
 
-<a href="http://static.juev.ru/2010/03/tidy-read.png" id="lightbox"><img class="aligncenter size-medium wp-image-947" title="tidy read" src="http://static.juev.ru/2010/03/tidy-read-300x232.png" alt="" width="300" height="232" /></a>
+<a href="http://static.juev.ru/2010/03/tidy-read.png"><img class="aligncenter size-medium wp-image-947" title="tidy read" src="http://static.juev.ru/2010/03/tidy-read-300x232.png" alt="" width="300" height="232" /></a>
 
 Обращаю внимание на тот факт, что все изменения веб-страниц осуществляются на стороне браузера. И букмарклет представляет собой код java-script, который используется для редактирования страницы. Вверху страницы всегда показывается панель, с помощью которой можно задавать параметры отображения, такие как используемый шрифт, ширину текстового блока, используемые цвета.
 

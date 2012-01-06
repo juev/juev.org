@@ -38,12 +38,12 @@ tags:
 
 Открываем браузер по адресу <a href="http://127.0.0.1:3000/product"><em>127.0.0.1:3000/product</em></a> и наблюдаем то, что было создано магией Ruby!
 
-<a href="http://static.juev.ru/2009/08/2009-08-01-081041_1280x1024_scrot.png" id="lightbox"><img class="aligncenter size-full wp-image-497 " title="Исходный листинг продуктов" src="http://static.juev.ru/2009/08/2009-08-01-081041_1280x1024_scrot.png" alt="Форма при открытии страницы" width="255" height="125" /></a>
+<a href="http://static.juev.ru/2009/08/2009-08-01-081041_1280x1024_scrot.png"><img class="aligncenter size-full wp-image-497 " title="Исходный листинг продуктов" src="http://static.juev.ru/2009/08/2009-08-01-081041_1280x1024_scrot.png" alt="Форма при открытии страницы" width="255" height="125" /></a>
 
-<a href="http://static.juev.ru/2009/08/2009-08-01-081137_1280x1024_scrot.png" id="lightbox"><img class="aligncenter size-medium wp-image-498" title="Форма добавления нового продукта" src="http://static.juev.ru/2009/08/2009-08-01-081137_1280x1024_scrot-168x300.png" alt="Форма добавления нового продукта" width="168" height="300" /></a>
+<a href="http://static.juev.ru/2009/08/2009-08-01-081137_1280x1024_scrot.png"><img class="aligncenter size-medium wp-image-498" title="Форма добавления нового продукта" src="http://static.juev.ru/2009/08/2009-08-01-081137_1280x1024_scrot-168x300.png" alt="Форма добавления нового продукта" width="168" height="300" /></a>
 
-<a href="http://static.juev.ru/2009/08/2009-08-01-081132_1280x1024_scrot.png" id="lightbox"><img class="aligncenter size-medium wp-image-499" title="Результат операции" src="http://static.juev.ru/2009/08/2009-08-01-081132_1280x1024_scrot-300x87.png" alt="Результат операции" width="300" height="87" /></a>
+<a href="http://static.juev.ru/2009/08/2009-08-01-081132_1280x1024_scrot.png"><img class="aligncenter size-medium wp-image-499" title="Результат операции" src="http://static.juev.ru/2009/08/2009-08-01-081132_1280x1024_scrot-300x87.png" alt="Результат операции" width="300" height="87" /></a>
 
-<a href="http://static.juev.ru/2009/08/2009-08-01-081144_1280x1024_scrot.png" id="lightbox"><img class="aligncenter size-medium wp-image-500" title="Исходная страница с добавленым продуктом" src="http://static.juev.ru/2009/08/2009-08-01-081144_1280x1024_scrot-300x51.png" alt="Исходная страница с добавленым продуктом" width="300" height="51" /></a>
+<a href="http://static.juev.ru/2009/08/2009-08-01-081144_1280x1024_scrot.png"><img class="aligncenter size-medium wp-image-500" title="Исходная страница с добавленым продуктом" src="http://static.juev.ru/2009/08/2009-08-01-081144_1280x1024_scrot-300x51.png" alt="Исходная страница с добавленым продуктом" width="300" height="51" /></a>
 
 Именно про это говорят как о Магии RoR! Впечатляет? Не правда ли?

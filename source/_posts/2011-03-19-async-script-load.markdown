@@ -16,7 +16,7 @@ tags:
 И при этом не имеет ровно никакого значения, идет загрузка с одного хоста или же с CDN. В связи с этим загрузка страниц моего
 сайта стала занимать порядка 2.6 секунд. За счет использования gzip-сжатия удалось довести загрузку примерно до 2 секунд.
 
-<a href="http://static.juev.ru/2011/03/webpagetest_nsync.png" id="lightbox"><img
+<a href="http://static.juev.ru/2011/03/webpagetest_nsync.png"><img
 src="http://static.juev.ru/2011/03/webpagetest_nsync.th.png" class="aligncenter"></a>
 
 Решением проблемы оказалось использование **метода асинхронной загрузки скриптов**.
@@ -36,7 +36,7 @@ src="http://static.juev.ru/2011/03/webpagetest_nsync.th.png" class="aligncenter"
 
 После чего загрузка файлов уже не блокируется и загрузка страницы стала проходить гораздо быстрее.
 
-<a href="http://static.juev.ru/2011/03/webpagetest_sync.png" id="lightbox"><img
+<a href="http://static.juev.ru/2011/03/webpagetest_sync.png"><img
 src="http://static.juev.ru/2011/03/webpagetest_sync.th.png" class="aligncenter"></a>
 
 В будущем, при использовании `html5` использовать `async` загрузку будет еще проще. Достаточно будет в разделе `head` прописать
