@@ -17,15 +17,15 @@ tags:
 
 Одна из таких программ, бесплатная для домашнего использования - <a href="http://www.faststone.org/FSViewerDetail.htm" rel="nofollow">FastStone</a>.
 
-<a href="http://static.juev.ru/2010/04/FSViewerScreenShot1.jpg" id="lightbox"><img class="aligncenter size-full wp-image-969" title="FSViewerScreenShot1" src="http://static.juev.ru/2010/04/FSViewerScreenShot1.jpg" alt="" width="465" height="341" /></a>
+<a href="http://static.juev.ru/2010/04/FSViewerScreenShot1.jpg"><img class="aligncenter size-full wp-image-969" title="FSViewerScreenShot1" src="http://static.juev.ru/2010/04/FSViewerScreenShot1.jpg" alt="" width="465" height="341" /></a>
 
 При показе изображений автоматически переключается в полноэкранный режим. Предоставляя доступ к информационной панели и основным функциям обработки изображения путем подведения курсора к различным краям экрана. Необычно и если не знать, довольно затруднительно работать. Но после того, как попробуешь, начинаешь осознавать, что этой возможности не хватает многим программам. А если нажать Enter, то попадаем в обычное окно браузера файлов, в котором появляются дополнительные функции пакетной обработки файлов.
 
 Функции автоуровней и автоконтраста присутствуют, но нет возможности их использования при пакетной обработке фотографий. Поэтому продолжил поиски и обратился к программе <a href="http://www.xnview.com/en/index.html" rel="nofollow">XnView</a>. Она и обновляется более часто и более функциональная, чем FastStone. Интерфейс программы стандартный.
 
-<a href="http://static.juev.ru/2010/04/browser-400x320.gif" id="lightbox"><img class="aligncenter size-full wp-image-970" title="browser-400x320" src="http://static.juev.ru/2010/04/browser-400x320.gif" alt="" width="400" height="320" /></a>
+<a href="http://static.juev.ru/2010/04/browser-400x320.gif"><img class="aligncenter size-full wp-image-970" title="browser-400x320" src="http://static.juev.ru/2010/04/browser-400x320.gif" alt="" width="400" height="320" /></a>
 
-<a href="http://static.juev.ru/2010/04/win2s.jpg" id="lightbox"><img class="aligncenter size-full wp-image-971" title="win2s" src="http://static.juev.ru/2010/04/win2s.jpg" alt="" width="333" height="266" /></a>
+<a href="http://static.juev.ru/2010/04/win2s.jpg"><img class="aligncenter size-full wp-image-971" title="win2s" src="http://static.juev.ru/2010/04/win2s.jpg" alt="" width="333" height="266" /></a>
 
 Если честно, пока работал с этой программой, мне не удалось найти чего-то такого, что данная программа не умела бы делать. В XnView даже есть возможность использования фильтров PhotoShop. При условии того, что запускается и работает она очень быстро, программа становиться просто незаменимой для фотографа.
 

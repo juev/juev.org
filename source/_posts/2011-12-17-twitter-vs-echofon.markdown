@@ -21,7 +21,7 @@ MacOS в корне отличается от Windows тем, что для да
 [Twitter for mac]: http://itunes.apple.com/ru/app/twitter/id409789998?mt=12
 	"Mac AppStore - Twitter"
 
-[![twitter-main][]](http://static.juev.ru/2011/12/twitter-main.png){:id="lightbox"}
+[![twitter-main][]](http://static.juev.ru/2011/12/twitter-main.png)
 
 [twitter-main]: http://static.juev.ru/2011/12/twitter-main-th.jpg
 
@@ -31,7 +31,7 @@ MacOS в корне отличается от Windows тем, что для да
 
 Список ответов показывается в том же окне, что и основная лента.
 
-[![twitter-conversion][]](http://static.juev.ru/2011/12/twitter-conversion.png){:id="lightbox"}
+[![twitter-conversion][]](http://static.juev.ru/2011/12/twitter-conversion.png)
 
 [twitter-conversion]: http://static.juev.ru/2011/12/twitter-conversion-th.jpg
 
@@ -39,7 +39,7 @@ MacOS в корне отличается от Windows тем, что для да
 
 В настройках программы можно задать сервис, на котором будут храниться загружаемые изображения, вид сообщений и поведение ленты при появлении новых твиттов. 
 
-[![twitter-settings-general][]](http://static.juev.ru/2011/12/twitter-settings-general.png){:id="lightbox"}
+[![twitter-settings-general][]](http://static.juev.ru/2011/12/twitter-settings-general.png)
 
 [twitter-settings-general]: http://static.juev.ru/2011/12/twitter-settings-general-th.jpg
 
@@ -59,19 +59,19 @@ MacOS в корне отличается от Windows тем, что для да
 
 Echofon -- это клиент, который существует в MacOS довольно продолжительное время. И практически все это время основной упор программы делался на минимализм и удобство. Все элементы и необходимые органы управления сконцентрированы в одном окне.
 
-[![echofon-main][]](http://static.juev.ru/2011/12/echofon-main.png){:id="lightbox"}
+[![echofon-main][]](http://static.juev.ru/2011/12/echofon-main.png)
 
 [echofon-main]: http://static.juev.ru/2011/12/echofon-main-th.jpg
 
 А вот диалоги и профили пользователей показываются в панели, что показывается в правой части окна.
 
-[![echofon-conversion][]](http://static.juev.ru/2011/12/echofon-conversion.png){:id="lightbox"}
+[![echofon-conversion][]](http://static.juev.ru/2011/12/echofon-conversion.png)
 
 [echofon-conversion]: http://static.juev.ru/2011/12/echofon-conversion-th.jpg
 
 Настройки программы очень хорошо организованы и позволяют задавать оптимальное поведение программы.
 
-[![echofon-settings-advanced][]](http://static.juev.ru/2011/12/echofon-settings-advanced.png){:id="lightbox"}
+[![echofon-settings-advanced][]](http://static.juev.ru/2011/12/echofon-settings-advanced.png)
 
 [echofon-settings-advanced]: http://static.juev.ru/2011/12/echofon-settings-advanced-th.jpg
 

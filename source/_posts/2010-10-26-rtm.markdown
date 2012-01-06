@@ -16,7 +16,7 @@ tags:
 
 Сперва все списки я перенес в Org-файл под Emacs. Самое главное, что я успел сделать - это выделить списки задач, которые использую повседневно. 
 
-<a href="http://static.juev.ru/2010/10/rtm-list.png" id="lightbox"><img src="http://static.juev.ru/2010/10/rtm-list-300x215.png" width="300" height="215" class="aligncenter size-medium wp-image-1247" /></a>
+<a href="http://static.juev.ru/2010/10/rtm-list.png"><img src="http://static.juev.ru/2010/10/rtm-list-300x215.png" width="300" height="215" class="aligncenter size-medium wp-image-1247" /></a>
 
 <ol>
 	<li><em>Входящие</em> и <em>Отправленные</em> - это списки самой системы, которые нельзя переименовать или удалить и используются соответственно для сбора задач из различных источников и для отправки задач другим пользователям (делегирования).</li>

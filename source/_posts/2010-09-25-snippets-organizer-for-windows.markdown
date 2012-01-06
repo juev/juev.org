@@ -21,7 +21,7 @@ href="http://www.phraseexpress.com/" rel="nofollow">PhraseExpress</a>.
 
 Сразу после установки предоставляется целый набор готовых сокращений, которые позволяют работать со временем, адресами интернета, преобразовывать текст (текст, кодировку), управлять мышью и много чего еще. При необходимости можно добавлять свои сокращения.
 
-<a href="http://static.juev.ru/2010/09/window.png" id="lightbox"><img src="http://static.juev.ru/2010/09/window-297x300.png" alt="" title="window" width="297" height="300" class="aligncenter size-medium wp-image-1216" /></a>
+<a href="http://static.juev.ru/2010/09/window.png"><img src="http://static.juev.ru/2010/09/window-297x300.png" alt="" title="window" width="297" height="300" class="aligncenter size-medium wp-image-1216" /></a>
 
 Сами сокращения срабатывают по нескольким условиям. Либо по окончании набора последнего символа сокращения, либо после ввода разделителя (которым является пробел, Enter или Tab). 
 

@@ -16,17 +16,17 @@ tags:
 
 Создаем текстовый документ
 
-<a href="http://static.juev.ru/2010/04/docs-text.png" id="lightbox"><img class="aligncenter size-medium wp-image-1008" title="docs-text" src="http://static.juev.ru/2010/04/docs-text-300x116.png" alt="" width="300" height="116" /></a>
+<a href="http://static.juev.ru/2010/04/docs-text.png"><img class="aligncenter size-medium wp-image-1008" title="docs-text" src="http://static.juev.ru/2010/04/docs-text-300x116.png" alt="" width="300" height="116" /></a>
 
 При этом оформляет его по своему усмотрению. Если необходимо вставляем изображения. При вставке изображений есть возможность указания параметров вставки, то есть размер превьюшки, есть ли ссылка на исходное изображение. Единственно что я так пока и не понял, это как вставлять тег. При вставке тега разрыва страницы, после публикации получается обычная горизонтальная линия, а разрыва так и не появляется. То есть как я понял, адаптации кода страницы под различные блого-движки не присутствует, что несколько омрачает использование самого сервиса.
 
 Теперь, когда мы закончили писать текст, необходимо настроить публикацию. Для этого переходим в "Добавить в общие" - "Опубликовать как веб-страницу".
 
-<a href="http://static.juev.ru/2010/04/docs-pub.png" id="lightbox"><img class="aligncenter size-medium wp-image-1007" title="docs-pub" src="http://static.juev.ru/2010/04/docs-pub-300x116.png" alt="" width="300" height="116" /></a>
+<a href="http://static.juev.ru/2010/04/docs-pub.png"><img class="aligncenter size-medium wp-image-1007" title="docs-pub" src="http://static.juev.ru/2010/04/docs-pub-300x116.png" alt="" width="300" height="116" /></a>
 
 В появившемся окне задаем настройки блога.
 
-<a href="http://static.juev.ru/2010/04/docs-options.png" id="lightbox"><img class="aligncenter size-medium wp-image-1006" title="docs-options" src="http://static.juev.ru/2010/04/docs-options-300x120.png" alt="" width="300" height="120" /></a>
+<a href="http://static.juev.ru/2010/04/docs-options.png"><img class="aligncenter size-medium wp-image-1006" title="docs-options" src="http://static.juev.ru/2010/04/docs-options-300x120.png" alt="" width="300" height="120" /></a>
 
 Тут необходимо только указать тип движка, свои данные (логин, пароль) и в случае blogger.com нужно еще указать идентификатор блога. С идентификатором как раз я намучился. Оказалось, что достаточно только указать имя блога, которое мы выбрали при его создании. Иначе публикация будет идти в первый попавшийся блог. Естественно, что с другими платформами таких проблем нет.
 

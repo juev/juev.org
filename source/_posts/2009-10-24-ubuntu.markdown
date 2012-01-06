@@ -46,7 +46,7 @@ tags:
 
 Выглядит это примерно вот так:
 
-<a href="http://static.juev.ru/2009/10/ubuntu.png" id="lightbox"><img class="aligncenter size-medium wp-image-622" title="ubuntu" src="http://static.juev.ru/2009/10/ubuntu-300x240.png" alt="Maximus" width="300" height="240" /></a>
+<a href="http://static.juev.ru/2009/10/ubuntu.png"><img class="aligncenter size-medium wp-image-622" title="ubuntu" src="http://static.juev.ru/2009/10/ubuntu-300x240.png" alt="Maximus" width="300" height="240" /></a>
 
 Надо будет попробовать вместо стандартного <em>Metacity</em> использовать тилинговый оконный менеджер. В генту пробовал в среде гнома подключать <em>xmonad</em>, но не очень получилась интеграция. Посмотрим, что получиться в дальнейшем...
 

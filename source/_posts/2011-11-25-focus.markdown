@@ -29,14 +29,14 @@ tags:
 
 Интерфейс программы очень минималистичный, ничего лишнего и все только самое необходимое.
 
-[![main][]](http://static.juev.ru/2011/11/main.png){:id="lightbox"}
+[![main][]](http://static.juev.ru/2011/11/main.png)
 
 [main]: http://static.juev.ru/2011/11/main-th.jpg
 
 После того, как мы добавим фотографии к обработке, в нижней части окна появляются
 несколько кнопок, позволяющих вызывать доступные функции.
 
-[![photo][]](http://static.juev.ru/2011/11/photo.png){:id="lightbox"}
+[![photo][]](http://static.juev.ru/2011/11/photo.png)
 
 [photo]: http://static.juev.ru/2011/11/photo-th.jpg
 
@@ -47,7 +47,7 @@ tags:
 очень напоминает фотографии с максимально открытой диафрагмой при использовании дорогой
 оптики.
 
-[![portrait][]](http://static.juev.ru/2011/11/portrait.png){:id="lightbox"}
+[![portrait][]](http://static.juev.ru/2011/11/portrait.png)
 
 [portrait]: http://static.juev.ru/2011/11/portrait-th.jpg
 
@@ -55,26 +55,26 @@ tags:
 позволяет сгладить ближние и дальние объекты, и акцентировать внимание на важных деталях
 фотографии.
 
-[![nature][]](http://static.juev.ru/2011/11/nature.png){:id="lightbox"}
+[![nature][]](http://static.juev.ru/2011/11/nature.png)
 
 [nature]: http://static.juev.ru/2011/11/nature-th.jpg
 
 В режиме архитектуры эффект размытия больше ориентирован на вертикальную составляющую.
 
-[![architecture][]](http://static.juev.ru/2011/11/architecture.png){:id="lightbox"}
+[![architecture][]](http://static.juev.ru/2011/11/architecture.png)
 
 [architecture]: http://static.juev.ru/2011/11/architecture-th.jpg
 
 В режиме макро эффект размытия еще более выражен.
 
-[![macro][]](http://static.juev.ru/2011/11/macro.png){:id="lightbox"}
+[![macro][]](http://static.juev.ru/2011/11/macro.png)
 
 [macro]: http://static.juev.ru/2011/11/macro-th.jpg
 
 И в режиме tilt, на мой взгляд, один из интереснейших эффектов, можно создавать эффект
 игрушечного мира.
 
-[![tilt][]](http://static.juev.ru/2011/11/tilt.png){:id="lightbox"}
+[![tilt][]](http://static.juev.ru/2011/11/tilt.png)
 
 [tilt]: http://static.juev.ru/2011/11/tilt-th.jpg
 

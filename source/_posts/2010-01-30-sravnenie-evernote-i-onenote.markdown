@@ -26,11 +26,11 @@ tags:
 
 По умолчанию используются сочетания клавиш Windows + s для снятия скриншота экрана, Windows + n для создания новой заметки. Нажимаем Windows + n и видим небольшое новое окно для вставки информации. По умолчанию данная заметка размещается в разделе неподшитых заметок.
 
-<a href="http://static.juev.ru/2010/01/OneNoteNew.png" id="lightbox"><img style="display: block; float: none; margin-left: auto; margin-right: auto; border: 0px;" title="OneNote - New" src="http://static.juev.ru/2010/01/OneNoteNew_thumb.png" border="0" alt="OneNote - New" width="244" height="174" /></a> 
+<a href="http://static.juev.ru/2010/01/OneNoteNew.png"><img style="display: block; float: none; margin-left: auto; margin-right: auto; border: 0px;" title="OneNote - New" src="http://static.juev.ru/2010/01/OneNoteNew_thumb.png" border="0" alt="OneNote - New" width="244" height="174" /></a> 
 
 Управление и поиск среди заметок осуществляется в основном окне программы, который вызывается сочетанием клавиш Windows + Shift + n.
 
-<a href="http://static.juev.ru/2010/01/OneNotemain.png" id="lightbox"><img style="display: block; float: none; margin-left: auto; margin-right: auto; border: 0px;" title="OneNote - main" src="http://static.juev.ru/2010/01/OneNotemain_thumb.png" border="0" alt="OneNote - main" width="244" height="188" /></a>
+<a href="http://static.juev.ru/2010/01/OneNotemain.png"><img style="display: block; float: none; margin-left: auto; margin-right: auto; border: 0px;" title="OneNote - main" src="http://static.juev.ru/2010/01/OneNotemain_thumb.png" border="0" alt="OneNote - main" width="244" height="188" /></a>
 
 После установки программы у нас уже созданы три записные книжки: “Руководство по Microsoft OneNote 2007”, “Личная записная книжка”, “Рабочая записная книжка”, в каждой из которых уже созданы свои определенные категории, и в каждой категории располагаются страницы примеров записей. Все записные книжки и записи ориентированы на быстрое освоение программы и по сути являются справочным руководством.
 

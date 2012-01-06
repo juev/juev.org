@@ -255,4 +255,4 @@ tags:
 
 И напоследок внешний вид:
 
-<a href="http://static.juev.ru/2009/09/stumpwm.png" id="lightbox"><img class="size-medium wp-image-603 aligncenter" title="stumpwm" src="http://static.juev.ru/2009/09/stumpwm-300x240.png" alt="StumpWM" width="300" height="240" /></a>
+<a href="http://static.juev.ru/2009/09/stumpwm.png"><img class="size-medium wp-image-603 aligncenter" title="stumpwm" src="http://static.juev.ru/2009/09/stumpwm-300x240.png" alt="StumpWM" width="300" height="240" /></a>

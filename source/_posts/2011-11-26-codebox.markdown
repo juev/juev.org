@@ -25,7 +25,7 @@ Vim, Emacs и другие. Но ведь было бы не плохо испо
 [Dash]: http://itunes.apple.com/ru/app/dash/id458034879?mt=12
     "Dash - Developer Tools"
 
-[![dashp][]](http://static.juev.ru/2011/11/dash.png){:id="lightbox"}
+[![dashp][]](http://static.juev.ru/2011/11/dash.png)
 
 [dashp]: http://static.juev.ru/2011/11/dash-th.jpg
 
@@ -61,7 +61,7 @@ Dash позволяет создавать собственную коллекц
 [Codebox]: http://itunes.apple.com/ru/app/codebox/id412536790?mt=12
     "CodeBox"
 
-[![codeboxp][]](http://static.juev.ru/2011/11/codebox.png){:id="lightbox"}
+[![codeboxp][]](http://static.juev.ru/2011/11/codebox.png)
 
 [codeboxp]: http://static.juev.ru/2011/11/codebox-th.jpg
 

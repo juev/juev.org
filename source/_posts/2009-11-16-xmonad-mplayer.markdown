@@ -34,4 +34,4 @@ tags:
 
 Выглядит все это в тайловом режиме вот так:
 
-<a href="http://static.juev.ru/2009/11/2009-11-16-162636_1280x1024_scrot.png" id="lightbox"><img class="aligncenter size-medium wp-image-637" title="xmonad" src="http://static.juev.ru/2009/11/2009-11-16-162636_1280x1024_scrot-300x240.png" alt="xmonad" width="300" height="240" /></a>
+<a href="http://static.juev.ru/2009/11/2009-11-16-162636_1280x1024_scrot.png"><img class="aligncenter size-medium wp-image-637" title="xmonad" src="http://static.juev.ru/2009/11/2009-11-16-162636_1280x1024_scrot-300x240.png" alt="xmonad" width="300" height="240" /></a>

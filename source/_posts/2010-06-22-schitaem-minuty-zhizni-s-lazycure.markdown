@@ -19,49 +19,49 @@ tags:
 
 После запуска программы в трее появляется значок, правый клик по которому вызывает контекстное меню со списком задач, которые были использованы ранее.
 
-<a href="http://static.juev.ru/2010/06/LazyCure-tray.png" id="lightbox"><img class="aligncenter size-medium wp-image-1074" title="LazyCure-tray" src="http://static.juev.ru/2010/06/LazyCure-tray-185x300.png" alt="" width="185" height="300" /></a>
+<a href="http://static.juev.ru/2010/06/LazyCure-tray.png"><img class="aligncenter size-medium wp-image-1074" title="LazyCure-tray" src="http://static.juev.ru/2010/06/LazyCure-tray-185x300.png" alt="" width="185" height="300" /></a>
 
 Выбираем задачу из списка и тут же происходит автоматическая фиксация времени смены активности и имени самой задачи в таймлог. По умолчанию главное окно программы вызывается по горячей клавише Ctrl+F12.
 
-<a href="http://static.juev.ru/2010/06/LazyCure-main.png" id="lightbox"><img class="aligncenter size-medium wp-image-1068" title="LazyCure-main" src="http://static.juev.ru/2010/06/LazyCure-main-300x146.png" alt="" width="300" height="146" /></a>
+<a href="http://static.juev.ru/2010/06/LazyCure-main.png"><img class="aligncenter size-medium wp-image-1068" title="LazyCure-main" src="http://static.juev.ru/2010/06/LazyCure-main-300x146.png" alt="" width="300" height="146" /></a>
 
 Сама суть программы как раз заключается в том, чтобы тратить на фиксацию своих дел как можно меньше времени. По сути все что необходимо, это нажать горячую клавишу для вызова самой программы, набрать имя задачи, которую мы только что выполняли, а если она уже использовалась раньше, то ее имя автоматически появиться в поле ввода по мере набора имени задачи.
 
-<a href="http://static.juev.ru/2010/06/LazyCure-lists.png" id="lightbox"><img class="aligncenter size-medium wp-image-1067" title="LazyCure-lists" src="http://static.juev.ru/2010/06/LazyCure-lists-222x300.png" alt="" width="222" height="300" /></a>
+<a href="http://static.juev.ru/2010/06/LazyCure-lists.png"><img class="aligncenter size-medium wp-image-1067" title="LazyCure-lists" src="http://static.juev.ru/2010/06/LazyCure-lists-222x300.png" alt="" width="222" height="300" /></a>
 
 Затем нажать Enter для фиксации изменений и Esc для скрытия окна программы. Обычно уходит секунды три от силы на фиксацию текущей задачи.
 
 Программа обладает целым рядом настроек, которые упрощают работу с ней. Тут и общие настройки поведения программы:
 
-<a href="http://static.juev.ru/2010/06/LazyCure-options.png" id="lightbox"><img class="aligncenter size-medium wp-image-1070" title="LazyCure-options" src="http://static.juev.ru/2010/06/LazyCure-options-273x300.png" alt="" width="273" height="300" /></a>
+<a href="http://static.juev.ru/2010/06/LazyCure-options.png"><img class="aligncenter size-medium wp-image-1070" title="LazyCure-options" src="http://static.juev.ru/2010/06/LazyCure-options-273x300.png" alt="" width="273" height="300" /></a>
 
 И настройка аккаунта twitter, в который могут транслироваться некоторые из задач:
 
-<a href="http://static.juev.ru/2010/06/LazyCure-twitter.png" id="lightbox"><img class="aligncenter size-medium wp-image-1075" title="LazyCure-twitter" src="http://static.juev.ru/2010/06/LazyCure-twitter-275x300.png" alt="" width="275" height="300" /></a>
+<a href="http://static.juev.ru/2010/06/LazyCure-twitter.png"><img class="aligncenter size-medium wp-image-1075" title="LazyCure-twitter" src="http://static.juev.ru/2010/06/LazyCure-twitter-275x300.png" alt="" width="275" height="300" /></a>
 
 И в версии 3.8 появилась настройка горячих клавиш, которые используются в программе:
 
-<a href="http://static.juev.ru/2010/06/LazyCure-hotkeys.png" id="lightbox"><img class="aligncenter size-medium wp-image-1066" title="LazyCure-hotkeys" src="http://static.juev.ru/2010/06/LazyCure-hotkeys-273x300.png" alt="" width="273" height="300" /></a>
+<a href="http://static.juev.ru/2010/06/LazyCure-hotkeys.png"><img class="aligncenter size-medium wp-image-1066" title="LazyCure-hotkeys" src="http://static.juev.ru/2010/06/LazyCure-hotkeys-273x300.png" alt="" width="273" height="300" /></a>
 
 В пункте меню Show располагаются основные пункты, которые позволяют не только настроить поведение программы, но и просмотреть свои активности за текущий день:
 
-<a href="http://static.juev.ru/2010/06/LazyCure-menu.png" id="lightbox"><img class="aligncenter size-medium wp-image-1069" title="LazyCure-menu" src="http://static.juev.ru/2010/06/LazyCure-menu-300x145.png" alt="" width="300" height="145" /></a>
+<a href="http://static.juev.ru/2010/06/LazyCure-menu.png"><img class="aligncenter size-medium wp-image-1069" title="LazyCure-menu" src="http://static.juev.ru/2010/06/LazyCure-menu-300x145.png" alt="" width="300" height="145" /></a>
 
 TimeLog служит для просмотра активностей за текущий день, в котором Duration показывает продолжительность той или иной задачи.
 
-<a href="http://static.juev.ru/2010/06/LazyCure-timelog.png" id="lightbox"><img class="aligncenter size-medium wp-image-1073" title="LazyCure-timelog" src="http://static.juev.ru/2010/06/LazyCure-timelog-238x300.png" alt="" width="238" height="300" /></a>
+<a href="http://static.juev.ru/2010/06/LazyCure-timelog.png"><img class="aligncenter size-medium wp-image-1073" title="LazyCure-timelog" src="http://static.juev.ru/2010/06/LazyCure-timelog-238x300.png" alt="" width="238" height="300" /></a>
 
 Окно Summary содержит в себе три вкладки, первая Activities, в которой указываются задачи, которые были выполнены за день, с подсчетом общей продолжительности. Повторы уже не показываются.
 
-<a href="http://static.juev.ru/2010/06/LazyCure-summary.png" id="lightbox"><img class="aligncenter size-medium wp-image-1071" title="LazyCure-summary" src="http://static.juev.ru/2010/06/LazyCure-summary-300x199.png" alt="" width="300" height="199" /></a>
+<a href="http://static.juev.ru/2010/06/LazyCure-summary.png"><img class="aligncenter size-medium wp-image-1071" title="LazyCure-summary" src="http://static.juev.ru/2010/06/LazyCure-summary-300x199.png" alt="" width="300" height="199" /></a>
 
 Вкладка Tasks указывает общее время затраченное на определенный круг задач. Сами задачи определяются в пункте меню TaskManager, где обычно определяются две категории задач, это Work и Rest, то есть работа и отдых. В рамках этих категорий  задаются задачи, которые относятся к ним.
 
-<a href="http://static.juev.ru/2010/06/LazyCure-taskmanager.png" id="lightbox"><img class="aligncenter size-medium wp-image-1072" title="LazyCure-taskmanager" src="http://static.juev.ru/2010/06/LazyCure-taskmanager-300x127.png" alt="" width="300" height="127" /></a>
+<a href="http://static.juev.ru/2010/06/LazyCure-taskmanager.png"><img class="aligncenter size-medium wp-image-1072" title="LazyCure-taskmanager" src="http://static.juev.ru/2010/06/LazyCure-taskmanager-300x127.png" alt="" width="300" height="127" /></a>
 
 Введенные данные в TaskManager в дальнейшем будут использоваться во вкладке Efficiency, в которой показывается эффективность использования времени:
 
-<a href="http://static.juev.ru/2010/06/LazyCure-efficiency.png" id="lightbox"><img class="aligncenter size-medium wp-image-1065" title="LazyCure-efficiency" src="http://static.juev.ru/2010/06/LazyCure-efficiency-300x198.png" alt="" width="300" height="198" /></a>
+<a href="http://static.juev.ru/2010/06/LazyCure-efficiency.png"><img class="aligncenter size-medium wp-image-1065" title="LazyCure-efficiency" src="http://static.juev.ru/2010/06/LazyCure-efficiency-300x198.png" alt="" width="300" height="198" /></a>
 
 Я не задавал пока категорий задач, поэтому в приведенном примере всегда показывается эффективность в 0%.
 

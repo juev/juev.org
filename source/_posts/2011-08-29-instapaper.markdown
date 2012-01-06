@@ -53,7 +53,7 @@ tags:
 Вот так выглядит список отложенного чтения в Instapaper:
 
 [![Instapaper][3]](http://static.juev.ru/2011/08/instapaper.png
-"Instapaper"){: id="lightbox"}
+"Instapaper")
 
 [3]: http://static.juev.ru/2011/08/instapaper-th.png
 

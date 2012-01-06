@@ -41,10 +41,10 @@ href="http://petrosian.ru" rel="nofollow">Мыслехранилище №428</a
 
 А по прошествии 25 минут звучит короткая мелодия будильника и показывается окно с результатами работы, в котором показываются заголовки всех программ, с которыми работали в течение данного промежутка времени с указанием затрат времени. И в этом окне необходимо самому себе поставить оценку, стоить принять помидор как рабочий, или же нам не удалось его эффективно использовать?
 
-<a href="http://static.juev.ru/2010/04/cherrytomato.png" id="lightbox"><img class="aligncenter size-medium wp-image-988" title="cherrytomato" src="http://static.juev.ru/2010/04/cherrytomato-300x279.png" alt="" width="300" height="279" /></a>
+<a href="http://static.juev.ru/2010/04/cherrytomato.png"><img class="aligncenter size-medium wp-image-988" title="cherrytomato" src="http://static.juev.ru/2010/04/cherrytomato-300x279.png" alt="" width="300" height="279" /></a>
 
 При этом еще предоставляется возможность в случае принятия помидора, выставить оценку затраченного времени. Все помидоры учитываются и показываются в виде статистических данных при наведении курсора на иконку приложения в трее.
 
-<a href="http://static.juev.ru/2010/04/cherrytomato-tray.png" id="lightbox"><img class="aligncenter size-full wp-image-989" title="cherrytomato-tray" src="http://static.juev.ru/2010/04/cherrytomato-tray.png" alt="" width="182" height="75" /></a>
+<a href="http://static.juev.ru/2010/04/cherrytomato-tray.png"><img class="aligncenter size-full wp-image-989" title="cherrytomato-tray" src="http://static.juev.ru/2010/04/cherrytomato-tray.png" alt="" width="182" height="75" /></a>
 
 Таким образом в лице этой небольшой программки получаем очень полезный инструмент планирования собственного времени. Правда использовать ее можно только при работе на компьютере. Во всех остальных случаях  нужно использовать реальный таймер. Но если большую часть рабочего времени мы проводим именно за компьютером, то программа становиться неоценимым помощником!
