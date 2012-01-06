@@ -2,16 +2,16 @@ task :default => :build
  
 desc 'Build site with Jekyll.'
 task :build  => :tags do
-	print "Minify file...\n"
-  sh "jammit -c _assets.yml -u http://www.juev.ru -o source/assets"
 	print "Compiling website..."
   sh "jekyll"
+	print "Minify file...\n"
+  sh "jammit -c _assets.yml -u http://www.juev.ru -o public/assets"
 end
  
 desc 'Minify & Combi CSS/JS file'
 task :minify do
 	print "Minify file...\n"
-  sh "jammit -c _assets.yml -u http://www.juev.ru -o source/assets"
+  sh "jammit -c _assets.yml -u http://www.juev.ru -o public/assets"
 end
 
 desc 'Enter development mode.'
