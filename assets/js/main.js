@@ -24,3 +24,4 @@ var _gauges = _gauges || [];
   s.parentNode.insertBefore(t, s);
 })();
 
+document.getElementById("year").firstChild.data = (new Date).getFullYear();
