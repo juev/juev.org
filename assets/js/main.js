@@ -1,4 +1,26 @@
-//$(document).ready(function(){
-//	$("a#lightbox").fancybox();
-//});
 if(!/android|iphone|ipod|ipad/i.test(navigator.userAgent)){$(document).ready(function(){$('a[href$=".png"],a[href$=".jpg"],a[href$=".jpeg"],a[href$=".gif"]').fancybox();});}
+
+$.getScript("//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit", function(){
+  function googleTranslateElementInit() {
+    new google.translate.TranslateElement({
+      pageLanguage: 'ru',
+      multilanguagePage: true
+    });
+  }
+});
+
+$.getScript("//platform.twitter.com/widgets.js", function(){
+});
+
+var _gauges = _gauges || [];
+(function() {
+  var t   = document.createElement('script');
+  t.type  = 'text/javascript';
+  t.async = true;
+  t.id    = 'gauges-tracker';
+  t.setAttribute('data-site-id', '4e0ac749f5a1f527f5000001');
+  t.src = '//secure.gaug.es/track.js';
+  var s = document.getElementsByTagName('script')[0];
+  s.parentNode.insertBefore(t, s);
+})();
+
