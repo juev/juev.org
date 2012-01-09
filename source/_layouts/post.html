@@ -6,7 +6,8 @@ layout: default
 {{ content }}
 </div><!--noindex-->
 <div id="comments">
-  {% if page.gplus %}<a href="{{ page.gplus }}" rel="nofollow">Комментарии</a>{% endif %}
+  {% if page.gplus %}<a href="{{ page.gplus }}" rel="nofollow">Комментарии</a>&nbsp;&nbsp;|&nbsp;{% endif %}
+  <a href="/articles.html" rel="nofollow">Список всех статей</a>
 </div>
 <div>
 <span class="share">
