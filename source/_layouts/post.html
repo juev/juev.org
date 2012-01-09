@@ -4,6 +4,9 @@ layout: default
 <h1 class="title">{{ page.title }}</h1>
 <div class="post">
 {{ content }}
+</div><!--noindex-->
+<div id="comments">
+  {% if page.gplus %}<a href="{{ page.gplus }}" rel="nofollow">Комментарии</a>{% endif %}
 </div>
 <div>
 <span class="share">

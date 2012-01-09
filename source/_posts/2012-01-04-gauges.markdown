@@ -2,6 +2,7 @@
 layout: post
 title: Система статистики, рекомендованная Github
 keywords: github, gauges, stat, statistics, conversion, social
+gplus: https://plus.google.com/116661482374124481456/posts/F4fXog1yw79
 date: 2012-01-04 12:15:12
 tags:
   - services

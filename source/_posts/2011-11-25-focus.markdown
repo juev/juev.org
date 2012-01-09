@@ -2,6 +2,7 @@
 layout: post
 title: Фотографии в Фокусе
 keywords: mac, soft, focus, photo, foto, фотография
+gplus: https://plus.google.com/116661482374124481456/posts/fu1opBfW6PD
 date: 2011-11-25 07:26:49
 tags:
     - mac

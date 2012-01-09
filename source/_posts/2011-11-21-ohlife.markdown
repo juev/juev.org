@@ -2,6 +2,7 @@
 layout: post
 title: Интернет-дневник OhLife
 keywords: internet, ohlife, diary, дневник, интернет, сервис
+gplus: https://plus.google.com/116661482374124481456/posts/SNiwCmG1PY1
 date: 2011-11-21 17:06:39
 tags:
     - internet

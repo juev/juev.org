@@ -2,6 +2,7 @@
 layout: post
 title: Не комментарии, но живой разговор
 keywords: blog, comments, livefire, realtime, facebook, twitter
+gplus: https://plus.google.com/116661482374124481456/posts/bkwBmjEnpFn
 date: 2012-01-04 10:02:08
 tags:
   - cms
