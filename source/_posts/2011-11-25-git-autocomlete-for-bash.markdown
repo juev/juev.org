@@ -2,6 +2,7 @@
 layout: post
 title: Git autocomlete for bash
 keywords: bash, git, autocomlete, tips
+gplus: https://plus.google.com/116661482374124481456/posts/CLxVrpMHDFZ
 date: 2011-11-25 09:16:19
 tags:
   - bash

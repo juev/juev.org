@@ -2,6 +2,7 @@
 layout: post
 title: nvALT - Simplenote на кончиках пальцев
 keywords: mac, soft, markdown, nvalt, note
+gplus: https://plus.google.com/116661482374124481456/posts/7tpfoKtortC
 date: 2011-11-30 20:29:30
 tags:
     - mac

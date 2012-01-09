@@ -2,6 +2,7 @@
 layout: post
 title: Долгий запуск Terminal.app
 keywords: mac, terminal, zsh, console, slow, options
+gplus: https://plus.google.com/116661482374124481456/posts/7GpHcSscFop
 date: 2011-12-30 16:03:02
 tags:
   - mac

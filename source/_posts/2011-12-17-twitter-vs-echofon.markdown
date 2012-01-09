@@ -2,6 +2,7 @@
 layout: post
 title: Twitter vs Echofon
 keywords: mac, soft, twitter, echofon, social
+gplus: https://plus.google.com/116661482374124481456/posts/ZGVbpcWqKUU
 date: 2011-12-17 11:57:18
 tags:
   - mac

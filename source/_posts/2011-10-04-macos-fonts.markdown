@@ -2,6 +2,7 @@
 layout: post
 title: MacOS сглаживание шрифтов
 keywords: macos, font, aliasing, lcd, config
+gplus: https://plus.google.com/116661482374124481456/posts/MkY9g62P3ht
 date: 2011-10-04 19:35:45
 tags:
     - fonts

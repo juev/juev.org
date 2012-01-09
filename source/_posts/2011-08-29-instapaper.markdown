@@ -2,6 +2,7 @@
 layout: post
 title: Instapaper - сервис отложенного чтения
 keywords: instapaper, instafetch, android, memory, read, память, чтение
+gplus: https://plus.google.com/116661482374124481456/posts/CcUaKqVDWMB
 date: 2011-08-29 07:23:29
 tags:
     - internet
