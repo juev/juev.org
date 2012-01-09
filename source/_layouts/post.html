@@ -7,7 +7,8 @@ layout: default
 </div><!--noindex-->
 <div id="comments">
   {% if page.gplus %}<a href="{{ page.gplus }}" rel="nofollow">Комментарии</a>&nbsp;&nbsp;|&nbsp;{% endif %}
-  <a href="/articles.html" rel="nofollow">Список всех статей</a>
+  <a href="/articles.html" rel="nofollow">Список всех статей</a>&nbsp;&nbsp;|&nbsp;
+  If you would like to update this post, <a href="{{site.githuburl}}/{{page.id | remove_first: '/', | replace: '/','-'}}.markdown" rel="nofollow">please send a pull request</a>.
 </div>
 <div>
 <span class="share">
@@ -16,12 +17,9 @@ layout: default
 <span class="share">
 <a href="http://twitter.com/share" class="twitter-share-button">Tweet</a>
 </span>
-<span class="tags">
-{% assign post = page %}
-<strong>tags</strong>: 
-{% for tag in post.tags %}
-  <a href="/tags/{{ tag }}" title="View posts tagged with &quot;{{ tag }}&quot;" rel="nofollow">{{ tag }}</a>{% if forloop.last != true %}, {% endif %}
-{% endfor %}
+<span class="tags">{% assign post = page %}
+<strong>tags</strong>: {% for tag in post.tags %}
+  <a href="/tags/{{ tag }}" title="View posts tagged with &quot;{{ tag }}&quot;" rel="nofollow">{{ tag }}</a>{% if forloop.last != true %}, {% endif %}{% endfor %}
 </span>
 </div>
 <div class="meta">
