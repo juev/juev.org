@@ -53,7 +53,7 @@ task :new do
     f.puts ""
   end
   
-  `open -a Byword #{path}`
+  `mate #{path}`
   exit
 end
 
