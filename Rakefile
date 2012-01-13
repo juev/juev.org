@@ -45,6 +45,7 @@ task :new do
     f.puts "description: "
     f.puts "keywords: "
     f.puts "gplus: "
+    f.puts "published: false"
     f.puts "date: #{now.strftime('%F %T')}"
     f.puts "tags:"
     f.puts "  - "
