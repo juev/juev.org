@@ -18,6 +18,13 @@ reference: www.juev.ru
         <priority>1.0</priority>
     </url>
 
+    <url>
+        <loc>http://{{ page.reference }}/recommendations.html</loc>
+        <lastmod>{{ site.time | date_to_xmlschema }}</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>1.0</priority>
+    </url>
+
     {% for post in site.posts %}
      <url>
            <loc>http://{{ page.reference }}{{ post.url }}</loc>
