@@ -28,9 +28,9 @@ tags:
 
 Естественно, данная программа отсутствует в AppStore, так как распространяется в исходных кодах по открытой лицензии. Но распространяется она бесплатно и взять можно непосредственно с сайта.
 
-[![nvalt][]][3]
+[![nvalt-img][]][3]
 
-[nvalt]: http://static.juev.ru/2011/11/nvalt-th.jpg
+[nvalt-img]: http://static.juev.ru/2011/11/nvalt-th.jpg
 
 [3]: http://static.juev.ru/2011/11/nvalt.png
 
