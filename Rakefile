@@ -8,6 +8,7 @@ task :build  => :tags do
   sh "jekyll"
 	print "Minify file...\n"
   sh "jammit -c _assets.yml -u http://#{domain} -o public/assets"
+  sh "rm source/_includes/tag_cloud.html"
 end
  
 desc 'Minify & Combi CSS/JS file'
