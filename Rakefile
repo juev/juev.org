@@ -28,7 +28,8 @@ end
 desc 'Build, deploy.'
 task :deploy => :build do
   print "Deploying website to #{domain}\n"
-  sh "rsync -az --delete public/ ec2:~/www/juev.ru/web/"
+#  sh "rsync -az --delete public/ ec2:~/www/juev.ru/web/"
+  sh "s3cmd sync -P --delete-removed public/ s3://www.juev.ru/"
 end
 
 task :new do
