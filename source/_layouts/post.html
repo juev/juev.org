@@ -12,12 +12,8 @@ layout: default
 </div>
 <div>
 <span class="share">
-<a href="https://twitter.com/intent/tweet?screen_name=Juev&amp;lang=en" class="twitter-mention-button">Tweet to @Juev</a>
+<a href="https://twitter.com/share" class="twitter-share-button" data-via="Juev" data-lang="en" data-dnt="true">Tweet</a>
 </span>
-<span class="share">
-<a href="https://twitter.com/share?lang=en&amp;count=none&amp;via=Juev" class="twitter-share-button">Tweet</a>
-</span>
-<div id="gplusone" class="share"></div>
 <span class="tags">{% assign post = page %}
 <strong>tags</strong>: {% for tag in post.tags %}
   <a href="/tags/{{ tag }}" title="View posts tagged with &quot;{{ tag }}&quot;" rel="nofollow">{{ tag }}</a>{% if forloop.last != true %}, {% endif %}{% endfor %}
