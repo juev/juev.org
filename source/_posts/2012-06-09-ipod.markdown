@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Лучшие программы для iPod
+title: Лучшие программы для iPod Touch
 description: 
 keywords: ipod, apple, programm, программы, best
 gplus: https://plus.google.com/116661482374124481456/posts/Dq7qsJTVRwM
