@@ -30,7 +30,7 @@ task :deploy => :build do
   print "Deploying website to #{domain}\n"
 #  sh "rsync -az --delete public/ ec2:~/www/juev.ru/web/"
 #  sh "s3cmd sync -P --delete-removed public/ s3://www.juev.ru/"
-  sh "rsync -az --delete public/ two:~/two/repo/php/"
+  sh "rsync -az --delete public/ juevru:~/juevru/repo/php/"
 end
 
 task :new do
@@ -110,7 +110,7 @@ task :tag_cloud do
   site.tags.sort.each do |tag, posts|
     s = posts.count
     font_size = ((20 - 10.0*(max_count-s)/max_count)*2).to_i/1.3
-    html << "<a href=\"/tags/#{tag.gsub(/ /,"%20")}\" title=\"Postings tagged #{tag}\" style=\"font-size: #{font_size}px; line-height:#{font_size}px\">#{tag}</a> "
+    html << "<a href=\"/tags/#{tag.gsub(/ /,"%20")}/\" title=\"Postings tagged #{tag}\" style=\"font-size: #{font_size}px; line-height:#{font_size}px\">#{tag}</a> "
   end
   File.open('source/_includes/tag_cloud.html', 'w+') do |file|
     file.puts html
