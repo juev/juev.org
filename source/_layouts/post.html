@@ -16,7 +16,7 @@ layout: default
 </span>
 <span class="tags">{% assign post = page %}
 <strong>tags</strong>: {% for tag in post.tags %}
-  <a href="/tags/{{ tag }}" title="View posts tagged with &quot;{{ tag }}&quot;" rel="nofollow">{{ tag }}</a>{% if forloop.last != true %}, {% endif %}{% endfor %}
+  <a href="/tags/{{ tag }}/" title="View posts tagged with &quot;{{ tag }}&quot;" rel="nofollow">{{ tag }}</a>{% if forloop.last != true %}, {% endif %}{% endfor %}
 </span>
 </div>
 <div class="meta">
