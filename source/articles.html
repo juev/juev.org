@@ -11,10 +11,10 @@ permalink: articles.html
 	{% endcapture %}
 	{% if last_month != month %}
 		<h3>{{ month }}</h3>
-			<div class="list"><a href="{{ post.id }}" title="{{ post.title }}">{{ post.title }}</a></div>
+			<div class="list"><a href="{{ post.id }}/" title="{{ post.title }}">{{ post.title }}</a></div>
 		{% assign last_month = month %}
 	{% else %}
-		  <div class="list"><a href="{{ post.id }}" title="{{ post.title }}">{{ post.title }}</a></div>
+		  <div class="list"><a href="{{ post.id }}/" title="{{ post.title }}">{{ post.title }}</a></div>
 	{% endif %}
 {% endfor %}
 </div>
