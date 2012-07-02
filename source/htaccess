@@ -373,6 +373,12 @@ FileETag None
 #   RewriteRule ^ http://www.%{HTTP_HOST}%{REQUEST_URI} [R=301,L]
 # </IfModule>
 
+<ifmodule mod_rewrite.c>
+    RewriteEngine on
+    RewriteCond %{HTTP_HOST} ^juevru-evsyukov\.rhcloud\.com$ [NC]
+    RewriteCond %{HTTP_USER_AGENT} !Amazon\ CloudFront [NC]
+    RewriteRule ^(.*)$ http://www.juev.ru/$1 [R=301,L]
+</ifmodule>
 
 # ----------------------------------------------------------------------
 # Built-in filename-based cache busting
