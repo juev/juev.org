@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Apptivate - запуск приложений в стиле Emacs
+title: Apptivate – запуск приложений в стиле Emacs
 description: 
 keywords: mac, osx, soft, apptivate
 gplus: https://plus.google.com/116661482374124481456/posts/8PJBWE7NhTu
