@@ -3,11 +3,11 @@ layout: default
 title: Denis Evsyukov
 description: Wordpress, Jekyll, Ruby, PHP, Linux, Ubuntu, VPS и многое другое на страницах сайта.
 ---
-{% assign first_post = site.posts.first %}
-<h1 class="title"><a href="{{site.posts.first.url}}">{{ site.posts.first.title }}</a></h1>
+
+{% for post in site.posts limit:10 %}{% if forloop.first %}<h1 class="title"><a href="{{post.url}}">{{ post.title }}</a></h1>
 <div class="article">
-{{ site.posts.first.content }}
-</div>
+{{ post.content | truncatewords:32 }}
+</div><!--noindex--><h3 style="font-family: Helvetica, sans-serif; color:#666; font-size: 25px; margin: 45px 0 25px 0;">Другие статьи ¶</h3><!--/noindex-->{% else %}<h3 class="title"><a href="{{post.url}}" style="font-size: 20px; line-height: 20px; border-bottom: none;">{{ post.title }}</a></h3>{% endif %}{% endfor %}
 <div class="meta">
   <div class="pagination">
   <p class="allpostsmeta"><a href="/articles.html" title="Список всех статей" rel="nofollow">Список всех статей</a></p>
