@@ -6,7 +6,7 @@ description: Wordpress, Jekyll, Ruby, PHP, Linux, Ubuntu, VPS и многое д
 
 {% for post in site.posts limit:10 %}{% if forloop.first %}<h1 class="title"><a href="{{post.url}}">{{ post.title }}</a></h1>
 <div class="article">
-{{ post.content | truncatewords:32 }}
+{{ post.excerpt }}
 </div><!--noindex--><h3 style="font-family: Helvetica, sans-serif; color:#666; font-size: 25px; margin: 45px 0 25px 0;">Другие статьи ¶</h3><!--/noindex-->{% else %}<h3 class="title"><a href="{{post.url}}" style="font-size: 20px; line-height: 20px; border-bottom: none;">{{ post.title }}</a></h3>{% endif %}{% endfor %}
 <div class="meta">
   <div class="pagination">
