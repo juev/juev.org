@@ -46,23 +46,7 @@ tags:
 И теперь для того, чтобы отобразить код Liquid, достаточно его заключить в теги `{{"{%raw"}}%}` и `{{"{%endraw"}}%}`.
 
     {{"{%raw"}}%}
-        # This goes in _plugins/excerpt.rb
-        module Jekyll
-          class Post
-            alias_method :original_to_liquid, :to_liquid
-            def to_liquid
-              original_to_liquid.deep_merge({
-                'excerpt' => content.match('<!--more-->') ? content.split('<!--more-->').first : nil
-              })
-            end
-          end
-
-          module Filters
-            def mark_excerpt(content)
-              content.gsub('<!--more-->', '<p><span id="more"></span></p>')
-            end
-          end
-        end
+        {{"{{ post.content | strip_html | truncatewords: 25 "}}}}
     {{"{%endraw"}}%}
 
 Для того, чтобы данный код воспринимался именно как код, нужно не забыть сделать для него отступ в 4 пробела. Решение очень красивое и действенное. И ведь что интересно, данное расширение давно уже храниться в коде моего сайта. Просто я раньше его так и не использовал ни разу, и совершенно про него забыл.
@@ -70,3 +54,5 @@ tags:
 И еще один способ включить Liquid-код в текст своей статьи -- это экранировать его в каждой строке отдельно. Подробно сама техника описана в статье [Highlighting Liquid code in a Liquid template with Jekyll (Escape a liquid templating tag)](http://tesoriere.com/2010/08/25/liquid-code-in-a-liquid-template-with-jekyll/).
 
 Да, и еще, как оказалось, при использовании данного способа экранировать сами теги `{{"{%raw"}}%}` и `{{"{%endraw"}}%}` уже приходиться вручную.
+
+**PS**: Как мне указали в [комментариях к записи](https://plus.google.com/116661482374124481456/posts/E6Qk7QVSNFF), создавать новое расширение Jekyll совершенно не нужно, так как тег *raw* уже представлен в последних версиях Liquid.
