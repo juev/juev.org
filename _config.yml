@@ -12,6 +12,7 @@ destination: public
 plugins:     plugins
 pygments:    false # default python pygments have been replaced by pygments.rb
 
+title: "Авторский проект Евсюкова Дениса"
 description: "Wordpress, Jekyll, Ruby, PHP, Linux, Ubuntu, VPS и многое другое на страницах сайта."
 keywords: "mac, tips, wordpress, jekyll, ruby, php, linux, ubuntu, vps, soft"
 
