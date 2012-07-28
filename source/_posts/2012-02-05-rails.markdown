@@ -11,6 +11,7 @@ tags:
   - soft
   - rails
   - ruby
+  - rvm
 ---
 
 Для работы с различными версиями Ruby необходимо использовать [RVM](http://beginrescueend.com/ "RVM: Ruby Version Manager - RVM Ruby Version Manager"): Ruby Version Manager.
