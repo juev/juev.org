@@ -2,16 +2,16 @@ html,body.wide {
   height: 100%; 
 }
 body {
-  background: url(//static.juev.ru/images/gradient.png) repeat-x #7c7c8a;
+  /*background: url(//static.juev.ru/images/gradient.png) repeat-x #7c7c8a;*/
   /*text-align: center;*/
   /*font-size: 17px;*/
   /*line-height: 28px;*/
-  font: 17px/1.524 georgia,serif;
+  font: 18px/1.524 georgia,serif;
 }
 body.wide {
   padding: 0;
   margin: 0;
-  background: url(//static.juev.ru/images/gradient.png) repeat-x #7c7c8a;
+  /*background: url(//static.juev.ru/images/gradient.png) repeat-x #7c7c8a;*/
 }
 .wide .main-wrapper {
   min-height: 100%;
@@ -44,7 +44,7 @@ body.wide {
 /*  text-align: justify;*/
   background: white;
   margin: 0 auto;
-  max-width: 850px;
+  max-width: 750px;
 }
 .body {
   text-align: left
@@ -130,7 +130,7 @@ font-family: 'Droid Sans',sans-serif;
   border-top: 3px solid #ccc;
   border-bottom: 1px solid #ccc;
   text-align: right;
-  height: 20px;
+  height: 10px;
 }
 .width-fix {
   max-width: 662px;
