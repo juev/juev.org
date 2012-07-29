@@ -6,7 +6,7 @@ body {
   /*text-align: center;*/
   /*font-size: 17px;*/
   /*line-height: 28px;*/
-  font: 17px/1.5 georgia,serif;
+  font: 17px/1.524 georgia,serif;
 }
 body.wide {
   padding: 0;
@@ -44,7 +44,7 @@ body.wide {
 /*  text-align: justify;*/
   background: white;
   margin: 0 auto;
-  max-width: 1050px;
+  max-width: 850px;
 }
 .body {
   text-align: left
@@ -75,6 +75,9 @@ font-family: 'Droid Sans',sans-serif;
 .primary-content a:hover {
   color: #0097E8;
   text-decoration: none;
+}
+.post p {
+  color: #333;
 }
 .navigation {
   height: 48px;
@@ -130,7 +133,7 @@ font-family: 'Droid Sans',sans-serif;
   height: 20px;
 }
 .width-fix {
-  max-width: 800px;
+  max-width: 662px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -186,7 +189,7 @@ a#license{
 .meta {
   border-top: 1px dotted #ddd;
   padding-bottom: 15px; 
-  margin-top: 20px;
+  margin-top: 10px;
 }
 
 .footnotes {
@@ -220,11 +223,11 @@ a#license{
 h1, h2, h3, h4, h5, h6 { font-weight: normal; color: #444; }
 h1 a, h2 a, h3 a, h4 a,
 h5 a, h6 a                  { text-decoration: none; border-bottom: none; }
-h1.title                    { width: 660px; text-align: left; color: #444 !important; }
+h1.title                    { width: 560px; text-align: left; color: #444 !important; }
 h1.title a                  { text-decoration: none; border-bottom: none; color: #444 !important; }
 h1, h2                      { margin: 25px 0 5px 0; }
 /*h1                          { font-size: 48px; line-height: 52px; font: 48px/52px 'Georgia';}*/
-h1                          { font-size: 48px; line-height: 52px; }
+h1                          { font-size: 36px; line-height: 48px; }
 h2                          { font-size: 30px; line-height: 30px; }
 h3                          { font-size: 18px; line-height: 20px; font-weight: bold; }
 h3 a                        { font: 14px/16px 'Verdana' }
