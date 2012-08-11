@@ -7,6 +7,7 @@ body {
   /*font-size: 17px;*/
   /*line-height: 28px;*/
   font: 18px/1.524 georgia,serif;
+  border-top: 3px solid #BC5007;
 }
 body.wide {
   padding: 0;
@@ -19,13 +20,14 @@ body.wide {
   position: relative;
 }
 .footer {
-  text-align: center;
+  /*text-align: center;*/
   padding: 10px;
   color: white;
+  height: 100px;
   /*font-family: georgia,serif;*/
 }
 .wide .footer {
-  background:#393D43;
+  background: url(http://static.juev.ru/images/header-background.jpg) repeat-x;
   position: relative;
 }
 .wide .clear-footer {
@@ -33,12 +35,19 @@ body.wide {
   clear: both;
 }
 .footer a {
-  color: #cccccc;
+  color: #f7f6ee;
+  text-decoration: none;
+}
+.footer a:hover {
+  color: #BC5007;
   text-decoration: none;
 }
 .footer p {
-  margin: 0px 0px 5px;
-  font: 15px/1.5 georgia,serif;
+  margin: 15px 0px 5px;
+  font: 11px/1.5 Helvetica,sans-serif!important;
+  color: #7F7F7F;
+  text-transform: uppercase;
+  letter-spacing: 1px;
 }
 .wide .body {
 /*  text-align: justify;*/
@@ -80,9 +89,9 @@ font-family: 'Droid Sans',sans-serif;
   color: #333;
 }
 .navigation {
-  height: 48px;
+  height: 208px;
   /*height: 62px;*/
-  background: #393d43;
+  background: url(http://static.juev.ru/images/header-background.jpg) repeat-x;
   color: #fff;
   font-size: 15px;
   vertical-align: middle;
@@ -94,25 +103,27 @@ font-family: 'Droid Sans',sans-serif;
   float: left;
   cursor: default;
 }
-.navigation ul {
+.navigation .width-fix ul {
   padding: 0;
-  margin: 0;
+  margin: 130px 0 0 0;
   list-style-type: none;
   float: left
 }
-.navigation li {
+.navigation .width-fix li {
   float: left;
   padding: 1em 1em 1em 0;
 }
-.navigation li a {
-  color: white;
+.navigation .width-fix li a {
+  color: #f7f6ee;
   text-decoration: none;
   display:block;
   float:left;
   font-family: Helvetica, sans-serif !important;
+  text-transform: uppercase;
 }
-.navigation li a:hover {
-  text-decoration: underline
+.navigation .width-fix li a:hover {
+  text-decoration: none;
+  color: #BC5007;
 }
 .navigation .navigation-separator {
   display:none;
@@ -245,7 +256,7 @@ h3.title                    { margin-bottom: 15px; }
   height: 48px;
   width: 32px;
   float: left;
-  margin: 0 1em 0 0;
+  margin: 125px 1em 0 0;
 }
 #comments{
 /*  text-align: center;*/
@@ -309,6 +320,7 @@ ol li, ul li {
 
 img{
   clear: both; display: block; float:none; margin-left: auto; margin-right: auto; max-width: 100%;
+  border: solid 1px #ccc;
 }
 
 @media screen and (max-device-width: 480px) {
