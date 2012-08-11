@@ -89,7 +89,7 @@ font-family: 'Droid Sans',sans-serif;
   color: #333;
 }
 .navigation {
-  height: 208px;
+  height: 108px;
   /*height: 62px;*/
   background: url(http://static.juev.ru/images/header-background.jpg) repeat-x;
   color: #fff;
@@ -105,7 +105,7 @@ font-family: 'Droid Sans',sans-serif;
 }
 .navigation .width-fix ul {
   padding: 0;
-  margin: 130px 0 0 0;
+  margin: 50px 0 0 0;
   list-style-type: none;
   float: left
 }
@@ -256,7 +256,7 @@ h3.title                    { margin-bottom: 15px; }
   height: 48px;
   width: 32px;
   float: left;
-  margin: 125px 1em 0 0;
+  margin: 45px 1em 0 0;
 }
 #comments{
 /*  text-align: center;*/
