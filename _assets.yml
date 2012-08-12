@@ -8,7 +8,7 @@ javascript_compressor:  closure     # (yui, closure)
 
 stylesheets:
   master:
-    - assets/css/style.css 
+    - assets/css/style-r.css 
     - assets/css/jquery.fancybox-1.3.4.css
     - assets/css/highlight.css      
 
