@@ -1,2 +1,3 @@
-public/*
-source/tags/*
+public
+source/tags
+vendor/ruby
