@@ -7,15 +7,15 @@ task :default => :build
 desc 'Build site with Jekyll.'
 task :build  => :tags do
 	print "Compiling website...\n"
-  sh "bundle exec jekyll"
+  sh "jekyll"
 	print "Minify file...\n"
-  sh "bundle exec jammit -c _assets.yml -u http://#{domain} -o public/assets"
+  sh "jammit -c _assets.yml -u http://#{domain} -o public/assets"
 end
  
 desc 'Minify & Combi CSS/JS file'
 task :minify do
 	print "Minify file...\n"
-  sh "bundle exec jammit -c _assets.yml -u http://#{domain} -o public/assets"
+  sh "jammit -c _assets.yml -u http://#{domain} -o public/assets"
 end
 
 desc 'Enter development mode.'
@@ -23,7 +23,7 @@ task :local => :build do
 	print "Auto-regenerating enabled.\n"
 	print "Development server started at http://localhost:4000/ \n"
 	print "Development mode entered.\n"
-  sh "bundle exec jekyll --auto --server"
+  sh "jekyll --auto --server"
 end
 
 desc 'Build, deploy.'
