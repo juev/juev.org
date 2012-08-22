@@ -2,12 +2,10 @@
 layout: default
 ---
 <h1 class="title">{{ page.title }}</h1>
-<div>
-<span class="share">
-<a href="https://twitter.com/share" class="twitter-share-button" data-via="Juev" data-lang="en" data-dnt="true">Tweet</a></span>
-<span class="tags">{% assign post = page %}
-<strong>tags</strong>: {% for tag in post.tags %}
-  <a href="/tags/{{ tag }}/" title="View posts tagged with &quot;{{ tag }}&quot;" rel="nofollow">{{ tag }}</a>{% if forloop.last != true %}, {% endif %}{% endfor %}</span>
+<div id="metainfo">
+<span class="date">{{ page.date | date_to_long_string }}</span> 
+<span class="tags">{% assign post = page %}{% for tag in post.tags %}
+  <a href="/tags/{{ tag }}/" title="View posts tagged with &quot;{{ tag }}&quot;" rel="nofollow">#{{ tag }}</a>{% if forloop.last != true %} {% endif %}{% endfor %}</span>
 </div>
 <div class="post">
 {{ content }}
