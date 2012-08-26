@@ -415,7 +415,7 @@ img
   border:solid 1px #ccc
 }
 
-@media screen and max-device-width 480px {
+@media screen and (max-device-width 480px) {
   .wide .body
   {
     margin:0;
@@ -493,7 +493,7 @@ img
     page-break-after:avoid
   }
   
-  .ir a:after,a[href^=javascript:]:after,a[href^=#]:after,.footer
+  .ir a:after,a[href^=javascript]:after,a[href^="#"]:after,.footer
   {
     content:""
   }
