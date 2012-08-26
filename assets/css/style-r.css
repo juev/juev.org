@@ -415,7 +415,7 @@ img
   border:solid 1px #ccc
 }
 
-@media screen and (max-device-width 480px) {
+@media screen and (max-device-width: 480px) {
   .wide .body
   {
     margin:0;
@@ -424,7 +424,7 @@ img
     text-align:justify
   }
   
-  #feed,.footer,.share,.tag_cloud
+  #feed,.share,.tag_cloud,.meta
   {
     display:none
   }
@@ -432,6 +432,16 @@ img
   .archives,.pagination p,h1.title
   {
     width:100%
+  }
+
+  h1.title
+  {
+    font-size: 24px
+  }
+
+  .navigation .width-fix
+  {
+    padding: 0 20px
   }
 }
 
