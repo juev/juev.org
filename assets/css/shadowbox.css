@@ -112,26 +112,41 @@
 #sb-nav a {
   display: block;
   float: right;
-  height: 16px;
-  width: 16px;
+  /*height: 16px;*/
+  /*width: 16px;*/
   margin-left: 3px;
   cursor: pointer;
   background-repeat: no-repeat;
 }
 #sb-nav-close {
-  background-image: url(//static.juev.ru/shadowbox/close.png);
+  background: url(//static.juev.ru/shadowbox/nav.png) 0px -14px no-repeat;
+  display: inline-block;
+  width: 10px;
+  height: 11px;
 }
 #sb-nav-next {
-  background-image: url(//static.juev.ru/shadowbox/next.png);
+  background: url(//static.juev.ru/shadowbox/nav.png) 0px 0px no-repeat;
+  display: inline-block;
+  width: 12px;
+  height: 12px;
 }
 #sb-nav-previous {
-  background-image: url(//static.juev.ru/shadowbox/previous.png);
+  background: url(//static.juev.ru/shadowbox/nav.png) -14px 0px no-repeat;
+  display: inline-block;
+  width: 12px;
+  height: 12px;
 }
 #sb-nav-play {
-  background-image: url(//static.juev.ru/shadowbox/play.png);
+  background: url(//static.juev.ru/shadowbox/nav.png) -28px 0px no-repeat;
+  display: inline-block;
+  width: 8px;
+  height: 12px;
 }
 #sb-nav-pause {
-  background-image: url(//static.juev.ru/shadowbox/pause.png);
+  background: url(//static.juev.ru/shadowbox/nav.png) -12px -14px no-repeat;
+  display: inline-block;
+  width: 10px;
+  height: 11px;
 }
 
 /* counter */
