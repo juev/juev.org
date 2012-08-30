@@ -5,17 +5,24 @@ domain="www.juev.ru"
 task :default => :build
  
 desc 'Build site with Jekyll.'
-task :build  => :tags do
+task :build  => :clean do
+  Rake::Task["tags"].execute
 	print "Compiling website...\n"
-  sh "jekyll"
+  system "jekyll"
 	print "Minify file...\n"
-  sh "jammit -c _assets.yml -u http://#{domain} -o public/assets"
+  system "jammit -c _assets.yml -u http://#{domain} -o public/assets"
 end
  
 desc 'Minify & Combi CSS/JS file'
 task :minify do
 	print "Minify file...\n"
-  sh "jammit -c _assets.yml -u http://#{domain} -o public/assets"
+  system "jammit -c _assets.yml -u http://#{domain} -o public/assets"
+end
+
+desc 'Clean public folder'
+task :clean do
+	print "Clean public folder.\n"
+  system "rm -rf public/*"
 end
 
 desc 'Enter development mode.'
@@ -23,15 +30,15 @@ task :local => :build do
 	print "Auto-regenerating enabled.\n"
 	print "Development server started at http://localhost:4000/ \n"
 	print "Development mode entered.\n"
-  sh "jekyll --auto --server"
+  system "jekyll --auto --server"
 end
 
 desc 'Build, deploy.'
 task :deploy => :build do
   print "Deploying website to #{domain}\n"
-#  sh "rsync -az --delete public/ ec2:~/www/juev.ru/web/"
-#  sh "s3cmd sync -P --delete-removed public/ s3://www.juev.ru/"
-  sh "rsync -az --delete public/ juevru:~/juevru/repo/php/"
+#  system "rsync -az --delete public/ ec2:~/www/juev.ru/web/"
+#  system "s3cmd sync -P --delete-removed public/ s3://www.juev.ru/"
+  system "rsync -az --delete public/ juevru:~/juevru/repo/php/"
 end
 
 task :new do
