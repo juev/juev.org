@@ -1,18 +1,17 @@
-package_assets:         off          # (on, off, always)
-embed_assets:           off          # (on, off, datauri)
+package_assets:         on          # (on, off, always)
+embed_assets:           off         # (on, off, datauri)
 compress_assets:        on          # (on, off)
 gzip_assets:            off         # (on, off)
 template_function:      _.template  # (defaults to the built-in micro-templating)
-#package_path:           assets      # (defaults to assets)
-javascript_compressor:  closure     # (yui, closure)
+package_path:           assets      # (defaults to assets)
+javascript_compressor:  yui         # (yui, closure)
 
 stylesheets:
   master:
-    - assets/css/style-r.css 
-    - assets/css/jquery.fancybox-1.3.4.css
-    - assets/css/highlight.css      
+    - assets/css/style.css
+    - assets/css/shadowbox.css
 
 javascripts:
   master:
-    - assets/js/jquery.fancybox-1.3.4.js 
+    - assets/js/shadowbox.js
     - assets/js/main.js

@@ -1,356 +1,518 @@
-html,body.wide {    
-  height: 100%; 
+html,body.wide
+{
+  height:100%
 }
-body {
-  /*background: url(//static.juev.ru/images/gradient.png) repeat-x #7c7c8a;*/
-  /*text-align: center;*/
-  /*font-size: 17px;*/
-  /*line-height: 28px;*/
-  font: 18px/1.524 georgia,serif;
-  border-top: 3px solid #BC5007;
+
+body
+{
+  border-top:3px solid #BC5007;
+  font:18px/1.524 georgia,serif
 }
-body.wide {
-  padding: 0;
-  margin: 0;
-  /*background: url(//static.juev.ru/images/gradient.png) repeat-x #7c7c8a;*/
+
+body.wide
+{
+  margin:0;
+  padding:0
 }
-.wide .main-wrapper {
-  min-height: 100%;
-  margin-bottom: -330px;
-  position: relative;
+
+.footer
+{
+  padding:10px;
+  height:100px;
+  color:#bbb
 }
-.footer {
-  /*text-align: center;*/
-  padding: 10px;
-  color: white;
-  height: 100px;
-  /*font-family: georgia,serif;*/
+
+.wide .footer
+{
+  position:relative;
+  background:url(//static.juev.ru/images/header-background.jpg) repeat-x
 }
-.wide .footer {
-  background: url(http://static.juev.ru/images/header-background.jpg) repeat-x;
-  position: relative;
+
+.footer a
+{
+  color:#eee;
+  text-decoration:none
 }
-.wide .clear-footer {
-  height: 330px;
-  clear: both;
+
+.footer a:hover
+{
+  color:#BC5007;
+  text-decoration:none
 }
-.footer a {
-  color: #f7f6ee;
-  text-decoration: none;
+
+.footer p
+{
+  margin:15px 0 5px;
+  text-transform:uppercase;
+  letter-spacing:1px;
+  font:11px/1.5 Helvetica,sans-serif!important
 }
-.footer a:hover {
-  color: #BC5007;
-  text-decoration: none;
+
+.wide .body
+{
+  margin:0 auto;
+  max-width:750px;
+  background:#FFF
 }
-.footer p {
-  margin: 15px 0px 5px;
-  font: 11px/1.5 Helvetica,sans-serif!important;
-  color: #7F7F7F;
-  text-transform: uppercase;
-  letter-spacing: 1px;
+
+.body
+{
+  text-align:left
 }
-.wide .body {
-/*  text-align: justify;*/
-  background: white;
-  margin: 0 auto;
-  max-width: 750px;
+
+.clear
+{
+  clear:both
 }
-.body {
-  text-align: left
+
+.primary-content
+{
+  padding:20px;
+  border-bottom:7px solid #7f808a;
+  background:#fff
 }
-/*.body h1,.body h2 {
-margin-top: 0;
-padding-top: 0;
-font-family: 'Droid Sans',sans-serif;
-}*/
-.clear {
-  clear:both;
+
+.primary-content a,.primary-content a:visited
+{
+  border-bottom:1px dashed;
+  color:#055580;
+  text-decoration:none
 }
-.primary-content {
-  background: #ffffff;
-  border-bottom: 7px solid #7f808a;
-  padding: 20px;
+
+.primary-content a:hover
+{
+  color:#0097E8;
+  text-decoration:none
 }
-.primary-content p {
-  /*line-height:28px;*/
-  /*font-size: 17px;*/
-  /*font-family: georgia,serif;*/
+
+.post p
+{
+  color:#333
 }
-.primary-content a, .primary-content a:visited {
-  color: #055580;
-  text-decoration: none;
-  border-bottom: 1px dashed;
+
+.navigation
+{
+  height:108px;
+  background:url(//static.juev.ru/images/header-background.jpg) repeat-x;
+  color:#fff;
+  vertical-align:middle;
+  font-size:15px
 }
-.primary-content a:hover {
-  color: #0097E8;
-  text-decoration: none;
-}
-.post p {
-  color: #333;
-}
-.navigation {
-  height: 108px;
-  /*height: 62px;*/
-  background: url(http://static.juev.ru/images/header-background.jpg) repeat-x;
-  color: #fff;
-  font-size: 15px;
-  vertical-align: middle;
-}
-.navigation .navigation-label {
-  padding: 1em;
-  margin: 0;
-  color: #979899;
-  float: left;
-  cursor: default;
-}
-.navigation .width-fix ul {
-  padding: 0;
-  margin: 50px 0 0 0;
-  list-style-type: none;
-  float: left
-}
-.navigation .width-fix li {
-  float: left;
-  padding: 1em 1em 1em 0;
-}
-.navigation .width-fix li a {
-  color: #f7f6ee;
-  text-decoration: none;
-  display:block;
+
+.navigation .width-fix ul
+{
   float:left;
-  font-family: Helvetica, sans-serif !important;
-  text-transform: uppercase;
+  margin:50px 0 0;
+  padding:0;
+  list-style-type:none
 }
-.navigation .width-fix li a:hover {
-  text-decoration: none;
-  color: #BC5007;
+
+.navigation .width-fix li
+{
+  float:left;
+  padding:1em 1em 1em 0
 }
-.navigation .navigation-separator {
-  display:none;
-}
-.navigation li + li .navigation-separator {
-  cursor: default;
-  padding: 0 1em 0 1em;
+
+.navigation .width-fix li a
+{
+  float:left;
   display:block;
-  float: left;
-  color: white
-}
-.userbar {
-  background-color: white;
-  padding: 3px 1em 3px 0;
-  border-top: 3px solid #ccc;
-  border-bottom: 1px solid #ccc;
-  text-align: right;
-  height: 10px;
-}
-.width-fix {
-  max-width: 662px;
-  margin-left: auto;
-  margin-right: auto;
-}
-textarea {
-  width: 500px;
-  height: 130px;
-}
-textarea#content {
-  width: 600px;
-  height: 500px;
-}
-p.message {
-  background-color: #fee;
-  color: #900;
-  font-weight: bold;
-}
-
-.dummy {
-  height: 160px;
-}
-
-.lines {
-  white-space: pre;
-}
-
-pre {
-  background-color: #F6F6F6;
-  overflow:auto;
-  padding: 1em;
-  border:#CCC solid 1px;
-  font-size: 0.9em;
-}
-code{
-  font-size: 0.9em;
-}
-
-#feed{
-  float: right;
-}
-
-blockquote {
-  position: relative;
-  margin: 1.61em 2em;
-  border-left: 2px solid #999;
-  padding-left: 1em;
-  font-style: italic;
-}
-a#license{
-  text-decoration: none;
-  border-bottom: 1px dashed;
-}
-
-.meta {
-  border-top: 1px dotted #ddd;
-  padding-bottom: 15px; 
-  margin-top: 10px;
-}
-
-.footnotes {
-  border-top: 1px dotted; border-color: #D3D3D3;
-}
-
-.footnotes p {
-  font-size: 14px;
-  color: #A52A2A;
-}
-
-.pagination              { clear: both; margin-top: 20px; }
-.pagination strong       { font-weight: normal; font-style: italic; }
-.pagination p            { display: block; text-transform: uppercase; font-family: 'Verdana', Helvetica, Arial, sans-serif;
-  color: #666 !important;
-  font-size: 10px;
-  height: 22px;
-  line-height: 22px;
-  letter-spacing: 2px;
-  width: 606px; }
-.pagination a            { font-family: 'Verdana', Helvetica, Arial, sans-serif; font-size: 12px; font-weight: bold;
-  /*color: #055580; text-decoration: none;*/
-  text-transform: none;
-  text-decoration: none !important;
-  height: 0px;
-  border-bottom: none;
-  line-height: 18px;
-  letter-spacing: normal; }
-
-/*h1, h2, h3, h4, h5, h6 { font-family: 'Georgia', sans-serif; font-weight: normal; color: #444; }*/
-h1, h2, h3, h4, h5, h6 { font-weight: normal; color: #444; }
-h1 a, h2 a, h3 a, h4 a,
-h5 a, h6 a                  { text-decoration: none; border-bottom: none; }
-h1.title                    { width: 560px; text-align: left; color: #444 !important; }
-h1.title a                  { text-decoration: none; border-bottom: none; color: #444 !important; }
-h1, h2                      { margin: 15px 0; }
-/*h1                          { font-size: 48px; line-height: 52px; font: 48px/52px 'Georgia';}*/
-h1                          { font-size: 36px; line-height: 48px; }
-h2                          { font-size: 30px; line-height: 30px; }
-h3                          { font-size: 18px; line-height: 20px; font-weight: bold; }
-h3 a                        { font: 14px/16px 'Verdana' }
-h3.posts > a                { font-size: 14px; line-height: 36px; }
-h3.title                    { margin-bottom: 15px; }
-.allpostsmeta a          {
-  font-family: Helvetica, sans-serif !important;
-  font-weight: bold;
-  font-size: 28px !important;
-  color: #DEDEDE !important;
-}
-#home{
-  display: inline-block;
-  background-image: url(//static.juev.ru/images/home.png);
-  height: 48px;
-  width: 32px;
-  float: left;
-  margin: 45px 1em 0 0;
-}
-#comments{
-/*  text-align: center;*/
-	margin: 30px 0 20px;
-	font-family:'Verdana',Helvetica,Arial,sans-serif;
-  font-size: 10px;
-	text-transform: uppercase;
-}
-#comments a{
-	text-decoration: none;
-	border: 0px;
-	font-weight: bold;
-}
-.aligncenter { clear: both; display: block; float:none; margin-left: auto; margin-right: auto; }
-.tags {
-  display:block;
-  /*margin: 5px 0 15px 0;*/
-  text-align: left;
-  margin: 10px 0 10px 3px;
-	font-family:'Verdana',Helvetica,Arial,sans-serif;
-  font-size: 10px;
-  color: #333;
-	text-transform: uppercase;	
-}
-.tags a {
+  color:#f7f6ee;
   text-decoration:none;
-  border: none;
-}
-.share {
-  float: right;
-  margin: -2px 0 0 0;
-}
-.date {
-  text-align: right;
-  font-size: 0.9em;
-}
-.archives {
-  float: left;
-  width: 70%;
-  margin-bottom: 15px;
-}
-.tag_cloud {
-  float: left;
-  width: 28%;
-  text-align: right;
-}
-.tag_cloud a {
-  margin: 0 2px;
-  border-bottom: 0px;
-}
-.list {
-  line-height: 1.5em;
-}
-.list a{
-  border-bottom: 0px;
-}
-ol li, ul li {
-  margin-bottom: 10px;
-  line-height: 1.5em;
+  text-transform:uppercase;
+  font-family:Helvetica,sans-serif!important
 }
 
-img{
-  clear: both; display: block; float:none; margin-left: auto; margin-right: auto; max-width: 100%;
-  border: solid 1px #ccc;
+.navigation .width-fix li a:hover
+{
+  color:#BC5007;
+  text-decoration:none
+}
+
+.width-fix
+{
+  margin-right:auto;
+  margin-left:auto;
+  max-width:662px
+}
+
+p.message
+{
+  background-color:#fee;
+  color:#900;
+  font-weight:700
+}
+
+pre
+{
+  overflow:auto;
+  padding:1em;
+  border:#CCC solid 1px;
+  background-color:#F6F6F6;
+  font-size:.9em
+}
+
+code
+{
+  font-size:.9em
+}
+
+#feed
+{
+  float:right
+}
+
+blockquote
+{
+  position:relative;
+  margin:1.61em 2em;
+  padding-left:1em;
+  border-left:2px solid #999;
+  font-style:italic
+}
+
+a#license
+{
+  border-bottom:1px dashed;
+  text-decoration:none
+}
+
+.meta
+{
+  margin-top:10px;
+  padding-bottom:15px;
+  border-top:1px dotted #ddd
+}
+
+.footnotes
+{
+/*  border-color:#D3D3D3;
+  border-top:1px dotted
+*/}
+
+.footnotes p
+{
+  color:#A52A2A;
+  font-size:14px
+}
+
+a[rel="footnote"], a[rel="reference"]
+{
+	border:none;
+	font-size:9pt;
+}
+
+.pagination
+{
+  clear:both;
+  margin-top:20px
+}
+
+.pagination strong
+{
+  font-weight:400;
+  font-style:italic
+}
+
+.pagination p
+{
+  display:block;
+  width:606px;
+  height:22px;
+  color:#666!important;
+  text-transform:uppercase;
+  letter-spacing:2px;
+  font-size:10px;
+  font-family:Verdana,Helvetica,Arial,sans-serif;
+  line-height:22px
+}
+
+.pagination a
+{
+  height:0;
+  border-bottom:none;
+  text-decoration:none!important;
+  text-transform:none;
+  letter-spacing:normal;
+  font-weight:700;
+  font-size:12px;
+  font-family:Verdana,Helvetica,Arial,sans-serif;
+  line-height:18px
+}
+
+h1,h2,h3,h4,h5,h6
+{
+  color:#444;
+  /* font-weight:400 */
+  font-family:Arial, Verdana, Sans-Serif;
+  font-weight:bold;
+}
+
+h1 a,h2 a,h3 a,h4 a,h5 a,h6 a
+{
+  border-bottom:none;
+  text-decoration:none
+}
+
+h1.title
+{
+  width:560px;
+  color:#444!important;
+  text-align:left
+}
+
+h1.title a
+{
+  border-bottom:none;
+  color:#444!important;
+  text-decoration:none
+}
+
+h1,h2
+{
+  margin:15px 0
+}
+
+h1
+{
+  font-size:36px;
+  line-height:48px
+}
+
+h2
+{
+  font-size:30px;
+  line-height:30px;
+  color:#080
+}
+
+h3
+{
+  font-weight:700;
+  font-size:18px;
+  line-height:20px
+}
+
+h3 a
+{
+  font:14px/16px Verdana
+}
+
+h3.posts > a
+{
+  font-size:14px;
+  line-height:36px
+}
+
+h3.title
+{
+  margin-bottom:15px
+}
+
+.allpostsmeta a
+{
+  color:#DEDEDE!important;
+  font-weight:700;
+  font-size:28px!important;
+  font-family:Helvetica,sans-serif!important
+}
+
+#home
+{
+  float:left;
+  display:inline-block;
+  margin:45px 1em 0 0;
+  width:32px;
+  height:48px;
+  background-image:url(//static.juev.ru/images/home.png)
+}
+
+.aligncenter
+{
+  float:none;
+  clear:both;
+  display:block;
+  margin-right:auto;
+  margin-left:auto
+}
+
+#metainfo
+{
+	display:block;
+	/*  margin:10px 0 10px 3px;*/
+	color:#555;
+	text-align:left;
+	font-size:10pt;
+	font-family:Verdana,Helvetica,Arial,sans-serif
+}
+
+.date
+
+{
+	display:inline-block;
+	font-weight:bold;
+	font-size:8pt;
+}
+
+.tags
+{
+	display:inline-block;
+}
+
+.tags a
+{
+  border:none;
+  text-decoration:none
+}
+
+.share
+{
+  float:right;
+  margin:-2px 0 0
+}
+
+.archives
+{
+  float:left;
+  margin-bottom:15px;
+  width:70%
+}
+
+.tag_cloud
+{
+  float:left;
+  width:28%;
+  text-align:right
+}
+
+.tag_cloud a
+{
+  margin:0 2px;
+  border-bottom:0
+}
+
+.list
+{
+  line-height:1.5em
+}
+
+.list a
+{
+  border-bottom:0
+}
+
+ol li,ul li
+{
+  margin-bottom:10px;
+  line-height:1.5em
+}
+
+img
+{
+  float:none;
+  clear:both;
+  display:block;
+  margin-right:auto;
+  margin-left:auto;
+  max-width:100%;
+  border:solid 1px #ccc
 }
 
 @media screen and (max-device-width: 480px) {
-  .wide .body { text-align: justify; background: white; margin: 0; width: 100%; }
-  #feed { display: none; }
-  .footer { display: none; }
-  .share { display: none; }
-  .archives { width: 100%; }
-  .tag_cloud { display: none; }
-  .pagination p { width: 100%; }
-  h1.title  { width: 100%; }
+  .wide .body
+  {
+    margin:0;
+    width:100%;
+    background:#FFF;
+    text-align:justify
+  }
+  
+  #feed,.share,.tag_cloud,.meta
+  {
+    display:none
+  }
+  
+  .archives,.pagination p,h1.title
+  {
+    width:100%
+  }
+
+  h1.title
+  {
+    font-size: 24px
+  }
+
+  .navigation .width-fix
+  {
+    padding: 0 20px
+  }
 }
 
 @media print {
-  * { background: transparent !important; color: black !important; text-shadow: none !important; filter:none !important;
-  -ms-filter: none !important; }
-  a, a:visited { color: #444 !important; text-decoration: underline; }
-  a[href]:after { content: " (" attr(href) ")"; }
-  abbr[title]:after { content: " (" attr(title) ")"; }
-  .ir a:after, a[href^="javascript:"]:after, a[href^="#"]:after { content: ""; }  
-  pre, blockquote { border: 1px solid #999; page-break-inside: avoid; }
-  thead { display: table-header-group; }
-  tr, img { page-break-inside: avoid; }
-  @page { margin: 0.5cm; }
-  p, h2, h3 { orphans: 3; widows: 3; }
-  h2, h3{ page-break-after: avoid; }
-  .footer { content: ""; }
-  .share { display: none; }
-  .tags { display: none; }
-  .meta { display: none; }
-  .navigation { display: none; }
-  .userbar { display: none; }
+  *
+  {
+    background:transparent!important;
+    color:#000!important;
+    text-shadow:none!important;
+    filter:none!important;
+    -ms-filter:none!important
+  }
+  
+  a,a:visited
+  {
+    color:#444!important;
+    text-decoration:underline
+  }
+  
+  a[href]:after
+  {
+    content:" (" attr(href) ")"
+  }
+  
+  abbr[title]:after
+  {
+    content:" (" attr(title) ")"
+  }
+  
+  pre,blockquote
+  {
+    border:1px solid #999;
+    page-break-inside:avoid
+  }
+  
+  thead
+  {
+    display:table-header-group
+  }
+  
+  tr,img
+  {
+    page-break-inside:avoid
+  }
+  
+  @page
+  {
+    margin:.5cm
+  }
+  
+  p,h2,h3
+  {
+    orphans:3;
+    widows:3
+  }
+  
+  h2,h3
+  {
+    page-break-after:avoid
+  }
+  
+  .ir a:after,a[href^=javascript]:after,a[href^="#"]:after,.footer
+  {
+    content:""
+  }
+  
+  .share,.tags,.meta,.navigation,.userbar
+  {
+    display:none
+  }
 }
