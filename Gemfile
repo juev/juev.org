@@ -8,4 +8,4 @@ group :development do
   gem 'liquid'
 end
 
-gem 'sinatra'
+# gem 'sinatra'
