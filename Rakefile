@@ -65,7 +65,7 @@ task :new do
     f.puts ""
   end
   
-  `mate #{path}`
+  system("mvim #{path}")
   exit
 end
 
