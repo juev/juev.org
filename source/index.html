@@ -3,9 +3,10 @@ layout: default
 description: Wordpress, Jekyll, Ruby, PHP, Linux, Ubuntu, VPS и многое другое на страницах сайта.
 ---
 {% assign first_post = site.posts.first %}
-<h1 class="title"><a href="{{site.posts.first.url}}">{{ site.posts.first.title }}</a></h1>
+<h1 class="title"><a href="{{first_post.url}}">{{ first_post.title }}</a></h1>
+<div id="metainfo"><span class="date">{{ first_post.date | date_to_long_string }}</span></div>
 <div class="article">
-{{ site.posts.first.content }}
+{{ first_post.content }}
 </div>
 <div class="meta">
   <div class="pagination">
