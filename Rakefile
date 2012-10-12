@@ -3,34 +3,25 @@ require "bundler/setup"
 domain="www.juev.ru"
 
 task :default => :build
- 
+
 desc 'Build site with Jekyll.'
 task :build  => :clean do
   Rake::Task["tags"].execute
-	print "Compiling website...\n"
+  print "Compiling website...\n"
   system "jekyll"
-	print "Minify file...\n"
-  system "jammit -c _assets.yml -u http://#{domain} -o public/assets"
+  Rake::Task["minify"].execute
 end
- 
+
 desc 'Minify & Combi CSS/JS file'
 task :minify do
-	print "Minify file...\n"
+  print "Minify file...\n"
   system "jammit -c _assets.yml -u http://#{domain} -o public/assets"
 end
 
 desc 'Clean public folder'
 task :clean do
-	print "Clean public folder.\n"
+  print "Clean public folder.\n"
   system "rm -rf public/*"
-end
-
-desc 'Enter development mode.'
-task :local => :build do
-	print "Auto-regenerating enabled.\n"
-	print "Development server started at http://localhost:4000/ \n"
-	print "Development mode entered.\n"
-  system "jekyll --auto --server"
 end
 
 desc 'Build, deploy.'
@@ -38,7 +29,8 @@ task :deploy => :build do
   print "Deploying website to #{domain}\n"
 #  system "rsync -az --delete public/ ec2:~/www/juev.ru/web/"
 #  system "s3cmd sync -P --delete-removed public/ s3://www.juev.ru/"
-  system "rsync -az --delete public/ juevru:~/juevru/repo/php/"
+  # system "rsync -az --delete public/ juevru:~/juevru/repo/php/"
+  system "rsync -az --delete public/ nfs-juev:/home/public/"
 end
 
 task :new do
@@ -48,7 +40,7 @@ task :new do
   title.strip!
   now = Time.now
   path = "source/_posts/#{now.strftime('%F')}-#{title.downcase.gsub(/[\s\.]/, '-').gsub(/[^\w\d\-]/, '')}.markdown"
-  
+
   File.open(path, "w") do |f|
     f.puts "---"
     f.puts "layout: post"
@@ -64,7 +56,7 @@ task :new do
     f.puts ""
     f.puts ""
   end
-  
+
   system("mvim #{path}")
   exit
 end
@@ -75,7 +67,7 @@ task :tags do
   require 'rubygems'
   require 'jekyll'
   include Jekyll::Filters
-  
+
   options = Jekyll.configuration({})
   site = Jekyll::Site.new(options)
   site.read_posts('')
