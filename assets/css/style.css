@@ -6,7 +6,8 @@ html,body.wide
 body
 {
   border-top:3px solid #BC5007;
-  font:18px/1.524 georgia,serif
+  font:16px/1.524 'Ubuntu',arial,serif;
+  color:#333
 }
 
 body.wide
@@ -87,7 +88,7 @@ body.wide
 
 .post p
 {
-  color:#333
+  /* color:#333 */
 }
 
 .navigation
@@ -154,7 +155,7 @@ pre
 
 code
 {
-  font-size:.9em
+  /* font-size:.9em */
 }
 
 #feed
@@ -275,13 +276,13 @@ h1,h2
 
 h1
 {
-  font-size:36px;
+  font-size:34px;
   line-height:48px
 }
 
 h2
 {
-  font-size:30px;
+  font-size:26px;
   line-height:30px;
   color:#080
 }
@@ -515,4 +516,23 @@ img
   {
     display:none
   }
+}
+
+@font-face {
+  font-family: 'Ubuntu';
+  font-style: italic;
+  font-weight: 400;
+  src: local('Ubuntu Italic'), local('Ubuntu-Italic'), url(http://themes.googleusercontent.com/static/fonts/ubuntu/v4/0bJAQfNpYDMK5gdvWOS2DXYhjbSpvc47ee6xR_80Hnw.woff) format('woff');
+}
+@font-face {
+  font-family: 'Ubuntu';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Ubuntu'), url(http://themes.googleusercontent.com/static/fonts/ubuntu/v4/EOw89wVWpfqz-OXHFsgbz-vvDin1pK8aKteLpeZ5c0A.woff) format('woff');
+}
+@font-face {
+  font-family: 'Ubuntu';
+  font-style: normal;
+  font-weight: 500;
+  src: local('Ubuntu Medium'), local('Ubuntu-Medium'), url(http://themes.googleusercontent.com/static/fonts/ubuntu/v4/IiMFELcoPB-OzGzq14k4erO3LdcAZYWl9Si6vvxL-qU.woff) format('woff');
 }
