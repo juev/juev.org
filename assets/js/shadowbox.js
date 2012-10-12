@@ -1,10 +1,3 @@
-/*!
- * Shadowbox.js, version 3.0.3
- * http://shadowbox-js.com/
- *
- * Copyright 2007-2010, Michael J. I. Jackson
- * Date: 2012-08-29 16:41:09 +0400
- */
 (function(window, undefined) {
 
 /**
