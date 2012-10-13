@@ -7,7 +7,7 @@ package_path:           assets      # (defaults to assets)
 javascript_compressor:  yui         # (yui, closure)
 
 stylesheets:
-  master.1:
+  master.3:
     - assets/css/style.css
     - assets/css/shadowbox.css
 
