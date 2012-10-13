@@ -3,6 +3,8 @@ layout: none
 permalink: .htaccess
 ---
 
+ErrorDocument 404 /404.html
+
 # ----------------------------------------------------------------------
 # Better website experience for IE users
 # ----------------------------------------------------------------------
@@ -264,11 +266,11 @@ FileETag None
 # Be aware that the following rule might not be a good idea if you
 # use "real" subdomains for certain parts of your website.
 
-# <IfModule mod_rewrite.c>
-#   RewriteCond %{HTTPS} !=on
-#   RewriteCond %{HTTP_HOST} !^www\..+$ [NC]
-#   RewriteRule ^ http://www.%{HTTP_HOST}%{REQUEST_URI} [R=301,L]
-# </IfModule>
+<IfModule mod_rewrite.c>
+  RewriteCond %{HTTPS} !=on
+  RewriteCond %{HTTP_HOST} !^www\..+$ [NC]
+  RewriteRule ^ http://www.%{HTTP_HOST}%{REQUEST_URI} [R=301,L]
+</IfModule>
 
 # ----------------------------------------------------------------------
 # Built-in filename-based cache busting
