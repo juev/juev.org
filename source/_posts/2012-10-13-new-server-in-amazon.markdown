@@ -75,6 +75,7 @@ tags:
     $ sudo apt-get install apache2
     $ sudo a2enmod expires
     $ sudo a2enmod headers
+    $ sudo a2enmod rewrite
     $ sudo service apache2 restart
 
 Все готово для создания сайтов, за основу берем конфигурацию по умолчанию:
