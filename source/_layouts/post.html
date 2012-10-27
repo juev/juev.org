@@ -3,7 +3,6 @@ layout: default
 ---
 <h1 class="title">{{ page.title }}</h1>
 <div id="metainfo">
-<meta itemprop="datePublished" content="{{ page.date | date: "%Y-%m-%d" }}"/>
 <span class="date">{{ page.date | date_to_long_string }}</span> 
 <span class="tags">{% assign post = page %}{% for tag in post.tags %}
   <a href="/tags/{{ tag }}/" title="View posts tagged with &quot;{{ tag }}&quot;" rel="nofollow">#{{ tag }}</a>{% if forloop.last != true %} {% endif %}{% endfor %}</span>

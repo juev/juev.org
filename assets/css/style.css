@@ -392,6 +392,11 @@ h3.title
   border-bottom:0
 }
 
+#cloud a
+{
+  border-bottom:0
+}
+
 .list
 {
   line-height:1.5em

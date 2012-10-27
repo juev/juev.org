@@ -11,6 +11,7 @@
   <meta itemprop="inLanguage" content="ru">
   <meta itemprop="author" content="Denis Evsyukov">
   <meta itemprop="keywords" content="{% if page.keywords %}{{page.keywords}}{% else %}{{site.keywords}}{% endif %}">
+  <meta itemprop="datePublished" content="{% if page.date %}{{ page.date | date: "%Y-%m-%d" }}{% else %}{{ site.time | date: "%Y-%m-%d" }}{% endif %}"/>
   <link rel="canonical" href="http://www.juev.ru{{ page.id | canonical }}/">
   <link rel="shortcut icon" href="/favicon.ico">
   <link rel="apple-touch-icon" href="/apple-touch-icon.png">
@@ -35,7 +36,7 @@
   </div><!-- noindex -->
   <div class="footer">
     <div class="width-fix">
-      <p><a href="/articles.html" rel="nofollow">Список статей</a> :: <a href="//feeds.feedburner.com/Juev" rel="nofollow">RSS</a> :: <a href="/projects.html" rel="nofollow">Проекты</a></p>
+      <p><a href="/articles.html" rel="nofollow">Список статей</a> :: <a href="/tags.html" rel="nofollow">Теги</a> :: <a href="/projects.html" rel="nofollow">Проекты</a> :: <a href="//feeds.feedburner.com/Juev" rel="nofollow">RSS</a></p>
       <p>&copy; 2008&ndash;2012 <a href="http://plus.google.com/116661482374124481456?rel=author">Denis Evsyukov</a>. Contact me via <a href="&#109;&#97;&#105;&#108;&#116;&#111;&#58;&#100;&#101;&#110;&#105;&#115;&#64;&#101;&#118;&#115;&#121;&#117;&#107;&#111;&#118;&#46;&#111;&#114;&#103;" rel="nofollow">mail</a>,
       <a href="//twitter.com/#!/Juev" rel="nofollow">twitter</a> or
       <a href="//github.com/Juev" rel="nofollow">github</a></p>
