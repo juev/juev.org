@@ -56,7 +56,7 @@ task :new do
     f.puts ""
   end
 
-  system("mvim #{path}")
+  system("subl #{path}")
   exit
 end
 
