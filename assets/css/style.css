@@ -394,7 +394,8 @@ h3.title
 
 #cloud a
 {
-  border-bottom:0
+  border-bottom:0;
+  padding:0 5px;
 }
 
 .list
