@@ -10,7 +10,7 @@ task :build  => :clean do
   Rake::Task["tag_cloud"].execute
   print "Compiling website...\n"
   system "jekyll"
-  Rake::Task["minify"].execute
+  # Rake::Task["minify"].execute
   system "rm source/_includes/tag_cloud.html"
 end
 
