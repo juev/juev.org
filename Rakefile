@@ -10,14 +10,7 @@ task :build  => :clean do
   Rake::Task["tag_cloud"].execute
   print "Compiling website...\n"
   system "jekyll"
-  # Rake::Task["minify"].execute
   system "rm source/_includes/tag_cloud.html"
-end
-
-desc 'Minify & Combi CSS/JS file'
-task :minify do
-  print "Minify file...\n"
-  system "jammit -c _assets.yml -u http://#{domain} -o public/assets"
 end
 
 desc 'Clean public folder'
