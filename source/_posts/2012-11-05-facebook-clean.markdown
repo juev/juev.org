@@ -3,7 +3,7 @@ layout: post
 title: Укрощение Facebook
 description: 
 keywords: facebook, style, stylish, safari, ads, clean
-gplus: 
+gplus: https://plus.google.com/116661482374124481456/posts/a7NR3e26UTF
 published: true
 date: 2012-11-05 10:35:57
 tags:
