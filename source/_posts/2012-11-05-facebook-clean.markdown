@@ -29,7 +29,7 @@ tags:
 
     .rhcFooter, .homeSideNav#connectNav, .homeSideNav#appsNav, #rightCol, .megaphone_story_wrapper { display: none !important; }
     #boulder_fixed_header { width: 655px !important; }
-    #contentArea, .genericStreamStory, #pagelet_composer { width: 755px !important; }
+    #contentArea, #pagelet_composer { width: 755px !important; }
 
 И после всех изменений Facebook стал выглядеть следующим образом:
 
