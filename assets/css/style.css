@@ -6,7 +6,7 @@ html,body.wide
 body
 {
   border-top:3px solid #BC5007;
-  font:16px/1.524 'Ubuntu',arial,serif;
+  font:17px/1.524 'myriad-pro',arial,serif;
   color:#333
 }
 
@@ -155,7 +155,8 @@ pre
 
 code
 {
-  /* font-size:.9em */
+  /*font-size:.9em;*/
+  font-family: "inconsolata";
 }
 
 #feed
@@ -199,8 +200,8 @@ a#license
 
 a[rel="footnote"], a[rel="reference"]
 {
-	border:none;
-	font-size:9pt;
+  border:none;
+  font-size:9pt;
 }
 
 .pagination
@@ -339,25 +340,25 @@ h3.title
 
 #metainfo
 {
-	display:block;
-	/*  margin:10px 0 10px 3px;*/
-	color:#555;
-	text-align:left;
-	font-size:10pt;
-	font-family:Verdana,Helvetica,Arial,sans-serif
+  display:block;
+  /*  margin:10px 0 10px 3px;*/
+  color:#555;
+  text-align:left;
+  font-size:10pt;
+  font-family:Verdana,Helvetica,Arial,sans-serif
 }
 
 .date
 
 {
-	display:inline-block;
-	font-weight:bold;
-	font-size:8pt;
+  display:inline-block;
+  font-weight:bold;
+  font-size:8pt;
 }
 
 .tags
 {
-	display:inline-block;
+  display:inline-block;
 }
 
 .tags a
