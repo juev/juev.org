@@ -2,16 +2,17 @@
 layout: post
 title: Валидация кнопок Twitter и Google Plus
 description: 
-keywords: w3c, validate, html, html5, jquery, javascript, web, design, twitter, g+, google plus
+keywords: w3c, validate, html, html5, jquery, javascript, web, design, twitter, g+,
+  google plus
 gplus: https://plus.google.com/116661482374124481456/posts/3QDr6fFE9Pu
 published: true
-date: 2012-04-14 08:57:14
+date: 2012-04-14 12:57
 tags:
-  - webdesign
-  - html
-  - jquery
-  - twitter
-  - google
+- webdesign
+- html
+- jquery
+- twitter
+- google
 ---
 
 Можно ли сделать так, чтобы страницы с кнопками социальных сетей проходили w3c-валидацию? Как оказалось -- можно!

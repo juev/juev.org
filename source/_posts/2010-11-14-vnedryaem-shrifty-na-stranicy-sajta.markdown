@@ -1,15 +1,12 @@
---- 
+---
 layout: post
-title: !binary |
-  0JLQvdC10LTRgNGP0LXQvCDRiNGA0LjRhNGC0Ysg0L3QsCDRgdGC0YDQsNC9
-  0LjRhtGLINGB0LDQudGC0LA=
+title: Внедряем шрифты на страницы сайта
 keywords: webdesign,fonts,typekit,google
-date: 2010-11-14
+date: 2010-11-14 00:00
 tags:
-  - webdesign
-  - fonts
-  - google
-
+- webdesign
+- fonts
+- google
 ---
 При разработке сайтов не последнюю роль в оформлении играют выбранные шрифты. От этого выбора будет зависеть не только восприятие всего сайта в целом, но и то, что текст с различными гарнитурами читается совершенно по разному.
 

@@ -1,14 +1,11 @@
---- 
+---
 layout: post
-title: !binary |
-  bWNhYmJlciAtINC60L7QvdGB0L7Qu9GM0L3Ri9C5IGphYmJlciDQutC70LjQ
-  tdC90YI=
+title: mcabber - консольный jabber клиент
 keywords: jabber,mcabber
-date: 2009-06-04
+date: 2009-06-04 00:00
 tags:
-  - jabber
-  - mcabber
-
+- jabber
+- mcabber
 ---
 Согласно <a href="http://wiki.mcabber.com/index.php/RU_Main_Page" rel="nofollow">wiki.mcabber.com</a>:
 <blockquote>mcabber - это текстовый Jabber-клиенкт включающий в себя такие функции как: поддержка <strong>SSL</strong>, <strong>история переписки</strong> (конференции), <strong>автодополнение</strong> команд и возможность создания <strong>собственных команд</strong> (триггеров).</blockquote>

@@ -4,13 +4,12 @@ title: Wren - когда twitter не отвлекает от работы
 description: 
 keywords: mac, soft, twitter, tips, wren, focus
 gplus: https://plus.google.com/116661482374124481456/posts/bxb6Wps8cff
-date: 2011-12-18 11:28:15
+date: 2011-12-18 15:28
 tags:
-  - mac
-  - soft
-  - twitter
-  - tips
-
+- mac
+- soft
+- twitter
+- tips
 ---
 
 Twitter -- одна из самых замечательных социальных сетей! Но, как и в любой другой социальной сети, здесь есть проблема излишнего увлечения и потери колоссального количества времени.

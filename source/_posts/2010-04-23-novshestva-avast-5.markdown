@@ -1,13 +1,11 @@
---- 
+---
 layout: post
-title: !binary |
-  0J3QvtCy0YjQtdGB0YLQstCwIEF2YXN0IDU=
+title: Новшества Avast 5
 keywords: windows,soft,avast,antivirus
-date: 2010-04-23
+date: 2010-04-23 00:00
 tags:
-  - windows
-  - soft
-
+- windows
+- soft
 ---
 Еще до того момента, как я перешел на Linux, году так в 2005-2006 передо мной встал вопрос
 о выборе антивируса. Причем меня интересовал только бесплатный вариант. Выбор был

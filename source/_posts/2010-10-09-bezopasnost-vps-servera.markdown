@@ -1,14 +1,12 @@
---- 
+---
 layout: post
-title: !binary |
-  0JHQtdC30L7Qv9Cw0YHQvdC+0YHRgtGMIFZQUy3RgdC10YDQstC10YDQsA==
+title: Безопасность VPS-сервера
 keywords: vps,security,ssh,fail2ban,ufw,ubuntu
-date: 2010-10-09
+date: 2010-10-09 00:00
 tags:
-  - vps
-  - security
-  - ubuntu
-
+- vps
+- security
+- ubuntu
 ---
 При использовании shared hosting не нужно беспокоиться о безопасности. Все находится в руках администраторов сервиса.  И совершенно другая ситуация возникает, когда арендуешь <code>VPS</code>-сервер. Вся ответственность за происходящее ложиться на плечи владельца. 
 

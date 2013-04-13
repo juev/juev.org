@@ -1,14 +1,12 @@
---- 
+---
 layout: post
-title: !binary |
-  R29vZ2xlIERvY3Mg0LrQsNC6INCy0LXQsS3RgNC10LTQsNC60YLQvtGA
+title: Google Docs как веб-редактор
 keywords: internet,services,google,docs,write
-date: 2010-04-25
+date: 2010-04-25 00:00
 tags:
-  - internet
-  - google
-  - services
-
+- internet
+- google
+- services
 ---
 Мало кто сейчас использует Google Docs для своей работы. И еще меньшее количество людей знает о том, что данная система имеет возможность публикации веб-страниц.
 

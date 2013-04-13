@@ -1,9 +1,7 @@
---- 
+---
 layout: post
-title: !binary |
-  YXdlc29tZTog0YDQsNCx0L7Rh9C10LUg0L7QutGA0YPQttC10L3QuNC1
-
-excerpt: !binary |
+title: 'awesome: рабочее окружение'
+excerpt: !binary |-
   0J/QviDRgdCy0L7QtdC5INGB0YPRgtC4INCyINC30LDQtNCw0YfRgyDQvtC6
   0L7QvdC90L7Qs9C+INC80LXQvdC10LTQttC10YDQsCDQstGF0L7QtNC40YIg
   0YLQvtC70YzQutC+INGD0L/RgNCw0LLQu9C10L3QuNC1INC+0LrQvdCw0LzQ
@@ -26,13 +24,11 @@ excerpt: !binary |
   vdGL0Lkg0L7QutC+0L3QvdGL0Lkg0LzQtdC90LXQtNC20LXRgCDQvdCw0YDQ
   sNCy0L3QtSDRgSDQu9GO0LHRi9C8INC00LXRgdC60YLQvtC/LdC80LXQvdC1
   0LTQttC10YDQvtC8Li4uIA==
-
 keywords: wm,awesome,tiling
-date: 2009-06-25
+date: 2009-06-25 00:00
 tags:
-  - wm
-  - awesome
-
+- wm
+- awesome
 ---
 Давно собирался написать про свое рабочее окружение в awesome wm. Но все никак не удавалось сесть и довести дело до конца. Сегодня все таки решился.
 

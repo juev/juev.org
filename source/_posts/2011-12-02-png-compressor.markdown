@@ -3,11 +3,10 @@ layout: post
 title: PNG Compressor
 keywords: images, compress, mac, web, png
 gplus: https://plus.google.com/116661482374124481456/posts/aaJs9yeyjww
-date: 2011-12-02 19:59:11
+date: 2011-12-02 23:59
 tags:
-  - mac
-  - soft
-
+- mac
+- soft
 ---
 
 При работе над статьями для сайта порой приходиться обрабатывать изображения. Кадрировать, оптимизировать с целью уменьшения размера.

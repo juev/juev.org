@@ -3,12 +3,11 @@ layout: post
 title: Git autocomlete for bash
 keywords: bash, git, autocomlete, tips
 gplus: https://plus.google.com/116661482374124481456/posts/CLxVrpMHDFZ
-date: 2011-11-25 09:16:19
+date: 2011-11-25 13:16
 tags:
-  - bash
-  - git 
-  - tips
-
+- bash
+- git
+- tips
 --- 
 Когда много работаешь в bash привыкаешь к автодополнению команд по **Tab**. И очень мешает
 работать отсутствие автокомплита в некоторых командах.

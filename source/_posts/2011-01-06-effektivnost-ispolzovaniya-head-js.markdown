@@ -1,14 +1,11 @@
---- 
+---
 layout: post
-title: !binary |
-  0K3RhNGE0LXQutGC0LjQstC90L7RgdGC0Ywg0LjRgdC/0L7Qu9GM0LfQvtCy
-  0LDQvdC40Y8gSGVhZC5KUw==
+title: Эффективность использования Head.JS
 keywords: javascript,webdesign,head.js,headjs,async
-date: 2011-01-06
+date: 2011-01-06 00:00
 tags:
-  - javascript
-  - webdesign
-
+- javascript
+- webdesign
 ---
 Недавно познакомился со скриптом <a href="http://headjs.com/" rel="nofollow">Head.JS</a>, и в последнее время стараюсь использовать его во всех своих проектах. О том, как работать с данным скриптом я описывал в статье <a href="/2010/12/25/use-head-js/">Использование Head.JS</a>. Но тогда не смог провести тестов результативности использования данного скрипта. 
 

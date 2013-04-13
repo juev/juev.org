@@ -2,12 +2,11 @@
 layout: post
 title: Стандарты html и кодировки файлов
 keywords: html, standart, encoding, title, кодировка, html5, xhtml
-date: 2011-07-28 09:41:37
+date: 2011-07-28 13:41
 tags:
-  - design
-  - webdesign
-  - html
-
+- design
+- webdesign
+- html
 ---
 Недавно перевел свой сайт на использование `html5`. Единственно, отказываться от
 использования тегов *div* я не стал, в виду того, что IE прошлых версий нормально с тегами

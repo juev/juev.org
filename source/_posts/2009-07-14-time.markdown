@@ -1,14 +1,12 @@
---- 
+---
 layout: post
-title: !binary |
-  0KHQuNC90YXRgNC+0L3QuNC30LDRhtC40Y8g0LLRgNC10LzQtdC90Lg=
+title: Синхронизация времени
 keywords: time,daemons,services,cron
-date: 2009-07-14
+date: 2009-07-14 00:00
 tags:
-  - time
-  - services
-  - daemon
-
+- time
+- services
+- daemon
 ---
 Вас никогда не касалась проблема неточного времени на компьютере? Нет? Ну тогда вам сильно повезло...
 

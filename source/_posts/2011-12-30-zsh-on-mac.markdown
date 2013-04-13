@@ -3,11 +3,10 @@ layout: post
 title: Долгий запуск Terminal.app
 keywords: mac, terminal, zsh, console, slow, options
 gplus: https://plus.google.com/116661482374124481456/posts/7GpHcSscFop
-date: 2011-12-30 16:03:02
+date: 2011-12-30 20:03
 tags:
-  - mac
-  - zsh
-
+- mac
+- zsh
 ---
 
 Так привык, что в Linux программы запускаются очень быстро, что очень долго не мог понять, почему в MacOS при запуске Terminal.app приходиться ждать от 5 до 10 секунд. При этом не важно, запускается новое окно или же только открывается новая вкладка.
@@ -21,7 +20,7 @@ tags:
 Настройки располагаются на сервере Github в репозитории [oh-my-zsh][]. Там же описано, как производить установку к себе на компьютер.
 
 [oh-my-zsh]: https://github.com/robbyrussell/oh-my-zsh
-	"robbyrussell / oh-my-zsh"
+	"robbyrussell / oh-my-zsh"
 
 Для автоматической установки необходимо дать команду:
 

@@ -1,14 +1,11 @@
---- 
+---
 layout: post
-title: !binary |
-  0KLQtdGB0YIg0L/RgNC+0LjQt9Cy0L7QtNC40YLQtdC70YzQvdC+0YHRgtC4
-  IFZQUyDRgdC10YDQstC10YDQsA==
+title: Тест производительности VPS сервера
 keywords: vps,nginx,php-fpm,cache
-date: 2010-08-23
+date: 2010-08-23 00:00
 tags:
-  - vps
-  - nginx
-
+- vps
+- nginx
 ---
 После покупки и настройки сервера стало интересно, какую нагрузку он может выдерживать. Сколько пользователей он сможет выдержать. И как сильно эти показатели будут отличаться от показаний обычного шаред-хостера?
 

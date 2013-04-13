@@ -1,12 +1,11 @@
---- 
+---
 layout: post
 title: HTC Wildfire прошивка CyanogenMod
 description: Процесс смены прошивки Wildfire на CyanogenMod
 keywords: wildfire,cyanogenmod,firmware,прошивка
-date: 2011-04-13
+date: 2011-04-13 00:00
 tags:
-  - android
-
+- android
 ---
 В статье [Прошивка HTC Wildfire от МТС][1] я уже описывал как можно изменять
 прошивку телефона HTC Wildfire.

@@ -1,11 +1,10 @@
---- 
+---
 layout: post
-title: "Refinery - CMS \xD0\xBD\xD0\xB0 Ruby on Rails"
+title: Refinery - CMS на Ruby on Rails
 keywords: rails,refinery
-date: 2009-07-22
+date: 2009-07-22 00:00
 tags:
-  - rails
-
+- rails
 ---
 Как создавать каркас приложения я уже описывал. А сегодня рассмотрим создание типового
 приложения. Если быть совсем точным, то не создание, а запуск готового. И в качестве

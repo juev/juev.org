@@ -5,10 +5,10 @@ description:
 keywords: terminal, pomodoro, time-management, osx, ruby
 gplus: https://plus.google.com/116661482374124481456/posts/bwKfcnYMjuU
 published: true
-date: 2012-08-23 19:29:52
+date: 2012-08-23 23:29
 tags:
-  - osx
-  - ruby
+- osx
+- ruby
 ---
 
 За сегодяшний вечер написал небольшое приложение на Ruby, которое призвано выполнять роль таймера по системе тайм-менеджмента [Pomodoro](http://www.pomodorotechnique.com "The Pomodoro Technique").

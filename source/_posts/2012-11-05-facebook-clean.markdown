@@ -5,12 +5,12 @@ description:
 keywords: facebook, style, stylish, safari, ads, clean
 gplus: https://plus.google.com/116661482374124481456/posts/a7NR3e26UTF
 published: true
-date: 2012-11-05 10:35:57
+date: 2012-11-05 14:35
 tags:
-  - facebook
-  - web
-  - safari
-  - stylish
+- facebook
+- web
+- safari
+- stylish
 ---
 
 На страницах сайтов часто размещают массу информации, которая совершенно не нужна обычному человеку. Это и реклама и различные предложения. Я уже описывал, как можно избавиться от рекламы на страницах Gmail ("[Блокируем элементы с помощью таблицы стилей](http://www.juev.ru/2012/08/11/safari-userstyles/)"). И несколько дней назад решил в очередной раз зарегистрироваться на facebook.

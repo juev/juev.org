@@ -1,15 +1,12 @@
---- 
+---
 layout: post
-title: !binary |
-  0JXRidC1INC90LXQvNC90L7Qs9C+INC+INC/0YDQvtC40LfQstC+0LTQuNGC
-  0LXQu9GM0L3QvtGB0YLQuCBXb3JkUHJlc3M=
+title: Еще немного о производительности WordPress
 keywords: wordpress,vps,varnish,speed
-date: 2010-10-23
+date: 2010-10-23 00:00
 tags:
-  - wordpress
-  - varnish
-  - vps
-
+- wordpress
+- varnish
+- vps
 ---
 Сегодня ночью долго не мог уснуть, задался вопросом исследования производительности сайта.
 

@@ -1,14 +1,11 @@
---- 
+---
 layout: post
-title: !binary |
-  0JDRgdC40L3RhdGA0L7QvdC90YvQuSDQutC+0LQgR29vZ2xlIEFuYWx5dGlj
-  cw==
+title: Асинхронный код Google Analytics
 keywords: google,analitics,internet,counter,async
-date: 2010-04-30
+date: 2010-04-30 00:00
 tags:
-  - google
-  - internet
-
+- google
+- internet
 ---
 Google помимо предоставления своих сервисов, типа почты, rss-ридера, google docs и других, предоставляет возможность отслеживать статистику посещений своего сайта. Данный сервис называется Google Analitics.
 

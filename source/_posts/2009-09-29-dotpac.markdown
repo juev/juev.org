@@ -1,12 +1,11 @@
---- 
+---
 layout: post
 title: dotpac
 keywords: archlinux,soft,dotpac
-date: 2009-09-29
+date: 2009-09-29 00:00
 tags:
-  - archlinux
-  - soft
-
+- archlinux
+- soft
 ---
 После установки или обновления программ в <em>archlinux</em> часто появляются новые файлы конфигурации в каталоге <em>/etc</em> с расширениями <strong>pacnew</strong> или <strong>pacsave</strong>.
 

@@ -1,12 +1,10 @@
---- 
+---
 layout: post
-title: !binary |
-  0JDQstGC0L7QvNCw0YLQuNC30LDRhtC40Y8gVHdpdHRlcg==
+title: Автоматизация Twitter
 keywords: twitter,auto,automate
-date: 2010-05-27
+date: 2010-05-27 00:00
 tags:
-  - twitter
-
+- twitter
 ---
 Twitter все больше завоевывает популярность пользователей. Микроблогинг, уже не новое явление, но все продолжает развиваться и становиться все более интересным.
 

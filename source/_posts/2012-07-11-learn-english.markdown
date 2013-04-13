@@ -5,10 +5,10 @@ description:
 keywords: английский, изучение, learn, english, anki, ios, mobile
 gplus: https://plus.google.com/116661482374124481456/posts/6FyqUxBkp3c
 published: true
-date: 2012-07-11 14:33:43
+date: 2012-07-11 18:33
 tags:
-  - ipod
-  - soft
+- ipod
+- soft
 ---
 
 Еще со школы у меня были проблемы при изучении иностранного языка. Мне просто не повезло с учителем, и у меня отбили всю охоту его учить.

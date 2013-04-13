@@ -1,14 +1,13 @@
---- 
+---
 layout: post
 title: Jekyll on Ubuntu 10.04
 keywords: jekyll,ruby,ubuntu,vps
-date: 2010-11-06
+date: 2010-11-06 00:00
 tags:
-  - jekyll
-  - ruby
-  - ubuntu
-  - vps
-
+- jekyll
+- ruby
+- ubuntu
+- vps
 ---
 На платформе <a href="http://pages.github.com" rel="nofollow">GitHub.com</a> можно размещать свои сайты и блоги. Причем использовать можно либо статические сайты, либо блоги, генерируемые с помощью движка <a href="https://github.com/mojombo/jekyll" rel="nofollow">jekyll</a>. По своей сути в обоих случаях нет никаких проблем. Генерация производиться непосредственно на сервере, и от пользователя возникает необходимость только задать определенную структуру директорий и наполнить файлы содержимым.
 

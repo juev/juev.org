@@ -3,13 +3,12 @@ layout: post
 title: Фотографии в Фокусе
 keywords: mac, soft, focus, photo, foto, фотография
 gplus: https://plus.google.com/116661482374124481456/posts/fu1opBfW6PD
-date: 2011-11-25 07:26:49
+date: 2011-11-25 11:26
 tags:
-    - mac
-    - soft
-    - screenshot
-    - photo
-
+- mac
+- soft
+- screenshot
+- photo
 ---
 Больше всего в Mac меня привлекает возможность обработки фотографий. В MacOS возможностей
 намного больше, чем в любой другой системе. Помимо любимого среди фотографов Lightroom здесь

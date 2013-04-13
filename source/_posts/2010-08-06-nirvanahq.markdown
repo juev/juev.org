@@ -1,14 +1,11 @@
---- 
+---
 layout: post
-title: !binary |
-  TmlydmFuYSAtINC60LDQuiDRg9C/0L7RgNGP0LTQvtGH0LjRgtGMINGB0LLQ
-  vtC4INC00LXQu9Cw
+title: Nirvana - как упорядочить свои дела
 keywords: nirvanahq,internet,task
-date: 2010-08-06
+date: 2010-08-06 00:00
 tags:
-  - internet
-  - services
-
+- internet
+- services
 ---
 Сегодня на сайте lifehacker.com вышла статья <a href="http://lifehacker.com/5605445/nirvana-is-a-stylish-new-gtd-task-manager-and-weve-got-invites" rel="nofollow">Nirvana is a Stylish, New GTD Task Manager (and We've Got Invites)</a>. Дана рекомендация по использованию онлайн списков todo с помощью сервиса Nirvana, что сейчас находиться в закрытом beta-тесте. И были даны инвайт-коды для регистрации.
 

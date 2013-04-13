@@ -1,12 +1,10 @@
---- 
+---
 layout: post
-title: !binary |
-  0J/QtdGA0LLQvtC1INC/0YDQuNC70L7QttC10L3QuNC1INCyIFJhaWxz
+title: Первое приложение в Rails
 keywords: rails,tutorial
-date: 2009-07-21
+date: 2009-07-21 00:00
 tags:
-  - rails
-
+- rails
 ---
 О том, как устанавливать Ruby on Rails в Archlinux я уже писал в заметке <a href="/2009/07/15/ruby-on-rails/">Ruby on Rails</a>. А сегодня покажу, как создать первую заготовку в Rails.
 

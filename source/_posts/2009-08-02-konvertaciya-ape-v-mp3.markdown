@@ -1,13 +1,11 @@
---- 
+---
 layout: post
-title: !binary |
-  0JrQvtC90LLQtdGA0YLQsNGG0LjRjyBhcGUg0LIgbXAz
+title: Конвертация ape в mp3
 keywords: archlinex,music,ape,mp3
-date: 2009-08-02
+date: 2009-08-02 00:00
 tags:
-  - archlinux
-  - music
-
+- archlinux
+- music
 ---
 Сегодня скачал с торрента произведения Чайковского и обнаружил, что они в формате <strong>ape</strong>... Мой любимый <strong>mplayer</strong> играть их отказался, хотя в конфигурации и показывал поддержку данного формата.
 

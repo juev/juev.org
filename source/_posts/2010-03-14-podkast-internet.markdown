@@ -1,14 +1,13 @@
---- 
+---
 layout: post
 title: Размещение подкаста в интернете
 keywords: amazon,hosting,internet,services,podcast,хостинг
-date: 2010-03-14
+date: 2010-03-14 00:00
 tags:
-  - amazon
-  - хостинг
-  - internet
-  - services
-
+- amazon
+- hosting
+- internet
+- services
 ---
 Нет, я не собираюсь пока записывать подкасты. Я просто хочу рассмотреть вариант создания собственной "площадки" для ведения подкастов.
 

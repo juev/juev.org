@@ -1,12 +1,11 @@
---- 
+---
 layout: post
-title: "Wordpress: store images in a subdomain"
+title: 'Wordpress: store images in a subdomain'
 keywords: wordpress,vps,domain,dns,store,images
-date: 2010-08-29
+date: 2010-08-29 00:00
 tags:
-  - wordpress
-  - vps
-
+- wordpress
+- vps
 ---
 Самые популярные на сегодняшний день браузеры (Firefox, Chrome) создают по умолчанию от 2 до 4 соединений на каждый отдельный домен. Что в конечном итоге приводит к замедлению скорости загрузки страницы, тем более, если на странице размещается много графической информации.
 

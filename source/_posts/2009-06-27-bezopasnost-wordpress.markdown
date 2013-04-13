@@ -1,13 +1,11 @@
---- 
+---
 layout: post
-title: !binary |
-  0LHQtdC30L7Qv9Cw0YHQvdC+0YHRgtGMIHdvcmRwcmVzcw==
+title: безопасность wordpress
 keywords: wordpress,security
-date: 2009-06-27
+date: 2009-06-27 00:00
 tags:
-  - wordpress
-  - security
-
+- wordpress
+- security
 ---
 Для улучшения безопасности wordpress требуется соблюдать ряд правил. Правила простые, но зачастую их игнорируют. Тем самым подвергая опасности свой собственный блог.
 

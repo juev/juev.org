@@ -1,14 +1,11 @@
---- 
+---
 layout: post
-title: !binary |
-  eWFvdXJ0IC0g0YPRgdGC0LDQvdC+0LLQutCwINC4INC40YHQv9C+0LvRjNC3
-  0L7QstCw0L3QuNC1
+title: yaourt - установка и использование
 keywords: archlinux,yaourt,install
-date: 2009-03-31
+date: 2009-03-31 00:00
 tags:
-  - archlinux
-  - yaourt
-
+- archlinux
+- yaourt
 ---
 По сути в Archlinux до сих пор используется консольный менеджер пакетов pacman. И хотя предпринимаются попытки создания графического интерфейса, консоль остается самым удобным способом установки/удаления/обновления программ в Archlinux.
 

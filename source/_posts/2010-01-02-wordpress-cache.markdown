@@ -1,11 +1,11 @@
---- 
+---
 layout: post
 title: Wordpress Cache
-keywords: wordpress,cache,speed,wp super cache,hyper cache,w3 totoal cache,maxsite cache
-date: 2010-01-02
+keywords: wordpress,cache,speed,wp super cache,hyper cache,w3 totoal cache,maxsite
+  cache
+date: 2010-01-02 00:00
 tags:
-  - wordpress
-
+- wordpress
 ---
 Производительность веб-сервера резко падает при использовании динамических страниц, и часто наблюдается так называемый digg-эффект, который заключается в отказе обслуживания от перегрузки сервера. Именно поэтому в WordPress применяются плагины, реализующие различные способы кэширования информации.
 

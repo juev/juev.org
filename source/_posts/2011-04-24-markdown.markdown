@@ -1,13 +1,13 @@
---- 
-layout: post 
-title: Markdown 
-description: Использование markdown для создания web-страниц. Особенности различных движков. 
-keywords: markdown,rdicount,kramdown,maruku 
-date: 2011-04-24
+---
+layout: post
+title: Markdown
+description: Использование markdown для создания web-страниц. Особенности различных
+  движков.
+keywords: markdown,rdicount,kramdown,maruku
+date: 2011-04-24 00:00
 tags:
-  - markdown
-  - design
-
+- markdown
+- design
 --- 
 **[Markdown][1]** — это облегченный язык разметки, призванный облегчить подготовку текстов для публикации в Интернете.
 

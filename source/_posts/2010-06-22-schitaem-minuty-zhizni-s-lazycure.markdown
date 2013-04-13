@@ -1,14 +1,11 @@
---- 
+---
 layout: post
-title: !binary |
-  0KHRh9C40YLQsNC10Lwg0LzQuNC90YPRgtGLINC20LjQt9C90Lgg0YEgTGF6
-  eUN1cmU=
+title: Считаем минуты жизни с LazyCure
 keywords: windows,soft,chrono,time
-date: 2010-06-22
+date: 2010-06-22 00:00
 tags:
-  - windows
-  - soft
-
+- windows
+- soft
 ---
 В блоге Управление своим временем и своими делами я описывал, для чего и как обычно ведут
 <a href="http://time-case.blogspot.com/2010/06/blog-post.html" rel="nofollow">хронометраж</a>. Резонно возник вопрос, как лучше всего отслеживать свои активности дел, работая за компьютером. Ведь обычно для этого используется обычный листок бумаги и ручка, фиксируются отрезки времени и сами активности.

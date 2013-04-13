@@ -5,10 +5,10 @@ description:
 keywords: mac, breaktime, pomodoro, time, computer, health, soft
 gplus: https://plus.google.com/116661482374124481456/posts/AJXSp18Tj2J
 published: true
-date: 2012-01-28 14:21:11
+date: 2012-01-28 18:21
 tags:
-  - mac
-  - soft
+- mac
+- soft
 ---
 
 Основную часть времени я провожу за компьютером. Часто доходит до такой степени, что вечером подымаешься с кресла, а встать тяжело. Все тело затекло и двигаться уже совершенно не хочется.

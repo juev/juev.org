@@ -1,14 +1,11 @@
---- 
+---
 layout: post
-title: !binary |
-  0J3QvtCy0YvQtSDQstC+0LfQvNC+0LbQvdC+0YHRgtC4IFdQLXRvLVR3aXR0
-  ZXI=
+title: Новые возможности WP-to-Twitter
 keywords: wordpress,twitter
-date: 2010-08-20
+date: 2010-08-20 00:00
 tags:
-  - wordpress
-  - twitter
-
+- wordpress
+- twitter
 ---
 На днях обновилось расширение WP To Twitter для Wordpress, позволяющее публиковать анонс статьи в Twitter. Обновилось и обновилось, что тут странного? Я тоже так подумал, пока не заметил, что расширение отказывается продолжить работу без предварительной настройки.
 

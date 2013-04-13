@@ -5,11 +5,11 @@ description:
 keywords: ruby, bundle, rbenv, config, settings
 gplus: https://plus.google.com/116661482374124481456/posts/LjYisjF7VeZ
 published: true
-date: 2012-11-05 14:39:28
+date: 2012-11-05 18:39
 tags:
-  - ruby
-  - rvm
-  - rbenv
+- ruby
+- rvm
+- rbenv
 ---
 
 Довольно долго я использовал в своей практике [RVM](http://www.juev.ru/tags/rvm/ "Tags RVM"), но в конце концов мне надоело то, что возникают проблемы с обновлением пакетов, да и много чего еще. Решил в итоге взглянуть на альтернативу в лице [Rbenv](https://github.com/sstephenson/rbenv "Simple Ruby Version Management: rbenv").

@@ -1,12 +1,11 @@
---- 
+---
 layout: post
 title: Emacs keymap
 keywords: emacs,keymap
-date: 2009-08-18
+date: 2009-08-18 00:00
 tags:
-  - emacs
-  - tips
-
+- emacs
+- tips
 ---
 В иксах для упрощения работы с Emacs часто меняют клавиши CapsLock и Ctrl местами. А что делать в обычной консоли?? Где даже переключение раскладки до сих пор висит на неудобных Ctrl или Alt или сочетаний из этих клавиш???
 

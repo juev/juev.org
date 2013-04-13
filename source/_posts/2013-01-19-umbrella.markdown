@@ -5,14 +5,14 @@ description:
 keywords: umbrella, opendns, internet, security
 gplus: https://plus.google.com/116661482374124481456/posts/6UEu5aanLqw
 published: true
-date: 2013-01-19 12:35:48
+date: 2013-01-19 16:35
 tags:
-  - opendns
-  - dns
-  - security
-  - internet
-  - ipod
-  - mac
+- opendns
+- dns
+- security
+- internet
+- ipod
+- mac
 ---
 
 Вопросы сетевой безопасности в последнее время стоят особо остро. Тем более, если рассматривать работу в чужих сетях. И если перехватить трафик с мобильного телефона тяжело, но возможно, то при работе в wi-fi сетях перехватить трафик владельцу точки не представляет особой сложности.

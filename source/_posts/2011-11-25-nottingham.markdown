@@ -2,14 +2,13 @@
 layout: post
 title: Простые заметки
 keywords: mac, notes, tips, nottingham, simplenote, evernote
-date: 2011-11-25 12:15:34
+date: 2011-11-25 16:15
 tags:
-    - mac
-    - soft
-    - evernote
-    - services
-    - internet
-
+- mac
+- soft
+- evernote
+- services
+- internet
 ---
 
 В последнее время стал понимать, что использую **Evernote** не по назначению. А если быть

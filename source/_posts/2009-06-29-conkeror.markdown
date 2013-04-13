@@ -1,13 +1,10 @@
---- 
+---
 layout: post
-title: !binary |
-  Y29ua2Vyb3IgLSDQstC10LEg0L3QsCDQutC+0L3Rh9C40LrQsNGFINC/0LDQ
-  u9GM0YbQtdCy
+title: conkeror - веб на кончиках пальцев
 keywords: firefox,conkeror
-date: 2009-06-29
+date: 2009-06-29 00:00
 tags:
-  - firefox
-
+- firefox
 ---
 Согласно <a href="http://ru.wikipedia.org/wiki/Conkeror" rel="nofollow">Википедии</a>:
 <blockquote><strong>Conkeror</strong> — лёгкий веб-браузер на основе движка Gecko (ранее был реализован как расширение для Mozilla Firefox, теперь является самостоятельным приложением на базе XULRunner), делающий ставку на клавиатурную навигацию. Использует способы навигации по веб-страницам, выработанные текстовыми браузерами (например, Lynx), и использует клавиатурные сокращения редактора Emacs.</blockquote>

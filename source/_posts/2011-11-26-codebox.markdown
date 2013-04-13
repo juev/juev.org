@@ -3,12 +3,11 @@ layout: post
 title: Упрощаем работу с кодом - CodeBox
 keywords: mac, soft, codebox, dash, snippets, программирование
 gplus: https://plus.google.com/116661482374124481456/posts/EA1xUaJTsh4
-date: 2011-11-26 11:09:50
+date: 2011-11-26 15:09
 tags:
-    - mac
-    - soft
-    - programming
-
+- mac
+- soft
+- programming
 ---
 При работе с любым кодом значительно упрощают работу так называемые snippets, то есть
 кусочки кода, которые в нужный момент вставляются в текст, значительно сокращая время

@@ -5,11 +5,11 @@ description:
 keywords: twitter, web, button, tracking, track, dnt, social, private
 gplus: https://plus.google.com/116661482374124481456/posts/5NUcMUQv1Fo
 published: true
-date: 2012-07-12 11:00:20
+date: 2012-07-12 15:00
 tags:
-  - twitter
-  - internet
-  - social
+- twitter
+- internet
+- social
 ---
 
 17 мая 2012 года Twitter в своем блоге[^1] заявил о том, что теперь будет следить за своими пользователями для того, чтобы рекомендовать интересные аккаунты, основываясь на страницах, которые они посетили.

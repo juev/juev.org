@@ -5,12 +5,12 @@ description:
 keywords: lisp, mac, sicp, guile, textmate
 gplus: https://plus.google.com/116661482374124481456/posts/EgFox924oBm
 published: true
-date: 2012-03-12 19:29:34
+date: 2012-03-12 23:29
 tags:
-  - mac
-  - lisp
-  - textmate
-  - sicp
+- mac
+- lisp
+- textmate
+- sicp
 ---
 
 В очередной раз обратил свое внимание на книгу Харольда Абельсона и Джеральда Джей Сассмана "Структура и интерпретация компьютерных программ". Давно уже пытался ее прочесть, но каждый раз сталкивался с тем, что не мог нормально использовать scheme -- один из диалектов языка lisp.

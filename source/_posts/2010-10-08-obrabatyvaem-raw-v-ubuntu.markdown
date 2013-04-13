@@ -1,13 +1,11 @@
---- 
+---
 layout: post
-title: !binary |
-  0J7QsdGA0LDQsdCw0YLRi9Cy0LDQtdC8IFJBVyDQsiBVYnVudHU=
+title: Обрабатываем RAW в Ubuntu
 keywords: ubuntu,soft,raw,photo,shotwell,f-spot,fspot
-date: 2010-10-08
+date: 2010-10-08 00:00
 tags:
-  - ubuntu
-  - soft
-
+- ubuntu
+- soft
 ---
 При использовании Windows, для обработки фотографий использовал Adobe Lightroom. Замечательный инструмент! Относительно прост, функционален и очень удобен. 
 

@@ -1,12 +1,10 @@
---- 
+---
 layout: post
-title: !binary |
-  0J/RgNC+0YjQuNCy0LrQsCBIVEMgV2lsZGZpcmUg0L7RgiDQnNCi0KE=
+title: Прошивка HTC Wildfire от МТС
 keywords: android,wildfire,flashing,flash,прошивка,огонек
-date: 2011-02-27
+date: 2011-02-27 00:00
 tags:
-  - android
-
+- android
 ---
 <h2>Введение</h2>
 

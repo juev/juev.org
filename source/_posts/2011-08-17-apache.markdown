@@ -2,11 +2,10 @@
 layout: post
 title: Apache
 keywords: apache, cache, worker, debian, ubuntu
-date: 2011-08-17 08:54:40
+date: 2011-08-17 12:54
 tags:
-  - apache
-  - debian
-
+- apache
+- debian
 ---
 После перехода на сервера Amazon, я сразу же установил в качестве веб-сервера **nginx**,
 который использовал в различных целях перед этим. Более трех месяцев он у меня проработал

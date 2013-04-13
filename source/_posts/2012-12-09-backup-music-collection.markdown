@@ -5,14 +5,14 @@ description:
 keywords: music, collection, backup, google, amazon, itunes, match
 gplus: https://plus.google.com/116661482374124481456/posts/3dADF1xPzaL
 published: true
-date: 2012-12-09 12:20:19
+date: 2012-12-09 16:20
 tags:
-  - amazon
-  - google
-  - backup
-  - apple
-  - ipod
-  - music
+- amazon
+- google
+- backup
+- apple
+- ipod
+- music
 ---
 
 В моей музыкальной коллекции насчитывается более двух с половиной тысяч композиций. Причем большая часть представлена в формате lossless. На жестком диске все это дело занимает порядка 60 гигабайт. Потерять такую коллекцию довольно обидно. Восстановить конечно можно, но на это потребуется значительное количество времени. Поэтому стал искать возможность создания резервной копии.

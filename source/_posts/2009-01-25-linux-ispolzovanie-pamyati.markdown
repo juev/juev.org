@@ -1,13 +1,11 @@
---- 
+---
 layout: post
-title: !binary |
-  bGludXgg0LjRgdC/0L7Qu9GM0LfQvtCy0LDQvdC40LUg0L/QsNC80Y/RgtC4
+title: linux использование памяти
 keywords: linux,memory,swap,tips
-date: 2009-01-25
+date: 2009-01-25 00:00
 tags:
-  - memory
-  - tips
-
+- memory
+- tips
 ---
 По умолчанию в linux используются довольно консервативные параметры использования памяти.  swap начинает использоваться при заполнении памяти до уровня 40%. Файловый кеш рассчитан на использование примерно 75% уровня свободной памяти.
 

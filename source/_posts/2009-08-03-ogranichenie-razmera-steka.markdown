@@ -1,14 +1,11 @@
---- 
+---
 layout: post
-title: !binary |
-  0J7Qs9GA0LDQvdC40YfQtdC90LjQtSDRgNCw0LfQvNC10YDQsCDRgdGC0LXQ
-  utCw
+title: Ограничение размера стека
 keywords: vps,memory,stack,kernel,limits
-date: 2009-08-03
+date: 2009-08-03 00:00
 tags:
-  - vps
-  - memory
-
+- vps
+- memory
 ---
 При использовании VPS-серверов очень эффективным средством экономии памяти становиться ограничение размера стека. Я решил проверить, можно ли подобное средство использовать на рабочей станции?
 

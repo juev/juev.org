@@ -1,13 +1,10 @@
---- 
+---
 layout: post
-title: !binary |
-  d29yZHByZXNzINC/0LvQsNCz0LjQvdGLINC80L7QtdCz0L4g0LHQu9C+0LPQ
-  sC4uLg==
+title: wordpress плагины моего блога...
 keywords: wordpress,plugins
-date: 2009-05-11
+date: 2009-05-11 00:00
 tags:
-  - wordpress
-
+- wordpress
 ---
 За время моего молчания прозвучало две просьбы. Одна касается вопроса - какой движок используется для блога. А второй - настройка оконного менеджера awesome.
 

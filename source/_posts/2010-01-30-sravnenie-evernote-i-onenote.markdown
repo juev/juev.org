@@ -1,14 +1,12 @@
---- 
+---
 layout: post
-title: !binary |
-  0KHRgNCw0LLQvdC10L3QuNC1IEV2ZXJub3RlINC4IE9uZU5vdGU=
+title: Сравнение Evernote и OneNote
 keywords: internet,servisec,evernote,onenote
-date: 2010-01-30
+date: 2010-01-30 00:00
 tags:
-  - evernote
-  - internet
-  - services
-
+- evernote
+- internet
+- services
 ---
 Про Evernote я уже писал в своей статье <a href="/2010/01/25/evernote-pomnit-vse/">Evernote – помнить всё</a>. Довольно удобный клиент, позволяющий всю необходимую информацию собирать в одном месте.
 

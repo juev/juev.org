@@ -5,10 +5,10 @@ description:
 keywords: mac, osx, soft, apptivate
 gplus: https://plus.google.com/116661482374124481456/posts/8PJBWE7NhTu
 published: true
-date: 2012-07-04 11:24:26
+date: 2012-07-04 15:24
 tags:
-  - mac
-  - soft
+- mac
+- soft
 ---
 
 Запуск приложений или переключение между ними в Mac организовано почти точно так же, как и в Windows. Есть два варианта для:

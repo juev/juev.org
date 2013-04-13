@@ -5,10 +5,10 @@ description:
 keywords: ulysses, text, scrivener, write, writers
 gplus: 
 published: true
-date: 2013-04-06 11:42:38
+date: 2013-04-06 15:42
 tags:
-  - mac
-  - soft
+- mac
+- soft
 ---
 На днях состоялся выпуск новой версии программы [Ulysses][1]. Я был с ней уже давно знаком, поэтому, когда узнал об обновлении, купил ее вновь. Тем более что обещали много нового.
 

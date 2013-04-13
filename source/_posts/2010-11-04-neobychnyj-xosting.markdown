@@ -1,14 +1,12 @@
---- 
+---
 layout: post
-title: !binary |
-  0J3QtdC+0LHRi9GH0L3Ri9C5INGF0L7RgdGC0LjQvdCz
+title: Необычный хостинг
 keywords: amazon,github,hosting,хостинг
-date: 2010-11-04
+date: 2010-11-04 00:00
 tags:
-  - хостинг
-  - amazon
-  - github
-
+- hosting
+- amazon
+- github
 ---
 Продолжаю думать о переносе блога на статическую основу. Пока изучаю emacs muse, решил поискать различные варианты хостинга. 
 

@@ -1,12 +1,11 @@
---- 
+---
 layout: post
 title: Jekyll &amp; Hyde
 keywords: jekyll,хостинг,github
-date: 2010-11-13
+date: 2010-11-13 00:00
 tags:
-  - jekyll
-  - хостинг
-
+- jekyll
+- hosting
 ---
 На сегодняшний день создается множество различных движков для создания сайтов. Самые популярные это <code>WordPress</code>, <code>Drupal</code>, <code>Joomla</code>, есть еще множество других, отличающихся по своим функциям и возможностям. 
 

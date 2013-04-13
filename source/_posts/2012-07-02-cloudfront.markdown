@@ -5,13 +5,13 @@ description:
 keywords: amazon, hosting, cloudfront, static site, fast, openshift
 gplus: https://plus.google.com/116661482374124481456/posts/F5sx166m8Tu
 published: true
-date: 2012-07-02 12:03:57
+date: 2012-07-02 16:03
 tags:
-  - amazon
-  - hosting
-  - tips
-  - openshift
-  - cloudfront
+- amazon
+- hosting
+- tips
+- openshift
+- cloudfront
 ---
 
 Мне всегда нравился Amazon. С его сервисами я уже работаю порядка двух лет. Еще когда использовал в качестве движка WordPress, перенес всю статику (изображения, стили) на сервера CloudFront, после чего скорость работы сайта выросла и довольно значительно.

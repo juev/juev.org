@@ -1,13 +1,11 @@
---- 
+---
 layout: post
-title: !binary |
-  V2luZG93czog0YDQtdC20LjQvCDQs9C40LHQtdGA0L3QsNGG0LjQuA==
+title: 'Windows: режим гибернации'
 keywords: windows,services,hibernate
-date: 2010-06-29
+date: 2010-06-29 00:00
 tags:
-  - windows
-  - services
-
+- windows
+- services
 ---
 Очень долгое время мой компьютер работал не отключаясь месяцами. И проблем не знал.
 

@@ -3,9 +3,9 @@ layout: post
 title: Мои впечатления от Apple
 keywords: mac, apple, mac mini, digital, macos
 gplus: https://plus.google.com/116661482374124481456/posts/Doqw4mg3CcH
-date: 2011-10-01 12:19:25
+date: 2011-10-01 16:19
 tags:
-  - mac
+- mac
 ---
 Давно уже я задумывался о покупке Mac. Но меня всегда останавливала его стоимость. Я
 считал, что отдавать такие деньги просто бессмысленно? Куда проще поставить MacOS на

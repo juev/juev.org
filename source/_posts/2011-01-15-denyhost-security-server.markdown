@@ -1,13 +1,11 @@
---- 
+---
 layout: post
-title: !binary |
-  RGVueUhvc3Qg0L3QsCDRgdGC0YDQsNC20LUg0YHQtdGA0LLQtdGA0LA=
+title: DenyHost на страже сервера
 keywords: vps,security,denyhost,ssh,безопасность,сервер
-date: 2011-01-15
+date: 2011-01-15 00:00
 tags:
-  - vps
-  - security
-
+- vps
+- security
 ---
 В статье <a href="/2010/10/09/bezopasnost-vps-servera/">Безопасность VPS-сервера</a> я уже описывал те мероприятия, что необходимо совершить для обеспечения безопасной работы на удаленном сервере.
 

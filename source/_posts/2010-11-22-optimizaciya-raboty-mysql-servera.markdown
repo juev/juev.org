@@ -1,14 +1,11 @@
---- 
+---
 layout: post
-title: !binary |
-  0J7Qv9GC0LjQvNC40LfQsNGG0LjRjyDRgNCw0LHQvtGC0YsgTXlTUUwt0YHQ
-  tdGA0LLQtdGA0LA=
+title: Оптимизация работы MySQL-сервера
 keywords: vps,mysql,оптимизация,настройка
-date: 2010-11-22
+date: 2010-11-22 00:00
 tags:
-  - vps
-  - mysql
-
+- vps
+- mysql
 ---
 После того, как перешел на Linode, я mysql-сервер установил, и с тех пор его не трогал. Возникали проблемы с нехваткой памяти во время стресс-нагрузки, но я никак не мог связать, с чем именно это происходило. 
 

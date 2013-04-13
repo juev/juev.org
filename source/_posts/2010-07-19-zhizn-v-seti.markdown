@@ -1,14 +1,12 @@
---- 
+---
 layout: post
-title: !binary |
-  0JbQuNC30L3RjCDQsiDRgdC10YLQuA==
+title: Жизнь в сети
 keywords: life,internet,services,chrome
-date: 2010-07-19
+date: 2010-07-19 00:00
 tags:
-  - internet
-  - services
-  - chrome
-
+- internet
+- services
+- chrome
 ---
 Сегодня с утра, неожиданно для меня, вышел из строя монитор.
 

@@ -1,12 +1,11 @@
---- 
+---
 layout: post
-title: "Gentoo: dhcp &amp; dns"
+title: 'Gentoo: dhcp &amp; dns'
 keywords: gentoo,dns,dhcp,google,server
-date: 2009-12-09
+date: 2009-12-09 00:00
 tags:
-  - gentoo
-  - dns
-
+- gentoo
+- dns
 ---
 На русском форуме gentoo часто встречаю вопросы по тому, как сделать так, чтобы при рабочем dhcp-клиенте не затирались записи в файле <em>/etc/resolv.conf</em>?
 

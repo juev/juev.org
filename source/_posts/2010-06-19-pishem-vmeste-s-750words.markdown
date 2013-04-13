@@ -1,13 +1,11 @@
---- 
+---
 layout: post
-title: !binary |
-  0J/QuNGI0LXQvCDQstC80LXRgdGC0LUg0YEgNzUwd29yZHM=
+title: Пишем вместе с 750words
 keywords: internet,services,750words,write
-date: 2010-06-19
+date: 2010-06-19 00:00
 tags:
-  - internet
-  - services
-
+- internet
+- services
 ---
 Многие мечтают о том, что когда-нибудь у них появится свободное время и начнут писать. О чем не важно, это могут быть просто жизненные истории, могут быть сказки. Главное, что многие из нас носят в себе идею стать писателем.
 
