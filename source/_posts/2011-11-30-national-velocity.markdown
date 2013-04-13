@@ -3,12 +3,11 @@ layout: post
 title: nvALT - Simplenote на кончиках пальцев
 keywords: mac, soft, markdown, nvalt, note
 gplus: https://plus.google.com/116661482374124481456/posts/7tpfoKtortC
-date: 2011-11-30 20:29:30
+date: 2011-12-01 00:29
 tags:
-    - mac
-    - soft
-    - markdown
-
+- mac
+- soft
+- markdown
 ---
 
 Все больше убеждаюсь в том, что для хранения заметок лучше всего использовать сервис [Simplenote][]. Все очень просто, удобно, а главное -- бесплатно!

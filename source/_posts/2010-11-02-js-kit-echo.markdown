@@ -1,13 +1,10 @@
---- 
+---
 layout: post
-title: !binary |
-  SnMtS2l0IEVjaG8g0LIg0LrQsNGH0LXRgdGC0LLQtSDRgdC40YHRgtC10LzR
-  iyDQutC+0LzQvNC10L3RgtC40YDQvtCy0LDQvdC40Y8=
+title: Js-Kit Echo в качестве системы комментирования
 keywords: webdesign,comments,js-kit,echo
-date: 2010-11-02
+date: 2010-11-02 00:00
 tags:
-  - webdesign
-
+- webdesign
 ---
 В течение нескольких дней тестировал в работе систему комментирования <a href="http://aboutecho.com/" rel="nofollow">Js-Kit Echo</a>. 
 

@@ -5,11 +5,11 @@ description:
 keywords: cloudfront, amazon, htaccess, seo
 gplus: https://plus.google.com/116661482374124481456/posts/8BzrgTNqfd7
 published: true
-date: 2012-07-03 11:26:18
+date: 2012-07-03 15:26
 tags:
-  - amazon
-  - cloudfront
-  - tips
+- amazon
+- cloudfront
+- tips
 ---
 
 При использовании [CloudFront](/2012/07/02/cloudfront/ "Хостинг сайтов с помощью CloudFront") возникает проблема дублирования данных. Один и тот же сайт становится доступным по двум разным доменам.

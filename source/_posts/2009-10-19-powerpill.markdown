@@ -1,12 +1,11 @@
---- 
+---
 layout: post
 title: Powerpill
 keywords: archlinux,powerpill,aria2
-date: 2009-10-19
+date: 2009-10-19 00:00
 tags:
-  - archlinux
-  - internet
-
+- archlinux
+- internet
 ---
 Не могу сказать, что являлось причиной, провайдер или нагруженость серверов. Но при установке <strong>archlinux</strong> столкнулся с ситуацией, когда от возможных 250 килобайт в секунду скорости использовалось только 60 килобайт в среднем.
 

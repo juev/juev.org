@@ -5,9 +5,9 @@ description:
 keywords: ruby, script, clean, desktop, internet
 gplus: https://plus.google.com/116661482374124481456/posts/YEGiEULZ21v
 published: true
-date: 2012-09-29 10:53:47
+date: 2012-09-29 14:53
 tags:
-  - ruby
+- ruby
 ---
 
 У многих при работе в интернете на жестком диске образуется свалка из файлов. Когда находишь что-то интересное, качаешь этот файл и он продолжает себе лежать в папке Downloads или на рабочем столе.

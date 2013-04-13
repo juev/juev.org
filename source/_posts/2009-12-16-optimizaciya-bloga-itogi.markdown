@@ -1,14 +1,11 @@
---- 
+---
 layout: post
-title: !binary |
-  0J7Qv9GC0LjQvNC40LfQsNGG0LjRjyDQsdC70L7Qs9CwIC0g0LjRgtC+0LPQ
-  uA==
+title: Оптимизация блога - итоги
 keywords: wordpress,apache
-date: 2009-12-16
+date: 2009-12-16 00:00
 tags:
-  - wordpress
-  - apache
-
+- wordpress
+- apache
 ---
 Добился определенных результатов в оптимизации своего блога.
 

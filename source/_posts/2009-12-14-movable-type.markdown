@@ -1,11 +1,10 @@
---- 
+---
 layout: post
 title: Movable Type
 keywords: movable type,mt
-date: 2009-12-14
+date: 2009-12-14 00:00
 tags:
-  - MT
-
+- MT
 ---
 Источник <a href="http://movable-type.ru/" rel="nofollow">movable-type.ru</a>:
 <blockquote><strong>Movable Type — лучший движок для блога</strong>, отличающийся мощностью, гибкостью и удобством работы. 		Движок разрабатывается профессионалами — компанией Six Apart, отлично зарекомендовавшей себя в мире блогинга.

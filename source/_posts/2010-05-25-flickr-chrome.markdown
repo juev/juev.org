@@ -1,12 +1,10 @@
---- 
+---
 layout: post
-title: !binary |
-  0KDQsNCx0L7RgtCw0LXQvCDRgSBGbGlja3Ig0LIgQ2hyb21l
+title: Работаем с Flickr в Chrome
 keywords: flickr,chrome,client
-date: 2010-05-25
+date: 2010-05-25 00:00
 tags:
-  - chrome
-
+- chrome
 ---
 <strong>Flickr</strong> - крупнейшая социальная сеть фотографов со всего мира. Крупнейшая и лучшая. Первая система, которая стала использовать в своей работе технологии web2.0.
 

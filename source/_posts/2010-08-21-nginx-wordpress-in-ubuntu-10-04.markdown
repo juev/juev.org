@@ -1,13 +1,12 @@
---- 
+---
 layout: post
-title: "Nginx & WordPress \xD0\xB2 Ubuntu 10.04"
+title: Nginx &amp; WordPress в Ubuntu 10.04
 keywords: nginx,wordpress,ubuntu
-date: 2010-08-21
+date: 2010-08-21 00:00
 tags:
-  - nginx
-  - wordpress
-  - ubuntu
-
+- nginx
+- wordpress
+- ubuntu
 ---
 Продолжаю эксперименты на своем VPS, переносить текущий блог пока не готов, но думаю, в скором времени все будет.
 

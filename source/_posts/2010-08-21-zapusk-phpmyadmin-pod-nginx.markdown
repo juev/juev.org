@@ -1,13 +1,11 @@
---- 
+---
 layout: post
-title: !binary |
-  0JfQsNC/0YPRgdC6IHBocG15YWRtaW4g0L/QvtC0IE5naW54
+title: Запуск phpmyadmin под Nginx
 keywords: nginx,phpmyadmin,vps
-date: 2010-08-21
+date: 2010-08-21 00:00
 tags:
-  - nginx
-  - vps
-
+- nginx
+- vps
 ---
 После перехода на использование чистого Nginx на сервере, столкнулся с неожиданной проблемой неработоспособности phpmyadmin. По сути все правильно, ведь при установке проводиться только конфигурация веб-сервера Apache, и сам Nginx ничего не знает о существовании данной утилиты.
 

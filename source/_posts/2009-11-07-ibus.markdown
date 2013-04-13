@@ -1,14 +1,11 @@
---- 
+---
 layout: post
-title: !binary |
-  aWJ1cyAtINC/0LXRgNC10LrQu9GO0YfQtdC90LjQtSDRgNCw0YHQutC70LDQ
-  tNC60Lg=
+title: ibus - переключение раскладки
 keywords: gentoo,ibus
-date: 2009-11-07
+date: 2009-11-07 00:00
 tags:
-  - gentoo
-  - ibus
-
+- gentoo
+- ibus
 ---
 Я уже описывал про ibus, про его возможности, преимущества, поэтому останавливаться на этом не буду.
 

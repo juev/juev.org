@@ -2,14 +2,15 @@
 layout: post
 title: Криптография почтовых сообщений
 description: 
-keywords: email, privacy, crypt, gpg, pgp, openpgp, email client, mail.app, thunderbird, mailmate, postbox
+keywords: email, privacy, crypt, gpg, pgp, openpgp, email client, mail.app, thunderbird,
+  mailmate, postbox
 gplus: https://plus.google.com/116661482374124481456/posts/cNeBjqFWRPk
 published: true
-date: 2012-03-17 09:01:27
+date: 2012-03-17 13:01
 tags:
-  - mac
-  - security
-  - crypt
+- mac
+- security
+- crypt
 ---
 
 Каждый день люди отправляют миллионы писем в разные концы земного шара. Отправляют, но лишь небольшая часть всех пользователей задумывается о том, что каждое отправленное письмо проходит через множество серверов, прежде чем оказывается непосредственно у получателя.

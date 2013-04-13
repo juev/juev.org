@@ -1,17 +1,13 @@
---- 
+---
 layout: post
-title: !binary |
-  0J7RgNCz0LDQvdC40LfQsNGG0LjRjyDRgdC10YLQtdCy0L7QuSDQvNGD0LfR
-  i9C60LDQu9GM0L3QvtC5INCx0LjQsdC70LjQvtGC0LXQutC4INC90LAg0L/R
-  gNC40LzQtdGA0LUgbGFzdGZt
+title: Организация сетевой музыкальной библиотеки на примере lastfm
 keywords: internet,services,music,chrome
-date: 2010-07-16
+date: 2010-07-16 00:00
 tags:
-  - internet
-  - services
-  - music
-  - chrome
-
+- internet
+- services
+- music
+- chrome
 ---
 Практически у каждого пользователя компьютера организована своя музыкальная коллекция. Размеры коллекции у каждого свои и могут колебаться в очень больших пределах. У меня, к примеру, она составляет порядка 43 гигабайт (это при условии того, что я периодически устраиваю зачистку своей коллекции).
 

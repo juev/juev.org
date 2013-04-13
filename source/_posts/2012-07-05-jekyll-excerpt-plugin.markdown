@@ -5,11 +5,11 @@ description:
 keywords: jekyll, tips, plugin, excerpt
 gplus: https://plus.google.com/116661482374124481456/posts/B7BoVX3Rjqd
 published: true
-date: 2012-07-05 17:22:47
+date: 2012-07-05 21:22
 tags:
-  - jekyll
-  - tips
-  - develop
+- jekyll
+- tips
+- develop
 ---
 
 Сегодня в очередной раз занимался изменением оформления главной страницы сайта. Я уже предпринимал попытки по внедрению отображения только кусочков текста из статей на этой странице. Но несколько раз неудачно.

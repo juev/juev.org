@@ -1,13 +1,11 @@
---- 
+---
 layout: post
-title: !binary |
-  SGFiYXJpIC0g0YPQvdC40LrQsNC70YzQvdCw0Y8gQ01T
+title: Habari - уникальная CMS
 keywords: cms,habari
-date: 2009-07-07
+date: 2009-07-07 00:00
 tags:
-  - habari
-  - cms
-
+- habari
+- cms
 ---
 В прошлом месяце начал работать над новым проектом.
 

@@ -1,14 +1,11 @@
---- 
+---
 layout: post
-title: !binary |
-  0JLQtdC00LXQvdC40LUg0YHQv9C40YHQutCwINC00LXQuyDRgSDQv9C+0LzQ
-  vtGJ0YzRjiBSVE0=
+title: Ведение списка дел с помощью RTM
 keywords: rtm,internet,task,manager,rememberthemilk
-date: 2010-10-26
+date: 2010-10-26 00:00
 tags:
-  - services
-  - internet
-
+- services
+- internet
 ---
 В привычку у меня вошло ведение списков дел. Под Windows я использовал программу MyLifeOrganized, о которой писал в статьях <a href="/2010/08/28/mylifeorganized/">Списки задач</a> и <a href="/2010/04/07/analog-things-dlya-windows/">Аналог Things для Windows</a>. Когда же перешел на Linux, долго не мог найти альтернативы этой программе. И список вел на бумаге, что в большинстве случаев оказывается намного удобнее любых программных решений.
 

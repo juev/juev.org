@@ -3,11 +3,11 @@ layout: post
 title: TL-WR1043ND откат DD-WRT на стандартную прошивку
 keywords: tplink, flash, ddwrt, dd-wrt
 gplus: https://plus.google.com/116661482374124481456/posts/9cuZ1iZHK1r
-date: 2011-10-07 14:23:10
+date: 2011-10-07 18:23
 tags:
-  - tips
-  - ddwrt
-  - tplink
+- tips
+- ddwrt
+- tplink
 ---
 Долгое время я использовал в качестве домашнего роутера Asus wl-500gpv2, отличный роутер,
 многофункциональный. Прошивка Олега позволила избавиться от ряда проблем с маршрутизацией

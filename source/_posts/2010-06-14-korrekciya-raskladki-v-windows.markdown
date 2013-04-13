@@ -1,14 +1,11 @@
---- 
+---
 layout: post
-title: !binary |
-  0JrQvtGA0YDQtdC60YbQuNGPINGA0LDRgdC60LvQsNC00LrQuCDQsiBXaW5k
-  b3dz
+title: Коррекция раскладки в Windows
 keywords: windows,keyboard,tips
-date: 2010-06-14
+date: 2010-06-14 00:00
 tags:
-  - windows
-  - tips
-
+- windows
+- tips
 ---
 Как все просто было в Linux. Достаточно было поправить пару конфигов и раскладка клавиатуры менялась так, как тебе это нужно было. Именно таким образом меняли местами Alt и Ctrl, делали CapsLock как Ctrl. Удобство работы возрастало и использовать клавиатуру можно было на свое усмотрение. Каждый подстраивал ее под себя.
 

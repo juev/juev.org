@@ -1,13 +1,11 @@
---- 
+---
 layout: post
-title: !binary |
-  RW1hY3Mg0L3QsCDRgNC10LvRjNGB0LDRhS4uLg==
+title: Emacs на рельсах...
 keywords: emacs,rails,ror
-date: 2009-08-06
+date: 2009-08-06 00:00
 tags:
-  - emacs
-  - rails
-
+- emacs
+- rails
 ---
 ...или рельсы на Emacs'е. Речь пойдет о том, как использовать emacs для разработки веб-приложений в среде RubyOnRails.
 

@@ -1,14 +1,11 @@
---- 
+---
 layout: post
-title: !binary |
-  bnNjZCAtINC60Y3RiNC40YDQvtCy0LDQvdC40LUgZG5zINC30LDQv9GA0L7R
-  gdC+0LI=
+title: nscd - кэширование dns запросов
 keywords: nscd,dns,linux
-date: 2009-06-07
+date: 2009-06-07 00:00
 tags:
-  - dns
-  - linux
-
+- dns
+- linux
 ---
 В статье <strong><a href="/2009/03/17/pdnsd-lokalnyj-keshiruyushhij-dns-server/">pdnsd - локальный кэширующий dns сервер</a></strong> я уже рассказывал о том, как можно организовать локальный кэширующий сервер.
 

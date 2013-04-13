@@ -5,11 +5,11 @@ description:
 keywords: amazon, instance, web. server
 gplus: https://plus.google.com/116661482374124481456/posts/gxfmucSAeAn
 published: true
-date: 2012-10-13 14:40:56
+date: 2012-10-13 18:40
 tags:
-  - amazon
-  - vps
-  - server
+- amazon
+- vps
+- server
 ---
 
 Для проведения ряда экспериментов в вебе решил организовать свой сервер. А так как у меня уже оплачен [reserved instances](http://aws.amazon.com/ec2/reserved-instances/) на амазоне, то решил воспользоваться именно им.

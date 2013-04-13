@@ -3,12 +3,11 @@ layout: post
 title: Программы для веб дизайна
 description: Рассмотрим набор программ, позволяющий упростить разработку веб-сайтов.
 keywords: soft,design,webdesign,server,local,ruby,serve,jammit
-date: 2011-06-22 15:16:43
+date: 2011-06-22 19:16
 tags:
-  - design
-  - web
-  - ruby
-
+- design
+- web
+- ruby
 ---
 В последнее время активно занимаюсь веб-разработкой, создаю темы для *Wordpress*, изучаю
 *jquery*. Все это требует наличия локального веб-сервера, так как работать на удаленном

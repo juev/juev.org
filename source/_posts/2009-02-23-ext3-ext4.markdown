@@ -1,14 +1,12 @@
---- 
+---
 layout: post
-title: !binary |
-  0J/QtdGA0LXRhdC+0LQg0YEgZXh0MyDQvdCwIGV4dDQ=
+title: Переход с ext3 на ext4
 keywords: ext4,ext3
-date: 2009-02-23
+date: 2009-02-23 00:00
 tags:
-  - ext4
-  - ext3
-  - fs
-
+- ext4
+- ext3
+- fs
 ---
 Сегодня мало спал. Лег в 12 ночи, проснулся в 5 утра. Причина неизвестна.
 

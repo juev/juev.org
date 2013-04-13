@@ -1,15 +1,12 @@
---- 
+---
 layout: post
-title: !binary |
-  R251UEcgLSDQsdC10LfQvtC/0LDRgdC90L7RgdGC0Ywg0Y3Qu9C10LrRgtGA
-  0L7QvdC90L7QuSDQv9C+0YfRgtGL
+title: GnuPG - безопасность электронной почты
 keywords: security,gnupg,firefox
-date: 2009-07-16
+date: 2009-07-16 00:00
 tags:
-  - security
-  - gnupg
-  - firefox
-
+- security
+- gnupg
+- firefox
 ---
 Иногда при использовании почтового сервиса бывает необходимо скрыть от посторонних глаз ту информацию, что передаем, или просто убедится в том, что полученное письмо отправлено именно тем человеком, что указан в адресе отправителя.
 

@@ -1,13 +1,12 @@
---- 
+---
 layout: post
 title: Debian antialiasing
 description: Как улучшить сглаживание шрифтов в Debian
 keywords: debian,fonts,antialiasing,hinting,дебиан,шрифты,сглаживание
-date: 2011-05-30
+date: 2011-05-30 00:00
 tags:
-  - debian
-  - fonts 
-
+- debian
+- fonts
 ---
 Вчера решил провести эксперимент с установкой *Gnome 3* в *Ubuntu*. За то время, что
 поработал с *Unity*, понял, что вещь красивая, но неудобная. Самые простые вещи

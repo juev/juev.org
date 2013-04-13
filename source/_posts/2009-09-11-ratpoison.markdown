@@ -1,12 +1,10 @@
---- 
+---
 layout: post
-title: !binary |
-  UmF0cG9pc29uIC0gc2NyZWVuINCyINC40LrRgdCw0YU=
+title: Ratpoison - screen в иксах
 keywords: ratpoison,wm,linux,tiling
-date: 2009-09-11
+date: 2009-09-11 00:00
 tags:
-  - wm
-
+- wm
 ---
 В задачу тайловых оконных менеджеров вкладывают не только возможность управления окнами программ, но и непосредственное управление расположением окон на экране.
 

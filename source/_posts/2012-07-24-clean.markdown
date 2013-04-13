@@ -5,10 +5,10 @@ description:
 keywords: mac, hide, dock, menubar, док, менюбар
 gplus: https://plus.google.com/116661482374124481456/posts/28tikJF9iS8
 published: true
-date: 2012-07-24 17:38:16
+date: 2012-07-24 21:38
 tags:
-  - mac
-  - tips
+- mac
+- tips
 ---
 
 Свой Mac Mini я выключаю крайне редко, и когда ухожу куда-нибудь, я его просто усыпляю. И в основном держу программы в запущенном состоянии. Зачем по несколько раз запускать одно и то же?

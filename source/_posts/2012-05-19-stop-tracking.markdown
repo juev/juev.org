@@ -5,11 +5,11 @@ description:
 keywords: internet, web, privacy, security, tracking, google, facebook, twitter
 gplus: https://plus.google.com/116661482374124481456/posts/RvWLTEm4Z3J
 published: true
-date: 2012-05-19 11:09:52
+date: 2012-05-19 15:09
 tags:
-  - security
-  - internet
-  - social
+- security
+- internet
+- social
 ---
 
 В современных браузерах появилась возможность блокировать куки от третьих сторон (таких как рекламные сервисы), и отправлять уведомление с просьбой не проводить отслеживание действий пользователя на сайте. Однако многие сервисы, как например, Google эти уведомления просто игнорирует и к каждому поисковому запросу добавляет свой код отслеживания.

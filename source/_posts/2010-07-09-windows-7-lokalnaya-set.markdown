@@ -1,13 +1,10 @@
---- 
+---
 layout: post
-title: !binary |
-  V2luZG93cyA3OiDQvdC1INGA0LDQsdC+0YLQsNC10YIg0LvQvtC60LDQu9GM
-  0L3QsNGPINGB0LXRgtGMPw==
+title: 'Windows 7: не работает локальная сеть?'
 keywords: windows,lan,решение проблем
-date: 2010-07-09
+date: 2010-07-09 00:00
 tags:
-  - windows
-
+- windows
 ---
 Операционная система Windows создается уже не одно десятилетие, постоянно развивается, постоянно меняется. И с каждым разом становиться все удобнее и проще.
 

@@ -1,14 +1,11 @@
---- 
+---
 layout: post
-title: !binary |
-  0KLQtdC60YHRgtC+0LLRi9C5INGA0LXQtNCw0LrRgtC+0YAg0LTQu9GPINGC
-  0LLQvtGA0YfQtdGB0YLQstCw
+title: Текстовый редактор для творчества
 keywords: windows,soft,write,writemonkey,q10,creawriter
-date: 2010-06-24
+date: 2010-06-24 00:00
 tags:
-  - soft
-  - windows
-
+- soft
+- windows
 ---
 На протяжении полумесяца для написания утренних страниц я использую сервис 750words, о котором упоминал в своей статье "<a href="/2010/06/19/pishem-vmeste-s-750words/">Пишем вместе с 750words</a>".
 

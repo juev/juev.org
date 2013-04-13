@@ -1,15 +1,15 @@
 ---
 layout: post
-title: "Блокируем элементы с помощью таблицы стилей"
+title: Блокируем элементы с помощью таблицы стилей
 description: 
 keywords: safari, mac, tips, ads block, ghostery
 gplus: https://plus.google.com/116661482374124481456/posts/ZBXVAAo1oa7
 published: true
-date: 2012-08-11 17:20:32
+date: 2012-08-11 21:20
 tags:
-  - internet
-  - mac
-  - tips
+- internet
+- mac
+- tips
 ---
 
 После того, как разработка почтового клиента Sparrow была остановлена в связи с покупкой его Google, я вернулся к использованию веб-интерфейса Gmail. И столкнулся с тем, что на его страницах показывается просто масса контекстной рекламы, которая и отвлекает и просто мешает. 

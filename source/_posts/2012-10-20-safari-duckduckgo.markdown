@@ -5,10 +5,10 @@ description:
 keywords: safari, duckduckgo, google, search
 gplus: https://plus.google.com/116661482374124481456/posts/eVtxFY8dH3B
 published: true
-date: 2012-10-20 17:00:22
+date: 2012-10-20 21:00
 tags:
-  - safari
-  - mac
+- safari
+- mac
 ---
 
 Мне очень нравится Safari, даже не смотря на то, что он медленнее открывает страницы и что под него нет такого большого числа расширений, что создали для firefox или для chrome.

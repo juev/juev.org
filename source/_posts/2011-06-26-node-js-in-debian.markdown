@@ -3,12 +3,11 @@ layout: post
 title: Установка node.js в Debian
 description: Рассмотрим установку node.js в среде debian без использования sudo.
 keywords: debian,node,javascript,server,sudo
-date: 2011-06-26 17:55:31
+date: 2011-06-26 21:55
 tags:
 - debian
 - node.js
 - javascript
-
 ---
 **Javascript** это один из самых популярных языков программирования на сервере **GitHub**.
 Каждый, кто хотя бы немного работал с конструированием веб-сайтов, непременно связывался с

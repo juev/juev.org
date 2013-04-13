@@ -1,14 +1,10 @@
---- 
+---
 layout: post
-title: !binary |
-  0JDQstGC0L7QvNCw0YLQuNGH0LXRgdC60L7QtSDQvNC+0L3RgtC40YDQvtCy
-  0LDQvdC40LU6INC/0YDQvtC00L7Qu9C20LXQvdC40LUg0LjRgdGC0L7RgNC4
-  0Lg=
+title: 'Автоматическое монтирование: продолжение истории'
 keywords: archlinux,halevt,mount,automount
-date: 2009-08-29
+date: 2009-08-29 00:00
 tags:
-  - archlinux
-
+- archlinux
 ---
 В своей статье <a href="/2009/08/24/mount/">Автоматическое монтирование</a> я уже описал основные проблемы, с которыми сталкивается начинающий пользователь при использовании Archlinux.
 

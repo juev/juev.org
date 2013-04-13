@@ -5,10 +5,10 @@ description:
 keywords: kindle, book, touch, amazon, ebook, instapaper, readability
 gplus: https://plus.google.com/116661482374124481456/posts/Hg22hzwRdxv
 published: true
-date: 2012-01-29 12:46:00
+date: 2012-01-29 16:46
 tags:
-  - amazon
-  - services
+- amazon
+- services
 ---
 
 Давно уже задумывался о покупке электронной книги. Читать я люблю, и в последнее время основной акцент стал делать на чтение с экрана. Если раньше я использовал для этого карманные компьютеры, то позже стал читать с экрана смарфтона. Но хотелось сделать чтение более комфортным.

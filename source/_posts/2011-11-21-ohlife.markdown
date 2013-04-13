@@ -3,11 +3,10 @@ layout: post
 title: Интернет-дневник OhLife
 keywords: internet, ohlife, diary, дневник, интернет, сервис
 gplus: https://plus.google.com/116661482374124481456/posts/SNiwCmG1PY1
-date: 2011-11-21 17:06:39
+date: 2011-11-21 21:06
 tags:
-    - internet
-    - services
-
+- internet
+- services
 --- 
 Многие не замечают жизни вокруг них. Не замечают окружающих людей, не замечают событий
 и отдают мало отчета тем действиям, что совершают сами. Более того, они не замечают того,

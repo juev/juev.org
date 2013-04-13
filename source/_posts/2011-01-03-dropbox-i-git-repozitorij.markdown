@@ -1,13 +1,11 @@
---- 
+---
 layout: post
-title: !binary |
-  RHJvcEJveCDQuCBHaXQt0YDQtdC/0L7Qt9C40YLQvtGA0LjQuQ==
+title: DropBox и Git-репозиторий
 keywords: dropbox,git
-date: 2011-01-03
+date: 2011-01-03 00:00
 tags:
-  - dropbox
-  - git
-
+- dropbox
+- git
 ---
 В последнее время вплотную работаю над разработкой статических сайтов. И очень удобно при этом использовать Git-репозитории. Разработка существенно упрощается, куда проще вносить какие-то новшества, пробовать новые техники...
 

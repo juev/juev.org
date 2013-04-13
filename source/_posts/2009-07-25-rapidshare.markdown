@@ -1,13 +1,11 @@
---- 
+---
 layout: post
-title: !binary |
-  0JDQstGC0L7QvNCw0YLQuNC30LDRhtC40Y8gcmFwaWRzaGFyZQ==
+title: Автоматизация rapidshare
 keywords: archlinux,soft,slimrat
-date: 2009-07-25
+date: 2009-07-25 00:00
 tags:
-  - archlinux
-  - soft
-
+- archlinux
+- soft
 ---
 Многие наверняка знают о системе файл-обмена rapidshare. Существует два способа работы с данным сервисом: платный и бесплатный. И если в случае с платным никаких проблем нет, так как нет никаких ограничений в скорости и времени загрузки. То в случае бесплатного аккаунта возникает масса проблем.
 

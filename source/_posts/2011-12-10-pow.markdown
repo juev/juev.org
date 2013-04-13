@@ -2,15 +2,14 @@
 layout: post
 title: Pow - простой локальный вебсервер
 keywords: mac, soft, design, internet, service, develope
-date: 2011-12-10 16:08:38
+date: 2011-12-10 20:08
 tags:
-  - mac
-  - daemon
-  - develop
-  - webdesign
-  - server
-  - node.js
-
+- mac
+- daemon
+- develop
+- webdesign
+- server
+- node.js
 ---
 
 При создании сайта важно иметь рабочий локальный веб-сервер под рукой, чтобы на локальной машине сразу же видеть те изменения, что вносятся и тут же при наличии ошибки их исправлять. И только по завершении работы, результат загружать на рабочий сервер.

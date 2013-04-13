@@ -5,13 +5,13 @@ description:
 keywords: mac, ssh, tunnel, openssh, autossh, launchd
 gplus: https://plus.google.com/116661482374124481456/posts/PSQhqLwfFtS
 published: true
-date: 2012-04-29 12:07:13
+date: 2012-04-29 16:07
 tags:
-  - mac
-  - soft
-  - ssh
-  - services
-  - security
+- mac
+- soft
+- ssh
+- services
+- security
 ---
 
 В целях организации шифрования последней мили я перепробовал массу сервисов, предоставляющих и VPN-туннели и SSH-туннели. Везде разная стоимость и разная политика использования. В итоге решил попробовать организовать свой собственный сервис. 

@@ -1,12 +1,11 @@
---- 
+---
 layout: post
 title: Emacs jabber
 keywords: emacs,jabber,client
-date: 2009-08-14
+date: 2009-08-14 00:00
 tags:
-  - emacs
-  - jabber
-
+- emacs
+- jabber
 ---
 За время использование операционной системой Linux я перепробовал массу jabber-клиентов. И в конце концов остановился на jabber-el.
 

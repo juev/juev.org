@@ -3,13 +3,12 @@ layout: post
 title: Не комментарии, но живой разговор
 keywords: blog, comments, livefire, realtime, facebook, twitter
 gplus: https://plus.google.com/116661482374124481456/posts/bkwBmjEnpFn
-date: 2012-01-04 10:02:08
+date: 2012-01-04 14:02
 tags:
-  - cms
-  - tips
-  - services
-  - social
-
+- cms
+- tips
+- services
+- social
 ---
 
 Прочитав статью [Storify Curation Tool Adds Conversation With Livefyre Comments][Readwriteweb], я узнал о том, что появилась новая система комментирования -- Livefyre, на которую переходят многие новостные сайты. 

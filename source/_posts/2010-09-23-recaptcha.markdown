@@ -1,12 +1,11 @@
---- 
+---
 layout: post
-title: "Recaptcha: Protect your Email"
+title: 'Recaptcha: Protect your Email'
 keywords: security,spam,email,captcha,recaptcha
-date: 2010-09-23
+date: 2010-09-23 00:00
 tags:
-  - security
-  - spam
-
+- security
+- spam
 ---
 После того, как отключил возможность работы с комментариями, решил оставить свои контактные данные для того, чтобы со мной можно было связаться. Задать вопросы, либо сделать предложение.
 

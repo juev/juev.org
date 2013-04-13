@@ -1,15 +1,12 @@
---- 
+---
 layout: post
-title: !binary |
-  V2VibWluIC0g0YPQv9GA0LDQstC70LXQvdC40LUg0YHQtdGA0LLQtdGA0L7Q
-  vA==
+title: Webmin - управление сервером
 keywords: vps,tips,webmin,debian
-date: 2009-07-15
+date: 2009-07-15 00:00
 tags:
-  - vps
-  - tips
-  - debian
-
+- vps
+- tips
+- debian
 ---
 Настройка удаленного сервера представляет определенные сложности, тем более для не подготовленного человека.
 

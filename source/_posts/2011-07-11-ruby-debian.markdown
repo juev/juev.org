@@ -2,11 +2,11 @@
 layout: post
 title: Ruby в Debian
 keywords: ruby,debian,rvm,version,manager
-date: 2011-07-11 10:57:58
+date: 2011-07-11 14:57
 tags:
-  - ruby
-  - debian
-  - rvm
+- ruby
+- debian
+- rvm
 ---
 Решил поэкспериментировать с Ruby 1.9.2, установил через aptitude и столкнулся с
 тем, что команда `ruby` все так же указывала на запуск руби версии 1.8.7.

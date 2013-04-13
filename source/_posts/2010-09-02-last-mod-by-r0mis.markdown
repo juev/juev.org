@@ -1,14 +1,11 @@
---- 
+---
 layout: post
-title: !binary |
-  0JzQvtC00LjRhNC40YbQuNGA0L7QstCw0L3QvdCw0Y8g0L/RgNC+0YjQuNCy
-  0LrQsCBOb2tpYSA1ODAw
+title: Модифицированная прошивка Nokia 5800
 keywords: symbian,soft,nokia,5800,flash,reflash,прошивка,lastmod,r0mis
-date: 2010-09-02
+date: 2010-09-02 00:00
 tags:
-  - soft
-  - symbian
-
+- soft
+- symbian
 ---
 С апреля прошлого года использую аппарат Nokia 5800. Замечательная штучка!
 

@@ -1,14 +1,12 @@
---- 
+---
 layout: post
-title: !binary |
-  0KHQtdGA0LLQuNGBINCx0LvQvtCz0L7QsiBXb3JkUHJlc3MuY29t
+title: Сервис блогов WordPress.com
 keywords: wordpress,internet
-date: 2010-02-15
+date: 2010-02-15 00:00
 tags:
-  - wordpress
-  - internet
-  - хостинг
-
+- wordpress
+- internet
+- hosting
 ---
 В современном мире лучше всего использовать LiveJournal или WordPress.com. Основная причина – бесплатность и направленность сервисов на высокие нагрузки в сочетании с использованием функций социальных сетей.
 

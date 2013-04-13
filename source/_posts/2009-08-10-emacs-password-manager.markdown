@@ -1,12 +1,11 @@
---- 
+---
 layout: post
 title: Emacs Password Manager
 keywords: emacs,security,password,manager,gnupg
-date: 2009-08-10
+date: 2009-08-10 00:00
 tags:
-  - emacs
-  - security
-
+- emacs
+- security
 ---
 Думаю, что объяснять, для чего нужны Password Managers не нужно. Ресурсов много, желательно для каждого использовать свои логины и пароли, причем пароли должны быть стойкими. Запомнить их проблематично, а когда количество ресурсов становиться более сотни - то и не реально.
 

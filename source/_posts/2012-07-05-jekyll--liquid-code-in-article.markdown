@@ -5,11 +5,11 @@ description:
 keywords: jekyll, tips, plugin, liquid
 gplus: https://plus.google.com/116661482374124481456/posts/E6Qk7QVSNFF
 published: true
-date: 2012-07-05 20:08:11
+date: 2012-07-06 00:08
 tags:
-  - jekyll
-  - tips
-  - develop
+- jekyll
+- tips
+- develop
 ---
 
 Когда писал статью [Jekyll excerpt plugin](/2012/07/05/jekyll-excerpt-plugin/ "Jekyll excerpt plugin"), столкнулся в очередной раз с проблемой отображения кода, написанного на языке разметки Liquid.

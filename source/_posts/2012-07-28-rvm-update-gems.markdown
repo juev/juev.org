@@ -5,11 +5,11 @@ description:
 keywords: ruby, rvm, update, bundle, xcode
 gplus: https://plus.google.com/116661482374124481456/posts/TwEHsTSCvHS
 published: true
-date: 2012-07-28 13:19:01
+date: 2012-07-28 17:19
 tags:
-  - ruby
-  - rvm
-  - tips
+- ruby
+- rvm
+- tips
 ---
 
 В ruby можно устанавливать гемы (gems) в самых различных версиях. и все они будут сосуществовать рядом друг с другом. После апдейта можно использовать команду `gem cleanup` для того, чтобы удалить старые версии пакетов.

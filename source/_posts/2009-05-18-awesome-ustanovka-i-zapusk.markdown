@@ -1,14 +1,12 @@
---- 
+---
 layout: post
-title: !binary |
-  YXdlc29tZTog0YPRgdGC0LDQvdC+0LLQutCwINC4INC30LDQv9GD0YHQug==
+title: 'awesome: установка и запуск'
 keywords: awesome,wm,archlinux,install,config
-date: 2009-05-18
+date: 2009-05-18 00:00
 tags:
-  - awesome
-  - wm
-  - archlinux
-
+- awesome
+- wm
+- archlinux
 ---
 Давно уже собирался, да все никак не мог собраться описать про тайловый менеджер окон awesome, который довольно давно использую в своей практике. А после того, как опробовал довольно большое число различных оконных менеджеров и окружений, могу смело утверждать, что это лучший оконный менеджер!
 

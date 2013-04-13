@@ -5,10 +5,10 @@ description:
 keywords: amazon, s3, cache, control, s3cmd
 gplus: https://plus.google.com/116661482374124481456/posts/JnJtN9RLjjH
 published: true
-date: 2013-03-08 15:58:30
+date: 2013-03-08 19:58
 tags:
-  - amazon
-  - soft
+- amazon
+- soft
 ---
 
 Перенес свои сайты на Amazon S3 и озадачился проблемой управления кешированием страниц. На обычном сервере все просто, достаточно прописать необходимые директивы в файл `.htaccess` или задать требуемые настройки в конфигурацию nginx.

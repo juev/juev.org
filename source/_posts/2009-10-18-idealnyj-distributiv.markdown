@@ -1,15 +1,13 @@
---- 
+---
 layout: post
-title: !binary |
-  0JjQtNC10LDQu9GM0L3Ri9C5INC00LjRgdGC0YDQuNCx0YPRgtC40LI=
+title: Идеальный дистрибутив
 keywords: gentoo,archlinux,ubuntu,debian,distribute,linux
-date: 2009-10-18
+date: 2009-10-18 00:00
 tags:
-  - gentoo
-  - archlinux
-  - ubuntu
-  - debian
-
+- gentoo
+- archlinux
+- ubuntu
+- debian
 ---
 Странное, все вокруг такое странное... не удивляйтесь, если я буду часто использовать данное слово в своем рассказе. Меня немного зациклило на нем. И теперь все вокруг меня странное, странный мир, странные программы. Странные люди...
 

@@ -5,11 +5,11 @@ description:
 keywords: amazon, s3, route53, hosting, dns
 gplus: https://plus.google.com/116661482374124481456/posts/JK1DCZJNw18
 published: true
-date: 2013-03-08 12:55:00
+date: 2013-03-08 16:55
 tags:
-  - amazon
-  - dns
-  - хостинг
+- amazon
+- dns
+- hosting
 ---
 
 В конце декабря 2012 года Amazon анонсировал возможность использования корневых доменов для хостинга статических сайтов со своего сервиса S3. 

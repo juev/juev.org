@@ -5,12 +5,12 @@ description:
 keywords: github, git, site, сайт, публикация, cname
 gplus: https://plus.google.com/116661482374124481456/posts/C4gRWScXbmL
 published: true
-date: 2012-06-08 06:35:48
+date: 2012-06-08 10:35
 tags:
-  - github
-  - git
-  - web
-  - jekyll
+- github
+- git
+- web
+- jekyll
 ---
 
 OpenShift по умолчанию предоставляет возможность использовать на своем аккаунте только три приложения. И как указывается в [FAQ](https://openshift.redhat.com/community/faq#t2n39 "FAQs - OpenShift by Red Hat"), для использования большего числа приложений необходимо просто зарегистрировать дополнительные аккаунты.

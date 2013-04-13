@@ -5,11 +5,11 @@ description:
 keywords: heroku, hosting, jekyll, static, site
 gplus: https://plus.google.com/116661482374124481456/posts/59N7MgEg8KM
 published: true
-date: 2012-03-09 15:22:06
+date: 2012-03-09 19:22
 tags:
-  - heroku
-  - jekyll
-  - hosting
+- heroku
+- jekyll
+- hosting
 ---
 
 12 апреля 2012 года будет ровно год, как я использую для своих сайтов сервер Amazon EC2. В среднем каждый месяц мне выставляют счет за использование машины и за трафик в пределах $8-$9. Что много меньше, чем если бы я использовал, как раньше, сервер на Linode. Хотя машины примерно одинакового типа.
