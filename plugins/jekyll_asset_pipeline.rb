@@ -33,7 +33,7 @@ module JekyllAssetPipeline
     end
 
     def html
-      "<link href='http://static.juev.ru/assets/#{@filename}' rel='stylesheet' type='text/css' />\n"
+      "<link href='//static.juev.ru/assets/#{@filename}' rel='stylesheet' type='text/css' />\n"
     end
   end
 
@@ -43,7 +43,7 @@ module JekyllAssetPipeline
     end
 
     def html
-      "<script src='http://static.juev.ru/assets/#{@filename}' type='text/javascript'></script>\n"
+      "<script src='//static.juev.ru/assets/#{@filename}' type='text/javascript'></script>\n"
     end
   end
 end
