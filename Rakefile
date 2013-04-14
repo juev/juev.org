@@ -6,11 +6,10 @@ task :default => :build
 
 desc 'Build site with Jekyll.'
 task :build  => :clean do
-  Rake::Task["tags"].execute
-  Rake::Task["tag_cloud"].execute
   print "Compiling website...\n"
   system "jekyll"
-  system "rm source/_includes/tag_cloud.html"
+  Rake::Task["gzip_html"].execute
+  Rake::Task["gzip_assets"].execute
 end
 
 desc 'Clean public folder'
@@ -25,10 +24,10 @@ task :deploy => :build do
 #  system "rsync -az --delete public/ ec2:~/www/juevru/"
 #  system "s3cmd sync -P --delete-removed --no-preserve public/ s3://www.juev.ru/"
 
-  system 's3cmd sync --acl-public --exclude "*.*" --include "*.png" --include "*.jpg" --include "*.ico" --add-header="Expires: Sat, 20 Nov 2020 18:46:39 GMT" --add-header="Cache-Control: max-age=6048000" --no-preserve public/ s3://www.juev.ru/'
-  system 's3cmd sync --acl-public --exclude "*.*" --include  "*.css" --include "*.js" --add-header="Cache-Control: max-age=604800"  --no-preserve public/ s3://www.juev.ru'
-  system 's3cmd sync --acl-public --exclude "*.*" --include "*.html" --add-header="Cache-Control: max-age=0, private, must-revalidate" --no-preserve public/ s3://www.juev.ru'
-  system 's3cmd sync --acl-public --exclude ".DS_Store" --exclude "assets/" --exclude "js/" --no-preserve public/ s3://www.juev.ru/'
+  system 's3cmd sync --acl-public --exclude "*.*" --include "*.png" --include "*.jpg" --include "*.ico" --guess-mime-type --add-header="Expires: Sat, 20 Nov 2020 18:46:39 GMT" --add-header="Cache-Control: max-age=6048000" --no-preserve public/ s3://www.juev.ru'
+  system 's3cmd sync --acl-public --exclude "*.*" --include  "*.css" --include "*.js" --guess-mime-type --add-header "Content-Encoding: gzip" --add-header "Vary: Accept-Encoding" --add-header="Cache-Control: public, max-age=604800"  --no-preserve public/ s3://static.juev.ru'
+  system 's3cmd sync --acl-public --exclude "*.*" --include "*.html" --mime-type="text/html; charset=utf-8" --add-header "Content-Encoding: gzip" --add-header="Cache-Control: max-age=0, private, must-revalidate" --no-preserve public/ s3://www.juev.ru'
+  system 's3cmd sync --acl-public --exclude ".DS_Store" --exclude "assets/" --exclude "js/" --exclude "*.html" --guess-mime-type --no-preserve public/ s3://www.juev.ru'
   system 's3cmd sync --acl-public --delete-removed --no-preserve public/ s3://www.juev.ru/'
 end
 
@@ -59,60 +58,25 @@ task :new do
   exit
 end
 
-desc 'Generate tags pages'
-task :tags do
-  puts "Generating tags..."
-  require 'rubygems'
-  require 'jekyll'
-  include Jekyll::Filters
-
-  options = Jekyll.configuration({})
-  site = Jekyll::Site.new(options)
-  site.read_posts('')
-
-  # Remove tags directory before regenerating
-  FileUtils.rm_rf("source/tags")
-
-  site.tags.sort.each do |tag, posts|
-    html = <<-HTML
----
-layout: default
-title: "tagged: #{tag}"
-syntax-highlighting: yes
----
-  <h1 class="title">Tagged by #{tag}</h1>
-  {% for post in site.posts %}{% for tag in post.tags %}{%if tag == "#{tag}" %}<div class="list"><a href="{{ post.url }}">{{ post.title }}</a></div>{%endif%}{%endfor%}{% endfor %}
-HTML
-
-    FileUtils.mkdir_p("source/tags/#{tag}")
-    File.open("source/tags/#{tag}/index.html", 'w+') do |file|
-      file.puts html
-    end
+desc "GZip HTML"
+task :gzip_html do
+  puts "## GZipping HTML"
+  system 'find public/ -type f -name \*.html -exec gzip -9 {} \;'
+  # Batch rename .html.gz to .html
+  Dir['**/*.html.gz'].each do |f|
+    test(?f, f) and File.rename(f, f.gsub(/\.html\.gz/, '.html'))
   end
-  puts 'Done.'
 end
 
-desc 'Generate tags cloud'
-task :tag_cloud do
-  puts 'Generating tag cloud...'
-  require 'rubygems'
-  require 'jekyll'
-  include Jekyll::Filters
-
-  options = Jekyll.configuration({})
-  site = Jekyll::Site.new(options)
-  site.read_posts('')
-
-  html = ''
-  max_count = site.tags.map{|t,p| p.count}.max
-  site.tags.sort.each do |tag, posts|
-    s = posts.count
-    font_size = ((20 - 10.0*(max_count-s)/max_count)*2).to_i/1.3
-    line_height = font_size * 1.3
-    html << "<a href=\"/tags/#{tag.gsub(/ /,"%20")}/\" title=\"Postings tagged #{tag}\" style=\"font-size: #{font_size}px; line-height:#{line_height}px\">#{tag}</a> "
+desc "GZip Assets"
+task :gzip_assets do
+  puts "## GZipping Assets"
+  styles_dir = "public/assets"
+  system "gzip -9 #{styles_dir}/*"
+  Dir["#{styles_dir}/*.css.gz"].each do |f|
+    test(?f, f) and File.rename(f, f.gsub(/\.css\.gz/, '.css'))
   end
-  File.open('source/_includes/tag_cloud.html', 'w+') do |file|
-    file.puts html
+  Dir["#{styles_dir}/*.js.gz"].each do |f|
+    test(?f, f) and File.rename(f, f.gsub(/\.js\.gz/, '.js'))
   end
-  puts 'Done.'
 end

@@ -2,6 +2,9 @@
 <html itemscope itemtype="http://schema.org/Article">
 <head>
   <link rel="dns-prefetch" href="//static.juev.ru">
+  <link rel="dns-prefetch" href="//www.juev.ru">
+  <link rel="dns-prefetch" href="//use.typekit.net">
+  <link rel="dns-prefetch" href="//t.typekit.net">
   <meta http-equiv="content-type" content="text/html; charset=UTF-8">
   <title>{% if page.title %}{{ page.title }} | {% endif %}{{ site.title }}</title>
   <meta name="keywords" content="{% if page.keywords %}{{page.keywords}}{% else %}{{site.keywords}}{% endif %}">
@@ -13,11 +16,14 @@
   <meta itemprop="keywords" content="{% if page.keywords %}{{page.keywords}}{% else %}{{site.keywords}}{% endif %}">
   <meta itemprop="datePublished" content="{% if page.date %}{{ page.date | date: "%Y-%m-%d" }}{% else %}{{ site.time | date: "%Y-%m-%d" }}{% endif %}"/>
   <link rel="canonical" href="http://www.juev.ru{{ page.id | canonical }}/">
-  <link rel="shortcut icon" href="/favicon.ico">
+  <link rel="shortcut icon" href="//static.juev.ru/favicon.ico">
   <link rel="apple-touch-icon" href="/apple-touch-icon.png">
-  <link rel="stylesheet" href="/assets/master.css?1" type="text/css" media="screen, projection">
+{% css_asset_tag master %}
+- /_assets/css/style.css
+- /_assets/css/shadowbox.css
+{% endcss_asset_tag %}
   <script type="text/javascript" src="//use.typekit.net/xyv2iko.js"></script>
-  <script type="text/javascript">try{Typekit.load();}catch(e){}</script>  
+  <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
   <link rel="alternate" type="application/rss+xml" title="RSS Feed" href="http://feeds.feedburner.com/Juev">
 </head>
 <body class="wide">
@@ -39,14 +45,24 @@
   <div class="footer">
     <div class="width-fix">
       <p><a href="/articles.html" rel="nofollow">Список статей</a> :: <a href="/tags.html" rel="nofollow">Теги</a> :: <a href="//feeds.feedburner.com/Juev" rel="nofollow">RSS</a></p>
-      <p>&copy; 2008&ndash;2013 <a href="http://plus.google.com/116661482374124481456?rel=author">Denis Evsyukov</a>. Contact me via <a href="&#109;&#97;&#105;&#108;&#116;&#111;&#58;&#100;&#101;&#110;&#105;&#115;&#64;&#101;&#118;&#115;&#121;&#117;&#107;&#111;&#118;&#46;&#111;&#114;&#103;" rel="nofollow">mail</a>,
-      <a href="//twitter.com/#!/Juev" rel="nofollow">twitter</a> or
+      <p>&copy; 2008&ndash;{{ site.time | date: "%Y" }}&nbsp;<a href="http://plus.google.com/116661482374124481456?rel=author">Denis Evsyukov</a>. Contact me via <a href="&#109;&#97;&#105;&#108;&#116;&#111;&#58;&#100;&#101;&#110;&#105;&#115;&#64;&#101;&#118;&#115;&#121;&#117;&#107;&#111;&#118;&#46;&#111;&#114;&#103;" rel="nofollow">mail</a>,&nbsp;
+      <a href="//twitter.com/#!/Juev" rel="nofollow">twitter</a> or&nbsp;
       <a href="//github.com/Juev" rel="nofollow">github</a></p>
     </div>
   </div>
   <script type="text/javascript">
-   var _gaq = _gaq || []; _gaq.push(['_setAccount', 'UA-26480484-2']); _gaq.push(['_trackPageview']);
-  </script>
-  <script src="/assets/master.js?1" type="text/javascript"></script>
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-26480484-2']);
+    _gaq.push(['_trackPageview']);
+    (function() {
+     var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+     ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+     var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+     })();
+   </script>
+{% javascript_asset_tag master %}
+- /_assets/js/shadowbox.js
+- /_assets/js/main.js
+{% endjavascript_asset_tag %}
 </body>
 </html>
