@@ -16,13 +16,12 @@
   <meta itemprop="keywords" content="{% if page.keywords %}{{page.keywords}}{% else %}{{site.keywords}}{% endif %}">
   <meta itemprop="datePublished" content="{% if page.date %}{{ page.date | date: "%Y-%m-%d" }}{% else %}{{ site.time | date: "%Y-%m-%d" }}{% endif %}"/>
   <link rel="canonical" href="http://www.juev.ru{{ page.id | canonical }}/">
-  <link rel="shortcut icon" href="//static.juev.ru/favicon.ico">
+  <link rel="shortcut icon" href="/favicon.ico">
   <link rel="apple-touch-icon" href="/apple-touch-icon.png">
 {% css_asset_tag master %}
 - /_assets/css/style.css
 - /_assets/css/shadowbox.css
 {% endcss_asset_tag %}
-  <script async src="//use.typekit.net/xyv2iko.js"></script>
   <link rel="alternate" type="application/rss+xml" title="RSS Feed" href="http://feeds.feedburner.com/Juev">
 </head>
 <body class="wide">

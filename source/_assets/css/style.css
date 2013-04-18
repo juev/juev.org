@@ -6,7 +6,7 @@ html,body.wide
 body
 {
   border-top:3px solid #BC5007;
-  font:17px/1.524 'myriad-pro',arial,serif;
+  font:17px/1.524 arial,serif;
   color:#333
 }
 
@@ -156,7 +156,7 @@ pre
 code
 {
   /*font-size:.9em;*/
-  font-family: "inconsolata";
+  font-family: monospace,'Ubuntu Mono';
 }
 
 #feed

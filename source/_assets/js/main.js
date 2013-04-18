@@ -7,9 +7,3 @@ for(var i=0;i<links.length;i++)
       links[i].setAttribute('rel', 'shadowbox');
     }
   }
-$(function() {
-  try {
-    Typekit.load();
-  }
-  catch(e) {}
-  });

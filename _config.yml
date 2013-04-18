@@ -19,9 +19,3 @@ keywords: "mac, tips, wordpress, jekyll, ruby, php, linux, ubuntu, vps, soft"
 githuburl: "https://github.com/Juev/juev.ru/blob/master/source/_posts"
 tag_page_layout: tag_page
 tag_page_dir: tags
-asset_pipeline:
-  bundle: true            # Default = true
-  compress: true          # Default = true
-  output_path: assets     # Default = assets
-  display_path: http://static.juev.ru/assets       # Default = nil
-  gzip: false             # Default = false
