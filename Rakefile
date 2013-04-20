@@ -21,15 +21,15 @@ end
 desc 'Build, deploy.'
 task :deploy => :build do
   print "Deploying website to #{domain}\n"
-#  system "rsync -az --delete public/ ec2:~/www/juevru/"
+  system "rsync -az --delete public/ ec2:~/www/juevru/"
 #  system "s3cmd sync -P --delete-removed --no-preserve public/ s3://www.juev.ru/"
 
-  system 's3cmd sync --acl-public --exclude "*.*" --include "*.png" --include "*.jpg" --include "*.ico" --add-header="Expires: Sat, 20 Nov 2020 18:46:39 GMT" --add-header="Cache-Control: max-age=6048000" --no-preserve public/ s3://www.juev.ru'
-  system 's3cmd sync --acl-public -m text/css --exclude "*.*" --include "*.css" --add-header="Cache-Control: public, max-age=18144000" --no-preserve public/ s3://www.juev.ru'
-  system 's3cmd sync --acl-public --exclude "*.*" --include "*.js" --add-header="Cache-Control: public, max-age=18144000" --no-preserve public/ s3://www.juev.ru'
-  system 's3cmd sync --acl-public -f --exclude "*.*" --include "*.html" --mime-type="text/html; charset=utf-8" --add-header="Cache-Control: max-age=0, private, must-revalidate" --no-preserve public/ s3://www.juev.ru'
-  system 's3cmd sync --acl-public --exclude ".DS_Store" --exclude "assets/" --exclude "*.html" --no-preserve public/ s3://www.juev.ru'
-  system 's3cmd sync --acl-public --delete-removed --no-preserve public/ s3://www.juev.ru/'
+  # system 's3cmd sync --acl-public --exclude "*.*" --include "*.png" --include "*.jpg" --include "*.ico" --add-header="Expires: Sat, 20 Nov 2020 18:46:39 GMT" --add-header="Cache-Control: max-age=6048000" --no-preserve public/ s3://www.juev.ru'
+  # system 's3cmd sync --acl-public -m text/css --exclude "*.*" --include "*.css" --add-header="Cache-Control: public, max-age=18144000" --no-preserve public/ s3://www.juev.ru'
+  # system 's3cmd sync --acl-public --exclude "*.*" --include "*.js" --add-header="Cache-Control: public, max-age=18144000" --no-preserve public/ s3://www.juev.ru'
+  # system 's3cmd sync --acl-public -f --exclude "*.*" --include "*.html" --mime-type="text/html; charset=utf-8" --add-header="Cache-Control: max-age=0, private, must-revalidate" --no-preserve public/ s3://www.juev.ru'
+  # system 's3cmd sync --acl-public --exclude ".DS_Store" --exclude "assets/" --exclude "*.html" --no-preserve public/ s3://www.juev.ru'
+  # system 's3cmd sync --acl-public --delete-removed --no-preserve public/ s3://www.juev.ru/'
 end
 
 task :new do
