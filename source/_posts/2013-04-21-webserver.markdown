@@ -59,7 +59,7 @@ tags:
 Теперь настраиваем часовой пояс, ставим сервер точного времени и устанавливаем фаервол:
 
     (ubuntu)$ sudo dpkg-reconfigure tzdata
-    (ubuntu)$ sudo apt-get install openntpd denyhost ufw
+    (ubuntu)$ sudo apt-get install openntpd denyhosts ufw
     (ubuntu)$ sudo ufw allow Apache
     (ubuntu)$ sudo ufw allow OpenSSH
     (ubuntu)$ sudo ufw enable
