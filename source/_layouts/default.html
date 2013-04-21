@@ -18,10 +18,10 @@
   <link rel="canonical" href="http://www.juev.ru{{ page.id | canonical }}/">
   <link rel="shortcut icon" href="/favicon.ico">
   <link rel="apple-touch-icon" href="/apple-touch-icon.png">
-{% css_asset_tag master %}
-- /_assets/css/style.css
-- /_assets/css/shadowbox.css
-{% endcss_asset_tag %}
+  {% css_asset_tag master %}
+  - /_assets/css/style.css
+  - /_assets/css/shadowbox.css
+  {% endcss_asset_tag %}
   <link rel="alternate" type="application/rss+xml" title="RSS Feed" href="http://feeds.feedburner.com/Juev">
 </head>
 <body class="wide">
@@ -48,7 +48,7 @@
       <a href="//github.com/Juev" rel="nofollow">github</a></p>
     </div>
   </div>
-  <script async>
+  <script>
     var _gaq = _gaq || [];
     _gaq.push(['_setAccount', 'UA-26480484-2']);
     _gaq.push(['_trackPageview']);
@@ -58,9 +58,9 @@
      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
      })();
    </script>
-{% javascript_asset_tag master %}
-- /_assets/js/shadowbox.js
-- /_assets/js/main.js
-{% endjavascript_asset_tag %}
+  {% javascript_asset_tag master %}
+  - /_assets/js/shadowbox.js
+  - /_assets/js/main.js
+  {% endjavascript_asset_tag %}
 </body>
 </html>
