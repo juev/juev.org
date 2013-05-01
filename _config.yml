@@ -12,8 +12,9 @@ destination: public
 plugins:     plugins
 pygments:    false # default python pygments have been replaced by pygments.rb
 
-title: "Авторский проект Евсюкова Дениса"
-description: "Wordpress, Jekyll, Ruby, PHP, Linux, Ubuntu, VPS и многое другое на страницах сайта."
+# title: "Denis Evsyukov"
+title: a fine geek from Russia
+description: "Описание опыта использования различных программ и веб-сервисов. Личные рекомендации и критика."
 keywords: "mac, tips, wordpress, jekyll, ruby, php, linux, ubuntu, vps, soft"
 
 githuburl: "https://github.com/Juev/juev.ru/blob/master/source/_posts"

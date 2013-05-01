@@ -2,13 +2,58 @@
 <html itemscope itemtype="http://schema.org/Article">
 <head>
   <link rel="dns-prefetch" href="//static.juev.ru">
-  <link rel="dns-prefetch" href="//www.juev.ru">
   <link rel="dns-prefetch" href="//use.typekit.net">
   <link rel="dns-prefetch" href="//t.typekit.net">
   <meta http-equiv="content-type" content="text/html; charset=UTF-8">
-  <title>{% if page.title %}{{ page.title }} | {% endif %}{{ site.title }}</title>
+  {% if page.title %}
+  <title>{{ page.title }} | {{ site.title }}</title>
+  <meta content="{{ page.title }}" property="og:title">
+  <meta content="{{ page.title }}" name="twitter:title">
+  {% elsif page.grouptype == "tag" %}
+  <title>Posts Tagged "{{ page.tag }}" | {{ site.title }}</title>
+  <meta content="Posts Tagged '{{ page.tag }}' | {{ site.title }}" property="og:title">
+  <meta content="Posts Tagged '{{ page.tag }}' | {{ site.title }}" name="twitter:title">
+  {% else %}
+  <title>{{ site.title }}</title>
+  <meta content="{{ site.title }}" property="og:title">
+  <meta content="{{ site.title }}" name="twitter:title">
+  {% endif %}
+  <meta content="{{ site.title }}" property="og:site_name">
+  {% if page.description %}
+  <meta content="{{ page.description }}" name="description">
+  <meta content="{{ page.description }}" property="og:description">
+  <meta content="{{ page.description }}" name="twitter:description">
+  {% else %}
+  <meta content="{{ page.content | markdownify | strip_html | strip_newlines | xml_escape | replace: '.','. ' | truncate: 200 }}" name="description">
+  <meta content="{{ page.content | markdownify | strip_html | strip_newlines | xml_escape | replace: '.','. ' | truncate: 200 }}" property="og:description">
+  <meta content="{{ page.content | markdownify | strip_html | strip_newlines | xml_escape | replace: '.','. ' | truncate: 200 }}" name="twitter:description">
+  {% endif %}
+  <meta content="@Juev" name="twitter:site">
+  <meta content="@Juev" name="twitter:creator">
+  {% if page.grouptype == "index" %}
+  <meta content="website" property="og:type">
+  {% else %}
+  <meta content="article" property="og:type">
+  {% endif %}
+  <meta content="summary" name="twitter:card">
+  {% if page.url %}
+  <meta content="{{ site.url }}{{ page.url }}" property="og:url">
+  <meta content="{{ site.url }}{{ page.url }}" name="twitter:url">
+  {% endif %}
+  {% if page.date %}
+  <meta content="{{ page.date | date_to_xmlschema }}" property="article:published_time">
+  {% endif %}
+  {% if page.tags %}
+  {% for tag in page.tags %}
+  <meta property="article:tag" content="{{ tag }}">
+  {% endfor %}
+  {% endif %}
   <meta name="keywords" content="{% if page.keywords %}{{page.keywords}}{% else %}{{site.keywords}}{% endif %}">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- http://t.co/dKP3o1e -->
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- end -->
   <meta itemprop="name" content="{{ page.title }}">
   <meta itemprop="url" content="http://www.juev.ru{{ page.id | canonical }}/">
   <meta itemprop="inLanguage" content="ru">
