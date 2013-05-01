@@ -113,16 +113,16 @@ tags:
 
 Для того, чтобы при перезапуске Apache не появлялось предупреждений, необходимо в файл `/etc/apache2/httpd.conf` добавить строку (файл по умолчанию пустой):
 
-        ServerName localhost
+    ServerName localhost
 
 Теперь необходимо создать директории для размещения своего сайта (для этого используется домашняя директория):
 
-        (ubuntu)$ cd; mkdir -p www/siteru; mkdir -p logs/siteru
+    (ubuntu)$ cd; mkdir -p www/siteru; mkdir -p logs/siteru
 
 Пришла пора активировать свой сайт и перезапускать веб-сервер:
 
-        (ubuntu)$ sudo a2ensite site.ru
-        (ubuntu)$ sudo service apache2 reload
+    (ubuntu)$ sudo a2ensite site.ru
+    (ubuntu)$ sudo service apache2 reload
 
 Если ошибок при запуске не было, значит все нормально и можно проверять работу. Для этого достаточно в браузере набрать ip-адрес своего сервера, на что он должен будет показать простенькую веб-страницу.
 
