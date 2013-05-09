@@ -48,6 +48,7 @@
   <meta property="article:tag" content="{{ tag }}">
   {% endfor %}
   {% endif %}
+  <meta property="og:image" content="http://static.juev.ru/image.jpg">
   <meta name="keywords" content="{% if page.keywords %}{{page.keywords}}{% else %}{{site.keywords}}{% endif %}">
   <!-- http://t.co/dKP3o1e -->
   <meta name="HandheldFriendly" content="True">
@@ -60,6 +61,7 @@
   <meta itemprop="author" content="Denis Evsyukov">
   <meta itemprop="keywords" content="{% if page.keywords %}{{page.keywords}}{% else %}{{site.keywords}}{% endif %}">
   <meta itemprop="datePublished" content="{% if page.date %}{{ page.date | date: "%Y-%m-%d" }}{% else %}{{ site.time | date: "%Y-%m-%d" }}{% endif %}"/>
+  <meta itemprop="image" content="http://static.juev.ru/image.jpg">
   <link rel="canonical" href="http://www.juev.ru{{ page.id | canonical }}/">
   <link rel="shortcut icon" href="/favicon.ico">
   <link rel="apple-touch-icon" href="/apple-touch-icon.png">
