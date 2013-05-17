@@ -6,13 +6,13 @@
   <link rel="dns-prefetch" href="//t.typekit.net">
   <meta http-equiv="content-type" content="text/html; charset=UTF-8">
   {% if page.title %}
-  <title>{{ page.title }} | {{ site.title }}</title>
+  <title>{{ page.title }}</title>
   <meta content="{{ page.title }}" property="og:title">
-  <meta content="{{ page.title }}" name="twitter:title">
+  <meta content="{{ page.title }} by @Juev" name="twitter:title">
   {% elsif page.grouptype == "tag" %}
-  <title>Posts Tagged "{{ page.tag }}" | {{ site.title }}</title>
-  <meta content="Posts Tagged '{{ page.tag }}' | {{ site.title }}" property="og:title">
-  <meta content="Posts Tagged '{{ page.tag }}' | {{ site.title }}" name="twitter:title">
+  <title>Posts Tagged "{{ page.tag }}"</title>
+  <meta content="Posts Tagged '{{ page.tag }}'" property="og:title">
+  <meta content="Posts Tagged '{{ page.tag }}'" name="twitter:title">
   {% else %}
   <title>{{ site.title }}</title>
   <meta content="{{ site.title }}" property="og:title">
