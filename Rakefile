@@ -21,7 +21,7 @@ end
 desc 'Build, deploy.'
 task :deploy => :build do
   print "Deploying website to #{domain}\n"
-  system "rsync -az --delete public/ ec2:~/www/juev.ru/"
+  system "rsync -az --delete public/ o2:~/www/juevru/"
 #  system "s3cmd sync -P --delete-removed --no-preserve public/ s3://www.juev.ru/"
 
   # system 's3cmd sync --acl-public --exclude "*.*" --include "*.png" --include "*.jpg" --include "*.ico" --add-header="Expires: Sat, 20 Nov 2020 18:46:39 GMT" --add-header="Cache-Control: max-age=6048000" --no-preserve public/ s3://www.juev.ru'
