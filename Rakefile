@@ -55,7 +55,7 @@ task :new do
     f.puts ""
   end
 
-  system("subl #{path}")
+  system("mate #{path}")
   exit
 end
 
