@@ -26,7 +26,7 @@ body.wide
 .wide .footer
 {
   position:relative;
-  background:url(/images/noisy.jpg) repeat-x
+  background:inline-image("noisy.jpg") repeat-x
 }
 
 .footer a
@@ -94,7 +94,7 @@ body.wide
 .navigation
 {
   height:108px;
-  background:url(/images/noisy.jpg) repeat-x;
+  background:inline-image("noisy.jpg") repeat-x;
   color:#fff;
   vertical-align:middle;
   font-size:15px
@@ -326,7 +326,7 @@ h3.title
   margin:45px 1em 0 0;
   width:32px;
   height:48px;
-  background-image:url(/images/home.png)
+  background-image:inline-image("home.png")
 }
 
 .aligncenter

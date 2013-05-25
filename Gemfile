@@ -4,10 +4,8 @@ group :development do
   gem 'rake'
   gem 'jekyll'
   gem 'kramdown'
-  gem 'liquid'
-  gem 'jekyll-asset-pipeline'
-  gem 'yui-compressor'
   gem 'jekyll-tagging'
+  gem 'compass'
 end
 
 # gem 'sinatra'

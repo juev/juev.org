@@ -1,4 +1,4 @@
-require "bundler/setup"
+require 'bundler/setup'
 
 domain="www.juev.ru"
 
@@ -7,9 +7,9 @@ task :default => :build
 desc 'Build site with Jekyll.'
 task :build  => :clean do
   print "Compiling website...\n"
-  system "jekyll"
-  # Rake::Task["gzip_html"].execute
-  # Rake::Task["gzip_assets"].execute
+  system "jekyll"  
+  system "compass compile"  
+  system "rm -rf source/tags"
 end
 
 desc 'Clean public folder'
@@ -22,14 +22,6 @@ desc 'Build, deploy.'
 task :deploy => :build do
   print "Deploying website to #{domain}\n"
   system "rsync -az --delete public/ o2:~/www/juevru/"
-#  system "s3cmd sync -P --delete-removed --no-preserve public/ s3://www.juev.ru/"
-
-  # system 's3cmd sync --acl-public --exclude "*.*" --include "*.png" --include "*.jpg" --include "*.ico" --add-header="Expires: Sat, 20 Nov 2020 18:46:39 GMT" --add-header="Cache-Control: max-age=6048000" --no-preserve public/ s3://www.juev.ru'
-  # system 's3cmd sync --acl-public -m text/css --exclude "*.*" --include "*.css" --add-header="Cache-Control: public, max-age=18144000" --no-preserve public/ s3://www.juev.ru'
-  # system 's3cmd sync --acl-public --exclude "*.*" --include "*.js" --add-header="Cache-Control: public, max-age=18144000" --no-preserve public/ s3://www.juev.ru'
-  # system 's3cmd sync --acl-public -f --exclude "*.*" --include "*.html" --mime-type="text/html; charset=utf-8" --add-header="Cache-Control: max-age=0, private, must-revalidate" --no-preserve public/ s3://www.juev.ru'
-  # system 's3cmd sync --acl-public --exclude ".DS_Store" --exclude "assets/" --exclude "*.html" --no-preserve public/ s3://www.juev.ru'
-  # system 's3cmd sync --acl-public --delete-removed --no-preserve public/ s3://www.juev.ru/'
 end
 
 task :new do
@@ -57,27 +49,4 @@ task :new do
 
   system("mate #{path}")
   exit
-end
-
-desc "GZip HTML"
-task :gzip_html do
-  puts "## GZipping HTML"
-  system 'find public/ -type f -name \*.html -exec gzip -9 {} \;'
-  # Batch rename .html.gz to .html
-  Dir['**/*.html.gz'].each do |f|
-    test(?f, f) and File.rename(f, f.gsub(/\.html\.gz/, '.html'))
-  end
-end
-
-desc "GZip Assets"
-task :gzip_assets do
-  puts "## GZipping Assets"
-  styles_dir = "public/assets"
-  system "gzip -9 #{styles_dir}/*"
-  Dir["#{styles_dir}/*.css.gz"].each do |f|
-    test(?f, f) and File.rename(f, f.gsub(/\.css\.gz/, '.css'))
-  end
-  Dir["#{styles_dir}/*.js.gz"].each do |f|
-    test(?f, f) and File.rename(f, f.gsub(/\.js\.gz/, '.js'))
-  end
 end
