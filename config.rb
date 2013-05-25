@@ -8,9 +8,9 @@ http_fonts_path = "/fonts"
 css_dir = "public/assets"
 
 # Local development paths
-sass_dir = "assets"
-images_dir = "source/images"
-fonts_dir = "source/fonts"
+sass_dir = "assets/scss"
+images_dir = "images"
+fonts_dir = "fonts"
 
 line_comments = false
 output_style = :compressed
