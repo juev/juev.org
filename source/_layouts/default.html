@@ -40,6 +40,9 @@
   <link rel="apple-touch-icon" href="/apple-touch-icon.png">
   <link rel="alternate" type="application/rss+xml" title="RSS Feed" href="http://feeds.feedburner.com/Juev">
   <link href="/assets/master.css" rel="stylesheet" type="text/css">
+  <link rel="prefetch" href="/articles.html" />{% if page.previous %}
+  <link rel="prefetch" href="{{ page.previous.url }}" />{% endif %}{% if page.next %}
+  <link rel="prefetch" href="{{ page.next.url }}" />{% endif %}
 </head>
 <body class="wide">
   <div class="navigation">
