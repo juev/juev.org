@@ -467,6 +467,16 @@ img
   border:solid 1px #ccc
 }
 
+a#o2
+{
+  width: 140px;
+  height: 39px;
+  margin: 45px 10px;
+  display: block;
+  float: right;
+  background:inline-image("digitalocean-badge-blue.png")
+}
+
 @media screen and (max-device-width: 480px) {
   .wide .body
   {

@@ -1,55 +1,30 @@
 <!DOCTYPE html>
-<html xmlns:og="http://opengraphprotocol.org/schema/" itemscope itemtype="http://schema.org/Article">
+<html>
 <head>
   <link rel="dns-prefetch" href="//static.juev.ru">
-  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
-  <meta name="twitter:card" content="summary">
-  <meta name="twitter:creator" content="@Juev">{% if page.title %}
-  <title>{{ page.title }}</title>
-  <meta property="og:title" content="{{ page.title }}">
-  <meta name="twitter:title" content="{{ page.title }}">{% elsif page.grouptype == "tag" %}
-  <title>Posts Tagged "{{ page.tag }}"</title>
-  <meta property="og:title" content="Posts Tagged '{{ page.tag }}'">{% else %}
-  <title>{{ site.title }}</title>
-  <meta property="og:title" content="{{ site.title }}">{% endif %}
-  <meta property="og:site_name" content="{{ site.title }}">{% if page.description %}
-  <meta name="description" content="{{ page.description }}">
-  <meta property="og:description" content="{{ page.description }}">
-  <meta name="twitter:description" content="{{ page.description }}">{% else %}
-  <meta name="description" content="{{ page.content | markdownify | strip_html | strip_newlines | xml_escape | replace: '.','. ' | truncate: 200 }}">
-  <meta property="og:description" content="{{ page.content | markdownify | strip_html | strip_newlines | xml_escape | replace: '.','. ' | truncate: 200 }}">
-  <meta name="twitter:description" content="{{ page.content | markdownify | strip_html | strip_newlines | xml_escape | replace: '.','. ' | truncate: 200 }}">{% endif %}{% if page.grouptype == "index" %}
-  <meta property="og:type" content="website">{% else %}
-  <meta property="og:type" content="article">{% endif %}{% if page.url %}
-  <meta property="og:url" content="{{ site.url }}{{ page.id | canonical | replace:'index.html','' }}">{% endif %}{% if page.date %}
-  <meta property="article:published_time" content="{{ page.date | date_to_xmlschema }}">{% endif %}{% if page.tags %}
-  {% for tag in page.tags %}<meta property="article:tag" content="{{ tag }}">{% endfor %}{% endif %}{% if page.image %}
-  <meta property="og:image" content="{{ page.image }}">
-  <meta itemprop="image" content="{{ page.image }}">
-  <meta name="twitter:image" content="{{ page.image }}">{% else %}
-  <meta property="og:image" content="//static.juev.ru/image.jpg">
-  <meta itemprop="image" content="//static.juev.ru/image.jpg">
-  <meta name="twitter:image" content="//static.juev.ru/image.jpg">{% endif %}  
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">{% if page.title %}
+  <title>{{ page.title }}</title>{% elsif page.grouptype == "tag" %}
+  <title>Posts Tagged "{{ page.tag }}"</title>{% else %}
+  <title>{{ site.title }}</title>{% endif %}{% if page.description %}
+  <meta name="description" content="{{ page.description }}">{% else %}
+  <meta name="description" content="{{ page.content | markdownify | strip_html | strip_newlines | xml_escape | replace: '.','. ' | truncate: 200 }}">{% endif %}
   <meta name="keywords" content="{% if page.keywords %}{{page.keywords}}{% else %}{{site.keywords}}{% endif %}">
+  <meta name="author" content="Denis Evsyukov">
   <!-- http://t.co/dKP3o1e -->
   <meta name="HandheldFriendly" content="True">
   <meta name="MobileOptimized" content="320">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <!-- end -->
-  <meta itemprop="name" content="{{ page.title }}">
-  <meta itemprop="url" content="{{ site.url }}{{ page.id | canonical | replace:'index.html','' }}/">
-  <meta itemprop="inLanguage" content="ru">
-  <meta itemprop="author" content="Denis Evsyukov">
-  <meta itemprop="keywords" content="{% if page.keywords %}{{page.keywords}}{% else %}{{site.keywords}}{% endif %}">
-  <meta itemprop="datePublished" content="{% if page.date %}{{ page.date | date: "%Y-%m-%d" }}{% else %}{{ site.time | date: "%Y-%m-%d" }}{% endif %}"/>
   <link rel="canonical" href="{{ site.url }}{{ page.id | canonical | replace:'index.html',''}}/">
   <link rel="shortcut icon" href="/favicon.ico">
   <link rel="apple-touch-icon" href="/apple-touch-icon.png">
   <link rel="alternate" type="application/atom+xml" title="ATOM Feed" href="http://www.juev.ru/atom.xml">
   <link href="/assets/master.css" rel="stylesheet" type="text/css">
-  <link rel="prefetch" href="/articles.html" />{% if page.previous %}
-  <link rel="prefetch" href="{{ page.previous.url }}" />{% endif %}{% if page.next %}
-  <link rel="prefetch" href="{{ page.next.url }}" />{% endif %}
+  <link rel="prefetch" href="/articles.html">{% if page.previous %}
+  <link rel="prev" href="{{ page.previous.url }}">
+  <link rel="prefetch" href="{{ page.previous.url }}">{% endif %}{% if page.next %}
+  <link rel="next" href="{{ page.next.url }}">
+  <link rel="prefetch" href="{{ page.next.url }}">{% endif %}
 </head>
 <body class="wide">
   <div class="navigation">
@@ -60,6 +35,7 @@
         <li>|</li>
         <li><a href="//denis.evsyukov.org">Об авторе</a></li>
       </ul>
+      <a href="https://www.digitalocean.com/?refcode=c5cb9e6574a7" id="o2" rel="nofollow"></a>
     </div>
   </div>
   <div class="primary-content width-fix">
@@ -75,7 +51,7 @@
       <a href="//github.com/Juev" rel="nofollow">github</a></p>
     </div>
   </div>
-  <script async src="/assets/master.min.js"></script>  
+  <script async src="/assets/master.min.js"></script>
   <script>var _gaq = _gaq || [];_gaq.push(['_setAccount', 'UA-26480484-2']);_gaq.push(['_trackPageview']);</script>
   <script async src="//google-analytics.com/ga.js"></script>
  </body>

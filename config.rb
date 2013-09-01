@@ -14,3 +14,5 @@ fonts_dir = "fonts"
 
 line_comments = false
 output_style = :compressed
+
+environment = :production
