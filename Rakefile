@@ -21,7 +21,7 @@ end
 desc 'Build, deploy.'
 task :deploy => :build do
   print "Deploying website to #{domain}\n"
-  system "rsync -az --delete public/ linode:~/www/juevru/"
+  system "rsync -az --delete public/ o2:~/www/juevru/"
 end
 
 task :new do
