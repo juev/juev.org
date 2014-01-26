@@ -47,6 +47,6 @@ task :new do
     f.puts ""
   end
 
-  system("mvim #{path}")
+  system("open -a Byword #{path}")
   exit
 end
