@@ -16,7 +16,6 @@ May the charm be with you!
   <meta name="description" content="{{ page.content | markdownify | strip_html | strip_newlines | xml_escape | replace: '.','. ' | truncate: 200 }}">{% endif %}
   <meta name="keywords" content="{% if page.keywords %}{{page.keywords}}{% else %}{{site.keywords}}{% endif %}">
   <meta content="Denis Evsyukov" name="author">
-  <meta content="Denis Evsyukov" property="article:author">
   <!-- http://t.co/dKP3o1e -->
   <meta name="HandheldFriendly" content="True">
   <meta name="MobileOptimized" content="320">
@@ -29,7 +28,11 @@ May the charm be with you!
   <link href="/assets/master.css" rel="stylesheet" type="text/css">{% if page.previous %}
   <link rel="prev" href="{{ page.previous.url }}">{% endif %}{% if page.next %}
   <link rel="next" href="{{ page.next.url }}">{% endif %}
-  <!-- og:meta --> {% if page.title %}
+  <!-- og:meta -->
+  <meta content="Denis" property="article:author:first_name">
+  <meta content="Evsyukov" property="article:author:last_name">
+  <meta content="male" property="article:author:gender">
+  <meta content="Juev" property="article:author:username"> {% if page.title %}
   <meta content="{{ page.title }}" property="og:title"> {% elsif page.grouptype == "tag" %}
   <meta content="Posts Tagged '{{ page.tag }}' | {{ site.title }}" property="og:title"> {% else %}
   <meta content="{{ site.title }}" property="og:title"> {% endif %}
@@ -39,7 +42,7 @@ May the charm be with you!
   <meta content="website" property="og:type"> {% else %}
   <meta content="article" property="og:type"> {% endif %} {% if page.url %}
   <meta content="{{ site.url }}{{ page.url }}" property="og:url"> {% endif %} {% if page.date %}
-  <meta content="{{ page.date | date_to_xmlschema }}" property="og:published_time"> {% endif %} {% if page.tags %} {% for tag in page.tags %}
+  <meta content="{{ page.date | date_to_xmlschema }}" property="article:published_time"> {% endif %} {% if page.tags %} {% for tag in page.tags %}
   <meta content="{{ tag }}" property="article:tag"> {% endfor %} {% endif %}
   <meta content="http://static.juev.ru/image.jpg" property="og:image">
   <!-- end og:meta  -->
