@@ -28,11 +28,7 @@ May the charm be with you!
   <link href="/assets/master.css" rel="stylesheet" type="text/css">{% if page.previous %}
   <link rel="prev" href="{{ page.previous.url }}">{% endif %}{% if page.next %}
   <link rel="next" href="{{ page.next.url }}">{% endif %}
-  <!-- og:meta -->
-  <meta content="Denis" property="article:author:first_name">
-  <meta content="Evsyukov" property="article:author:last_name">
-  <meta content="male" property="article:author:gender">
-  <meta content="Juev" property="article:author:username"> {% if page.title %}
+  <!-- og:meta --> {% if page.title %}
   <meta content="{{ page.title }}" property="og:title"> {% elsif page.grouptype == "tag" %}
   <meta content="Posts Tagged '{{ page.tag }}' | {{ site.title }}" property="og:title"> {% else %}
   <meta content="{{ site.title }}" property="og:title"> {% endif %}
@@ -44,7 +40,7 @@ May the charm be with you!
   <meta content="{{ site.url }}{{ page.url }}" property="og:url"> {% endif %} {% if page.date %}
   <meta content="{{ page.date | date_to_xmlschema }}" property="article:published_time"> {% endif %} {% if page.tags %} {% for tag in page.tags %}
   <meta content="{{ tag }}" property="article:tag"> {% endfor %} {% endif %}
-  <meta content="http://static.juev.ru/img.jpg" property="og:image">
+  <meta content="http://static.juev.ru/image.jpg" property="og:image">
   <meta property="og:image:width" content="200">
   <meta property="og:image:height" content="200">
   <meta property="og:image:type" content="image/jpeg">
