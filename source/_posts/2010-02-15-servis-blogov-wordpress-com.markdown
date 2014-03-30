@@ -16,23 +16,23 @@ tags:
 
 Ответив на эти вопросы мы попадаем в админку wordpress.
 
-<a href="http://static.juev.ru/2010/02/main.png"><img style="display: block; margin-left: auto; margin-right: auto; border: 0px initial initial;" title="main" src="http://static.juev.ru/2010/02/main_thumb.png" border="0" alt="main" width="451" height="324" /></a>
+<a href="http://static.juev.org/2010/02/main.png"><img style="display: block; margin-left: auto; margin-right: auto; border: 0px initial initial;" title="main" src="http://static.juev.org/2010/02/main_thumb.png" border="0" alt="main" width="451" height="324" /></a>
 
 Обращают на себя внимание новые пункты меню в Консоли, новые пункты меню Обновления, Ratings и Голосования. При этом скорость работы блога и админки намного выше той, что есть сейчас у меня на профессиональном хостинге.
 
-<a href="http://static.juev.ru/2010/02/update.png"><img style="display: block; margin-left: auto; margin-right: auto; border: 0px initial initial;" title="update" src="http://static.juev.ru/2010/02/update_thumb.png" border="0" alt="update" width="451" height="329" /></a>
+<a href="http://static.juev.org/2010/02/update.png"><img style="display: block; margin-left: auto; margin-right: auto; border: 0px initial initial;" title="update" src="http://static.juev.org/2010/02/update_thumb.png" border="0" alt="update" width="451" height="329" /></a>
 
 В обновлениях содержатся информация о платных подписках. Как видим, если Необходимо использовать доменное имя второго уровня, это будет стоить 9.97$ в год. Регистрация доменного имени от данного сервиса обойдется всего в 5$.
 
-<a href="http://static.juev.ru/2010/02/tema.png"><img style="display: block; margin-left: auto; margin-right: auto; border: 0px initial initial;" title="tema" src="http://static.juev.ru/2010/02/tema_thumb.png" border="0" alt="tema" width="451" height="330" /></a>
+<a href="http://static.juev.org/2010/02/tema.png"><img style="display: block; margin-left: auto; margin-right: auto; border: 0px initial initial;" title="tema" src="http://static.juev.org/2010/02/tema_thumb.png" border="0" alt="tema" width="451" height="330" /></a>
 
 Количество тем очень велико, как и в любом блоге на wordpress, единственно что, нет возможности использования своих собственных тем оформления. Зато по умолчанию имеется возможность использования сервиса Typekit Fonts, который предоставляет множество различных шрифтов для использования их в оформлении блога. И есть возможность редактирования CSS. Таким образом и в случае бесплатного использования сервиса имеется масса вариантов по оформлению своего блога.
 
-<a href="http://static.juev.ru/2010/02/media.png"><img style="display: block; margin-left: auto; margin-right: auto; border: 0px initial initial;" title="media" src="http://static.juev.ru/2010/02/media_thumb.png" border="0" alt="media" width="451" height="331" /></a>
+<a href="http://static.juev.org/2010/02/media.png"><img style="display: block; margin-left: auto; margin-right: auto; border: 0px initial initial;" title="media" src="http://static.juev.org/2010/02/media_thumb.png" border="0" alt="media" width="451" height="331" /></a>
 
 В библиотеке файлов четко прописывается размер выделенного пространства и типы файлов, которые можно использовать на данном сервисе.
 
-<a href="http://static.juev.ru/2010/02/options.png"><img style="display: block; margin-left: auto; margin-right: auto; border: 0px initial initial;" title="options" src="http://static.juev.ru/2010/02/options_thumb.png" border="0" alt="options" width="451" height="328" /></a>
+<a href="http://static.juev.org/2010/02/options.png"><img style="display: block; margin-left: auto; margin-right: auto; border: 0px initial initial;" title="options" src="http://static.juev.org/2010/02/options_thumb.png" border="0" alt="options" width="451" height="328" /></a>
 
 В параметрах блога оставлены только самые основные опции. К примеру нет возможности управлять параметрами ЧПУ, хотя для русского языка прекрасно работает транслитерация по умолчанию. Так же изначально можно использовать адрес своего блога как OpenID ключ. В общих параметрах задается так же favicon, то есть иконка сайта, отображаемая во вкладке браузера рядом с именем сайта.
 

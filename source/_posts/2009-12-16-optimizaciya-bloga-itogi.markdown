@@ -20,15 +20,15 @@ href="http://www.webpagetest.org" rel="nofollow">www.webpagetest.org</a>. В р�
 
 Первая загрузка (с чистым кэшем браузера) занимала 8.941s и на графиках выглядела так:
 
-<a href="http://static.juev.ru/2009/12/First-a.png"><img class="aligncenter size-medium wp-image-667" title="Обзор" src="http://static.juev.ru/2009/12/First-a-300x70.png" alt="Обзор" width="300" height="70" /></a>
+<a href="http://static.juev.org/2009/12/First-a.png"><img class="aligncenter size-medium wp-image-667" title="Обзор" src="http://static.juev.org/2009/12/First-a-300x70.png" alt="Обзор" width="300" height="70" /></a>
 
-<a href="http://static.juev.ru/2009/12/First.png"><img class="aligncenter size-medium wp-image-668" title="First" src="http://static.juev.ru/2009/12/First-300x291.png" alt="First" width="300" height="291" /></a>
+<a href="http://static.juev.org/2009/12/First.png"><img class="aligncenter size-medium wp-image-668" title="First" src="http://static.juev.org/2009/12/First-300x291.png" alt="First" width="300" height="291" /></a>
 
 Повторная загрузка проходила быстрее, то есть 3.035s и на графиках выглядела так:
 
-<a href="http://static.juev.ru/2009/12/Two-a.png"><img class="aligncenter size-medium wp-image-669" title="Two a" src="http://static.juev.ru/2009/12/Two-a-300x33.png" alt="Two a" width="300" height="33" /></a>
+<a href="http://static.juev.org/2009/12/Two-a.png"><img class="aligncenter size-medium wp-image-669" title="Two a" src="http://static.juev.org/2009/12/Two-a-300x33.png" alt="Two a" width="300" height="33" /></a>
 
-<a href="http://static.juev.ru/2009/12/Two.png"><img class="aligncenter size-medium wp-image-670" title="Two" src="http://static.juev.ru/2009/12/Two-300x289.png" alt="Two" width="300" height="289" /></a>
+<a href="http://static.juev.org/2009/12/Two.png"><img class="aligncenter size-medium wp-image-670" title="Two" src="http://static.juev.org/2009/12/Two-300x289.png" alt="Two" width="300" height="289" /></a>
 
 Рисунки пришлось разбивать на две части, заголовок и тело, ввиду того, что на экране таблицы не вмещались.
 
@@ -50,10 +50,10 @@ href="http://www.webpagetest.org" rel="nofollow">www.webpagetest.org</a>. В р�
 
 Первая загрузка занимает 1.790s  и на графиках выглядит так:
 
-<a href="http://static.juev.ru/2009/12/First-optim.png"><img class="aligncenter size-medium wp-image-671" title="First optim" src="http://static.juev.ru/2009/12/First-optim-300x289.png" alt="First optim" width="300" height="289" /></a>
+<a href="http://static.juev.org/2009/12/First-optim.png"><img class="aligncenter size-medium wp-image-671" title="First optim" src="http://static.juev.org/2009/12/First-optim-300x289.png" alt="First optim" width="300" height="289" /></a>
 
 Последующие загрузки 0.994s и график:
-<a href="http://static.juev.ru/2009/12/Two-optim.png"><img class="aligncenter size-medium wp-image-672" title="Two optim" src="http://static.juev.ru/2009/12/Two-optim-300x93.png" alt="Two optim" width="300" height="93" /></a>
+<a href="http://static.juev.org/2009/12/Two-optim.png"><img class="aligncenter size-medium wp-image-672" title="Two optim" src="http://static.juev.org/2009/12/Two-optim-300x93.png" alt="Two optim" width="300" height="93" /></a>
 
 То есть первое обращение к блоге теперь занимает порядка 2 секунд, а каждое последующее не более одной секунды. То есть в результате анализа были выявлены слабые места и скорость загрузки изменилась примерно в 3-4 раза.
 

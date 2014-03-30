@@ -23,11 +23,11 @@ tags:
 
 Решение оказалось очень простым и довольно тривиальным. Достаточно было добавить страницу DuckDuckGo в закладки на Bookmarks Bar.
 
-![bookmarks-bar](http://static.juev.ru/2012/10/bookmarks-bar.png "Bookmarks bar")
+![bookmarks-bar](http://static.juev.org/2012/10/bookmarks-bar.png "Bookmarks bar")
 
 Все закладки из данной панели по умолчанию вызываются с помощью комбинации горячих клавиш Cmd+(номер закладки).
 
-![bookmarks-key](http://static.juev.ru/2012/10/bookmarks-key.png "Bookmarks keys")
+![bookmarks-key](http://static.juev.org/2012/10/bookmarks-key.png "Bookmarks keys")
 
 Если раньше для проведения поиска достаточно было использовать комбинацию Cmd-L для перехода в адресную строку и набора поискового запроса, то теперь используется комбинация Cmd-5 (у меня DuckDuckGo 5-ая по счету) для открытия главной страницы DuckDuckGo, после чего так же набираем поисковый запрос и работаем с результатами.
 

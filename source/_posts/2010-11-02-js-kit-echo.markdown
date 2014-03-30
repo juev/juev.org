@@ -22,7 +22,7 @@ tags:
 
 Второй недостаток заключается в работе почты. Если посмотреть на оповещения о комментариях на сайте, которые приходят по почте:
 
-<a href="http://static.juev.ru/2010/11/echo-mail.png"><img src="http://static.juev.ru/2010/11/echo-mail-300x78.png" alt="" title="echo-mail" width="300" height="78" class="aligncenter size-medium wp-image-1259" /></a>
+<a href="http://static.juev.org/2010/11/echo-mail.png"><img src="http://static.juev.org/2010/11/echo-mail-300x78.png" alt="" title="echo-mail" width="300" height="78" class="aligncenter size-medium wp-image-1259" /></a>
 
 То видно, что ответ на комментарий можно отправить непосредственно по почте. Я попытался это сделать. И с удивлением обнаружил новое сообщение от имени Гостя, текст которого содержал набор иероглифов. Стало понятным, что использовать данную возможность нам, русским людям, пока не представляется возможным. Либо придется еще не мало поэкспериментировать.
 

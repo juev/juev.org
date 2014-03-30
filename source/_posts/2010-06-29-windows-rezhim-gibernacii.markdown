@@ -31,11 +31,11 @@ tags:
 
 Для этого переходим в панель управления, выбираем пункт Электропитание. Выбираем Настройка плана элетропитания ив появившемся окне выбираем пункт Изменить дополнительные параметры питания.
 
-<a href="http://static.juev.ru/2010/06/pitanie.png"><img class="aligncenter size-medium wp-image-1090" title="pitanie" src="http://static.juev.ru/2010/06/pitanie-278x300.png" alt="" width="278" height="300" /></a>
+<a href="http://static.juev.org/2010/06/pitanie.png"><img class="aligncenter size-medium wp-image-1090" title="pitanie" src="http://static.juev.org/2010/06/pitanie-278x300.png" alt="" width="278" height="300" /></a>
 
 Отключаем гибридный спящий режим и видим, как в меню пуск появляется пункт Гибернация.
 
-<a href="http://static.juev.ru/2010/06/hiber.png"><img class="aligncenter size-full wp-image-1091" title="hiber" src="http://static.juev.ru/2010/06/hiber.png" alt="" width="331" height="200" /></a>
+<a href="http://static.juev.org/2010/06/hiber.png"><img class="aligncenter size-full wp-image-1091" title="hiber" src="http://static.juev.org/2010/06/hiber.png" alt="" width="331" height="200" /></a>
 
 В панели управления, в пункте Элетропитание, можно так же настроить вход в режим гибернации при нажатии на кнопку выключения компьютера. И там же настраивается будет ли запрашиваться пароль при выходе из режима гибернации.
 

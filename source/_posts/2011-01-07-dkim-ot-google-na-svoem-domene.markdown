@@ -22,7 +22,7 @@ tags:
 устанавливаем в google.\_domainkey, а значение 
 <code>Record value</code> устанавливаем в генерированное значение.
 
-<a href="http://static.juev.ru/2011/01/google_apps.jpg"><img src="http://static.juev.ru/2011/01/google_apps-300x180.jpg" alt="" title="google_apps" width="300" height="180" class="aligncenter size-medium wp-image-1312" /></a>
+<a href="http://static.juev.org/2011/01/google_apps.jpg"><img src="http://static.juev.org/2011/01/google_apps-300x180.jpg" alt="" title="google_apps" width="300" height="180" class="aligncenter size-medium wp-image-1312" /></a>
 
 На данном шаге сложность может возникнуть из-за выбранного регистратора доменных имен. Не все они поддерживают создание TXT-записей. Мне повезло, я использую регистратора <a href="http://www.name.com" rel="nofollow">www.name.com</a> и никаких ограничений там нет. 
 
@@ -30,6 +30,6 @@ tags:
 
 Для теста достаточно отправить электронное письмо на другом домене. К сожалению, отправив письмо самому себе, подписи не увидишь. 
 
-<a href="http://static.juev.ru/2011/01/email.png"><img src="http://static.juev.ru/2011/01/email-300x115.png" alt="" title="email" width="300" height="115" class="aligncenter size-medium wp-image-1313" /></a>
+<a href="http://static.juev.org/2011/01/email.png"><img src="http://static.juev.org/2011/01/email-300x115.png" alt="" title="email" width="300" height="115" class="aligncenter size-medium wp-image-1313" /></a>
 
 Заметили дополнительное поле? <em>Подписан evsyukov.org</em>, вот ради этого мы и совершали все эти действия. Именно данная подпись позволит отличить ваши письма от фишинговых писем или писем спамеров. И позволит серверам электронной почты относиться более уважительно к вашим письмам, меньше отправляя их в папку спама.

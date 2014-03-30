@@ -16,25 +16,25 @@ tags:
 
 ## Rdio
 
-[![rdio](http://static.juev.ru/2013/05/rdio-th.jpg)](http://static.juev.ru/2013/05/rdio.jpg "Rdio")
+[![rdio](http://static.juev.org/2013/05/rdio-th.jpg)](http://static.juev.org/2013/05/rdio.jpg "Rdio")
 
 Для того, чтобы зарегистрироваться и оплатить использование данного сервиса потребуется VPN. Я для этого использовал [TunnelBear](www.tunnelbear.com/‎ "TunnelBear").
 
-![TunnelBear](http://static.juev.ru/2013/05/tunnelbear.jpg)
+![TunnelBear](http://static.juev.org/2013/05/tunnelbear.jpg)
 
 Запускаем программу, выбираем US в качестве страны назначения, подымаем VPN соединение. Затем заходим на сайт [Rdio](http://www.rdio.com "Rdio") и регистрируемся. Для того, чтобы иметь возможность слушать радио за границей, то есть в России и без VPN, необходимо перейти на премиальный аккаунт. Стоит он $5 в месяц. Оплатить напрямую с карточки или с использованием PayPal не получиться, так как отслеживается, в какой стране была выпущена карта, и если местоположение отличается от USA, то платеж не проходит. 
 
 Но есть обходной вариант. В качестве еще одного варианта платежа предоставляется возможность использования Amazon Payments. 
 
-![amazon-payments-1](http://static.juev.ru/2013/05/amazon-1.jpg)
+![amazon-payments-1](http://static.juev.org/2013/05/amazon-1.jpg)
 
 Выбираем его, если еще не имеем аккаунта, регистрируемся и добавляем свою карту. 
 
-![amazon-payments-2](http://static.juev.ru/2013/05/amazon-2.jpg)
+![amazon-payments-2](http://static.juev.org/2013/05/amazon-2.jpg)
 
 А вот в качестве платежного адреса просто указываем любой адрес на территории USA, не забывая при этом указать свои настоящие имя и фамилию. 
 
-![amazon-payments-3](http://static.juev.ru/2013/05/amazon-3.jpg)
+![amazon-payments-3](http://static.juev.org/2013/05/amazon-3.jpg)
 
 К примеру, берем любой почтовый индекс с этой [страницы](http://www.health.ny.gov/statistics/cancer/registry/appendix/neighborhoods.htm), вбиваем его на [сайте поиска недвижимости](http://www.trulia.com/) и получаем список адресов.
 
@@ -44,7 +44,7 @@ tags:
 
 ## Spotify
 
-[![spotify](http://static.juev.ru/2013/05/spotify-th.jpg)](http://static.juev.ru/2013/05/spotify.jpg "Spotify")
+[![spotify](http://static.juev.org/2013/05/spotify-th.jpg)](http://static.juev.org/2013/05/spotify.jpg "Spotify")
 
 С данным сервисом все несколько сложнее, так как в качестве вариантов оплаты присутствуют только пластиковые карты и PayPal.
 

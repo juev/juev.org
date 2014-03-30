@@ -36,7 +36,7 @@ tags:
 
 На компьютер достаточно установить так называемый Roaming client, небольшая программка, которая висит в трее и выполняет роль локального DNS-сервера. Все запросы автоматически перенаправляются на сервера OpenDNS, и главное -- блокируются любые попытки изменить DNS-сервер. То есть уже ни одна вредоносная программа не сможет подменить запрос к сайтам. 
 
-![umbrella-roaming-client](http://static.juev.ru/2013/01/umbrella-roaming-client.png "Roaming client")
+![umbrella-roaming-client](http://static.juev.org/2013/01/umbrella-roaming-client.png "Roaming client")
 
 На Linux компьютерах можно сделать то же самое, но бесплатно.
 
@@ -46,27 +46,27 @@ tags:
 
 После установки программного обеспечения создается VPN-подключение, которое тут же автоматически поднимается. И все запросы к сети будут идти через созданный туннель. Авторизация на серверах OpenDNS осуществляется по ключам, которые поставляются с программой, поэтому организовать подобное подключение с компьютера просто не получится.
 
-[![ios-vpn](http://static.juev.ru/2013/01/th-ios-vpn.jpg)](http://static.juev.ru/2013/01/ios-vpn.png "iOS VPN")
+[![ios-vpn](http://static.juev.org/2013/01/th-ios-vpn.jpg)](http://static.juev.org/2013/01/ios-vpn.png "iOS VPN")
 
 И естественно, что все DNS-запросы перенаправляются на сервера OpenDNS, вне зависимости от текущих сетевых настроек. Трафик на мобильных устройствах получается защищенным от перехвата и к тому же мы получаем дополнительную защиту от переадресации на сайт мошенников.
 
-[![ios-umbrella](http://static.juev.ru/2013/01/th-ios-umbrella.jpg)](http://static.juev.ru/2013/01/ios-umbrella.png "iOS Umbrella")
+[![ios-umbrella](http://static.juev.org/2013/01/th-ios-umbrella.jpg)](http://static.juev.org/2013/01/ios-umbrella.png "iOS Umbrella")
 
 Помимо настройки самого соединения клиент Umbrella на iOS устройстве позволяет просматривать текущую статистику. Причем детализировано по каждой программе в отдельности.
 
-[![ios-umbrella-stat](http://static.juev.ru/2013/01/th-ios-umbrella-stat.jpg)](http://static.juev.ru/2013/01/ios-umbrella-stat.png "iOS Umbrella Stat")
+[![ios-umbrella-stat](http://static.juev.org/2013/01/th-ios-umbrella-stat.jpg)](http://static.juev.org/2013/01/ios-umbrella-stat.png "iOS Umbrella Stat")
 
 ## Umbrella Dashboard
 
 Но самое интересное скрывается в панели управления Umbrella, где можно не только посмотреть статистику за определенные периоды, но и произвести настройку безопасности по своим соединениям.
 
-[![umbrella-dashboard](http://static.juev.ru/2013/01/th-umbrella-dashboard.jpg)](http://static.juev.ru/2013/01/umbrella-dashboard.png "Umbrella Dashboard")
+[![umbrella-dashboard](http://static.juev.org/2013/01/th-umbrella-dashboard.jpg)](http://static.juev.org/2013/01/umbrella-dashboard.png "Umbrella Dashboard")
 
 Показывается и количество запросов, которое было произведено в определенные моменты времени, так и число запросов к вредоносным ресурсам, которые были заблокированы.
 
 А в отдельном разделе располагаются настройки сервиса, где можно определить, какие категории сайтов стоит блокировать, причем число категорий достаточно велико. Как реагировать на угрозы безопасности. И есть возможность задавать свои настройки оформления страниц, которые будут показываться в момент блокировки определенных ресурсов.
 
-[![umbrella-policy](http://static.juev.ru/2013/01/th-umbrella-policy.jpg)](http://static.juev.ru/2013/01/umbrella-policy.png "Umbrella Policy")
+[![umbrella-policy](http://static.juev.org/2013/01/th-umbrella-policy.jpg)](http://static.juev.org/2013/01/umbrella-policy.png "Umbrella Policy")
 
 ## Рекомендации
 

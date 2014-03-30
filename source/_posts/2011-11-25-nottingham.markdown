@@ -40,9 +40,9 @@ tags:
 
 Интерфейс программы прост и очень красив. На скриншоте видно, что у меня программа проработает еще 27 дней. 
 
-[![nottingham][]](http://static.juev.ru/2011/11/nottingham.png)
+[![nottingham][]](http://static.juev.org/2011/11/nottingham.png)
 
-[nottingham]: http://static.juev.ru/2011/11/nottingham-th.jpg
+[nottingham]: http://static.juev.org/2011/11/nottingham-th.jpg
 
 В левой части располагается список заметок, в правой текст текущей заметки. В верхней части только одно поле ввода, с помощью которого осуществляется поиск по заголовкам и текстам заметки. Текст заметки может быть записан в формате markdown. И соответственно, просмотрен в готовом варианте, то есть в том виде, в котором он может быть экспортирован.
 
@@ -50,19 +50,19 @@ tags:
 
 В отличие от других программ, Nottingham поддерживает работу с тегами заметок.
 
-![tags](http://static.juev.ru/2011/11/tags.png)
+![tags](http://static.juev.org/2011/11/tags.png)
 
 Поддерживается автодополнение ранее использованных тегов. Сами теги отображаются в списке заметок в левой части окна.
 
-[![nottingham-tag][]](http://static.juev.ru/2011/11/nottingham-tag.png)
+[![nottingham-tag][]](http://static.juev.org/2011/11/nottingham-tag.png)
 
-[nottingham-tag]: http://static.juev.ru/2011/11/nottingham-tag-th.jpg
+[nottingham-tag]: http://static.juev.org/2011/11/nottingham-tag-th.jpg
 
 На этом же скриншоте видно, что заметкам можно присваивать не только теги, но и цветные метки. Которые можно использовать для группировки заметок по определенному признаку. Причем цветные метки затем используются и в Finder.
 
-[![finder][]](http://static.juev.ru/2011/11/finder.png)
+[![finder][]](http://static.juev.org/2011/11/finder.png)
 
-[finder]: http://static.juev.ru/2011/11/finder-th.jpg
+[finder]: http://static.juev.org/2011/11/finder-th.jpg
 
 На скриншоте так же видно, что все заметки хранятся в виде отдельных текстовых файлов. Что упрощает работу со всей массой информации, которая будет хранится в Simplenote.
 

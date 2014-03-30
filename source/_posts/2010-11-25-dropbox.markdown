@@ -24,7 +24,7 @@ tags:
 
 Я создал следующую рекламную компанию:
 
-<a href="http://static.juev.ru/2010/11/Adwords.png"><img src="http://static.juev.ru/2010/11/Adwords-300x264.png" alt="" title="Adwords" width="300" height="264" class="aligncenter size-medium wp-image-1283" /></a>
+<a href="http://static.juev.org/2010/11/Adwords.png"><img src="http://static.juev.org/2010/11/Adwords-300x264.png" alt="" title="Adwords" width="300" height="264" class="aligncenter size-medium wp-image-1283" /></a>
 
 Использовал простые ключевые слова, добавил ключевики, которые предложил сам Google. Как оказалось в дальнейшем, его ключевые слова оказались совершенно не эффективны. Определил довольно высокую стоимость размещения ссылки (3 рубля), определил бюджет рекламной компании в 60 рублей на день (можно было больше, но в итоге оказалось, что не суть важно). И задал все языки и все страны для размещения текстового рекламного объявления. 
 

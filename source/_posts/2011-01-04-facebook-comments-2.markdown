@@ -34,11 +34,11 @@ tags:
 
 Теперь про то, как можно управлять самими комментариями. Вот так выглядит форма комментариев, если на нее заходит администратор, обратите внимание, в правом нижнем углу появляется ссылка <strong>Administer Comments</strong>.
 
-<a href="http://static.juev.ru/2011/01/fb-comments.png"><img src="http://static.juev.ru/2011/01/fb-comments-300x75.png" alt="" title="fb-comments" width="300" height="75" class="aligncenter size-medium wp-image-1305" /></a>
+<a href="http://static.juev.org/2011/01/fb-comments.png"><img src="http://static.juev.org/2011/01/fb-comments-300x75.png" alt="" title="fb-comments" width="300" height="75" class="aligncenter size-medium wp-image-1305" /></a>
 
 При нажатии на эту ссылку появляется следующее окно:
 
-<a href="http://static.juev.ru/2011/01/fb-param.png"><img src="http://static.juev.ru/2011/01/fb-param-300x178.png" alt="" title="fb-param" width="300" height="178" class="aligncenter size-medium wp-image-1306" /></a>
+<a href="http://static.juev.org/2011/01/fb-param.png"><img src="http://static.juev.org/2011/01/fb-param-300x178.png" alt="" title="fb-param" width="300" height="178" class="aligncenter size-medium wp-image-1306" /></a>
 
 Где и задаются соответствующие настройки доступа. 
 

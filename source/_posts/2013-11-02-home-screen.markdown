@@ -15,11 +15,11 @@ tags:
 На сайте MacSparky мне нравится рубрика [Home Screen](http://macsparky.com/?tag=home+screens#show-archive), в которой различные люди отвечают на ряд вопросов о том, как они используют свой iPhone. Я решил ответить на эти же вопросы на страницах своего сайта.
 
 <div class="aligncenter" style="width:532px;">
-<a href="http://static.juev.ru/2013/11/page1.jpg" title="Page one"><img src="http://static.juev.ru/2013/11/page1-th.jpg" style="display:inline-block"></a>
+<a href="http://static.juev.org/2013/11/page1.jpg" title="Page one"><img src="http://static.juev.org/2013/11/page1-th.jpg" style="display:inline-block"></a>
 
-<a href="http://static.juev.ru/2013/11/page2.jpg" title="Page two"><img src="http://static.juev.ru/2013/11/page2-th.jpg" style="display:inline-block"></a>
+<a href="http://static.juev.org/2013/11/page2.jpg" title="Page two"><img src="http://static.juev.org/2013/11/page2-th.jpg" style="display:inline-block"></a>
 
-<a href="http://static.juev.ru/2013/11/page3.jpg" title="Page tree"><img src="http://static.juev.ru/2013/11/page3-th.jpg" style="display:inline-block"></a>
+<a href="http://static.juev.org/2013/11/page3.jpg" title="Page tree"><img src="http://static.juev.org/2013/11/page3-th.jpg" style="display:inline-block"></a>
 </div>
 
 ### Какие программы твои самые любимые?
@@ -38,7 +38,7 @@ tags:
 
 В последнее время еще оценил программы Abbyy: [TextGrabber](https://itunes.apple.com/ru/app/textgrabber-+-translator/id438475005 "TextGrabber") и [Lingvo](https://itunes.apple.com/ru/app/lingvo-dictionaries-universal/id391989146?mt=8 "Lingvo"). Переводчик и словарь соответственно, просто поразило, как быстро они умеют распознавать текст с фотографии и затем переводить его. Для Lingvo долго выбирал, какой словарь использовать, их довольно много и по стоимости довольно большой разброс, но в итоге остановился на Universal En-Ru, его мне вполне достаточно пока.
 
-<a href="http://static.juev.ru/2013/11/page4.jpg" title="Page four"><img src="http://static.juev.ru/2013/11/page4-th.jpg" class="aligncenter"></a>
+<a href="http://static.juev.org/2013/11/page4.jpg" title="Page four"><img src="http://static.juev.org/2013/11/page4-th.jpg" class="aligncenter"></a>
 
 ### А как с играми??
 

@@ -25,20 +25,20 @@ tags:
 <h2>Template</h2>
 После установки и запуска программы предлагается создать дерево задач из нескольких стандартных шаблонов.
 
-<img class="size-full wp-image-1163 aligncenter" src="http://static.juev.ru/2010/08/mlo-template.png" alt="" width="372" height="363" />
+<img class="size-full wp-image-1163 aligncenter" src="http://static.juev.org/2010/08/mlo-template.png" alt="" width="372" height="363" />
 
 Однако, на мой взгляд, проще всего создать пустой файл и заполнять его согласно своим представлениям на процесс организации задач.
 
 <h2>Дерево задач</h2>
 По своей сути, работа со списками в программе организована или в виде дерева задач или в виде ToDo списка. Работая в режиме дерева мы наполняем список своими мыслями и затем организуем его определенным образом, здесь оказывается абсолютно все, задачи, действия, мысли.
 
-<img class="aligncenter size-full wp-image-1164" src="http://static.juev.ru/2010/08/mlo-lists.png" alt="" width="640" height="441" />
+<img class="aligncenter size-full wp-image-1164" src="http://static.juev.org/2010/08/mlo-lists.png" alt="" width="640" height="441" />
 
 Самый первый и по сути основной элемент дерева - это Inbox. Все добавляемые элементы сначала оказываются именно в нем, и только затем уже распределяются по остальным категориям.
 
 Добавлять новые задачи можно очень быстро, используя окно быстрого ввода задач, которое вызывается по нажатию на горячие клавиши, определяемые настройками программы:
 
-<img class="aligncenter size-full wp-image-1165" src="http://static.juev.ru/2010/08/mlo-fast.png" alt="" width="416" height="360" />
+<img class="aligncenter size-full wp-image-1165" src="http://static.juev.org/2010/08/mlo-fast.png" alt="" width="416" height="360" />
 
 Добавление целой группы задач производиться крайне быстро, жмем горячие клавиши, появляется окно. Заполняем его по принципу - одна строка это одна задача, если в начале строки сделать отступ, то задача становиться вложенной. В тексте задачи можно использовать ключевые слова, определяющие время, контекст задачи и т.д.
 
@@ -61,11 +61,11 @@ tags:
 <h2>ToDo</h2>
 Со схемой более менее разобрались. И теперь, самое важное - построение списка ToDo.
 
-<img class="aligncenter size-full wp-image-1166" src="http://static.juev.ru/2010/08/mlo-todo.png" alt="" width="575" height="508" />
+<img class="aligncenter size-full wp-image-1166" src="http://static.juev.org/2010/08/mlo-todo.png" alt="" width="575" height="508" />
 
 Для этого настраиваются фильтры задач. Для себя я определил следующие правила:
 
-<img class="aligncenter size-full wp-image-1167" src="http://static.juev.ru/2010/08/mlo-filter.png" alt="" width="580" height="431" />
+<img class="aligncenter size-full wp-image-1167" src="http://static.juev.org/2010/08/mlo-filter.png" alt="" width="580" height="431" />
 
 Задача будет показана в списке ToDo в том случае, если она находиться в категории <strong>Today</strong> или <strong>Repeat</strong> (задачи с заданным числом отображаются в списке ToDo только при наступлении данной даты). Либо задача была отмечена звездочкой, либо для задач были определены сроки начала или конца выполнения и эти сроки уже прошли.
 

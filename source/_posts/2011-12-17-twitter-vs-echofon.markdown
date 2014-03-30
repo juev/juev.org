@@ -21,9 +21,9 @@ MacOS в корне отличается от Windows тем, что для да
 [Twitter for mac]: http://itunes.apple.com/ru/app/twitter/id409789998?mt=12
 	"Mac AppStore - Twitter"
 
-[![twitter-main][]](http://static.juev.ru/2011/12/twitter-main.png)
+[![twitter-main][]](http://static.juev.org/2011/12/twitter-main.png)
 
-[twitter-main]: http://static.juev.ru/2011/12/twitter-main-th.jpg
+[twitter-main]: http://static.juev.org/2011/12/twitter-main-th.jpg
 
 Возможности клиента охватывают весь функционал социальной сети. Можно читать свою основную ленту сообщений, просматривать список ответов к конкретному сообщению, соответственно создавать новое сообщение или отвечать, а так же ретвиттить сообщения, в том числе и с комментарием. 
 
@@ -31,17 +31,17 @@ MacOS в корне отличается от Windows тем, что для да
 
 Список ответов показывается в том же окне, что и основная лента.
 
-[![twitter-conversion][]](http://static.juev.ru/2011/12/twitter-conversion.png)
+[![twitter-conversion][]](http://static.juev.org/2011/12/twitter-conversion.png)
 
-[twitter-conversion]: http://static.juev.ru/2011/12/twitter-conversion-th.jpg
+[twitter-conversion]: http://static.juev.org/2011/12/twitter-conversion-th.jpg
 
 А вот создание нового сообщения или ответ показываются во всплывающем блоке в правой части окна. Что иногда бывает очень не удобно. И изменить данное поведение невозможно.
 
 В настройках программы можно задать сервис, на котором будут храниться загружаемые изображения, вид сообщений и поведение ленты при появлении новых твиттов. 
 
-[![twitter-settings-general][]](http://static.juev.ru/2011/12/twitter-settings-general.png)
+[![twitter-settings-general][]](http://static.juev.org/2011/12/twitter-settings-general.png)
 
-[twitter-settings-general]: http://static.juev.ru/2011/12/twitter-settings-general-th.jpg
+[twitter-settings-general]: http://static.juev.org/2011/12/twitter-settings-general-th.jpg
 
 А в разделе Developer можно задать ключи приложения, которое создается на [dev.twitter.com][], после чего клиент будет идентифицировать себя уже как другое приложение, очень удобно использовать данную возможность при создании бренда какой-то компании.
 
@@ -59,21 +59,21 @@ MacOS в корне отличается от Windows тем, что для да
 
 Echofon -- это клиент, который существует в MacOS довольно продолжительное время. И практически все это время основной упор программы делался на минимализм и удобство. Все элементы и необходимые органы управления сконцентрированы в одном окне.
 
-[![echofon-main][]](http://static.juev.ru/2011/12/echofon-main.png)
+[![echofon-main][]](http://static.juev.org/2011/12/echofon-main.png)
 
-[echofon-main]: http://static.juev.ru/2011/12/echofon-main-th.jpg
+[echofon-main]: http://static.juev.org/2011/12/echofon-main-th.jpg
 
 А вот диалоги и профили пользователей показываются в панели, что показывается в правой части окна.
 
-[![echofon-conversion][]](http://static.juev.ru/2011/12/echofon-conversion.png)
+[![echofon-conversion][]](http://static.juev.org/2011/12/echofon-conversion.png)
 
-[echofon-conversion]: http://static.juev.ru/2011/12/echofon-conversion-th.jpg
+[echofon-conversion]: http://static.juev.org/2011/12/echofon-conversion-th.jpg
 
 Настройки программы очень хорошо организованы и позволяют задавать оптимальное поведение программы.
 
-[![echofon-settings-advanced][]](http://static.juev.ru/2011/12/echofon-settings-advanced.png)
+[![echofon-settings-advanced][]](http://static.juev.org/2011/12/echofon-settings-advanced.png)
 
-[echofon-settings-advanced]: http://static.juev.ru/2011/12/echofon-settings-advanced-th.jpg
+[echofon-settings-advanced]: http://static.juev.org/2011/12/echofon-settings-advanced-th.jpg
 
 Так же как и в **Twitter for mac**, весь функционал twitter реализован на все 100%. Но помимо этого присутствует дополнительный функционал.
 

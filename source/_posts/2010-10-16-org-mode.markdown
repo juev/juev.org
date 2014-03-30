@@ -15,11 +15,11 @@ Touch/iPad, с помощью приложения <a href="http://mobileorg.nco
 
 Более подробно об org-mode можно узнать на официальной странице <a href="http://orgmode.org/" rel="nofollow">orgmode.org</a>. Где функционирует сообщество <a href="http://orgmode.org/worg/" rel="nofollow">worg</a>, и сам сайт создан используя режим <b>org-mode</b>.
 
-<a href="http://static.juev.ru/2010/10/org-mode.png"><img src="http://static.juev.ru/2010/10/org-mode-300x227.png" alt="" title="org-mode" width="300" height="227" class="aligncenter size-medium wp-image-1234" /></a>
+<a href="http://static.juev.org/2010/10/org-mode.png"><img src="http://static.juev.org/2010/10/org-mode-300x227.png" alt="" title="org-mode" width="300" height="227" class="aligncenter size-medium wp-image-1234" /></a>
  
 И то, что получается в итоге:
 
-<a href="http://static.juev.ru/2010/10/org-mode-Chromium.png"><img src="http://static.juev.ru/2010/10/org-mode-Chromium-300x228.png" alt="" title="org-mode-Chromium" width="300" height="228" class="aligncenter size-medium wp-image-1235" /></a>
+<a href="http://static.juev.org/2010/10/org-mode-Chromium.png"><img src="http://static.juev.org/2010/10/org-mode-Chromium-300x228.png" alt="" title="org-mode-Chromium" width="300" height="228" class="aligncenter size-medium wp-image-1235" /></a>
  
 Синтаксис текстовых файлов похож на тот, что используется в языке разметки <a href="http://ru.wikipedia.org/wiki/Markdown" rel="nofollow">MarkDown</a>. И при этом написание очень сильно упрощается в виду использования горячих клавиш.
  

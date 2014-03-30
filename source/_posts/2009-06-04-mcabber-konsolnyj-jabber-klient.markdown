@@ -44,7 +44,7 @@ tags:
 
 После запуска mcabber выглядит примерно вот так, если не менялась цветовая схема:
 
-<img src="http://static.juev.ru/2009/06/mcabber_sample.png" alt="" />
+<img src="http://static.juev.org/2009/06/mcabber_sample.png" alt="" />
 
 Слева - ростер (он же лист контактов)
 Правее - окно чата.

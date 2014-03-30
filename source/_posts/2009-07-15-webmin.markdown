@@ -21,25 +21,25 @@ tags:
 
 После запуска сервиса можно приступать к настройке. Для этого открываем браузер и обращаемся по адресу <em>http://you_ip_server:10000</em>. Вводим логи и пароль администратора. И увидим примерно следующее:
 
-<a href="http://static.juev.ru/2009/07/2009-07-14-111135_1280x1024_scrot.png"><img class="aligncenter size-medium wp-image-407" title="Главная страница Webmin" src="http://static.juev.ru/2009/07/2009-07-14-111135_1280x1024_scrot-300x111.png" alt="Главная страница Webmin" width="300" height="111" /></a>
+<a href="http://static.juev.org/2009/07/2009-07-14-111135_1280x1024_scrot.png"><img class="aligncenter size-medium wp-image-407" title="Главная страница Webmin" src="http://static.juev.org/2009/07/2009-07-14-111135_1280x1024_scrot-300x111.png" alt="Главная страница Webmin" width="300" height="111" /></a>
 
 По умолчанию используется интерфейс на английском языке, и довольно легкая тема оформления. Язык можно изменить в настройках, а вот тему в Debian сменить не возможно (в принципе это и не нужно, интерфейс удобен и используется оч редко).
 
 С помощью данной системы удаленного управления сервером можно устанавливать программы:
 
-<a href="http://static.juev.ru/2009/07/2009-07-14-111311_1280x1024_scrot.png"><img class="aligncenter size-medium wp-image-408" title="Пакеты программного обеспечения" src="http://static.juev.ru/2009/07/2009-07-14-111311_1280x1024_scrot-300x155.png" alt="Пакеты программного обеспечения" width="300" height="155" /></a>
+<a href="http://static.juev.org/2009/07/2009-07-14-111311_1280x1024_scrot.png"><img class="aligncenter size-medium wp-image-408" title="Пакеты программного обеспечения" src="http://static.juev.org/2009/07/2009-07-14-111311_1280x1024_scrot-300x155.png" alt="Пакеты программного обеспечения" width="300" height="155" /></a>
 
 Просматривать и управлять процессами, контролировать загрузку системы:
 
-<a href="http://static.juev.ru/2009/07/2009-07-14-111351_1280x1024_scrot.png"><img class="aligncenter size-medium wp-image-409" title="Запущенные процессы" src="http://static.juev.ru/2009/07/2009-07-14-111351_1280x1024_scrot-300x152.png" alt="Запущенные процессы" width="300" height="152" /></a>
+<a href="http://static.juev.org/2009/07/2009-07-14-111351_1280x1024_scrot.png"><img class="aligncenter size-medium wp-image-409" title="Запущенные процессы" src="http://static.juev.org/2009/07/2009-07-14-111351_1280x1024_scrot-300x152.png" alt="Запущенные процессы" width="300" height="152" /></a>
 
 А так же настраивать различные сервисы, которые работают на сервере (показана лишь малая часть):
 
 **Postfix**
-<a href="http://static.juev.ru/2009/07/2009-07-14-111429_1280x1024_scrot.png"><img class="size-medium wp-image-410 aligncenter" title="Настройка Postfix" src="http://static.juev.ru/2009/07/2009-07-14-111429_1280x1024_scrot-300x166.png" alt="Настройка Postfix" width="300" height="166" /></a>
+<a href="http://static.juev.org/2009/07/2009-07-14-111429_1280x1024_scrot.png"><img class="size-medium wp-image-410 aligncenter" title="Настройка Postfix" src="http://static.juev.org/2009/07/2009-07-14-111429_1280x1024_scrot-300x166.png" alt="Настройка Postfix" width="300" height="166" /></a>
 
 **Bind**
-<a href="http://static.juev.ru/2009/07/2009-07-14-111441_1280x1024_scrot.png"><img class="size-medium wp-image-411 aligncenter" title="Сервер BIND" src="http://static.juev.ru/2009/07/2009-07-14-111441_1280x1024_scrot-300x211.png" alt="Сервер BIND" width="300" height="211" /></a>
+<a href="http://static.juev.org/2009/07/2009-07-14-111441_1280x1024_scrot.png"><img class="size-medium wp-image-411 aligncenter" title="Сервер BIND" src="http://static.juev.org/2009/07/2009-07-14-111441_1280x1024_scrot-300x211.png" alt="Сервер BIND" width="300" height="211" /></a>
 
 Используя данный интерфейс в течение 5-10 минут настроил и запустил в работу Postfix, который упустил во время настройки руками. И примерно столько же времени потратил на настройку Bind. Причем в Bind генерировал и подписывал ключи, редактировал зоны...
 

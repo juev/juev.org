@@ -18,55 +18,55 @@ tags:
 
 Первые 7 дней после регистрации даются на тестирование сервиса. Этого вполне достаточно для того, чтобы оценить, стоит ли использовать его в своей практике или нет. При регистрации не спрашивают данные кредитной карты. По истечении 7 дней потребуется оплатить использование сервиса, если, конечно, мы захотим использовать его дальше.
 
-[![price][]](http://static.juev.ru/2012/01/price.png)
+[![price][]](http://static.juev.org/2012/01/price.png)
 
-[price]: http://static.juev.ru/2012/01/price-th.png
+[price]: http://static.juev.org/2012/01/price-th.png
 
 ## Описание системы
 
 Что именно предоставляет сервис своим пользователям? Главное отличие от Google Analytics заключается в "удобности" чтения информации.
 
-[![overview][]](http://static.juev.ru/2012/01/overview.png)
+[![overview][]](http://static.juev.org/2012/01/overview.png)
 
-[overview]: http://static.juev.ru/2012/01/overview-th.png
+[overview]: http://static.juev.org/2012/01/overview-th.png
 
 На одном экране расположено все необходимое, и данные по всем сайтам, зарегистрированным в системе. И чуть правее расположена подробная информация по конкретному сайту. Самое интересное заключается в том, что все данные отображаются с использованием html5, никакого флеша на страницах нет. Естественно, что при этом никаких проблем с отображением не возникает, чем кстати грешит GA.
 
 И еще одна "фишка" сервиса заключается в просмотре данных в реальном времени. Все счетчики обновляются без перезагрузки страницы, все очень оперативно и информативно. А на вкладке Live Data все данные просмотров накладываются еще на карту.
 
-[![live_data][]](http://static.juev.ru/2012/01/live_data.png)
+[![live_data][]](http://static.juev.org/2012/01/live_data.png)
 
-[live_data]: http://static.juev.ru/2012/01/live_data-th.png
+[live_data]: http://static.juev.org/2012/01/live_data-th.png
 
 На этой же странице можно получить информацию о браузере, операционной системе посетителя и разрешении экрана, что он использует. Более подробную статистику по используемым браузерам, системам и разрешениям экрана можно получить на соответствующих вкладках.
 
-[![browsers][]](http://static.juev.ru/2012/01/browsers.png)
+[![browsers][]](http://static.juev.org/2012/01/browsers.png)
 
-[browsers]: http://static.juev.ru/2012/01/browsers-th.png
+[browsers]: http://static.juev.org/2012/01/browsers-th.png
 
 Обратите внимание на то, что посетители моего сайта чаще всего используют именно Google Chrome в качестве своего браузера, а Firefox начинает терять свои позиции.
 
-[![screen_size][]](http://static.juev.ru/2012/01/screen_sizes.png)
+[![screen_size][]](http://static.juev.org/2012/01/screen_sizes.png)
 
-[screen_size]: http://static.juev.ru/2012/01/screen_sizes-th.png
+[screen_size]: http://static.juev.org/2012/01/screen_sizes-th.png
 
 Здесь же можно получить подробную информацию по странам, откуда приходят посетители. Обратите внимание на то, что Соединенные Штаты представлены более подробно, чем остальная часть мира.
 
-[![geolocation][]](http://static.juev.ru/2012/01/geolocation.png)
+[![geolocation][]](http://static.juev.org/2012/01/geolocation.png)
 
-[geolocation]: http://static.juev.ru/2012/01/geolocation-th.png
+[geolocation]: http://static.juev.org/2012/01/geolocation-th.png
 
 На вкладке Overview представлена информация не только о количестве посетителей, но и о сайтах, с которых пришли посетители и о поисковых запросах, которые они использовали. Данные ограничены только последними значениями, и более детальную информацию можно получить на соответствующей вкладке.
 
-[![search_terms][]](http://static.juev.ru/2012/01/search_terms.png)
+[![search_terms][]](http://static.juev.org/2012/01/search_terms.png)
 
-[search_terms]: http://static.juev.ru/2012/01/search_terms-th.png
+[search_terms]: http://static.juev.org/2012/01/search_terms-th.png
 
 Обратите внимание на то, что в списке поисковых систем представлены только Google и Bing. Яндекс отсутствует как класс, хотя в GA он фиксируется. Думаю проблема в неизвестности данной поисковой системы за пределами России.
 
-[![search_engines][]](http://static.juev.ru/2012/01/search_engines.png)
+[![search_engines][]](http://static.juev.org/2012/01/search_engines.png)
 
-[search_engines]: http://static.juev.ru/2012/01/search_engines-th.png
+[search_engines]: http://static.juev.org/2012/01/search_engines-th.png
 
 И если обратиться к разработчикам, данную ситуацию поправят. В России же пока Gauges мало известны. И будут ли пользоваться популярностью -- большой вопрос!
 

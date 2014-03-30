@@ -33,7 +33,7 @@ Google Mail Checker Plus позволяет иметь быстрый досту
 
 Speed Dial одно из моих любимых расширений. Позволяет настраивать вид стартового окна браузера, указывая, какие сайты, на каких кнопках будут располагаться. При этом есть возможность управлять внешним видом стартового окна и задавать количество кнопок. Странно, что до сих пор функционал данного расширения не используется в Google Chrome по умолчанию. То, что реализовано в браузере сейчас очень не удобно.
 
-<a href="http://static.juev.ru/2010/08/Chrome.png"><img class="aligncenter size-medium wp-image-1124" title="Chrome" src="http://static.juev.ru/2010/08/Chrome-300x269.png" alt="" width="300" height="269" /></a>
+<a href="http://static.juev.org/2010/08/Chrome.png"><img class="aligncenter size-medium wp-image-1124" title="Chrome" src="http://static.juev.org/2010/08/Chrome-300x269.png" alt="" width="300" height="269" /></a>
 
 Вот так выглядит мой браузер сейчас. Количество кнопок на панели инструментов сведено к минимуму. И в то же время все находиться под руками. Теперь осталось рассмотреть те расширения, что я добавил к своему набору.
 <ul>
@@ -47,7 +47,7 @@ iReader довольно интересное расширение, которо
 
 И, наконец, просто находка, это Shareaholic - расширение, которое позволило мне заменить целый ряд расширений.
 
-<img class="aligncenter size-full wp-image-1125" title="Shareaholic" src="http://static.juev.ru/2010/08/Shareaholic.png" alt="" width="216" height="306" />
+<img class="aligncenter size-full wp-image-1125" title="Shareaholic" src="http://static.juev.org/2010/08/Shareaholic.png" alt="" width="216" height="306" />
 
 Порядка 4 расширений заменил одним:
 <ul>

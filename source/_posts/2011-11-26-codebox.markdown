@@ -20,9 +20,9 @@ tags:
 [Dash]: http://itunes.apple.com/ru/app/dash/id458034879?mt=12
     "Dash - Developer Tools"
 
-[![dashp][]](http://static.juev.ru/2011/11/dash.png)
+[![dashp][]](http://static.juev.org/2011/11/dash.png)
 
-[dashp]: http://static.juev.ru/2011/11/dash-th.jpg
+[dashp]: http://static.juev.org/2011/11/dash-th.jpg
 
 Dash позволяет создавать собственную коллекцию снипетов, организуя их с помощью тегов.  После запуска программы, она размещается в трее и вызывается оттуда при необходимости либо с помощью иконки, либо с помощью комбинаций клавиш.
 
@@ -43,9 +43,9 @@ Dash позволяет создавать собственную коллекц
 [Codebox]: http://itunes.apple.com/ru/app/codebox/id412536790?mt=12
     "CodeBox"
 
-[![codeboxp][]](http://static.juev.ru/2011/11/codebox.png)
+[![codeboxp][]](http://static.juev.org/2011/11/codebox.png)
 
-[codeboxp]: http://static.juev.ru/2011/11/codebox-th.jpg
+[codeboxp]: http://static.juev.org/2011/11/codebox-th.jpg
 
 CodeBox платная программа, мне удалось в Черную Пятницу приобрести ее за полцены.  Отличается от Dash тем, что умеет делать те же самые операции, в то же время не имеет ее недостатков и к тому же умеет несколько большее!
 
