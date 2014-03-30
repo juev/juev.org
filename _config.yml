@@ -1,5 +1,5 @@
 ---
-url:         http://www.juev.ru
+url:         http://www.juev.org
 future:      true
 lsi:         false
 #pygments:    true
@@ -22,7 +22,7 @@ tag_page_dir: tags
 
 prose:
   rooturl: 'source/_posts'
-  siteurl: 'http://www.juev.ru'
+  siteurl: 'http://www.juev.org'
   media: 'assets'
   metadata:
     source/_posts:
