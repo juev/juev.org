@@ -27,18 +27,18 @@ May the charm be with you!
   <link rel="stylesheet" type="text/css" href="/assets/master.css">{% if page.previous %}
   <link rel="prev" href="{{ page.previous.url }}">{% endif %}{% if page.next %}
   <link rel="next" href="{{ page.next.url }}">{% endif %}
-  <!-- og:meta --> {% if page.title %}
-  <meta content="{{ page.title }}" property="og:title"> {% elsif page.grouptype == "tag" %}
-  <meta content="Posts Tagged '{{ page.tag }}' | {{ site.title }}" property="og:title"> {% else %}
-  <meta content="{{ site.title }}" property="og:title"> {% endif %}
-  <meta content="{{ site.title }}" property="og:site_name"> {% if page.description %}
-  <meta content="{{ page.description }}" property="og:description"> {% else %}
-  <meta content="{{ page.content | markdownify | strip_html | strip_newlines | xml_escape | replace: '.','. ' | truncate: 200 }}" property="og:description"> {% endif %} {% if page.grouptype == "index" %}
-  <meta content="website" property="og:type"> {% else %}
-  <meta content="article" property="og:type"> {% endif %} {% if page.url %}
-  <meta content="{{ site.url }}{{ page.url }}" property="og:url"> {% endif %} {% if page.date %}
-  <meta content="{{ page.date | date_to_xmlschema }}" property="article:published_time"> {% endif %} {% if page.tags %} {% for tag in page.tags %}
-  <meta content="{{ tag }}" property="article:tag"> {% endfor %} {% endif %}
+  <!-- og:meta -->{% if page.title %}
+  <meta content="{{ page.title }}" property="og:title">{% elsif page.grouptype == "tag" %}
+  <meta content="Posts Tagged '{{ page.tag }}' | {{ site.title }}" property="og:title">{% else %}
+  <meta content="{{ site.title }}" property="og:title">{% endif %}
+  <meta content="{{ site.title }}" property="og:site_name">{% if page.description %}
+  <meta content="{{ page.description }}" property="og:description">{% else %}
+  <meta content="{{ page.content | markdownify | strip_html | strip_newlines | xml_escape | replace: '.','. ' | truncate: 200 }}" property="og:description">{% endif %}{% if page.grouptype == "index" %}
+  <meta content="website" property="og:type">{% else %}
+  <meta content="article" property="og:type">{% endif %}{% if page.url %}
+  <meta content="{{ site.url }}{{ page.url }}" property="og:url">{% endif %}{% if page.date %}
+  <meta content="{{ page.date | date_to_xmlschema }}" property="article:published_time">{% endif %}{% if page.tags %}{% for tag in page.tags %}
+  <meta content="{{ tag }}" property="article:tag">{% endfor %}{% endif %}
   <meta content="http://static.juev.org/img.jpg" property="og:image">
   <meta content="200" property="og:image:width">
   <meta content="200" property="og:image:height">
