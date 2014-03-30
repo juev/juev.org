@@ -20,19 +20,19 @@ tags:
 
 Вот так выглядел Flickr без данного расширения:
 
-<a href="http://static.juev.ru/2010/05/Flickr-without.png"><img class="aligncenter size-medium wp-image-1038" title="Flickr - without" src="http://static.juev.ru/2010/05/Flickr-without-300x287.png" alt="" width="300" height="287" /></a>
+<a href="http://static.juev.org/2010/05/Flickr-without.png"><img class="aligncenter size-medium wp-image-1038" title="Flickr - without" src="http://static.juev.org/2010/05/Flickr-without-300x287.png" alt="" width="300" height="287" /></a>
 
 Только основная информация по снимку, все управление сосредоточено над самим изображением, просмотр фотографии в другом размере открывает новые страницы. Теперь устанавливаем расширение и смотрим на изменения:
 
-<a href="http://static.juev.ru/2010/05/Flickr-with.png"><img class="aligncenter size-medium wp-image-1037" title="Flickr - with" src="http://static.juev.ru/2010/05/Flickr-with-299x300.png" alt="" width="299" height="300" /></a>
+<a href="http://static.juev.org/2010/05/Flickr-with.png"><img class="aligncenter size-medium wp-image-1037" title="Flickr - with" src="http://static.juev.org/2010/05/Flickr-with-299x300.png" alt="" width="299" height="300" /></a>
 
 Появляются дополнительные ссылки под самим изображением, и над информацией об используемом приложении для загрузки. Что они дают? Если воспользоваться ссылками под самим изображением (T M S L O), то открывается изображение в указанном размере, при этом сразу видно, какие форматы доступны для просмотра (это задается автором фотографии, оригиналы доступны крайне редко). Рядом располагается плюсик с краткой exif информацией фотографии, если щелкнуть по плюсику, информация разворачивается на определенные категории:
 
-<a href="http://static.juev.ru/2010/05/Flickr-exif.png"><img class="aligncenter size-medium wp-image-1035" title="Flickr - exif" src="http://static.juev.ru/2010/05/Flickr-exif-292x300.png" alt="" width="292" height="300" /></a>
+<a href="http://static.juev.org/2010/05/Flickr-exif.png"><img class="aligncenter size-medium wp-image-1035" title="Flickr - exif" src="http://static.juev.org/2010/05/Flickr-exif-292x300.png" alt="" width="292" height="300" /></a>
 
 Но самое интересное заключается в том, что фотография на странице так же становиться ссылкой. И при щелчке на фотографию, поверх страницы открывается поле с фотографий в более крупном размере:
 
-<a href="http://static.juev.ru/2010/05/Flickr-full.png"><img class="aligncenter size-medium wp-image-1036" title="Flickr - full" src="http://static.juev.ru/2010/05/Flickr-full-300x218.png" alt="" width="300" height="218" /></a>
+<a href="http://static.juev.org/2010/05/Flickr-full.png"><img class="aligncenter size-medium wp-image-1036" title="Flickr - full" src="http://static.juev.org/2010/05/Flickr-full-300x218.png" alt="" width="300" height="218" /></a>
 
 Рядом с фотографией представлены три квадратика, которые позволяют менять цвет фона. Теперь не нужно переходить на другие страницы, для того, чтобы увидеть фотографию во всей ее красоте!
 

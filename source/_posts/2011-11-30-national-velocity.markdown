@@ -29,9 +29,9 @@ tags:
 
 [![nvalt-img][]][3]
 
-[nvalt-img]: http://static.juev.ru/2011/11/nvalt-th.jpg
+[nvalt-img]: http://static.juev.org/2011/11/nvalt-th.jpg
 
-[3]: http://static.juev.ru/2011/11/nvalt.png
+[3]: http://static.juev.org/2011/11/nvalt.png
 
 По внешнему виду очень похожа на Nothingham, только без изысков, типа фона заметки и цветовое оформление чуть более скуднее.
 

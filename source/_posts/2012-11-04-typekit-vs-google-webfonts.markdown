@@ -20,9 +20,9 @@ tags:
 
 Бесплатный сервис [google.com/webfonts](http://www.google.com/webfonts "Google Web Fonts") служит для предоставления шрифтов вебразработчикам. Содержит в себе только бесплатные варианты шрифтов. Общее число 573, но с поддержкой русского языка их всего 43. При этом что странно, некоторые шрифты, которые изначально имеют поддержку русского языка, на сервере представлены без нее (к примеру шрифт Droid Sans).
 
-[![google-webfonts](http://static.juev.ru/2012/11/th-google-webfonts.png)](http://static.juev.ru/2012/11/google-webfonts.png "Google Webfonts")
+[![google-webfonts](http://static.juev.org/2012/11/th-google-webfonts.png)](http://static.juev.org/2012/11/google-webfonts.png "Google Webfonts")
 
-[![google-use](http://static.juev.ru/2012/11/th-google-use.png)](http://static.juev.ru/2012/11/google-use.png "Google Webfonts Use")
+[![google-use](http://static.juev.org/2012/11/th-google-use.png)](http://static.juev.org/2012/11/google-use.png "Google Webfonts Use")
 
 Шрифты можно подключать тремя способами:
 
@@ -51,16 +51,16 @@ tags:
  
 [Typekit](https://typekit.com "Typekit") отличается от Google Webfonts тем, что предоставляет доступ к коммерческим шрифтам. За использование приходиться или платить абонентскую плату, или же пользуясь ограниченным набором шрифтов, показывать в правом нижнем углу сайта небольшой баннер сервиса.
 
-[![typekit-webfonts](http://static.juev.ru/2012/11/th-typekit-webfonts.png)](http://static.juev.ru/2012/11/typekit-webfonts.png "Typekit")
+[![typekit-webfonts](http://static.juev.org/2012/11/th-typekit-webfonts.png)](http://static.juev.org/2012/11/typekit-webfonts.png "Typekit")
 
-[![typekit-use](http://static.juev.ru/2012/11/th-typekit-use.png)](http://static.juev.ru/2012/11/typekit-use.png "Typekit Use")
+[![typekit-use](http://static.juev.org/2012/11/th-typekit-use.png)](http://static.juev.org/2012/11/typekit-use.png "Typekit Use")
 
 Всего шрифтов на сервере Typekit -- 783, но с поддержкой русского языка 92. Для подключения используется JS-скрипт, который генерируется отдельно для каждого проекта.
 
     <script type="text/javascript" src="//use.typekit.net/sux8vth.js"></script>
     <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
 
-[![typekit-editor](http://static.juev.ru/2012/11/th-typekit-editor.png)](http://static.juev.ru/2012/11/typekit-editor.png "Typekit Editor")
+[![typekit-editor](http://static.juev.org/2012/11/th-typekit-editor.png)](http://static.juev.org/2012/11/typekit-editor.png "Typekit Editor")
 
 Плюсы сервиса:
 

@@ -17,11 +17,11 @@ tags:
 
 К примеру, вот так было:
 
-[![iReader origin][1]](http://static.juev.ru/2011/05/iReader-origin.png)
+[![iReader origin][1]](http://static.juev.org/2011/05/iReader-origin.png)
 
 А это уже после преобразования:
 
-[![iReader][2]](http://static.juev.ru/2011/05/iReader.png)
+[![iReader][2]](http://static.juev.org/2011/05/iReader.png)
 
 Читать гораздо приятнее, удобнее. При этом во всплывающей панели (на снимке снизу) есть кнопки изменения размера шрифта, и кнопки размещения статьи в социальных сетях.
 
@@ -33,11 +33,11 @@ tags:
 
 Таким образом и время не теряется и про статью не забудешь. Вот так выглядит уже сформированный список чтения:
 
-[![Instapaper List][3]](http://static.juev.ru/2011/05/instapaper-list.png)
+[![Instapaper List][3]](http://static.juev.org/2011/05/instapaper-list.png)
 
 Статьи можно открывать и в виде "только текст", при этом можно управлять, как будет отображаться статья на экране (ширина текстового поля, шрифты, размер шрифтов).
 
-[![Instapaper Text][4]](http://static.juev.ru/2011/05/instapaper-text.png)
+[![Instapaper Text][4]](http://static.juev.org/2011/05/instapaper-text.png)
 
 Единственно что удручает, так это сложность некоторых операций. К примеру, есть возможность преобразовать статью для чтения, но при этом статья не заноситься в список. Есть возможность занести статью в список, и только после этого ее открыть в виде для
 чтения. Но нет возможности одним нажатием прочесть и занести в список, что порой бывает так необходимо.
@@ -60,11 +60,11 @@ tags:
 
 Для примера работы возьмем следующую страницу:
 
-[![Readability origin][6]](http://static.juev.ru/2011/05/readability-origin.png)
+[![Readability origin][6]](http://static.juev.org/2011/05/readability-origin.png)
 
 И после преобразования мы получаем следующее:
 
-[![Readability][7]](http://static.juev.ru/2011/05/readability-read.png)
+[![Readability][7]](http://static.juev.org/2011/05/readability-read.png)
 
 Очень удобно для чтения, при этом слева располагается небольшая скрываемая панель, с помощью которой можно управлять отображением текста:
 
@@ -78,7 +78,7 @@ tags:
 
 Список статей выглядит следующим образом:
 
-[![Readability Main][10]](http://static.juev.ru/2011/05/readability-main.png)
+[![Readability Main][10]](http://static.juev.org/2011/05/readability-main.png)
 
 При использовании сервиса в браузере *iOS* проблем не возникает, а вот на *Android* заставить сервис работать нормально мне так и не удалось. Отписал о проблеме разработчикам, жду решения.
 
@@ -92,14 +92,14 @@ tags:
 [iReader]: https://chrome.google.com/webstore/detail/ppelffpjgkifjfgnbaaldcehkpajlmbc?hl=ru 
   "iReader"
 [Instapaper]: http://www.instapaper.com/ "Instapaper"
-[1]: http://static.juev.ru/2011/05/iReader-origin-th.png "iReader origin"
-[2]: http://static.juev.ru/2011/05/iReader-th.png "iReader"
-[3]: http://static.juev.ru/2011/05/instapaper-list-th.png "Instapaper List"
-[4]: http://static.juev.ru/2011/05/instapaper-text-th.png "Instapaper Text"
+[1]: http://static.juev.org/2011/05/iReader-origin-th.png "iReader origin"
+[2]: http://static.juev.org/2011/05/iReader-th.png "iReader"
+[3]: http://static.juev.org/2011/05/instapaper-list-th.png "Instapaper List"
+[4]: http://static.juev.org/2011/05/instapaper-text-th.png "Instapaper Text"
 [5]: http://lab.arc90.com/2009/03/02/readability/ "Readability"
 [Readability]: https://www.readability.com "Readability"
-[6]: http://static.juev.ru/2011/05/readability-origin-th.png "Origin"
-[7]: http://static.juev.ru/2011/05/readability-read-th.png "Readability Read"
-[8]: http://static.juev.ru/2011/05/readability-setup.png "Readability Setup"
-[9]: http://static.juev.ru/2011/05/readability-share.png "Readability Share"
-[10]: http://static.juev.ru/2011/05/readability-main-th.png "Readability Main"
+[6]: http://static.juev.org/2011/05/readability-origin-th.png "Origin"
+[7]: http://static.juev.org/2011/05/readability-read-th.png "Readability Read"
+[8]: http://static.juev.org/2011/05/readability-setup.png "Readability Setup"
+[9]: http://static.juev.org/2011/05/readability-share.png "Readability Share"
+[10]: http://static.juev.org/2011/05/readability-main-th.png "Readability Main"

@@ -20,11 +20,11 @@ tags:
 
 Мне оказалось проще всего, у меня клавиатура Apple aluminum keyboard, в которой уже частично исправлена ситуация.
 
-<a href="http://static.juev.ru/2010/06/apple-aluminum-keyboard.jpg"><img class="aligncenter size-medium wp-image-1085" title="apple-aluminum-keyboard" src="http://static.juev.ru/2010/06/apple-aluminum-keyboard-300x89.jpg" alt="" width="300" height="89" /></a>
+<a href="http://static.juev.org/2010/06/apple-aluminum-keyboard.jpg"><img class="aligncenter size-medium wp-image-1085" title="apple-aluminum-keyboard" src="http://static.juev.org/2010/06/apple-aluminum-keyboard-300x89.jpg" alt="" width="300" height="89" /></a>
 
 И осталось только переопределить две клавиши, фактически поменять их местами, это Cmd (Win) и Ctrl.
 
-<a href="http://static.juev.ru/2010/06/keyboard_2.jpg"><img class="aligncenter size-medium wp-image-1086" title="apple-edit" src="http://static.juev.ru/2010/06/keyboard_2-300x85.jpg" alt="apple-edit" width="300" height="85" /></a>
+<a href="http://static.juev.org/2010/06/keyboard_2.jpg"><img class="aligncenter size-medium wp-image-1086" title="apple-edit" src="http://static.juev.org/2010/06/keyboard_2-300x85.jpg" alt="apple-edit" width="300" height="85" /></a>
 
 Для совершения данной операции можно воспользоваться или <a href="http://www.autohotkey.com/" rel="nofollow">AutoHotkey</a>, или <a href="http://www.randyrants.com/sharpkeys/" rel="nofollow">sharpkeys3</a>, о чем я уже описывал в статье <a href="/2010/06/14/korrekciya-raskladki-v-windows/">Коррекция раскладки в Windows</a>. Принцип тот же самый. Используются только другие клавиши. Единственно, хотелось бы обратить внимание, что при использовании AutoHotKey бывает возникают проблемы с определением клавиш и при нажатии на Ctrl вдруг срабатывает Win. Если же использовать программу sharpkeys3, происходит правка реестра и никаких проблем не наблюдается. Именно поэтому я рекомендую использовать именно этот способ.
 
@@ -32,11 +32,11 @@ tags:
 
 Для владельцев обычной клавиатуры придется совершать чуть больше действий.
 
-<a href="http://static.juev.ru/2010/06/Mitsumi-KFK-EA4XA.jpg"><img class="aligncenter size-medium wp-image-1088" title="Mitsumi-KFK-EA4XA" src="http://static.juev.ru/2010/06/Mitsumi-KFK-EA4XA-300x119.jpg" alt="" width="300" height="119" /></a>
+<a href="http://static.juev.org/2010/06/Mitsumi-KFK-EA4XA.jpg"><img class="aligncenter size-medium wp-image-1088" title="Mitsumi-KFK-EA4XA" src="http://static.juev.org/2010/06/Mitsumi-KFK-EA4XA-300x119.jpg" alt="" width="300" height="119" /></a>
 
 Здесь нужно менять местами уже три клавиши.
 
-<a href="http://static.juev.ru/2010/06/keyboard-mitsumi.jpg"><img class="aligncenter size-medium wp-image-1087" title="keyboard-mitsumi" src="http://static.juev.ru/2010/06/keyboard-mitsumi-300x100.jpg" alt="" width="300" height="100" /></a>
+<a href="http://static.juev.org/2010/06/keyboard-mitsumi.jpg"><img class="aligncenter size-medium wp-image-1087" title="keyboard-mitsumi" src="http://static.juev.org/2010/06/keyboard-mitsumi-300x100.jpg" alt="" width="300" height="100" /></a>
 
 Но, опять же, с использованием sharpkeys3 это очень просто. Нажатием клавиши определяем клавишу, которую будем менять и задаем ей новый модификатор из списка. После перезагрузки системы можно будет наслаждаться новой раскладкой.
 

@@ -61,11 +61,11 @@ tags:
 
 В папке `osx-terminal.app-colors-solarized` располагаются файлы цветовых профилей для Terminal.app. Двойным кликом устанавливаем нужный вариант (их два -- один светлый, другой темный), при этом открываются настройки Terminal.app с выбранным профилем Solarized. Я использую светлую схему. И в настройках терминала я изменил лиловый цвет на ярко-голубой (14 цвет). Именно он используется при показе директорий и лиловый был слишком светлым.
 
-![terminal-settings](http://static.juev.ru/2011/12/terminal-settings.png)
+![terminal-settings](http://static.juev.org/2011/12/terminal-settings.png)
 
 Изменил так же шрифт на любимый мною Menlo. И в совокупности с расширениями теперь в директории с Git-репозиторием отображается его название и активная ветка:
 
-![terminal-git](http://static.juev.ru/2011/12/terminal-git.png)
+![terminal-git](http://static.juev.org/2011/12/terminal-git.png)
 
 ## Итоги
 

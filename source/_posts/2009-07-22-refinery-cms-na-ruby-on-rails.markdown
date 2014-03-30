@@ -61,19 +61,19 @@ tags:
 
 Открываем браузер и переходим по адресу 127.0.0.1:3000. Где сразу же увидим форму с предложением создать администратора сайта:
 
-<a href="http://static.juev.ru/2009/07/2009-07-21-141546_1280x1024_scrot.png"><img class="aligncenter size-full wp-image-451" title="Welcome to Refinery" src="http://static.juev.ru/2009/07/2009-07-21-141546_1280x1024_scrot.png" alt="Welcome to Refinery" width="239" height="155" /></a>
+<a href="http://static.juev.org/2009/07/2009-07-21-141546_1280x1024_scrot.png"><img class="aligncenter size-full wp-image-451" title="Welcome to Refinery" src="http://static.juev.org/2009/07/2009-07-21-141546_1280x1024_scrot.png" alt="Welcome to Refinery" width="239" height="155" /></a>
 
 Переходим по кнопке и заполняем предложенные данные:
 
-<a href="http://static.juev.ru/2009/07/2009-07-21-141554_1280x1024_scrot.png"><img class="aligncenter size-full wp-image-452" title="Login Page" src="http://static.juev.ru/2009/07/2009-07-21-141554_1280x1024_scrot.png" alt="Login Page" width="223" height="268" /></a>
+<a href="http://static.juev.org/2009/07/2009-07-21-141554_1280x1024_scrot.png"><img class="aligncenter size-full wp-image-452" title="Login Page" src="http://static.juev.org/2009/07/2009-07-21-141554_1280x1024_scrot.png" alt="Login Page" width="223" height="268" /></a>
 
 После заполнения формы, переходим на основную страницу администрирования сайта:
 
-<a href="http://static.juev.ru/2009/07/2009-07-21-141606_1280x1024_scrot.png"><img class="aligncenter size-medium wp-image-453" title="Admin Page" src="http://static.juev.ru/2009/07/2009-07-21-141606_1280x1024_scrot-300x192.png" alt="Admin Page" width="300" height="192" /></a>
+<a href="http://static.juev.org/2009/07/2009-07-21-141606_1280x1024_scrot.png"><img class="aligncenter size-medium wp-image-453" title="Admin Page" src="http://static.juev.org/2009/07/2009-07-21-141606_1280x1024_scrot-300x192.png" alt="Admin Page" width="300" height="192" /></a>
 
 Все возможности админки данной CMS можно посмотреть на видео, которое представлено на офсайте. Там же кратко показано, как задается оформление сайта. А до тех пор наша страница выглядит вот так:
 
-<a href="http://static.juev.ru/2009/07/2009-07-21-142159_1280x1024_scrot.png"><img class="aligncenter size-medium wp-image-454" title="Main page" src="http://static.juev.ru/2009/07/2009-07-21-142159_1280x1024_scrot-300x165.png" alt="Main page" width="300" height="165" /></a>
+<a href="http://static.juev.org/2009/07/2009-07-21-142159_1280x1024_scrot.png"><img class="aligncenter size-medium wp-image-454" title="Main page" src="http://static.juev.org/2009/07/2009-07-21-142159_1280x1024_scrot-300x165.png" alt="Main page" width="300" height="165" /></a>
 
 То есть, фактически вообще без оформления. Не обращайте внимание на то, что ссылки продублированы, во время установки данной CMS я несколько раз запускал скрипты создания базы данных.
 

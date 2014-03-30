@@ -38,7 +38,7 @@ tags:
 
 Общий вид буфера juick@juick.com:
 
-<a href="http://static.juev.ru/2009/08/juick.png"><img class="aligncenter size-medium wp-image-570" title="juick" src="http://static.juev.ru/2009/08/juick-300x203.png" alt="Juick-el" width="300" height="203" /></a>
+<a href="http://static.juev.org/2009/08/juick.png"><img class="aligncenter size-medium wp-image-570" title="juick" src="http://static.juev.org/2009/08/juick-300x203.png" alt="Juick-el" width="300" height="203" /></a>
 
 Для того, чтобы ответить на запись или комментарий достаточно подвести курсор к номеру сообщения и нажать <strong>RET</strong>. Для того, чтобы подписаться на сообщения пользователя подводим курсор к его имени и жмем <strong>s</strong>, чтобы отписаться <strong>u</strong>. Аналогично с сообщениями.
 
