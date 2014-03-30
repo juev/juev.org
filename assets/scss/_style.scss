@@ -486,7 +486,12 @@ a#o2
     text-align:justify
   }
 
-  #feed,.share,.tag_cloud,.meta,.desktop,#o2
+  #feed,.share,.tag_cloud,.meta,.desktop
+  {
+    display:none
+  }
+
+  a#o2
   {
     display:none
   }
