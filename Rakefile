@@ -47,6 +47,6 @@ task :new do
     f.puts ""
   end
 
-  system("open -a Byword #{path}")
+  system("open #{path}")
   exit
 end
