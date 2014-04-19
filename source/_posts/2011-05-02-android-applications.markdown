@@ -37,7 +37,7 @@ Google, красивое отображение новостей. Однозна
 
 Список будет периодически изменяться и, возможно, дополняться. Мнение автора является сугубо его личным мнением и ни на что не претендует.
 
-[Прошивка HTC Wildfire от МТС]: http://www.juev.ru/2011/02/27/proshivka-htc-wildfire-ot-mts/
+[Прошивка HTC Wildfire от МТС]: /2011/02/27/proshivka-htc-wildfire-ot-mts/
   "Прошивка HTC Wildfire от МТС"
 [E-NUM]: https://market.android.com/details?id=ru.e_num "E-NUM"
 [1]: https://market.android.com/details?id=com.taptu.wapedia.android
@@ -49,27 +49,27 @@ Google, красивое отображение новостей. Однозна
 [Read It Later Pro]: https://market.android.com/details?id=com.ideashower.readitlater.pro
   "Read It Later Pro"
 [Instapaper]: http://www.instapaper.com "Instapaper"
-[Barcode Scanner]: https://market.android.com/details?id=com.google.zxing.client.android 
+[Barcode Scanner]: https://market.android.com/details?id=com.google.zxing.client.android
   "Barcode Scanner"
 [Remember The Milk]: https://market.android.com/details?id=com.rememberthemilk.MobileRTM
   "Remember The Milk"
 [Pomodroido]: https://market.android.com/details?id=net.artifix.pomodroido.free
   "Pomodroido"
 [Pomodoro]: http://www.pomodorotechnique.com/ "Pomodoro"
-[Instapaper Poster]: https://market.android.com/details?id=dk.southbound.instapaper 
+[Instapaper Poster]: https://market.android.com/details?id=dk.southbound.instapaper
   "Instapaper Poster"
 [Google Reader]: https://market.android.com/details?id=com.google.android.apps.reader
   "Google Reader"
-[Foursquare]: https://market.android.com/details?id=com.joelapenna.foursquared 
+[Foursquare]: https://market.android.com/details?id=com.joelapenna.foursquared
   "Foursquare"
 [picplz]: https://market.android.com/details?id=com.picplz.rangefinder "picplz"
 [LauncherPro]: https://market.android.com/details?id=com.fede.launcher "LauncherPro"
 [Doodle Jump]: https://market.android.com/details?id=com.realarcade.DOJ "Doodle Jump"
-[Smart Keyboard PRO]: https://market.android.com/details?id=net.cdeguet.smartkeyboardpro 
+[Smart Keyboard PRO]: https://market.android.com/details?id=net.cdeguet.smartkeyboardpro
   "Smart Keyboard PRO"
 [Goodreads Droid]: https://market.android.com/details?id=hactar.goodreads "Goodreads Droid"
 [SpringPad]: https://market.android.com/details?id=com.springpad "SpringPad"
 [Evernote]: https://www.evernote.com "Evernote"
-[HTC Wildfire прошивка CyanogenMod]: http://www.juev.ru/2011/04/13/cyanogenmod-wildfire/ 
+[HTC Wildfire прошивка CyanogenMod]: /2011/04/13/cyanogenmod-wildfire/
   "HTC Wildfire прошивка CyanogenMod"
 [getjar]: http://www.getjar.com/ "GetJar"

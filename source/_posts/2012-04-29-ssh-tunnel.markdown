@@ -48,7 +48,7 @@ tags:
     $ cd ~/Library/LaunchAgents
     $ vim org.evsyukov.shell.plist
 
-За основу я взял файл, который используется для запуска демона [Pow](http://www.juev.ru/2011/12/10/pow/ "Pow - простой локальный вебсервер").
+За основу я взял файл, который используется для запуска демона [Pow](/2011/12/10/pow/ "Pow - простой локальный вебсервер").
 
     <?xml version="1.0" encoding="UTF-8"?>
     <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">

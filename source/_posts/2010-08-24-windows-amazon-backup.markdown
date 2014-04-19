@@ -44,7 +44,7 @@ tags:
 В итоге получается, что использовать DropBox для резервных копий можно, но крайне неудобно. Не для тех целей он создавался.
 
 <h2>CloudBerry Backup</h2>
-CloudBerry компания, которая разрабатывает целую линейку программных продуктов для работы с Amazon S3. Это и <a href="http://cloudberrylab.com/default.aspx?page=cloudberry-explorer-amazon-s3" rel="nofollow">CloudBerry Explorer Freeware</a>/Pro, о которых я рассказывал в статье <a href="http://www.juev.ru/2010/03/06/amazon-s3/">Amazon S3</a>. Это так же и <a href="http://cloudberrylab.com/default.aspx?page=cloudberry-backup" rel="nofollow">Cloudberry Backup</a>, о которой я сейчас хочу рассказать.
+CloudBerry компания, которая разрабатывает целую линейку программных продуктов для работы с Amazon S3. Это и <a href="http://cloudberrylab.com/default.aspx?page=cloudberry-explorer-amazon-s3" rel="nofollow">CloudBerry Explorer Freeware</a>/Pro, о которых я рассказывал в статье <a href="/2010/03/06/amazon-s3/">Amazon S3</a>. Это так же и <a href="http://cloudberrylab.com/default.aspx?page=cloudberry-backup" rel="nofollow">Cloudberry Backup</a>, о которой я сейчас хочу рассказать.
 
 <img class="aligncenter size-full wp-image-1146" src="http://static.juev.org/2010/08/backup.jpg" alt="" width="600" height="138" />
 
