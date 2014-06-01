@@ -5,11 +5,4 @@ Disallow: /tags/
 Disallow: /tags.html
 Allow: /
 Sitemap: http://www.juev.org/sitemap.xml
-
-User-agent: Yandex
-Disallow: /404.html
-Disallow: /search.html
-Disallow: /tags/
-Disallow: /tags.html
-Sitemap: http://www.juev.org/sitemap.xml
 Host: www.juev.org
