@@ -2,3 +2,4 @@ public
 source/tags
 vendor
 .bundle
+Gemfile.lock

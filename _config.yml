@@ -1,8 +1,7 @@
 ---
 url:         http://www.juev.org
 future:      true
-lsi:         false
-#pygments:    true
+lsi:         true
 markdown:    kramdown
 permalink:   pretty
 
@@ -10,7 +9,7 @@ root:        /
 source:      source
 destination: public
 plugins:     plugins
-pygments:    false # default python pygments have been replaced by pygments.rb
+highlighter: rouge
 
 title: "Denis Evsyukov"
 description: "Описание опыта использования различных программ и веб-сервисов. Личные рекомендации и критика."
@@ -19,56 +18,3 @@ keywords: "mac, tips, wordpress, jekyll, ruby, php, linux, ubuntu, vps, soft"
 githuburl: "https://github.com/Juev/juev.ru/blob/master/source/_posts"
 tag_page_layout: tag_page
 tag_page_dir: tags
-
-prose:
-  rooturl: 'source/_posts'
-  siteurl: 'http://www.juev.org'
-  media: 'assets'
-  metadata:
-    source/_posts:
-      - name: "layout"
-        field:
-          element: "hidden"
-          value: "post"
-      - name: "title"
-        field:
-          element: "text"
-          label: "Title"
-          value: ""
-          type: "text"
-      - name: "description"
-        field:
-          element: "text"
-          label: "description"
-          value: ""
-          type: "text"
-      - name: "keywords"
-        field:
-          element: "text"
-          label: "keywords"
-          value: ""
-          type: "text"
-      - name: "gplus"
-        field:
-          element: "text"
-          label: "gplus"
-          value: ""
-          type: "text"
-      - name: "published"
-        field:
-          element: "text"
-          label: "published"
-          value: "false"
-          type: "text"
-      - name: "date"
-        field:
-          element: "text"
-          label: "date"
-          value: ""
-          type: "text"
-      - name: "tags"
-        field:
-          element: "multiselect"
-          label: "Add Tags"
-          placeholder: "Choose Tags"
-          alterable: true
