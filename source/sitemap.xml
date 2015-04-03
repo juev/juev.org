@@ -1,5 +1,4 @@
 ---
-layout: nil
 reference: www.juev.org
 ---
 <?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type="text/xsl" href="http://{{ page.reference }}/sitemap.xsl"?>
@@ -7,23 +6,21 @@ reference: www.juev.org
     <url>
         <loc>http://{{ page.reference }}</loc>
         <lastmod>{{ site.time | date_to_xmlschema }}</lastmod>
-        <changefreq>daily</changefreq>
+        <changefreq>weekly</changefreq>
         <priority>1.0</priority>
     </url>
-
     <url>
         <loc>http://{{ page.reference }}/articles.html</loc>
         <lastmod>{{ site.time | date_to_xmlschema }}</lastmod>
-        <changefreq>daily</changefreq>
-        <priority>1.0</priority>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
     </url>
-
     {% for post in site.posts %}
      <url>
-           <loc>http://{{ page.reference }}{{ post.url }}</loc>
-           <lastmod>{{ post.date | date_to_xmlschema }}</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.2</priority>
+        <loc>http://{{ page.reference }}{{ post.url }}</loc>
+        <lastmod>{{ post.date | date_to_xmlschema }}</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
      </url>
      {% endfor %}
 </urlset>

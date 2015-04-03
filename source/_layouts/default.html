@@ -5,7 +5,7 @@ That's great, and we do (often) the same.
 BTW, you're a cool guy/gal if you're reading this :)
 May the charm be with you!
 -->
-<html prefix="og: http://ogp.me/ns# article: http://ogp.me/ns/article#">
+<html>
 <head>
   <link rel="dns-prefetch" href="//static.juev.org">
   <meta http-equiv="content-type" content="text/html; charset=UTF-8">{% if page.title %}
@@ -26,25 +26,23 @@ May the charm be with you!
   <link rel="alternate" type="application/atom+xml" title="ATOM Feed" href="http://www.juev.org/atom.xml">
   <link rel="stylesheet" type="text/css" href="/assets/master.css">{% if page.previous %}
   <link rel="prev" href="{{ page.previous.url }}">{% endif %}{% if page.next %}
-  <link rel="next" href="{{ page.next.url }}">{% endif %}
-  <!-- og:meta -->{% if page.title %}
-  <meta content="{{ page.title }}" property="og:title">{% elsif page.grouptype == "tag" %}
-  <meta content="Posts Tagged '{{ page.tag }}' | {{ site.title }}" property="og:title">{% else %}
-  <meta content="{{ site.title }}" property="og:title">{% endif %}
-  <meta content="{{ site.title }}" property="og:site_name">{% if page.description %}
-  <meta content="{{ page.description }}" property="og:description">{% else %}
-  <meta content="{{ page.content | markdownify | strip_html | strip_newlines | xml_escape | replace: '.','. ' | truncate: 200 }}" property="og:description">{% endif %}{% if page.grouptype == "index" %}
-  <meta content="website" property="og:type">{% else %}
-  <meta content="article" property="og:type">{% endif %}{% if page.url %}
-  <meta content="{{ site.url }}{{ page.url }}" property="og:url">{% endif %}{% if page.date %}
-  <meta content="{{ page.date | date_to_xmlschema }}" property="article:published_time">{% endif %}{% if page.tags %}{% for tag in page.tags %}
-  <meta content="{{ tag }}" property="article:tag">{% endfor %}{% endif %}
-  <meta content="http://static.juev.org/img.jpg" property="og:image">
-  <meta content="200" property="og:image:width">
-  <meta content="200" property="og:image:height">
-  <meta content="image/jpeg" property="og:image:type">
+  <link rel="next" href="{{ page.next.url }}">{% endif %}{% if page.date %}
+  <!-- og:meta -->
+  <meta content="{{ page.title }}" property="og:title">
+  <meta content="{{ page.content | markdownify | strip_html | strip_newlines | xml_escape | replace: '.','. ' | truncate: 200 }}" property="og:description">
+  <meta content="{{ site.url }}{{ page.url }}" property="og:url">
+  <meta content="{{ page.date | date_to_xmlschema }}" property="article:published_time">{% if page.tags %}{% for tag in page.tags %}
+  <meta content="{{ tag }}" property="article:tag">{% endfor %}{% endif %}{% if page.image %}
+  <meta content="{{ page.image }}" property="og:image">{% endif %}
   <meta content="http://denis.evsyukov.org" property="article:author">
   <!-- end og:meta  -->
+  <!-- twitter card -->
+  <meta content="summary_large_image" name="twitter:card">
+  <meta content="{{ page.title }}" name="twitter:title">
+  <meta content="{{ page.content | markdownify | strip_html | strip_newlines | xml_escape | replace: '.','. ' | truncate: 200 }}" property="twitter:description">
+  <meta content="{{ site.url }}{{ page.url }}" name="twitter:url">{% if page.image %}
+  <meta content="{{ page.image }}" property="twitter:image:src">{% endif %}
+  <!-- end twitter card -->{% endif %}
 </head>
 <body class="wide">
   <div class="navigation">
@@ -65,7 +63,7 @@ May the charm be with you!
   </div><!-- noindex -->
   <div class="footer">
     <div class="width-fix">
-      <p><a href="/articles.html" rel="nofollow">Список статей</a> :: <a href="/tags.html" rel="nofollow">Теги</a> :: <a href="//www.juev.org/atom.xml" rel="nofollow">RSS</a></p>
+      <p><a href="/articles.html" rel="nofollow">Список статей</a> :: <a href="/tags.html" rel="nofollow">Теги</a> :: <a href="/recommendations/" rel="nofollow">Рекомендации</a> :: <a href="//www.juev.org/atom.xml" rel="nofollow">RSS</a></p>
       <p>&copy; 2008&ndash;{{ site.time | date: "%Y" }}&nbsp;<a href="http://denis.evsyukov.org">Denis Evsyukov</a>. Contact me via <script type="text/javascript">document.write("<n uers=\"znvygb:qravf\100riflhxbi\056bet\">Rznvy</n>".replace(/[a-zA-Z]/g,function(c){return String.fromCharCode((c<="Z"?90:122)>=(c=c.charCodeAt(0)+13)?c:c-26);}));</script>,&nbsp;
       <a href="//twitter.com/#!/Juev" rel="nofollow">twitter</a> or&nbsp;
       <a href="//github.com/Juev" rel="nofollow">github</a></p>
@@ -74,10 +72,10 @@ May the charm be with you!
   <script async src="/assets/master.min.js"></script>
   <script>
     (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-    ga('create', 'UA-26480484-2', 'juev.org');
+     (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+     m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+     })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+    ga('create', 'UA-7957198-7', 'auto');
     ga('send', 'pageview');
   </script>
  </body>

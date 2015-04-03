@@ -1,0 +1,17 @@
+---
+layout: post
+title: Страница рекомендаций
+description:
+keywords: internet, web
+gplus:
+published: true
+date: 2014-11-23 13:25:08
+image: http://static.juev.org/2014/11/Recommended-1024x936.jpg
+tags:
+- internet
+- web
+---
+
+Подумал о том, чтобы разместить на сайте свои рекомендации по ряду сервисов, чтобы у вас была возможность воспользоваться регистрацией с получением приятных бонусов.
+
+Подумал и сделал, встречайте мои [Рекомендации](http://www.juev.org/recommendations/).
