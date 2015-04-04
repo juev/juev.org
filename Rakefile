@@ -1,5 +1,3 @@
-require 'bundler/setup'
-
 domain="www.juev.org"
 
 task :default => :build
