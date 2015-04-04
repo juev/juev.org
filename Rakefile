@@ -1,6 +1,6 @@
 require 'bundler/setup'
 
-domain="www.juev.ru"
+domain="www.juev.org"
 
 task :default => :build
 
@@ -36,10 +36,6 @@ task :new do
     f.puts "---"
     f.puts "layout: post"
     f.puts "title: #{title}"
-    f.puts "description: "
-    f.puts "keywords: "
-    f.puts "gplus: "
-    f.puts "published: false"
     f.puts "date: #{now.strftime('%F %R')}"
     f.puts "tags:"
     f.puts "- "
