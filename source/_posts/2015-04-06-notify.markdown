@@ -2,6 +2,7 @@
 layout: post
 title: Оповещение веб-сервисов при публикации статей
 date: 2015-04-06 19:57
+image: http://static.juev.org/2015/04/rpc.png
 tags:
 - internet
 - jekyll
