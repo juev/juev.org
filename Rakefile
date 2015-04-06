@@ -1,6 +1,7 @@
 require 'rubygems'
 require 'bundler/setup'
 
+# Jakyll Task
 domain="www.juev.org"
 
 task :default => :build
@@ -11,20 +12,21 @@ task :build  => :clean do
   system "jekyll build"
   system "compass compile"
   system "rm -rf source/tags"
-end
+end # task: build
 
 desc 'Clean public folder'
 task :clean do
   print "Clean public folder.\n"
   system "rm -rf public/*"
-end
+end # task: clean
 
 desc 'Build, deploy.'
 task :deploy => :build do
   print "Deploying website to #{domain}\n"
   system "rsync -az --delete public/ o2:~/www/juevru/"
-end
+end # task: deploy
 
+desc 'Create new post.'
 task :new do
   throw "No title given" unless ARGV[1]
   title = ""
@@ -46,4 +48,69 @@ task :new do
 
   system("echo #{path}")
   exit
-end
+end # task: new
+
+desc 'Update local copy'
+task :update do
+  print "Update local copy.\n"
+  system "git pull"
+end # task: update
+
+####
+
+# Ping Pingomatic
+desc 'Ping pingomatic'
+task :pingomatic do
+  begin
+    require 'xmlrpc/client'
+    puts '* Pinging ping-o-matic'
+    XMLRPC::Client.new('rpc.pingomatic.com', '/').call('weblogUpdates.extendedPing', 'www.juev.org' , 'http://www.juev.org', 'http://www.juev.org/atom.xml')
+  rescue LoadError
+    puts '! Could not ping ping-o-matic, because XMLRPC::Client could not be found.'
+  end
+end # task :pingomatic
+
+# Ping Google
+desc 'Notify Google of the new sitemap'
+task :sitemapgoogle do
+  begin
+    require 'net/http'
+    require 'uri'
+    puts '* Pinging Google about our sitemap'
+    Net::HTTP.get('www.google.com', '/webmasters/tools/ping?sitemap=' + URI.escape('http://www.juev.org/sitemap.xml'))
+  rescue LoadError
+    puts '! Could not ping Google about our sitemap, because Net::HTTP or URI could not be found.'
+  end
+end # task :sitemapgoogle
+
+# Ping Bing
+desc 'Notify Bing of the new sitemap'
+task :sitemapbing do
+  begin
+    require 'net/http'
+    require 'uri'
+    puts '* Pinging Bing about our sitemap'
+    Net::HTTP.get('www.bing.com', '/webmaster/ping.aspx?siteMap=' + URI.escape('http://www.juev.org/sitemap.xml'))
+  rescue LoadError
+    puts '! Could not ping Bing about our sitemap, because Net::HTTP or URI could not be found.'
+  end
+end # task :sitemapbing
+
+# Usage: rake notify
+desc 'Notify various services about new content'
+task :notify => [:pingomatic, :sitemapgoogle, :sitemapbing] do
+end # task :notify
+
+####
+
+# Copy
+desc 'Copy public'
+task :copy do
+  print "Copy public to www.\n"
+  system "rsync -az --delete public/ ~/web/juev.org/"
+end # task: copy
+
+# Publish site
+desc 'Publish site'
+task :publish => [:update, :build, :copy, :notify] do
+end # task :publish
