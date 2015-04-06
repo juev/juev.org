@@ -99,15 +99,17 @@ end # task :sitemapbing
 # Ping pubsubhubbub
 desc 'Notify pubsubhubbub server.'
 task :ping do
-  require 'cgi'
-  require 'net/http'
-  puts '* Pinging pubsubhubbub server'
-  data = 'hub.mode=publish&hub.url=' + CGI::escape("http://www.juev.org/atom.xml")
-  http = Net::HTTP.new('pubsubhubbub.appspot.com', 80)
-  resp, data = http.post('http://pubsubhubbub.appspot.com/publish',
-                         data,
-                         {'Content-Type' => 'application/x-www-form-urlencoded'})
-  puts "Ping error: #{resp}, #{data}" unless resp.code == "204"
+  begin
+    require 'cgi'
+    require 'net/http'
+    puts '* Pinging pubsubhubbub server'
+    data = 'hub.mode=publish&hub.url=' + CGI::escape("http://www.juev.org/atom.xml")
+    http = Net::HTTP.new('pubsubhubbub.appspot.com', 80)
+    resp, data = http.post('http://pubsubhubbub.appspot.com/publish',
+                           data,
+                           {'Content-Type' => 'application/x-www-form-urlencoded'})
+    puts "Ping error: #{resp}, #{data}" unless resp.code == "204"
+  end
 end # task: pubsubhubbub
 
 # Usage: rake notify
