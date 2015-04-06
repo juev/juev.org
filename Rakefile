@@ -44,6 +44,6 @@ task :new do
     f.puts ""
   end
 
-  system("open #{path}")
+  system("echo #{path}")
   exit
 end
