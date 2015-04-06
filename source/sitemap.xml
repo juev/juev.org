@@ -15,6 +15,12 @@ reference: www.juev.org
         <changefreq>weekly</changefreq>
         <priority>0.8</priority>
     </url>
+    <url>
+        <loc>http://{{ page.reference }}/recommendations/</loc>
+        <lastmod>{{ site.time | date_to_xmlschema }}</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+    </url>
     {% for post in site.posts %}
      <url>
         <loc>http://{{ page.reference }}{{ post.url }}</loc>
