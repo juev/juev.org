@@ -27,6 +27,18 @@ tags:
       end
     end # task :pingomatic
     
+    # Ping Yandex
+    desc 'Ping yandex'
+    task :yandex do
+      begin
+        require 'xmlrpc/client'
+        puts '* Pinging yandex'
+        XMLRPC::Client.new('ping.blogs.yandex.ru', '/RPC2').call('weblogUpdates.extendedPing', 'www.juev.org' , 'http://www.juev.org', 'http://www.juev.org/atom.xml')
+      rescue LoadError
+        puts '! Could not ping yandex, because XMLRPC::Client could not be found.'
+      end
+    end # task :yandex
+    
     # Ping Google
     desc 'Notify Google of the new sitemap'
     task :sitemapgoogle do
@@ -71,7 +83,7 @@ tags:
     
     #Usage: rake notify
     desc 'Notify various services about new content'
-    task :notify => [:pingomatic, :sitemapgoogle, :sitemapbing, :ping] do
+    task :notify => [:pingomatic, :sitemapgoogle, :sitemapbing, :ping, :yandex] do
     end # task :notify
 
 После добавления данного раздела в Rakefile, для оповещения достаточно использовать команду:
@@ -80,3 +92,4 @@ tags:
 
 Два сервиса: pingomatic и pubsubhubbub получая оповещение, обновляют RSS-ленты различных сервисов практически в реальном времени. А оповещение Google и Bing позволяет быстро добавить новую статью в индекс поисковых систем.
 
+**Update**: Добавил пинг поисковой системы Яндекс
