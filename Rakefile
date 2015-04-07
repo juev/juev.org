@@ -70,6 +70,18 @@ task :pingomatic do
   end
 end # task :pingomatic
 
+# Ping Yandex
+desc 'Ping yandex'
+task :yandex do
+  begin
+    require 'xmlrpc/client'
+    puts '* Pinging yandex'
+    XMLRPC::Client.new('ping.blogs.yandex.ru', '/RPC2').call('weblogUpdates.extendedPing', 'www.juev.org' , 'http://www.juev.org', 'http://www.juev.org/atom.xml')
+  rescue LoadError
+    puts '! Could not ping yandex, because XMLRPC::Client could not be found.'
+  end
+end # task :yandex
+
 # Ping Google
 desc 'Notify Google of the new sitemap'
 task :sitemapgoogle do
@@ -114,7 +126,7 @@ end # task: pubsubhubbub
 
 # Usage: rake notify
 desc 'Notify various services about new content'
-task :notify => [:pingomatic, :sitemapgoogle, :sitemapbing, :ping] do
+task :notify => [:pingomatic, :sitemapgoogle, :sitemapbing, :ping, :yandex] do
 end # task :notify
 
 ####
