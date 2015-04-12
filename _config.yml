@@ -18,3 +18,11 @@ keywords: "mac, tips, wordpress, jekyll, ruby, php, linux, ubuntu, vps, soft"
 githuburl: "https://github.com/Juev/juev.ru/blob/master/source/_posts"
 tag_page_layout: tag_page
 tag_page_dir: tags
+
+defaults:
+  -
+    scope:
+      path: "" # an empty string here means all files in the project
+      type: "posts"
+    values:
+      image: http://static.juev.org/img.jpg

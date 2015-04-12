@@ -31,16 +31,16 @@ May the charm be with you!
   <meta content="{{ page.content | markdownify | strip_html | strip_newlines | xml_escape | replace: '.','. ' | truncate: 200 }}" property="og:description">
   <meta content="{{ site.url }}{{ page.url }}" property="og:url">
   <meta content="{{ page.date | date_to_xmlschema }}" property="article:published_time">{% if page.tags %}{% for tag in page.tags %}
-  <meta content="{{ tag }}" property="article:tag">{% endfor %}{% endif %}{% if page.image %}
-  <meta content="{{ page.image }}" property="og:image">{% endif %}
+  <meta content="{{ tag }}" property="article:tag">{% endfor %}{% endif %}
+  <meta content="{{ page.image }}" property="og:image">
   <meta content="http://denis.evsyukov.org" property="article:author">
   <!-- end og:meta  -->
   <!-- twitter card -->
   <meta content="summary_large_image" name="twitter:card">
   <meta content="{{ page.title }}" name="twitter:title">
   <meta content="{{ page.content | markdownify | strip_html | strip_newlines | xml_escape | replace: '.','. ' | truncate: 200 }}" property="twitter:description">
-  <meta content="{{ site.url }}{{ page.url }}" name="twitter:url">{% if page.image %}
-  <meta content="{{ page.image }}" property="twitter:image:src">{% endif %}
+  <meta content="{{ site.url }}{{ page.url }}" name="twitter:url">
+  <meta content="{{ page.image }}" property="twitter:image:src">
   <!-- end twitter card -->{% endif %}
 </head>
 <body class="wide">
