@@ -3,3 +3,4 @@ source/tags
 vendor
 .bundle
 Gemfile.lock
+.env
