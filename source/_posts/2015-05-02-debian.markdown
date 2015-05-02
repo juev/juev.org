@@ -35,7 +35,7 @@ tags:
     Type=simple
     User=user
     WorkingDirectory=/home/user/bin
-    ExecStart=/home/user/bin/webhooker -p 5010 -c /home/user/bin/webhook.conf
+    ExecStart=/home/user/bin/webhooker -p 5010 -i 127.0.0.1 -c /home/user/bin/webhook.conf
     KillMode=process
     Restart=on-failure
 
