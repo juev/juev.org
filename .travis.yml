@@ -13,7 +13,7 @@ addons:
 
 script: bundle exec rake build
 
-after_success: bundle exec rake deploy
+after_success: bundle exec rake publish
 
 branches:
   only:
