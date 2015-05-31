@@ -2,7 +2,7 @@
 layout: post
 title: Travis CI для автоматизации сборки статичного сайта
 date: 2015-05-31 14:33
-image: http://static.juev.org/2015/05/travis-ci.jpg
+image: 'http://static.juev.org/2015/05/travis-ci.jpg'
 tags:
 - amazon
 - web
