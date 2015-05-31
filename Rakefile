@@ -1,7 +1,7 @@
 require 'rubygems'
 require 'bundler/setup'
 
-# Jakyll Task
+# Jekyll Task
 domain="www.juev.org"
 
 task :default => :build
@@ -22,8 +22,8 @@ end # task: clean
 
 desc 'Build, deploy.'
 task :deploy => :build do
-  print "Deploying website to #{domain}\n"
-  system "rsync -az --delete public/ o2:~/www/juevru/"
+  print "Deploying website to S3\n"
+  system "s3_website push"
 end # task: deploy
 
 desc 'Create new post.'
@@ -140,5 +140,5 @@ end # task: copy
 
 # Publish site
 desc 'Publish site'
-task :publish => [:update, :build, :copy, :notify] do
+task :publish => [:deploy, :notify] do
 end # task :publish
