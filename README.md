@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/Juev/juev.org.svg?branch=master)](https://travis-ci.org/Juev/juev.org)
+
 # About
 
 This directory contains data for my site, [www.juev.org](http://www.juev.org).
