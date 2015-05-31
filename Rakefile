@@ -23,7 +23,7 @@ end # task: clean
 desc 'Deploy to S3'
 task :deploy do
   print "Deploying website to S3\n"
-  system "s3_website push --force"
+  system "s3_website push"
 end # task: deploy
 
 desc 'Create new post.'
