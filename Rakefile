@@ -20,8 +20,8 @@ task :clean do
   system "rm -rf public/*"
 end # task: clean
 
-desc 'Build, deploy.'
-task :deploy => :build do
+desc 'Deploy to S3'
+task :deploy do
   print "Deploying website to S3\n"
   system "s3_website push"
 end # task: deploy

@@ -11,7 +11,9 @@ addons:
     packages:
       - libgsl0-dev
 
-script: bundle exec rake deploy
+script: bundle exec rake build
+
+after_success: bundle exec rake deploy
 
 branches:
   only:
