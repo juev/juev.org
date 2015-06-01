@@ -2,6 +2,7 @@
 layout: post
 title: "Amazon S3: кеширование страниц веб-сайта"
 date: 2015-06-01 12:17
+image: http://static.juev.org/2015/06/amazon-s3.png
 tags:
   - amazon
   - tips
