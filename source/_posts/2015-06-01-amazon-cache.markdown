@@ -18,7 +18,7 @@ tags:
 
 Для того, чтобы поправить эти настройки достаточно зайти на веб-страницу со списком всех bucket и в разделе Permissions выбрать кнопку "Edit CORS Configuration":
 
-![CORS](http://static.juev.org/2015/06/CORS.png "CORS Configuration")
+[![CORS](http://static.juev.org/2015/06/CORS.png "CORS Configuration")](http://static.juev.org/2015/06/amazon-s3.png "CORS Configuration")
 
 По умолчанию будет примерно следующая конфигурация:
 
