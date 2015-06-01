@@ -11,11 +11,13 @@ addons:
     packages:
       - libgsl0-dev
 
-sudo: required
+#sudo: required
 
 before_install:
-  - echo "Europe/Samara" | sudo tee /etc/timezone
-  - sudo dpkg-reconfigure --frontend noninteractive tzdata
+  - export TZ=Europe/Samara
+  - date
+  # - echo "Europe/Samara" | sudo tee /etc/timezone
+  # - sudo dpkg-reconfigure --frontend noninteractive tzdata
 
 script: bundle exec rake build
 
