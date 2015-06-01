@@ -1,6 +1,6 @@
 ---
 url:         http://www.juev.org
-future:      true
+future:      false
 lsi:         true
 markdown:    kramdown
 permalink:   pretty
