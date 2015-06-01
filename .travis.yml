@@ -12,6 +12,7 @@ addons:
       - libgsl0-dev
 
 sudo: required
+
 before_install:
   - echo "Europe/Samara" | sudo tee /etc/timezone
   - sudo dpkg-reconfigure --frontend noninteractive tzdata
