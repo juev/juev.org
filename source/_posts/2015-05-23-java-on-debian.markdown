@@ -39,7 +39,7 @@ tags:
 Достаточно определить две переменные:
 
     export JAVA_HOME=/target/directory/jdk1.8.0_45
-    export PATH=$PATH:JAVA_HOME/bin
+    export PATH=$PATH:$JAVA_HOME/bin
 
 Переменная `JAVA_HOME` указывает на директорию нашей установки. Теперь осталось только применить нашу конфигурацию, для этого используем команду:
 
