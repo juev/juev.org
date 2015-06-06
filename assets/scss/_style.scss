@@ -91,7 +91,8 @@ body.wide
 {
 	text-align: justify;
 	hyphens:auto;
-	word-break: break-word;
+	margin-top: 1em;
+	margin-bottom: 1em;
 }
 
 .navigation
@@ -154,6 +155,8 @@ pre
   padding:1em;
   border:#CCC solid 1px;
   background-color:#F6F6F6;
+	margin-top: 1em;
+	margin-bottom: 1em;
 }
 
 code
@@ -256,6 +259,8 @@ h1,h2,h3,h4,h5,h6
   /* font-weight:400 */
   font-family:Arial, Verdana, Sans-Serif;
   font-weight:bold;
+  margin-top:1em;
+	margin-bottom:1em;
 }
 
 h1 a,h2 a,h3 a,h4 a,h5 a,h6 a
