@@ -4,3 +4,5 @@ vendor
 .bundle
 Gemfile.lock
 .env
+node_modules
+dist

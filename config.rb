@@ -4,13 +4,13 @@ project_type = :stand_alone
 # Publishing paths
 http_path = "/"
 http_images_path = "/images"
-http_fonts_path = "/fonts"
-css_dir = "public/assets"
+http_fonts_path = "/assets/fonts"
+css_dir = "dist/css"
 
 # Local development paths
 sass_dir = "assets/scss"
-images_dir = "images"
-fonts_dir = "fonts"
+images_dir = "assets/images"
+fonts_dir = "source/assets/fonts"
 
 line_comments = false
 output_style = :compressed

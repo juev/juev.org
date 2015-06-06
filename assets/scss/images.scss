@@ -1,0 +1,31 @@
+.wide .footer
+{
+  background:inline-image("noisy.jpg") repeat-x
+}
+
+.navigation
+{
+  background:inline-image("noisy.jpg") repeat-x;
+}
+
+#home
+{
+  background-image:inline-image("home.png")
+}
+
+a#o2
+{
+  width: 140px;
+  height: 39px;
+  margin: 45px 10px;
+  display: block;
+  float: right;
+  background:inline-image("digitalocean-badge-blue.png")
+}
+
+#sb-loading-inner span{background:inline-image("loading.gif") no-repeat;padding-left:34px;display:inline-block;}
+#sb-nav-close{background-image:inline-image("close.png");}
+#sb-nav-next{background-image:inline-image("next.png");}
+#sb-nav-previous{background-image:inline-image("previous.png");}
+#sb-nav-play{background-image:inline-image("play.png");}
+#sb-nav-pause{background-image:inline-image("pause.png");}

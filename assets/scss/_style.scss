@@ -6,7 +6,7 @@ html,body.wide
 body
 {
   border-top:3px solid #BC5007;
-  font:17px/1.524 arial,serif;
+  font:17px/1.524 'PT Serif',arial,serif;
   color:#333
 }
 
@@ -26,7 +26,7 @@ body.wide
 .wide .footer
 {
   position:relative;
-  background:inline-image("noisy.jpg") repeat-x
+  background:rgb(19, 19, 19)
 }
 
 .footer a
@@ -88,13 +88,15 @@ body.wide
 
 .post p
 {
-  /* color:#333 */
+	text-align: justify;
+	hyphens:auto;
+	word-break: break-word;
 }
 
 .navigation
 {
   height:108px;
-  background:inline-image("noisy.jpg") repeat-x;
+  background:rgb(19, 19, 19);
   color:#fff;
   vertical-align:middle;
   font-size:15px
@@ -150,14 +152,18 @@ pre
   padding:1em;
   border:#CCC solid 1px;
   background-color:#F6F6F6;
-  font-size:.9em
 }
 
 code
 {
-  /*font-size:.9em;*/
-  font-family: monospace,'Ubuntu Mono';
+  font-family:'Inconsolata' ,monospace;
 }
+
+pre code
+{
+  font-size: 11pt;
+}
+
 
 #feed
 {
@@ -244,7 +250,7 @@ a[rel="footnote"], a[rel="reference"]
 
 h1,h2,h3,h4,h5,h6
 {
-  color:#444;
+  /* color:#444; */
   /* font-weight:400 */
   font-family:Arial, Verdana, Sans-Serif;
   font-weight:bold;
@@ -285,7 +291,7 @@ h2
 {
   font-size:26px;
   line-height:30px;
-  color:#080
+  color:#444!important;
 }
 
 h3
@@ -326,7 +332,6 @@ h3.title
   margin:45px 1em 0 0;
   width:32px;
   height:48px;
-  background-image:inline-image("home.png")
 }
 
 .aligncenter
@@ -464,16 +469,6 @@ img
   margin-right:auto;
   margin-left:auto;
   max-width:100%;
-}
-
-a#o2
-{
-  width: 140px;
-  height: 39px;
-  margin: 45px 10px;
-  display: block;
-  float: right;
-  background:inline-image("digitalocean-badge-blue.png")
 }
 
 .related
