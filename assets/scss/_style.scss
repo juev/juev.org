@@ -26,7 +26,8 @@ body.wide
 .wide .footer
 {
   position:relative;
-  background:rgb(19, 19, 19)
+  background-color:rgb(19, 19, 19);
+  background-image: image-url("noisy.jpg")
 }
 
 .footer a
@@ -96,10 +97,11 @@ body.wide
 .navigation
 {
   height:108px;
-  background:rgb(19, 19, 19);
+  background-color:rgb(19, 19, 19);
   color:#fff;
   vertical-align:middle;
-  font-size:15px
+  font-size:15px;
+  background-image: image-url("noisy.jpg")
 }
 
 .navigation .width-fix ul
@@ -332,6 +334,7 @@ h3.title
   margin:45px 1em 0 0;
   width:32px;
   height:48px;
+  background-image: image-url("home.png")
 }
 
 .aligncenter
@@ -482,21 +485,6 @@ img
   font-size: 16px;
 }
 
-.wide .footer
-{
-  background:inline-image("noisy.jpg") repeat-x
-}
-
-.navigation
-{
-  background:inline-image("noisy.jpg") repeat-x;
-}
-
-#home
-{
-  background-image:inline-image("home.png")
-}
-
 @media screen and (max-device-width: 480px) {
   .wide .body
   {
@@ -529,75 +517,6 @@ img
   .navigation .width-fix
   {
     padding: 0 20px
-  }
-}
-
-@media print {
-  *
-  {
-    background:transparent!important;
-    color:#000!important;
-    text-shadow:none!important;
-    filter:none!important;
-    -ms-filter:none!important
-  }
-  
-  a,a:visited
-  {
-    color:#444!important;
-    text-decoration:underline
-  }
-  
-  a[href]:after
-  {
-    content:" (" attr(href) ")"
-  }
-  
-  abbr[title]:after
-  {
-    content:" (" attr(title) ")"
-  }
-  
-  pre,blockquote
-  {
-    border:1px solid #999;
-    page-break-inside:avoid
-  }
-  
-  thead
-  {
-    display:table-header-group
-  }
-  
-  tr,img
-  {
-    page-break-inside:avoid
-  }
-  
-  @page
-  {
-    margin:.5cm
-  }
-  
-  p,h2,h3
-  {
-    orphans:3;
-    widows:3
-  }
-  
-  h2,h3
-  {
-    page-break-after:avoid
-  }
-  
-  .ir a:after,a[href^=javascript]:after,a[href^="#"]:after,.footer
-  {
-    content:""
-  }
-  
-  .share,.tags,.meta,.navigation,.userbar
-  {
-    display:none
   }
 }
 

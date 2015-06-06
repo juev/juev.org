@@ -20,11 +20,11 @@
 #sb-counter{float:left;width:45%;}
 #sb-counter a{padding:0 4px 0 0;text-decoration:none;cursor:pointer;color:#fff;}
 #sb-counter a.sb-counter-current{text-decoration:underline;}
-#sb-loading-inner span{background:inline-image("loading.gif") no-repeat;padding-left:34px;display:inline-block;}
-#sb-nav-close{background-image:inline-image("close.png");}
-#sb-nav-next{background-image:inline-image("next.png");}
-#sb-nav-previous{background-image:inline-image("previous.png");}
-#sb-nav-play{background-image:inline-image("play.png");}
-#sb-nav-pause{background-image:inline-image("pause.png");}
+#sb-loading-inner span{background-image: image-url("loading.gif");background-repeat:no-repeat;padding-left:34px;display:inline-block;}
+#sb-nav-close{background-image:image-url("close.png");}
+#sb-nav-next{background-image:image-url("next.png");}
+#sb-nav-previous{background-image:image-url("previous.png");}
+#sb-nav-play{background-image:image-url("play.png");}
+#sb-nav-pause{background-image:image-url("pause.png");}
 div.sb-message{font-size:12px;padding:10px;text-align:center;}
 div.sb-message a:link,div.sb-message a:visited{color:#fff;text-decoration:underline;}
