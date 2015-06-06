@@ -89,7 +89,7 @@ module.exports = function(grunt) {
 		grunt.registerTask('default', [
 				'clean',
 				'sass',
-				'postcss',
+//				'postcss',
 				'stripCssComments',
 				'concat',
 				'uglify',
