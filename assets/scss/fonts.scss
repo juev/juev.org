@@ -1,0 +1,13 @@
+@import "compass/css3";
+//@include font-face("Open Sans", inline-font-files('OpenSans-Regular.woff', woff), normal, 400);
+//@include font-face("Open Sans", inline-font-files('OpenSans-Bold.woff', woff), normal, 700);
+
+@include font-face("Inconsolata", inline-font-files('Inconsolata-Regular.woff', woff), 'Inconsolata-Regular.eot');
+
+//@include font-face("Lora", inline-font-files('lora-regular-webfont.woff', woff), 'lora-regular-webfont.eot');
+//@include font-face("Lora", inline-font-files('lora-bold-webfont.woff', woff), 'lora-bold-webfont.eot', 700, bold);
+//@include font-face("Lora", inline-font-files('lora-italic-webfont.woff', woff), 'lora-italic-webfont.eot', 400, italic);
+
+@include font-face("PT Serif", inline-font-files('PT_Serif-Web-Regular.woff', woff), 'PT_Serif-Web-Regular.eot');
+@include font-face("PT Serif", inline-font-files('PT_Serif-Web-Italic.woff', woff), 'PT_Serif-Web-Italic.eot', 400, italic);
+@include font-face("PT Serif", inline-font-files('PT_Serif-Web-Bold.woff', woff), 'PT_Serif-Web-Bold.eot', 700, bold);

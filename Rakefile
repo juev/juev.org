@@ -9,8 +9,9 @@ task :default => :build
 desc 'Build site with Jekyll.'
 task :build  => :clean do
   print "Compiling website...\n"
+  # system "grunt"
   system "jekyll build"
-  system "compass compile"
+  # system "compass compile"
   system "rm -rf source/tags"
 end # task: build
 
