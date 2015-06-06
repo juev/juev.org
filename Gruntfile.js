@@ -38,8 +38,6 @@ module.exports = function(grunt) {
 								},
 								files: {                         // Dictionary of files
 										'source/assets/css/master.css': 'assets/scss/master.scss',       // 'destination': 'source'
-										'source/assets/css/fonts.css': 'assets/scss/fonts.scss',
-										'source/assets/css/images.css': 'assets/scss/images.scss'
 								}
 						}
 				},
@@ -73,8 +71,6 @@ module.exports = function(grunt) {
 						dist: {
 								files: {
 										'source/assets/css/master.css': 'source/assets/css/master.css',
-										'source/assets/css/fonts.css': 'source/assets/css/fonts.css',
-										'source/assets/css/images.css': 'source/assets/css/images.css',
 								}
 						}
 				},
