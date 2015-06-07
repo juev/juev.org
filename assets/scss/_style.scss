@@ -94,6 +94,24 @@ body.wide
 	margin-bottom: 1em;
 }
 
+.post ol li
+{
+	list-style-type: decimal;
+	margin-top: 1em;
+	margin-bottom: 1em;
+	margin-left: 40px;
+	margin-right: 0;
+}
+
+.post ul li
+{
+	list-style-type: disc;
+	margin-top: 1em;
+	margin-bottom: 1em;
+	margin-left: 40px;
+	margin-right: 0;
+}
+
 .navigation
 {
   height:108px;
