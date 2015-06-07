@@ -7,7 +7,7 @@ module.exports = function(grunt) {
 				pkg: grunt.file.readJSON('package.json'),
 				// Task configuration.
 				clean: {
-						src: ['dist/assets/css', 'dist/assets/js']
+						src: ['dist']
 				},
 				concat: {
 						options: {
@@ -16,7 +16,7 @@ module.exports = function(grunt) {
 						},
 						dist: {
 								src: ['assets/js/shadowbox.js', 'assets/js/app.js'],
-								dest: 'dist/assets/js/master.js'
+								dest: 'dist/js/master.js'
 						},
 				},
 				uglify: {
@@ -25,7 +25,7 @@ module.exports = function(grunt) {
 						},
 						dist: {
 								files: {
-										'dist/assets/js/master.js': ['<%= concat.dist.dest %>']
+										'dist/js/master.js': ['<%= concat.dist.dest %>']
 								}
 						}
 				},
@@ -37,19 +37,8 @@ module.exports = function(grunt) {
 										sourcemap: 'none'
 								},
 								files: {                         // Dictionary of files
-										'dist/assets/css/master.css': 'assets/scss/master.scss',       // 'destination': 'source'
+										'dist/css/master.css': 'assets/scss/master.scss',       // 'destination': 'source'
 								}
-						}
-				},
-				postcss: {
-						options: {
-								processors: [
-										require('autoprefixer-core')({browsers: 'last 1 version'}).postcss,
-										require('csswring').postcss
-								]
-						},
-						dist: {
-								src: 'dist/assets/css/*.css'
 						}
 				},
 				filerev: {
@@ -59,8 +48,8 @@ module.exports = function(grunt) {
 						},
 						release: {
 								src: [
-										'dist/assets/**/*.js',
-										'dist/assets/**/*.css',
+										'dist/**/*.js',
+										'dist/**/*.css',
 										]
 						}
 				},
@@ -70,29 +59,41 @@ module.exports = function(grunt) {
 						},
 						dist: {
 								files: {
-										'dist/assets/css/master.css': 'dist/assets/css/master.css',
+										'dist/css/master.css': 'dist/css/master.css',
 								}
 						}
 				},
+				compress: {
+						main: {
+								options: {
+										mode: 'gzip'
+								},
+								expand: true,
+								cwd: 'dist/',
+								src: ['**/*'],
+								dest: 'dist/release/'
+						}
+				}
 		});
 
 		// These plugins provide necessary tasks.
 		grunt.loadNpmTasks('grunt-contrib-clean');
+		grunt.loadNpmTasks('grunt-contrib-compress');
 		grunt.loadNpmTasks('grunt-contrib-concat');
-		grunt.loadNpmTasks('grunt-contrib-uglify');
 		grunt.loadNpmTasks('grunt-contrib-sass');
-		grunt.loadNpmTasks('grunt-postcss');
+		grunt.loadNpmTasks('grunt-contrib-uglify');
 		grunt.loadNpmTasks('grunt-filerev');
+		grunt.loadNpmTasks('grunt-postcss');
 		grunt.loadNpmTasks('grunt-strip-css-comments');
 
 		// Default task.
 		grunt.registerTask('default', [
 				'clean',
 				'sass',
-//				'postcss',
 				'stripCssComments',
 				'concat',
 				'uglify',
 				'filerev',
+				'compress',
 		]);
 };
