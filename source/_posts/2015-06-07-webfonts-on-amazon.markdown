@@ -1,8 +1,8 @@
 ---
 layout: post
-title:"Использование webfonts с серверов Амазона"
+title: Использование вебшрифтов с серверов Амазона
 date: 2015-06-07 21:26
-image: 
+image: http://static.juev.org/2015/06/amazon-web-services.png
 tags:
   - amazon
   - web
