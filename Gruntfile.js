@@ -7,7 +7,7 @@ module.exports = function(grunt) {
 				pkg: grunt.file.readJSON('package.json'),
 				// Task configuration.
 				clean: {
-						src: ['source/assets/css', 'source/assets/js']
+						src: ['dist/assets/css', 'dist/assets/js']
 				},
 				concat: {
 						options: {
@@ -16,7 +16,7 @@ module.exports = function(grunt) {
 						},
 						dist: {
 								src: ['assets/js/shadowbox.js', 'assets/js/app.js'],
-								dest: 'source/assets/js/master.js'
+								dest: 'dist/assets/js/master.js'
 						},
 				},
 				uglify: {
@@ -25,7 +25,7 @@ module.exports = function(grunt) {
 						},
 						dist: {
 								files: {
-										'source/assets/js/master.js': ['<%= concat.dist.dest %>']
+										'dist/assets/js/master.js': ['<%= concat.dist.dest %>']
 								}
 						}
 				},
@@ -37,7 +37,7 @@ module.exports = function(grunt) {
 										sourcemap: 'none'
 								},
 								files: {                         // Dictionary of files
-										'source/assets/css/master.css': 'assets/scss/master.scss',       // 'destination': 'source'
+										'dist/assets/css/master.css': 'assets/scss/master.scss',       // 'destination': 'source'
 								}
 						}
 				},
@@ -49,7 +49,7 @@ module.exports = function(grunt) {
 								]
 						},
 						dist: {
-								src: 'source/assets/css/*.css'
+								src: 'dist/assets/css/*.css'
 						}
 				},
 				filerev: {
@@ -59,8 +59,8 @@ module.exports = function(grunt) {
 						},
 						release: {
 								src: [
-										'source/assets/**/*.js',
-										'source/assets/**/*.css',
+										'dist/assets/**/*.js',
+										'dist/assets/**/*.css',
 										]
 						}
 				},
@@ -70,7 +70,7 @@ module.exports = function(grunt) {
 						},
 						dist: {
 								files: {
-										'source/assets/css/master.css': 'source/assets/css/master.css',
+										'dist/assets/css/master.css': 'dist/assets/css/master.css',
 								}
 						}
 				},
@@ -93,6 +93,6 @@ module.exports = function(grunt) {
 				'stripCssComments',
 				'concat',
 				'uglify',
-//				'filerev',
+				'filerev',
 		]);
 };
