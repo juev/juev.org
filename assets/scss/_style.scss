@@ -6,7 +6,7 @@ html,body.wide
 body
 {
   border-top:3px solid #BC5007;
-  font:17px/1.524 'PT Serif',arial,serif;
+  font:17px/1.524 arial,serif;
   color:#333
 }
 
@@ -178,7 +178,7 @@ pre
 
 code
 {
-  font-family:'Source Code Pro', monospace;
+  font-family:monospace;
 }
 
 pre code
@@ -505,6 +505,19 @@ img
 .related a
 {
   font-size: 16px;
+}
+
+@media (min-width: 1000px) {
+  body
+  {
+   border-top:3px solid #BC5007;
+   font:17px/1.524 'PT Serif',arial,serif;
+   color:#333
+  }
+  code
+  {
+   font-family:'Source Code Pro', monospace;
+  }
 }
 
 @media screen and (max-device-width: 480px) {
