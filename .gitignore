@@ -6,3 +6,4 @@ Gemfile.lock
 .env
 node_modules
 dist
+.sass-cache
