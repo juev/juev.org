@@ -1,33 +1,31 @@
-@media (min-width: 1000px) {
-    @font-face {
-        font-family: 'PT Serif';
-        src: url('PT_Serif-Web-Regular.eot');
-        src: local('☺'), font-url('PT_Serif-Web-Regular.woff') format('woff'), font-url('PT_Serif-Web-Regular.ttf') format('truetype'), font-url('PT_Serif-Web-Regular.svg') format('svg');
-        font-weight: normal;
-        font-style: normal;
-    }
+@font-face {
+		font-family: 'PT Serif';
+		src: url('PT_Serif-Web-Regular.eot');
+		src: local('☺'), font-url('PT_Serif-Web-Regular.woff') format('woff'), font-url('PT_Serif-Web-Regular.ttf') format('truetype'), font-url('PT_Serif-Web-Regular.svg') format('svg');
+		font-weight: normal;
+		font-style: normal;
+}
 
-    @font-face {
-        font-family: 'PT Serif';
-        src: font-url('PT_Serif-Web-Italic.eot');
-        src: local('☺'), font-url('PT_Serif-Web-Italic.woff') format('woff'), font-url('PT_Serif-Web-Italic.ttf') format('truetype'), font-url('PT_Serif-Web-Italic.svg') format('svg');
-        font-weight: normal;
-        font-style: italic;
-    }
+@font-face {
+		font-family: 'PT Serif';
+		src: font-url('PT_Serif-Web-Italic.eot');
+		src: local('☺'), font-url('PT_Serif-Web-Italic.woff') format('woff'), font-url('PT_Serif-Web-Italic.ttf') format('truetype'), font-url('PT_Serif-Web-Italic.svg') format('svg');
+		font-weight: normal;
+		font-style: italic;
+}
 
-    @font-face {
-        font-family: 'PT Serif';
-        src: font-url('PT_Serif-Web-Bold.eot');
-        src: local('☺'), font-url('PT_Serif-Web-Bold.woff') format('woff'), font-url('PT_Serif-Web-Bold.ttf') format('truetype'), font-url('PT_Serif-Web-Bold.svg') format('svg');
-        font-weight: bold;
-        font-style: normal;
-    }
+@font-face {
+		font-family: 'PT Serif';
+		src: font-url('PT_Serif-Web-Bold.eot');
+		src: local('☺'), font-url('PT_Serif-Web-Bold.woff') format('woff'), font-url('PT_Serif-Web-Bold.ttf') format('truetype'), font-url('PT_Serif-Web-Bold.svg') format('svg');
+		font-weight: bold;
+		font-style: normal;
+}
 
-    @font-face {
-        font-family: 'Source Code Pro';
-        src: font-url('SourceCodePro-Regular.eot');
-        src: local('☺'), font-url('SourceCodePro-Regular.woff') format('woff'), font-url('SourceCodePro-Regular.ttf') format('truetype'), font-url('SourceCodePro-Regular.svg') format('svg');
-        font-weight: normal;
-        font-style: normal;
-    }
+@font-face {
+		font-family: 'Source Code Pro';
+		src: font-url('SourceCodePro-Regular.eot');
+		src: local('☺'), font-url('SourceCodePro-Regular.woff') format('woff'), font-url('SourceCodePro-Regular.ttf') format('truetype'), font-url('SourceCodePro-Regular.svg') format('svg');
+		font-weight: normal;
+		font-style: normal;
 }
