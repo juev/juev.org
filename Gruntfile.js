@@ -50,7 +50,7 @@ module.exports = function(grunt) {
 								src: [
 										'dist/**/*.js',
 										'dist/**/*.css',
-										]
+								]
 						}
 				},
 				stripCssComments: {
@@ -83,7 +83,6 @@ module.exports = function(grunt) {
 		grunt.loadNpmTasks('grunt-contrib-sass');
 		grunt.loadNpmTasks('grunt-contrib-uglify');
 		grunt.loadNpmTasks('grunt-filerev');
-		grunt.loadNpmTasks('grunt-postcss');
 		grunt.loadNpmTasks('grunt-strip-css-comments');
 
 		// Default task.
