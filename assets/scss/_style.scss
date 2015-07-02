@@ -6,8 +6,8 @@ html,body.wide
 body
 {
   border-top:3px solid #BC5007;
-  font:17px/1.524 arial,serif;
-  color:#333
+  font:17px/1.524 arial,serif !important;
+  color:#333 !important;
 }
 
 body.wide
@@ -511,13 +511,12 @@ img
   body
   {
    border-top:3px solid #BC5007;
-   font:12pt 'Open Sans', arial, serif;
-   line-height: 1.524;
-   color:#333
+   font:12pt/1.524 'Open Sans', arial, serif !important;
+   color:#333 !important;
   }
   code
   {
-   font-family:'Source Code Pro', monospace;
+   font-family:'Source Code Pro', monospace !important;
   }
 }
 
