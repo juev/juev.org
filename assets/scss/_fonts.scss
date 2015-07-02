@@ -1,31 +1,24 @@
 @font-face {
-		font-family: 'PT Serif';
-		src: url('PT_Serif-Web-Regular.eot');
-		src: local('☺'), font-url('PT_Serif-Web-Regular.woff') format('woff'), font-url('PT_Serif-Web-Regular.ttf') format('truetype'), font-url('PT_Serif-Web-Regular.svg') format('svg');
-		font-weight: normal;
-		font-style: normal;
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Open Sans'), local('OpenSans'), url(http://fonts.gstatic.com/s/opensans/v13/RjgO7rYTmqiVp7vzi-Q5UZBw1xU1rKptJj_0jans920.woff2) format('woff2'), url(http://fonts.gstatic.com/s/opensans/v13/RjgO7rYTmqiVp7vzi-Q5UbO3LdcAZYWl9Si6vvxL-qU.woff) format('woff');
 }
-
 @font-face {
-		font-family: 'PT Serif';
-		src: font-url('PT_Serif-Web-Italic.eot');
-		src: local('☺'), font-url('PT_Serif-Web-Italic.woff') format('woff'), font-url('PT_Serif-Web-Italic.ttf') format('truetype'), font-url('PT_Serif-Web-Italic.svg') format('svg');
-		font-weight: normal;
-		font-style: italic;
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 700;
+    src: local('Open Sans Bold'), local('OpenSans-Bold'), url(http://fonts.gstatic.com/s/opensans/v13/k3k702ZOKiLJc3WVjuplzNWlIHla9B101mdmTHF3-q0.woff2) format('woff2'), url(http://fonts.gstatic.com/s/opensans/v13/k3k702ZOKiLJc3WVjuplzAcuEIXEaFWBWXA4NoGd_Oo.woff) format('woff');
 }
-
 @font-face {
-		font-family: 'PT Serif';
-		src: font-url('PT_Serif-Web-Bold.eot');
-		src: local('☺'), font-url('PT_Serif-Web-Bold.woff') format('woff'), font-url('PT_Serif-Web-Bold.ttf') format('truetype'), font-url('PT_Serif-Web-Bold.svg') format('svg');
-		font-weight: bold;
-		font-style: normal;
+    font-family: 'Open Sans';
+    font-style: italic;
+    font-weight: 400;
+    src: local('Open Sans Italic'), local('OpenSans-Italic'), url(http://fonts.gstatic.com/s/opensans/v13/xjAJXh38I15wypJXxuGMBpwaoV4em0XsfI20r5f4EOM.woff2) format('woff2'), url(http://fonts.gstatic.com/s/opensans/v13/xjAJXh38I15wypJXxuGMBkbeuvGrcRTTBH456c-a4yI.woff) format('woff');
 }
-
 @font-face {
-		font-family: 'Source Code Pro';
-		src: font-url('SourceCodePro-Regular.eot');
-		src: local('☺'), font-url('SourceCodePro-Regular.woff') format('woff'), font-url('SourceCodePro-Regular.ttf') format('truetype'), font-url('SourceCodePro-Regular.svg') format('svg');
-		font-weight: normal;
-		font-style: normal;
+    font-family: 'Source Code Pro';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Source Code Pro'), local('SourceCodePro-Regular'), url(http://fonts.gstatic.com/s/sourcecodepro/v6/mrl8jkM18OlOQN8JLgasD5bPFduIYtoLzwST68uhz_Y.woff2) format('woff2'), url(http://fonts.gstatic.com/s/sourcecodepro/v6/mrl8jkM18OlOQN8JLgasD9Hq-FFgoDNV3GTKpHwuvtI.woff) format('woff');
 }

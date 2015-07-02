@@ -89,27 +89,27 @@ body.wide
 
 .post p
 {
-	text-align: justify;
-	margin-top: 1em;
-	margin-bottom: 1em;
+  text-align: justify;
+  margin-top: 1em;
+  margin-bottom: 1em;
 }
 
 .post ol li
 {
-	list-style-type: decimal;
-	margin-top: 1em;
-	margin-bottom: 1em;
-	margin-left: 40px;
-	margin-right: 0;
+  list-style-type: decimal;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  margin-left: 40px;
+  margin-right: 0;
 }
 
 .post ul li
 {
-	list-style-type: disc;
-	margin-top: 1em;
-	margin-bottom: 1em;
-	margin-left: 40px;
-	margin-right: 0;
+  list-style-type: disc;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  margin-left: 40px;
+  margin-right: 0;
 }
 
 .navigation
@@ -172,8 +172,8 @@ pre
   padding:1em;
   border:#CCC solid 1px;
   background-color:#F6F6F6;
-	margin-top: 1em;
-	margin-bottom: 1em;
+  margin-top: 1em;
+  margin-bottom: 1em;
 }
 
 code
@@ -277,7 +277,7 @@ h1,h2,h3,h4,h5,h6
   font-family:Arial, Verdana, Sans-Serif;
   font-weight:bold;
   margin-top:1em;
-	margin-bottom:1em;
+  margin-bottom:1em;
 }
 
 h1 a,h2 a,h3 a,h4 a,h5 a,h6 a
@@ -511,7 +511,8 @@ img
   body
   {
    border-top:3px solid #BC5007;
-   font:17px/1.524 'PT Serif',arial,serif;
+   font:12pt 'Open Sans', arial, serif;
+   line-height: 1.524;
    color:#333
   }
   code
