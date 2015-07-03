@@ -7,5 +7,4 @@ gem 'jekyll-tagging'
 gem 'compass'
 gem 'rouge'
 gem 's3_website'
-gem 'rb-gsl'
-
+gem 'rb-gsl', '1.16.0.4'
