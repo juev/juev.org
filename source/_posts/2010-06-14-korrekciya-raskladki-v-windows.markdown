@@ -35,7 +35,7 @@ tags:
 
 Таким образом, как оказалось, в Windows тоже есть простые методы изменения значений клавиш!
 
-Другой вариант - использование программы <a href="http://www.randyrants.com/sharpkeys/" rel="nofollow">sharpkeys3</a>, которая позволяет изменять именно реестр операционной системы.
+Другой вариант -- использование программы <a href="http://www.randyrants.com/sharpkeys/" rel="nofollow">sharpkeys3</a>, которая позволяет изменять именно реестр операционной системы.
 
 <a href="http://static.juev.org/2010/06/sharpkey.png"><img class="aligncenter size-medium wp-image-1057" title="sharpkey" src="http://static.juev.org/2010/06/sharpkey-300x219.png" alt="" width="300" height="219" /></a>
 

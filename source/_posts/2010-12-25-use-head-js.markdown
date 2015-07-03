@@ -7,7 +7,7 @@ tags:
 - javascript
 - webdesign
 ---
-После того, как подключился к <a href="http://pinboard.in/u:juev" rel="nofollow">pinboard.in</a>, на сервере нашел упоминание интересного проекта - <a href="http://headjs.com/" rel="nofollow">Head JS</a>. 
+После того, как подключился к <a href="http://pinboard.in/u:juev" rel="nofollow">pinboard.in</a>, на сервере нашел упоминание интересного проекта -- <a href="http://headjs.com/" rel="nofollow">Head JS</a>.
 
 Проект ориентирован на упрощение, ускорение и модернизацию работы со скриптами и файлами стилей. Основная его идея заключается в параллельной загрузке используемых скриптов и файлов стилей. Позволяет так же определять используемый браузер, размер экрана и в зависимости от этой информации подгружать только необходимые файлы. Что делает возможным создавать стили под определенные устройства.
 
@@ -41,9 +41,9 @@ tags:
 Модифицированный:
 
     <script>
-        head.js("http://www.google-analytics.com/ga.js", function() {		 
+        head.js("http://www.google-analytics.com/ga.js", function() {
       var tracker = _gat._getTracker("UA-XXXXXXX-X");
-      tracker._trackPageview();		 
+      tracker._trackPageview();
         });
     </script>
 
@@ -63,12 +63,12 @@ tags:
 И, естественно, оба скрипта можно объединить в одном блоке:
 
     <script>
-        head.js("http://www.apture.com/js/apture.js?siteToken=XXXXXXX","http://www.google-analytics.com/ga.js", function() {		 
+        head.js("http://www.apture.com/js/apture.js?siteToken=XXXXXXX","http://www.google-analytics.com/ga.js", function() {
           var tracker = _gat._getTracker("UA-XXXXXXX-X");
-          tracker._trackPageview();		 
+          tracker._trackPageview();
         });
     </script>
 
-Используемые мной скрипты небольшого размера, поэтому оценить прирост скорости загрузки довольно сложно. Однако на официально странице проводятся ссылки на тесты: <a href="http://headjs.com/test/script.html" rel="nofollow">headjs.com/test/script.html</a>, которые позволяют оценить разность в скорости загрузке одних и тех же скриптов, при размещении их в разделе Head, в конце документа, или при использовании Head.JS. 
+Используемые мной скрипты небольшого размера, поэтому оценить прирост скорости загрузки довольно сложно. Однако на официально странице проводятся ссылки на тесты: <a href="http://headjs.com/test/script.html" rel="nofollow">headjs.com/test/script.html</a>, которые позволяют оценить разность в скорости загрузке одних и тех же скриптов, при размещении их в разделе Head, в конце документа, или при использовании Head.JS.
 
 Судя по результатам, модуль Head JS позволяет скорость загрузку страницы более чем в два раза.
