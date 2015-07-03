@@ -13,7 +13,7 @@ tags:
 
 <a href="http://static.juev.org/2010/03/page-speed.png"><img class="aligncenter size-medium wp-image-950" title="page speed" src="http://static.juev.org/2010/03/page-speed-300x74.png" alt="" width="300" height="74" /></a>
 
-Результаты впечатляют! Изменение скорости загрузки страницы с почти 7 секунд до 0.6 секунды - это что-то!
+Результаты впечатляют! Изменение скорости загрузки страницы с почти 7 секунд до 0.6 секунды -- это что-то!
 
 При этом с момента подключения S3 и CloudFront (прошло 9 дней) мне насчитали 22 цента.
 

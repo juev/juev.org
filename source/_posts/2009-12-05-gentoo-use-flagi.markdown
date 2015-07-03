@@ -7,7 +7,7 @@ tags:
 - gentoo
 - tips
 ---
-Одна из сложностей, с которой приходится столкнуться начинающему пользователю Gentoo - это USE-флаги. Откуда их брать? Как прописывать? Где взять готовые списки, чтобы все было хорошо?
+Одна из сложностей, с которой приходится столкнуться начинающему пользователю Gentoo -- это USE-флаги. Откуда их брать? Как прописывать? Где взять готовые списки, чтобы все было хорошо?
 
 Дело в том, что USE-флаги задаются каждым пользователем отдельно, именно под себя. Потому найти каких-то ни было универсальных списков данных флагов просто не возможно. Но не надо отчаиваться! Есть несколько простых правил, выполняя которые мы сводим использование USE-флагов к нечто простому.
 
@@ -51,20 +51,20 @@ Calculating dependencies... done!
 <pre><code>$ euse -i vanilla
 global use flags (searching: vanilla)
 ************************************************************
-[-    ] vanilla - Do not add extra patches which change default behaviour; 
+[-    ] vanilla - Do not add extra patches which change default behaviour;
 DO NOT USE THIS ON A GLOBAL SCALE as the severity of the meaning changes drastically
 
 local use flags (searching: vanilla)
 ************************************************************
 [-    ] vanilla (www-apache/mod_security):
-Provide the original ModSecurity Core Rule Set without Gentoo-specific relaxation. 
-When this flag is enabled, we install the unadulterated Core Rule Set. Warning! 
-The original Core Rule Set is draconic and most likely will break your web applications, 
+Provide the original ModSecurity Core Rule Set without Gentoo-specific relaxation.
+When this flag is enabled, we install the unadulterated Core Rule Set. Warning!
+The original Core Rule Set is draconic and most likely will break your web applications,
 including Rails-based web applications and Bugzilla.</code></pre>
 
 Как видно описание показывает как глобальное действие флага, так и действие на конкретные пакеты. После того, как мы узнаем, что конкретно делает данный флаг, принимаем решение, использовать его в своей работе или нет.</li>
 	<li>Все флаги без исключения добавляем в файл <em>/etc/portage/packages.use</em>, то есть указываем флаги только локально. Пример моего файла смотрите выше. Когда набирается большое число пакетов, анализируем их на наличие повторяющихся флагов и переносим их в <em>/etc/make.conf</em></li>
-	<li>Если системы была собрана с одним набором флагов, и в дальнейшем мы принимаем решение использовать другой набор - в этом нет ничего страшного. Производим изменение списка флагов и запускаем обновление системы:
+	<li>Если системы была собрана с одним набором флагов, и в дальнейшем мы принимаем решение использовать другой набор -- в этом нет ничего страшного. Производим изменение списка флагов и запускаем обновление системы:
 <pre><code>emerge -auND world</code></pre>
 
 Будет произведен анализ установленных пакетов на измененные зависимости и необходимые пакеты доставляются и пересобираются.

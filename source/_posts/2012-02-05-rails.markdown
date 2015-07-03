@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Как установить Rails
-description: 
+description:
 keywords: mac, soft, ruby, rails, rvm, install, setup
 gplus: https://plus.google.com/116661482374124481456/posts/6qLGDzX4ADr
 published: true
@@ -37,14 +37,14 @@ tags:
 
 	$ rvm use system --default
 
-Кстати, можно опускать ключевое слова `use` и писать просто номер версии, к примеру: 
+Кстати, можно опускать ключевое слова `use` и писать просто номер версии, к примеру:
 
 	$ rvm 1.9.3
 
 Посмотреть, какие версии доступны в данный момент в системе и какие из них используются по умолчанию, можно с помощью команды:
 
 	$ rvm list
-	
+
 	rvm rubies
 
 	   ruby-1.8.7-p352 [ i686 ]
@@ -62,7 +62,7 @@ tags:
 Для того, чтобы импортировать системный набор гемов, достаточно использовать команду:
 
 	$  rvm system ; rvm gemset export system.gems ; rvm 1.8.7 ; rvm gemset import system
-	
+
 Или же воспользоваться возможностью переключения наборов:
 
 	$ rvm gemdir system

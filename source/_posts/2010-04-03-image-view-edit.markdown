@@ -11,7 +11,7 @@ tags:
 
 Когда то давно, для просмотра изображений использовалась программа <a href="http://www.acdsee.com/" rel="nofollow">ACDSee</a>, которая изначально была платной, но ее элементарно ломали. С течением времени программа стала набирать сложность, обрастая множеством не нужных функций, делая ее совершенно не пригодной для работы. Поэтому от ее использования я отказался сразу. Несколько лет назад появились бесплатные аналоги, которые содержат только то, что нужно.
 
-Одна из таких программ, бесплатная для домашнего использования - <a href="http://www.faststone.org/FSViewerDetail.htm" rel="nofollow">FastStone</a>.
+Одна из таких программ, бесплатная для домашнего использования -- <a href="http://www.faststone.org/FSViewerDetail.htm" rel="nofollow">FastStone</a>.
 
 <a href="http://static.juev.org/2010/04/FSViewerScreenShot1.jpg"><img class="aligncenter size-full wp-image-969" title="FSViewerScreenShot1" src="http://static.juev.org/2010/04/FSViewerScreenShot1.jpg" alt="" width="465" height="341" /></a>
 
