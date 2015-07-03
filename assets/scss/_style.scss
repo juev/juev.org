@@ -6,8 +6,21 @@ html,body.wide
 body
 {
   border-top:3px solid #BC5007;
-  font:17px/1.524 arial,serif !important;
+  font:16px arial,serif;
+  line-height: 1.6;
   color:#333 !important;
+}
+
+@media (min-width: 1000px) {
+  body
+  {
+   font:16px 'Open Sans', arial, serif !important;
+   line-height: 26px !important;
+  }
+  code
+  {
+   font-family:'Source Code Pro', monospace !important;
+  }
 }
 
 body.wide
@@ -69,27 +82,40 @@ body.wide
 
 .primary-content
 {
-  padding:20px;
-  border-bottom:7px solid #7f808a;
-  background:#fff
-}
-
-.primary-content a,.primary-content a:visited
-{
-  /* border-bottom:1px dashed; */
-  color:#225E9B;
-  text-decoration:none
-}
-
-.primary-content a:hover
-{
-  color:#0097E8;
-  text-decoration:none
+    padding:20px;
+    border-bottom:7px solid #7f808a;
+    background:#fff;
+    .allpostsmeta a
+    {
+        color:#DEDEDE!important;
+        font-weight:700;
+        font-size:28px!important;
+        font-family:Helvetica,sans-serif!important
+    }
+    a,
+    a:visited
+          {
+              /* border-bottom:1px dashed; */
+              /* color:#225E9B; */
+              text-decoration:none;
+              color: #4078C0;
+              border-color: rgba(0, 0, 160, 0.15);
+              border-bottom-width: 1px;
+              border-bottom-style: solid;
+              text-decoration: none;
+          }
+    a:hover
+          {
+              /* color:#0097E8; */
+              text-decoration:none;
+              color: #d04000;
+              border-color: rgba(208, 64, 0, 0.15);
+          }
 }
 
 .post p
 {
-  text-align: justify;
+  /* text-align: justify; */
   margin-top: 1em;
   margin-bottom: 1em;
 }
@@ -156,7 +182,7 @@ body.wide
 {
   margin-right:auto;
   margin-left:auto;
-  max-width:662px
+  max-width:685px
 }
 
 p.message
@@ -226,7 +252,8 @@ a#license
   font-size:14px
 }
 
-a[rel="footnote"], a[rel="reference"]
+a[rel="footnote"],
+a[rel="reference"]
 {
   border:none;
   font-size:9pt;
@@ -339,14 +366,6 @@ h3.posts > a
 h3.title
 {
   margin-bottom:15px
-}
-
-.allpostsmeta a
-{
-  color:#DEDEDE!important;
-  font-weight:700;
-  font-size:28px!important;
-  font-family:Helvetica,sans-serif!important
 }
 
 #home
@@ -504,20 +523,8 @@ img
 
 .related a
 {
-  font-size: 16px;
-}
-
-@media (min-width: 1000px) {
-  body
-  {
-   border-top:3px solid #BC5007;
-   font:12pt/1.524 'Open Sans', arial, serif !important;
-   color:#333 !important;
-  }
-  code
-  {
-   font-family:'Source Code Pro', monospace !important;
-  }
+  font-size:16px;
+  border: none;
 }
 
 @media screen and (max-device-width: 480px) {
