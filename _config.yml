@@ -11,6 +11,9 @@ destination: public
 plugins:     plugins
 highlighter: rouge
 
+kramdown:
+  syntax_highlighter: rouge
+
 title: "Denis Evsyukov"
 description: "Описание опыта использования различных программ и веб-сервисов. Личные рекомендации и критика."
 keywords: "mac, tips, wordpress, jekyll, ruby, php, linux, ubuntu, vps, soft"
