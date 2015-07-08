@@ -19,8 +19,8 @@ tags:
 Если VPS-сервер был заказан с установленным апачем, его необходимо отключить и убрать из автозагрузки:
 
 {% highlight shell %}
-# /etc/init.d/apache2 stop
-# update-rc.d -f apache2 remove
+~# /etc/init.d/apache2 stop
+~# update-rc.d -f apache2 remove
 {% endhighlight %}
 
 Теперь можно приступать к установке легкого веб-сервера:
