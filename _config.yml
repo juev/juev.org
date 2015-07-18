@@ -12,6 +12,7 @@ plugins:     plugins
 highlighter: rouge
 
 kramdown:
+  input: GFM
   syntax_highlighter: rouge
 
 title: "Denis Evsyukov"
