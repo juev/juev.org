@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Использование HTTPS на Amazon Cloudfront"
+title: "Использование HTTPS на серверах Амазона"
 date: 2015-07-18 15:56
 image: http://static.juev.org/2015/07/general.png
 tags:
