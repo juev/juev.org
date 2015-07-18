@@ -18,7 +18,7 @@ tags:
 
 [![rdio](http://static.juev.org/2013/05/rdio-th.jpg)](http://static.juev.org/2013/05/rdio.jpg "Rdio")
 
-Для того, чтобы зарегистрироваться и оплатить использование данного сервиса потребуется VPN. Я для этого использовал [TunnelBear](www.tunnelbear.com/‎ "TunnelBear").
+Для того, чтобы зарегистрироваться и оплатить использование данного сервиса потребуется VPN. Я для этого использовал [TunnelBear](http://www.tunnelbear.com/ "TunnelBear").
 
 ![TunnelBear](http://static.juev.org/2013/05/tunnelbear.jpg)
 

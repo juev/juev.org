@@ -18,37 +18,51 @@ tags:
 
 Если VPS-сервер был заказан с установленным апачем, его необходимо отключить и убрать из автозагрузки:
 
-    # /etc/init.d/apache2 stop
-    # update-rc.d -f apache2 remove
+{% highlight shell %}
+~# /etc/init.d/apache2 stop
+~# update-rc.d -f apache2 remove
+{% endhighlight %}
 
 Теперь можно приступать к установке легкого веб-сервера:
 
-    # apt-get install lighttpd
+{% highlight shell %}
+~# apt-get install lighttpd
+{% endhighlight %}
 
 Начиная с этого момента на сервере уже будет работать lighttpd, осталось его настроить. Разберем возможность использования PHP и MySQL на веб-сервере. Для этого, если это не было сделано заранее, установим необходимые пакеты:
 
-    # apt-get install php5-cgi mysql-server mysql-client
+{% highlight shell %}
+~# apt-get install php5-cgi mysql-server mysql-client
+{% endhighlight %}
 
 При установке mysql-сервера будет запрошен пароль на доступ к серверу. Не забудьте его задать, иначе сервер баз данных будет открыт для доступа из интернета. Теперь нужно только включить модуль fastcgi в lighttpd:
 
-    # lighttpd-enable-mod
+{% highlight shell %}
+~# lighttpd-enable-mod
     Available modules: auth cgi fastcgi proxy rrdtool simple-vhost ssi ssl status userdir phpmyadmin
     Already enabled modules: auth fastcgi simple-vhost phpmyadmin
     Enable module:
+{% endhighlight %}
 
 Используется команда <em>lighttpd-enable-mod</em>, если запустить ее без параметров, как показано в примере, будут выведены имена всех доступных модулей и предложено включить нужные. Можно сократить немного времени, если сразу задавать команду с параметром в виде имени того модуля, что нужно активировать:
 
-    # lighttpd-enable-mod fastcgi
+{% highlight shell %}
+~# lighttpd-enable-mod fastcgi
+{% endhighlight %}
 
 После выполнения этой команды нужно будет перезагрузить веб-сервер:
 
-    # /etc/init.d/lighttpd force-reload
+{% highlight shell %}
+~# /etc/init.d/lighttpd force-reload
+{% endhighlight %}
 
 Теперь наш веб-сервер может работать с PHP-скриптами. Проверим. Для этого в корне нашего сайта (по умолчанию все сайты располагаются в <em>/var/www/</em>) создаем файл <em>info.php</em> со следующим содержимым:
 
-    {?php
-      phpinfo();
-    ?}
+{% highlight php %}
+<?php
+    phpinfo();
+?>
+{% endhighlight %}
 
 И обращаемся к нашему веб-серверу с помощью браузера по адресу `www.examples.ru/info.php`, в данном случае подразумевается, что www.examples.ru имя сайта, если доменное имя еще не зарегистрировано, можно вместо него обращаться по ip-адресу. В ответ должны получить полную информацию о используемом PHP.
 
@@ -58,71 +72,79 @@ tags:
 
 По умолчанию fastcgi настроено на обработку файлов <em>.php</em>. Если необходимо использовать perl, python или ruby, необходимо изменять файл <em>/etc/lighttpd/conf-available/10-fastcgi.conf.</em> Например, если необходимо отключить обработку php-файлов и включить python для использования django, приводим его к такому виду:
 
-    ## FastCGI programs have the same functionality as CGI programs,
-    ## but are considerably faster through lower interpreter startup
-    ## time and socketed communication
-    ##
-    ## Documentation: /usr/share/doc/lighttpd-doc/fastcgi.txt.gz
-    ##                http://www.lighttpd.net/documentation/fastcgi.html
+{% highlight conf %}
+## FastCGI programs have the same functionality as CGI programs,
+## but are considerably faster through lower interpreter startup
+## time and socketed communication
+##
+## Documentation: /usr/share/doc/lighttpd-doc/fastcgi.txt.gz
+##                http://www.lighttpd.net/documentation/fastcgi.html
 
-    server.modules   += ( "mod_fastcgi" )
+server.modules   += ( "mod_fastcgi" )
 
-    fastcgi.server    = (
-        "/" =&gt; (
-            "main" =&gt; (
-                # Use host / port instead of socket for TCP fastcgi
-                "host" =&gt; "127.0.0.1",
-                "port" =&gt; 3033,
-                #"socket" =&gt; "/tmp/django.socket",
-                "check-local" =&gt; "disable",
-            ))
-    )
+fastcgi.server    = (
+    "/" => (
+        "main" => (
+            # Use host / port instead of socket for TCP fastcgi
+            "host" => "127.0.0.1",
+            "port" => 3033,
+            #"socket" => "/tmp/django.socket",
+            "check-local" => "disable",
+        ))
+)
 
-    alias.url = (
-        "/media" =&gt; "/var/www/django/django/contrib/admin/media/",
-    )
+alias.url = (
+    "/media" => "/var/www/django/django/contrib/admin/media/",
+)
 
-    url.rewrite-once = (
-        "^(/media.*)$" =&gt; "$1",
-        "^/favicon\.ico$" =&gt; "/media/favicon.ico",
-        "^(/.*)$" =&gt; "/example$1",
-    )
+url.rewrite-once = (
+    "^(/media.*)$" => "$1",
+    "^/favicon\.ico$" => "/media/favicon.ico",
+    "^(/.*)$" => "/example$1",
+)
+{% endhighlight %}
 
 Останавливаться на подробностях настройки различных движков я не буду. А перейду сразу к простому использованию виртуальных хостов. В том же apache для использования виртуальных хостов необходимо каждый раз менять конфигурацию сервера и перезапускать его. В lighttpd есть отдельный модуль, который необходимо активировать, настроить, после чего виртуальные хосты можно будет организовывать путем простого создания каталогов. Начинаем:
 
-    # vim /etc/lighttpd/conf-available/10-simple-vhost.conf
+{% highlight shell %}
+~# vim /etc/lighttpd/conf-available/10-simple-vhost.conf
+{% endhighlight %}
 
 И проверяем значения переменных <em>simple-vhost.server-root</em> и <em>simple-vhost.document-root</em>:
 
-    ## Simple name-based virtual hosting
-    ##
-    ## Documentation: /usr/share/doc/lighttpd-doc/simple-vhost.txt
-    ##                http://www.lighttpd.net/documentation/simple-vhost.html
+{% highlight conf %}
+## Simple name-based virtual hosting
+##
+## Documentation: /usr/share/doc/lighttpd-doc/simple-vhost.txt
+##                http://www.lighttpd.net/documentation/simple-vhost.html
 
-    server.modules += ( "mod_simple_vhost" )
+server.modules += ( "mod_simple_vhost" )
 
-    ## The document root of a virtual host isdocument-root =
-    ##   simple-vhost.server-root + $HTTP["host"] + simple-vhost.document-root
-    simple-vhost.server-root         = "/var/www"
-    simple-vhost.document-root       = "/html/"
+## The document root of a virtual host isdocument-root =
+##   simple-vhost.server-root + $HTTP["host"] + simple-vhost.document-root
+simple-vhost.server-root         = "/var/www"
+simple-vhost.document-root       = "/html/"
 
-    ## the default host if no host is sent
-    simple-vhost.default-host        = "example.ru"
+## the default host if no host is sent
+simple-vhost.default-host        = "example.ru"
+{% endhighlight %}
 
 В данном случае все виртуальные хосты будут располагаться в каталоге /var/www и каждый виртуальный хост содержит в себе папку html, в которой располагаются сами файлы. Теперь активируем модуль виртуальных хостов:
 
-    # lighttpd-enable-mod simple-vhost
+{% highlight shell %}
+~# lighttpd-enable-mod simple-vhost
+{% endhighlight %}
 
 И после перезапуска веб-сервера, начинаем создавать виртуальные хосты:
 
-    # /etc/init.d/lighttpd restart
-    # mkdir /var/www/test1.ru
-    # mkdir /var/www/test1.ru/html
-    # mkdir /var/www/test2.ru
-    # mkdir /var/www/test2.ru/html
+{% highlight shell %}
+~# /etc/init.d/lighttpd restart
+~# mkdir /var/www/test1.ru
+~# mkdir /var/www/test1.ru/html
+~# mkdir /var/www/test2.ru
+~# mkdir /var/www/test2.ru/html
+{% endhighlight %}
 
 И начинаем заполнять содержимое наших двух, только что организованных сайтов <em>test1</em> и <em>test2</em>. Естественно, чтобы все работало, данные доменные имена должны быть зарегистрированы. Сразу после создания данных каталогов и создания нужных файлов в каталогах html сайты будут работать. Теперь не нужно для организации нового сайта перезагружать веб-сервер.
-
-Про оптимизацию использования памяти веб-сервером с помощью команды <em>ulimit -s</em> я уже писал в статье <a href="/2009/07/11/vps-xosting/">VPS-хостинг</a>. А про модуль <em>proxy</em>, который используется для работы в связке с mongrel-сервером я опишу как-нибудь в другой раз.
 
 Как видите, веб-сервер является самым легким из всех существующих решений, которые есть на сегодняшний день. И в то же время его очень просто настраивать. Все тривиально и очень просто!
