@@ -2,7 +2,7 @@
 layout: post
 title: "Использование HTTPS на Amazon Cloudfront"
 date: 2015-07-18 15:56
-image:
+image: http://static.juev.org/2015/07/general.png
 tags:
   - web
   - security
