@@ -58,7 +58,7 @@ AddTrustExternalCARoot.crt
 COMODORSAAddTrustCA.crt
 COMODORSADomainValidationSecureServerCA.crt
 denis_evsyukov_org.crt
-private.pem
+private.key
 ```
 
 Для загрузки на сертификата на сервер амазона, нам потребуется объединить первые три файла в один:
