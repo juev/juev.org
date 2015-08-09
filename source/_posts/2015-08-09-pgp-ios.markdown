@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "GPG на телефоне"
+title: "Шифрование на телефоне"
 date: 2015-08-09 11:10
 image: http://static.juev.org/2015/08/gpg.png
 tags:
