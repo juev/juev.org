@@ -4,11 +4,10 @@ s3_bucket: <%= ENV['s3_bucket'] %>
 
 site: public
 
-cache_control:
-  "assets/*": max-age=<%= 60 * 60 * 24 * 30 %>
-  "*": no-cache, no-store
+max_age: 0
+cache_control: no-cache, no-store
 
-gzip: true
+gzip: false
 
 s3_endpoint: eu-west-1
 
