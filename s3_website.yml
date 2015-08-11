@@ -7,8 +7,6 @@ site: public
 max_age: 0
 cache_control: no-cache, no-store
 
-gzip: false
-
 s3_endpoint: eu-west-1
 
 redirects:
