@@ -21,3 +21,4 @@ line_comments = false
 output_style = :compressed
 
 environment = :production
+asset_cache_buster :none
