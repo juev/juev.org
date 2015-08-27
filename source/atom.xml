@@ -16,7 +16,7 @@
  {% for post in site.posts limit:2 %}
  <entry>
    <title>{{ post.title }}</title>
-   <link href="{{site.url}}{{ post.url }}"/>
+   <link rel="alternate" href="{{site.url}}{{ post.url }}"/>
    <updated>{{ post.date | date: "%Y-%m-%dT%H:%M:%S%z" }}</updated>
    <id>{{site.url}}{{ post.url }}</id>
    <content type="html">{{ post.content | xml_escape }}
