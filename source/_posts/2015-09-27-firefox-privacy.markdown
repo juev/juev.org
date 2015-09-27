@@ -2,7 +2,7 @@
 layout: post
 title: "Безопасность в сети Интернет"
 date: 2015-09-27 10:35
-image:
+image: http://static.juev.org/2015/09/firefox-logo.png
 tags:
   - firefox
   - internet
