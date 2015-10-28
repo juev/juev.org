@@ -17,7 +17,7 @@ tags:
 
 Предварительно требуется установить XCode:
 
-    $ xcode-select -install
+    $ xcode-select --install
 
 Затем ставим третью версию питона и пару модулей:
 
