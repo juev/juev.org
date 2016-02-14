@@ -13,7 +13,7 @@ tags:
 
 Решение простое: нужно открывать используемые приложениями порты. Если посмотреть описания в интернете, какие именно порты используются для ряда программ, к примеру:
 
-    WhatsApp wrote in there own FAQ that they only use Ports between 443, 5222 + additional 5223, 5228, 4244, 5242 (tcp/udp), it's correct that initial voip support needs udp
+> WhatsApp wrote in there own FAQ that they only use Ports between 443, 5222 + additional 5223, 5228, 4244, 5242 (tcp/udp), it's correct that initial voip support needs udp
 
 Становиться понятым, что добавлять все порты вручную очень затруднительно и при этом менять правила в дальнейшем не представляется возможным. Что же делать? Давайте создадим профили приложения для UFW.
 
