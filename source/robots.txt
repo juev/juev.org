@@ -4,5 +4,5 @@ Disallow: /search.html
 Disallow: /tags/
 Disallow: /tags.html
 Allow: /
-Sitemap: http://www.juev.org/sitemap.xml
-Host: www.juev.org
+Sitemap: https://www.juev.org/sitemap.xml
+Host: https://www.juev.org
