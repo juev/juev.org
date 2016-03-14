@@ -2,7 +2,7 @@
 layout: post
 title: "NoScript ABE"
 date: 2015-10-05 09:05
-image: http://static.juev.org/2015/10/ABE.png
+image: https://static.juev.org/2015/10/ABE.png
 tags:
   - firefox
   - web
@@ -15,7 +15,7 @@ tags:
 
 Для изменения параметров ABE необходимо перейти в настройки расширения Noscript, открыть вкладку "Дополнительно" и на данной вкладке перейти к пункту ABE.
 
-![ABE](http://static.juev.org/2015/10/ABE.png "ABE")
+![ABE](https://static.juev.org/2015/10/ABE.png "ABE")
 
 По умолчанию правила включены и прописано только одно системное:
 

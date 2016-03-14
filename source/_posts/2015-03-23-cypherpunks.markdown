@@ -6,7 +6,7 @@ keywords: internet, security, crypt
 gplus:
 published: true
 date: 2015-03-23 08:46:41
-image: http://static.juev.org/2015/03/big-brother_00375545.jpg
+image: https://static.juev.org/2015/03/big-brother_00375545.jpg
 tags:
 - internet
 - security
@@ -17,7 +17,7 @@ tags:
 
 Но вчера прочел книгу Джулиана Ассанжа [Шифропанки: Свобода и будущее Интернета](https://www.goodreads.com/book/show/25194888 "Cypherpunks: Freedom and the Future of the Internet"). И эта книга позволила мне открыть глаза на происходящее в мире.
 
-![Шифропанки](http://static.juev.org/2015/03/25194888.jpg)
+![Шифропанки](https://static.juev.org/2015/03/25194888.jpg)
 
 Приведу несколько цитат.
 

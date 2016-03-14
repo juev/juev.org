@@ -6,7 +6,7 @@ keywords: amazon, kindle, cloud
 gplus:
 published: true
 date: 2015-03-28 12:24:01
-image: http://static.juev.org/2015/03/amazon_logo_RGB.jpg
+image: https://static.juev.org/2015/03/amazon_logo_RGB.jpg
 tags:
 - amazon
 - kindle
@@ -21,7 +21,7 @@ tags:
 
 С введением новых тарифных планов, бесплатные 5 гигабайт упразднили и загрузка файлов перестала работать. Для того, чтобы восстановить загрузку, теперь необходимо выбрать один из двух новых тарифов.
 
-![price](http://static.juev.org/2015/03/price.png)
+![price](https://static.juev.org/2015/03/price.png)
 
 Самый дешевый тариф Unlimited Photos стоит $12 в год и дает возможность загружать неграниченное количество любых изображений, плюс 5 гигабайт для любых файлов. То есть те самые бесплатные 5 гигабайт перешли в состав данного тарифа.
 
@@ -33,15 +33,15 @@ tags:
 
 Загружать файлы в облако можно или через тот же веб-интерфейс, или с помощью специализированных программ.
 
-[![webupload](http://static.juev.org/2015/03/webupload-th.png)](http://static.juev.org/2015/03/webupload.png "Web Upload")
+[![webupload](https://static.juev.org/2015/03/webupload-th.png)](https://static.juev.org/2015/03/webupload.png "Web Upload")
 
 Обращаю внимание на то, что при использовании программ можно только загружать файлы, при этом без возможности выбора, где именно будут размещаться эти файлы.
 
-![upload](http://static.juev.org/2015/03/upload.png)
+![upload](https://static.juev.org/2015/03/upload.png)
 
 Управление файлами, их посмотр и загрузка, всё осуществляется через довольно удобный веб-интерфейс.
 
-[![photos](http://static.juev.org/2015/03/photos-th.png)](http://static.juev.org/2015/03/photos.png "Photos")
+[![photos](https://static.juev.org/2015/03/photos-th.png)](https://static.juev.org/2015/03/photos.png "Photos")
 
 На изображении видно, что интерфейс делится на две части: 
 
@@ -54,7 +54,7 @@ tags:
 
 Хочется отметить тот факт, что помимо обычных изображений, Amazon Cloud Drive прекрасно загружает RAW-снимки, чем не может похвастаться больше ни один из существующих сервисов (как отметил [Павел Вязовой](http://paul.elms.pro), iCloud Photo Library позволяет загружать RAW-снимки, но тариф там дороже).
 
-[![raw](http://static.juev.org/2015/03/raw-th.png)](http://static.juev.org/2015/03/raw.png "RAW")
+[![raw](https://static.juev.org/2015/03/raw-th.png)](https://static.juev.org/2015/03/raw.png "RAW")
 
 Таким образом, всего за $12 в год можно создать полный бекап своих фотографий. С возможность их просмотра прямо в вебе и при необходимости загружать их на свой локальный компьютер.
 

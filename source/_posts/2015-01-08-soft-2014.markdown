@@ -6,7 +6,7 @@ keywords: soft, osx
 gplus:
 published: true
 date: 2015-01-08 08:19:05
-image: http://static.juev.org/2015/01/Wallpaper-Tape-Wind-Soft-Purple.jpg
+image: https://static.juev.org/2015/01/Wallpaper-Tape-Wind-Soft-Purple.jpg
 tags:
 - soft
 - osx

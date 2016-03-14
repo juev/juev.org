@@ -18,15 +18,15 @@ tags:
 
 Заходим на RTM в папку <strong>Входящие</strong> и обращаем внимание на ссылки, которые размещены в панели свойств задачи.
 
-<img class="aligncenter size-full wp-image-1054" title="RTM" src="http://static.juev.org/2010/06/RTM.png" alt="" width="308" height="193" />
+<img class="aligncenter size-full wp-image-1054" title="RTM" src="https://static.juev.org/2010/06/RTM.png" alt="" width="308" height="193" />
 
 Нас интересует ссылка iCalendar. Копируем ее адрес в буфер обмена. И теперь переходим в Google Calendar и в левой части экрана открываем параметры Других календарей.
 
-<img class="aligncenter size-full wp-image-1052" title="gcal-add" src="http://static.juev.org/2010/06/gcal-add.png" alt="" width="255" height="177" />
+<img class="aligncenter size-full wp-image-1052" title="gcal-add" src="https://static.juev.org/2010/06/gcal-add.png" alt="" width="255" height="177" />
 
 В данном случае нас интересует пункт Добавить по URL. Выбираем этот пункт и появляется поле для ввода адреса:
 
-<a href="http://static.juev.org/2010/06/gcal-url.png" rel="lightbox"><img class="aligncenter size-full wp-image-1053" title="gcal-url" src="http://static.juev.org/2010/06/gcal-url.png" alt="" width="363" height="155" /></a>
+<a href="https://static.juev.org/2010/06/gcal-url.png" rel="lightbox"><img class="aligncenter size-full wp-image-1053" title="gcal-url" src="https://static.juev.org/2010/06/gcal-url.png" alt="" width="363" height="155" /></a>
 
 В который и добавляем тот адрес, что предварительно скопировали из RTM.
 

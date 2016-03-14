@@ -16,7 +16,7 @@ tags:
 
 Первым хотелось бы рассмотреть <a href="http://www.foobar2000.org/" rel="nofollow">foobar</a>. Первым просто потому, что именно с него началось мое знакомство с бесплатными плеерами. Отличает этот плеер довольно большое сообщество, которое создает собственные сборки и плагины к плееру. В базовой поставке плеер очень минималистичен, как по внешнему виду, так и по функционалу.
 
-<a href="http://static.juev.org/2010/05/foobar.png"><img class="aligncenter size-medium wp-image-1030" title="foobar" src="http://static.juev.org/2010/05/foobar-300x223.png" alt="" width="300" height="223" /></a>
+<a href="https://static.juev.org/2010/05/foobar.png"><img class="aligncenter size-medium wp-image-1030" title="foobar" src="https://static.juev.org/2010/05/foobar-300x223.png" alt="" width="300" height="223" /></a>
 
 Основной вид окна -- развернутый на весь экран, в котором представлено содержимое плейлиста.
 
@@ -28,7 +28,7 @@ tags:
 
 Вторым плеером, с которым я познакомился был <a href="http://aimp.ru/index.php" rel="nofollow">aimp2</a>. Отличие данного плеера заключается в том, что у него winamp-о образный интерфейс, модульный и очень компактный. При этом уже в базовой поставке есть все необходимое для полноценной работы. Не нужно задумываться о том, какие расширения использовать.
 
-<a href="http://static.juev.org/2010/05/aimp.png"><img class="aligncenter size-medium wp-image-1029" title="aimp" src="http://static.juev.org/2010/05/aimp-127x300.png" alt="" width="127" height="300" /></a>
+<a href="https://static.juev.org/2010/05/aimp.png"><img class="aligncenter size-medium wp-image-1029" title="aimp" src="https://static.juev.org/2010/05/aimp-127x300.png" alt="" width="127" height="300" /></a>
 
 Основные функции программы:
 <ul>

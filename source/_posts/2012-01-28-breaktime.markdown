@@ -25,11 +25,11 @@ tags:
 
 Пришлось продолжить поиск, и в конце концов я решил попробовать [BreakTime](http://itunes.apple.com/ru/app/breaktime/id427475982?mt=12 "Mac App Store - BreakTime"). Данная программа не следует технике Pomodoro, а просто позволяет блокировать экран компьютера на указанное время. При этом ее интерфейс очень лаконичен, а в настройках можно задать дополнительные возможности программы.
 
-![settings](http://static.juev.org/2012/01/breaktime-settings.png)
+![settings](https://static.juev.org/2012/01/breaktime-settings.png)
 
 BreakTime достаточно один раз настроить и затем использовать, уже не обращаясь к настройкам. Есть так же возможность отключения кнопки Done, которую используют для выключения блокировки.
 
-[![block](http://static.juev.org/2012/01/breaktime-block-th.png)](http://static.juev.org/2012/01/breaktime-block.png)
+[![block](https://static.juev.org/2012/01/breaktime-block-th.png)](https://static.juev.org/2012/01/breaktime-block.png)
 
 Таким образом я установил время работы в 25 минут, а время отдыха в 5 минут, активировал BreakTime и начинаю работать. Так как время активности ограничено, приходиться выбирать, что именно делать и внимание меньше распыляется.
 

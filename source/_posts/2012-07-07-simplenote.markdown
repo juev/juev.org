@@ -40,7 +40,7 @@ tags:
 6. Быстрый поиск и теги для организации записей в группы.
 7. Безопасность при передаче заметок. Для связи с сервисом используется протокол https.
 
-[![simplenote](http://static.juev.org/2012/07/simplenote-th.jpg)](http://static.juev.org/2012/07/simplenote.png "Preview markdown in SimpleNote service")
+[![simplenote](https://static.juev.org/2012/07/simplenote-th.jpg)](https://static.juev.org/2012/07/simplenote.png "Preview markdown in SimpleNote service")
 
 Премиум-возможности сервиса [SimpleNote](http://simplenoteapp.com/), доступные по подписке:
 

@@ -19,7 +19,7 @@ tags:
     Имя    Тип записи    Данные
     *      A             117.12.56.31
 
-<img class="alignleft size-full wp-image-1175" src="http://static.juev.org/2010/08/photo-04.jpg" alt="" width="210" height="210" />
+<img class="alignleft size-full wp-image-1175" src="https://static.juev.org/2010/08/photo-04.jpg" alt="" width="210" height="210" />
 
 Таким образом мы указываем, что любые создаваемые поддомены будут указывать на определенный ip-адрес, обычно выбирается тот же, что и у основного домена.
 
@@ -57,7 +57,7 @@ tags:
 <h2>Обновление конфигурации WordPress</h2>
 На данном этапе нам необходимо будет указать WordPress на новое расположение медиафайлов. Для этого переходим в пункт меню <em>Параметры-Медиафайлы</em>:
 
-<img class="size-full wp-image-1176 aligncenter" src="http://static.juev.org/2010/08/mediafiles.png" alt="" width="540" height="159" />
+<img class="size-full wp-image-1176 aligncenter" src="https://static.juev.org/2010/08/mediafiles.png" alt="" width="540" height="159" />
 
 Необходимо указать имя созданного поддомена в пункте <em>Полный URL-путь к файлам</em>. Теперь все вновь размещаемые файлы будут располагаться по новому адресу.
 

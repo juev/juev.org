@@ -6,7 +6,7 @@ keywords: services, internet
 gplus:
 published: true
 date: 2014-12-28 10:01:14
-image: http://static.juev.org/014/12/gty_money_rolls_ll_120404_wb.jpg
+image: https://static.juev.org/014/12/gty_money_rolls_ll_120404_wb.jpg
 tags:
 - services
 - internet

@@ -17,15 +17,15 @@ tags:
 
 После запуска, программа разворачивается на полный экран, начинает звучать ненавязчивая музыка, на фоне присутствует изображение природы... При перемещении курсора мыши за пределы текстового поля появляются несколько кнопок, с помощью которых осуществляется управление программой, ее настройка, открытие и сохранение файлов.
 
-<a href="http://static.juev.org/2010/06/CreaWriter.png"><img class="aligncenter size-full wp-image-1077" title="CreaWriter" src="http://static.juev.org/2010/06/CreaWriter.png" alt="" width="425" height="340" /></a>
+<a href="https://static.juev.org/2010/06/CreaWriter.png"><img class="aligncenter size-full wp-image-1077" title="CreaWriter" src="https://static.juev.org/2010/06/CreaWriter.png" alt="" width="425" height="340" /></a>
 
 Первое время я использовал CreaWriter, потому что не знал о других альтернативах. И если честно, она мне показалась очень неудобной и неинтересной.
 
 Следующей программой оказалась <a href="http://www.baara.com/q10/" rel="nofollow">Q10</a>. Очень достойная программа, которая мне показалась намного удобнее, ем CreaWriter. Работает в полноэкранном режиме, представлена в нескольких версиях. Существует версия для установки и версия для работы с флешек, то есть версия, позволяющая работать без установки программы. Выглядит намного скромнее чем CreaWriter. И здесь уже точно можно сказать, что ничего мешать не будет!
 
-<a href="http://static.juev.org/2010/06/q10-main.png"><img class="aligncenter size-medium wp-image-1078" title="q10 - main" src="http://static.juev.org/2010/06/q10-main-300x240.png" alt="q10 - main" width="300" height="240" /></a>
+<a href="https://static.juev.org/2010/06/q10-main.png"><img class="aligncenter size-medium wp-image-1078" title="q10 - main" src="https://static.juev.org/2010/06/q10-main-300x240.png" alt="q10 - main" width="300" height="240" /></a>
 
-<a href="http://static.juev.org/2010/06/q10-settings.png"><img class="aligncenter size-medium wp-image-1079" title="q10 - settings" src="http://static.juev.org/2010/06/q10-settings-300x240.png" alt="q10 - settings" width="300" height="240" /></a>
+<a href="https://static.juev.org/2010/06/q10-settings.png"><img class="aligncenter size-medium wp-image-1079" title="q10 - settings" src="https://static.juev.org/2010/06/q10-settings-300x240.png" alt="q10 - settings" width="300" height="240" /></a>
 
 В комплект поставки входит словарь английского и испанского языков. Дополнительно могут быть установлены словари и других языков. В распакованном виде программа требует чуть больше 2 мегабайт дискового пространства. Все управление осуществляется через использование горячих клавиш, которые можно узнать, нажав F1.
 
@@ -33,13 +33,13 @@ tags:
 
 И наконец, еще одна программа, которая позволяет работать с текстом в полноэкранном режиме, которая называется <a href="http://writemonkey.com/" rel="nofollow">WriteMonkey</a>. Она оказалась самой функциональной из всех мною опробованных. К тому же над ней постоянно идет работа и постепенно в программу происходит добавление новых функций.
 
-<a href="http://static.juev.org/2010/06/WriteMonkey-main.png"><img class="aligncenter size-medium wp-image-1080" title="WriteMonkey - main" src="http://static.juev.org/2010/06/WriteMonkey-main-300x240.png" alt="WriteMonkey - main" width="300" height="240" /></a>
+<a href="https://static.juev.org/2010/06/WriteMonkey-main.png"><img class="aligncenter size-medium wp-image-1080" title="WriteMonkey - main" src="https://static.juev.org/2010/06/WriteMonkey-main-300x240.png" alt="WriteMonkey - main" width="300" height="240" /></a>
 
-<a href="http://static.juev.org/2010/06/WriteMonkey-Settings.png"><img class="aligncenter size-medium wp-image-1081" title="WriteMonkey - menu" src="http://static.juev.org/2010/06/WriteMonkey-Settings-300x240.png" alt="WriteMonkey - menu" width="300" height="240" /></a>
+<a href="https://static.juev.org/2010/06/WriteMonkey-Settings.png"><img class="aligncenter size-medium wp-image-1081" title="WriteMonkey - menu" src="https://static.juev.org/2010/06/WriteMonkey-Settings-300x240.png" alt="WriteMonkey - menu" width="300" height="240" /></a>
 
 Управление программой осуществляется как с помоom. горячих клавиш, так и с помощью меню, которое доступно по щелчку правой кнопкой мыши по окну программы. Список горячих клавиш так же вызывается клавишей F1.
 
-<a href="http://static.juev.org/2010/06/WriteMonkey-help.png"><img class="aligncenter size-medium wp-image-1082" title="WriteMonkey - help" src="http://static.juev.org/2010/06/WriteMonkey-help-300x240.png" alt="WriteMonkey - help" width="300" height="240" /></a>
+<a href="https://static.juev.org/2010/06/WriteMonkey-help.png"><img class="aligncenter size-medium wp-image-1082" title="WriteMonkey - help" src="https://static.juev.org/2010/06/WriteMonkey-help-300x240.png" alt="WriteMonkey - help" width="300" height="240" /></a>
 
 Количество горячих клавиш на порядок превышает то, что используется в q10, так как WriteMonkey позволяет использовать при написании текстов разметку Markdown или Texfile. Существует экспорт в различные форматы файлов.
 

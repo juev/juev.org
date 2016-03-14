@@ -37,5 +37,5 @@ tags:
 
 [1]:	http://agiletortoise.com/drafts/ "Drafts"
 
-[image-1]:	http://static.juev.org/2014/04/drafts_main.png "Drafts"
-[image-2]:	http://static.juev.org/2014/04/things_notes.png "Things"
+[image-1]:	https://static.juev.org/2014/04/drafts_main.png "Drafts"
+[image-2]:	https://static.juev.org/2014/04/things_notes.png "Things"

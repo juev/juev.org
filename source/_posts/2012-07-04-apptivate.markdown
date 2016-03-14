@@ -51,19 +51,19 @@ tags:
 
 После запуска, иконка приложения оказывается в системном меню. И все управление осуществляется с ее помощью.
 
-![apptivate-main](http://static.juev.org/2012/07/apptivate-main.png "Apptivate Main")
+![apptivate-main](https://static.juev.org/2012/07/apptivate-main.png "Apptivate Main")
 
 При первом запуске будет предложено добавить в список необходимые приложения. Сделать это можно или перетаскивая само приложение в иконку Apptivate, или же используя обычный диалог выбора программы. После добавления можно щелкнуть курсором по данному элементу и затем задать нужную комбинацию клавиш:
 
-![apptivate-keys](http://static.juev.org/2012/07/apptivate-keys.png "Apptivate Keys")
+![apptivate-keys](https://static.juev.org/2012/07/apptivate-keys.png "Apptivate Keys")
 
 При добавлении комбинации, чуть ниже будут появляться новые поля ввода, в которые можно продолжить задавать новые клавиши. Таким образом сложность клавиатурной комбинации почти ничем не ограничена.
 
-![apptivate-emacs](http://static.juev.org/2012/07/apptivate-emacs.png "Apptivate Emacs")
+![apptivate-emacs](https://static.juev.org/2012/07/apptivate-emacs.png "Apptivate Emacs")
 
 В настройках можно задать автоматический запуск программы при входе пользователя в систему, можно задать переопределение системных комбинаций клавиш. И можно определить поведение, при котором, если программа была скрыта, то она активируется, если же в момент использования комбинации программа была активна, то она скрывается.
 
-![apptivate-settings](http://static.juev.org/2012/07/apptivate-settings.png "Apptivate Settings")
+![apptivate-settings](https://static.juev.org/2012/07/apptivate-settings.png "Apptivate Settings")
 
 
 ## Вывод

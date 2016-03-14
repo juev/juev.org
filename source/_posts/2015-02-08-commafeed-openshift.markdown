@@ -6,7 +6,7 @@ keywords: git, openshift, java
 gplus:
 published: true
 date: 2015-02-08 08:55:28
-image: http://static.juev.org/2015/02/logo_2.png
+image: https://static.juev.org/2015/02/logo_2.png
 tags:
 - git
 - openshift
@@ -86,15 +86,15 @@ tags:
 
 OpenShift бесплатно предоставляет 3 сервера размером small. Для небольших приложений оптимально. Commafeed запустился и работал довольно шустро.
 
-[![](http://static.juev.org/2015/02/commafeed.png)](http://static.juev.org/2015/02/commafeed.png)
+[![](https://static.juev.org/2015/02/commafeed.png)](https://static.juev.org/2015/02/commafeed.png)
 
 Приятным дополнением является возможность изменения стилей оформления без вмешательства в исходный код темы:
 
-[![](http://static.juev.org/2015/02/settings.png)](http://static.juev.org/2015/02/settings.png)
+[![](https://static.juev.org/2015/02/settings.png)](https://static.juev.org/2015/02/settings.png)
 
 Но что-то у меня пока не заладилось с русским языком в статьях:
 
-[![](http://static.juev.org/2015/02/russian.png)](http://static.juev.org/2015/02/russian.png)
+[![](https://static.juev.org/2015/02/russian.png)](https://static.juev.org/2015/02/russian.png)
 
 При этом проблема с русским языком наблюдается во всех лентах новостей без исключения.
 

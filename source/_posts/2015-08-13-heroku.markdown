@@ -2,7 +2,7 @@
 layout: post
 title: "Новый Heroku"
 date: 2015-08-13 16:21
-image: http://static.juev.org/2015/08/Sleeping.png
+image: https://static.juev.org/2015/08/Sleeping.png
 tags:
   - heroku
   - services
@@ -15,10 +15,10 @@ tags:
 
 В панели управления теперь отображают статистику по использованию приложения, в котором видно, сколько времени программа была активна. К примеру, для моего приложения по пробуждению:
 
-![Sleeping](http://static.juev.org/2015/08/Sleeping.png "Stats")
+![Sleeping](https://static.juev.org/2015/08/Sleeping.png "Stats")
 
 За сутки порядка 6 минут, это вполне нормально. Но каково же было мое удивление, когда я получил письмо от Heroku следующего содержания:
 
-![Letter](http://static.juev.org/2015/08/Letter.png "Letter")
+![Letter](https://static.juev.org/2015/08/Letter.png "Letter")
 
 Ясно одно: бесплатных сайтов на Heroku больше нет.
