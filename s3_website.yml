@@ -1,6 +1,7 @@
 s3_id: <%= ENV['s3_id'] %>
 s3_secret: <%= ENV['s3_secret'] %>
 s3_bucket: <%= ENV['s3_bucket'] %>
+cloudfront_distribution_id: "E2K0T6D2H2RANZ"
 
 site: public
 
@@ -11,5 +12,3 @@ s3_endpoint: eu-west-1
 
 redirects:
   rss/: atom.xml
-
-cloudfront_distribution_id: E2K0T6D2H2RANZ
