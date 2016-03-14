@@ -6,7 +6,7 @@ keywords: soft, tips, osx
 gplus:
 published: true
 date: 2014-12-15 12:16:18
-image: http://static.juev.org/2014/12/alfred.png
+image: https://static.juev.org/2014/12/alfred.png
 tags:
 - soft
 - tips
@@ -23,7 +23,7 @@ tags:
 
 Некоторые пользователи применяют решение данной проблемы в виде переноса собранного приложения в директорию Applications, вместо создания симлинков. Но более правильным решением является добавления пути, по которому размещается собранная программа в настройки Alfred, в раздел Search Scope:
 
-![](http://static.juev.org/2014/12/alfred-1.png)
+![](https://static.juev.org/2014/12/alfred-1.png)
 
  К примеру, добавить строку:
 

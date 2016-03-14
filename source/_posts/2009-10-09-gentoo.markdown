@@ -57,7 +57,7 @@ tags:
 
 Сегодня гном у меня выглядит вот так:
 
-<a href="http://static.juev.org/2009/10/gnome.png"><img class="aligncenter size-medium wp-image-609" title="gnome" src="http://static.juev.org/2009/10/gnome-300x240.png" alt="Gnome" width="300" height="240" /></a>
+<a href="https://static.juev.org/2009/10/gnome.png"><img class="aligncenter size-medium wp-image-609" title="gnome" src="https://static.juev.org/2009/10/gnome-300x240.png" alt="Gnome" width="300" height="240" /></a>
 
 При установке одной из программ обратил внимание на то, что во флагах прописана переменная <em>LINGUAS</em>, в которой перечислены множество языков. Стало понятным, что в этой переменной описывается, какие языки интерфейса мы собираемся использовать. Тут же прописал в <em>make.conf</em>:
 

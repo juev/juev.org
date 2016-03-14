@@ -2,7 +2,7 @@
 layout: post
 title: "Jekyll: Travis и зависимости"
 date: 2015-07-04 11:48
-image: http://static.juev.org/2015/07/jekyll.png
+image: https://static.juev.org/2015/07/jekyll.png
 tags:
   - jekyll
   - travis

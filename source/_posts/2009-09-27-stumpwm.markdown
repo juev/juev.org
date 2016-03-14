@@ -254,4 +254,4 @@ tags:
 
 И напоследок внешний вид:
 
-<a href="http://static.juev.org/2009/09/stumpwm.png"><img class="size-medium wp-image-603 aligncenter" title="stumpwm" src="http://static.juev.org/2009/09/stumpwm-300x240.png" alt="StumpWM" width="300" height="240" /></a>
+<a href="https://static.juev.org/2009/09/stumpwm.png"><img class="size-medium wp-image-603 aligncenter" title="stumpwm" src="https://static.juev.org/2009/09/stumpwm-300x240.png" alt="StumpWM" width="300" height="240" /></a>

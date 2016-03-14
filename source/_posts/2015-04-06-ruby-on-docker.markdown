@@ -2,7 +2,7 @@
 layout: post
 title: Ruby on Docker
 date: 2015-04-06 09:14
-image: http://static.juev.org/2015/04/docker.png
+image: https://static.juev.org/2015/04/docker.png
 tags:
 - ruby
 - docker

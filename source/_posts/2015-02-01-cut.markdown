@@ -6,7 +6,7 @@ keywords: services, internet
 gplus:
 published: true
 date: 2015-02-01 08:18:33
-image: http://static.juev.org/2015/02/calculation_of_leave.jpg
+image: https://static.juev.org/2015/02/calculation_of_leave.jpg
 tags:
 - services
 - internet

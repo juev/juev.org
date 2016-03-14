@@ -2,7 +2,7 @@
 layout: post
 title: И снова Jekyll
 date: 2015-04-04 13:27
-image: http://static.juev.org/2015/04/jekyll-logo.png
+image: https://static.juev.org/2015/04/jekyll-logo.png
 tags:
 - jekyll
 - ghost

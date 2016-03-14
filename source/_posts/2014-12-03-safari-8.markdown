@@ -6,7 +6,7 @@ keywords: safari, osx
 gplus:
 published: true
 date: 2014-12-03 07:23:27
-image: http://static.juev.org/2014/12/safari.jpg
+image: https://static.juev.org/2014/12/safari.jpg
 tags:
 - safari
 - osx

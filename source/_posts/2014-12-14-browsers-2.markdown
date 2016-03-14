@@ -6,7 +6,7 @@ keywords: internet, soft, web
 gplus:
 published: true
 date: 2014-12-14 08:53:47
-image: http://static.juev.org/2014/12/safari-120.png
+image: https://static.juev.org/2014/12/safari-120.png
 tags:
 - internet
 - soft

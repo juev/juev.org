@@ -17,7 +17,7 @@ tags:
 
 Раньше было довольно сложно с ним работать, потому что реклама занимала много пространства, но теперь стало совершенно невозможно. Как люди работают с facebook, не понимаю?
 
-[![facebook](http://static.juev.org/2012/11/th-facebook.png)](http://static.juev.org/2012/11/facebook.png "Facebook")
+[![facebook](https://static.juev.org/2012/11/th-facebook.png)](https://static.juev.org/2012/11/facebook.png "Facebook")
 
 Основную долю экрана занимает предложение добавить себе в друзей людей, которых я вижу в первый раз в жизни. Часть занято рекламой. И лишь в центре внизу есть то, за чем я сюда пришел. Крайне не рационально!
 
@@ -33,6 +33,6 @@ tags:
 
 И после всех изменений Facebook стал выглядеть следующим образом:
 
-[![facebook-clean](http://static.juev.org/2012/11/th-facebook-clean.png)](http://static.juev.org/2012/11/facebook-clean.png "Facebook Clean")
+[![facebook-clean](https://static.juev.org/2012/11/th-facebook-clean.png)](https://static.juev.org/2012/11/facebook-clean.png "Facebook Clean")
 
 На мой взгляд, стало намного лучше! Надеюсь, что Mark Zuckerberg не обидится.

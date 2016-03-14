@@ -2,7 +2,7 @@
 layout: post
 title: "Шифрование на телефоне"
 date: 2015-08-09 11:10
-image: http://static.juev.org/2015/08/gpg.png
+image: https://static.juev.org/2015/08/gpg.png
 tags:
   - security
   - ios
@@ -18,7 +18,7 @@ tags:
 ссылка: [iTunes](https://itunes.apple.com/ru/app/nouveaupg/id912244540?l=en&mt=8 "NouveauPG")
 стоимость: бесплатно
 
-![NouveauPG](http://static.juev.org/2015/08/NouveauPG.jpg)
+![NouveauPG](https://static.juev.org/2015/08/NouveauPG.jpg)
 
 Судя по комментариям, было платным приложением, но перевели в разряд бесплатных.
 
@@ -29,7 +29,7 @@ tags:
 ссылка: [iTunes](https://itunes.apple.com/ru/app/privacy-pgp-messenger/id919758259?l=en&mt=8 "Privacy, PGP Messenger")
 стоимость: бесплатно
 
-![Privacy](http://static.juev.org/2015/08/Privacy.jpg)
+![Privacy](https://static.juev.org/2015/08/Privacy.jpg)
 
 Если необходимо использовать телефон только для того, чтобы отправить зашифрованное сообщение (при этом не подписывая его), то это одна из самых удачных программ.
 
@@ -40,7 +40,7 @@ tags:
 ссылка: [iTunes](https://itunes.apple.com/us/app/opengp/id414003727?mt=8 "oPenGP")
 стоимость: 279 руб
 
-![oPenGP](http://static.juev.org/2015/08/oPenGP.jpg)
+![oPenGP](https://static.juev.org/2015/08/oPenGP.jpg)
 
 Программа с бОльшими возможностями, что были рассмотрены ранее. Но при этом мне так и не удалось провести корректный импорт своего приватного ключа. Импорт прошел, но ключ можно было использовать только для подписания сообщения, но никак не для расшифровки. Есть возможность проводить поиск публичных ключей на официальных серверах.
 
@@ -51,7 +51,7 @@ tags:
 ссылка: [iTunes](https://itunes.apple.com/us/app/ipgmail/id430780873?mt=8 "iPGMail")
 стоимость: 119 руб
 
-![iPGMail](http://static.juev.org/2015/08/iPGMail.jpg)
+![iPGMail](https://static.juev.org/2015/08/iPGMail.jpg)
 
 Программа может работать как с буфером обмена, так и с файлами из iCloud и Dropbox.
 

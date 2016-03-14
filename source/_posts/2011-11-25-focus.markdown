@@ -23,47 +23,47 @@ tags:
 
 Интерфейс программы очень минималистичный, ничего лишнего и все только самое необходимое.
 
-[![main][]](http://static.juev.org/2011/11/main.png)
+[![main][]](https://static.juev.org/2011/11/main.png)
 
-[main]: http://static.juev.org/2011/11/main-th.jpg
+[main]: https://static.juev.org/2011/11/main-th.jpg
 
 После того, как мы добавим фотографии к обработке, в нижней части окна появляются несколько кнопок, позволяющих вызывать доступные функции.
 
-[![photo][]](http://static.juev.org/2011/11/photo.png)
+[![photo][]](https://static.juev.org/2011/11/photo.png)
 
-[photo]: http://static.juev.org/2011/11/photo-th.jpg
+[photo]: https://static.juev.org/2011/11/photo-th.jpg
 
 При выборе каждой из функций в правой части окна появляются соответствующие элементы управления, которые позволяют задавать определенные настройки выбранной функции.
 
 При работе в режиме портрета создаем эффект размытия вокруг выбранного человека. Эффект очень напоминает фотографии с максимально открытой диафрагмой при использовании дорогой оптики.
 
-[![portrait][]](http://static.juev.org/2011/11/portrait.png)
+[![portrait][]](https://static.juev.org/2011/11/portrait.png)
 
-[portrait]: http://static.juev.org/2011/11/portrait-th.jpg
+[portrait]: https://static.juev.org/2011/11/portrait-th.jpg
 
 В режиме природы так же добавляется эффект размытия, но уже а линейной проекции, что позволяет сгладить ближние и дальние объекты, и акцентировать внимание на важных деталях фотографии.
 
-[![nature][]](http://static.juev.org/2011/11/nature.png)
+[![nature][]](https://static.juev.org/2011/11/nature.png)
 
-[nature]: http://static.juev.org/2011/11/nature-th.jpg
+[nature]: https://static.juev.org/2011/11/nature-th.jpg
 
 В режиме архитектуры эффект размытия больше ориентирован на вертикальную составляющую.
 
-[![architecture][]](http://static.juev.org/2011/11/architecture.png)
+[![architecture][]](https://static.juev.org/2011/11/architecture.png)
 
-[architecture]: http://static.juev.org/2011/11/architecture-th.jpg
+[architecture]: https://static.juev.org/2011/11/architecture-th.jpg
 
 В режиме макро эффект размытия еще более выражен.
 
-[![macro][]](http://static.juev.org/2011/11/macro.png)
+[![macro][]](https://static.juev.org/2011/11/macro.png)
 
-[macro]: http://static.juev.org/2011/11/macro-th.jpg
+[macro]: https://static.juev.org/2011/11/macro-th.jpg
 
 И в режиме tilt, на мой взгляд, один из интереснейших эффектов, можно создавать эффект
 игрушечного мира.
 
-[![tilt][]](http://static.juev.org/2011/11/tilt.png)
+[![tilt][]](https://static.juev.org/2011/11/tilt.png)
 
-[tilt]: http://static.juev.org/2011/11/tilt-th.jpg
+[tilt]: https://static.juev.org/2011/11/tilt-th.jpg
 
 Все эти эффекты можно увидеть и в Aperture, но достигаются они дополнительными телодвижениями и усложнением простых операций. Focus же позволяет это сделать с минимальными затратами сил.

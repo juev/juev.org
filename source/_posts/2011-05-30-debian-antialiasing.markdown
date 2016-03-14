@@ -29,7 +29,7 @@ tags:
 
 После того, как перезапустил Gnome, обратил внимание на то как замечательно стали отображаться шрифты!
 
-[![Debian][1]](http://static.juev.org/2011/05/debian_fonts.png "Debian Fonts")
+[![Debian][1]](https://static.juev.org/2011/05/debian_fonts.png "Debian Fonts")
 
 Естественно, что на разных мониторах шрифты будут отображаться по разному и само изображение не передаст всего того, что произошло. Но работать стало гораздо приятнее!
 
@@ -40,5 +40,5 @@ tags:
 
 За достаточно короткий срок *Debian* меня покорил.
 
-[freetype.zip]: http://static.juev.org/2011/05/freetype.zip "Архив пакетов freetype"
-[1]: http://static.juev.org/2011/05/debian_fonts-th.png
+[freetype.zip]: https://static.juev.org/2011/05/freetype.zip "Архив пакетов freetype"
+[1]: https://static.juev.org/2011/05/debian_fonts-th.png

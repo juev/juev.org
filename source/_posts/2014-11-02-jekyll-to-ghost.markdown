@@ -6,7 +6,7 @@ keywords: jekyll, nginx, ghost
 gplus:
 published: true
 date: 2014-11-02 09:56:04
-image: http://static.juev.org/2014/11/ghost_logo_big.png
+image: https://static.juev.org/2014/11/ghost_logo_big.png
 tags:
 - jekyll
 - nginx
