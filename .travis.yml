@@ -10,7 +10,6 @@ addons:
   apt:
     packages:
       - libgsl0-dev
-      - ruby-narray
 
 #sudo: required
 
