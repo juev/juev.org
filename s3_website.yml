@@ -7,7 +7,6 @@ cloudfront_invalidate_root: true
 
 site: public
 
-max_age: 0
 cache_control: no-cache, no-store
 
 s3_endpoint: eu-west-1

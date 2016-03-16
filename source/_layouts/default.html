@@ -5,11 +5,10 @@ That's great, and we do (often) the same.
 BTW, you're a cool guy/gal if you're reading this :)
 May the charm be with you!
 -->
-<html>
+<html lang="ru">
 <head>
   <link rel="dns-prefetch" href="//static.juev.org">
-  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
-  <meta charset="UTF-8">{% if page.title %}
+  <meta charset="utf-8">{% if page.title %}
   <title>{{ page.title }}</title>{% elsif page.grouptype == "tag" %}
   <title>Posts Tagged "{{ page.tag }}"</title>{% else %}
   <title>{{ site.title }}</title>{% endif %}{% if page.description %}
@@ -23,8 +22,9 @@ May the charm be with you!
   <link rel="canonical" href="{{ site.url }}{{ page.id | canonical | replace:'index.html',''}}/">
   <link rel="shortcut icon" href="/favicon.ico">
   <link rel="apple-touch-icon" href="/apple-touch-icon.png">
-  <link rel="alternate" type="application/atom+xml" title="ATOM Feed" href="http://www.juev.org/atom.xml">
-  <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Open+Sans:400,400italic,700|Source+Code+Pro&subset=latin,cyrillic">
+  <link rel="alternate" type="application/atom+xml" title="ATOM Feed" href="https://www.juev.org/atom.xml">
+  <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Open+Sans:400,400italic,700&subset=latin,cyrillic">
+  <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Source+Code+Pro">
   <link rel="stylesheet" type="text/css" href="//static.juev.org/assets/css/master.4669dd71.css">{% if page.previous %}
   <link rel="prev" href="{{ page.previous.url }}">{% endif %}{% if page.next %}
   <link rel="next" href="{{ page.next.url }}">{% endif %}{% if page.date %}
@@ -35,7 +35,7 @@ May the charm be with you!
   <meta content="{{ page.date | date_to_xmlschema }}" property="article:published_time">{% if page.tags %}{% for tag in page.tags %}
   <meta content="{{ tag }}" property="article:tag">{% endfor %}{% endif %}
   <meta content="{{ page.image }}" property="og:image">
-  <meta content="http://denis.evsyukov.org" property="article:author">
+  <meta content="https://denis.evsyukov.org" property="article:author">
   <!-- end og:meta  -->
   <!-- twitter card -->
   <meta content="summary_large_image" name="twitter:card">
@@ -64,7 +64,7 @@ May the charm be with you!
   <div class="footer">
     <div class="width-fix">
       <p><a href="/articles.html" rel="nofollow">Список статей</a> :: <a href="/tags.html" rel="nofollow">Теги</a> :: <a href="/recommendations/" rel="nofollow">Рекомендации</a> :: <a href="//www.juev.org/atom.xml" rel="nofollow">RSS</a></p>
-      <p>&copy; 2008&ndash;{{ site.time | date: "%Y" }}&nbsp;<a href="http://denis.evsyukov.org">Denis Evsyukov</a>. Contact me via <script type="text/javascript">document.write("<n uers=\"znvygb:qravf\100riflhxbi\056bet\">Rznvy</n>".replace(/[a-zA-Z]/g,function(c){return String.fromCharCode((c<="Z"?90:122)>=(c=c.charCodeAt(0)+13)?c:c-26);}));</script>,&nbsp;
+      <p>&copy; 2008&ndash;{{ site.time | date: "%Y" }}&nbsp;<a href="https://denis.evsyukov.org">Denis Evsyukov</a>. Contact me via <script type="text/javascript">document.write("<n uers=\"znvygb:qravf\100riflhxbi\056bet\">Rznvy</n>".replace(/[a-zA-Z]/g,function(c){return String.fromCharCode((c<="Z"?90:122)>=(c=c.charCodeAt(0)+13)?c:c-26);}));</script>,&nbsp;
       <a href="//twitter.com/#!/Juev" rel="nofollow">twitter</a> or&nbsp;
       <a href="//github.com/Juev" rel="nofollow">github</a></p>
     </div>
