@@ -38,3 +38,18 @@ tags:
     <outputFormat>mobi</outputFormat>
 
 По моим ощущениям, утилита стала работать немного быстрее.
+
+**UPDATE 23/04/16** Долгое время не обновлял репозиторий, и как оказалось, с недавних пор стала появляться новая ошибка:
+
+    Traceback (most recent call last):
+      File "./fb2mobi.py", line 17, in <module>
+        from modules.fb2html import Fb2XHTML
+      File "/Users/juev/Projects/fb2mobi/modules/fb2html.py", line 18, in <module>
+        from PIL import Image
+    ImportError: No module named 'PIL'
+
+Решается проблема просто:
+
+    $ pip3 install pillow
+
+После чего утилита снова начинает работать.
