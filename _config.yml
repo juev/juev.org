@@ -1,5 +1,5 @@
 ---
-url:         http://www.juev.org
+url:         https://www.juev.org
 future:      false
 lsi:         true
 markdown:    kramdown
@@ -8,7 +8,7 @@ permalink:   pretty
 root:        /
 source:      source
 destination: public
-plugins:     plugins
+plugins_dir: plugins
 highlighter: rouge
 
 kramdown:
@@ -29,4 +29,4 @@ defaults:
       path: "" # an empty string here means all files in the project
       type: "posts"
     values:
-      image: http://static.juev.org/img.jpg
+      image: https://static.juev.org/img.jpg

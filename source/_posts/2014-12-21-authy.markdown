@@ -6,7 +6,7 @@ keywords: services, internet
 gplus:
 published: true
 date: 2014-12-21 09:07:31
-image: http://static.juev.org/2014/12/authy_red_logo_tm-92fa56e4d64d6c5121279fa0aa3fcfb7.png
+image: https://static.juev.org/2014/12/authy_red_logo_tm-92fa56e4d64d6c5121279fa0aa3fcfb7.png
 tags:
 - services
 - internet
@@ -20,11 +20,11 @@ Google Authenticator является стандартом дефакто в в�
 
 Работает Authy точно так же как и Google Authenticator. Добавление аккаунта можно произвести сканируя QR-код или вводя запрашиваемые данные вручную. 
 
-![](http://static.juev.org/2014/12/Authy-add.png)
+![](https://static.juev.org/2014/12/Authy-add.png)
 
 И по умолчанию поведение Authy соответствует программе от Google, за исключением того, что дополнительно можно использовать Pin, запрашиваемый при старте программы.
 
-![](http://static.juev.org/2014/12/Authy-Touch-ID.png)
+![](https://static.juev.org/2014/12/Authy-Touch-ID.png)
 
 Самое интересное начинается после того, как в настройках будет добавлен Backup-пароль и включена синхронизация. Все аккаунты в зашифрованном виде будут переданы на сервера Authy, и могут быть использованы на других устройствах пользователя. При этом, при добавлении нового устройства необходимо подтвердить свое намерение, или путем получения пароля на свой телефонный номер, или же путем генерации кода в Authy на другом устройстве. 
 
@@ -33,7 +33,7 @@ Google Authenticator является стандартом дефакто в в�
 В итоге, мы получаем функционал Google Authenticator, но с возможностью быстрого восстановления доступа к ранее настроенным сервисам или использования двухфакторной аутентификации на нескольких устройствах сразу.
 
 <div class="aligncenter">
-<a href="https://itunes.apple.com/en/app/authy/id494168017?mt=8" target="_blank"><img src="http://static.juev.org/2014/12/appstore_btn-2x-a150d66cc49c3d6e0e9a7ac733f44c9b.png" alt="Two Factor Authentication app on iOS"></a>
-<a href="https://play.google.com/store/apps/details?id=com.authy.authy&hl=en" target="_blank"><img src="http://static.juev.org/2014/12/google_play_btn-2x-4b46fc6711c7f3c0fed55d645e2f4ba8.png" alt="Two Factor Authentication app on Android"></a>
-<a href="https://chrome.google.com/webstore/detail/authy/gaedmjdfmmahhbjefcbgaolhhanlaolb?hl=en" target="_blank"><img src="http://static.juev.org/2014/12/chrome_store_btn-2x-196a82bcc152a5ef31a77c0a193e585b.png" alt="Two Factor Authentication app on Android"></a>
+<a href="https://itunes.apple.com/en/app/authy/id494168017?mt=8" target="_blank"><img src="https://static.juev.org/2014/12/appstore_btn-2x-a150d66cc49c3d6e0e9a7ac733f44c9b.png" alt="Two Factor Authentication app on iOS"></a>
+<a href="https://play.google.com/store/apps/details?id=com.authy.authy&hl=en" target="_blank"><img src="https://static.juev.org/2014/12/google_play_btn-2x-4b46fc6711c7f3c0fed55d645e2f4ba8.png" alt="Two Factor Authentication app on Android"></a>
+<a href="https://chrome.google.com/webstore/detail/authy/gaedmjdfmmahhbjefcbgaolhhanlaolb?hl=en" target="_blank"><img src="https://static.juev.org/2014/12/chrome_store_btn-2x-196a82bcc152a5ef31a77c0a193e585b.png" alt="Two Factor Authentication app on Android"></a>
 </div>

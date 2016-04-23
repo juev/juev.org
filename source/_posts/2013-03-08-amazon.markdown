@@ -18,19 +18,19 @@ tags:
 
 Создаем bucket S3 для своего сайта и задаем в его параметрах настройки website hosting:
 
-![amazon-website-hosting](http://static.juev.org/2013/03/amazon-website-hosting.png "Settings WebSite Hosting in Amazon S3")
+![amazon-website-hosting](https://static.juev.org/2013/03/amazon-website-hosting.png "Settings WebSite Hosting in Amazon S3")
 
 Затем создаем еще один bucket S3 для домена с переадресацией и задаем следующие настройки:
 
-![amazon-website-redirect](http://static.juev.org/2013/03/amazon-webhosting-redirect.png "Settings WebSite Hosting Redirect in Amazon S3")
+![amazon-website-redirect](https://static.juev.org/2013/03/amazon-webhosting-redirect.png "Settings WebSite Hosting Redirect in Amazon S3")
 
 Единственно, ассоциировать корневой домен со своим сайтом на S3 возможно только при использовании DNS-сервера самого Amazon (сервис называется Route53). Для этого создаем запись типа A -- IPv4 address и указываем псевдоним:
 
-![route53-alias](http://static.juev.org/2013/03/route53-alias.png "Settings Route53 Alias")
+![route53-alias](https://static.juev.org/2013/03/route53-alias.png "Settings Route53 Alias")
 
 И затем остается только задать CNAME для своего поддомена:
 
-![route53-cname](http://static.juev.org/2013/03/route53-cname.png "Settings Route53 CNAME")
+![route53-cname](https://static.juev.org/2013/03/route53-cname.png "Settings Route53 CNAME")
 
 При этом абсолютно не важно, какой из доменов будет отвечать за редирект, а какой из них будет заниматься отдачей сайта.
 

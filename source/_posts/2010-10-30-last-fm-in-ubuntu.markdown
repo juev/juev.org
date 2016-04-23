@@ -30,7 +30,7 @@ tags:
 
 Так выглядит открытое окно программы:
 
-<a href="http://static.juev.org/2010/10/lastfm-main.png"><img src="http://static.juev.org/2010/10/lastfm-main-300x188.png" alt="" title="lastfm-main" width="300" height="188" class="aligncenter size-medium wp-image-1251" /></a>
+<a href="https://static.juev.org/2010/10/lastfm-main.png"><img src="https://static.juev.org/2010/10/lastfm-main-300x188.png" alt="" title="lastfm-main" width="300" height="188" class="aligncenter size-medium wp-image-1251" /></a>
 
 Как видно, практически ничем не отличается от официального клиента под windows. Работает очень быстро, проблем за сутки работы замечено не было.
 

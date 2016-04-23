@@ -25,21 +25,21 @@ Windows 7 конечно красивая система, но не настол
 
 И импорт прошел быстро и безболезненно, и дальнейшая работа оказалась довольно приятной. При подключении камеры предлагается запустить программу и провести импорт.
 
-<img src="http://static.juev.org/2010/10/shotwell4.png" alt="" title="import" width="500" height="375" class="aligncenter size-full wp-image-1228" />
+<img src="https://static.juev.org/2010/10/shotwell4.png" alt="" title="import" width="500" height="375" class="aligncenter size-full wp-image-1228" />
 
 Существует своя система библиотеки, которая во многом копирует функционал F-Spot.
 
-<img src="http://static.juev.org/2010/10/shotwell2.png" alt="" title="library" width="501" height="376" class="aligncenter size-full wp-image-1226" />
+<img src="https://static.juev.org/2010/10/shotwell2.png" alt="" title="library" width="501" height="376" class="aligncenter size-full wp-image-1226" />
 
 При редактировании изображения есть возможность обрезать по заданным параметрам, использовать мастер "улучшения", при котором ShotWell пытается автоматически привести фотографию к оптимальному отображению. И соответственно есть возможность ручной коррекции экспозиции, насыщенности цвета, оттенка, цветовой температуры и уровня теней.
 
-<img src="http://static.juev.org/2010/10/shotwell3.png" alt="" title="edit" width="500" height="376" class="aligncenter size-full wp-image-1227" />
+<img src="https://static.juev.org/2010/10/shotwell3.png" alt="" title="edit" width="500" height="376" class="aligncenter size-full wp-image-1227" />
 
 Да, это самый минимум. Но это много больше из всего того, что представлено в Linux для обработки RAW-изображений. Просто и довольно функционально. Много лучше, когда нет ничего.
 
 Помимо прочего, ShotWell имеет функционал публикации фотографий на целом ряде сервисов, типа facebook, flickr.
 
-<img src="http://static.juev.org/2010/10/shotwell5.png" alt="" title="export" width="500" height="374" class="aligncenter size-full wp-image-1229" />
+<img src="https://static.juev.org/2010/10/shotwell5.png" alt="" title="export" width="500" height="374" class="aligncenter size-full wp-image-1229" />
 
 Грамотно организована связка программы с сервисами, но сам экспорт, увы, пока очень ограничен. Нет возможности изменить даже название файла. Не говоря уже о том, чтобы задать set, в который будет загружена фотография или группа, в которую будет размещено изображение. Поэтому для экспорта я использую другие программы. О них я расскажу в другой статье.
 

@@ -2,7 +2,7 @@
 layout: post
 title: Использование вебшрифтов с серверов Амазона
 date: 2015-06-07 21:26
-image: http://static.juev.org/2015/06/amazon-web-services.png
+image: https://static.juev.org/2015/06/amazon-web-services.png
 tags:
   - amazon
   - web
@@ -34,6 +34,6 @@ tags:
 
 После чего в той же консоли нужно перейти в управление Cloudfront. Там выбрать "Distribution Settings" и вкладку "Behaviors". Минимум одна группа поведения там уже должна присутствовать, поэтому выбираем ее и переходим к ее изменению, нажав кнопку Edit. Для параметра "Forward Headers" меняем значение с "None (Improves Caching)" на "Whitelist" и затем в секции "Whitelist Headers" выбираем Origin:
 
-[![Behavior](http://static.juev.org/2015/06/behavior-th.png)](http://static.juev.org/2015/06/behavior.png "Behavior")
+[![Behavior](https://static.juev.org/2015/06/behavior-th.png)](https://static.juev.org/2015/06/behavior.png "Behavior")
 
 Теперь только остается провести инвалидацию для загружанных ранее файлов шрифтов. Сделать это можно так же через веб-интерфейс, в разделе Cloudfront, вкладка Invalidations. Через 10-15 минут шрифты будут доступны для загрузки и не будут блокироваться политикой браузеров.

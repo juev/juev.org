@@ -31,11 +31,11 @@ tags:
 
 Для того, чтобы скрыть приложение из менюбара можно использовать бесплатное приложение [Broomstick](http://www.zibity.com/broomstick "Zibity: Broomstick"). При его запуске появляется небольшое окно с выбором функций:
 
-![broomstick-main](http://static.juev.org/2012/07/broomstick-main.png "Broomstick Main")
+![broomstick-main](https://static.juev.org/2012/07/broomstick-main.png "Broomstick Main")
 
 Выбрав пункт `Hide an App` открывается список приложений, которые можно скрыть:
 
-![broomstick-hide](http://static.juev.org/2012/07/broomstick-hide.png "Broomstick Hide")
+![broomstick-hide](https://static.juev.org/2012/07/broomstick-hide.png "Broomstick Hide")
 
 Выбираем нужное нам приложение, затем будет предложено ввести пароль администратора и иконка скрывается из менюбара. Соответственно, для того, чтобы показать ее вновь, нужно в основном меню программы выбрать пункт `Show an App`. Таким образом я скрыл иконку Dropbox из менюбара.
 

@@ -2,7 +2,7 @@
 layout: post
 title: "Проблема с буфером обмена в Emacs"
 date: 2015-06-10 08:32
-image: http://static.juev.org/2015/06/emacs-yank.png
+image: https://static.juev.org/2015/06/emacs-yank.png
 tags:
   - emacs
 ---
@@ -13,7 +13,7 @@ tags:
 
 Если во время вставки активен английский язык, то никаких проблем не наблюдается. Но стоит переключиться на русский (переключение именно в Emacs), то наблюдается следующая картина при вставке текста на английском языке:
 
-[![emacs-kill-ring](http://static.juev.org/2015/06/emacs-yank.png)](http://static.juev.org/2015/06/emacs-yank.png "Emacs Kill Ring")
+[![emacs-kill-ring](https://static.juev.org/2015/06/emacs-yank.png)](https://static.juev.org/2015/06/emacs-yank.png "Emacs Kill Ring")
 
 Если я все правильно понимаю, то вставка текста в описанных режимах работы, воспринимается как обычный ввод с клавиатуры, и символы преобразуются в ту кодировку, что в данный момент активна.
 

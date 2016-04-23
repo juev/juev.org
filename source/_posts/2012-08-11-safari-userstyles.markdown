@@ -22,7 +22,7 @@ tags:
 
 И тут я вспомнил, что в Safari в разделе настроек Дополнения, есть пункт -- Таблица стилей. Предназначена она для использования людьми с ограниченными способностями. И я подумал, а зачем использовать отдельное расширение, когда можно правила скрытия элементов прописать именно в этой таблице??
 
-[![safari-setting](http://static.juev.org/2012/08/safari-setting-th.jpg "Safari Setting")](http://static.juev.org/2012/08/safari-setting.jpg "Safari Setting")
+[![safari-setting](https://static.juev.org/2012/08/safari-setting-th.jpg "Safari Setting")](https://static.juev.org/2012/08/safari-setting.jpg "Safari Setting")
 
 Создал файл[^2], название которого можно выбрать произвольно, я же выбрал `ads_block.css` и затем начал его заполнять.
 

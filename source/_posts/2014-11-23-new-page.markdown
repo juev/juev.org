@@ -6,7 +6,7 @@ keywords: internet, web
 gplus:
 published: true
 date: 2014-11-23 13:25:08
-image: http://static.juev.org/2014/11/Recommended-1024x936.jpg
+image: https://static.juev.org/2014/11/Recommended-1024x936.jpg
 tags:
 - internet
 - web

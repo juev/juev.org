@@ -2,7 +2,7 @@
 layout: post
 title: "Использование HTTPS на серверах Амазона"
 date: 2015-07-18 15:56
-image: http://static.juev.org/2015/07/general.png
+image: https://static.juev.org/2015/07/general.png
 tags:
   - web
   - security
@@ -85,10 +85,10 @@ $ aws iam upload-server-certificate --server-certificate-name DenisEvsyukovOrg -
 
 После загрузки, переходим в веб-интерфейс консоли управления сервисами амазона, и выбираем Cloudfront. Выбираем требуемый Distribution и на вкладке General редактируем поле сертификата:
 
-[![general](http://static.juev.org/2015/07/general.png)](http://static.juev.org/2015/07/general.png "General")
+[![general](https://static.juev.org/2015/07/general.png)](https://static.juev.org/2015/07/general.png "General")
 
 Выбираем сертификат, что загрузили ранее. После чего сохраняем результат и переходим на вкладку Behavior, где задаем редирект с http на https:
 
-[![behavior](http://static.juev.org/2015/07/behavior.png)](http://static.juev.org/2015/07/behavior.png "Behavior")
+[![behavior](https://static.juev.org/2015/07/behavior.png)](https://static.juev.org/2015/07/behavior.png "Behavior")
 
 Для того, чтобы изменения вступили в силу, необходимо провести инвалидацию объектов на соответствующей вкладке. Спустя 10-15 минут можно проверять результат: [SSL Report](https://www.ssllabs.com/ssltest/analyze.html?d=denis.evsyukov.org "SSL Report").

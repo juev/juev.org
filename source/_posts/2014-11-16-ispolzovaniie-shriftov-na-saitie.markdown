@@ -6,7 +6,7 @@ keywords: webdesign, fonts
 gplus:
 published: true
 date: 2014-11-16 08:17:50
-image: http://static.juev.org/2014/11/speed-min.jpg
+image: https://static.juev.org/2014/11/speed-min.jpg
 tags:
 - webdesign
 - fonts

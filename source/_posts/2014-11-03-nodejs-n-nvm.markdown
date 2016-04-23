@@ -6,7 +6,7 @@ keywords: vps, ubuntu, node.js, osx
 gplus:
 published: true
 date: 2014-11-03 08:05:18
-image: http://static.juev.org/2014/11/node-nvm.png
+image: https://static.juev.org/2014/11/node-nvm.png
 tags:
 - vps
 - ubuntu

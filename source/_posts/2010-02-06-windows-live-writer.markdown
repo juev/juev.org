@@ -17,7 +17,7 @@ Writer.
 По сути это обычный редактор, который позволяет создавать запись в режиме wysiwyg (то есть что видишь, то и
 получишь), так и в режиме исходного кода.
 
-<a href="http://static.juev.org/2010/02/windowslivewriter.png" id="ligtbox"><img style="border-bottom: 0px; border-left: 0px; display: block; float: none; margin-left: auto; border-top: 0px; margin-right: auto; border-right: 0px" title="windows-live-writer" border="0" alt="windows-live-writer" src="http://static.juev.org/2010/02/windowslivewriter_thumb.png" width="486" height="484" /></a> 
+<a href="https://static.juev.org/2010/02/windowslivewriter.png" id="ligtbox"><img style="border-bottom: 0px; border-left: 0px; display: block; float: none; margin-left: auto; border-top: 0px; margin-right: auto; border-right: 0px" title="windows-live-writer" border="0" alt="windows-live-writer" src="https://static.juev.org/2010/02/windowslivewriter_thumb.png" width="486" height="484" /></a> 
 
 Очень удобный редактор, корректно создающий код страницы, позволяющий вставлять изображения/видео/звук/карты и при этом управлять параметрами их отображения на странице. Изображения перед загрузкой обрабатываются согласно выбранным установкам. Единственно, при этом нужно учитывать возможность самого блого-движка.
 
