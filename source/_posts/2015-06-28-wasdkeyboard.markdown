@@ -2,7 +2,7 @@
 layout: post
 title: "Знакомьтесь: WASD Keyboard"
 date: 2015-06-28 12:11
-image: http://static.juev.org/2015/06/wasd-keys.jpg
+image: https://static.juev.org/2015/06/wasd-keys.jpg
 tags:
 - hardware
 - review
@@ -12,7 +12,7 @@ tags:
 
 Одно время я мечтал о клавиатуре Kinesis, но потом переключился на более компактную Happy Hacking Keyboard. И чем больше обзоров я читал и чем больше роликов смотрел, тем больше понимал, что ни та, ни другая клавиатура меня не устроит. Первая слишком большая и слишком нестандартная, а у второй отсутствует множество стандартных клавиш.
 
-[![wasd-keyboard](http://static.juev.org/2015/06/wasd-keys-th.jpg)](http://static.juev.org/2015/06/wasd-keys.jpg "WASD Keyboard")
+[![wasd-keyboard](https://static.juev.org/2015/06/wasd-keys-th.jpg)](https://static.juev.org/2015/06/wasd-keys.jpg "WASD Keyboard")
 
 Но тут я встретил описание [WASD Keyboard](http://www.wasdkeyboards.com "WASD Keyboards"). Это механическая клавиатура, стандартного форм-фактора, но при этом во время заказа у пользователя есть возможности по ее кастомизации:
 
@@ -32,31 +32,31 @@ tags:
 
 Тот самый инструмент с прокладками:
 
-[![wasd-install](http://static.juev.org/2015/06/wasd-install-th.jpg)](http://static.juev.org/2015/06/wasd-install.jpg "WASD Complete")
+[![wasd-install](https://static.juev.org/2015/06/wasd-install-th.jpg)](https://static.juev.org/2015/06/wasd-install.jpg "WASD Complete")
 
 Вот так выглядит клавиатура со снятой клавишей:
 
-[![wasd-key](http://static.juev.org/2015/06/wasd-keycup-th.jpg)](http://static.juev.org/2015/06/wasd-keycup.jpg "WASD Keycup")
+[![wasd-key](https://static.juev.org/2015/06/wasd-keycup-th.jpg)](https://static.juev.org/2015/06/wasd-keycup.jpg "WASD Keycup")
 
 Для установки прокладки ее надевают на снятую клавишу:
 
-[![wasd-osd](http://static.juev.org/2015/06/wasd-osd-th.jpg)](http://static.juev.org/2015/06/wasd-osd.jpg "WASD Install OSD")
+[![wasd-osd](https://static.juev.org/2015/06/wasd-osd-th.jpg)](https://static.juev.org/2015/06/wasd-osd.jpg "WASD Install OSD")
 
 Полный вид клавиатуры:
 
-[![wasd-full](http://static.juev.org/2015/06/wasd-full2-th.jpg)](http://static.juev.org/2015/06/wasd-full2.jpg "WASD Keyboard")
+[![wasd-full](https://static.juev.org/2015/06/wasd-full2-th.jpg)](https://static.juev.org/2015/06/wasd-full2.jpg "WASD Keyboard")
 
 Кабель подключается в центре клавиатуры, в специальном углублении, после чего его можно пропустить по специальным каналам в любую сторону:
 
-[![wasd-fullback](http://static.juev.org/2015/06/wasd-fullback-th.jpg)](http://static.juev.org/2015/06/wasd-fullback.jpg "WASD Back")
+[![wasd-fullback](https://static.juev.org/2015/06/wasd-fullback-th.jpg)](https://static.juev.org/2015/06/wasd-fullback.jpg "WASD Back")
 
 Так же на задней части есть ряд переключателей, которые позволяют задавать режимы работы клавиатуры:
 
-[![wasd-back](http://static.juev.org/2015/06/wasd-back-th.jpg)](http://static.juev.org/2015/06/wasd-back.jpg "WASD Switches")
+[![wasd-back](https://static.juev.org/2015/06/wasd-back-th.jpg)](https://static.juev.org/2015/06/wasd-back.jpg "WASD Switches")
 
 По данным переключателям есть целая страница документации (на изображении приведена только часть ее):
 
-[![wasd-dock](http://static.juev.org/2015/06/wasd-switch-th.jpg)](http://static.juev.org/2015/06/wasd-switch.jpg "WASD Documentation Switches")
+[![wasd-dock](https://static.juev.org/2015/06/wasd-switch-th.jpg)](https://static.juev.org/2015/06/wasd-switch.jpg "WASD Documentation Switches")
 
 С помощью этих переключателей есть возможность переключать между режимами Mac и Standart QWERTY, при этом меняется расположение клавиш Alt и Command. Есть возможность аппаратно включать ракладки Dvorak и Colemak, и так же аппаратно переключать Caps Lock в Ctrl и плюс еще ряд функций.
 
@@ -66,6 +66,6 @@ tags:
 
 При этом я даже не могу передать словами те ощущения, что возникают, когда работаешь с механической клавиатурой. Да, звук совершенно другой. Он не только громче, он именно механический. Очень приятный. Но помимо звука меняется еще и ощущение от взаимодействия с клавишами, пальцы воспринимают ее совершенно иначе. Клавиатура очень чувствительная и корректно отрабатываю нажатия целой группы клавиш.
 
-[![wasd-keyboard](http://static.juev.org/2015/06/wasd-full-th.jpg)](http://static.juev.org/2015/06/wasd-full.jpg "WASD Keyboard")
+[![wasd-keyboard](https://static.juev.org/2015/06/wasd-full-th.jpg)](https://static.juev.org/2015/06/wasd-full.jpg "WASD Keyboard")
 
 Когда смотришь ролики с механическими клавиатурами, совершенно не понятно, почему они так много стоят. Но когда удается поработать на ней в реальности, впечталение меняется и начинаешь совершенно по-другому смотреть на механику.

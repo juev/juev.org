@@ -16,7 +16,7 @@ tags:
 
 У моего любимого хостера [DigitalOcean](https://www.digitalocean.com/?refcode=c5cb9e6574a7 "DigitalOcean") как раз появились машинки с предустановленным Docker:
 
-[![docker](http://static.juev.org/2016/02/docker.png)](http://static.juev.org/2016/02/docker.png "Docker")
+[![docker](https://static.juev.org/2016/02/docker.png)](https://static.juev.org/2016/02/docker.png "Docker")
 
 Все что остается сделать, это создать новый сервер (я выбрал минимальную машинку за $5 в месяц с 1Tb трафика), на что уходит порядка 55 секунд (по заявлению DigitalOcean, я не замерял, но реально быстро). После чего достаточно зайти на него по SSH и использовать команду для установки и запуска контейнера:
 

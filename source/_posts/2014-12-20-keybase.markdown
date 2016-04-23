@@ -6,7 +6,7 @@ keywords: internet, security
 gplus:
 published: true
 date: 2014-12-20 16:07:12
-image: http://static.juev.org/2014/12/logo.png
+image: https://static.juev.org/2014/12/logo.png
 tags:
 - internet
 - security

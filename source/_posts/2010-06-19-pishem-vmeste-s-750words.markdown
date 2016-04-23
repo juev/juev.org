@@ -17,27 +17,27 @@ tags:
 
 Когда только-только открываем этот сайт, попадаем на страницу описания. Где подробно рассказывается о чем этот сайт и для чего он был создан. Помимо этого есть FAQ, отзывы и много другой интересной информации. Но нас ведь интересует не только информация об этом сайте? Правда? Вверху есть ссылка, которая позволяет провести регистрацию и залогиниться на сайте.
 
-<a href="http://static.juev.org/2010/06/750words-login.png"><img class="aligncenter size-medium wp-image-1060" title="750words-login" src="http://static.juev.org/2010/06/750words-login-300x116.png" alt="" width="300" height="116" /></a>
+<a href="https://static.juev.org/2010/06/750words-login.png"><img class="aligncenter size-medium wp-image-1060" title="750words-login" src="https://static.juev.org/2010/06/750words-login-300x116.png" alt="" width="300" height="116" /></a>
 
 Для регистрации и логина на сайте можно использовать свою учетную запись на одном из сервисов: Facebook, Google, Yahoo. Причем чуть раньше была возможность работать только с FaceBook. При нажатии на одну из кнопок выбранного сервиса (естественно, что мы должны быть зарегистрированы на данном сервисе) мы попадаем на страницу, в которой предлагается разрешить доступ к определенным данным из нашей учетной записи. После получения данного разрешения мы просто попадаем на страницу, в которой будем работать с текстом.
 
-<a href="http://static.juev.org/2010/06/750words-work.png"><img class="aligncenter size-medium wp-image-1063" title="750words-work" src="http://static.juev.org/2010/06/750words-work-284x300.png" alt="" width="284" height="300" /></a>
+<a href="https://static.juev.org/2010/06/750words-work.png"><img class="aligncenter size-medium wp-image-1063" title="750words-work" src="https://static.juev.org/2010/06/750words-work-284x300.png" alt="" width="284" height="300" /></a>
 
 В верхней части страницы есть небольшое меню, которое предоставляет доступ к основным элементам сайта, таким как статистика, настройки и т.п. Под меню располагается статистика работы за текущий месяц. День, в который мы что-то написали отмечается как зачеркнутая ячейка, а день, который пропустили в виде пустой ячейки. Сразу хотел бы обратить внимание на то, что если день был пропущен, с ним уже ничего нельзя сделать, наверстать упущенное уже будет нельзя. Чуть ниже располагается пустое поле для ввода текста, а под ним статистика слов, которые были набраны в текущей сессии.
 
 Во время работы с текстом учитывается время набора, скорость набора текста, учитываются все перерывы. Все это будет отражено в статистике за день. Вот так выглядит страница писателей за сегодня:
 
-<a href="http://static.juev.org/2010/06/750words-today.png"><img class="aligncenter size-medium wp-image-1062" title="750words-today" src="http://static.juev.org/2010/06/750words-today-273x300.png" alt="" width="273" height="300" /></a>
+<a href="https://static.juev.org/2010/06/750words-today.png"><img class="aligncenter size-medium wp-image-1062" title="750words-today" src="https://static.juev.org/2010/06/750words-today-273x300.png" alt="" width="273" height="300" /></a>
 
 А вот так выглядит уже статистика по конкретному месяцу:
 
-<a href="http://static.juev.org/2010/06/750words-stat.png"><img class="aligncenter size-medium wp-image-1061" title="750words-stat" src="http://static.juev.org/2010/06/750words-stat-275x300.png" alt="" width="275" height="300" /></a>
+<a href="https://static.juev.org/2010/06/750words-stat.png"><img class="aligncenter size-medium wp-image-1061" title="750words-stat" src="https://static.juev.org/2010/06/750words-stat-275x300.png" alt="" width="275" height="300" /></a>
 
 Как видно, здесь отображается, сколько дней работал данный пользователь, сколько слов он набрал и сколько времени он на это затратил. Сколько очков он заработал. Очки! Это самое интересное. Обратили внимание, что на странице писателей за сегодня рядом с именем каждого пользователя выводиться небольшой рисунок, яйцо, птицы различные? Вот этот рисунок как раз показывает статус пользователя. А статус зависит как раз от набранных очков и непрерывности работы с сервисом.
 
 Статистика за день может еще отображаться в таком виде:
 
-<a href="http://static.juev.org/2010/06/750words-local.png"><img class="aligncenter size-medium wp-image-1059" title="750words-local" src="http://static.juev.org/2010/06/750words-local-293x300.png" alt="" width="293" height="300" /></a>
+<a href="https://static.juev.org/2010/06/750words-local.png"><img class="aligncenter size-medium wp-image-1059" title="750words-local" src="https://static.juev.org/2010/06/750words-local-293x300.png" alt="" width="293" height="300" /></a>
 
 На графике показывается непрерывность процесса, скорости набора в каждую минуту, а ниже показывается уже детальная статистика, сколько набрал, за какое время, сколько перерывов сделал. Очень удобно и наглядно.
 

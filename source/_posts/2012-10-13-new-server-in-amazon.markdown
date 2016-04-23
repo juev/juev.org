@@ -18,27 +18,27 @@ tags:
 
 На странице [Management Console](https://console.aws.amazon.com/console/home) создаем новый сервер.
 
-[![ec2-management-console][1]](http://static.juev.org/2012/10/ec2-management-console.png)
+[![ec2-management-console][1]](https://static.juev.org/2012/10/ec2-management-console.png)
 
-[1]: http://static.juev.org/2012/10/ec2-management-console-th.png
+[1]: https://static.juev.org/2012/10/ec2-management-console-th.png
 
 Используем кнопку Launch instance и отвечаем на несколько вопросов.
 
-[![aws-launch-ec2][2]](http://static.juev.org/2012/10/aws-launch-ec2.png)
+[![aws-launch-ec2][2]](https://static.juev.org/2012/10/aws-launch-ec2.png)
 
-[2]: http://static.juev.org/2012/10/aws-launch-ec2.png
+[2]: https://static.juev.org/2012/10/aws-launch-ec2.png
 
 Нужно указать имя нового сервера, сгенерировать ключи для доступа к нему и выбрать образ с операционной системой. На следующем шаге уточняем зону, в которой будет запускаться сервер и определяем группу безопасности. На данном этапе создаем свою группу, в которой открыты для доступа извне только 22 и 80 порты, которые нужны для работы ssh и веб-сервера.
 
-[![security-groups][3]](http://static.juev.org/2012/10/security-groups.png)
+[![security-groups][3]](https://static.juev.org/2012/10/security-groups.png)
 
-[3]: http://static.juev.org/2012/10/security-groups-th.png
+[3]: https://static.juev.org/2012/10/security-groups-th.png
 
 Через пары минут сервер уже готов к работе. И первым делом необходимо зарезервировать ip-адрес, который будет использоваться постоянно за этим сервером. В противном случае после каждой перезагрузки сервера будет выдаваться динамический адрес. И возникнут сложности при работе с доменными именами. Для этого в консоли необходимо перейти в раздел Elastic IPs и произвести выделение нового ip-адреса. После чего остается только привязать его к созданному серверу.
 
-[![elastic-ips][4]](http://static.juev.org/2012/10/elastic-ips.png)
+[![elastic-ips][4]](https://static.juev.org/2012/10/elastic-ips.png)
 
-[4]: http://static.juev.org/2012/10/elastic-ips-th.png
+[4]: https://static.juev.org/2012/10/elastic-ips-th.png
 
 Теперь производим подключение к серверу по ssh. Предварительно рекомендую добавить опции подключения в файл `~/.ssh/config`:
 

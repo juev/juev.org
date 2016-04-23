@@ -18,37 +18,37 @@ Twitter все больше завоевывает популярность по
 
 Достаточно зарегистрироваться и добавить свой аккаунт тви к данной регистрации. Кстати, аккаунтов может быть несколько.
 
-<a href="http://static.juev.org/2010/05/so-main.png"><img class="aligncenter size-medium wp-image-1044" title="so - main" src="http://static.juev.org/2010/05/so-main-249x300.png" alt="" width="249" height="300" /></a>
+<a href="https://static.juev.org/2010/05/so-main.png"><img class="aligncenter size-medium wp-image-1044" title="so - main" src="https://static.juev.org/2010/05/so-main-249x300.png" alt="" width="249" height="300" /></a>
 
-<a href="http://static.juev.org/2010/05/so-add.png"><img class="aligncenter size-medium wp-image-1040" title="so - add" src="http://static.juev.org/2010/05/so-add-300x272.png" alt="" width="300" height="272" /></a>
+<a href="https://static.juev.org/2010/05/so-add.png"><img class="aligncenter size-medium wp-image-1040" title="so - add" src="https://static.juev.org/2010/05/so-add-300x272.png" alt="" width="300" height="272" /></a>
 
 Как видно, данный сервис позволяет автоматизировать не только тви, но и ряд других сервисов. На бесплатном аккаунте доступны только твиттер и StatusNet. После добавления твиттера к своей регистрации можно задавать определенные задачи. Например:
 
-<a href="http://static.juev.org/2010/05/so-edit-wm.png"><img class="aligncenter size-medium wp-image-1043" title="so - edit wm" src="http://static.juev.org/2010/05/so-edit-wm-300x273.png" alt="" width="300" height="273" /></a>
+<a href="https://static.juev.org/2010/05/so-edit-wm.png"><img class="aligncenter size-medium wp-image-1043" title="so - edit wm" src="https://static.juev.org/2010/05/so-edit-wm-300x273.png" alt="" width="300" height="273" /></a>
 
 Редактировать приветственное сообщение, которое направляется в DM пользователям, которые вас фоловят. Это же сообщение отображается в краткой информации о добаввленном тви-аккаунте:
 
-<a href="http://static.juev.org/2010/05/so-akk.png"><img class="aligncenter size-medium wp-image-1041" title="so - akk" src="http://static.juev.org/2010/05/so-akk-300x214.png" alt="" width="300" height="214" /></a>
+<a href="https://static.juev.org/2010/05/so-akk.png"><img class="aligncenter size-medium wp-image-1041" title="so - akk" src="https://static.juev.org/2010/05/so-akk-300x214.png" alt="" width="300" height="214" /></a>
 
 Здесь показывается имя пользователя, которое используется в твиттере, приветственное сообщение, используется ли автоматический фоловинг в ответ и как видно, можно получать дайджесты реплаев на ваши сообщения на почту. Приветственное сообщение, кстати, может меняться исходя из определенных параметров.
 
 Самое большое преимущество сервиса в том, что предоставляется возможность очистка ящика личных сообщений сразу пачкой. В самом твиттере можно удалять сообщения только по одному.
 
-<a href="http://static.juev.org/2010/05/so-purge-dm1.png"><img class="aligncenter size-medium wp-image-1048" title="so - purge dm" src="http://static.juev.org/2010/05/so-purge-dm1-300x215.png" alt="" width="300" height="215" /></a>
+<a href="https://static.juev.org/2010/05/so-purge-dm1.png"><img class="aligncenter size-medium wp-image-1048" title="so - purge dm" src="https://static.juev.org/2010/05/so-purge-dm1-300x215.png" alt="" width="300" height="215" /></a>
 
 Есть возможность планировать свои сообщения на определенное время:
 
-<a href="http://static.juev.org/2010/05/so-shedule1.png"><img class="aligncenter size-medium wp-image-1049" title="so - shedule" src="http://static.juev.org/2010/05/so-shedule1-300x195.png" alt="" width="300" height="195" /></a>
+<a href="https://static.juev.org/2010/05/so-shedule1.png"><img class="aligncenter size-medium wp-image-1049" title="so - shedule" src="https://static.juev.org/2010/05/so-shedule1-300x195.png" alt="" width="300" height="195" /></a>
 
 Обычно данная возможность используется в целях периодического постинга информационных сообщений. Напоминание об услугах, которые предоставляются компанией, определенные предложения, скидки.
 
 Помимо прочего в сервисе имеется возможность сокращать ссылки, например при размещении новости с сайта. И затем отслеживать статистику переходов по данной ссылке:
 
-<a href="http://static.juev.org/2010/05/so-click-stat.png"><img class="aligncenter size-medium wp-image-1042" title="so - click stat" src="http://static.juev.org/2010/05/so-click-stat-300x167.png" alt="" width="300" height="167" /></a>
+<a href="https://static.juev.org/2010/05/so-click-stat.png"><img class="aligncenter size-medium wp-image-1042" title="so - click stat" src="https://static.juev.org/2010/05/so-click-stat-300x167.png" alt="" width="300" height="167" /></a>
 
 Есть определенные мониторы, которые позволяют просматривать каналы, реплаи и т.д. И в дальнейшем получать их периодически на почту.
 
-<a href="http://static.juev.org/2010/05/so-monitors1.png"><img class="aligncenter size-medium wp-image-1050" title="so - monitors" src="http://static.juev.org/2010/05/so-monitors1-300x165.png" alt="" width="300" height="165" /></a>
+<a href="https://static.juev.org/2010/05/so-monitors1.png"><img class="aligncenter size-medium wp-image-1050" title="so - monitors" src="https://static.juev.org/2010/05/so-monitors1-300x165.png" alt="" width="300" height="165" /></a>
 
 Сервис уникальный по своей сути. Предоставляет даже в бесплатном варианте массу вариантов. Я, к примеру, сейчас на своей личном аккаунте использую возможность автоматического фоловинга пользователей, которые фоловят меня. Тем самым я избавлен от оповещений на почту о данных событиях и не отвлекаюсь каждый раз на очередной фолов. Так же каждому, кто фоловит меня в ответ отсылается приветственное сообщение, содержащее ссылку на мой сайт. Редко, но бывают и переходы. При этом очень удобно отслеживать реплаи, не заходя на страницу твиттера (бывают моменты, когда занят и не до микроблога), которые приходят на почтовый адрес. Ответить на реплаи можно прямо из почты.
 

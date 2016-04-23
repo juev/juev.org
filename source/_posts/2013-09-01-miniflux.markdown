@@ -16,7 +16,7 @@ tags:
 
 Но, как обычно это бывает, захотелось странного. И решил попробовать [miniflux](http://miniflux.net/ "Miniflux is a minimalist and open source rss reader").
 
-[![miniflux](http://static.juev.org/2013/09/miniflux-th.jpg)](http://static.juev.org/2013/09/miniflux.png "Miniflux")
+[![miniflux](https://static.juev.org/2013/09/miniflux-th.jpg)](https://static.juev.org/2013/09/miniflux.png "Miniflux")
 
 Есть два варианта его использования:
 

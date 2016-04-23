@@ -6,7 +6,7 @@ keywords: mac, apple, music
 gplus:
 published: true
 date: 2015-02-07 12:39:57
-image: http://static.juev.org/2015/02/itunes_match_apple.jpg
+image: https://static.juev.org/2015/02/itunes_match_apple.jpg
 tags:
 - mac
 - apple
@@ -24,11 +24,11 @@ tags:
 
 Но самым неприятным оказалось то, что при загрузке музыки на компьютер, часть композиций пропали. Стали появляться следующие сообщения:
 
-![errors](http://static.juev.org/2015/02/errors.png)
+![errors](https://static.juev.org/2015/02/errors.png)
 
 И в списке загрузок появились файлы с ошибками:
 
-[![downloads](http://static.juev.org/2015/02/downloads.png)](http://static.juev.org/2015/02/downloads.png)
+[![downloads](https://static.juev.org/2015/02/downloads.png)](https://static.juev.org/2015/02/downloads.png)
 
 При этом сама загрузка несколько раз останавливалась и не двигалась с места до тех пор, пока явно не останавливал ее и не возобновлял снова. Именно это не позволило мне загрузить всю свою коллекцию за ночь.
 

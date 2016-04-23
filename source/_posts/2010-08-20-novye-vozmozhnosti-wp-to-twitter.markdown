@@ -18,7 +18,7 @@ tags:
 
 После чего получаем целый набор параметров, типа API-ключей, которые необходимо использовать в настройках расширения. ну а все остальные настройки (касающиеся того, что публиковать и как это делать) остались без изменения.
 
-<img class="aligncenter size-full wp-image-1137" title="wp-to-twitter" src="http://static.juev.org/2010/08/wp-to-twitter.png" alt="" width="362" height="69" />
+<img class="aligncenter size-full wp-image-1137" title="wp-to-twitter" src="https://static.juev.org/2010/08/wp-to-twitter.png" alt="" width="362" height="69" />
 
 Вот так выглядит идентификация клиента после публикации анонса статьи на сайте.
 

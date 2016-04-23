@@ -15,7 +15,7 @@ tags:
 
 Но подобные программы так же используют пароли для ограничения доступа к данным. И сложность выбранного пароля обеспечивает сохранность информации. Сложность обычно подразумевает и сложность запоминания. Так ли это?
 
-[![password-strength](http://static.juev.org/2015/10/password_strength.png)](http://static.juev.org/2015/10/password_strength.png)
+[![password-strength](https://static.juev.org/2015/10/password_strength.png)](https://static.juev.org/2015/10/password_strength.png)
 (c) [xkcd](https://xkcd.com/936/ "Password Strength")
 
 Возьмем для примера 9-ти значный пароль, состоящий из рандомных символов. Получаем 94^9 = 572994802228616704 возможных комбинаций пароля. 94 печатных символа используется в таблице ASCII без учета пробела. Но запомнить такой пароль обычному человеку крайне трудно. Попробуйте к примеру, запомнить следующее:
@@ -45,6 +45,6 @@ tags:
 
 Но если проблема случайности не сильно вас беспокоит, можно воспользоваться программными решениями, к примеру страница на Github: [Diceware Secure Passphrase Generator](https://grempe.github.io/diceware/ "Diceware Secure Passphrase Generator"), использующая для генерации JavaScript, и включащая в себя целый ряд словарей для различных языков. Либо использовать знаменитый [1Password](https://agilebits.com/onepassword "1Password"), которые в одной из последних версий добавили Diceware генератор паролей.
 
-[![1Password](http://static.juev.org/2015/10/1Password.png)](http://static.juev.org/2015/10/1Password.png)
+[![1Password](https://static.juev.org/2015/10/1Password.png)](https://static.juev.org/2015/10/1Password.png)
 
 Если у вас еще остались вопросы по описанному методу, рекомендую обратиться на страницу [Diceware Passphrase FAQ](http://world.std.com/~reinhold/dicewarefaq.html "FAQ").

@@ -2,7 +2,7 @@
 layout: post
 title: "Безопасность в сети Интернет"
 date: 2015-09-27 10:35
-image: http://static.juev.org/2015/09/firefox-logo.png
+image: https://static.juev.org/2015/09/firefox-logo.png
 tags:
   - firefox
   - internet
@@ -37,7 +37,7 @@ tags:
 
 Во-первых, на вкладке приватность настроек Firefox стоит включить опцию "Сообщать сайтам, что я не хочу, чтобы меня отслеживали". Данная опция позволяет отправлять на просматриваемую страницу специально сформированный запрос, каждый раз, когда скрипты пытаются использовать вашу информацию. И этот запрос может использоваться при работе скриптов, отключая определенный функционал.
 
-![firefox-privacy](http://static.juev.org/2015/09/firefox-privacy.png "Firefox Privacy")
+![firefox-privacy](https://static.juev.org/2015/09/firefox-privacy.png "Firefox Privacy")
 
 Но, это использование данной опции, это все лишь просьба. Просьба не использовать ваши данные. И лишь некоторые из существующий сервисов придерживаются правила поддерживать вашу просьбу. Все остальные, а это основная масса сервисов, просто игнорируют ее.
 
@@ -50,11 +50,11 @@ tags:
 
 Опции отключены (значение по умолчанию):
 
-[![firefox-trackon](http://static.juev.org/2015/09/firefox-trackon.png)](http://static.juev.org/2015/09/firefox-trackon.png "Firefox Default")
+[![firefox-trackon](https://static.juev.org/2015/09/firefox-trackon.png)](https://static.juev.org/2015/09/firefox-trackon.png "Firefox Default")
 
 Опции установлены:
 
-[![firefox-trackoff](http://static.juev.org/2015/09/firefox-trackoff.png)](http://static.juev.org/2015/09/firefox-trackoff.png "Firefox Tracking Off")
+[![firefox-trackoff](https://static.juev.org/2015/09/firefox-trackoff.png)](https://static.juev.org/2015/09/firefox-trackoff.png "Firefox Tracking Off")
 
 Обратите внимание, что в консоли появляются сообщения о заблокированных ресурсах, и на странице пропадает часть назойливой рекламы.
 

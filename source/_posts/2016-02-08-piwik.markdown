@@ -37,6 +37,6 @@ tags:
 
 Статистика по сайту выглядит так (одна из страниц):
 
-[![piwik-dashboard](http://static.juev.org/2016/02/piwik-dashboard.png)](http://static.juev.org/2016/02/piwik-dashboard.png "Piwik Dashboard")
+[![piwik-dashboard](https://static.juev.org/2016/02/piwik-dashboard.png)](https://static.juev.org/2016/02/piwik-dashboard.png "Piwik Dashboard")
 
 Обратите внимание на то, что в информации фигурируют усеченные IP-адреса, то есть информация по пользователям анонимизируется. На мой взгляд, поставленную задачу я решил.

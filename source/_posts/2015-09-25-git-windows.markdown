@@ -21,14 +21,14 @@ tags:
 
 Во время первого запуска у меня спросили мои учетные данные, показали небольшой Tutorial, после чего на почту пришло письмо с Github с уведомлением о том, что был добавлен новый ключ. И собственно на этом вся настройка и подготовка к работе завершились. В списке репозиториев, доступных для клонирования присутствуют все мои репозитории. Достаточно только выбрать требуемый и определить, где размещать его локальную копию.
 
-[![github-clone](http://static.juev.org/2015/09/github-clone.png)](http://static.juev.org/2015/09/github-clone.png "Github Clone")
+[![github-clone](https://static.juev.org/2015/09/github-clone.png)](https://static.juev.org/2015/09/github-clone.png "Github Clone")
 
 После клонирования репозитория удобно просматривать историю изменений:
 
-[![github-history](http://static.juev.org/2015/09/github-history.png)](http://static.juev.org/2015/09/github-history.png "Github History")
+[![github-history](https://static.juev.org/2015/09/github-history.png)](https://static.juev.org/2015/09/github-history.png "Github History")
 
 И так же все проведенные изменения в файлах, которые далее можно будет зафиксировать комитом:
 
-[![github-changes](http://static.juev.org/2015/09/github-changes.png)](http://static.juev.org/2015/09/github-changes.png "Github Changes")
+[![github-changes](https://static.juev.org/2015/09/github-changes.png)](https://static.juev.org/2015/09/github-changes.png "Github Changes")
 
 Из минусов можно отметить только то, что приложение имеет полную поддержку работы только с Github, а для работы с другими сервисами приходиться создавать локальную копию репозитория сторонними инструментами (к примеру, из командной строки). И только затем добавлять созданную копию для работы в Github Desktop.

@@ -2,7 +2,7 @@
 layout: post
 title: "Amazon S3: кеширование страниц веб-сайта"
 date: 2015-06-01 12:17
-image: http://static.juev.org/2015/06/amazon-s3.png
+image: https://static.juev.org/2015/06/amazon-s3.png
 tags:
   - amazon
   - tips
@@ -18,10 +18,10 @@ tags:
 
 Для того, чтобы поправить эти настройки достаточно зайти на веб-страницу со списком всех bucket и в разделе Permissions выбрать кнопку "Edit CORS Configuration":
 
-[![Settings](http://static.juev.org/2015/06/bucket.png "Bucket Setting")](http://static.juev.org/2015/06/bucket.png "Bucket Settings")
+[![Settings](https://static.juev.org/2015/06/bucket.png "Bucket Setting")](https://static.juev.org/2015/06/bucket.png "Bucket Settings")
 
 
-[![CORS](http://static.juev.org/2015/06/CORS.png "CORS Configuration")](http://static.juev.org/2015/06/CORS.png "CORS Configuration")
+[![CORS](https://static.juev.org/2015/06/CORS.png "CORS Configuration")](https://static.juev.org/2015/06/CORS.png "CORS Configuration")
 
 По умолчанию будет примерно следующая конфигурация:
 

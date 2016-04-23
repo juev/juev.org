@@ -11,13 +11,13 @@ tags:
 
 Однако, когда зашел на страницу <a href="http://www.google.com/webmasters/tools/" rel="nofollow">google for webmasters</a> и посмотрел результаты экспериментальной функции "Эффективность сайта", то увидел следующее:
 
-<a href="http://static.juev.org/2010/03/page-speed.png"><img class="aligncenter size-medium wp-image-950" title="page speed" src="http://static.juev.org/2010/03/page-speed-300x74.png" alt="" width="300" height="74" /></a>
+<a href="https://static.juev.org/2010/03/page-speed.png"><img class="aligncenter size-medium wp-image-950" title="page speed" src="https://static.juev.org/2010/03/page-speed-300x74.png" alt="" width="300" height="74" /></a>
 
 Результаты впечатляют! Изменение скорости загрузки страницы с почти 7 секунд до 0.6 секунды -- это что-то!
 
 При этом с момента подключения S3 и CloudFront (прошло 9 дней) мне насчитали 22 цента.
 
-<a href="http://static.juev.org/2010/03/amazon.png"><img class="aligncenter size-medium wp-image-951" title="amazon" src="http://static.juev.org/2010/03/amazon-187x300.png" alt="" width="187" height="300" /></a>
+<a href="https://static.juev.org/2010/03/amazon.png"><img class="aligncenter size-medium wp-image-951" title="amazon" src="https://static.juev.org/2010/03/amazon-187x300.png" alt="" width="187" height="300" /></a>
 
 И тут вспомнил о том, как на mashable.com изображения появляются не сразу, а только по мере прокрутки страницы. Фактически страница начинает отображаться намного раньше, чем будет загружен весь входящий в нее контент. И как раз на habrahabr.ru появляется <a href="http://habrahabr.ru/blogs/client_side_optimization/87083/" rel="nofollow">краткая заметка</a> про эту технологию. Прочел все приведенные страницы, но так и не понял, каким образом это реализуется. Думал до тех пор, пока в голову не пришла идея просто поискать среди расширений WordPress те, что имеют соответствующие имена.
 
