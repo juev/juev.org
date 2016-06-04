@@ -23,6 +23,24 @@ body
   }
 }
 
+.right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+.left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+.center { margin-left: auto; margin-right: auto; text-align: center; }
+
+table { border-collapse:collapse; }
+caption.t-above { caption-side: top; }
+caption.t-bottom { caption-side: bottom; }
+th { font-weight: bold; }
+td, th { vertical-align:top; 
+  padding-left: 20px;
+  padding-right: 20px;}
+th.right  { text-align: center; }
+th.left   { text-align: center; }
+th.center { text-align: center; }
+td.right  { text-align: right;  }
+td.left   { text-align: left;   }
+td.center { text-align: center; }
+
 body.wide
 {
   margin:0;
