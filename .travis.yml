@@ -14,6 +14,7 @@ before_install:
   -in deploy_rsa.enc -out $TRAVIS_BUILD_DIR/deploy_rsa -d
 - export TZ=Europe/Samara
 - date
+- nslookup ssh.juev.org
 script: bundle exec rake build
 before_deploy:
 - eval "$(ssh-agent -s)"
