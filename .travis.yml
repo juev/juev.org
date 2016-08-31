@@ -13,12 +13,17 @@ before_install:
 - openssl aes-256-cbc -K $encrypted_d7becb892f62_key -iv $encrypted_d7becb892f62_iv -in id_rsa.enc -out $TRAVIS_BUILD_DIR/id_rsa -d
 - export TZ=Europe/Samara
 - date
+script: bundle exec rake build
 before_deploy:
 - eval "$(ssh-agent -s)"
 - chmod 600 $TRAVIS_BUILD_DIR/id_rsa
 - ssh-add $TRAVIS_BUILD_DIR/id_rsa
-script: bundle exec rake build
-after_success: bundle exec rake publish
+deploy:
+  provider: script
+  skip_cleanup: true
+  script: bundle exec rake publish
+  on:
+    branch: master
 branches:
   only:
   - master
