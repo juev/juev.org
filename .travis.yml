@@ -10,14 +10,15 @@ addons:
     packages:
     - libgsl0-dev
 before_install:
-- openssl aes-256-cbc -K $encrypted_d7becb892f62_key -iv $encrypted_d7becb892f62_iv -in id_rsa.enc -out $TRAVIS_BUILD_DIR/id_rsa -d
+- openssl aes-256-cbc -K $encrypted_d7becb892f62_key -iv $encrypted_d7becb892f62_iv
+  -in deploy_rsa.enc -out $TRAVIS_BUILD_DIR/deploy_rsa -d
 - export TZ=Europe/Samara
 - date
 script: bundle exec rake build
 before_deploy:
 - eval "$(ssh-agent -s)"
-- chmod 600 $TRAVIS_BUILD_DIR/id_rsa
-- ssh-add $TRAVIS_BUILD_DIR/id_rsa
+- chmod 600 $TRAVIS_BUILD_DIR/deploy_rsa
+- ssh-add $TRAVIS_BUILD_DIR/deploy_rsa
 deploy:
   provider: script
   skip_cleanup: true
