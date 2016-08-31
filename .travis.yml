@@ -1,34 +1,23 @@
 language: ruby
 rvm:
-  - 2.1
-
+- 2.1
 cache:
-  - apt
-  - bundler
-
+- apt
+- bundler
 addons:
+  ssh_known_hosts: ssh.juev.org
   apt:
     packages:
-      - libgsl0-dev
-
-#sudo: required
-
+    - libgsl0-dev
 before_install:
-  - export TZ=Europe/Samara
-  - date
-  # - echo "Europe/Samara" | sudo tee /etc/timezone
-  # - sudo dpkg-reconfigure --frontend noninteractive tzdata
-
+- openssl aes-256-cbc -K $encrypted_d7becb892f62_key -iv $encrypted_d7becb892f62_iv -in id_rsa.enc -out $TRAVIS_BUILD_DIR/id_rsa -d
+- export TZ=Europe/Samara
+- date
+- eval "$(ssh-agent -s)"
+- chmod 600 $TRAVIS_BUILD_DIR/id_rsa
+- ssh-add $TRAVIS_BUILD_DIR/id_rsa
 script: bundle exec rake build
-
 after_success: bundle exec rake publish
-
 branches:
   only:
-    - master
-
-env:
-  global:
-    - secure: "WZ3ihyFIFAtIL3el2J2TrQqFEksex1IyNUgWFG11CqirPtgoIiKMteRixGm4Zn6EAfC10ngprTk67ea+2eHN67SWRWVvyoyJC89ovRyISC/4+eBrfHOrrcR+j9Efa0YzoYLNDUoHA7ZSnHWts6eLtDHq/YpAxxgkG5ujuWnKC3Q="
-    - secure: "jN7XJaufIG6vIcJUpptJ371bPlFuXhz2/yDlVCZNbZEVotVy1htsX5V6mSB62YFCfjyJBk+a/k73+IX4qWtCQIALVU5UzN+B2Ci2AhId/1QxCWsw5iZiNcefnfNP+UcOW/5ghuhlvwGEJG6L9FA3oA8po6q+XS9fsg5OzUMmP4o="
-    - secure: "Yyvx3AuIwingBaZv9ELfPEEcGkvs6T6/FOQ8SyXvHM0eIWAgEtIBZTHx7rP3FMKr0Vfez6KSZaokaCoPkm3UsBmZZWjPdqwhimVx9hemtoIsEpALP0gTjgkmPljMf9OoE8BUWQ/K5363jbWw/YhQfQSFJ/L1yOnGOqcgc4hE+28="
+  - master
