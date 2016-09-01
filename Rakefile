@@ -26,7 +26,7 @@ task :deploy do
   print "Deploying website to Server\n"
   # print "Deploying website to S3\n"
   # system "s3_website push"
-  system "rsync -azq --delete-after $TRAVIS_BUILD_DIR/public/ web@ssh.juev.org:~/public/juev.org"
+  system "rsync -az --delete-after $TRAVIS_BUILD_DIR/public/ web@ssh.juev.org:~/public/juev.org"
 end # task: deploy
 
 desc 'Create new post.'
