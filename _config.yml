@@ -4,6 +4,7 @@ future:      false
 lsi:         true
 markdown:    kramdown
 permalink:   pretty
+incremental: true
 
 root:        /
 source:      source
