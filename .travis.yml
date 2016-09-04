@@ -23,3 +23,8 @@ after_success:
 branches:
   only:
   - master
+env:
+  global:
+  - secure: "WZ3ihyFIFAtIL3el2J2TrQqFEksex1IyNUgWFG11CqirPtgoIiKMteRixGm4Zn6EAfC10ngprTk67ea+2eHN67SWRWVvyoyJC89ovRyISC/4+eBrfHOrrcR+j9Efa0YzoYLNDUoHA7ZSnHWts6eLtDHq/YpAxxgkG5ujuWnKC3Q="
+  - secure: "jN7XJaufIG6vIcJUpptJ371bPlFuXhz2/yDlVCZNbZEVotVy1htsX5V6mSB62YFCfjyJBk+a/k73+IX4qWtCQIALVU5UzN+B2Ci2AhId/1QxCWsw5iZiNcefnfNP+UcOW/5ghuhlvwGEJG6L9FA3oA8po6q+XS9fsg5OzUMmP4o="
+  - secure: "Yyvx3AuIwingBaZv9ELfPEEcGkvs6T6/FOQ8SyXvHM0eIWAgEtIBZTHx7rP3FMKr0Vfez6KSZaokaCoPkm3UsBmZZWjPdqwhimVx9hemtoIsEpALP0gTjgkmPljMf9OoE8BUWQ/K5363jbWw/YhQfQSFJ/L1yOnGOqcgc4hE+28="
