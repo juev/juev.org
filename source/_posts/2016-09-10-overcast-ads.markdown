@@ -2,6 +2,7 @@
 layout: post
 title: Overcast переходит на модель с рекламой
 date: 2016-09-10 12:09
+image: https://static.juev.org/2016/09/overcast-logo.jpg
 tags:
 - soft
 - music
