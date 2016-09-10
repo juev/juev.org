@@ -29,9 +29,9 @@ tags:
 
 1. Remove executable and suid bits and lock dbaccessperm file.
 
-    cd /Library/DropboxHelperTools/Dropbox_u502
-    sudo chmod -sx dbaccessperm
-    sudo chflags uchg dbaccessperm
+        cd /Library/DropboxHelperTools/Dropbox_u502
+        sudo chmod -sx dbaccessperm
+        sudo chflags uchg dbaccessperm
 
 1. Remove (just uncheck) accessibility permission for Dropbox via System Settings.
 
