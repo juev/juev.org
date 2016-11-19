@@ -30,4 +30,4 @@ defaults:
       path: "" # an empty string here means all files in the project
       type: "posts"
     values:
-      image: https://static.juev.org/img.jpg
+      image: https://static.juev.org/images/calvin.png
