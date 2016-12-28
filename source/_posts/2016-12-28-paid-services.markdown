@@ -68,7 +68,7 @@ Google Music перестал использовать. На работе слу
 <tr>
 <th scope="col" class="right">N</th>
 <th scope="col" class="left">Name</th>
-<th scope="col" class="right">Annualy</th>
+<th scope="col" class="right">Annually</th>
 </tr>
 </thead>
 <tbody>
