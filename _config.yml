@@ -4,7 +4,7 @@ future:      false
 lsi:         true
 markdown:    kramdown
 permalink:   pretty
-incremental: true
+incremental: false
 
 root:        /
 source:      source
@@ -23,6 +23,10 @@ keywords: "mac, tips, wordpress, jekyll, ruby, php, linux, ubuntu, vps, soft"
 githuburl: "https://github.com/Juev/juev.ru/blob/master/source/_posts"
 tag_page_layout: tag_page
 tag_page_dir: tags
+
+extlinks:
+  attributes: {rel: nofollow}
+  rel_exclude: ['www.juev.org']
 
 defaults:
   -

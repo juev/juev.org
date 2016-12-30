@@ -18,31 +18,34 @@ GEM
       pathutil (~> 0.9)
       rouge (~> 1.7)
       safe_yaml (~> 1.0)
-    jekyll-sass-converter (1.4.0)
+    jekyll-sass-converter (1.5.0)
       sass (~> 3.4)
     jekyll-tagging (1.0.1)
       ruby-nuggets
     jekyll-watch (1.5.0)
       listen (~> 3.0, < 3.1)
-    kramdown (1.12.0)
+    kramdown (1.13.1)
     liquid (3.0.6)
     listen (3.0.8)
       rb-fsevent (~> 0.9, >= 0.9.4)
       rb-inotify (~> 0.9, >= 0.9.7)
     mercenary (0.3.6)
+    mini_portile2 (2.1.0)
     narray (0.6.1.2)
+    nokogiri (1.7.0)
+      mini_portile2 (~> 2.1.0)
     nuggets (1.0.0)
     pathutil (0.14.0)
       forwardable-extended (~> 2.6)
-    rake (11.2.2)
-    rb-fsevent (0.9.7)
+    rake (12.0.0)
+    rb-fsevent (0.9.8)
     rb-inotify (0.9.7)
       ffi (>= 0.5.0)
     rouge (1.11.1)
     ruby-nuggets (1.0.0)
       nuggets (= 1.0.0)
     safe_yaml (1.0.4)
-    sass (3.4.22)
+    sass (3.4.23)
 
 PLATFORMS
   ruby
@@ -53,6 +56,7 @@ DEPENDENCIES
   jekyll (= 3.2.1)
   jekyll-tagging (= 1.0.1)
   narray
+  nokogiri
   rake
   rouge
 
