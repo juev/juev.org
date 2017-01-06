@@ -6,5 +6,7 @@ cache_control: no-cache, no-store
 
 s3_endpoint: eu-west-1
 
+site: public
+
 redirects:
   rss/: atom.xml
