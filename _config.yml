@@ -1,7 +1,7 @@
 ---
 url:         https://www.juev.org
 future:      false
-lsi:         true
+lsi:         false
 markdown:    kramdown
 permalink:   pretty
 incremental: false
