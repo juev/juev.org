@@ -53,6 +53,10 @@ mv /etc/nginx/conf.d/default.conf{,.disabled}
 # configuring public directory
 adduser --disabled-password --gecos "" web
 su -c "mkdir -p /home/web/public/juev.org/" web
+su -c "mkdir /home/web/.ssh" web
+su -c "chmod 0700 /home/web/.ssh" web
+su -c "wget -O /home/web/.ssh/authorized_keys https://raw.githubusercontent.com/Juev/juev.org/master/config/authorized_keys" web
+su -c "chmod 0600 /home/web/.ssh/authorized_keys" web
 
 cd ~
 tar xf letsencrypt.tar.gz
