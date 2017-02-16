@@ -5,7 +5,7 @@ then echo "Please run as root"
   exit
 fi
 
-if [! -f "/root/letsencrypt.tar.gz" ]
+if [ ! -f "/root/letsencrypt.tar.gz" ]
 then echo "Please upload letsencrypt.tar.gz file to root directory to continue"
      exit
 fi
