@@ -7,7 +7,9 @@ id: /recommendations
 
 Мои любимые интернет-сервисы, регистрируйтесь по этим ссылкам и вы гарантированно получите бонус!
 
-1. SSD cloud server от [DigitalOcean](https://www.digitalocean.com/?refcode=c5cb9e6574a7) – более года использую VPS от DigitalOcean, мои наилучшие рекомендации именно им! При регистрации получаете $10 на свой счет.
+1. SSD cloud server от [DigitalOcean](https://www.digitalocean.com/?refcode=c5cb9e6574a7) – более года использую VPS от DigitalOcean. При регистрации получаете $10 на свой счет.
+
+1. SSD Cloud Hosting & Linux Servers [Lnode](https://www.linode.com/?r=ac993402fdf5112eb9afdfd2cccf10f798140ea7 "Linode") - плюшек при регистрации, к сожалению нет, но это один из моих самых любимых сервисов. Ранее ими пользовался мало из-за отсутствия дешевых тарифов. Теперь же ситуация изменилась и появились тарифы в $5 с более мощными машинками, нежели в DigitalOcean.
 
 1. [SpiderOak](https://spideroak.com/download/referral/8d734cd9722949c44b42214e0582b4d9) – защищенное облачное хранилище. При регистрации по ссылке получаете дополнительно 1 гигабайт облачного пространства.
 
