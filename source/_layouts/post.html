@@ -10,10 +10,6 @@ layout: default
 <div class="post">
 {{ content }}
 </div>
-<div class="related">
-  <h3>Похожие статьи</h3>{% for post in site.related_posts limit:5 %}
-  <div><a href="{{ site.url }}{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a></div>{% endfor %}
-</div>
 <div class="meta">
   {% include nav.html %}
 </div>
