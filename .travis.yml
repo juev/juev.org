@@ -2,13 +2,9 @@ language: ruby
 rvm:
 - 2.2
 cache:
-- apt
 - bundler
 addons:
   ssh_known_hosts: ssh.juev.org
-  apt:
-    packages:
-    - libgsl0-dev
 before_install:
 - openssl aes-256-cbc -K $encrypted_d7becb892f62_key -iv $encrypted_d7becb892f62_iv
   -in deploy_rsa.enc -out $TRAVIS_BUILD_DIR/deploy_rsa -d
