@@ -1,5 +1,5 @@
 /favicon.ico
-	Cache-Control: public, max-age=360000
+  Cache-Control: public, max-age=360000
 /*
-	Cache-Control: public, no-cache, no-store
-	X-UA-Compatible: IE=Edge
+  Cache-Control: public, no-cache, no-store
+  X-UA-Compatible: IE=Edge
