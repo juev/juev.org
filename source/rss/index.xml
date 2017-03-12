@@ -1,0 +1,27 @@
+---
+---
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+ <title>{{ site.title }}</title>
+ <link href="{{site.url}}/atom.xml" rel="self" />
+ <link href="{{site.url}}/" />
+ <updated>{{ site.posts.first.date | date_to_xmlschema }}</updated>
+ <id>{{site.url}}/</id>
+ <author>
+   <name>Denis Evsyukov</name>
+   <email>denis@evsyukov.org</email>
+ </author>
+
+ {% for post in site.posts limit:2 %}
+ <entry>
+   <title>{{ post.title }}</title>
+   <link rel="alternate" href="{{site.url}}{{ post.url }}"/>
+   <updated>{{ post.date | date_to_xmlschema }}</updated>
+   <id>{{site.url}}{{ post.url }}</id>
+   <content type="html">{{ post.content | xml_escape }}
+       &lt;p&gt;Читайте оригинал на странице: &lt;a href=&quot;{{site.url}}{{ post.url }}&quot; alt=&quot;{{ post.title }}&quot;&gt;{{ post.title }}&lt;/a&gt; ({{ site.title }})&lt;/p&gt;</content>
+ </entry>
+ {% endfor %}
+
+</feed>
