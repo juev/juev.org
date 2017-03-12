@@ -12,6 +12,8 @@ destination: public
 plugins_dir: plugins
 highlighter: rouge
 
+include:      ["_redirects", "_headers"]
+
 kramdown:
   input: GFM
   syntax_highlighter: rouge
