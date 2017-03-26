@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "anki"
+title: "Anki: Интервальные повторения"
 date: 2017-03-26 19:57
 image:
 tags:
