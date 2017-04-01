@@ -10,6 +10,9 @@ desc 'Build site with Jekyll.'
 task :build  => :clean do
   print "Compiling website...\n"
   # system "grunt"
+  system "export TZ=Europe/Samara"
+  system "echo Current date: `date`"
+
   system "jekyll build"
   # system "compass compile"
   system "rm -rf source/tags"
