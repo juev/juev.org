@@ -1,10 +1,12 @@
 ---
 url:         https://www.juev.org
-future:      true
+future:      false
 lsi:         false
 markdown:    kramdown
 permalink:   pretty
 incremental: false
+
+timezone: Europe/Samara
 
 root:        /
 source:      source
