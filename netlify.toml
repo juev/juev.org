@@ -1,0 +1,42 @@
+[Settings]
+ID = "1c9a398d-1356-4fc8-9cb7-dc70d0209692"
+
+[build]
+  publish = "public/"
+  command = "jekyll build"
+
+[[redirects]]
+  from = "http://epic-fermat-4c54c4.netlify.com/*"
+  to = "https://www.juev.org/:splat"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "http://www.juev.org/*"
+  to = "https://www.juev.org/:splat"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "http:/juev.org/*"
+  to = "https://www.juev.org/:splat"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "https://juev.org/*"
+  to = "https://www.juev.org/:splat"
+  status = 301
+  force = true
+
+[[headers]]
+  for = "/*" # This defines which paths this specific [[headers]] block will cover.
+  [headers.values]
+    Strict-Transport-Security = "max-age=63072000; includeSubDomains; preload"
+    Cache-Control = "max-age=0"
+    X-UA-Compatible = "IE=Edge"
+
+[[headers]]
+  for = "/favicon.ico"
+  [headers.values]
+    Cache-Control = "max-age=31536000"
