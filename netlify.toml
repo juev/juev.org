@@ -23,14 +23,7 @@ ID = "1c9a398d-1356-4fc8-9cb7-dc70d0209692"
     Strict-Transport-Security = "max-age=63072000; includeSubDomains; preload"
     Cache-Control = "max-age=0"
     X-UA-Compatible = "IE=Edge"
-
-[[headers]]
-  for = "https://juev.org/*" # This defines which paths this specific [[headers]] block will cover.
-  [headers.values]
-    Strict-Transport-Security = "max-age=63072000; includeSubDomains; preload"
-    Cache-Control = "max-age=63072000"
-    X-UA-Compatible = "IE=Edge"
-    
+   
 [[headers]]
   for = "/favicon.ico"
   [headers.values]
