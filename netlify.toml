@@ -11,6 +11,12 @@ ID = "1c9a398d-1356-4fc8-9cb7-dc70d0209692"
   status = 301
   force = true
 
+[[redirects]]
+  from = "https://juev.org/*"
+  to = "https://www.juev.org/:splat"
+  status = 301
+  force = true
+  
 [[headers]]
   for = "/*" # This defines which paths this specific [[headers]] block will cover.
   [headers.values]
