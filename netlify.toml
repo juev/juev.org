@@ -2,7 +2,7 @@
 ID = "1c9a398d-1356-4fc8-9cb7-dc70d0209692"
 
 [build]
-  publish = "public"
+  publish = "public/"
   command = "jekyll build"
 
 [[redirects]]
