@@ -33,5 +33,5 @@ deploy:
 
 env:
   global:
-  - secure: "ZTAyq7PzZnUsxF7WttucnzyKuOSECKzbF1iNxeBOUQ0h2de1EPBaykLyDQXPddf3oXRsbUA3BzA4JtVu2X+7fLZRNZL1n1gUjF1s5Jt2k8Ps7kz/nawbdFJ/y6P6s8BwRJ3BhDV2s6UeQF1C8buFBQwXbWECUZl2nh1efL14yzI="
-  - secure: "FjfahNoPH1rQJ4VuTl2frmdaf9aoLQRvSFk4caqXT005ooGeyPZT3lVjwTfAqOsmcF6QRgre3Ic5eSiYvF3f2lq8LYI1XQWEY/DzDO402Ro3wYlhvhiHkIZK3hAmCtgpMA1vSonRDBiez7pbMLLpAqXYHF9MUmZSnWEr45c9CdU="
+  - secure: "LYHqtg9uHADutWkfaseQqoOPw6Y7QYUjhe1QHf2AkgD+RVIukLWjZj64sFdyTjrtKci0eIdPaMEQTZjBntxukWGQPq6hp42Cz6x/osVOjOK+SW6mtQkkP7B6GzkB3ZjwRJP1UprGzVuWaz0JsCK3vrdUVmYhLTsnwNw41b6i0PE="
+  - secure: "Okp0ZCB7TWeAnwRUxjspf/BmLmbJzn6RurDP5943YgAjEgGbq5IiqYl9oXIzN7pfUr0d9IRXpupjOySV+YLqTmSk+SFhkEXOTnRaAhgvSrW/9f5+wIzkWwnQgDb08YXtCBjo3T85B7FMaR7bWI6BtJnEImHDdgPN7tPsK0S2hgw="
