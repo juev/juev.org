@@ -8,7 +8,7 @@ addons:
 before_install:
   - openssl aes-256-cbc -K $encrypted_d7becb892f62_key -iv $encrypted_d7becb892f62_iv
     -in deploy_rsa.enc -out $TRAVIS_BUILD_DIR/deploy_rsa -d
-  - export TZ=Europe/Samara
+  - export TZ=Europe/Moscow
   - date
 script: bundle exec rake build
 after_success:
@@ -19,3 +19,19 @@ after_success:
 branches:
   only:
     - master
+deploy:
+  provider: s3
+  access_key_id: "$AWS_KEY_ID"
+  secret_access_key: "$AWS_ACCESS_KEY"
+  bucket: "www.juev.org"
+  skip_cleanup: true
+  region: "eu-west-1"
+  acl: public_read
+  local_dir: public
+  detect_encoding: true
+  cache_control: "max-age=0"
+
+env:
+  global:
+  - secure: "ZTAyq7PzZnUsxF7WttucnzyKuOSECKzbF1iNxeBOUQ0h2de1EPBaykLyDQXPddf3oXRsbUA3BzA4JtVu2X+7fLZRNZL1n1gUjF1s5Jt2k8Ps7kz/nawbdFJ/y6P6s8BwRJ3BhDV2s6UeQF1C8buFBQwXbWECUZl2nh1efL14yzI="
+  - secure: "FjfahNoPH1rQJ4VuTl2frmdaf9aoLQRvSFk4caqXT005ooGeyPZT3lVjwTfAqOsmcF6QRgre3Ic5eSiYvF3f2lq8LYI1XQWEY/DzDO402Ro3wYlhvhiHkIZK3hAmCtgpMA1vSonRDBiez7pbMLLpAqXYHF9MUmZSnWEr45c9CdU="
