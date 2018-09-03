@@ -4,8 +4,7 @@ require 'bundler/setup'
 # Jekyll Task
 domain="www.juev.org"
 
-task :default => [:build, :notify] do
-end # end default
+task :default => :build
 
 desc 'Build site with Jekyll.'
 task :build  => :clean do
@@ -69,23 +68,11 @@ task :pingomatic do
   begin
     require 'xmlrpc/client'
     puts '* Pinging ping-o-matic'
-    XMLRPC::Client.new('rpc.pingomatic.com', '/').call('weblogUpdates.extendedPing', 'www.juev.org' , 'http://www.juev.org', 'http://www.juev.org/atom.xml')
+    XMLRPC::Client.new('rpc.pingomatic.com', '/').call('weblogUpdates.extendedPing', 'www.juev.org' , 'https://www.juev.org', 'https://www.juev.org/atom.xml')
   rescue LoadError
     puts '! Could not ping ping-o-matic, because XMLRPC::Client could not be found.'
   end
 end # task :pingomatic
-
-# Ping Yandex
-desc 'Ping yandex'
-task :yandex do
-  begin
-    require 'xmlrpc/client'
-    puts '* Pinging yandex'
-    XMLRPC::Client.new('ping.blogs.yandex.ru', '/RPC2').call('weblogUpdates.extendedPing', 'www.juev.org' , 'http://www.juev.org', 'http://www.juev.org/atom.xml')
-  rescue LoadError
-    puts '! Could not ping yandex, because XMLRPC::Client could not be found.'
-  end
-end # task :yandex
 
 # Ping Google
 desc 'Notify Google of the new sitemap'
@@ -94,7 +81,7 @@ task :sitemapgoogle do
     require 'net/http'
     require 'uri'
     puts '* Pinging Google about our sitemap'
-    Net::HTTP.get('www.google.com', '/webmasters/tools/ping?sitemap=' + URI.escape('http://www.juev.org/sitemap.xml'))
+    Net::HTTP.get('www.google.com', '/webmasters/tools/ping?sitemap=' + URI.escape('https://www.juev.org/sitemap.xml'))
   rescue LoadError
     puts '! Could not ping Google about our sitemap, because Net::HTTP or URI could not be found.'
   end
@@ -107,7 +94,7 @@ task :sitemapbing do
     require 'net/http'
     require 'uri'
     puts '* Pinging Bing about our sitemap'
-    Net::HTTP.get('www.bing.com', '/webmaster/ping.aspx?siteMap=' + URI.escape('http://www.juev.org/sitemap.xml'))
+    Net::HTTP.get('www.bing.com', '/webmaster/ping.aspx?siteMap=' + URI.escape('https://www.juev.org/sitemap.xml'))
   rescue LoadError
     puts '! Could not ping Bing about our sitemap, because Net::HTTP or URI could not be found.'
   end
@@ -120,7 +107,7 @@ task :ping do
     require 'cgi'
     require 'net/http'
     puts '* Pinging pubsubhubbub server'
-    data = 'hub.mode=publish&hub.url=' + CGI::escape("http://www.juev.org/atom.xml")
+    data = 'hub.mode=publish&hub.url=' + CGI::escape("https://www.juev.org/atom.xml")
     http = Net::HTTP.new('pubsubhubbub.appspot.com', 80)
     resp, data = http.post('http://pubsubhubbub.appspot.com/publish',
                            data,
@@ -131,7 +118,7 @@ end # task: pubsubhubbub
 
 # Usage: rake notify
 desc 'Notify various services about new content'
-task :notify => [:pingomatic, :sitemapgoogle, :sitemapbing, :ping, :yandex] do
+task :notify => [:pingomatic, :sitemapgoogle, :sitemapbing, :ping] do
 end # task :notify
 
 ####
