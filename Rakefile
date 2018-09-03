@@ -4,13 +4,14 @@ require 'bundler/setup'
 # Jekyll Task
 domain="www.juev.org"
 
-task :default => :build
+task :default => [:build, :notify] do
+end # end default
 
 desc 'Build site with Jekyll.'
 task :build  => :clean do
   print "Compiling website...\n"
   # system "grunt"
-  system "export TZ=Europe/Samara"
+  system "export TZ=Europe/Moscow"
   system "echo Current date: `date`"
 
   system "jekyll build"
@@ -24,7 +25,7 @@ task :clean do
   system "rm -rf public/*"
 end # task: clean
 
-desc 'Deploy to S3'
+desc 'Deploy site'
 task :deploy do
   print "Deploying website to Server\n"
   system "rsync -az --delete-after $TRAVIS_BUILD_DIR/public/ web@ssh.juev.org:~/public/juev.org"
