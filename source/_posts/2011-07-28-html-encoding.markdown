@@ -18,7 +18,9 @@ tags:
 
 В связи с этим добавил в заголовок файла строку:
 
-    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+{% highlight html %}
+<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+{% endhighlight %}
 
 И только после этого все заработало как положено. И в **InstaPaper** и в **Readability** стали нормально отображаться заголовки статей.
 
@@ -26,29 +28,32 @@ tags:
 
 Было:
 
-    <!DOCTYPE HTML>
-    <html lang="ru">
-    <head>
-        <meta charset="UTF-8">
-        <title></title>
-    </head>
-    <body>
+{% highlight html %}
+<!DOCTYPE HTML>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
 
-    </body>
-    </html>
+</body>
+</html>
+{% endhighlight %}
 
 Стало:
+{% highlight html %}
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ru" lang="ru_RU">
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+    <title></title>
+</head>
+<body>
 
-    <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-    <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ru" lang="ru_RU">
-    <head>
-        <meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
-        <title></title>
-    </head>
-    <body>
-
-    </body>
-    </html>
+</body>
+</html>
+{% endhighlight %}
 
 Таким образом можно подвести небольшой итог. Стандарт **html5** можно использовать уже сейчас, но лишь в том случае, если сайт создается на английском языке. В противном случае придется столкнуться с проблемой определения кодировки файла при использовании сторонних сервисов.
 
