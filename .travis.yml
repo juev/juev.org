@@ -4,7 +4,7 @@ cache:
 before_install:
   - export TZ=Europe/Moscow
   - date
-script: bundle exec rake
+script: bundle exec rake build
 branches:
   only:
     - master
@@ -19,6 +19,8 @@ deploy:
   local_dir: public
   detect_encoding: true
   cache_control: "max-age=0"
+
+after_deploy: bundle exec rake notify
 
 env:
   global:
