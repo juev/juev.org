@@ -3,19 +3,12 @@ language: ruby
 cache:
   - bundler
 
-addons:
-  apt:
-    packages:
-    - s3cmd
-
 before_install:
   - export TZ=Europe/Moscow
   - date
 
 script:
-  - bundle exec rake build
-  - s3cmd --access_key="$AWS_KEY_ID" --secret_key="$AWS_ACCESS_KEY" -P -M --add-header="Cache-Control:max-age=0" -H sync public s3://www.juev.org
-  - bundle exec rake notify
+  - bundle exec rake publish
 
 branches:
   only:
