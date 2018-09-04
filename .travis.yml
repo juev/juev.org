@@ -1,26 +1,25 @@
 language: ruby
+
 cache:
   - bundler
+
+addons:
+  apt:
+    packages:
+    - s3cmd
+
 before_install:
   - export TZ=Europe/Moscow
   - date
-script: bundle exec rake build
+
+script:
+  - bundle exec rake build
+  - s3cmd --access_key="$AWS_KEY_ID" --secret_key="$AWS_ACCESS_KEY" -P -M --add-header="Cache-Control:max-age=0" -H sync public s3://www.juev.org
+  - bundle exec rake notify
+
 branches:
   only:
     - master
-deploy:
-  provider: s3
-  access_key_id: "$AWS_KEY_ID"
-  secret_access_key: "$AWS_ACCESS_KEY"
-  bucket: "www.juev.org"
-  skip_cleanup: true
-  region: "eu-west-1"
-  acl: public_read
-  local_dir: public
-  detect_encoding: true
-  cache_control: "max-age=0"
-
-after_deploy: bundle exec rake notify
 
 env:
   global:
