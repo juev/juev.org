@@ -6,15 +6,13 @@ markdown:    kramdown
 permalink:   pretty
 incremental: false
 
-timezone: Europe/Samara
+timezone: Europe/Moscow
 
 root:        /
 source:      source
 destination: public
 plugins_dir: plugins
 highlighter: rouge
-
-include:      ["_redirects", "_headers"]
 
 kramdown:
   input: GFM
@@ -34,4 +32,4 @@ defaults:
       path: "" # an empty string here means all files in the project
       type: "posts"
     values:
-      image: https://static.juev.org/images/calvin.png
+      image: "https://static.juev.org/images/calvin.png"
