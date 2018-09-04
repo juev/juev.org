@@ -1,0 +1,10 @@
+s3_id: <%= ENV['AWS_KEY_ID'] %>
+s3_secret: <%= ENV['AWS_ACCESS_KEY'] %>
+s3_bucket: www.juev.org
+cache_control:
+  "/favicon.ico": public, max-age=3600
+  "/apple-touch-icon.png": public, max-age=3600
+  "*": public, max-age=0
+s3_endpoint: eu-west-1
+redirects:
+  rss/: atom.xml
