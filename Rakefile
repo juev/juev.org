@@ -133,5 +133,5 @@ end # task: copy
 
 # Publish site
 desc 'Publish site'
-task :publish => [:deploy, :notify] do
+task :publish => [:build, :deploy, :notify] do
 end # task :publish
