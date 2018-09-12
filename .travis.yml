@@ -6,6 +6,8 @@ cache:
 before_install:
   - export TZ=Europe/Moscow
   - date
+  - wget https://github.com/bep/s3deploy/releases/download/v2.1.0/s3deploy_2.1.0_Linux-64bit.deb
+  - sudo dpkg -i s3deploy_2.1.0_Linux-64bit.deb
 
 script:
   - bundle exec rake publish
