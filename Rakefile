@@ -27,8 +27,7 @@ end # task: clean
 desc 'Deploy site'
 task :deploy do
   print "Deploying website\n"
-#  system "s3_website push --force"
-  system "s3deploy -source=public/ -region=eu-west-1 -bucket=www.juev.org -key \"$AWS_KEY_ID\" -secret \"$AWS_ACCESS_KEY\" -force -v"
+  system "s3_website push --force"
 #   system "rsync -az --delete-after $TRAVIS_BUILD_DIR/public/ web@ssh.juev.org:~/public/juev.org"
 end # task: deploy
 
