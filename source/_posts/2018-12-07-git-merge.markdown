@@ -1,0 +1,18 @@
+---
+layout: post
+title: "Git: мерж комитов из ветки в ветку"
+date: 2018-12-07 19:31
+image:
+tags:
+  - git
+  - tips
+---
+Возникла необходимость провести мерж изменений из одной ветки разработки в другую, при этом требовалось переносить не все изменения, а только определенные комиты.
+
+При этом `git merge` переносит все изменения из ветку в ветку. На ум приходит создание патча и затем его применение в нужной ветке. Но и тут все придумано для нас. Достаточно использовать `git-cherry-pick`:
+
+    git cherry-pick master~4 master~2
+
+    > Apply the changes introduced by the fifth and third last commits pointed to by master and create 2 new commits with these changes.
+
+Подробное описание и примеры можно найти на странице официальной документации: [git-cherry-pick](https://mirrors.edge.kernel.org/pub/software/scm/git/docs/git-cherry-pick.html).
