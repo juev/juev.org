@@ -1,8 +1,8 @@
-[![Build Status](https://travis-ci.org/Juev/juev.org.svg?branch=master)](https://travis-ci.org/Juev/juev.org)
+[![Build Status](https://travis-ci.org/juev/juev.org.svg?branch=master)](https://travis-ci.org/juev/juev.org)
 
 # About
 
-This directory contains data for my site, [www.juev.org](http://www.juev.org).
+This directory contains data for my site, [www.juev.org](https://www.juev.org).
 
 # How to Use
 
@@ -25,4 +25,4 @@ The following directories and their contents are Copyright Denis Evsyukov. You m
 
 * source/_posts/
 
-All other directories and files are MIT Licensed. Feel free to use the HTML and CSS as you please. If you do use them, a link back to [www.juev.org](http://www.juev.org) would be appreciated, but is not required.
+All other directories and files are MIT Licensed. Feel free to use the HTML and CSS as you please. If you do use them, a link back to [www.juev.org](https://www.juev.org) would be appreciated, but is not required.
