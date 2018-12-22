@@ -9,43 +9,14 @@ tags:
 
 Находки второй недели декабря:
 
-* [The power of diff](https://vimways.org/2018/the-power-of-diff/)
-
-    Использование diff в vim, различные плагины для улучшения.
-
-* [A philosophical difference between Haskell and Lisp](https://chrisdone.com/posts/haskell-lisp-philosophy-difference)
-
-    В чем разница между Lisp  и Haskell.
-
-* [What is wrong with Lisp?](http://metamodular.com/Essays/wrong.html)
-
-    Что не так с Lisp.
-
-* [Debugging your Vim Config](https://vimways.org/2018/debugging-your-vim-config/)
-
-    Оптимизация конфигурации Vim.
-
-* [Notes about hacking with drop tools](https://blog.erratasec.com/2018/12/notes-about-hacking-with-drop-tools.html)
-
-    Мысли о взломе с использованием Raspberry Pi компьютеров.
-
-* [bettercap/bettercap](https://github.com/bettercap/bettercap)
-
-    The Swiss Army knife for 802.11, BLE and Ethernet networks reconnaissance and MITM attacks.
-
-* [Getting Started with the Haskell AWS Lambda Runtime](https://medium.com/the-theam-journey/getting-started-with-the-haskell-aws-lambda-runtime-951b2322c7a3)
-
-    По использованию Haskell в AWS Lambda.
-
-* [Testing Ansible roles with Molecule](https://opensource.com/article/18/12/testing-ansible-roles-molecule)
-
-    По тестированию ansible-плейбуков с помощью Molecule.
-
-* [Haskell, the Language Most Likely to Change the Way you Think About Programming](https://www.huffingtonpost.com/aaroncontorer/haskell-the-language-most_b_4242119.html)
-
-    Что такое Haskell и с чем его едят.
-
-* [An Impression of Common Lisp](https://terranostra.one/posts/An-Impression-of-Common-Lisp.html)
-
-    Что такое Common Lisp.
+* [The power of diff](https://vimways.org/2018/the-power-of-diff/) Использование diff в vim, различные плагины для улучшения.
+* [A philosophical difference between Haskell and Lisp](https://chrisdone.com/posts/haskell-lisp-philosophy-difference) В чем разница между Lisp  и Haskell.
+* [What is wrong with Lisp?](http://metamodular.com/Essays/wrong.html) Что не так с Lisp.
+* [Debugging your Vim Config](https://vimways.org/2018/debugging-your-vim-config/) Оптимизация конфигурации Vim.
+* [Notes about hacking with drop tools](https://blog.erratasec.com/2018/12/notes-about-hacking-with-drop-tools.html) Мысли о взломе с использованием Raspberry Pi компьютеров.
+* [bettercap/bettercap](https://github.com/bettercap/bettercap) The Swiss Army knife for 802.11, BLE and Ethernet networks reconnaissance and MITM attacks.
+* [Getting Started with the Haskell AWS Lambda Runtime](https://medium.com/the-theam-journey/getting-started-with-the-haskell-aws-lambda-runtime-951b2322c7a3) По использованию Haskell в AWS Lambda.
+* [Testing Ansible roles with Molecule](https://opensource.com/article/18/12/testing-ansible-roles-molecule) По тестированию ansible-плейбуков с помощью Molecule.
+* [Haskell, the Language Most Likely to Change the Way you Think About Programming](https://www.huffingtonpost.com/aaroncontorer/haskell-the-language-most_b_4242119.html) Что такое Haskell и с чем его едят.
+* [An Impression of Common Lisp](https://terranostra.one/posts/An-Impression-of-Common-Lisp.html) Что такое Common Lisp.
 
