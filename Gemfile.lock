@@ -3,17 +3,17 @@ GEM
   specs:
     addressable (2.5.2)
       public_suffix (>= 2.0.2, < 4.0)
-    aws-sdk (2.11.122)
-      aws-sdk-resources (= 2.11.122)
-    aws-sdk-core (2.11.122)
+    aws-sdk (2.11.197)
+      aws-sdk-resources (= 2.11.197)
+    aws-sdk-core (2.11.197)
       aws-sigv4 (~> 1.0)
       jmespath (~> 1.0)
-    aws-sdk-resources (2.11.122)
-      aws-sdk-core (= 2.11.122)
+    aws-sdk-resources (2.11.197)
+      aws-sdk-core (= 2.11.197)
     aws-sigv4 (1.0.3)
     colorator (1.1.0)
     colored (1.2)
-    concurrent-ruby (1.0.5)
+    concurrent-ruby (1.1.4)
     configure-s3-website (2.3.0)
       aws-sdk (~> 2)
       deep_merge (~> 1.0.0)
@@ -28,7 +28,7 @@ GEM
     http_parser.rb (0.6.0)
     i18n (0.9.5)
       concurrent-ruby (~> 1.0)
-    jekyll (3.8.3)
+    jekyll (3.8.4)
       addressable (~> 2.4)
       colorator (~> 1.0)
       em-websocket (~> 0.5)
@@ -45,25 +45,25 @@ GEM
       sass (~> 3.4)
     jekyll-tagging (1.1.0)
       nuggets
-    jekyll-watch (2.0.0)
+    jekyll-watch (2.1.2)
       listen (~> 3.0)
     jmespath (1.4.0)
     kramdown (1.17.0)
-    liquid (4.0.0)
+    liquid (4.0.1)
     listen (3.1.5)
       rb-fsevent (~> 0.9, >= 0.9.4)
       rb-inotify (~> 0.9, >= 0.9.7)
       ruby_dep (~> 1.2)
     mercenary (0.3.6)
     nuggets (1.6.0)
-    pathutil (0.16.1)
+    pathutil (0.16.2)
       forwardable-extended (~> 2.6)
     public_suffix (3.0.3)
-    rake (12.3.1)
+    rake (12.3.2)
     rb-fsevent (0.10.3)
-    rb-inotify (0.9.10)
-      ffi (>= 0.5.0, < 2)
-    rouge (3.2.1)
+    rb-inotify (0.10.0)
+      ffi (~> 1.0)
+    rouge (3.3.0)
     ruby_dep (1.5.0)
     s3_website (3.4.0)
       colored (= 1.2)
@@ -71,24 +71,24 @@ GEM
       dotenv (~> 1.0)
       thor (~> 0.18)
     safe_yaml (1.0.4)
-    sass (3.5.7)
+    sass (3.7.2)
       sass-listen (~> 4.0.0)
     sass-listen (4.0.0)
       rb-fsevent (~> 0.9, >= 0.9.4)
       rb-inotify (~> 0.9, >= 0.9.7)
-    thor (0.20.0)
+    thor (0.20.3)
     xmlrpc (0.3.0)
 
 PLATFORMS
   ruby
 
 DEPENDENCIES
-  jekyll
-  jekyll-tagging
+  jekyll (= 3.8.4)
+  jekyll-tagging (= 1.1.0)
   rake
   rouge
-  s3_website
+  s3_website (= 3.4.0)
   xmlrpc
 
 BUNDLED WITH
-   1.16.1
+   1.17.2
