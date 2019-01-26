@@ -14,7 +14,16 @@ before_install:
   - gem install bundler
 
 script:
-  - bundle exec rake publish
+  - bundle exec rake build
+
+deploy:
+  provider: s3
+  access_key_id: "<%= ENV['AWS_KEY_ID'] %>"
+  secret_access_key: "<%= ENV['AWS_ACCESS_KEY'] %>"
+  bucket: "juev.org"
+  skip_cleanup: true
+  region: "eu-west-1"
+  detect_encoding: true
 
 branches:
   only:
