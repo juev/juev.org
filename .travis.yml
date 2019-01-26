@@ -22,6 +22,7 @@ deploy:
   region: eu-west-1
   detect_encoding: true
   default_text_charset: utf-8
+  cache_control: "public, max-age=0"
   local_dir: public
 branches:
   only:
