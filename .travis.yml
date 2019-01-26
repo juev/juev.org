@@ -10,6 +10,7 @@ cache:
 before_install:
   - export TZ=Europe/Moscow
   - date
+  - gem install bundler
 
 script:
   - bundle exec rake publish
