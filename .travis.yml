@@ -1,35 +1,32 @@
 dist: trusty
-
 language: ruby
 rvm:
-  - 2.6.0
-
+- 2.6.0
 cache:
-  - bundler
-
+- bundler
 before_install:
-  - export TZ=Europe/Moscow
-  - date
-  - gem update --system
-  - gem install bundler
-
+- export TZ=Europe/Moscow
+- date
+- gem update --system
+- gem install bundler
 script:
-  - bundle exec rake build
-
+- bundle exec rake build
 deploy:
   provider: s3
-  access_key_id: "<%= ENV['AWS_KEY_ID'] %>"
-  secret_access_key: "<%= ENV['AWS_ACCESS_KEY'] %>"
-  bucket: "juev.org"
+  access_key_id:
+    secure: Q5t9iBrUwH8lf7myTA9P1FMeD4wYE5y5HcVax3+gfJ/SOWc75mAQXF9PjYw97IBPRjMsGHRKFHFY2skdq+zZaezFoxw1wR+T1LYiRxpz74aACRHBqwjB1UpOalp71DZhIohdwqyDObOP8mn8LKgLOnFuA8CapEwp6d6L5vvkFaI=
+  secret_access_key:
+    secure: C30G2Eqd7DdU41jEFEXvlPxgivLZA/9ZJW3BxW7wGKAxoVgc8Vyc7rx2haKb4T3IOiW4CRW+3p79mAAF48pSgXZoaiFU/0SWPEfYFnkn3kJ0gyQvKrozRF1pKljz0l5wBw1HC3Cp0o+Xbl04wNK+KvTCjrlB0OWBLKKz1lzrKLA=
+  bucket: juev.org
   skip_cleanup: true
-  region: "eu-west-1"
+  region: eu-west-1
   detect_encoding: true
-
+  default_text_charset: utf-8
+  local_dir: public
 branches:
   only:
-    - master
-
+  - master
 env:
   global:
-  - secure: "LYHqtg9uHADutWkfaseQqoOPw6Y7QYUjhe1QHf2AkgD+RVIukLWjZj64sFdyTjrtKci0eIdPaMEQTZjBntxukWGQPq6hp42Cz6x/osVOjOK+SW6mtQkkP7B6GzkB3ZjwRJP1UprGzVuWaz0JsCK3vrdUVmYhLTsnwNw41b6i0PE="
-  - secure: "Okp0ZCB7TWeAnwRUxjspf/BmLmbJzn6RurDP5943YgAjEgGbq5IiqYl9oXIzN7pfUr0d9IRXpupjOySV+YLqTmSk+SFhkEXOTnRaAhgvSrW/9f5+wIzkWwnQgDb08YXtCBjo3T85B7FMaR7bWI6BtJnEImHDdgPN7tPsK0S2hgw="
+  - secure: LYHqtg9uHADutWkfaseQqoOPw6Y7QYUjhe1QHf2AkgD+RVIukLWjZj64sFdyTjrtKci0eIdPaMEQTZjBntxukWGQPq6hp42Cz6x/osVOjOK+SW6mtQkkP7B6GzkB3ZjwRJP1UprGzVuWaz0JsCK3vrdUVmYhLTsnwNw41b6i0PE=
+  - secure: Okp0ZCB7TWeAnwRUxjspf/BmLmbJzn6RurDP5943YgAjEgGbq5IiqYl9oXIzN7pfUr0d9IRXpupjOySV+YLqTmSk+SFhkEXOTnRaAhgvSrW/9f5+wIzkWwnQgDb08YXtCBjo3T85B7FMaR7bWI6BtJnEImHDdgPN7tPsK0S2hgw=
