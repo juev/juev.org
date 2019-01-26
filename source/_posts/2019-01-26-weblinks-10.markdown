@@ -1,0 +1,21 @@
+---
+layout: post
+title: "Ссылки #10"
+date: 2019-01-26 10:22
+image:
+tags:
+  - links:
+---
+Эта неделя у меня ознаменовалась погружением в C++, поэтому и ссылки в основном посвящены этому языку.
+
+* [CLion opens 2019.1 EAP: ClangFormat, Disassembly View for LLDB, and support for injected languages](https://blog.jetbrains.com/clion/2019/01/clion-opens-2019-1-eap-clangformat-disasm-lldb-injected-languages/) -- JetBrains развивают свои продукты, в CLion добавили ряд новшеств. Хотя, если задуматься, ClangFormat давно уже использую в Vim.
+* [Using Docker with Travis Continuous Integration](https://romanvm.pythonanywhere.com/post/using-docker-travis-continuous-integration-25/) -- Описание использования Docker-контейнера для сборки на Travis-ci. Провел ряд экспериментов в данном направлении. Интересно конечно, но пока преимуществ не нашел.
+* [Running Jekyll in Docker](https://ddewaele.github.io/running-jekyll-in-docker/) -- Еще немного про использование Docker.
+* [Minimal Google Analytics Snippet](https://minimalanalytics.com/)
+* [Autumn](https://sephware.com/autumn/) -- The macOS window manager for JavaScript hackers.
+* [Initialization in C++ is Seriously Bonkers](https://mikelui.io/2019/01/03/seriously-bonkers.html)
+* [How to use docker to create and cross build C and C++ conan packages](https://docs.conan.io/en/latest/howtos/run_conan_in_docker.html)
+* [Использование Docker для сборки и запуска проекта на C++](https://habr.com/ru/post/414109/)
+* [Programming Fonts](https://app.programmingfonts.org/) -- Хорошая подборка шрифтов, предназначенных для использования в IDE.
+
+До встречи на следующей неделе!
