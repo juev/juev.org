@@ -11,7 +11,6 @@ timezone: Europe/Moscow
 root:        /
 source:      source
 destination: public
-plugins_dir: plugins
 highlighter: rouge
 
 kramdown:
@@ -23,8 +22,6 @@ description: "Описание опыта использования разли�
 keywords: "mac, tips, wordpress, jekyll, ruby, php, linux, ubuntu, vps, soft"
 
 githuburl: "https://github.com/Juev/juev.ru/blob/master/source/_posts"
-tag_page_layout: tag_page
-tag_page_dir: tags
 
 defaults:
   -
