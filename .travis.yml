@@ -13,7 +13,6 @@ deploy:
   provider: pages
   skip-cleanup: true
   github-token: "$GITHUB_TOKEN"
-  keep-history: true
   local-dir: public
   fqdn: www.juev.org
   on:
@@ -22,7 +21,6 @@ deploy:
   provider: pages
   skip-cleanup: true
   github-token: "$GITHUB_TOKEN"
-  keep-history: true
   local-dir: public
   fqdn: www.juev.org
   target-branch: test-deploy
