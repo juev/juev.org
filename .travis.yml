@@ -20,6 +20,16 @@ deploy:
   fqdn: www.juev.org
   on:
     branch: master
+deploy:
+  provider: pages
+  skip-cleanup: true
+  github-token: "$GITHUB_TOKEN"
+  keep-history: true
+  local-dir: public
+  fqdn: www.juev.org
+  target-branch: test-deploy
+  on:
+    branch: new
 env:
   global:
   - secure: LYHqtg9uHADutWkfaseQqoOPw6Y7QYUjhe1QHf2AkgD+RVIukLWjZj64sFdyTjrtKci0eIdPaMEQTZjBntxukWGQPq6hp42Cz6x/osVOjOK+SW6mtQkkP7B6GzkB3ZjwRJP1UprGzVuWaz0JsCK3vrdUVmYhLTsnwNw41b6i0PE=

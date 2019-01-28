@@ -26,12 +26,16 @@ words_per_minute: 150
 githuburl: "https://github.com/juev/juev.ru/blob/master/source/_posts"
 
 defaults:
-  -
-    scope:
+  - scope:
       path: "" # an empty string here means all files in the project
       type: "posts"
     values:
       image: "https://static.juev.org/images/calvin.png"
+  - scope:
+      path: "_files"
+    values:
+      output: true
+      permalink: /:path
 
 # Reading Files
 include:
