@@ -38,7 +38,7 @@ collections:
     permalink: /:path
   files:
     output: true
-    id: /:path
+    id: /:name
 
 # Reading Files
 include:
