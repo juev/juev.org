@@ -3,6 +3,7 @@ layout: page
 title: Рекомендую!
 date: 2014-11-16 12:48:34
 id: /recommendations
+permalink: /recommendations
 ---
 
 Мои любимые интернет-сервисы, регистрируйтесь по этим ссылкам и вы гарантированно получите бонус!
