@@ -36,9 +36,6 @@ collections:
   pages:
     output: true
     permalink: /:path
-  _files:
-    output: true
-    id: /:name
 
 # Reading Files
 include:
