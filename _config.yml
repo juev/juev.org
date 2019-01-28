@@ -34,7 +34,7 @@ defaults:
   - scope:
       path: "_files" # an empty string here means all files in the project
     values:
-      permalink: /::basename.:output_ext
+      permalink: /:name
 
 collections:
   pages:
