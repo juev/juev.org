@@ -36,7 +36,7 @@ collections:
   pages:
     output: true
     permalink: /:path
-  files:
+  _files:
     output: true
     id: /:name
 
