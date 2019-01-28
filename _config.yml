@@ -43,7 +43,6 @@ collections:
 # Reading Files
 include:
   - _pages
-  - _files
 exclude:
   - "*.sublime-project"
   - "*.sublime-workspace"
