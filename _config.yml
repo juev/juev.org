@@ -32,7 +32,7 @@ defaults:
     values:
       image: "https://static.juev.org/images/calvin.png"
   - scope:
-      path: "_files" # an empty string here means all files in the project
+      path: "assets/ico" # an empty string here means all files in the project
     values:
       permalink: /:name
 
