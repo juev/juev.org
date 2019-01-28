@@ -35,6 +35,36 @@ defaults:
 sass:
   style: compressed
 
+plugins:
+  - jekyll-sitemap
+  - jekyll-relative-links
+
+relative_links:
+  enabled:     true
+  collections: false
+
+author:
+  twitter: Juev
+
+twitter:
+  username: Juev
+  card: summary
+
+logo: "https://static.juev.org/images/calvin.png"
+
+social:
+  name: Denis Evsyukov
+  links:
+    - https://twitter.com/Juev
+    - https://www.facebook.com/denis.evsyukov
+    - https://github.com/juev
+    - https://keybase.io/juev
+
+webmaster_verifications:
+  yandex: 59bb4b98872e096b
+
+lang: ru_RU
+
 collections:
   pages:
     output: true
@@ -78,6 +108,6 @@ markdown_ext: "markdown,mkdown,mkdn,mkd,md"
 # HTML Compression
 # - http://jch.penibelst.de/
 compress_html:
-  clippings: all
+  clippings: none
   ignore:
 envs: development
