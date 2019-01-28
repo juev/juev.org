@@ -32,6 +32,9 @@ defaults:
     values:
       image: "https://static.juev.org/images/calvin.png"
 
+sass:
+  style: compressed
+
 collections:
   pages:
     output: true
