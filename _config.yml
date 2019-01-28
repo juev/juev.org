@@ -31,11 +31,14 @@ defaults:
       type: "posts"
     values:
       image: "https://static.juev.org/images/calvin.png"
-  - scope:
-      path: "_files"
-    values:
-      output: true
-      permalink: /:path
+
+collections:
+  pages:
+    output: true
+    permalink: /:path
+  files:
+    output: true
+    id: /:path
 
 # Reading Files
 include:
