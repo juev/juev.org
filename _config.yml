@@ -40,7 +40,7 @@ defaults:
 # Reading Files
 include:
   - _pages
-  - _posts
+  - _files
 exclude:
   - "*.sublime-project"
   - "*.sublime-workspace"
