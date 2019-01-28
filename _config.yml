@@ -31,6 +31,14 @@ defaults:
       type: "posts"
     values:
       image: "https://static.juev.org/images/calvin.png"
+  - scope:
+      path: "_files/favicon.ico" # an empty string here means all files in the project
+    values:
+      permalink: "/favicon.ico"
+  - scope:
+      path: "_files/apple-touch-icon.png" # an empty string here means all files in the project
+    values:
+      permalink: "/apple-touch-icon.png"
 
 collections:
   pages:
