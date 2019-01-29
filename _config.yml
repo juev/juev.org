@@ -9,7 +9,6 @@ incremental: false
 timezone: Europe/Moscow
 
 root:        /
-source:      source
 destination: public
 highlighter: rouge
 
@@ -21,12 +20,94 @@ title: "Denis Evsyukov"
 description: "Описание опыта использования различных программ и веб-сервисов. Личные рекомендации и критика."
 keywords: "mac, tips, wordpress, jekyll, ruby, php, linux, ubuntu, vps, soft"
 
-githuburl: "https://github.com/Juev/juev.ru/blob/master/source/_posts"
+repository: "juev/juev.org"
+words_per_minute: 150
+
+githuburl: "https://github.com/juev/juev.ru/blob/master/source/_posts"
 
 defaults:
-  -
-    scope:
+  - scope:
       path: "" # an empty string here means all files in the project
       type: "posts"
     values:
       image: "https://static.juev.org/images/calvin.png"
+
+sass:
+  style: compressed
+
+plugins:
+  - jekyll-relative-links
+
+relative_links:
+  enabled:     true
+  collections: false
+
+author:
+  twitter: Juev
+
+twitter:
+  username: Juev
+  card: summary
+
+logo: "https://static.juev.org/images/calvin.png"
+
+social:
+  name: Denis Evsyukov
+  links:
+    - https://twitter.com/Juev
+    - https://www.facebook.com/denis.evsyukov
+    - https://github.com/juev
+    - https://keybase.io/juev
+
+webmaster_verifications:
+  yandex: 59bb4b98872e096b
+
+lang: ru_RU
+
+collections:
+  pages:
+    output: true
+    permalink: /:path
+  files:
+    output: true
+    permalink: /:name
+
+# Reading Files
+include:
+  - _pages
+exclude:
+  - "*.sublime-project"
+  - "*.sublime-workspace"
+  - vendor
+  - .asset-cache
+  - .bundle
+  - .jekyll-assets-cache
+  - .sass-cache
+  - assets/js/plugins
+  - assets/js/_main.js
+  - assets/js/vendor
+  - Capfile
+  - CHANGELOG
+  - config
+  - Gemfile
+  - Gruntfile.js
+  - gulpfile.js
+  - LICENSE
+  - log
+  - node_modules
+  - package.json
+  - Rakefile
+  - README
+  - tmp
+  - /docs
+  - /test
+encoding: "utf-8"
+markdown_ext: "markdown,mkdown,mkdn,mkd,md"
+
+# HTML Compression
+# - http://jch.penibelst.de/
+compress_html:
+  clippings: all
+  comments: ["<!-- ", " -->"]
+  ignore:
+envs: development

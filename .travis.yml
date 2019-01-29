@@ -1,27 +1,31 @@
 dist: trusty
 language: ruby
 rvm:
-- 2.6.0
+- 2.4.1
 cache:
 - bundler
 before_install:
 - export TZ=Europe/Moscow
 - date
-- gem update --system
-- gem install bundler
 script:
 - bundle exec jekyll build
 deploy:
   provider: pages
   skip-cleanup: true
   github-token: "$GITHUB_TOKEN"
-  keep-history: true
   local-dir: public
   fqdn: www.juev.org
   on:
     branch: master
+deploy:
+  provider: pages
+  skip-cleanup: true
+  github-token: "$GITHUB_TOKEN"
+  local-dir: public
+  fqdn: www.juev.org
+  target-branch: test-deploy
+  on:
+    branch: new
 env:
   global:
-  - secure: LYHqtg9uHADutWkfaseQqoOPw6Y7QYUjhe1QHf2AkgD+RVIukLWjZj64sFdyTjrtKci0eIdPaMEQTZjBntxukWGQPq6hp42Cz6x/osVOjOK+SW6mtQkkP7B6GzkB3ZjwRJP1UprGzVuWaz0JsCK3vrdUVmYhLTsnwNw41b6i0PE=
-  - secure: Okp0ZCB7TWeAnwRUxjspf/BmLmbJzn6RurDP5943YgAjEgGbq5IiqYl9oXIzN7pfUr0d9IRXpupjOySV+YLqTmSk+SFhkEXOTnRaAhgvSrW/9f5+wIzkWwnQgDb08YXtCBjo3T85B7FMaR7bWI6BtJnEImHDdgPN7tPsK0S2hgw=
   - secure: d2DQWKPAbSjojqqdnExxbDqFINbMA+VHFL4owRF3wsxNZst06K8ZyHM7eg92N8/vb4MGm6F1FfdLtpULZkpZR40R+WskaknJwyDFRz5jx9jZidT0WD8cJzRDjB9F4UOHisd/kC/Lz14f/2v6BR57IY0zdrs71A1P509mlzmR59E=

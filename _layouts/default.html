@@ -1,3 +1,6 @@
+---
+layout: compress
+---
 <!DOCTYPE html>
 <!--
     You can email me with PGP-key: 0xE8ADA1A55B3CA4EA
@@ -8,9 +11,7 @@
   <meta charset="utf-8">{% if page.title %}
   <title>{{- page.title -}}</title>{% elsif page.grouptype == "tag" %}
   <title>Posts Tagged "{{- page.tag -}}"</title>{% else %}
-  <title>{{- site.title -}}</title>{% endif %}{% if page.description %}
-  <meta name="description" content="{{- page.description -}}">{% else %}
-  <meta name="description" content="{{- page.content | markdownify | strip_html | strip_newlines | xml_escape | replace: '.','. ' | truncate: 200 -}}">{% endif %}
+  <title>{{- site.title -}}</title>{% endif %}
   <meta name="yandex-verification" content="59bb4b98872e096b" />
   <!-- http://t.co/dKP3o1e -->
   <meta name="HandheldFriendly" content="True">
@@ -21,12 +22,11 @@
   <link rel="shortcut icon" href="https://static.juev.org/favicon.ico">
   <link rel="apple-touch-icon" href="{{- site.url -}}/apple-touch-icon.png">
   <link rel="alternate" type="application/atom+xml" title="ATOM Feed" href="https://www.juev.org/atom.xml">
-  <link rel="stylesheet" type="text/css" href="https://static.juev.org/assets/css/master.6bbfa8b61.css">{% if page.previous %}
+  <link rel="stylesheet" type="text/css" href="https://static.juev.org/assets/css/master.6bbfa8b61.css">{% if page.grouptype != "index" %}{% if page.previous %}
   <link rel="prev" href="{{- site.url -}}{{- page.previous.url -}}">{% endif %}{% if page.next %}
-  <link rel="next" href="{{- site.url -}}{{- page.next.url -}}">{% endif %}{% if page.date %}
+  <link rel="next" href="{{- site.url -}}{{- page.next.url -}}">{% endif %}
   <!-- og:meta -->
   <meta content="{{- page.title -}}" property="og:title">
-  <meta content="{{- page.content | markdownify | strip_html | strip_newlines | xml_escape | replace: '.','. ' | truncate: 200 -}}" property="og:description">
   <meta content="{{- site.url -}}{{- page.url -}}" property="og:url">
   <meta content="{{- page.date | date_to_xmlschema -}}" property="article:published_time">{% if page.tags %}{% for tag in page.tags %}
   <meta content="{{- tag -}}" property="article:tag">{% endfor %}{% endif %}
@@ -36,7 +36,6 @@
   <!-- twitter card -->
   <meta content="summary_large_image" name="twitter:card">
   <meta content="{{- page.title -}}" name="twitter:title">
-  <meta content="{{- page.content | markdownify | strip_html | strip_newlines | xml_escape | replace: '.','. ' | truncate: 200 -}}" property="twitter:description">
   <meta content="{{- site.url -}}{{- page.url -}}" name="twitter:url">
   <meta content="{{- page.image -}}" property="twitter:image:src">
   <!-- end twitter card -->{% endif %}
