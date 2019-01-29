@@ -34,6 +34,7 @@ defaults:
 
 sass:
   style: compressed
+  sass_dir: _assets/scss
 
 plugins:
   - jekyll-relative-links
