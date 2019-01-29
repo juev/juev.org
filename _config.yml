@@ -36,7 +36,6 @@ sass:
   style: compressed
 
 plugins:
-  - jekyll-sitemap
   - jekyll-relative-links
 
 relative_links:
@@ -108,6 +107,7 @@ markdown_ext: "markdown,mkdown,mkdn,mkd,md"
 # HTML Compression
 # - http://jch.penibelst.de/
 compress_html:
-  clippings: none
+  clippings: all
+  comments: ["<!-- ", " -->"]
   ignore:
 envs: development
