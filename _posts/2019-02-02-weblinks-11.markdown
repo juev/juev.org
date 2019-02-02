@@ -1,0 +1,26 @@
+---
+layout: post
+title: "Ссылки #11"
+date: 2019-02-02 09:47
+image:
+tags:
+  - links
+---
+Недели пролетают быстро, что-то с каждым годом все быстрее и быстрее. Только замечай.
+
+Находки прошедшей недели:
+
+* [CurtisLusmore/ghp](https://github.com/CurtisLusmore/ghp) -- A simple web server for serving static GitHub Pages locally.
+* [cohomolo-gy/haskell-resources](https://github.com/cohomolo-gy/haskell-resources) -- A List of Foundational Haskell Papers.
+* [mineo/yatemplate](https://github.com/mineo/yatemplate) -- Simple file templates for Emacs with YASnippet. Настолько привык работать в Vim, что решил снова поработать в Emacs, с удивлением обнаружил, что решений для темплейтов файлов очень мало, и это одно из них.
+* [Что нового в Swift 5?](https://habr.com/ru/company/tinkoff/blog/437942/)
+* [Open-source time-series database powered by PostgreSQL](https://www.timescale.com/) -- Zabbix готовят к переходу на новую БД, Timescale, которая основана на PostgreSQL, но есть целый ряд интересных новшеств.
+* [Tails 3.12 is out](https://tails.boum.org/news/version_3.12/) -- У дистрибутива Tail появились новые типы поставок. Теперь предоставляют готовые образы для заиси на USB-брелки.
+* [Control trackers your own way with Enhanced Tracking Protection from Firefox](https://blog.mozilla.org/firefox/control-trackers-with-firefox/) -- Новая версия Firefox с новыми технологиями.
+* [Racket-on-Chez Status: January 2019](http://blog.racket-lang.org/2019/01/racket-on-chez-status.html) -- Racket переходят на использование Chez в своей основе.
+* [Embedded C Developers: To Hate Or Love C++? A Book Has The Answer](https://atadiat.com/en/e-embedded-c-developers-hate-or-love-cpp/) -- Описание новой книги по C++ для разработчиков встроенных систем. Кстати, очень интересно.
+* [google/haskell-trainings](https://github.com/google/haskell-trainings) -- Haskell 101 and 102: slides and codelabs.
+* [Compress HTML in Jekyll](http://jch.penibelst.de/) -- Решение для Jekyll, позволяющее уменьшать размер страниц. Теперь используется на моем сайте.
+* [Jekyll Tags on Github Pages](http://longqian.me/2017/02/09/github-jekyll-tag/) -- решение, котторое использовал для изменения тегов на своем сайте. Если раньше это были отдельные страницы, теперь только одна и навигироваться по статьям стало гораздо удобнее.
+
+Хорошей вам недели!
