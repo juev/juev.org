@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Vim Screencast
-description: 
+description:
 keywords: vim, screencast, tips, video, screenflow
 gplus: https://plus.google.com/116661482374124481456/posts/VrAqbzBukC1
 published: true
@@ -16,6 +16,6 @@ tags:
 
 Первый блин комом, как говорится, но надеюсь, что дальше будет лучше.
 
-<iframe width="640" height="360" src="http://www.youtube.com/embed/ORrvusbQeuQ" frameborder="0" allowfullscreen></iframe>
+<iframe width="640" height="360" src="https://www.youtube.com/embed/ORrvusbQeuQ" frameborder="0" allowfullscreen></iframe>
 
 Сколько программ я уже перепробовал для записи скринкастов, но ничего лучше ScreenFlow пока не нашел.
