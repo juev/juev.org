@@ -1,0 +1,31 @@
+---
+layout: post
+title: "Ссылки #12"
+date: 2019-02-09 08:51
+image:
+tags:
+  - links
+---
+Двенадцатый выпуск, то есть уже 12-ую неделю подряд публикую свои находки. Три месяца назад начал свои публикации. И сам довольно часто к ним же возвращаюсь.
+
+На этой неделе по прежнему пытался использовать везде Emacs, чтобы понять, что же такого в нем находят? Много времени потратил на его конфигурацию, но так пока и не понял, в чем его особенность. По мне так не удобно с ним работать. Может быть дам ему еще один шанс.
+
+Но не будет о грустном, а перейдем к находкам:
+
+* [C++ Типизированный язык программирования](https://habr.com/ru/hub/cpp/) -- Раздел хабра по языку C++, часто встречаются интересные переводы.
+* [Инициализация в С++ действительно безумна. Лучше начинать с Си](https://habr.com/ru/post/438492/) -- Один их таких переводов.
+* [catchorg/Catch2](https://github.com/catchorg/Catch2) -- Test framework для C++. Используются только файлы заголовков, потому легко интегрируется в проект.
+* [Using Emacs Series](https://cestlaz.github.io/stories/emacs/) -- Серия видео, посвященных Emacs.
+* [Second version of Ultralisp.org is available now!](http://40ants.com/posts/Second-version-of-Ultralisporg-is-available-now.html) -- [Александр Артеменко](https://github.com/svetlyak40wt) презентовал дистрибутив для Common Lisp, который призван решить ряд проблем QuickLisp.
+* [Learning Haskell - Miscellaneous Enlightenments](https://sras.me/haskell/miscellaneous-enlightenments.html)
+* [Imangazaliev/git-tips](https://github.com/Imangazaliev/git-tips) -- Часто используемые трюки и советы при работе с Git.
+* [Monorepos and the Fallacy of Scale](https://presumably.de/monorepos-and-the-fallacy-of-scale.html)
+* [Portacle](https://portacle.github.io/) -- Portacle is a complete IDE for Common Lisp that you can take with you on a USB stick.
+* [Dired Reuse Directory Buffer](https://www.emacswiki.org/emacs/DiredReuseDirectoryBuffer) -- Решение одной из проблем, с которой столкнулся в Emacs, очень неудобно подобное поведение по умолчанию.
+* [Haskell Style Guide](https://kowainik.github.io/posts/2019-02-06-style-guide)
+* [Hacker Tools](https://hacker-tools.github.io/)
+* [Running Your Life With Emacs](https://keyholesoftware.com/2019/01/30/running-your-life-with-emacs/) -- Одна из попыток объяснить, почему же именно Emacs, но не убедительно.
+* [Блокировка рекламы: итоги 2018 года и наши прогнозы на 2019](https://adguard.com/ru/blog/the-year-2018-in-adblocking/) -- Одна из статей в блоге Adguard, часто пишут интересные статьи.
+* [Неопределённое поведение и правда не определено](https://habr.com/ru/company/pvs-studio/blog/439502/) -- Еще одна из статей по C++ на Хабре.
+
+Хорошей вам недели!
