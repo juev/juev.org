@@ -27,7 +27,7 @@ tags:
 
 Первое о чем подумал, когда включил книгу -- очень странно, что мои глаза не ощущают дискомфорта при листании и чтении. До покупки Kindle Touch я очень много исследовал другие электронные книги и даже одно время собирался купить PocketBook. Так вот, экраны тех устройств были более блеклые, что вызывало лишнее напряжение глаз, а листание было настолько медленным, что только раздражало.
 
-<a href="https://www.flickr.com/photos/juev/6780851947/" title="Amazon Kindle Touch by Denis Evsyukov, on Flickr"><img src="https://farm8.staticflickr.com/7159/6780851947_a14015c0cf_z.jpg" width="640" height="427" alt="Amazon Kindle Touch"></a>
+<a href="https://static.juev.org/2012/01/6780851947_a14015c0cf_b.jpg" title="Amazon Kindle Touch by Denis Evsyukov"><img src="https://static.juev.org/2012/01/6780851947_a14015c0cf_z.jpg" width="640" height="427" alt="Amazon Kindle Touch"></a>
 
 В случае же с Kindle создавалось ощущение чтения именно с листа бумаги. Буквы четкие, достаточно черные. Скорость листания вполне комфортная. Все именно так, как и должно быть.
 
@@ -35,7 +35,7 @@ tags:
 
 В этом случае книги хранятся на сервере Амазона, формируя личную библиотеку. Единственный минус заключается в том, что эту библиотеку нельзя использовать с помощью приложений Kindle для Windows и Mac. Точнее даже не так, использовать можно только те книги, что были куплены непосредственно в магазине Амазона. А все то, что загружается пользователем, доступно только с его устройства. Никакие программы уже не имеют доступа к личным документам.
 
-<a href="https://www.flickr.com/photos/juev/6780852855/" title="Amazon Kindle Touch Menu by Denis Evsyukov, on Flickr"><img src="https://farm8.staticflickr.com/7161/6780852855_16f0295f62_z.jpg" width="640" height="494" alt="Amazon Kindle Touch Menu"></a>
+<a href="https://static.juev.org/2012/01/6780852855_16f0295f62_b.jpg" title="Amazon Kindle Touch Menu by Denis Evsyukov"><img src="https://static.juev.org/2012/01/6780852855_16f0295f62_z.jpg" width="640" height="494" alt="Amazon Kindle Touch Menu"></a>
 
 Выделенный адрес электронной почты попробовал использовать и для работы с сервисами Instapaper и Readability.
 
