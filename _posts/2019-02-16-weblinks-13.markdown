@@ -1,0 +1,29 @@
+---
+layout: post
+title: "Ссылки #13"
+date: 2019-02-16 10:16
+image:
+tags:
+  - links
+---
+Привет, вот и новая серия ссылок:
+
+* [A few notes on the iPhone 4S](http://morrick.me/archives/8355) -- Riccardo Mori пробует iPhone 4s, описание опыта.
+* [hub.github.com](https://hub.github.com/) -- is an extension to command-line git that helps you do everyday GitHub tasks without ever leaving the terminal.
+* [Haskell in Depth](https://www.manning.com/books/haskell-in-depth) -- книга, на текущий момент времени в статусе MEAP, то есть в процессе написания. Требует определенного опыта работы с Haskell. Автор: [Виталий Брагилевский](https://twitter.com/_bravit). Крайне рекомендую, если интересуетесь Haskell.
+* [trimstray/nginx-quick-reference](https://github.com/trimstray/nginx-quick-reference) -- материалы по настройке nginx.
+* [How I learned Haskell](https://kseo.github.io/posts/2017-01-27-how-i-learned-haskell.html) -- описание опыта изучения Haskell.
+* [imthenachoman/How-To-Secure-A-Linux-Server](https://github.com/imthenachoman/How-To-Secure-A-Linux-Server)
+* [NixOS on DigitalOcean](https://chris-martin.org/2016/nixos-on-digitalocean) -- установка NixOS в DigitalOcean.
+* [mjibson/goread](https://github.com/mjibson/goread) -- rss reader, написанный на Go. Звучит инетерсно.
+* [Arq Cloud Backup](https://www.arqbackup.com/arqcloudbackup/) -- Разработчик Arq педлагает сервис для хранения бекапов. $6 в месяц за терабайт дискового пространства.
+* [Working with log files in Emacs](https://writequit.org/articles/working-with-logs-in-emacs.html#dealing-with-large-files)
+* [Some Personal Hydras for GNU Emacs](https://ericjmritz.wordpress.com/2015/10/14/some-personal-hydras-for-gnu-emacs/) -- Некоторые рецепты использования Hydra в Emacs.
+* [Guix](https://www.gnu.org/software/guix/) -- Guix is an advanced distribution of the GNU operating system developed by the GNU Project—which respects the freedom of computer users.
+* [The Bipolar Lisp Programmer](http://marktarver.com/bipolar.html)
+* [Docker LEMP stack: get your logs with rsyslog](https://blog.raveland.org/post/docker_syslog/)
+* [Centralized Docker Logging with Rsyslog](https://www.simulmedia.com/blog/2016/02/19/centralized-docker-logging-with-rsyslog/)
+* [mozilla/readability](https://github.com/mozilla/readability) -- A standalone version of the readability lib.
+* [Releasing Transient](https://emacsair.me/2019/02/14/transient-0.1/) -- Transient is the successor to Magit-Popup, which was created as part of Magit at the beginning of 2014, and which was released as a separate package at the end of 2017. Magit-Popup itself succeeded an even older implementation, magit-key-mode.el, whose first version goes back all the way to 2010.
+
+Хорошей вам недели!
