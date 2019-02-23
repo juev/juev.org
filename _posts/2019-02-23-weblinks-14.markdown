@@ -1,0 +1,24 @@
+---
+layout: post
+title: "Ссылки #14"
+date: 2019-02-23 13:52
+image:
+tags:
+  - links
+---
+Находки прошедшей недели:
+
+* [Modern Alternatives to PGP](https://blog.gtank.cc/modern-alternatives-to-pgp/)
+* [Пишите код, который легко удалять, а не дополнять](https://habr.com/ru/company/payonline/blog/277629/)
+* [30 minutes every day for your craft: Committing code to GitHub for 365 consecutive days](https://medium.com/@rieckpil/30-minutes-every-day-for-your-craft-committing-code-to-github-for-365-consecutive-days-eec8b73b5105) -- интересный челендж.
+* [alebcay/awesome-shell](https://github.com/alebcay/awesome-shell) -- A curated list of awesome command-line frameworks, toolkits, guides and gizmos. Inspired by awesome-php.
+* [WhiteFox: обзор механической клавиатуры для Mac](https://macosworld.ru/whitefox-mechanical-keyboard-for-mac/) -- Влад заставил в очередной раз задуматься о смене клавиатуры.
+* [Algorithms by Jeff Erickson](http://jeffe.cs.illinois.edu/teaching/algorithms/) -- книга по алгоритмам.
+* [Hackers love Docker: Container catastrophe in 3, 2, 1...](https://techbeacon.com/security/hackers-love-docker-container-catastrophe-3-2-1)
+* [How to Design Programs](https://htdp.org/) -- еще одна книга.
+* [Diving Into NixOS (Part 1): Dual-Booting On A New Laptop](https://rycwo.xyz/2018/07/29/nixos-series-dual-boot)
+* [github/personal-website](https://github.com/github/personal-website) -- шаблон персонального сайта от Github.
+* [trimstray/the-book-of-secret-knowledge](https://github.com/trimstray/the-book-of-secret-knowledge) -- A collection of awesome lists, manuals, blogs, hacks, one-liners, cli/web tools and more.
+* [Moving from Ruby to Rust](https://deliveroo.engineering/2019/02/14/moving-from-ruby-to-rust.html)
+
+Хорошей вам недели.
