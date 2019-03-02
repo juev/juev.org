@@ -1,0 +1,23 @@
+---
+layout: post
+title: "Ссылки #15"
+date: 2019-03-02 10:53
+image:
+tags:
+  - links
+---
+Новая неделя, новые ссылки. Новые находки.
+
+* [Why language-oriented programming? Why Racket?](https://beautifulracket.com/appendix/why-lop-why-racket.html) -- интересный обзор на тему языков программирования. Рассматривается Dr.Racket, как образец.
+* [Implementing a Regular Expression Engine](https://deniskyashif.com/implementing-a-regular-expression-engine/)
+* [Static Nix: a command-line swiss army knife](https://matthewbauer.us/blog/static-nix.html) -- Одно из описаний пакетного менеджера Nix, про его использование.
+* [Семантическое Версионирование 2.0.0](https://semver.org/lang/ru/)
+* [Learn Rust](https://www.rust-lang.org/learn) -- Официальная страница сайта языка программирования Rust, на которой представлены ресурсы по обучению.
+* [Vim спустя 15 лет](https://habr.com/ru/company/mailru/blog/340740/) -- Перевод статьи про Vim.
+* [Moving from Homebrew to Nix Package Manager](https://www.softinio.com/post/moving-from-homebrew-to-nix-package-manager/)
+* [Manage a static website with Hugo and Nix](https://kalbas.it/2019/02/26/manage-a-static-website-with-hugo-and-nix/)
+* [A Secret Weapon for Startups -- Functional Programming?](https://www.ramanan.com/personal-blog/2019/2/25/functional-programming-and-venture-capital)
+* [Dead simple Haskell Travis settings for cabal and stack](https://chshersh.github.io/posts/2019-02-25-haskell-travis)
+* [Building a Data Visualization Dashboard in Racket](https://alex-hhh.github.io/2019/02/data-visualization-dashboard.html)
+
+Хорошей вам недели!
