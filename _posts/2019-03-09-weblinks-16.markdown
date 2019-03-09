@@ -1,0 +1,18 @@
+---
+layout: post
+title: "Ссылки #16"
+date: 2019-03-09 11:49
+image:
+tags:
+  - links
+---
+Утро субботы обычно знаменуется приходом [письма от IFTTT](https://www.juev.org/2018/11/25/weblinks-1/) со всеми сохраненными ссылками за прошедшую неделю. А это значит, что пор садиться и отбирать лучшие для того, чтобы передать их вам.
+
+* [hmemcpy/milewski-ctfp-pdf](https://github.com/hmemcpy/milewski-ctfp-pdf) -- Bartosz Milewski's 'Category Theory for Programmers' unofficial PDF and LaTeX source
+* [Build A Go API](https://medium.com/commonbond-engineering/build-a-go-api-eb27e6663d78) -- Больше всего меня заинтересовало, как пакуют Go-программы в Docker-конейнер. Понятно, что используется мультистейж DockerFile, но за основу берется не alpine, а [scratch](https://hub.docker.com/_/scratch/) образ.
+* [Spring cleaning: local git branches](http://www.joachim-breitner.de/blog/751-Spring_cleaning__local_git_branches)
+* [Топ-10 докладов конференции C++ Russia 2018: полные видеозаписи, слайды, комментарии](https://habr.com/ru/company/jugru/blog/442498/)
+* [Isomorphic web apps in Haskell](https://juliendehos.gitlab.io/lillefp-2019-isomorphic/) -- веб-презентация по теме.
+* [Вывод типов от Хиндли — Милнера до GHC 8.8](https://www.youtube.com/playlist?list=PLvPsfYrGz3wuVAGhNf6-i7uafXg56oqM5) -- подборка лекций Виталия Брагилевского.
+* [Formatting user-defined types with {fmt} library](https://wgml.pl/blog/formatting-user-defined-types-fmt.html) -- про использование библиотеки fmt в C++
+* [Writing a Book with Unix](https://joecmarshall.com/posts/book-writing-environment/)
