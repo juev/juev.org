@@ -1,0 +1,27 @@
+---
+layout: post
+title: "Ссылки #17"
+date: 2019-03-16 10:02
+image:
+tags:
+  - links
+---
+Прошедшую неделю потратил на изучение [hledger](https://hledger.org/), и ведению бюджета в нем, потому основная масса ссылок посвящена именно этому вопросу.
+
+* [binhnguyennus/awesome-scalability](https://github.com/binhnguyennus/awesome-scalability) -- 
+The Patterns Behind Scalable, Reliable, and Performant Large-Scale Systems
+* [I Need A Budget](https://memo.barrucadu.co.uk/2018-budget.html)
+* [Three Months of Go (from a Haskeller's perspective)](https://memo.barrucadu.co.uk/three-months-of-go.html)
+* [Бухгалтерия для гика ](https://ledger-ru.github.io/getting-started/) -- сайт с переводами документаций ledger и hledger, плюс дополнительные рекомендации.
+* [Program Your Finances: Envelope Budgeting](https://www.petekeen.net/program-your-finances-envelope-budgeting)
+* [Envelope Budgeting with ledger](https://www.frdmtoplay.com/envelope-budgeting-with-ledger/) -- еще один вариант бюджетирования.
+* [Ledger – virtual postings aka envelopes]http://mbork.pl/2016-07-18_Ledger_%E2%80%93_virtual_postings_aka_envelopes)
+* [Ledger Practices: Separate Your Journals](https://felixcrux.com/blog/ledger-practices-separate-your-journals)
+* [hledger](https://memo.barrucadu.co.uk/hledger.html) -- описание программы от пользователя, есть интересные моменты по началу года.
+* [Notion](https://www.notion.so/) -- Write, plan, collaborate, and get organized. Notion is all you need — in one tool.
+* [Using Ledger for YNAB-like envelope budgeting](https://emacs.cafe/ledger/emacs/ynab/budgeting/2018/06/12/elbank-ynab.html)
+* [pgr0ss/ynab_to_ledger](https://github.com/pgr0ss/ynab_to_ledger) -- Convert a YNAB export to a Ledger journal.
+* [Финансовый учёт в текстовой консоли](https://habr.com/ru/post/308434/)
+* [Why you should never ever use NixOS](https://dev-ops-notes.com/nixos/why-you-should-never-ever-use-nixos/)
+* [Стивен Вольфрам 40 лет структурирует всю информацию о себе и организует жизнь с помощью технологий](https://vc.ru/life/60966-stiven-volfram-40-let-strukturiruet-vsyu-informaciyu-o-sebe-i-organizuet-zhizn-s-pomoshchyu-tehnologiy)
+* [Совет: пишите свои скрипты для гита](https://marinintim.com/2019/git-scripts/)
