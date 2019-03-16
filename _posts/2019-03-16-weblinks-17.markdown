@@ -15,7 +15,7 @@ The Patterns Behind Scalable, Reliable, and Performant Large-Scale Systems
 * [Бухгалтерия для гика ](https://ledger-ru.github.io/getting-started/) -- сайт с переводами документаций ledger и hledger, плюс дополнительные рекомендации.
 * [Program Your Finances: Envelope Budgeting](https://www.petekeen.net/program-your-finances-envelope-budgeting)
 * [Envelope Budgeting with ledger](https://www.frdmtoplay.com/envelope-budgeting-with-ledger/) -- еще один вариант бюджетирования.
-* [Ledger – virtual postings aka envelopes]http://mbork.pl/2016-07-18_Ledger_%E2%80%93_virtual_postings_aka_envelopes)
+* [Ledger – virtual postings aka envelopes](http://mbork.pl/2016-07-18_Ledger_%E2%80%93_virtual_postings_aka_envelopes)
 * [Ledger Practices: Separate Your Journals](https://felixcrux.com/blog/ledger-practices-separate-your-journals)
 * [hledger](https://memo.barrucadu.co.uk/hledger.html) -- описание программы от пользователя, есть интересные моменты по началу года.
 * [Notion](https://www.notion.so/) -- Write, plan, collaborate, and get organized. Notion is all you need — in one tool.
