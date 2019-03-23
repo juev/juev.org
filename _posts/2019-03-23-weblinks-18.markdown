@@ -1,0 +1,26 @@
+---
+layout: post
+title: "Ссылки #18"
+date: 2019-03-23 09:03
+image:
+tags:
+  - links
+---
+За прошедшую неделю сохранил 57 ссылок. Лучшие представляю вам.
+
+* [Phabricator](https://phacility.com/phabricator/) -- целый комплекс программ для организации работы предприятия. Тут и планирование и размещение кода.
+* [What I Wish I Knew When Learning Haskell](http://dev.stephendiehl.com/hask/)
+* [Как получать две пенсии](https://journal.tinkoff.ru/npo/) -- небольшая инструкция по увеличению пенсии. Единственно, что доверять накопление государству или организации я бы не стал. Те суммы, что ожидается накопить можно использовать для того, чтобы потом жить на проценты.
+* [Scraping websites with Haskell](http://taylor.fausak.me/2015/05/21/scraping-websites-with-haskell/) -- описание создания небольшого веб-скраббера на Haskell.
+* [Practical Haskell - Getting Started with Stack](http://seanhess.github.io/2015/08/04/practical-haskell-getting-started.html)
+* [An opinionated guide to Haskell in 2018](https://lexi-lambda.github.io/blog/2018/02/10/an-opinionated-guide-to-haskell-in-2018/)
+* [Github Markdown](https://developer.github.com/v3/markdown/) -- Github представил Rest api для работы с Markdown. Есть ограничения на число запросов, но в целом довольно интересно.
+* [Ultralisp](https://ultralisp.org/) -- пакетный менеджер для Common Lisp от [Alexander Artemenko](https://github.com/svetlyak40wt), последнее изменение добавило массу пакетов и дало возможность легко добавлять новые.
+* [Nomad by HashiCorp](https://www.nomadproject.io/index.html) -- Easily Deploy Applications at Any Scale.
+* [Higher-order Type-level Programming in Haskell](https://www.microsoft.com/en-us/research/uploads/prod/2019/03/ho-haskell-5c8bb4918a4de.pdf) -- про Haskell от Microsoft.
+* [Extending Haskell's Syntax!](https://mmhaskell.com/blog/2019/3/4/extending-haskells-syntax)
+* [My Hammerspoon Configuration, With Commentary](https://zzamboni.org/post/my-hammerspoon-configuration-with-commentary/) -- наткнулся на [Hammerspoon](https://zzamboni.org/post/my-hammerspoon-configuration-with-commentary/), и статья посвящена описанию ряда скриптов для него.
+* [Integration Testing in Go: Part I - Executing Tests with Docker](https://www.ardanlabs.com/blog/2019/03/integration-testing-in-go-executing-tests-with-docker.html)
+* [YukiOhtsuka/dotfiles](https://github.com/YukiOhtsuka/dotfiles) -- из данного репозитория взял довольно много идей для своей конфигурации [juev/emacs.d](https://github.com/juev/emacs.d).
+
+Хорошей вам недели!
