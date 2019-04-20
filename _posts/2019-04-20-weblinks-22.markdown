@@ -1,0 +1,20 @@
+---
+layout: post
+title: "Ссылки #22"
+date: 2019-04-20 09:39
+image:
+tags:
+  - links
+  - golang
+---
+За прошедшую неделю сохранил всего 45 ссылок. Многие ссылки это отголоски прошедшего #GopherConRu. Но как обычно, лучшие находки представляю вам.
+
+* [Как я выбираю дивидендные акции](https://journal.tinkoff.ru/choose-dividend/) -- со своим экономическим образованием я редко обращаюсь к статьям с рекомендациями вложений? Но здесь все очень хорошо расписали. На дивиденты я обычно не обращал внимания. И судя по всему зря.
+* [Playing with Go module proxies](https://roberto.selbach.ca/go-proxies/) -- Новая технология, позволяющая стабилизировать сборки Go-проектов в рамках предприятия. Но именно она приводит к тому, что у разработчика модуля будет один результат, а у вас на предприятии совершенно другой. И все потому, что proxy закеширует строго определенный результат.
+* [Security Checklist for a Go Developer](https://docs.google.com/presentation/d/1adnt86KFEA-XEU7GW3YpwoFT3gn7BPR3tNyWbuEuqZ8/edit#slide=id.g55d67c64c2_0_96) -- презентация Елены Граховац на прошедшей конференции. Выступление посвящено вопросам безопасности разрабатываемых программ.
+* [golangci/golangci-lint](https://github.com/golangci/golangci-lint) -- металинтер Go, использующий массу других линтеров для проверки программного кода.
+* [stamblerre/gocode](https://github.com/stamblerre/gocode) -- форк gocode от Rebecca Stambler. С поддержкой модулей и всего нового. Пробовал в работе, но оказался недоволен производительностью в Emacs. Плюс возникли сложности в работе. В результате мигрировал на [emacs-lsp/lsp-mode](https://github.com/emacs-lsp/lsp-mode) в связке с [gopls](https://github.com/golang/go/wiki/gopls), новой утилиты от разработчиков Go для использования language server.
+* [An Overview of Go's Tooling](https://www.alexedwards.net/blog/an-overview-of-go-tooling)
+* [Alikhll/golang-developer-roadmap](https://github.com/Alikhll/golang-developer-roadmap)
+
+Хорошей вам недели!
