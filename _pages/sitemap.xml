@@ -16,7 +16,7 @@ reference: www.juev.org
         <priority>0.8</priority>
     </url>
     <url>
-        <loc>https://{{ page.reference }}/recommendations/</loc>
+        <loc>https://{{ page.reference }}/recommendations.html</loc>
         <lastmod>{{ site.time | date_to_xmlschema }}</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.8</priority>
