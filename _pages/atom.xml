@@ -3,26 +3,25 @@ permalink: /atom.xml
 ---
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-
- <title>{{ site.title }}</title>
- <link href="{{site.url}}/atom.xml" rel="self" />
- <link href="{{site.url}}/" />
- <updated>{{ site.posts.first.date | date_to_xmlschema }}</updated>
+ <generator uri="https://jekyllrb.com/" version="{{ jekyll.version }}">Jekyll</generator>
+ <link href="{{ page.url | absolute_url }}" rel="self" type="application/atom+xml" />
+ <link href="{{site.url}}/" rel="alternate" type="text/html" />
+ <updated>{{ site.time | date_to_xmlschema }}</updated>
  <id>{{site.url}}/</id>
+ <title>{{ site.title }}</title>
  <author>
    <name>Denis Evsyukov</name>
    <email>denis@evsyukov.org</email>
- </author>
-
- {% for post in site.posts limit:6 %}
+   <uri>http://denis.evsyukov.org</uri>
+ </author>{% for post in site.posts limit:6 %}
  <entry>
    <title>{{ post.title }}</title>
    <link rel="alternate" href="{{site.url}}{{ post.url }}"/>
-   <updated>{{ post.date | date_to_xmlschema }}</updated>
-   <id>{{site.url}}{{ post.url }}</id>
+   <published>{{ post.date | date_to_xmlschema }}</published>
+   <updated>{{ post.last_modified_at | default: post.date | date_to_xmlschema }}</updated>
+   <id>{{ post.id | absolute_url | xml_escape }}</id>{% for tag in post.tags %}
+   <category term="{{ tag | xml_escape }}" />{% endfor %}
    <content type="html">{{ post.content | xml_escape }}
        &lt;p&gt;Читайте оригинал на странице: &lt;a href=&quot;{{site.url}}{{ post.url }}&quot; alt=&quot;{{ post.title }}&quot;&gt;{{ post.title }}&lt;/a&gt; ({{ site.title }})&lt;/p&gt;</content>
- </entry>
- {% endfor %}
-
+ </entry>{% endfor %}
 </feed>
