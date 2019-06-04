@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Hammerspoon -- запуск программ и не только"
+title: "Hammerspoon — запуск программ и не только"
 date: 2019-06-04 20:52
 image:
 tags:
