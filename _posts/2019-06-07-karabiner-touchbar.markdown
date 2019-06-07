@@ -13,6 +13,6 @@ MacBook Pro у меня уже больше года, когда выбирал,
 
 Тачбар распознается как отдельное устройство. И в настройках Karabiner нужно включить все устройства. По умолчанию "No product name" устройство выключено.
 
-![karabiner](https://static.juev.org/2019/06/karabiner.png "Karabiner")
+[![karabiner](https://static.juev.org/2019/06/karabiner.png "Karabiner")](https://static.juev.org/2019/06/karabiner.png "karabiner")
 
 После включения начинают работать и комбинации с функциональными клавишами.
