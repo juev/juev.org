@@ -1,0 +1,20 @@
+---
+layout: post
+title: "Ссылки #31"
+date: 2019-06-22 07:46
+image:
+tags:
+  - links
+---
+За прошедшую неделю сохранил всего 42 ссылки. Как обычно, лучшие находки представляю вам.
+
+* [HAProxy 2.0 and Beyond](https://www.haproxy.com/blog/haproxy-2-0-and-beyond/) -- представлена новая версия HAProxy
+* [Orgzly: An Interview](https://joshrollinswrites.com/help-desk-head-desk/orgzly-neven-interview/) -- интервью с создателем Orgzly, андроид приложения для работы с файлами org-mode.
+* [Tarballs, the ultimate container image format](https://www.gnu.org/software/guix/blog/2018/tarballs-the-ultimate-container-image-format/) -- описание формата контейнеров, используемых в операционной системе Guix.
+* [The Hub](https://joshrollinswrites.com/help-desk-head-desk/raspberry_pi_org_hub/) -- про использование Raspberry Pi и Syncthing для синхронизации файлов между устройствами.
+* [Simple techniques to optimise Go programs](https://stephen.sh/posts/quick-go-performance-improvements) -- про оптимизацию Go-программ.
+* [Comparing the Same Project in Rust, Haskell, C++, Python, Scala and OCaml](http://thume.ca/2019/04/29/comparing-compilers-in-rust-haskell-c-and-python/) -- сравнение нескольких языков программирования.
+
+И отдельно хотел бы выделить статью Олега Сердюкова [The End](https://ctrld.me/blog/2019/06/20/the-end/), в которой он описал причины закрытия своего блога.
+
+Хорошей вам недели!
