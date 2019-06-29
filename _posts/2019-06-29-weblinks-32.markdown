@@ -1,0 +1,18 @@
+---
+layout: post
+title: "Ссылки #32"
+date: 2019-06-29 08:58
+image:
+tags:
+  - links
+---
+На этой неделе сохранил только 16 ссылок. Дело в том, что сейчас отдыхаю в отпуске и до интернета добираюсь крайне редко. 
+
+Лучшие ссылки, по традиции представляю вам. 
+
+* [Securing Your Client-Server or Multi-Tier Application](https://www.secureblackbox.com/kb/articles/Securing-client-server-app.rst) -- рассматривают различные варианты безопасности в приложениях
+* [Трехуровневые бэкапы. Как я сделал надежную систему резервного копирования своего Mac](https://macosworld.ru/backup-strategy-for-mac/) -- Влад рассказывает про свою систему резервного копирования. Как по мне она избыточная. Но интересно.
+* [Goodbye, Chrome: Google’s web browser has become spy software](https://www.washingtonpost.com/technology/2019/06/21/google-chrome-has-become-surveillance-software-its-time-switch/) -- пользуетесь Google Chrome? Почитайте статью вашингтонпост про то, насколько он адекватен.
+* [10 Serverless security best practices](https://snyk.io/blog/10-serverless-security-best-practices/) -- и снова про безопасность. На этот раз безсерверных приложений. 
+
+Хорошей вам недели!
