@@ -1,0 +1,20 @@
+---
+layout: post
+title: "Ссылки #33"
+date: 2019-07-06 09:50
+image:
+tags:
+  - links
+---
+Отпуск подходит к своему завершению, и за текущую неделю сохранил 52 ссылки. Лучшие представляю вашему вниманию.
+
+* [Encoding Data with the Go Binary Package](https://medium.com/learning-the-go-programming-language/encoding-data-with-the-go-binary-package-42c7c0eb3e73) -- кодирование в Go
+* [How to start learning cryptography](https://medium.com/@vixentael/how-to-start-learning-cryptography-49e7d91b54a8) -- список ресурсов для изучения криптографии
+* [Pock](https://pock.dev/) -- бесплатная программа для вынесения Dock в Macbook Touchbar. Простенькая альтернатива BetterTouchTool
+* [My personal journey from MIT to GPL](https://drewdevault.com/2019/06/13/My-journey-from-MIT-to-GPL.html) -- немного про лицензирование свободного программного обеспечения
+* [Cramming a gaming GPU into your MacBook Pro](https://justin.searls.co/posts/gaming-with-a-mac-plus-egpu/) -- использование внешней видеокарты для игр на MacOS
+* [TLS performance: rustls versus OpenSSL](https://jbp.io/2019/07/01/rustls-vs-openssl-performance.html) -- OpenSSL переписали на Rust, и получили прирост скорости работы
+* [Brave Improves Its Ad-Blocker Performance by 69x with New Engine Implementation in Rust](https://brave.com/improved-ad-blocker-performance/) -- Brave использовали Rust для реализации своего Adblock и получили 69-кратный прирост скорости обработки
+* [How to write idempotent Bash scripts · Fatih Arslan](https://arslan.io/2019/07/03/how-to-write-idempotent-bash-scripts/) -- пособие от Фатиха по написанию идемпотентных bash-скриптов.
+
+Хорошей вам недели!
