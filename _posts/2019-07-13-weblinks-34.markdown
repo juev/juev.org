@@ -1,0 +1,20 @@
+---
+layout: post
+title: "weblinks 34"
+date: 2019-07-13 16:54
+image:
+tags:
+  - links
+---
+За текущую неделю сохранил 53 ссылки, лучшие по традиции представляю вам.
+
+* [Web Scraping With Rust](https://kadekillary.work/post/webscraping-rust/) -- про парсинг веб-страниц в Rust
+* [From python to Go to Rust: an opinionated journey](https://tech.allo-media.net/point/of/view/2018/03/22/from-python-to-go-to-rust.html) -- переход с Python на Rust и что он дал
+* [Why I Stopped Using Multiple Monitors](https://hackernoon.com/why-i-stopped-using-multiple-monitors-bfd87efa2e5b) -- про отказ от использования нескольких мониторов
+* [Functional Programming Jargon in Rust](https://functional.works-hub.com/learn/functional-programming-jargon-in-rust-1b555) -- использование различных понятий функионального программирования в Rust
+* [Programming Your Hands](https://blog.codinghorror.com/programming-your-hands/) -- игрушки для снятия напряжения с рук
+* [Еще один способ оптимизации docker-образов для Java приложений](https://habr.com/ru/post/458260/) -- еще один способ создания docker-образов. Есть интересные мысли
+* [Go compiler internals: adding a new statement to Go - Part 1](https://eli.thegreenplace.net/2019/go-compiler-internals-adding-a-new-statement-to-go-part-1/) -- написание компилятора на Go
+* [Haskell - An Experience Summary](https://holmusk.dev/blog/2019-03-29-experience-summary.html) -- немного про Haskell
+
+Хорошей вам недели!
