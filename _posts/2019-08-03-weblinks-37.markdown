@@ -1,0 +1,21 @@
+---
+layout: post
+title: "Ссылки #37"
+date: 2019-08-03 08:41
+image:
+tags:
+  - links
+---
+
+37 неделя, как я начал публиковать интересные находки из сети. А это уже более 9 месяцев. Время летит...
+
+На прошедшей неделе нашел 79 ссылок, лучшие из которых представляю вам.
+
+* [Haskell в реальном мире](https://habr.com/ru/post/129235/) -- описание разработки программы на Haskell. Статья 2011 года, но интересна до сих пор.
+* [Why we fight for crypto](https://blog.erratasec.com/2019/07/why-we-fight-for-crypto.html)
+* [gdb Debugging Full Example (Tutorial): ncurses](http://www.brendangregg.com/blog/2016-08-09/gdb-example-ncurses.html)
+* [Using “replace” in go.mod to point to your local module](https://thewebivore.com/using-replace-in-go-mod-to-point-to-your-local-module/) -- переопределение модулей в Go.
+* [Nix and NixOS: first impressions](https://ian.pw/posts/2019-07-19-nix-nixos-first-impressions.html)
+* [Как приоритеты pod'ов в Kubernetes стали причиной простоя в Grafana Labs](https://habr.com/ru/company/flant/blog/461807/) -- это было красиво
+
+Хорошей вам недели!
