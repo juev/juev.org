@@ -1,0 +1,31 @@
+---
+layout: post
+title: "Ссылки #39"
+date: 2019-08-17 11:16
+image:
+tags:
+  - links
+---
+Наступила суббота 39 недели, с момента, как решил публиковать ссылки, которые
+меня заинтересовали. И стал волновать меня вопрос, а нужно ли это кому-то кроме
+меня самого? Дайте пожалуйста обратную связь в твиттере, напишите в
+[twitter.com/juev](https://twitter.com/juev) свое мнение. Читаете ли вы ссылки?
+
+В течение этой недели сохранил только 47 ссылок.
+
+* [Writing a Microservice in
+  Rust](http://www.goldsborough.me/rust/web/tutorial/2018/01/20/17-01-11-writing_a_microservice_in_rust/)
+  -- хороший гайд по написанию микросервиса на Rust.
+* [rust-embedded/cross](https://github.com/rust-embedded/cross) -- пакет по
+  организации кросс-компиляции на Rust, требует Docker и работает пока только в
+  Linux.
+* [muesli/gitomatic](https://github.com/muesli/gitomatic) -- Turn a MacBook into
+  a Touchscreen with $1 of Hardware.
+* [Paged Out!](https://pagedout.institute/) -- новый IT-журнал с совершенно
+  разными статьями, размер которых не превышает одной страницы.
+* [myitcv/govim](https://github.com/myitcv/govim/) -- новый vim-плагин для
+  работы с Golang. Как альтернатива vim-go.
+* [lizhuohua/linux-kernel-module-rust](https://github.com/lizhuohua/linux-kernel-module-rust)
+  -- пример написания модулей Linux Kernel на Rust.
+
+Хорошей вам недели!
