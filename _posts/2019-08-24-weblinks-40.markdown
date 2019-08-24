@@ -1,0 +1,32 @@
+---
+layout: post
+title: "Ссылки #40"
+date: 2019-08-24 12:36
+image:
+tags:
+  - links
+---
+За прошедшую неделю сохранил в свой список отложенного чтения 71 ссылок. Своеобразный рекорд. Ранее максимум выходило
+порядка 60 ссылок. А в среднем и того меньше. Продуктивная неделя в плане находок.
+
+* [Is Rust functional?.](https://www.fpcomplete.com/blog/2018/10/is-rust-functional) -- Rust не функциональный
+  изначально, но его можно использовать в этой парадигме.
+* [jhawthorn/fzy](https://github.com/jhawthorn/fzy) -- альтернатива fzf написанная на C, использующая иной алгоритм
+  представления результата. В итоге очень интересное решение!
+* [Recommended production
+  settings](https://docs.datastax.com/en/dse/5.1/dse-dev/datastax_enterprise/config/configRecommendedSettings.html) --
+  немного про настройки серверов в продакшен окружении. Некоторые рекомендации по получению безопасного и эффективного
+  сервера.
+* [Причины, по которым мне нравится Haskell](https://eax.me/why-haskell/) -- без коментариев. Хочу только отметить, что
+  в последнее время крайне скептически отношусь к языкам, которые предусматривают автоматическое управление памятью.
+* [Haskell: Build Tools](https://kowainik.github.io/posts/2018-06-21-haskell-build-tools) -- статья про используемые
+  билд-системы для Haskell. Рассматриваются cabal и stack.
+* [Speeding up Go Modules for Docker and CI — Martian
+  Chronicles](https://evilmartians.com/chronicles/speeding-up-go-modules-for-docker-and-ci) -- ускорение сборки проекта
+  при использовании CI.
+* [Five life-changing git aliases](https://medium.com/the-lazy-developer/five-life-changing-git-aliases-e4211c090017) --
+  взял на вооружение рекомендации. Ранее были определены некоторые алиасы, но почти не использовал. Теперь же перешел на
+  представленные алисы, пока нравится.
+* [Y2Z/monolith](https://github.com/Y2Z/monolith) -- Unlike conventional "Save page as…", monolith not only saves the target document, it embeds CSS, image, and JavaScript assets all at once, producing a single HTML5 document that is a joy to store and share.
+
+Хорошей вам недели!
