@@ -6,6 +6,7 @@ layout: compress
     You can email me with PGP-key: 0xE8ADA1A55B3CA4EA
 -->
 <html lang="ru">
+
 <head>
   <link rel="dns-prefetch" href="https://static.juev.org">
   <meta charset="utf-8">{% if page.title %}
@@ -22,13 +23,15 @@ layout: compress
   <link rel="shortcut icon" href="https://static.juev.org/favicon.ico">
   <link rel="apple-touch-icon" href="{{- site.url -}}/apple-touch-icon.png">
   <link rel="alternate" type="application/atom+xml" title="ATOM Feed" href="https://www.juev.org/atom.xml">
-  <link rel="stylesheet" type="text/css" href="https://www.juev.org/css/master.css">{% if page.grouptype != "index" %}{% if page.previous %}
+  <link rel="stylesheet" type="text/css" href="https://static.juev.org/css/master.css">
+  {% if page.grouptype != "index" %}{% if page.previous %}
   <link rel="prev" href="{{- site.url -}}{{- page.previous.url -}}">{% endif %}{% if page.next %}
   <link rel="next" href="{{- site.url -}}{{- page.next.url -}}">{% endif %}
   <!-- og:meta -->
   <meta content="{{- page.title -}}" property="og:title">
   <meta content="{{- site.url -}}{{- page.url -}}" property="og:url">
-  <meta content="{{- page.date | date_to_xmlschema -}}" property="article:published_time">{% if page.tags %}{% for tag in page.tags %}
+  <meta content="{{- page.date | date_to_xmlschema -}}" property="article:published_time">
+  {% if page.tags %}{% for tag in page.tags %}
   <meta content="{{- tag -}}" property="article:tag">{% endfor %}{% endif %}
   <meta content="{{- page.image -}}" property="og:image">
   <meta content="https://denis.evsyukov.org" property="article:author">
@@ -40,10 +43,11 @@ layout: compress
   <meta content="{{- page.image -}}" property="twitter:image:src">
   <!-- end twitter card -->{% endif %}
 </head>
+
 <body class="wide">
   <div class="navigation">
     <div class="width-fix">
-        <a href="{{- site.url -}}/" id="home" rel="nofollow"></a>
+      <a href="{{- site.url -}}/" id="home" rel="nofollow"></a>
       <ul>
         <li><a href="{{- site.url -}}/articles.html" rel="nofollow">Статьи</a></li>
         <li>|</li>
@@ -58,20 +62,19 @@ layout: compress
   </div><!-- noindex -->
   <div class="footer">
     <div class="width-fix">
-      <p><a href="{{- site.url -}}/articles.html" rel="nofollow">Список статей</a> :: <a href="{{- site.url -}}/recommendations.html" rel="nofollow">Рекомендации</a> :: <a href="{{- site.url -}}/atom.xml" rel="nofollow">RSS</a></p>
-      <p>&copy;&nbsp;<a href="https://denis.evsyukov.org">Denis Evsyukov</a>,&nbsp;2008&ndash;{{- site.time | date: "%Y" -}}&nbsp;Contact me via <script type="text/javascript">document.write("<n uers=\"znvygb:qravf\100riflhxbi\056bet\">Rznvy</n>".replace(/[a-zA-Z]/g,function(c){return String.fromCharCode((c<="Z"?90:122)>=(c=c.charCodeAt(0)+13)?c:c-26);}));</script>,&nbsp;
-      <a href="https://twitter.com/#!/Juev" rel="nofollow">twitter</a> or&nbsp;
-      <a href="https://github.com/Juev" rel="nofollow">github</a></p>
+      <p><a href="{{- site.url -}}/articles.html" rel="nofollow">Список статей</a> :: <a
+          href="{{- site.url -}}/recommendations.html" rel="nofollow">Рекомендации</a> :: <a
+          href="{{- site.url -}}/atom.xml" rel="nofollow">RSS</a></p>
+      <p>&copy;&nbsp;<a href="https://denis.evsyukov.org">Denis
+          Evsyukov</a>,&nbsp;2008&ndash;{{- site.time | date: "%Y" -}}&nbsp;Contact me via
+        <script
+          type="text/javascript">document.write("<n uers=\"znvygb:qravf\100riflhxbi\056bet\">Rznvy</n>".replace(/[a-zA-Z]/g, function (c) { return String.fromCharCode((c <= "Z" ? 90 : 122) >= (c = c.charCodeAt(0) + 13) ? c : c - 26); }));</script>
+        ,&nbsp;
+        <a href="https://twitter.com/#!/Juev" rel="nofollow">twitter</a> or&nbsp;
+        <a href="https://github.com/Juev" rel="nofollow">github</a></p>
     </div>
   </div>
   <script async src="https://static.juev.org/assets/js/master.a08e4d4f.js"></script>
-  <script>
-    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-    ga('create', 'UA-26480484-5', 'auto');
-    ga('send', 'pageview');
-  </script>
 </body>
+
 </html>
