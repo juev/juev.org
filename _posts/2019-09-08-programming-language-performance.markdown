@@ -152,13 +152,13 @@ sys	0m2.253s
 Довольно быстро он предоставил рабочее решение:
 
 ```lisp
-(defun test3 ()
-  (let ((num-elements 40000000))
-    (loop with hash = (make-hash-table :size num-elements :test 'eql)
-          for i from 0 below num-elements
-          do (setf (gethash i hash)
-                   i)
-          finally (gethash 0 hash))))
+(defun test ()
+  (loop with num-elements = 40000000
+        with hash = (make-hash-table :size num-elements)
+        for i from 0 below num-elements
+        do (setf (gethash i hash)
+                 i)
+        finally (gethash 0 hash)))
 ```
 
 Запускал через repl sbcl, при этом нужно было дополнительно задавать размер памяти, в противном случае получали ошибку переполнения:
@@ -170,17 +170,17 @@ rlwrap ros dynamic-space-size=8000 run
 Определяем функцию и затем запускаем ее:
 
 ```lisp
-* (time (test3))
+* (time (test))
 Evaluation took:
-  6.934 seconds of real time
-  6.678118 seconds of total run time (5.276031 user, 1.402087 system)
-  [ Run times consist of 0.986 seconds GC time, and 5.693 seconds non-GC time. ]
-  96.31% CPU
-  21,469,042,917 processor cycles
-  4,009,755,488 bytes consed
+  5.863 seconds of real time
+  5.721497 seconds of total run time (4.532341 user, 1.189156 system)
+  [ Run times consist of 1.030 seconds GC time, and 4.692 seconds non-GC time. ]
+  97.58% CPU
+  18,151,994,613 processor cycles
+  4,009,778,800 bytes consed
 ```
 
-Итого, без учета времени инициализации sbcl на выполнение ушло чуть менее 7 секунд. В два раза быстрее решения на Haskell и чуть быстрее решения на Rust.
+Итого, без учета времени инициализации sbcl на выполнение ушло чуть менее 6 секунд. В два раза быстрее решения на Haskell и чуть быстрее решения на Rust.
 
 -- End Update --
 
