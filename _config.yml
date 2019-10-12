@@ -9,7 +9,7 @@ incremental: false
 timezone: Europe/Moscow
 
 root: /
-destination: public
+destination: _site
 highlighter: none
 
 kramdown:
