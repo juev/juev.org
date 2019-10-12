@@ -36,12 +36,12 @@ sass:
   style: compressed
   sass_dir: _assets/scss
 
-plugins:
-  - jekyll-relative-links
+# plugins:
+#   - jekyll-relative-links
 
-relative_links:
-  enabled: true
-  collections: false
+# relative_links:
+#   enabled: true
+#   collections: false
 
 author:
   twitter: Juev
