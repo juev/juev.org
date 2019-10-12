@@ -112,3 +112,5 @@ compress_html:
   comments: ["<!-- ", " -->"]
   ignore:
 envs: development
+
+fake: false
