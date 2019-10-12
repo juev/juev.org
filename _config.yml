@@ -10,11 +10,11 @@ timezone: Europe/Moscow
 
 root: /
 destination: public
-highlighter: rouge
+highlighter: none
 
 kramdown:
-  input: GFM
-  syntax_highlighter: rouge
+  syntax_highlighter_opts:
+    disable: true
 
 title: "Denis Evsyukov"
 description: "Описание опыта использования различных программ и веб-сервисов. Личные рекомендации и критика."
