@@ -1,14 +1,14 @@
 ---
-url:         https://www.juev.org
-future:      false
-lsi:         false
-markdown:    kramdown
-permalink:   pretty
+url: https://www.juev.org
+future: false
+lsi: false
+markdown: kramdown
+permalink: pretty
 incremental: false
 
 timezone: Europe/Moscow
 
-root:        /
+root: /
 destination: public
 highlighter: rouge
 
@@ -40,7 +40,7 @@ plugins:
   - jekyll-relative-links
 
 relative_links:
-  enabled:     true
+  enabled: true
   collections: false
 
 author:
