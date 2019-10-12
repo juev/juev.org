@@ -9,7 +9,7 @@ incremental: false
 timezone: Europe/Moscow
 
 root: /
-destination: _site
+destination: public
 highlighter: none
 
 kramdown:
@@ -112,5 +112,3 @@ compress_html:
   comments: ["<!-- ", " -->"]
   ignore:
 envs: development
-
-fake: false
