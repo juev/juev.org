@@ -1,0 +1,19 @@
+---
+layout: post
+title: "Ссылки #48"
+date: 2019-10-19 09:47
+image:
+tags:
+  - links
+---
+Всю неделю занимался миграцией своего сайта с Jekyll на Hugo. Более подробно сам процесс опишу в отдельной статье. А пока переходим к интересным находкам недели.
+
+За прошедшую неделю сохранил только 36 ссылок, большая часть которых была посвящена Hugo.
+
+* [Manage Go tools via Go modules](https://marcofranssen.nl/manage-go-tools-via-go-modules/) -- описание использования Go модулей
+* [Sudo Flaw Lets Linux Users Run Commands As Root Even When They're Restricted](https://thehackernews.com/2019/10/linux-sudo-run-as-root-flaw.html) -- неожиданно, но и такие пасхалки встречаются в Linux
+* [My wonderful world of iOS](https://github.com/nikitavoloboev/my-ios) -- список используемых программ от Никиты Волобоева, там же есть ссылка на список MacOS программ
+* [Free for developers](https://free-for.dev/#/) -- список бесплатных ресурсов для разработчиков
+* [My favourite Git commit](https://fatbusinessman.com/2019/my-favourite-git-commit) -- без комментариев :)
+
+Хорошей вам недели!
