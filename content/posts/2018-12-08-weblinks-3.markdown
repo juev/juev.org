@@ -1,0 +1,18 @@
+---
+title: "Ссылки #3"
+date: "2018-12-08T10:10:00+0300"
+tags:
+  - links
+---
+Находки начала декабря:
+
+* [Not Lisp again....](https://funcall.blogspot.com/2009/03/not-lisp-again.html) Представление о языке программирования Lisp.
+* [Как читать книги бесплатно и легально](https://lifehacker.ru/chitat-knigi-besplatno/) Список ссылок на магазины и библиотеки, где можно бесплатно найти электронные книги. Сам давно уже записан в библиотеке, и читательский билет использую в аккаунте Litres. Не все книги доступны, но большинство.
+* [Attack of the 5,000-line vimrc](https://vimways.org/2018/from-vimrc-to-vim/) Организация конфигурации VIM, много интересного вынес из статьи, планирую реализовывать некоторые решения в своей конфигурации.
+* [Deploy a C++ web app on Heroku using Docker and Nix](https://nokomprendo.frama.io/tuto_fonctionnel/posts/tuto_fonctionnel_30/2018-11-08-README.html) Интересное описание использования nix для сборки Docker-контейнеров.
+* [Packages in Common Lisp, a tutorial](https://www-fourier.ujf-grenoble.fr/~sergerar/Papers/Packaging.pdf) [pdf] Эссе про использование пакаджей в лиспе.
+* [Магия SSH](https://habr.com/post/331348/) Возникла необходимость в организации SSH-тунеля, статья оказалась прекрасным подспорьем.
+* [Как откалибровать батарею MacBook](https://macosworld.ru/macbook-battery-calibration/) Влад Гороховский как всегда пишет прекрасные статьи про программное обеспечение для MacOS и iOS. На этот раз представил решение для калибровки батареи макбука.
+* [GopherCon Russia 2019, Москва](https://www.gophercon-russia.ru) Открылась продажа билетов на конференцию по языку программирования Go в 2019 году. Посетил в прошлом году, очень понравилось. Если есть возможность, сходите.
+* [An Impression of Common Lisp](https://terranostra.one/posts/An-Impression-of-Common-Lisp.html) Еще одно описание языка программирования Common Lisp. Обратил внимание на то, что есть масса статей описаний того, почему Lisp так хорош для программирования, но очень мало (почти нет) статей про практическое его использование и описание возникающих проблемм.
+* [How do you normally use a program once written?](https://www.reddit.com/r/Common_Lisp/comments/a3r4hb/how_do_you_normally_use_a_program_once_written/) Reddit-тред с вопросом про использование программ, написанных на Lisp.

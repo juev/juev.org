@@ -1,0 +1,53 @@
+---
+title: "Создание сайтов с помощью Emacs"
+date: "2010-10-16T00:00:00+0400"
+tags:
+  - emacs
+keywords: emacs,orgmode,org-mode
+---
+Режим <b>Org-Mode</b> в среде emacs может использоваться в целом ряде задач. Таких как ведение списков дел, организация личного времени и подготовка публикаций в различных форматах.
+
+Причем файлы в формате <b>.org</b> могут быть использованы на устройствах iPhone/iPod
+Touch/iPad, с помощью приложения <a href="http://mobileorg.ncogni.to/" rel="nofollow">MobileOrg</a>, а так же на аппаратах платформы Android с помощью приложения <a href="http://wiki.github.com/matburt/mobileorg-android/" rel="nofollow">MobileOrg-Andriod</a>. 
+
+А сейчас давайте рассмотрим, как можно использовать режим Org-Mode для создания небольшого сайта?
+
+Более подробно об org-mode можно узнать на официальной странице <a href="http://orgmode.org/" rel="nofollow">orgmode.org</a>. Где функционирует сообщество <a href="http://orgmode.org/worg/" rel="nofollow">worg</a>, и сам сайт создан используя режим <b>org-mode</b>.
+
+<a href="https://static.juev.org/2010/10/org-mode.png"><img src="https://static.juev.org/2010/10/org-mode-300x227.png" alt="" title="org-mode" width="300" height="227" class="aligncenter size-medium wp-image-1234" /></a>
+ 
+И то, что получается в итоге:
+
+<a href="https://static.juev.org/2010/10/org-mode-Chromium.png"><img src="https://static.juev.org/2010/10/org-mode-Chromium-300x228.png" alt="" title="org-mode-Chromium" width="300" height="228" class="aligncenter size-medium wp-image-1235" /></a>
+ 
+Синтаксис текстовых файлов похож на тот, что используется в языке разметки <a href="http://ru.wikipedia.org/wiki/Markdown" rel="nofollow">MarkDown</a>. И при этом написание очень сильно упрощается в виду использования горячих клавиш.
+ 
+После написания статьи достаточно ее опубликовать, для этого используются комбинации клавиш <code>С-c e</code> и затем выбор клавиши, в зависимости от того, какой формат файла мы хотим использовать. Для публикации в html используется клавиша <b>h</b>, а для того, чтобы опубликовать в html и открыть в браузере <b>b</b>.
+ 
+ 
+Для того, чтобы указать специальные параметры публикации, например, использование конкретного стилевого файла,
+необходимо в начале файла прописывать блок, типа этого:
+ 
+    #+TITLE:     Безопасность VPS
+    #+AUTHOR:    Евсюков Денис
+    #+EMAIL:     juev@matrix
+    #+DATE:      2010-10-09 Сбт
+    #+DESCRIPTION: 
+    #+KEYWORDS: 
+    #+LANGUAGE:  ru
+    #+OPTIONS:   H:2 num:t toc:t \n:nil @:t ::t |:t ^:t -:t f:t *:t &lt;:t
+    #+OPTIONS:   TeX:nil LaTeX:nil skip:nil d:nil todo:t pri:nil tags:not-in-toc
+    #+EXPORT_SELECT_TAGS: export
+    #+EXPORT_EXCLUDE_TAGS: noexport
+    #+LINK_UP:   
+    #+LINK_HOME: 
+    #+XSLT: 
+    #+STYLE: &lt;link rel="stylesheet" type="text/css" href="worg.css" /&gt;
+
+В приведенном примере указано далеко не все, что может быть передано транслятору. За подробностями обращайтесь к
+официальной документации.
+
+Помимо этого <b>org-mode</b> имеет возможность создания страниц, использующих для отображения java-script. Пример такой страницы можно посмотреть в <a href="http://orgmode.org/worg/org-faq.php" rel="nofollow">FAQ Org-Mode</a>.
+ 
+Не хватает только использования более расширенного оформления, и наличия на странице сайта заголовка, футера&hellip; Но это можно реализовать уже с помощью другого расширения emacs, которое называется <b>muse</b>. О нем поговорим в другой раз.
+ 

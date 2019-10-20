@@ -1,0 +1,18 @@
+---
+title: "Ссылки #24"
+date: "2019-05-04T19:37:00+0300"
+tags:
+  - links
+  - emacs
+  - vim
+---
+Вечер субботы. Возвращаюсь из поездки в село Вятское. Масса впечатлений и эмоций.
+
+Прошедшая неделя была менее активной, чем обычно, сохранил всего 44 ссылки. 
+
+* [Research Literature Management with Emacs](https://www.anand-iyer.com/blog/2017/research-literature-management-with-emacs.html) -- использование org-mode для ведения библиографии
+* [Как найти работу программистом в Калифорнии](https://journal.tinkoff.ru/dream-job-california/)
+* [A small hack for my daily plan](https://koenig-haunstetten.de/2017/10/29/a-small-hack-for-my-daily-plan/) -- про использование темплейтов в org-mode для планирования дня. Для меня избыточно, но идея интересная
+* [How I'm able to take notes in mathematics lectures using LaTeX and Vim](https://castel.dev/post/lecture-notes-1/) -- статья про подготовку лекций с использованием Vim и LaTeX
+
+Хорошей вам недели!

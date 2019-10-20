@@ -1,0 +1,16 @@
+{{ define "title" }}
+{{ .Title }} &ndash; {{ .Site.Title }}
+{{ end }}
+
+{{ define "main" }}
+<div class="archives">
+    {{ range .Pages.GroupByDate "January 2006" }}
+    <h3>{{ .Key }}</h3>
+    {{ range .Pages }}
+    <div class="list"><a href="{{ .Permalink }}">{{ .Title }}</a></h4>
+    </div>
+    {{ end }}
+    {{- end }}
+</div>
+<div class="clear"></div>
+{{ end }}

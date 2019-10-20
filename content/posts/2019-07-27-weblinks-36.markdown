@@ -1,0 +1,15 @@
+---
+title: "Ссылки #36"
+date: "2019-07-27T10:25:00+0300"
+tags:
+  - links
+---
+За прошедшую неделю сохранил в своем Pocket 59 ссылок. Неделя ознаменовалась новыми открытиями и новыми разочарованиями.
+
+* [Sharpening Our Claws: Teaching Privacy Badger to Fight More Third-Party Trackers](https://www.eff.org/deeplinks/2019/07/sharpening-our-claws-teaching-privacy-badger-fight-more-third-party-trackers) -- EFF выпустили новую версию своего блокировщика треккеров [Privacy Badger](https://www.eff.org/privacybadger). Ранее уже использовал его в своих браузерах, но не понимал, почему тот же google analytics не болкировался. И вот, в этой версии они этот момент поправили и блокировка стала работать более качественно. В отличие от остальных блокировщиков рекламы, тут нет списков. Privacy Badger самообучаемый. И что? Он снова поселился в моем окружении.
+* [Running Lisp in Production](https://tech.grammarly.com/blog/posts/Running-Lisp-in-Production.html) -- в очередной раз возвращался к этой статье, уже с новым взглядом.
+* [How to Read an Academic Article](https://organizationsandmarkets.com/2010/08/31/how-to-read-an-academic-article/) -- статья 2010 года, но актуальна до сих пор.
+* [GopherCon 2019 - Go, pls stop breaking my editor](https://about.sourcegraph.com/go/gophercon-2019-go-pls-stop-breaking-my-editor) -- Rebecca Stambler на очередной конференции GopherCon рассказывает о gopls.
+* [Haskell в продакте: Отчёт менеджера проекта](https://habr.com/ru/post/193722/) -- без комментариев.
+
+Хорошей вам недели!

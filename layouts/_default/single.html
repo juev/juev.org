@@ -1,0 +1,21 @@
+{{ define "title" }}{{ .Title }} &ndash; {{ .Site.Title }}{{ end }}
+
+{{ define "main" }}
+<h1 class="title">{{- .Title -}}</h1>
+<div id="metainfo">
+    <span class="date">{{ .Date.Format "2 January 2006" }}</span>
+    {{ with .Params.tags }}
+    <span class="tags">
+        {{ range . }}
+        <a href="{{ "tags" | absURL }}/{{ . | urlize }}" title="View posts tagged with &quot;&quot;{{ . }}"
+            rel="nofollow">#{{ . }}</a></span>
+    {{ end }}
+    {{ end }}
+</div>
+<div class="post">
+    {{ .Content }}
+</div>
+<div class="meta">
+    {{ partial "nav.html" . }}
+</div>
+{{ end }}

@@ -1,0 +1,59 @@
+baseURL = "http://hugo.juev.org/"
+languageCode = "ru-RU"
+title = "Denis Evsyukov"
+images = "https://static.juev.org/images/calvin.png"
+description = "My thoughts and findings"
+
+headercommentblock = "<!--\n You can email me with PGP-key: 0xE8ADA1A55B3CA4EA\n -->"
+
+Paginate = 1
+
+rssLimit = 5
+
+[author]
+name = "Denis Evsyukov"
+
+[frontmatter]
+date = [":filename", ":default"]
+
+[permalinks]
+posts = "/:year/:month/:day/:slug/"
+# pages = "/:slug/"
+
+[taxonomies]
+tag = "tags"
+
+[outputs]
+home = ["HTML", "AMP", "RSS"]
+page = ["HTML", "AMP"]
+
+[mediaTypes]
+[mediaTypes."application/rss"]
+suffixes = ["xml"]
+
+[outputFormats]
+[outputFormats.RSS]
+mediatype = "application/rss"
+baseName = "atom"
+
+[params]
+footer = '''Except where otherwise noted, content on this site is licensed under
+    a <a href="http://creativecommons.org/licenses/by/4.0/" rel="license">
+    Creative Commons Attribution 4.0 International License</a>.'''
+rss = '''To subscribe to this RSS feed, copy its address and paste it into your
+    favorite feed reader.'''
+description = "My thoughts and findings"
+
+[params.social]
+github		= "juev"
+twitter		= "juev"
+twitter_domain	= "www.juev.org" # This domain shows in twitter cards as "View on `twitter_domain`"
+
+[params.authors]
+[params.authors.John]
+
+name			= "Denis Evsyukov"
+thumbnail		= "https://static.juev.org/images/calvin.png"
+images		= []
+bio			= "John Connor is the son of Sarah Connor and Kyle Reese, and the leader of the worldwide human resistance..."
+email			= "denis@evsyukov.org"

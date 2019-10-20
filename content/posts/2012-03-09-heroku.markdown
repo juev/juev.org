@@ -1,0 +1,112 @@
+---
+title: "Heroku в качестве хостинга сайтов"
+date: "2012-03-09T19:22:00+0400"
+tags:
+  - heroku
+  - jekyll
+  - hosting
+keywords: heroku, hosting, jekyll, static, site
+---
+12 апреля 2012 года будет ровно год, как я использую для своих сайтов сервер Amazon EC2. В среднем каждый месяц мне выставляют счет за использование машины и за трафик в пределах $8-$9. Что много меньше, чем если бы я использовал, как раньше, сервер на Linode. Хотя машины примерно одинакового типа.
+
+Давно уже задумывался о том, чтобы размещать сайты на сервисе [Heroku](http://www.heroku.com "Heroku"). Это уникальный сервис, на котором можно размещать свои веб-приложения различного уровня. И стоимость использования начинается от бесплатного. К примеру, если размещать статический сайт, который не использует базу данных, то за использование данного приложения платить не нужно совершенно.
+
+Сложности начинаются в том случае, если используется чисто статический сайт, и не используются движки для его генерации. Приходиться прибегать к хакам.
+
+## Установка и использование
+
+Для использования Heroku необходимо установить соответствующий gem:
+
+	$ sudo gem install heroku
+
+И теперь можно создавать свое приложение:
+
+	$ mkdir my-app && cd my-app
+	$ heroku create --stack cedar
+
+К данному моменту необходимо будет уже иметь регистрацию на сервере Heroku, нас спросят учетные данные, которые неободимо будет использовать при создании нашего приложения. И после создания уже можно опубликовать приложение на сервере, используя команду:
+
+	$ git push heroku master
+
+А для того, чтобы открыть в браузере наш сайт, достаточно указать:
+
+	$ heroku open
+
+Если при открытии сайта возникает какая-то ошибка, нужно посмотреть логи на сервере. И опять же, для этого используется консоль:
+
+	$ heroku logs --tail
+
+Все очень удобно и довольно просто.
+
+## Статический сайт
+
+Для того, чтобы можно было бы публиковать статический сайт, в котором не используются определенные приложения, достаточно в корне сайта выполнить две команды:
+
+	$ touch index.php
+	$ echo 'php_flag engine off' > .htaccess
+
+Первая команда преобразует наш статический сайт в PHP-приложение, а вторая команда отключает PHP для всего сайта.
+
+## Jekyll on Heroku
+
+Для того, чтобы использовать Jekyll на сервере Heroku, нужно совершить не так уж и много действий. При создании основы своего сайта достаточно использовать готовый шаблон [Jekyll-Heroku](https://github.com/markpundsack/jekyll-heroku "Jekyll-Heroku"). По сути от обычного шаблона Jekyll отличается только начием файлов `Gemfile`, `Gemfile.lock` и `Procfile`.
+
+Файл `Gemfile` содержит в себе перечень гемов, что будут использовать в нашем приложении. По умолчанию используется jekyll и Redcloth. Если в нашем сайте используется другой движок для обработки markdown, нужно его прописать. К примеру, я использую `kramdown`. Плюс я еще использую для сжатия css и js файлов `jammit`. А для создания файла `Gemfile.lock` достаточно в директории нашего сайта дать команду:
+
+	$ bundle install
+
+Файл `Procfile` содержит в себе команду для запуска jekyll на сервере. И в предложенном шаблоне используется следующая строка:
+
+	web:	jekyll --server $PORT
+		
+Хотя куда удобне прописывать необходимые задачи в отдельном файле `Rakefile` и затем использовать вызов rake в файле `Procfile`
+
+После того, как создали или дополнили свой сайт необходимыми конфигурационными файлами, осуществляем публикацию сайта:
+
+	$ git push heroku master
+	Counting objects: 7, done.
+	Delta compression using up to 4 threads.
+	Compressing objects: 100% (4/4), done.
+	Writing objects: 100% (4/4), 503 bytes, done.
+	Total 4 (delta 3), reused 0 (delta 0)
+
+	-----> Heroku receiving push
+	-----> Ruby/Rack app detected
+	-----> Installing dependencies using Bundler version 1.1.rc.7
+	       Running: bundle install --without development:test --path vendor/bundle --binstubs bin/ --deployment
+	       Fetching gem metadata from http://rubygems.org/.......
+	       Installing Platform (0.4.0)
+	       Installing open4 (1.3.0)
+	       Installing POpen4 (0.1.4)
+	       Using RedCloth (4.2.9)
+	       Using posix-spawn (0.3.6)
+	       Using albino (1.3.3)
+	       Using fast-stemmer (1.0.0)
+	       Using classifier (1.3.3)
+	       Using directory_watcher (1.4.1)
+	       Installing yui-compressor (0.9.6)
+	       Installing jammit (0.6.5)
+	       Using kramdown (0.13.5)
+	       Using liquid (2.2.2)
+	       Using syntax (1.0.0)
+	       Using maruku (0.6.0)
+	       Using jekyll (0.11.0)
+	       Using rack (1.4.1)
+	       Using tilt (1.3.3)
+	       Using sinatra (1.2.6)
+	       Using bundler (1.1.rc.7)
+	       Your bundle is complete! It was installed into ./vendor/bundle
+	       Cleaning up the bundler cache.
+	-----> Discovering process types
+	       Procfile declares types     -> web
+	       Default types for Ruby/Rack -> console, rake
+	-----> Compiled slug size is 6.4MB
+	-----> Launching... done, v9
+	       http://juev-app.herokuapp.com deployed to Heroku
+
+	To git@heroku.com:juev-app.git
+	   1c4fb7b..2c57a1a  master -> master
+
+Да, список используемых гемов на моем сайте несколько превышает тот, что используется в шаблонах по умолчанию. Тестирование показало, что все работает просто замечательно!
+
+Кстати, на Heroku можно использовать довольно большое число движков по генерации статических сайтов. Число используемых языков программирования довольно велико. И главное заключается в том, что использование таких небольших сайтов абсолютно бесплатно.

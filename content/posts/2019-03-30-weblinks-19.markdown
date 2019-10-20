@@ -1,0 +1,17 @@
+---
+title: "Ссылки #19"
+date: "2019-03-30T08:04:00+0300"
+tags:
+  - links
+  - haskell
+---
+За прошедшую неделю в моем списке оказалось 45 ссылок, из которых лучше представляю вам.
+
+* [pirate/ArchiveBox](https://github.com/pirate/ArchiveBox) -- The open source self-hosted web archive. Takes browser history/bookmarks/Pocket/Pinboard/etc., saves HTML, JS, PDFs, media, and more...
+* [Этот ваш хаскель (не) только для факториалов и годен](https://habr.com/ru/post/445134/)
+* [Drafts](https://getdrafts.com/) -- вышла версия популярной программы Drafts на OSX. Бесплатная в базовом варианте и подписка за дополнительные возможности. Единственно в моем воркфлоу я пока не нашел ей места. Ревью от MacStories: [Drafts for Mac: The MacStories Review](https://www.macstories.net/reviews/drafts-5-mac/)
+* [Signal & WhatsApp, softer than Tofu?](https://keybase.io/blog/chat-apps-softer-than-tofu) -- статья от Keybase с описанием того, что не так с защищенными мессенджерами.
+* [BoringTun, a userspace WireGuard implementation in Rust](https://blog.cloudflare.com/boringtun-userspace-wireguard-rust/) -- описание Cloudflare о создании реализации Wiregrad на Rust. Исходный код проекта: [cloudflare/boringtun](https://github.com/cloudflare/boringtun).
+* [Монады с точки зрения программистов (и немного теории категорий)](https://habr.com/ru/post/445488/)
+
+Хорошей вам недели!

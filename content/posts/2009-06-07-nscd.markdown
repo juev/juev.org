@@ -1,0 +1,28 @@
+---
+title: "nscd - кэширование dns запросов"
+date: "2009-06-07T00:00:00+0400"
+tags:
+  - dns
+  - linux
+keywords: nscd,dns,linux
+---
+В статье <strong><a href="/2009/03/17/pdnsd-lokalnyj-keshiruyushhij-dns-server/">pdnsd -- локальный кэширующий dns сервер</a></strong> я уже рассказывал о том, как можно организовать локальный кэширующий сервер.
+
+Сегодня рассмотрим еще один вариант кэширования dns-запросов.
+
+Во многих Linux-системах используется демон кэширования службы имен nscd. Он ставиться по умолчанию. И что интересно, о нем очень мало статей и информация, которая представлена в сети, очень скудна. В archlinux данный демон так же представлен и по умолчанию отключен.
+
+Согласно <strong>man nscd</strong>:
+<blockquote>Nscd предоставляет кэширование для баз данных <strong>passwd</strong>,  <strong>group</strong>,  и <strong>hosts</strong> через стандартные интерфейсы libc, такие как <strong>getpwnam</strong>,  <strong>getpwuid</strong>,  <strong>getgrnam</strong>,  <strong>getgrgid</strong>,  <strong>gethostbyname</strong>,  и другие. Каждый кэш имеет для своих данных отдельное TLL (time-to-live -- время жизни); изменения в локальной базе данных (<em>/etc/passwd</em>,  и других) приводит к тому что кэш становится неправильным в течении пятнадцати секунд. Заметим, что файл <em>shadow</em> специально не кэшируется. Вызовы <strong>getspnam</strong> оставляют результат некэшированным.</blockquote>
+
+Для того, чтобы активировать его, достаточно запустить данный демон:
+
+    $ sudo /etc/rc.d/nscd start
+
+Все! Все запросы к серверам имен теперь будут кэшироваться, и при следующем обращении браузера к dns-серверу будут браться значения из кэша.
+
+Для того, чтобы запускать демон при загрузке системы, меняем строку DAEMONS в файле <em>/etc/rc.conf</em>:
+
+    DAEMONS=(syslog-ng crond hal iptables network !netfs hddtemp sensors <strong>nscd</strong> alsa mpd mpdscribble xinetd preload fam slim)
+
+Nscd ничего не знает о протоколах службы. Это также означает, что если вы изменяете <em>/etc/resolv.conf</em> для DNS запросов, nscd продолжит использование старых данных. В этом случае, вам нужно перезапустить nscd.

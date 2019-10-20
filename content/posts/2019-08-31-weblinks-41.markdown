@@ -1,0 +1,17 @@
+---
+title: "Ссылки #41"
+date: "2019-08-31T09:19:00+0300"
+tags:
+  - links
+---
+На этой неделе сохранил только 40 ссылок. Лучшие представляю вашему вниманию.
+
+* [rust-fuzz/trophy-case](https://github.com/rust-fuzz/trophy-case) -- Collection of bugs uncovered by fuzzing Rust code
+
+* [Learning RUST in 2019](https://medium.com/rustadventures/learning-rust-in-2019-768ac560ba0) -- про обучение Rust, список рекомендуемых ресурсов.
+
+* [sger/RustBooks](https://github.com/sger/RustBooks) -- список книг по Rust.
+
+* [gist:452e2e748a2a990ed5b8838861eafc12](https://gist.github.com/rakyll/452e2e748a2a990ed5b8838861eafc12) -- список alias для git, которые использует Rakyll в своей работе.
+
+Хорошей вам недели!

@@ -1,0 +1,17 @@
+---
+title: "Ссылки #35"
+date: "2019-07-20T10:28:00+0300"
+tags:
+  - links
+---
+За прошедшую неделю сохранил 68 ссылок, лучшие представляю вам.
+
+* [Multi-stage docker build of Haskell webapp](https://oleg.fi/gists/posts/2019-07-04-docker-haskell-example.html)
+* [My Reasons to Consider Go Coming from Java](https://preslav.me/2019/05/07/my-reasons-to-consider-go-coming-from-java/)
+* [Moving the World to a 4 Day Workweek – an Interview with Aidan Harper of the 4 Day Week Campaign](https://blog.30hourjobs.com/an-interview-with-aidan-harper-of-the-4-day-week-campaign/)
+* [Notes On The Raspberry Pi 4](https://taoofmac.com/space/blog/2019/07/14/1400)
+* [Tweaking Emacs on Android via Termux: xclip, xdg-open, syncthing conflicts](https://sachachua.com/blog/2019/07/tweaking-emacs-on-android-via-termux-xclip-xdg-open-syncthing-conflicts/)
+* [Let's Build a Compiler 01: Starting Out](https://generalproblem.net/lets_build_a_compiler/01-starting-out/)
+* [The PGP Problem](https://latacora.micro.blog/2019/07/16/the-pgp-problem.html)
+
+Хорошей вам недели!

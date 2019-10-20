@@ -1,0 +1,17 @@
+---
+title: "Ссылки #45"
+date: "2019-09-28T08:09:00+0300"
+tags:
+  - links
+---
+Привет, на прошедшей неделе сохранил в свой Pocket только 49 ссылок. Лучшие представляю вам.
+
+* [Why Lisp is different](http://lispm.de/why-lisp-is-different) -- чем lisp отличается от других языков программирования
+* [Borg User Manual](https://emacsmirror.net/manual/borg/index.html#Top) -- интересная концепция пакетного менеджера для Emacs, попробовал и вернулся на straight
+* [Navigating The Rust OSS Community](https://yaah.dev/getting-involved) -- Rust и все все все
+* [Package management in Go](https://deepsource.io/blog/go-modules/)
+* [Учимся читать: что, как и в каких количествах стоит читать разработчику (+список литературы)](https://techrocks.ru/2019/09/18/reading-technical-books/)
+* [«Об уме вообще, о русском уме в частности». Лекция академика Ивана Павлова](http://www.izbrannoe.com/news/mysli/ob-ume-voobshche-o-russkom-ume-v-chastnosti-lektsiya-akademika-ivana-pavlova/)
+* [Learning Haskell: A Resource Guide](https://serokell.io/blog/learning-haskell)
+
+Хорошей вам недели!

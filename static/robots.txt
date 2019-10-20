@@ -1,0 +1,10 @@
+User-agent: *
+Disallow: /404.html
+Disallow: /page/
+Disallow: /pages/
+Disallow: /posts/
+Disallow: /tags/
+Disallow: /tags.html
+Allow: /
+Sitemap: https://www.juev.org/sitemap.xml
+Host: https://www.juev.org

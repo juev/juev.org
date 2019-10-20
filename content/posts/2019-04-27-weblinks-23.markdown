@@ -1,0 +1,21 @@
+---
+title: "Ссылки #23"
+date: "2019-04-27T08:57:00+0300"
+tags:
+  - links
+  - emacs
+  - haskell
+---
+Сегодня 27 апреля 2019 года? Очередная суббота? А значит пора приводить в порядок свои наработки.
+
+За прошедшую неделю я сохранил и прочел 60 статей. Лучшие из которых представляю вам.
+
+* [Pure Emacs-Lisp Init Skeleton](https://yiufung.net/post/pure-emacs-lisp-init-skeleton/) -- интересная концепция конфигурации Emacs.
+* [a13/emacs.d](https://github.com/a13/emacs.d) -- конфигурация Emacs, в которой используется `use-package`, но на что стоит обратить внимание, это инициализация переменных.
+* [My “Haskell In Production” Story](https://medium.com/@djoyner/my-haskell-in-production-story-e48897ed54c) -- выбор Haskell вместо Go.
+* [Easy Haskell Development Setup with Docker](https://thoughtbot.com/blog/easy-haskell-development-and-deployment-with-docker) -- использование Docker для разработки на Haskell.
+* [Rewriting functions with fold and reduce](https://maex.me/2019/04/rewriting-functions-with-fold-and-reduce/) -- исчерпывающее руководство по сверткам в Haskell.
+* [Magical Monoids](https://medium.com/@stackdoesnotwork/magical-monoids-50da92b069f4) -- еще одно руководство по Haskell.
+* [Orgmode configuration](https://mrblog.nl/emacs/config.html)
+
+Хорошей вам недели!

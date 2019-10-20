@@ -1,0 +1,21 @@
+---
+title: "Ссылки #5"
+date: "2018-12-22T11:25:00+0300"
+tags:
+  - links
+---
+Ссылки с третьей недели декабря:
+
+* [Trunk Based Development](https://trunkbaseddevelopment.com) Идея разработки, использующая небольшие атомарные изменения. Довольно интересно, если задуматься, и должно быть эффективным.
+* [Cбор логов с rsyslog, именами файлов в тегах, многострочными сообщениями и отказоустойчивостью](https://habr.com/post/321262/). Мы используем у себя FLEK стек (filebeat, logstash, elastic, kibana) для работы с логами. Тут же предлагается заменить filebeat+logstash на rsyslog. При этом это эффективная замена.
+* [NixOS: A first impression](https://blog.jeaye.com/2015/11/24/nixos/). Небольшая статья про NixOS, что это такое и какие преимущества/недостатки.
+* [A guide to using NoScript 10.x](https://blog.jeaye.com/2017/11/30/noscript/). В Noscript оказывается провели изменения. Задумался снова вернуться к его использованию.
+* [NixOS on DigitalOcean](https://chris-martin.org/2016/nixos-on-digitalocean). Одна из вариация запуска NixOS в DigitalOcean.
+* [jeaye/nixos-in-place](https://github.com/jeaye/nixos-in-place). В продолжение установки NixOS, скрипт для установки в основные дистрибутивы Linux.
+* [H-99: Ninety-Nine Haskell Problems](https://wiki.haskell.org/99_questions). Вариация "99 проблем" на Haskell. Есть так же вариации задач на Lisp и Prolog.
+* [Getting started with Haskell](https://stackoverflow.com/questions/1012573/getting-started-with-haskell). Тред на StackOverflow посвященный обучению языку программирования Haskell с рекомендациями, как и на что обращать внимание при изучении Haskell на различных этапах обучения.
+* [Haskell With Chris Allen](http://howistart.org/posts/haskell/1/). Еще одна статья про старт обучения Haskell.
+* [Introduction to Nix (for users of Stack)](https://chris-martin.org/2017/nix-for-stack-users). Про использование Nix для сборки Haskell-проектов.
+* [Через тернии к Haskell](https://habr.com/post/152889/). Группа статей на Habr про Haskell.
+
+Хорошего вам чтения!

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+{{ "<!--\n You can email me with PGP-key: 0xE8ADA1A55B3CA4EA\n -->" | safeHTML }}
+<html lang="ru">
+
+<head>
+    <link rel="dns-prefetch" href="https://static.juev.org">
+    <meta charset="utf-8">
+    <title>{{- block "title" . -}} {{- .Site.Title -}} {{- end -}}</title>
+    <meta name="yandex-verification" content="59bb4b98872e096b" />
+    {{ "<!-- http://t.co/dKP3o1e -->" | safeHTML }}
+    <meta name="HandheldFriendly" content="True">
+    <meta name="MobileOptimized" content="320">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    {{ "<!-- end -->" | safeHTML }}
+    <link rel="canonical" href="{{- .Permalink -}}">
+    <link rel="shortcut icon" href="https://static.juev.org/favicon.ico">
+    <link rel="apple-touch-icon" href="{{- .Site.BaseURL -}}apple-touch-icon.png">
+    <link rel="alternate" type="application/atom+xml" title="ATOM Feed" href="https://www.juev.org/atom.xml">
+    <link rel="stylesheet" type="text/css" href="https://static.juev.org/css/master.css">
+</head>
+
+<body class="wide">
+    <div class="navigation">
+        <div class="width-fix">
+            <a href="{{- .Site.BaseURL -}}" id="home" rel="nofollow"></a>
+            <ul>
+                <li><a href="{{- .Site.BaseURL -}}posts/" rel="nofollow">Статьи</a></li>
+                <li>|</li>
+                <li><a href="https://denis.evsyukov.org">Об авторе</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="primary-content width-fix">
+        <div class="entry">
+            {{ block "main" . }}
+            {{ end }}
+        </div>
+    </div><!-- noindex -->
+    <div class="footer">
+        <div class="width-fix">
+            <p><a href="{{- .Site.BaseURL -}}posts/" rel="nofollow">Список статей</a> :: <a
+                    href="{{- .Site.BaseURL -}}recommendations.html" rel="nofollow">Рекомендации</a> :: <a
+                    href="{{- .Site.BaseURL -}}atom.xml" rel="nofollow">RSS</a></p>
+            <p>&copy;&nbsp;<a href="https://denis.evsyukov.org">Denis
+                    Evsyukov</a>,&nbsp;2008&ndash;2019&nbsp;Contact me via
+                <script
+                    type="text/javascript">document.write("<n uers=\"znvygb:qravf\100riflhxbi\056bet\">Rznvy</n>".replace(/[a-zA-Z]/g, function (c) { return String.fromCharCode((c <= "Z" ? 90 : 122) >= (c = c.charCodeAt(0) + 13) ? c : c - 26); }));</script>
+                ,&nbsp;
+                <a href="https://twitter.com/#!/Juev" rel="nofollow">twitter</a> or&nbsp;
+                <a href="https://github.com/Juev" rel="nofollow">github</a></p>
+        </div>
+    </div>
+    <script async src="https://static.juev.org/assets/js/master.a08e4d4f.js"></script>
+</body>
+
+</html>
