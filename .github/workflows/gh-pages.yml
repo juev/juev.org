@@ -20,7 +20,7 @@ jobs:
           hugo-version: "0.58.3"
           extended: true
       - name: Build
-        run: hugo --gc --minify
+        run: hugo --gc
       - name: Deploy
         uses: maxheld83/ghpages@v0.2.1
         env:
