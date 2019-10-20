@@ -1,4 +1,4 @@
-baseURL = "http://hugo.juev.org/"
+baseURL = "http://www.juev.org/"
 languageCode = "ru-RU"
 title = "Denis Evsyukov"
 images = "https://static.juev.org/images/calvin.png"
