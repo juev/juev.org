@@ -39,7 +39,7 @@
     <meta name="author" content="{{humanize . }}" />
     {{ end -}}
     {{ end -}}
-    <meta property="og:description" content="{{ .Description }}" />
+    <meta property="og:description" content="{{.Summary | default .Site.Params.Description}}" />
     {{ with .Params.tags -}}{{range . -}}
     <meta property="article:tag" content="{{- . -}}"/>
     {{end -}}

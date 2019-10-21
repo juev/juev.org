@@ -9,6 +9,7 @@ copyright = "This work is licensed under a MIT License."
 headercommentblock = "<!--\n You can email me with PGP-key: 0xE8ADA1A55B3CA4EA\n -->"
 
 Paginate = 1
+summarylength = 10
 
 rssLimit = 5
 
