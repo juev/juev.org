@@ -4,6 +4,7 @@ date: "2016-09-10T12:09:00+0300"
 tags:
   - soft
   - music
+image: https://static.juev.org/2016/09/overcast-logo.jpg
 ---
 Вчера Марко Армент анонсировал переход на новую модель выкачивания денег из пользователей: [Overcast trying ads, dark theme now free](https://marco.org/2016/09/09/overcast-ads "Overcast trying ads, dark theme now free"). 
 

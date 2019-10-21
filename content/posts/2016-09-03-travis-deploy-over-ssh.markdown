@@ -4,6 +4,7 @@ date: "2016-09-03T11:48:00+0300"
 tags:
   - travis
   - vps
+image: https://static.juev.org/2016/09/logotravis.png
 ---
 Во время [миграции](https://www.juev.org/2016/09/01/vps/ "Миграция сайта с CloudFront на DigitalOcean") сайта на свой собственный сервер у меня было две возможности:
 

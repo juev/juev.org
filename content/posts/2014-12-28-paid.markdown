@@ -5,6 +5,7 @@ tags:
   - services
   - internet
 keywords: services, internet
+image: https://static.juev.org/014/12/gty_money_rolls_ll_120404_wb.jpg
 ---
 За год я перепробовал целый ряд новых интернет-сервисов, но на данный момент остались только самые актуальные. Решил посмотреть, сколько я плачу в год за все вместе.
 

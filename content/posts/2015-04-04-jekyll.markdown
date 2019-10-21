@@ -4,6 +4,7 @@ date: "2015-04-04T13:27:00+0300"
 tags:
   - jekyll
   - ghost
+image: https://static.juev.org/2015/04/jekyll-logo.png
 ---
 В сентябре прошлого года было принято решение мигрировать на [Ghost](http://www.juev.org/2014/11/02/jekyll-to-ghost/ "Ghost"), и я приводил доводы в одноименной статье:
 

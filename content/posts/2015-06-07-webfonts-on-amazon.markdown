@@ -5,6 +5,7 @@ tags:
   - amazon
   - web
   - design
+image: https://static.juev.org/2015/06/amazon-web-services.png
 ---
 Когда писал статью [Amazon S3: кеширование страниц веб-сайта](http://www.juev.org/2015/06/01/amazon-cache/) затронул вопрос Cross-Origin Resource Sharing, ошибочно приняв его за решение проблемы с кешированием. И вот сегодня мне пришлось чуть более подробно разобраться с CORS.
 

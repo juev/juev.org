@@ -4,6 +4,7 @@ date: "2015-06-01T12:17:00+0300"
 tags:
   - amazon
   - tips
+image: https://static.juev.org/2015/06/amazon-s3.png
 ---
 Во время публикации сайта с использованием [s3_website](https://github.com/laurilehmijoki/s3_website "laurilehmijoki/s3_website") есть возможность управлять кешированием для файлов определенных типов. Для этого в конфигурации есть отдельный раздел:
 

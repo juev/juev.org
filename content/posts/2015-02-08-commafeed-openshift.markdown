@@ -6,6 +6,7 @@ tags:
   - openshift
   - java
 keywords: git, openshift, java
+image: https://static.juev.org/2015/02/logo_2.png
 ---
 После того, как отказался от использования платного Feedbin и перешел на Feedly, порой возникают мысли запустить свой собственный сервис. Чем и занялся на выходных.
 

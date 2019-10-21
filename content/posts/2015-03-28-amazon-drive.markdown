@@ -6,6 +6,7 @@ tags:
   - kindle
   - cloud
 keywords: amazon, kindle, cloud
+image: https://static.juev.org/2015/03/amazon_logo_RGB.jpg
 ---
 Позавчера, как обычно, загружал книги в свой Kindle, используя выделенный адрес электронной почты. И не сразу обратил внимание на то, что загрузка не прошла.
 

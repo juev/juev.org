@@ -6,6 +6,7 @@ tags:
   - nginx
   - ghost
 keywords: jekyll, nginx, ghost
+image: https://static.juev.org/2014/11/ghost_logo_big.png
 ---
 ### Миграция с Jekyll на Ghost
 

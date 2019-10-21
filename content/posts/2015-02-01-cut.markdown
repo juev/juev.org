@@ -5,6 +5,7 @@ tags:
   - services
   - internet
 keywords: services, internet
+image: https://static.juev.org/2015/02/calculation_of_leave.jpg
 ---
 Рубль продолжает падать, а зарплата как была так и осталась. Волей неволей начинаешь задумываться о целесообразности использования тех или иных сервисов.
 

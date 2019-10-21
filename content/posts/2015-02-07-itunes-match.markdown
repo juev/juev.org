@@ -6,6 +6,7 @@ tags:
   - apple
   - music
 keywords: mac, apple, music
+image: https://static.juev.org/2015/02/itunes_match_apple.jpg
 ---
 С декабря 2012 года использую сервис от Apple под названием iTunes Match. Ранее я затрагивал его в статье [Резервная копия музыкальной коллекции][].
 

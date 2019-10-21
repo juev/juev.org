@@ -5,6 +5,7 @@ tags:
   - firefox
   - web
   - privacy
+image: https://static.juev.org/2015/10/ABE.png
 ---
 Как описывал в [прошлой статье](http://www.juev.org/2015/09/27/firefox-privacy/ "Безопасность в сети Интернет"), работать в интернете лучше всего с отключеным JavaScript, разрешая с помощью расширения Noscript выполнение только доверенных скриптов.
 

@@ -8,6 +8,7 @@ tags:
   - jekyll
   - tips
   - travis
+image: https://static.juev.org/2015/05/travis-ci.jpg
 ---
 Для запуска сборки статического сайта совершенно не обязательно использовать свой компьютер или выделенный сервер. Достаточно воспользоваться сервисом Continuous integration (CI). Одним из представителей которых является [Travis CI](https://travis-ci.org "Travis CI - Test and Deploy You Code with Confidence").
 

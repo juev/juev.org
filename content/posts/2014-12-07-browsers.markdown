@@ -6,6 +6,7 @@ tags:
   - soft
   - web
 keywords: internet, soft, web
+image: https://static.juev.org/2014/12/browsers.png
 ---
 Несколько лет подряд использовал дома браузер Safari, на работе Google Chrome. И если ранее Safari меня устраивал, то теперь он стал монструозным тормозом. Посмотрел, что творится в стане браузеров.
 

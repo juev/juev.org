@@ -5,6 +5,7 @@ tags:
   - web
   - security
   - amazon
+image: https://static.juev.org/2015/07/general.png
 ---
 Решил на своей визитке [denis.evsyukov.org](https://denis.evsyukov.org "Denis Evsyukov") настроить протокол HTTPS.
 

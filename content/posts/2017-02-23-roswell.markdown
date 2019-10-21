@@ -3,6 +3,7 @@ title: "Roswell - Common Lisp environment setup Utility"
 date: "2017-02-23T16:23:00+0300"
 tags:
   - lisp
+image: https://static.juev.org/2017/02/lisplogo_256.png
 ---
 Есть такой интересный проект, связанный с Common Lisp, как [Roswell](https://github.com/roswell/roswell "Roswell"), который предназначен для установки и одновременного использования различных версий лиспа в систему. А так же интегрирован с quicklisp, несколько расширяя его возможности. Помимо прочего предоставляет возможность создания своих собственных скриптов на лиспе.
 

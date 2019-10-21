@@ -7,6 +7,7 @@ tags:
   - hakyll
   - static
   - blog
+image: https://static.juev.org/2016/12/Haskell.sh-600x600.png
 ---
 В последнее время заинтересовался текущим состоянием генераторов статических сайтов, попробовал в работе [Pelican](http://blog.getpelican.com "Pelican Static Site Generator"), [Hugo](http://gohugo.io "Static Website Engine") и [Hakyll](https://jaspervdj.be/hakyll/ "Static Sites on Haskell"). К чему в итоге пришел?
 

@@ -5,6 +5,7 @@ tags:
   - services
   - internet
 keywords: services, internet
+image: https://static.juev.org/2014/12/authy_red_logo_tm-92fa56e4d64d6c5121279fa0aa3fcfb7.png
 ---
 Google Authenticator является стандартом дефакто в вопросах безопасности.
 
