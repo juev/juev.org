@@ -15,9 +15,10 @@
     <link rel="canonical" href="{{- .Permalink -}}">
     <link rel="shortcut icon" href="https://static.juev.org/favicon.ico">
     <link rel="apple-touch-icon" href="{{- .Site.BaseURL -}}apple-touch-icon.png">
-    {{ range .AlternativeOutputFormats -}}
+    {{ with .OutputFormats.Get "amp" -}}
     {{ printf `<link rel="%s" type="%s" href="%s" title="%s" />` .Rel .MediaType.Type .Permalink $.Site.Title | safeHTML }}
     {{ end -}}
+    <link rel="alternate" type="application/rss" href="https://www.juev.org/atom.xml" title="Denis Evsyukov" />
     <link rel="stylesheet" type="text/css" href="https://static.juev.org/css/master.css">
 </head>
 
