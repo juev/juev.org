@@ -12,6 +12,9 @@ Paginate = 1
 
 rssLimit = 5
 
+pygmentsOptions = ["noclasses"]
+pygmentsCodeFences = true
+
 [author]
 name = "Denis Evsyukov"
 
