@@ -38,7 +38,7 @@
             {{ block "main" . }}
             {{ end }}
         </div>
-    </div><!-- noindex -->
+    </div>{{ "<!-- noindex -->" | safeHTML }}
     <div class="footer">
         <div class="width-fix">
             <p><a href="{{- .Site.BaseURL -}}posts/" rel="nofollow">Список статей</a> :: <a
