@@ -1,8 +1,10 @@
-baseURL = "http://www.juev.org/"
+baseURL = "https://www.juev.org/"
 languageCode = "ru-RU"
 title = "Denis Evsyukov"
 images = "https://static.juev.org/images/calvin.png"
 description = "My thoughts and findings"
+
+copyright = "This work is licensed under a MIT License."
 
 headercommentblock = "<!--\n You can email me with PGP-key: 0xE8ADA1A55B3CA4EA\n -->"
 
