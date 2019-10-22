@@ -33,25 +33,25 @@
     {{ if eq .Section "posts" -}}
     <meta property="og:type" content="article" />
     <meta property="og:article:published_time" content={{ .Date.Format "2006-01-02T15:04:05Z0700" | safeHTML }} />
+    <meta property="og:description" content="{{- .Summary | default .Site.Params.Description -}}" />
+    {{ with .Params.image }}<meta property="og:image" content="{{ . | absURL }}" />{{ else }}<meta property="og:image" content="{{ .Site.Params.ogimage | absURL }}" />{{ end }}
     {{ with .Params.author -}}
     <meta property="og:article:author" content="{{humanize . }}" />
     <meta property="article:author" content="{{humanize . }}" />
     <meta name="author" content="{{humanize . }}" />
     {{ end -}}
     {{ end -}}
-    <meta property="og:description" content="{{- .Summary | default .Site.Params.Description -}}" />
     {{ with .Params.tags -}}{{range . -}}
     <meta property="article:tag" content="{{- . -}}"/>
     {{end -}}
     {{end -}}
-    {{ with .Params.image }}<meta property="og:image" content="{{ . | absURL }}" />{{ else }}<meta property="og:image" content="{{ .Site.Params.ogimage | absURL }}" />{{ end }}
     <meta property="article:author" content="https://denis.evsyukov.org">
     {{ "<!-- end og:meta  -->" | safeHTML }}
     {{ "<!-- twitter card -->" | safeHTML }}
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="{{- .Title -}}">
     <meta name="twitter:url" content="{{- .Permalink -}}">
-    {{ with .Params.image }}<meta property="twitter:image:src" content="{{ . | absURL }}" />{{ else }}<meta property="twitter:image:src" content="{{ .Site.Params.ogimage | absURL }}" />{{ end }}
+    {{ with .Params.image }}<meta name="twitter:image" content="{{ . | absURL }}" />{{ else }}<meta name="twitter:image" content="{{ .Site.Params.ogimage | absURL }}" />{{ end }}
     <meta name="twitter:creator" content="@Juev">
     {{ "<!-- end twitter card -->" | safeHTML }}
     {{ "<!-- schema.org -->" | safeHTML }}
