@@ -74,8 +74,8 @@
     </div>
     <div class="primary-content width-fix" itemscope itemtype="https://schema.org/Blog">
         <div class="entry" itemscope itemtype="https://schema.org/BlogPosting">
-            {{ block "main" . }}
-            {{ end }}
+            {{- block "main" . -}}
+            {{- end -}}
         </div>
     </div>{{ "<!-- noindex -->" | safeHTML }}
     <div class="footer">
