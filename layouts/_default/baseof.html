@@ -39,7 +39,7 @@
     <meta name="author" content="{{humanize . }}" />
     {{ end -}}
     {{ end -}}
-    <meta property="og:description" content="{{.Summary | default .Site.Params.Description}}" />
+    <meta property="og:description" content="{{- .Summary | default .Site.Params.Description -}}" />
     {{ with .Params.tags -}}{{range . -}}
     <meta property="article:tag" content="{{- . -}}"/>
     {{end -}}
@@ -52,22 +52,28 @@
     <meta name="twitter:title" content="{{- .Title -}}">
     <meta name="twitter:url" content="{{- .Permalink -}}">
     {{ with .Params.image }}<meta property="twitter:image:src" content="{{ . | absURL }}" />{{ else }}<meta property="twitter:image:src" content="{{ .Site.Params.ogimage | absURL }}" />{{ end }}
+    <meta name="twitter:creator" content="@Juev">
     {{ "<!-- end twitter card -->" | safeHTML }}
+    {{ "<!-- schema.org -->" | safeHTML }}
+    <meta itemprop="name" content="{{- .Title -}}" />
+    <meta itemprop="description" content="{{- .Summary | default .Site.Params.Description -}}" />
+    {{ with .Params.image }}<meta itemprop="image" content="{{ . | absURL }}" />{{ else }}<meta itemprop="image" content="{{ .Site.Params.ogimage | absURL }}" />{{ end }}
+    {{ "<!-- end schema.org -->" | safeHTML }}
 </head>
 
-<body class="wide">
-    <div class="navigation">
+<body class="wide" itemscope itemtype="https://schema.org/WebPage">
+    <div class="navigation" itemscope itemtype="https://schema.org/SiteNavigationElement">
         <div class="width-fix">
-            <a href="{{- .Site.BaseURL -}}" id="home" rel="nofollow"></a>
+            <a itemprop="url" href="{{- .Site.BaseURL -}}" id="home" rel="nofollow"></a>
             <ul>
-                <li><a href="{{- .Site.BaseURL -}}posts/" rel="nofollow">Статьи</a></li>
+                <li><a itemprop="url" href="{{- .Site.BaseURL -}}posts/" rel="nofollow">Статьи</a></li>
                 <li>|</li>
-                <li><a href="https://denis.evsyukov.org">Об авторе</a></li>
+                <li><a itemprop="url" href="https://denis.evsyukov.org">Об авторе</a></li>
             </ul>
         </div>
     </div>
-    <div class="primary-content width-fix">
-        <div class="entry">
+    <div class="primary-content width-fix" itemscope itemtype="https://schema.org/Blog">
+        <div class="entry" itemscope itemtype="https://schema.org/BlogPosting">
             {{ block "main" . }}
             {{ end }}
         </div>
@@ -75,9 +81,9 @@
     <div class="footer">
         <div class="width-fix">
             <p><a href="{{- .Site.BaseURL -}}posts/" rel="nofollow">Список статей</a> :: <a href="{{- .Site.BaseURL -}}recommendations.html" rel="nofollow">Рекомендации</a> :: <a href="{{- .Site.BaseURL -}}atom.xml" rel="nofollow">RSS</a></p>
-            <p>&copy;&nbsp;<a href="https://denis.evsyukov.org">Denis Evsyukov</a>,&nbsp;2008&ndash;2019&nbsp;Contact me via
+            <p>&copy;&nbsp;<span itemprop="author" itemscope itemtype="https://schema.org/Person"><a rel="author" itemprop="url" href="https://denis.evsyukov.org">Denis Evsyukov</a></span>,&nbsp;2008&ndash;2019&nbsp;Contact me via
                 <script>document.write("<n uers=\"znvygb:qravf\100riflhxbi\056bet\">Rznvy</n>".replace(/[a-zA-Z]/g, function (c) { return String.fromCharCode((c <= "Z" ? 90 : 122) >= (c = c.charCodeAt(0) + 13) ? c : c - 26); }));</script>,
-                <a href="https://twitter.com/#!/Juev" rel="nofollow">twitter</a> or&nbsp;<a href="https://github.com/Juev" rel="nofollow">github</a></p>
+                <a itemprop="url" href="https://twitter.com/#!/Juev" rel="nofollow">twitter</a> or&nbsp;<a itemprop="url" href="https://github.com/Juev" rel="nofollow">github</a></p>
         </div>
     </div>
     <script async src="https://static.juev.org/assets/js/master.a08e4d4f.js"></script>
