@@ -5,7 +5,8 @@
 <div id="metainfo">
     <span class="date" itemprop="datePublished">{{ .Date.Format "2 January 2006" }}</span>{{ with .Params.tags }}
     <span class="tags" itemprop="keywords">{{ range . }}
-        <a rel="category tag" href="{{ "tags" | absURL }}/{{ . | urlize }}" title="View posts tagged with &quot;&quot;{{ . }}" rel="nofollow">#{{ . }}</a></span>{{ end }}{{ end }}
+        <a rel="category tag" href="{{ "tags" | absURL }}/{{ . | urlize }}" title="View posts tagged with &quot;&quot;{{ . }}">#{{ . }}</a>{{ end }}
+    </span>{{ end }}
 </div>
 <div class="post" itemprop="articleBody">
     {{ .Content }}
