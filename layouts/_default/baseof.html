@@ -6,6 +6,7 @@
     <link rel="dns-prefetch" href="https://static.juev.org">
     <meta charset="utf-8">
     <title>{{- block "title" . -}} {{- .Site.Title -}} {{- end -}}</title>
+    <meta name="description" content="{{ .Summary | default .Site.Params.Description }}" />
     <meta name="yandex-verification" content="59bb4b98872e096b">
     {{ "<!-- http://t.co/dKP3o1e -->" | safeHTML }}
     <meta name="HandheldFriendly" content="True">
