@@ -1,0 +1,20 @@
+---
+title: "Ссылки #49"
+date: 2019-10-26T09:18:31+0300
+image: https://static.juev.org/images/links.jpg
+tags:
+  - links
+---
+Идет 49 неделя с момента, как я решил публиковать ссылки в своем блоге. Осталось всего несколько недель до года.
+
+За прошедшую неделю сохранил в свой Pocket всего 39 ссылок.
+
+* [Perfect SEO Meta Tags with Hugo](https://www.skcript.com/svr/perfect-seo-meta-tags-with-hugo/) -- хороший пример реализации SEO на сайте с Hugo, часть решений забрал себе
+* [makefile.site](https://makefile.site) -- Modern Make Handbook, книга по утилите Make
+* [lake](http://quickdocs.org/lake/) -- альтернатива Make на Common Lisp
+* [Which Programming Languages Use the Least Electricity?](https://thenewstack.io/which-programming-languages-use-the-least-electricity/) -- интересное сравнение языков программирования по потреблению энергии
+* [Launching Hercules CI](https://blog.hercules-ci.com/2019/10/22/launching-hercules-ci/) -- Hercules CI зарелизили
+* [rakyll/hey](https://github.com/rakyll/hey) -- утилита для нагрузочного тестирования веб-приложений. Альтернатива `ab`.
+* [Fighting spam with Haskell](https://engineering.fb.com/security/fighting-spam-with-haskell/) -- про использование Haskell при идентификации спама.
+
+Хорошей вам недели!
