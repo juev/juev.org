@@ -12,8 +12,6 @@ jobs:
       - uses: actions/checkout@master
         # with:
         #   submodules: true
-      # - name: Update submodules
-      #   run: git submodule update --init --recursive
       - name: Setup Hugo
         uses: peaceiris/actions-hugo@v2.2.2
         with:
@@ -34,10 +32,3 @@ jobs:
           git config --local user.name "GitHub Action"
           git commit -m "Deploy to Github Pages"
           git push --force --set-upstream "https://${{ secrets.GITHAB_TOKEN }}@github.com/juev/juevorg-public.git" master > /dev/null 2>&1
-
-      # - name: Deploy
-      #   uses: maxheld83/ghpages@v0.2.1
-      #   env:
-      #     GH_PAT: ${{ secrets.GH_PAT }}
-      #     PUBLISH_BRANCH: gh-pages
-      #     BUILD_DIR: "public/"
