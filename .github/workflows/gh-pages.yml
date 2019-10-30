@@ -9,9 +9,9 @@ jobs:
   build-deploy:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@master
-        # with:
-        #   submodules: true
+      - name: Chekout
+        run: |
+          git clone https://github.com/juev/juev.org.git juev.org
       - name: Setup Hugo
         uses: peaceiris/actions-hugo@v2.2.2
         with:
@@ -19,13 +19,14 @@ jobs:
           extended: true
       - name: Build
         run: |
+          cd juev.org
           hugo --gc
           rm -rf public/pages
           rm -rf .git
           rm .gitignore
       - name: Deploy
         run: |
-          cd public
+          cd juev.org/public
           git init
           git add .
           git config --local user.email "action@github.com"
