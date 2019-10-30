@@ -1,0 +1,17 @@
+{{ define "title" }}{{ .Title }} &ndash; {{ .Site.Title }}{{ end }}
+
+{{- define "main" -}}
+<h1 itemprop="name headline" class="title">{{- .Title -}}</h1>
+<div id="metainfo">
+    <span class="date" itemprop="datePublished">{{ .Date.Format "2 January 2006" }}</span>{{ with .Params.tags }}
+    <span class="tags" itemprop="keywords">{{ range . }}
+        <a rel="category tag" href="{{ "tags" | absURL }}/{{ . | urlize }}" title="View posts tagged with &quot;&quot;{{ . }}">#{{ . }}</a>{{ end }}
+    </span>{{ end }}
+</div>
+<div class="post" itemprop="articleBody">
+    {{ .Content }}
+</div>
+<div class="meta" itemscope itemtype="https://schema.org/SiteNavigationElement">
+    {{ partial "nav.html" . }}
+</div>
+{{- end -}}

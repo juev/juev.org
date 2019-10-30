@@ -6,9 +6,8 @@ description = "My thoughts and findings"
 
 copyright = "This work is licensed under a MIT License."
 
-headercommentblock = "<!--\n You can email me with PGP-key: 0xE8ADA1A55B3CA4EA\n -->"
-
 Paginate = 1
+PaginatePath = "pages"
 summarylength = 10
 
 rssLimit = 5
@@ -57,8 +56,7 @@ twitter		= "juev"
 twitter_domain	= "www.juev.org" # This domain shows in twitter cards as "View on `twitter_domain`"
 
 [params.authors]
-[params.authors.John]
-
+[params.authors.Denis]
 name			= "Denis Evsyukov"
 thumbnail		= "https://www.juev.org/calvin.png"
 images		= []
