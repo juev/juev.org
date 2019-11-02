@@ -1,0 +1,14 @@
+---
+title: "Ссылки #50"
+date: 2019-11-02T09:11:28+0300
+image: https://static.juev.org/images/links.jpg
+tags:
+  - links
+---
+Своеобразный юбилей, 50-й выпуск ссылок. За прошедшую неделю сохранил 59 ссылок.
+
+* [Stupid Unix Tricks 11 October 2019](https://sneak.berlin/20191011/stupid-unix-tricks/) -- есть интересные рекомендации
+* [Hosting and Deployment](https://gohugo.io/categories/hosting-and-deployment) -- раздел сайта Hugo, посвященный различным хостерам. Нашел несколько новых интересных вариантов размещения сайтов, в том числе бесплатных.
+* [Vim спустя 15 лет](https://habr.com/ru/company/mailru/blog/340740/)  -- перевод статьи, посвященный Vim.
+
+Хорошей вам недели!
