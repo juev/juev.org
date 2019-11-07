@@ -17,12 +17,15 @@ jobs:
           extended: true
       - name: Build
         run: hugo --gc && rm -rf public/pages
-      - uses: maxheld83/ghpages@v0.2.1
-        env:
-          BUILD_DIR: "public"
-          GH_PAT: ${{ secrets.GH_PAT }}
-          GITHUB_ACTOR: juev
-          GITHUB_REPOSITORY: juev/juevorg-public
+      - name: Deploy
+        run: |
+          git init
+          git add .
+          git config --local user.email "action@github.com"
+          git config --local user.name "Denis Evsyukov"
+          git commit -m "Deploy to Github Pages"
+          git push --force --set-upstream "https://${{ secrets.GITHAB_TOKEN }}@github.com/juev/juevorg-public.git" master > /dev/null 2>&1
+        working-directory: public
       - uses: jakejarvis/cloudflare-purge-action@master
         env:
           CLOUDFLARE_ZONE: ${{ secrets.CLOUDFLARE_ZONE }}
