@@ -1,4 +1,4 @@
-name: github pages
+name: Github pages
 
 on:
   push:
@@ -9,16 +9,21 @@ jobs:
   build-deploy:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout master
-        uses: actions/checkout@v1
-      - name: Deploy the site
-        uses: benmatselby/hugo-deploy-gh-pages@master
+      - uses: actions/checkout@v1
+      - name: Setup Hugo
+        uses: peaceiris/actions-hugo@v2.2.2
+        with:
+          hugo-version: "0.59.0"
+          extended: true
+      - name: Build
+        run: hugo --gc && rm -rf public/pages
+      - uses: maxheld83/ghpages@v0.2.1
         env:
-          HUGO_VERSION: 0.59.0
-          TARGET_REPO: juev/juevorg-public
-          TOKEN: ${{ secrets.GITHUB_TOKEN }}
-      - name: Purge cache
-        uses: jakejarvis/cloudflare-purge-action@master
+          BUILD_DIR: "public"
+          GH_PAT: ${{ secrets.GH_PAT }}
+          GITHUB_ACTOR: juev
+          GITHUB_REPOSITORY: juev/juevorg-public
+      - uses: jakejarvis/cloudflare-purge-action@master
         env:
           CLOUDFLARE_ZONE: ${{ secrets.CLOUDFLARE_ZONE }}
           CLOUDFLARE_TOKEN: ${{ secrets.CLOUDFLARE_TOKEN }}
