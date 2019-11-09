@@ -1,0 +1,17 @@
+---
+title: "Ссылки #51"
+date: 2019-11-09T10:21:12+0300
+image: https://static.juev.org/images/links.jpg
+tags:
+  - links
+  - haskell
+---
+Прошедшая неделя оказалась довольно спокойной, сохранил порядка 60 ссылок.
+
+* [Duck Duck Go Search](https://duckduckgo.com/tty/) -- DuckDuckGo в терминале (имитация)
+* [danistefanovic/build-your-own-x](https://github.com/danistefanovic/build-your-own-x) -- список ресурсов на различные темы разработки
+* [Reimplementing “git clone” in Haskell from the bottom up](http://stefan.saasen.me/articles/git-clone-in-haskell-from-the-bottom-up/) -- создание git-клиента на Haskell
+* [Write You A Scheme, Version 2](https://wespiser.com/writings/wyas/home.html) -- создание своего языка программирования на Haskell
+* [Create A Bookmarking Application With FaunaDB, Netlify And 11ty](https://www.smashingmagazine.com/2019/10/bookmarking-application-faunadb-netlify-11ty/) -- создание приложения для хранения закладок на JS.
+
+Хорошей вам недели!
