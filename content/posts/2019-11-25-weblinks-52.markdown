@@ -1,0 +1,20 @@
+---
+title: "Ссылки #52"
+date: 2019-11-25T19:40:23+0300
+image: https://static.juev.org/images/links.jpg
+tags:
+  - links
+  - golang
+  - rust
+  - heroku
+---
+Две недели провел в отпуске, ездили отдыхать на Кубу. Две недели без интернета и без компьютеров. Четырнадцать дней полного отдыха, именно поэтому ничего не публиковал. За эти несколько дней успел найти несколько интересных ссылок, чем и делюсь с вами.
+
+* [Let's Create a Simple Load Balancer With Go](https://kasvith.github.io/posts/lets-create-a-simple-lb-go/) -- про создание простого балансировщика на Go
+* [Research Notes](http://re.alisa.sh/) -- заметки от [Алисы Шевченко](https://twitter.com/alisaesage). This Research Note documents a generalized perspective on Apple devices' bootchain memory layout  across all stages of the boot process, and specifically relevant to SecuROM and iBoot
+* [mholt/timeliner](https://github.com/mholt/timeliner) -- All your digital life on a single timeline, stored locally
+* [gitrs](https://github.com/haltode/gitrs) -- Re-implementation of the git version control system in Rust
+* [mehrdadrad/radvpn](https://github.com/mehrdadrad/radvpn) -- Decentralized VPN
+* [Six Strategies for Deploying to Heroku](https://blog.heroku.com/six-strategies-deploy-to-heroku)
+
+Хорошей вам недели!
