@@ -1,0 +1,19 @@
+---
+title: "Ссылки #53"
+date: 2019-11-30T09:01:24+0300
+image: https://static.juev.org/images/links.jpg
+tags:
+  - links
+  - golang
+  - haskell
+---
+Прошедшая неделя была насыщена находками, сохранил 99 ссылок. Своеобразный рекорд.
+
+* [Некоторые тонкости управления зависимостями в Go](https://eax.me/go-mod/) -- интересные мысли и рекомендации по управлению зависимостями в Golang. По прежнему рекомендуют использовать локальную директорию, хотя особых проблем при использовании прокси озвучено не было.
+* [Некоторые подводные грабли в языке Go](https://eax.me/golang-gotchas/) -- еще одна интересная статья про Golang от Александра
+* [simple-twitter](https://github.com/Gabriel439/simple-twitter) -- небольшое веб-приложение на Haskell
+* [Digging Into Rust's Syntax — Monday Morning Haskell](https://mmhaskell.com/blog/2019/11/21/digging-into-rusts-syntax) -- авторы Morning Haskell перешли на Rust
+* [A Blank iPhone First Home Screen](https://shawnblanc.net/2019/11/a-blank-iphone-first-home-screen/) -- концепция чистого главного экрана телефона. Пока не понял профита
+* [How to Learn Haskell in 10 Minutes a Day](https://serokell.io/blog/how-to-learn-haskell-in-10-minutes) -- рекомендации по изучению Haskell
+
+Хорошей вам недели!
