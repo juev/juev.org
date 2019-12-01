@@ -37,7 +37,7 @@ keywords: emacs,juick,elisp
 
 Общий вид буфера juick@juick.com:
 
-<a href="https://static.juev.org/2009/08/juick.png"><img class="aligncenter size-medium wp-image-570" title="juick" src="https://static.juev.org/2009/08/juick-300x203.png" alt="Juick-el" width="300" height="203" /></a>
+![](https://static.juev.org/2009/08/juick.png)
 
 Для того, чтобы ответить на запись или комментарий достаточно подвести курсор к номеру сообщения и нажать <strong>RET</strong>. Для того, чтобы подписаться на сообщения пользователя подводим курсор к его имени и жмем <strong>s</strong>, чтобы отписаться <strong>u</strong>. Аналогично с сообщениями.
 

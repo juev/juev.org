@@ -1,5 +1,5 @@
 ---
-title: "Gentoo: dhcp &amp; dns"
+title: "Gentoo: dhcp & dns"
 date: "2009-12-09T00:00:00+0300"
 tags:
   - gentoo

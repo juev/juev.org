@@ -29,9 +29,9 @@ keywords: chrome,google,chromium
 
 Несколько скринов:
 
-<a href="https://static.juev.org/2009/08/chromium-1.png"><img class="aligncenter size-medium wp-image-521" title="chromium-1" src="https://static.juev.org/2009/08/chromium-1-300x240.png" alt="Общий вид браузера" width="300" height="240" /></a>
+![Общий вид браузера](https://static.juev.org/2009/08/chromium-1.png)
 
-<a href="https://static.juev.org/2009/08/chromium-2.png"><img class="aligncenter size-medium wp-image-522" title="chromium-2" src="https://static.juev.org/2009/08/chromium-2-300x240.png" alt="Вид сайта и основное меню" width="300" height="240" /></a>
+![Вид сайта и основное меню](https://static.juev.org/2009/08/chromium-2.png)
 
 Теперь осталось разобраться, как прикрутить менеджер паролей lastpass, который я использую в огнелисе. Более менее уже удалось прикрутить LaterLoop для быстрого сохранения временных закладок. Осталось попробовать еще докрутить Delicious в качестве менеджера закладок.
 

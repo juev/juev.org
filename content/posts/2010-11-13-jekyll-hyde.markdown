@@ -1,5 +1,5 @@
 ---
-title: "Jekyll &amp; Hyde"
+title: "Jekyll & Hyde"
 date: "2010-11-13T00:00:00+0300"
 tags:
   - jekyll

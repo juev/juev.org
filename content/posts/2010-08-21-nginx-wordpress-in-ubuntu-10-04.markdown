@@ -1,5 +1,5 @@
 ---
-title: "Nginx &amp; WordPress в Ubuntu 10.04"
+title: "Nginx & WordPress в Ubuntu 10.04"
 date: "2010-08-21T00:00:00+0400"
 tags:
   - nginx

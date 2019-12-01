@@ -1,5 +1,5 @@
 ---
-title: "OpenDNS &amp; Linux"
+title: "OpenDNS & Linux"
 date: "2011-01-05T00:00:00+0300"
 tags:
   - linux
