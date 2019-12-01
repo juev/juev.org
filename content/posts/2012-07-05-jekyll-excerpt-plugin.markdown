@@ -11,13 +11,9 @@ keywords: jekyll, tips, plugin, excerpt
 
 Проблема заключается в том, что Jekyll не предоставляет по умолчанию инструментов для работы со структурой текста. И можно использовать только простейшие операторы выделения куска текста определенной длины.
 
-<!--more-->
-
 Делается это довольно просто, достаточно только использовать фильтры, что-то вроде:
 
-{%raw%}
     {{ post.content | strip_html | truncatewords: 25 }}
-{%endraw%}
 
 Первый фильтр `strip_html` удаляет все html-теги, а второй фильтр `truncatewords` обрезает текст на 25 символе. Проблема заключается в том, что убрав все html-теги, мы фактически сливаем текст в одну массу. И на выходе получаем один параграф, в котором может содержаться кусок кода, если тот содержался в начале статьи.
 
@@ -29,7 +25,6 @@ keywords: jekyll, tips, plugin, excerpt
 
 Именно этот тег используется в Wordpress для разделения той части текста, что нужно показывать на главной от основной части текста. Для того, чтобы использовать данный фильтр в Jekyll, необходимо добавить один файл в папку `_plugins`:
 
-{%raw%}
     # This goes in _plugins/excerpt.rb
     module Jekyll
       class Post
@@ -47,13 +42,11 @@ keywords: jekyll, tips, plugin, excerpt
         end
       end
     end
-{%endraw%}
 
 После чего в коде статьи можно использовать тег `<!--more-->` для обозначения места, где необходимо сделать разделение текста.
 
 Причем в коде шаблона для отображения статьи сайта уже можно использовать следующую конструкцию:
 
-{%raw%}
     <!-- This snippet checks for an excerpt variable that I assign to true on my index pages, but not on the post pages, then checks to see if the post has an excerpt to see if it should render the excerpt of the post or the whole thing -->
 
     <div class="entry">
@@ -64,6 +57,5 @@ keywords: jekyll, tips, plugin, excerpt
         {{ post.content | mark_excerpt }}
       {% endif %}
     </div>
-{%endraw%}
 
 Таким образом добавив один плагин, мы получаем возможность самостоятельно управлять, где именно необходимо разрывать текст для отображения его на главной странице сайта и избавляемся от возможных ошибок в коде страниц.

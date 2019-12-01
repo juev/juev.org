@@ -15,7 +15,6 @@ keywords: jekyll, tips, plugin, liquid
 
 Промучился довольно долго, но в конце концов нашел решение и этой проблемы. Как оказалось, достаточно использовать расширение `raw_tag.rb`, которое так же создается в папке `_plugins`. Код файла:
 
-{%raw%}
     module Jekyll
       class RawTag < Liquid::Block
         def parse(tokens)
@@ -36,7 +35,6 @@ keywords: jekyll, tips, plugin, liquid
     end
 
     Liquid::Template.register_tag('raw', Jekyll::RawTag)
-{%endraw%}
 
 И теперь для того, чтобы отобразить код Liquid, достаточно его заключить в теги `{{"{%raw"}}%}` и `{{"{%endraw"}}%}`.
 
