@@ -62,3 +62,8 @@ thumbnail		= "https://www.juev.org/calvin.png"
 images		= []
 bio			= "John Connor is the son of Sarah Connor and Kyle Reese, and the leader of the worldwide human resistance..."
 email			= "denis@evsyukov.org"
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
