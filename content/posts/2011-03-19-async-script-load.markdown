@@ -13,8 +13,7 @@ description: Ускоряем сайт за счет асинхронной за
 И при этом не имеет ровно никакого значения, идет загрузка с одного хоста или же с CDN. В связи с этим загрузка страниц моего
 сайта стала занимать порядка 2.6 секунд. За счет использования gzip-сжатия удалось довести загрузку примерно до 2 секунд.
 
-<a href="https://static.juev.org/2011/03/webpagetest_nsync.png"><img
-src="https://static.juev.org/2011/03/webpagetest_nsync.th.png" class="aligncenter"></a>
+[![](https://static.juev.org/2011/03/webpagetest_nsync.th.png)](https://static.juev.org/2011/03/webpagetest_nsync.png)
 
 Решением проблемы оказалось использование **метода асинхронной загрузки скриптов**.
 
@@ -33,14 +32,13 @@ src="https://static.juev.org/2011/03/webpagetest_nsync.th.png" class="aligncente
 
 После чего загрузка файлов уже не блокируется и загрузка страницы стала проходить гораздо быстрее.
 
-<a href="https://static.juev.org/2011/03/webpagetest_sync.png"><img
-src="https://static.juev.org/2011/03/webpagetest_sync.th.png" class="aligncenter"></a>
+[![](https://static.juev.org/2011/03/webpagetest_sync.th.png)](https://static.juev.org/2011/03/webpagetest_sync.png)
 
 В будущем, при использовании `html5` использовать `async` загрузку будет еще проще. Достаточно будет в разделе `head` прописать
 включение скриптов в виде:
 
-	<script async src="someAsyncScript.js" onload="someInit()"></script> 
-	<script defer src="someDeferScript.js" onload="someInit()"></script> 
+	<script async src="someAsyncScript.js" onload="someInit()"></script>
+	<script defer src="someDeferScript.js" onload="someInit()"></script>
 
 *Аргумент `onload` не обязательный.*
 
