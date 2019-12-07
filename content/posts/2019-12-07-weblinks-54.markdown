@@ -1,0 +1,25 @@
+---
+title: "Ссылки #54"
+date: 2019-12-07T10:37:00+0300
+image: https://static.juev.org/images/links.jpg
+tags:
+  - links
+  - haskell
+  - rust
+  - anki
+---
+Прошедшая неделя у меня прошла еще продуктивнее в плане находок, чем прошлая рекордная. За неделю сохранил 105 ссылок, основная масса которых это статьи. И на этой неделе нашел статью, которую можно назвать статьей года. Чуть подробнее остановлюсь именно на ней перед тем, как перейти к основному списку.
+
+Статья довольно объемная, читал ее в несколько заходов, и несколько раз перечитывал. Написана в 2018 году [Michael Nielsen](http://augmentingcognition.com/ltm.html), называется [Augmenting Long-term Memory](http://augmentingcognition.com/ltm.html), и представляет собой описание личного опыта использования Anki для улучшения запоминания. В отличия от многих подобных статей описывается опыт использования Anki при чтении академических статей, запоминании "жизненных" вещей. И приводиться масса полезных советов по использованию Anki.
+
+Эта статья определила всю мою неделю, и во многом перестроила подход к некоторым вещам.
+
+Ну а теперь оставшиеся находки.
+
+* [Mastering the Vim Language](https://www.youtube.com/watch?v=wlR5gYd6um0) -- видео про vim, базовые вещи, но довольно интересно
+* [Neovim configuration and plugins in Fennel (Lisp)](https://oli.me.uk/neovim-configuration-and-plugins-in-fennel-lisp) -- написание плагинов для nvim на lisp
+* [dfm - Dotfiles Manager](https://github.com/CGamesPlay/dfm) -- одна из концепций организации конфигурационных файлов
+* [Ownership: Managing Memory in Rust](https://mmhaskell.com/blog/2019/12/2/ownership-managing-memory-in-rust) -- продолжение про Rust от хаскелистов
+* [How does Haskell make your life easier?](https://williamyaoh.com/posts/2019-11-30-how-does-haskell-make-life-easier.html) -- про преимущества хаскела
+
+Хорошей вам недели!
