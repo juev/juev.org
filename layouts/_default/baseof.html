@@ -5,7 +5,6 @@
 <head itemscope itemtype="{{ .Site.BaseURL }}">
     <meta charset="utf-8">
     <link rel="dns-prefetch" href="https://static.juev.org">
-    <link href="https://github.com/juev" rel="me">
     <title>{{- block "title" . -}} {{- .Site.Title -}} {{- end -}}</title>
     <meta name="description" content="{{ .Summary | default .Site.Params.Description }}" />
     <meta name="yandex-verification" content="59bb4b98872e096b">
@@ -17,17 +16,16 @@
     <link rel="canonical" href="{{- .Permalink -}}">
     <link rel="shortcut icon" href="https://static.juev.org/favicon.ico">
     <link rel="apple-touch-icon" href="{{- .Site.BaseURL -}}apple-touch-icon.png">
-    {{ with .OutputFormats.Get "amp" -}}
-    {{ printf `<link rel="%s" type="%s" href="%s" title="%s">` .Rel .MediaType.Type .Permalink $.Site.Title | safeHTML }}
-    {{ end -}}
     <link rel="alternate" type="application/rss" href="{{- .Site.BaseURL -}}atom.xml" title="Denis Evsyukov">
     <link rel="stylesheet" type="text/css" href="https://static.juev.org/css/master.fdfba3c0.css">
     <link rel="sitemap" type="application/xml" title="Sitemap" href="{{ .Site.BaseURL }}sitemap.xml" />
     {{- with .PrevInSection }}
     <link rel="prev" href="{{.Permalink}}">
+    <link rel="prefetch" href="{{.Permalink}}">
     {{- end }}
     {{- with .NextInSection }}
     <link rel="next" href="{{.Permalink}}">
+    <link rel="prefetch" href="{{.Permalink}}">
     {{- end }}
     {{ "<!-- og:meta -->" | safeHTML }}
     <meta property="og:title" content="{{- .Title -}}" />
@@ -61,8 +59,9 @@
     <meta itemprop="description" content="{{- .Summary | default .Site.Params.Description -}}" />
     {{ with .Params.image }}<meta itemprop="image" content="{{ . | absURL }}" />{{ else }}<meta itemprop="image" content="{{ .Site.Params.ogimage | absURL }}" />{{ end }}
     {{ "<!-- end schema.org -->" | safeHTML }}
-    <link rel="webmention" href="https://webmention.io/www.juev.org/webmention" />
-    <link rel="pingback" href="https://webmention.io/www.juev.org/xmlrpc" />
+    <link rel="prefetch" href="{{- .Site.BaseURL -}}">
+    <link rel="prefetch" href="{{- .Site.BaseURL -}}posts/">
+    <link rel="prefetch" href="{{- .Site.BaseURL -}}recommendations.html">
 </head>
 
 <body class="wide" itemscope itemtype="https://schema.org/WebPage">
