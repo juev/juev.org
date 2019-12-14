@@ -1,0 +1,18 @@
+---
+title: "Ссылки #55"
+date: 2019-12-14T10:47:25+0300
+image: https://static.juev.org/images/links.jpg
+tags:
+  - links
+  - vim
+---
+За прошедшую неделю нашел 53 ссылки, лучшие из которых представляю вам.
+
+* [Vimwiki](https://www.smoothterminal.com/articles/vimwiki) -- пытаюсь использовать для ведения заметок, синхронизирую через Dropbox
+* [A VIM-inspired filemanager for the console](https://github.com/ranger/ranger) -- интересная концепция файлового менеджера, а это реализация плагина для vim
+* [Neo Vim (VS Code Neovim)](https://github.com/asvetliakov/vscode-neovim) -- плагин для vscode, позволяющий использовать neovim в редакторе. На мой взгляд лучший вариант
+* [Be a good Consul client](https://medium.com/criteo-labs/be-a-good-consul-client-5b55160cff7d) -- рекомендации по использованию Consul
+* [ASCII QR](http://asciiqr.com/) -- генерация QR-кодов в  ASCII
+* [How I Built a Personal Knowledge Base for Myself](http://www.getdnote.com/blog/how-i-built-personal-knowledge-base-for-myself/) -- про создание своей базы знаний, на примере dnote.
+
+Хорошей вам недели!
