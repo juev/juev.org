@@ -113,3 +113,7 @@ iOS-Клиент для работы по ssh и mosh протоколам. До
 ### [Working Copy](https://workingcopyapp.com/)
 
 Git-клиент для iOS, без альтернатив.
+
+### [Viscosity](https://www.sparklabs.com/viscosity/)
+
+Лучший OpenVPN-клиент для мака. Стоит своих денег и является прекрасной альтернативой бесплатного TunnelBlick.
