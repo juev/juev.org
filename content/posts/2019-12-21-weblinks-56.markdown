@@ -1,0 +1,22 @@
+---
+title: "Ссылки #56"
+date: 2019-12-21T10:29:53+0300
+image: https://static.juev.org/images/links.jpg
+tags:
+  - links
+  - haskell
+  - clojure
+  - rust
+---
+За прошедшую неделю сохранил 66 ссылок, лучшие вам:
+
+* [How I'm still not using GUIs in 2019: A guide to the terminal](https://lucasfcosta.com/2019/02/10/terminal-guide-2019.html) -- про использование терминальных приложений
+* [Structure and Interpretation of Computer Programs, JavaScript Adaptation](https://sicp.comp.nus.edu.sg/) -- SICP на JavaScript
+* [redox-os/orbtk](https://github.com/redox-os/orbtk) -- Rust UI-Toolkit
+* [“Clojure makes ElasticSearch bearable” Alexander Solovyov](https://www.youtube.com/watch?v=hqIRx3SbfHI) -- рекомендую посмотреть выступление Александра про использование эластика
+* [Clojure Basics](https://learn.codexpanse.com/courses/clojure-1) -- курс по кложе от Rakhim Davletkaliyev
+* [Top 10 Haskell Open-Source Projects For Linux Users](https://serokell.io/blog/top-haskell-open-source-projects-for-linux) -- ряд проектов используют уже все и не задумываются о том, что написано на Haskell
+* [Your Makefiles are wrong](https://tech.davis-hansson.com/p/make/) -- интересные рекомендации по созданию make-файлов
+* [Haskell art in your browser with Asterius](https://www.tweag.io/posts/2019-12-19-asterius-diagrams.html) -- про запуск Haskell-программ в браузере или NodeJS-бакэнде.
+
+Хорошей вам недели!
