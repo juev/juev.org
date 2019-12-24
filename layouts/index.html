@@ -3,7 +3,7 @@
 {{ define "main" }}
 {{ range .Paginator.Pages }}
 <h1 class="title"><a href="{{ .RelPermalink }}">{{ .Title }}</a></h1>
-<div id=" metainfo"><span class="date">{{ .Date.Format "2 January 2006" }}</span></div>
+<div id="metainfo"><span class="date">{{ .Date.Format "2 January 2006" }}</span></div>
 <div class="post">
     {{ .Content }}
 </div>
