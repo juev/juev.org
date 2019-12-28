@@ -1,0 +1,22 @@
+---
+title: "Ссылки #57"
+date: 2019-12-28T13:16:51+0300
+image: https://static.juev.org/images/links.jpg
+tags:
+  - links
+  - haskell
+  - golang
+  - linux
+---
+На прошедшей неделе сохранил в свой аккаунт 51 ссылку, лучшие как обычно представлю вам.
+
+* [dwarvesf/hidden](https://github.com/dwarvesf/hidden) -- бесплатная альтернатива Bartender, очень достойная, хочу вам сказать
+* [Challenging projects every programmer should try](http://web.eecs.utk.edu/~azh/blog/challengingprojects.html) -- список проектов, которые должен попробовать создать любой разработчик
+* [В поисках LD_PRELOAD](https://habr.com/ru/post/479858/) -- статья на хабре про LD_PRELOAD, что это такое и как использовать
+* [A Million WebSockets and Go](https://www.freecodecamp.org/news/million-websockets-and-go-cc58418460bb/) -- как изменение архитектуры может изменить производительность приложения
+* [Writing a simple web-application](https://qnikst.github.io/posts/2018-10-09-starting-webapp.html) -- создание веб-приложения на Haskell
+* [soupi/haskell-study-plan](https://github.com/soupi/haskell-study-plan) -- список ресурсов для изучения Haskell
+* [tssm/up-to-date-real-world-haskell](https://github.com/tssm/up-to-date-real-world-haskell) -- новая редакция книги `Real World Haskell book`, в процессе написания
+* [An Overview of Go's Tooling](https://www.alexedwards.net/blog/an-overview-of-go-tooling) -- описание утилит для работы с Golang
+
+Хорошей вам недели!
