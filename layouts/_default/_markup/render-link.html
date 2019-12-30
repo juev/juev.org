@@ -1,1 +1,1 @@
-<a href="{{ .Destination | safeURL }}"{{ with .Title}} title="{{ . }}"{{ end }}{{ if not (strings.HasPrefix .Destination "https://www.juev.org") }} rel="nofollow"{{ end }}>{{ .Text }}</a>
+<a href="{{ .Destination | safeURL }}"{{ with .Title}} title="{{ . }}"{{ end }}{{ if not (strings.HasPrefix .Destination "https://www.juev.org") }} rel="nofollow"{{ end }}>{{ .Text | safeHTML }}</a>
