@@ -1,0 +1,19 @@
+---
+title: "Ссылки #58"
+date: 2020-01-04T10:11:15+0300
+image: https://static.juev.org/images/links.jpg
+tags:
+  - links
+  - vim
+---
+За прошедшую неделю сохранил 52 ссылки. Из интересного:
+
+* [At least one Vim trick you might not know](https://www.hillelwayne.com/post/intermediate-vim/) -- самое интересное из мира Vim
+* [The Nataniev Library](https://wiki.xxiivv.com/) -- довольно интересная wiki, содержащая массу интересных материалов
+* [skywind3000/vim-quickui](https://github.com/skywind3000/vim-quickui) -- интерфейс в стиле Borland C++ для Vim
+* [Exporting Prometheus Metrics with Bash Scripts](https://apawel.me/exporting-prometheus-metrics-with-bash-scripts/) -- реализация Prometheus-экспортера на чистом bash
+* [Easing the Use of Strong Passwords on a WiFi Router](https://irreal.org/blog/?p=8552) -- интересная мысль про использование QR-кодов для хранения паролей от WiFi
+* [How I'm able to take notes in mathematics lectures using LaTeX and Vim](https://castel.dev/post/lecture-notes-1/) -- в очередной раз возвращаюсь к статье про использование Vim для конспектирования лекций. На этот раз собираю свою собственную библиотеку снипетов
+* [iSH](https://ish.app) -- The Linux shell on iOS. Пока не пробовал в работе, но выглядит интересно
+
+Хорошей вам недели!
