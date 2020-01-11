@@ -1,0 +1,19 @@
+---
+title: "Ссылки #59"
+date: 2020-01-11T09:32:32+0300
+image: https://static.juev.org/images/links.jpg
+tags:
+  - links
+  - rust
+  - golang
+---
+За прошедшую неделю сохранил 49 ссылок.
+
+* [Writing AWS Lambda Functions in Rust](https://silentbyte.com/writing-aws-lambda-functions-in-rust/) -- написание функций для AWS на Rust
+* [luisfarzati/localdots](https://github.com/luisfarzati/localdots) -- HTTPS domains for localhost
+* [SQLx](https://github.com/launchbadge/sqlx) -- The Rust SQL Toolkit
+* [Building a BitTorrent client from the ground up in Go](https://blog.jse.li/posts/torrent/) -- создание торрент-клиента на Go
+* [Programming a MessageBus in Common Lisp](https://www.youtube.com/watch?v=CNFr7zIfyeM&feature=youtu.be) -- описание процесса создание программы на CL
+* [Top 6 security best practices for Go](https://blog.sqreen.com/top-6-security-best-practices-for-go/) -- без коментариев
+
+Хорошей вам недели!
