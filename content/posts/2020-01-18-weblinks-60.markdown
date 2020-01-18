@@ -1,0 +1,22 @@
+---
+title: "Ссылки #60"
+date: 2020-01-18T09:51:13+0300
+image: https://static.juev.org/images/links.jpg
+tags:
+  - links
+  - emacs
+  - fonts
+  - golang
+  - vpn
+---
+За прошедшую неделю сохранил 82 ссылки.
+
+* [Modified Emacs Mac Modifiers](https://nickdrozd.github.io/2019/12/28/emacs-mac-mods.html) -- интересное предложение по изменению раскладки клавиш для Emacs в OSX. Подобное изменение я проводил, но столкнулся с тем, что при работе на разных компьютерах начинал путаться, в связи с чем отказался от этой идеи
+* [Why I quit using Google](https://www.kylepiira.com/2020/01/09/why-i-quit-google/) -- у автора статьи закрыли аккаунт в гугле, и он начал искать альтернативы. Список альтернатив довольно интересный. Продолжение нашло в репозитории [degoogle](https://github.com/tycrek/degoogle)
+* [Люксембург по-русски](https://moya-planeta.ru/travel/view/lyuksemburg_porusski_47330) -- описание жизни в Люксембурге от Василики Климовой
+* [A free and open source typeface for developers](https://jetbrains.com/lp/mono) -- новый шрифт от Jetbrains
+* [How to Make a Raspberry Pi VPN Server](https://www.electromaker.io/tutorial/blog/raspberry-pi-vpn-server) -- создание своего VPN-сервера на основе Raspberry Pi
+* [PayPal Taps Go to Modernize and Scale](https://go.dev/solutions/paypal/) -- PayPal переходит на использование Golang в своих проектах
+* [How we optimized our DNS server using go tools](https://medium.com/@arash.cordi/how-we-optimized-our-dns-server-using-go-tools-d753e1a5e709) -- про профилирование и отладку программ на Golang
+
+Хорошей вам недели!
