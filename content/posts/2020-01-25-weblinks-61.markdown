@@ -1,0 +1,24 @@
+---
+title: "Ссылки #61"
+date: 2020-01-25T10:54:48+0300
+image: https://static.juev.org/images/links.jpg
+tags:
+  - links
+  - golang
+  - vpn
+---
+За прошедшую неделю сохранил 78 ссылок.
+
+* [Exposing interfaces in Go](https://www.efekarakus.com/golang/2019/12/29/working-with-interfaces-in-go.html) -- про интерфейсы в Go и про использование namespace
+* [Revisiting Apple Notes (1): Improved Note Parsing](https://ciofecaforensics.com/2020/01/10/apple-notes-revisited/) -- первая статья из серии, посвященной формату используемому для хранения Apple Notes, используется protobuf, структура которого нигде не описана. Предпринимаются попытки его анализа, но не всегда удачно
+* [«Спусковые крючки», или как освободить голову и перестать отвлекаться](https://zen.yandex.ru/media/bookfit/spuskovye-kriuchki-ili-kak-osvobodit-golovu-i-perestat-otvlekatsia-5ca8470b1843c900b33d8f99) -- один из методов работы над собой. Александр Артеменко предлагает вариант крючков в формате org-mode: [gist](https://gist.github.com/svetlyak40wt/6c79264d9c3615e1a168ed774fbc7335)
+* [Makefiles in 2019 — Why They Still Matter](https://tech.trivago.com/2019/12/20/makefiles-in-2019-why-they-still-matter/) -- интересное мнение про использование makefile для сборки различных проектов
+* [All ProtonVPN apps are now open source and audited](https://protonvpn.com/blog/open-source/) -- приложения ProtonVPN прошли аудит
+* [Inlined defers in Go · Go, the unwritten parts](https://rakyll.org/inlined-defers/) -- defer в Go негативно сказывается на производительности, ждем версию 1.14
+* [Slides with LaTeX](https://leanpub.com/slideswithlatex) -- Денис Шевченко пишет книгу про создание презентаций с использованием LaTeX, рекомендую обратить внимание
+* [William Gibson Reads Neuromancer](http://www.bearcave.com/bookrev/neuromancer/neuromancer_audio.html) -- Нейромансер Уильяма Гибсона в прочтении автора
+* [One Month Without a Smartphone](https://thefocuscourse.com/one-month-without-a-smartphone/) -- эксперимент (удачный) по отказу от смартфона, заставил задуматься
+* [Why WhatsApp Only Needs 50 Engineers for Its 900M Users](https://www.wired.com/2015/09/whatsapp-serves-900-million-users-50-engineers/) -- Erlang в основе решения
+* [Setting Up PiHole, Wireguard VPN server and Client (Ubuntu Server)](https://medium.com/@aveek/setting-up-pihole-wireguard-vpn-server-and-client-ubuntu-server-fc88f3f38a0a) -- про настройку своего сервера в качестве vpn и dns сервера
+
+Хорошей вам недели!
