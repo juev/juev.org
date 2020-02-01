@@ -1,0 +1,24 @@
+---
+title: "Ссылки #62"
+date: 2020-02-01T08:22:16+0300
+image: https://static.juev.org/images/links.jpg
+tags:
+  - links
+  - vpn
+  - rust
+  - golang
+  - java
+---
+За прошедшую неделю сохранил 58 ссылок.
+
+* [Haskell In Production: CentralApp](https://serokell.io/blog/haskell-in-production-centralapp) -- на неделе вышло несколько интервью с Haskell-программистами, это одно из них
+* [3 tricks to start working despite not feeling like it](https://www.deprocrastination.co/blog/3-tricks-to-start-working-despite-not-feeling-like-it) -- небольшой трюк по эффективной работе
+* [Уже скоро: AdGuard VPN — быстрый и надёжный](https://adguard.com/ru/blog/adguard-vpn-announcement.html) -- Adguard анонсирует скорый выход своего собственного VPN-решения
+* [A half-hour to learn Rust](https://fasterthanli.me/blog/2020/a-half-hour-to-learn-rust/) -- изучение Rust
+* [An update on bradfitz: Leaving Google](https://bradfitz.com/2020/01/27/leaving-google) -- Brad Fitzpatrick ушел из Google
+* [Homebrew's new feature: Brewfiles](https://coderwall.com/p/afmnbq/homebrew-s-new-feature-brewfiles) -- новый функционал homebrew, теперь есть возможность использовать Brewfiles
+* [Proposals for Go 1.15](https://blog.golang.org/go1.15-proposals) -- чего ожидать от 1.15 версии Golang
+* [Troubleshooting Problems With Native (Off-Heap) Memory in Java Applications](https://dzone.com/articles/troubleshooting-problems-with-native-off-heap-memo) -- про профилирование Java приложений в поисках утечек памяти
+* [New Cryptographic Tools on Keybase](https://keybase.io/blog/crypto) -- новый функционал Keybase
+
+Хорошей вам недели!
