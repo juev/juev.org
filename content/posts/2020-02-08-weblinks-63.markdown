@@ -1,0 +1,19 @@
+---
+title: "Ссылки #63"
+date: 2020-02-08T09:17:23+0300
+image: https://static.juev.org/images/links.jpg
+tags:
+  - links
+  - emacs
+  - golang
+  - docker
+---
+За прошедшую неделю сохранил 66 ссылок, из которых порядка 20 только вчера и еще не все успел прочесть.
+
+* [frankjonen/emacs-for-writers](https://github.com/frankjonen/emacs-for-writers) -- конфигурация Emacs для писателей
+* [I wrote Go code for 3 weeks and you won't believe what happened next](https://danlark.org/2020/01/31/i-wrote-go-code-for-3-weeks-and-you-wont-believe-what-happened-next/) -- впечатления от Golang разработчика C++
+* [Hacker Roadmap](https://sundowndev.github.io/hacker-roadmap/) -- список ресурсов для penetration tester
+* [Why Discord is switching from Go to Rust](https://blog.discordapp.com/why-discord-is-switching-from-go-to-rust-a190bbca2b1f) -- довольно популярная статья о том, почему Discord переключились с Go на Rust. Статья породила массу обсуждений в различных кругах
+* [Docker Images : Part I - Reducing Image Size](https://www.ardanlabs.com/blog/2020/02/docker-images-part1-reducing-image-size.html) -- описание известных методик, плюс несколько методов, которые мало где описаны
+
+Хорошей вам недели!
