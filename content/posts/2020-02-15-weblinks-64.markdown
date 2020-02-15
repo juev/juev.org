@@ -1,0 +1,26 @@
+---
+title: "Ссылки #64"
+date: 2020-02-15T10:31:38+0300
+image: https://static.juev.org/images/links.jpg
+tags:
+  - links
+  - golang
+  - cloud
+  - cpp
+  - cli
+---
+
+За прошедшую неделю сохранил 58 ссылок.
+
+* [Сверхсовременные иммутабельные структуры данных](https://habr.com/ru/company/jugru/blog/487100/) -- хорошая статья про использование иммутабельных структур данных в C++
+* [ocornut/imgui](https://github.com/ocornut/imgui) -- библиотека для разработки графических интерфейсов на C++ с минимальным числом зависимостей
+* [Inside Docker's "FROM scratch"](https://www.mgasch.com/post/scratch/) -- рассказывают, что внутри `scratch` контейнера
+* [Go for Cloud · Go, the unwritten parts](https://rakyll.org/go-cloud/) -- почему Golang для облаков самое то
+* [Continuous Profiling of Go programs](https://medium.com/google-cloud/continuous-profiling-of-go-programs-96d4416af77b) -- профилирование Go-программ
+* [Why you shouldn't use func main in Go.](https://pace.dev/blog/2020/02/12/why-you-shouldnt-use-func-main-in-golang-by-mat-ryer) -- интересные мысли про main-функцию
+* [Micro in Action：Getting Started](https://itnext.io/micro-in-action-getting-started-a79916ae3cac) -- первая статья из цикла, описывающая фреймворк micro
+* [The Evolution of a Go Programmer](https://github.com/SuperPaintman/the-evolution-of-a-go-programmer) -- пример для отдыха
+* [Instant Ubuntu VMs](https://multipass.run/) -- A mini-cloud on your Mac or Windows workstation.
+
+Хорошей вам недели!
+
