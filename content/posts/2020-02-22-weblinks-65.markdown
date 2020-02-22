@@ -1,0 +1,21 @@
+---
+title: "Ссылки #65"
+date: 2020-02-22T07:54:55+0300
+image: https://static.juev.org/images/links.jpg
+tags:
+  - links
+  - golang
+  - cpp
+---
+За прошедшую неделю сохранил 66 ссылок.
+
+* [GitHub Action - Releases API](https://github.com/actions/create-release) -- An Action to create releases via the GitHub Release API
+* [2020-02 Prague ISO C++ Committee Trip Report — 🎉 C++20 is Done! 🎉](https://www.reddit.com/r/cpp/comments/f47x4o/202002_prague_iso_c_committee_trip_report_c20_is/) -- изменения, запланированные в C++20
+* [An Extraterrestrial Guide to C++20 Text Formatting](https://www.bfilipek.com/2020/02/extra-format-cpp20.html) -- форматирование текста в C++20
+* [Tutorial: Easy dependency management for C++ with CMake and Git](https://foonathan.net/2016/07/cmake-dependency-handling/) -- использование внешних зависимостей при сборке проектов с помощью CMake
+* [Choosing the right error handling strategy](https://foonathan.net/2016/09/error-handling-strategy/) -- выбор стратегии обработки ошибок
+* [Learn C++ Multi-Threading in 5 Minutes](https://hackernoon.com/learn-c-multi-threading-in-5-minutes-8b881c92941f) -- кратко про мультитрейдинг в C++
+* [Разыгрываем билеты на GopherCon Russia 2020](https://proghub.ru/p/gopher-con-russia-2020) -- розыгрыш билетов на GopherCon Russia 2020, еще можете успеть
+* [C++20 утверждён! Чего ждать и к чему готовиться разработчикам в C++23](https://habr.com/ru/company/yandex/blog/488588/) -- обзор новшеств языка от Яндекса
+
+Хорошей вам недели!
