@@ -1,0 +1,43 @@
+---
+layout: post
+title: "Ссылки #66"
+date: 2020-02-29 10:31
+image: https://static.juev.org/images/links.jpg
+tags:
+  - links
+  - golang
+  - rust
+---
+За прошедшую неделю сохранил 54 ссылки. Лучшая находка недели это сайт [fasterthanli.me](https://fasterthanli.me)
+с очень подробными и интересными статьями по языкам программирования. Ссылки на статьи в списке
+ниже:
+
+* [Stop Using Encrypted Email](https://latacora.micro.blog/2020/02/19/stop-using-encrypted.html) --
+  почему не стоит шифровать почту
+
+* [Inside the GitHub Load Balancer](https://www.haproxy.com/user-spotlight-series/inside-the-github-load-balancer/)
+  -- описание load balancer, используемом в Github
+
+* [Разбираемся с управлением памятью в современных языках программирования](https://habr.com/ru/post/489360/)
+  -- хорошее описание про управление памятью
+
+* [Go 1.14 Release Notes](https://golang.org/doc/go1.14#runtime) -- релиз Golang 1.14, список
+  изменений впечатляет
+
+* [Взгляд изнутри на надежность сервисов Facebook](https://habr.com/ru/company/oleg-bunin/blog/489204/)
+  -- мониторинг, диагностика проблем
+
+* [In depth guide to running Elasticsearch in production](https://facinating.tech/2020/02/22/in-depth-guide-to-running-elasticsearch-in-production/)
+  -- запуск кластера ElasticSearch, на что стоит обратить внимание
+
+* [Early Impressions of Go from a Rust Programmer](https://pingcap.com/blog/early-impressions-of-go-from-a-rust-programmer/)
+  -- впечатление о языке Go от программиста Rust
+
+* [Working with strings in Rust](https://fasterthanli.me/blog/2020/working-with-strings-in-rust/) --
+  как работать со строками в Rust, на деле очень хорошая вводная по Rust и строкам в разных языках
+  программирования
+
+* [A half-hour to learn Rust](https://fasterthanli.me/blog/2020/a-half-hour-to-learn-rust/) -- очень
+  хорошая вводная по языку Rust
+
+Хорошей вам недели!
