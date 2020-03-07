@@ -1,0 +1,21 @@
+---
+title: "Ссылки #67"
+date: 2020-03-07T08:45:13+0300
+image: https://static.juev.org/images/links.jpg
+tags:
+  - links
+  - rust
+  - bash
+  - vpn
+---
+За прошедшую неделю сохранил всего 35 ссылок. Есть ощущение того, что читать стал гораздо меньше. И меньше обращаю внимание на ссылки в твиттере. Посмотрим как дальше пойдет.
+
+* [I want off Mr. Golang's Wild Ride](https://fasterthanli.me/blog/2020/i-want-off-mr-golangs-wild-ride/) -- очередная статья от fasterthanli по языку Golang, а точнее по его достоинствам и недостаткам. Не обращайте внимание на упоминание дженериков в самом начале статьи, они упоминаются лишь раз. И дальнейшее повествование очень интересное
+* [rust-analyzer](https://rust-analyzer.github.io/) -- альтернативный language server для Rust. Выглядит довольно интересно
+* [Бесполезный REPL. Доклад Яндекса](https://habr.com/ru/company/yandex/blog/490788/) -- доклад [Александра Артеменко](https://twitter.com/svetlyak40wt) про REPL в питоне
+* [Как мы Elasticsearch в порядок приводили: разделение данных, очистка, бэкапы](https://habr.com/ru/company/flant/blog/490026/) -- эластик не так прост, как кажется, не по наслышке знаю. Есть на что обратить внимание
+* [Cheap tricks for high-performance Rust](https://deterministic.space/high-performance-rust.html) -- несколько рекомендаций по оптимизации Rust программ
+* [dim-an/cod](https://github.com/dim-an/cod) -- система автодополнения для bash
+* [Remote access to production infrastructure (death to the VPN!)](https://mattslifebytes.com/2020/02/29/remote-access-to-production-infrastructure-death-to-the-vpn/) -- очередная попытка сказать VPN нет. Но довольно слабые аргументы приводятся
+
+Хорошей вам недели!
