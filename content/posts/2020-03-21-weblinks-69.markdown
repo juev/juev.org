@@ -1,0 +1,23 @@
+---
+title: "Ссылки #69"
+date: 2020-03-21T09:17:18+0300
+image: https://static.juev.org/images/links.jpg
+tags:
+  - links
+---
+За прошедшую неделю сохранил всего 38 ссылок. В связи с карантином перешли на удаленную работу и приходиться привыкать жить в новых условиях. В связи с чем в интернете стал бывать значительно реже.
+
+* [robpike/script](https://github.com/robpike/script) -- Command to supervise interactive execution of another command, such as the shell
+* [How I Read](https://sirupsen.com/read/) -- статья Simon Hørup Eskildsen о методе чтения. Ознакомился со статьей после того, как прочел [How to Make Yourself Into a Learning Machine](https://superorganizers.substack.com/p/how-to-build-a-learning-machine).
+* [iOS 14 will bring huge changes to the iPhone – here’s what they might look like](https://bgr.com/2020/03/13/ios-14-release-date-concept-images-of-rumored-ios-14-features/) -- чего ждать от iOS 14
+* [🖤 Тревога](https://medium.com/@mdubakov/%D1%82%D1%80%D0%B5%D0%B2%D0%BE%D0%B3%D0%B0-fd3cd5c726c6) -- как жить в современном мире. Рекомендую к ознакомлению
+* [Install Go tools from modules with brew-gomod](https://blog.filippo.io/install-go-tools-from-modules-with-brew-gomod/) -- установка Go программ через brew
+* [Новые изменения 2020 #1](https://github.com/miripiruni/constitution-of-russia/pull/1) -- изменения в конституции, выраженные через git diff, очень наглядно
+* [reMarkable is not like other tablets](https://remarkable.com/) -- reMarkable запускают новую версию своего планшета
+* [GitHub for mobile](https://github.com/mobile/) -- Github выпустили свой официальный мобильный клиент
+* [Programming in Haskell](https://www.cambridge.org/core/books/programming-in-haskell/8FED82E807EF12D390DE0D16FDE217E4) -- книга временно доступна онлайн бесплатно
+* [The Ultimate Guide to Passwords in 2019 : Length, Complexity & More!](https://blog.fleetsmith.com/password-security-guide/) -- на что обратить внимание при создании паролей
+* [Building a more accurate time service at Facebook scale](https://engineering.fb.com/production-engineering/ntp-service/) -- про синхронизацию времени от Facebook
+* [Coming soon : The Keyboardio Atreus](https://www.kickstarter.com/projects/keyboardio/atreus) -- довольно интересная клавиатура
+
+На этом пока все, до следующей недели!
