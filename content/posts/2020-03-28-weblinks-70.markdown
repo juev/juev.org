@@ -1,0 +1,19 @@
+---
+title: "Ссылки #70"
+date: 2020-03-28T07:48:31+0300
+image: https://static.juev.org/images/links.jpg
+tags:
+  - links
+  - rust
+---
+За прошедшую неделю сохранил в свой Pocket 47 ссылок. Более 15 только за вчерашний день, то есть не все успел прочесть, в отличие от прошлых недель. Но не будем нарушать традицию, и перейдем сразу к лучшим.
+
+* [Linux Kernel Teaching — The Linux Kernel documentation](https://linux-kernel-labs.github.io/refs/heads/master/index.html) -- коллекция лекций и лабораторных работ посвященных Linux Kernel.
+* [0x20F/logger](https://github.com/0x20F/logger) -- Logger in Rust for pretty colors and text in the terminal. Aiming for a relatively simple API
+* ["Let’s use Kubernetes!" Now you have 8 problems](https://pythonspeed.com/articles/dont-need-kubernetes/) -- если решаете нужен ли вам кубернетес, обратите внимание на статью
+* [Lens](https://github.com/lensapp/lens) -- Lens - The Kubernetes IDE
+* [Render · The Easiest Cloud For All Your Apps and Websites](https://render.com) -- новый способ хостинга статичных сайтов
+* [`zig cc`: a Powerful Drop-In Replacement for GCC/Clang](https://andrewkelley.me/post/zig-cc-powerful-drop-in-replacement-gcc-clang.html) -- статья, которая заставила меня обратить внимание на язык программирования Zig
+* [Setting Up Git Identities](https://www.micah.soy/posts/setting-up-git-identities/) -- корректная настройка Git identities
+
+До встречи на следующей неделе!
