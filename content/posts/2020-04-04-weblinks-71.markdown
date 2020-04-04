@@ -1,0 +1,21 @@
+---
+layout: post
+title: "Ссылки #71"
+date: 2020-04-04 10:37
+image: https://static.juev.org/images/links.jpg
+tags:
+  - links
+  - golang
+  - notes
+  - ansible
+---
+За прошедшую неделю нашел 47 ссылок, лучшие представляю вам.
+
+* [Vim anti-patterns](https://sanctum.geek.nz/arabesque/vim-anti-patterns/) -- основы vim. В конце статьи есть интересные ссылки, на которые стоит обратить внимание
+* [Profiling Go Programs](https://blog.golang.org/pprof) -- профилирование Go-программ с использованием pprof
+* [How to Speed Up Your Ansible Playbooks Over 600%](https://www.toptechskills.com/ansible-tutorials-courses/speed-up-ansible-playbooks-pipelining-mitogen/) -- про использование Mitogen. Намного быстрее выполняются плейбуки, но не без проблем
+* [Crafting Interpreters](https://craftinginterpreters.com/) -- A handbook for making programming languages
+* [Using Notion as a Zettelkasten](https://irreal.org/blog/?p=8767) -- статья из-за которой обратил внимание на методику ведения заметок [Zettelkasten](https://zettelkasten.de/), и их программу [The Archive](https://zettelkasten.de/the-archive/). Программа интересна, но намного интереснее сам метод работы. Рекомендую обратить внимание
+* [Maza ad blocking](https://github.com/tanrax/maza-ad-blocking) -- альтернатива PI-Hole на локальном компьютере
+
+Хорошей вам недели!
