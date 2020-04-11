@@ -1,0 +1,25 @@
+---
+title: "Ссылки #72"
+date: 2020-04-11T08:54:01+0300
+image: https://static.juev.org/images/links.jpg
+tags:
+  - links
+  - golang
+  - vpn
+  - tips
+  - soft
+---
+За прошедшую неделю нашел на просторах интернета 65 ссылок.
+
+* [Open Source in macOS](https://opensource.apple.com/release/macos-10151.html) -- исходные коды MacOS 10.15.1
+* [On-demand Golang binaries](https://cto.ai/blog/on-demand-go-binaries/) -- сервис по подготовке бинарных файлов программ Golang для различных платформ
+* [Analyzing WhatsApp Calls with Wireshark, radare2 and Frida](https://medium.com/@schirrmacher/analyzing-whatsapp-calls-176a9e776213) -- пример разбора интернет-трафика
+* [Не используйте сервисы VPN](https://tdemin.github.io/posts/2017-08-13-dont-use-vpn-services_ru) -- перевод на русский статьи [Don't use VPN services.](https://gist.github.com/joepie91/5a9909939e6ce7d09e29), в которой описывается, почему нам не нужны VPN-сервисы. Очень хорошо расписано
+* [Celebrating 15 years of Git: An interview with Git maintainer Junio Hamano](https://github.blog/2020-04-07-celebrating-15-years-of-git-an-interview-with-git-maintainer-junio-hamano/) -- интервью с создателем GIT
+* [Arq 6: More power, more security, more storage savings](https://www.arqbackup.com/blog/arq-6-more-power-more-security-more-storage-savings/) -- анонс новой версии Arq, бекап менеджера. Пользуюсь и всем рекомендую
+* [Moving from ReCAPTCHA to hCAPTCHA](https://blog.cloudflare.com/moving-from-recaptcha-to-hcaptcha/) -- экономия Cloudflare от отказа использования reCaptcha в пользу hCaptcha
+* [6 Things Markdown Got Wrong](https://www.swyx.io/writing/markdown-mistakes/) -- что не так с Markdown
+* [How I use Outlines to Write Any Text](https://zettelkasten.de/posts/how-i-use-outlines-to-write-any-text/) -- про использование планов
+* [Site Reliability Engineering](https://landing.google.com/sre/books/) -- бесплатные книги от Google, посвященные SRE
+
+Хорошей вам недели!
