@@ -6,8 +6,6 @@ description = "My thoughts and findings"
 
 copyright = "This work is licensed under a MIT License."
 
-Paginate = 1
-PaginatePath = "pages"
 summarylength = 10
 
 rssLimit = 5
