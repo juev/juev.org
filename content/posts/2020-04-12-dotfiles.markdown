@@ -1,0 +1,40 @@
+---
+title: "Управление dotfiles"
+date: 2020-04-12T14:21:19+0300
+image: https://static.juev.org/2020/04/dotfiles.png
+tags:
+  - cli
+  - dotfiles
+---
+Ранее хранил свои конфигурационные файлы для консольных приложений в открытом репозитории. Но с некоторых пор пришлось размещать там сенситив-информацию, которую не хотелось бы раскрывать. В результате перевел репозиторий в приватные.
+
+Сейчас хотел бы остановиться на вопросе управления файлами. Способ организации файлов и их установки.
+
+Когда только создал репозиторий, все конфигурационные файлы размещались непосредственно в корне, и затем с помощью скрипта создавались симлинки в требуемые места. При этом все файлы хранились в перемешку, скрипт был автоматизированным, что так же создавало некоторые неудобства. И решил привести все в порядок.
+
+Во-первых, создал определенные директории под каждую программу в отдельности и разместил конфигурационные файлы в них. Получилось примерно следующее:
+
+![](https://static.juev.org/2020/04/dotfiles.png)
+
+Затем заменил скрипт установки на более простой. Вместо автоматизации создании симлинков по всем существующим файлам создал скрипт со списком только нужных мне конфигураций. Получил примерно следующее:
+
+```bash
+#!/bin/sh
+# set -x
+
+ln -sf $(pwd)/bin $HOME/bin
+ln -sf $(pwd)/files/dircolors $HOME/.dircolors
+ln -sf $(pwd)/files/gemrc $HOME/.gemrc
+ln -sf $(pwd)/git/gitconfig $HOME/.gitconfig
+ln -sf $(pwd)/git/gitignore $HOME/.gitignore
+ln -sf $(pwd)/git/gitconfig-personal $HOME/.gitconfig-personal
+ln -sf $(pwd)/git/gitconfig-professional $HOME/.gitconfig-professional
+ln -sf $(pwd)/files/inputrc $HOME/.inputrc
+ln -sf $(pwd)/files/tmux.conf $HOME/.tmux.conf
+ln -sf $(pwd)/bash/aliases $HOME/.aliases
+ln -sf $(pwd)/bash/bashrc $HOME/.bashrc
+ln -sf $(pwd)/bash/bash_profile $HOME/.bash_profile
+ln -sf $(pwd)/config/starship.toml $HOME/.config/starship.toml
+```
+
+Достаточно склонировать репозиторий и запустить `install.sh` скрипт. Теперь репозиторий стал структурированным и с ним приятно работать. И нет проблем с установкой конфигураций.
