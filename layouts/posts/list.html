@@ -6,7 +6,7 @@
 <div class="archives">
     {{ range .Pages.GroupByDate "January 2006" }}
     <h3>{{ .Key }}</h3>
-    {{ range .Pages.ByDate.Reverse }}
+    {{ range .Pages }}
     <div class="list"><a href="{{ .Permalink }}">{{ .Title }}</a></h4>
     </div>
     {{ end }}
