@@ -1,0 +1,23 @@
+---
+title: "Ссылки #73"
+date: 2020-04-18T10:12:18+0300
+image: https://static.juev.org/images/links.jpg
+tags:
+  - links
+  - rust
+  - golang
+  - git
+---
+За прошедшую неделю сохранил в свой Pocket 58 ссылок.
+
+* [MichaelMure/git-bug](https://github.com/MichaelMure/git-bug) -- интересная реализация bug-трекера поверх git. Все руки никак не дойдут его попробовать
+* [Why I’m leaving Elm - lukeplant.me.uk](https://lukeplant.me.uk/blog/posts/why-im-leaving-elm/) -- обстоятельное объяснение почему не Elm, если задуматься многое подходит и к ряду других языков
+* [Do not log](https://sobolevn.me/2020/03/do-not-log) -- все мы считаем, что нужно логировать все и вся и как можно больше для того, чтобы диагностировать проблему. Но это не так, и стоит обратить внимание на другие факторы
+* [Cortex v1.0 released: The highly scalable, fast Prometheus implementation is generally available for production use](https://grafana.com/blog/2020/04/02/cortex-v1.0-released-the-highly-scalable-fast-prometheus-implementation-is-generally-available-for-production-use/) -- VictoriaMetrics свернули не туда, но теперь есть вариант в виде Cortex
+* [Rust as a gateway drug to Haskell](http://xion.io/post/programming/rust-into-haskell.html) -- взгляд на Rust от Haskell-разработчика
+* [Debugging with Delve](https://tpaschalis.github.io/delve-debugging/) -- кратко по использованию Delve
+* [Writing a Book with Pandoc, Make, and Vim — Vladimir Keleshev](https://keleshev.com/my-book-writing-setup/) -- Владимир описывает написание книги
+* [NextDNS is my new favourite DNS service](https://angristan.xyz/2020/04/nextdns/) -- статья из-за которой дал еще один шанс NextDNS, обратил внимание на некоторые моменты, которые упустил в прошлый раз. Посмотрим
+* [aaronjanse/3mux](https://github.com/aaronjanse/3mux) -- аналог tmux, написанный на Golang
+
+Хорошей вам недели!
