@@ -59,9 +59,6 @@
     <meta itemprop="description" content="{{- .Summary | default .Site.Params.Description -}}" />
     {{ with .Params.image }}<meta itemprop="image" content="{{ . | absURL }}" />{{ else }}<meta itemprop="image" content="{{ .Site.Params.ogimage | absURL }}" />{{ end }}
     {{ "<!-- end schema.org -->" | safeHTML }}
-    <link rel="prefetch" href="{{- .Site.BaseURL -}}">
-    <link rel="prefetch" href="{{- .Site.BaseURL -}}posts/">
-    <link rel="prefetch" href="{{- .Site.BaseURL -}}recommendations.html">
 </head>
 
 <body class="wide" itemscope itemtype="https://schema.org/WebPage">
