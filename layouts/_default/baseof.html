@@ -17,75 +17,56 @@
     <link rel="shortcut icon" crossorigin="anonymous" href="https://static.juev.org/favicon.ico">
     <link rel="apple-touch-icon" href="{{- .Site.BaseURL -}}apple-touch-icon.png">
     <link rel="alternate" type="application/rss" href="{{- .Site.BaseURL -}}atom.xml" title="Denis Evsyukov">
-    <link rel="stylesheet" type="text/css" crossorigin="anonymous" href="https://static.juev.org/css/master.fc091916.css">
-    <link rel="sitemap" type="application/xml" title="Sitemap" href="{{ .Site.BaseURL }}sitemap.xml" />
-    {{- with .PrevInSection }}
+    <link rel="stylesheet" type="text/css" crossorigin="anonymous" href="/hack.css">
+    <link rel="sitemap" type="application/xml" title="Sitemap" href="{{ .Site.BaseURL }}sitemap.xml" /> {{- with .PrevInSection }}
     <link rel="prev" href="{{.Permalink}}">
-    <link rel="prefetch" href="{{.Permalink}}">
-    {{- end }}
-    {{- with .NextInSection }}
+    <link rel="prefetch" href="{{.Permalink}}"> {{- end }} {{- with .NextInSection }}
     <link rel="next" href="{{.Permalink}}">
-    <link rel="prefetch" href="{{.Permalink}}">
-    {{- end }}
+    <link rel="prefetch" href="{{.Permalink}}"> {{- end }}
     {{ "<!-- og:meta -->" | safeHTML }}
     <meta property="og:title" content="{{- .Title -}}" />
-    <meta property="og:url" content="{{- .Permalink -}}">
-    {{ if eq .Section "posts" -}}
+    <meta property="og:url" content="{{- .Permalink -}}"> {{ if eq .Section "posts" -}}
     <meta property="og:type" content="article" />
     <meta property="og:article:published_time" content={{ .Date.Format "2006-01-02T15:04:05Z0700" | safeHTML }} />
-    <meta property="og:description" content="{{- .Summary | default .Site.Params.Description -}}" />
-    {{ with .Params.image }}<meta property="og:image" content="{{ . | absURL }}" />{{ else }}<meta property="og:image" content="{{ .Site.Params.ogimage | absURL }}" />{{ end }}
-    {{ with .Params.author -}}
+    <meta property="og:description" content="{{- .Summary | default .Site.Params.Description -}}" /> {{ with .Params.image }}
+    <meta property="og:image" content="{{ . | absURL }}" />{{ else }}
+    <meta property="og:image" content="{{ .Site.Params.ogimage | absURL }}" />{{ end }} {{ with .Params.author -}}
     <meta property="og:article:author" content="{{humanize . }}" />
     <meta property="article:author" content="{{humanize . }}" />
-    <meta name="author" content="{{humanize . }}" />
-    {{ end -}}
-    {{ end -}}
-    {{ with .Params.tags -}}{{range . -}}
-    <meta property="article:tag" content="{{- . -}}"/>
-    {{end -}}
-    {{end -}}
+    <meta name="author" content="{{humanize . }}" /> {{ end -}} {{ end -}} {{ with .Params.tags -}}{{range . -}}
+    <meta property="article:tag" content="{{- . -}}" /> {{end -}} {{end -}}
     <meta property="article:author" content="https://denis.evsyukov.org">
     {{ "<!-- end og:meta  -->" | safeHTML }}
     {{ "<!-- twitter card -->" | safeHTML }}
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="{{- .Title -}}">
-    <meta name="twitter:url" content="{{- .Permalink -}}">
-    {{ with .Params.image }}<meta name="twitter:image" content="{{ . | absURL }}" />{{ else }}<meta name="twitter:image" content="{{ .Site.Params.ogimage | absURL }}" />{{ end }}
+    <meta name="twitter:url" content="{{- .Permalink -}}"> {{ with .Params.image }}
+    <meta name="twitter:image" content="{{ . | absURL }}" />{{ else }}
+    <meta name="twitter:image" content="{{ .Site.Params.ogimage | absURL }}" />{{ end }}
     <meta name="twitter:creator" content="@Juev">
     {{ "<!-- end twitter card -->" | safeHTML }}
     {{ "<!-- schema.org -->" | safeHTML }}
     <meta itemprop="name" content="{{- .Title -}}" />
-    <meta itemprop="description" content="{{- .Summary | default .Site.Params.Description -}}" />
-    {{ with .Params.image }}<meta itemprop="image" content="{{ . | absURL }}" />{{ else }}<meta itemprop="image" content="{{ .Site.Params.ogimage | absURL }}" />{{ end }}
+    <meta itemprop="description" content="{{- .Summary | default .Site.Params.Description -}}" /> {{ with .Params.image }}
+    <meta itemprop="image" content="{{ . | absURL }}" />{{ else }}
+    <meta itemprop="image" content="{{ .Site.Params.ogimage | absURL }}" />{{ end }}
     {{ "<!-- end schema.org -->" | safeHTML }}
 </head>
 
 <body class="wide" itemscope itemtype="https://schema.org/WebPage">
-    <div class="navigation" itemscope itemtype="https://schema.org/SiteNavigationElement">
-        <div class="width-fix">
-            <a itemprop="url" href="{{- .Site.BaseURL -}}" id="home" rel="nofollow"></a>
-            <ul>
-                <li><a itemprop="url" href="{{- .Site.BaseURL -}}posts/" rel="nofollow">Статьи</a></li>
-                <li>|</li>
-                <li><a itemprop="url" href="https://denis.evsyukov.org">Об авторе</a></li>
-            </ul>
+    <div class="hack container">
+        <div class="primary-content width-fix" itemscope itemtype="https://schema.org/Blog">
+            <div class="entry" itemscope itemtype="https://schema.org/BlogPosting">
+                {{- block "main" . -}} {{- end -}}
+            </div>
         </div>
+        {{ "<!-- noindex -->" | safeHTML }}
     </div>
-    <div class="primary-content width-fix" itemscope itemtype="https://schema.org/Blog">
-        <div class="entry" itemscope itemtype="https://schema.org/BlogPosting">
-            {{- block "main" . -}}
-            {{- end -}}
-        </div>
-    </div>{{ "<!-- noindex -->" | safeHTML }}
-    <div class="footer">
+    <footer class="container site-footer">
         <div class="width-fix">
-            <p><a href="{{- .Site.BaseURL -}}posts/" rel="nofollow">Список статей</a> :: <a href="{{- .Site.BaseURL -}}recommendations.html" rel="nofollow">Рекомендации</a> :: <a href="{{- .Site.BaseURL -}}atom.xml" rel="nofollow">RSS</a></p>
-            <p>&copy;&nbsp;<span itemprop="author" itemscope itemtype="https://schema.org/Person"><a rel="author" itemprop="url" href="https://denis.evsyukov.org">Denis Evsyukov</a></span>,&nbsp;2008&ndash;{{ now.Format "2006" }}&nbsp;Contact me via
-                <script>document.write("<n uers=\"znvygb:qravf\100riflhxbi\056bet\">Rznvy</n>".replace(/[a-zA-Z]/g, function (c) { return String.fromCharCode((c <= "Z" ? 90 : 122) >= (c = c.charCodeAt(0) + 13) ? c : c - 26); }));</script>,
-                <a itemprop="url" href="https://twitter.com/#!/Juev" rel="nofollow">twitter</a> or&nbsp;<a itemprop="url" href="https://github.com/Juev" rel="nofollow">github</a></p>
+            <p>&copy;&nbsp;<span itemprop="author" itemscope itemtype="https://schema.org/Person"><a rel="author" itemprop="url" href="https://denis.evsyukov.org">Denis Evsyukov</a></span>,&nbsp;2008&ndash;{{ now.Format "2006" }}</p>
         </div>
-    </div>
+    </footer>
 </body>
 
 </html>

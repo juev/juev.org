@@ -1,17 +1,16 @@
-{{ define "title" }}{{ .Title }} &ndash; {{ .Site.Title }}{{ end }}
-
-{{- define "main" -}}
+{{ define "title" }}{{ .Title }} &ndash; {{ .Site.Title }}{{ end }} {{- define "main" -}}
 <h1 itemprop="name headline" class="title">{{- .Title -}}</h1>
 <div id="metainfo">
-    <span class="date" itemprop="datePublished">{{ .Date.Format "2 January 2006" }}</span>{{ with .Params.tags }}
-    <span class="tags" itemprop="keywords">{{ range . }}
-        <a rel="category tag" href="{{ "tags" | absURL }}/{{ . | urlize }}" title="View posts tagged with &quot;&quot;{{ . }}">#{{ . }}</a>{{ end }}
-    </span>{{ end }}
+    Created <span class="date" itemprop="datePublished">{{ .Date.Format "2 January 2006" }}</span> by Denis Evsyukov and published in <a href="/">www.juev.org</a>
 </div>
-<div class="post" itemprop="articleBody">
+<div class="post-content" itemprop="articleBody">
     {{ .Content }}
 </div>
-<div class="meta" itemscope itemtype="https://schema.org/SiteNavigationElement">
-    {{ partial "nav.html" . }}
-</div>
+<footer class="article-footer">
+    {{ "<!-- noindex -->" | safeHTML }}
+    <p>Вы можете связаться со мной с помощью
+    <script>document.write("<n uers=\"znvygb:qravf\100riflhxbi\056bet\">rznvy</n>".replace(/[a-zA-Z]/g, function (c) { return String.fromCharCode((c <= "Z" ? 90 : 122) >= (c = c.charCodeAt(0) + 13) ? c : c - 26); }));</script>,
+    <a itemprop="url" href="https://twitter.com/#!/juev" rel="nofollow">twitter</a> or&nbsp;<a itemprop="url" href="https://github.com/juev" rel="nofollow">github</a>
+    или перейти к <a href="{{- .Site.BaseURL -}}posts/" rel="nofollow">списку статей</a></p>
+</footer>
 {{- end -}}

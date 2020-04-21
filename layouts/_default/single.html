@@ -1,11 +1,7 @@
 {{ define "title" }}{{ .Title }} &ndash; {{ .Site.Title }}{{ end }}
-
 {{- define "main" -}}
 <h1 itemprop="name headline" class="title">{{- .Title -}}</h1>
 <div class="post" itemprop="articleBody">
     {{ .Content }}
-</div>
-<div class="meta" itemscope itemtype="https://schema.org/SiteNavigationElement">
-    {{ partial "nav.html" . }}
 </div>
 {{- end -}}
