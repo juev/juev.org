@@ -14,15 +14,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     {{ "<!-- end -->" | safeHTML }}
     <link rel="canonical" href="{{- .Permalink -}}">
-    <link rel="shortcut icon" crossorigin="anonymous" href="https://static.juev.org/favicon.ico">
+    <link rel="shortcut icon" href="{{- .Site.BaseURL -}}favicon.ico">
     <link rel="apple-touch-icon" href="{{- .Site.BaseURL -}}apple-touch-icon.png">
     <link rel="alternate" type="application/rss" href="{{- .Site.BaseURL -}}atom.xml" title="Denis Evsyukov">
-    <link rel="stylesheet" type="text/css" crossorigin="anonymous" href="/hack.css">
+    {{ $style := resources.Get "css/hack.scss" | toCSS | minify | fingerprint -}}
+    <link rel="stylesheet" href="{{ $style.Permalink }}" integrity="{{ $style.Data.Integrity }}">
     <link rel="sitemap" type="application/xml" title="Sitemap" href="{{ .Site.BaseURL }}sitemap.xml" /> {{- with .PrevInSection }}
-    <link rel="prev" href="{{.Permalink}}">
-    <link rel="prefetch" href="{{.Permalink}}"> {{- end }} {{- with .NextInSection }}
-    <link rel="next" href="{{.Permalink}}">
-    <link rel="prefetch" href="{{.Permalink}}"> {{- end }}
+    <link rel="prev" href="{{.Permalink}}">{{- end }} {{- with .NextInSection }}
+    <link rel="next" href="{{.Permalink}}">{{- end }}
     {{ "<!-- og:meta -->" | safeHTML }}
     <meta property="og:title" content="{{- .Title -}}" />
     <meta property="og:url" content="{{- .Permalink -}}"> {{ if eq .Section "posts" -}}
@@ -55,17 +54,14 @@
 
 <body class="wide" itemscope itemtype="https://schema.org/WebPage">
     <div class="hack container">
-        <div class="primary-content width-fix" itemscope itemtype="https://schema.org/Blog">
-            <div class="entry" itemscope itemtype="https://schema.org/BlogPosting">
-                {{- block "main" . -}} {{- end -}}
-            </div>
-        </div>
+        {{- block "main" . -}} {{- end -}}
         {{ "<!-- noindex -->" | safeHTML }}
     </div>
     <footer class="container site-footer">
-        <div class="width-fix">
+        <nav>
+            <p><a href="{{- .Site.BaseURL -}}">Главная</a> :: <a href="{{- .Site.BaseURL -}}posts/" rel="nofollow">Список статей</a> :: <a href="{{- .Site.BaseURL -}}recommendations.html" rel="nofollow">Рекомендации</a> :: <a href="{{- .Site.BaseURL -}}atom.xml" rel="nofollow">RSS</a></p>
             <p>&copy;&nbsp;<span itemprop="author" itemscope itemtype="https://schema.org/Person"><a rel="author" itemprop="url" href="https://denis.evsyukov.org">Denis Evsyukov</a></span>,&nbsp;2008&ndash;{{ now.Format "2006" }}</p>
-        </div>
+        </nav>
     </footer>
 </body>
 

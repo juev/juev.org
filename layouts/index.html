@@ -1,18 +1,15 @@
 {{ define "title" }}{{ .Site.Title }}{{ end }}
 
 {{ define "main" }}
-{{ $posts := ($.Site.GetPage "section" "posts").Pages.ByPublishDate.Reverse }}
-{{ range first 1 $posts }}
-<h1 class="title"><a href="{{ .RelPermalink }}">{{ .Title }}</a></h1>
-<div id="metainfo"><span class="date">{{ .Date.Format "2 January 2006" }}</span></div>
-<div class="post">
-    {{ .Content }}
-</div>
-{{ end }}
-<div class="meta">
-    <div class="pagination">
-        <p class="allpostsmeta"><a href="{{ .Site.BaseURL }}posts/" title="Список всех статей" rel="nofollow">Список
-                всех статей</a></p>
-    </div>
-</div>
+<article class="page">
+    <h1>Denis Evsyukov</h1>
+    <p>Куча заметок на разные темы (вероятно, в основном связанных с программированием). Некоторые более, некоторые менее хорошо написаны. Многие будут просто сумасшедшими идеями, которые у меня были в душе и которые нужно было записать. Я не гарантирую, что все это имеет смысл.</p>
+    <p><a href="https://denis.evsyukov.org">Немного обо мне</a>. Вы можете найти исходный код сайта на <a href="https://github.com/juev/juev.org">Github</a>, где вы так же можете открывать issues для обсуждения статей.</p>
+    <h2>Из последнего</h2>
+    {{ $posts := ($.Site.GetPage "section" "posts").Pages.ByDate.Reverse }}
+    <ul>{{ range first 10 $posts }}
+        <li><a href="{{ .RelPermalink }}">{{ .Title }}</a></li>
+        {{ end }}
+    </ul>
+</article>
 {{ end }}

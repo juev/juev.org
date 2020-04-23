@@ -1,0 +1,272 @@
+/**
+ * code by https://github.com/mrcoles/markdown-css
+ * with some modifications
+ */
+
+.hack,
+.hack h1,
+.hack h2,
+.hack h3,
+.hack h4,
+.hack h5,
+.hack h6,
+.hack code,
+.hack blockquote,
+.hack em,
+.hack strong,
+.hack code {
+  font-size: 1rem;
+  font-style: normal;
+  font-family: Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace, serif;
+}
+
+.hack code,
+.hack blockquote,
+.hack em,
+.hack strong,
+.hack code {
+  line-height: 20px;
+}
+
+.hack h1,
+.hack h2,
+.hack h3,
+.hack h4,
+.hack h5,
+.hack h6,
+.hack code,
+.hack blockquote,
+.hack ol,
+.hack ul,
+.hack li,
+.hack p,
+.hack section,
+.hack header,
+.hack footer {
+  float: none;
+  margin: 0;
+  padding: 0;
+}
+.hack h1,
+.hack p,
+.hack ul,
+.hack ol,
+.hack blockquote {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.hack h1 {
+  position: relative;
+  display: inline-block;
+  display: table-cell;
+  padding: 1.5rem 0 3rem;
+  margin: 0;
+  overflow: hidden;
+}
+.hack h1:after {
+  content: "====================================================================================================";
+  position: absolute;
+  bottom: 1.2rem;
+  left: 0;
+}
+.hack h1 + * {
+  margin-top: 0;
+}
+.hack h2,
+.hack h3,
+.hack h4,
+.hack h5,
+.hack h6 {
+  position: relative;
+  margin-bottom: 1.5rem;
+}
+
+.hack h2:before,
+.hack h3:before,
+.hack h4:before,
+.hack h5:before,
+.hack h6:before {
+  display: inline;
+}
+.hack h2:before {
+  content: "## ";
+}
+.hack h3:before {
+  content: "### ";
+}
+.hack h4:before {
+  content: "#### ";
+}
+.hack h5:before {
+  content: "##### ";
+}
+.hack h6:before {
+  content: "###### ";
+}
+.hack li {
+  position: relative;
+  display: block;
+  padding-left: 20px;
+}
+.hack li:after {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.hack ul > li:after {
+  content: "-";
+}
+.hack ol {
+  counter-reset: ol;
+}
+.hack ol > li:after {
+  content: counter(ol) ".";
+  counter-increment: ol;
+}
+.hack ol li:nth-child(n+10):after {
+  left: -7px;
+}
+.hack blockquote {
+  position: relative;
+  padding-left: 17px;
+  padding-left: 2ch;
+  overflow: hidden;
+}
+.hack blockquote:after {
+  content: ">\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>";
+  white-space: pre;
+  position: absolute;
+  top: 0;
+  left: 0;
+  line-height: 20px;
+}
+.hack em:before,
+.hack em:after {
+  content: "*";
+  display: inline;
+}
+.hack pre code:before,
+.hack pre code:after {
+  content: '';
+}
+.hack code:before,
+.hack code:after {
+  content: "`";
+  display: inline;
+}
+
+.hack hr {
+  position: relative;
+  height: 20px;
+  overflow: hidden;
+  border: 0;
+  margin: 20px 0;
+}
+.hack hr:after {
+  content: "----------------------------------------------------------------------------------------------------";
+  position: absolute;
+  top: 0;
+  left: 0;
+  line-height: 20px;
+  width: 100%;
+  word-wrap: break-word;
+}
+@-moz-document url-prefix() {
+  .hack h1 {
+    display: block;
+  }
+}
+.hack-ones ol > li:after {
+  content: "1.";
+}
+.hack img {
+    float: none;
+    clear: both;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+}
+footer.site-footer {
+    margin-top: 3rem;
+    border-top: 2px solid #bdbdbd;
+    padding-top: 2rem
+}
+
+footer.article-footer {
+    margin: 4rem 0 2rem
+}
+
+.post-content {
+    margin: 3rem 0
+}
+
+.post-content {
+    -webkit-hyphens: auto
+}
+
+code {
+    -webkit-hyphens: none
+}
+
+.highlight code {
+    font-weight: normal
+}
+.hack blockquote :first-child {
+    margin-top: 0
+}
+
+.hack blockquote :last-child {
+    margin-bottom: 0
+}
+
+.hack sup[id^="fnref"] {
+    font-size: 1rem;
+    vertical-align: baseline
+}
+
+.hack sup[id^="fnref"]:before {
+    content: "[^";
+    color: #757575
+}
+
+.hack sup[id^="fnref"]:after {
+    content: "]";
+    color: #757575
+}
+
+.hack .footnotes {
+    color: #757575
+}
+
+.hack .footnotes:before {
+    content: "___";
+    display: block
+}
+
+.hack dt {
+    font-weight: bold
+}
+
+.hack dd {
+    margin-left: 0;
+    padding-left: 1.5rem;
+    position: relative
+}
+
+.hack dd:before {
+    content: ":";
+    position: absolute;
+    left: 0;
+    top: 0
+}
+
+.hack ul ul,
+.hack ul ol,
+.hack ol ul,
+.hack ol ol {
+    margin-top: 0;
+    margin-bottom: 0
+}
+.hack h1, .hack h2 {
+    line-height: 1.5rem;
+}
