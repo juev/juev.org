@@ -20,13 +20,17 @@ keywords: emacs,keymap
 
 В Archlinux для использования данного файла необходимо его поместить в <em>/usr/share/kbd/keymaps/i386/qwerty/</em> и затем прописать в файл <em>/etc/rc.conf </em>следующее:
 
-    KEYMAP="juev_emacs"
-    CONSOLEFONT=ter-u16b
-    CONSOLEMAP=
+```conf
+KEYMAP="juev_emacs"
+CONSOLEFONT=ter-u16b
+CONSOLEMAP=
+```
 
 После перезагрузки подхватиться новая раскладка, шрифт можно использовать по своему усмотрению. Для того, чтобы применить ее без перезагрузки, нужно дать команду:
 
-    $ sudo loadkeys /usr/share/kbd/keymaps/i386/qwerty/juev.emacs.map.gz
+```shell
+$ sudo loadkeys /usr/share/kbd/keymaps/i386/qwerty/juev.emacs.map.gz
+```
 
 Можно загрузить и без копирования файла в систему, при этом нужно воспользоваться указанием имени файла при нахождении в каталоге с этим файлом.
 

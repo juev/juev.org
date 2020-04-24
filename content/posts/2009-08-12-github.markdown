@@ -12,20 +12,26 @@ keywords: github,git,server
 
 После создания репозитория появляется развернутая инструкция по дальнейшим действиям, которым и начинаем следовать:
 
-    $ git config --global user.name "username"
-    $ git config --global user.email username@gmail.com
+```shell
+$ git config --global user.name "username"
+$ git config --global user.email username@gmail.com
+```
 
 Если локальный репозиторий еще не был создан, создаем его:
 
-    $ cd dir_repo
-    $ git init
-    $ git add .
-    $ git commit -m "First commit"
+```shell
+$ cd dir_repo
+$ git init
+$ git add .
+$ git commit -m "First commit"
+```
 
 И теперь связываем два репо между собой:
 
-    $ git remote add origin git@github.com:juev/hello.git
-    $ git push origin master
+```shell
+$ git remote add origin git@github.com:juev/hello.git
+$ git push origin master
+```
 
 Вместо строки "<em>git@github.com:juev/hello.git</em>" необходимо использовать свою, что будет указана при создании репозитория. С этого момента файлы проекта размещаются на сервере.
 

@@ -13,25 +13,33 @@ keywords: rails,ruby
 
 Переходим в директорию, в которой мы будем создавать наш проект и даем следующие команды:
 
-    $ cd ~/Temp
-    $ rails --database=sqlite3 mag
-    $ cd mag
+```shell
+$ cd ~/Temp
+$ rails --database=sqlite3 mag
+$ cd mag
+```
 
 Как видно, создаем приложение с использованием базы данных sqlite3, это сделано для упрощения задачи. Теперь нам необходимо протестировать базу данных:
 
-    $ rake db:migrate
+```shell
+$ rake db:migrate
+```
 
 И теперь создаем таблицу базы данных, с указанием типов данных и одновременным созданием представления для данной базы данных:
 
-    $ ruby script/generate scaffold product \
-                 title:string description:text image_url:string
+```shell
+$ ruby script/generate scaffold product \
+             title:string description:text image_url:string
+```
 
 Обращаю внимание на то, что все приведенные команды мы даем в обычной командной строке, созданный код мы еще ни разу не трогали и ничего в нем не меняли. Обратите внимание на то, как в последней команде раставлены пробелы. Между наименованием поля и его типом пробелов быть не должно!
 
 Теперь нам остается только применить изменения к нашей базе данных и запустить сервер:
 
-    $ rake db:migrate
-    $ ruby script/server
+```shell
+$ rake db:migrate
+$ ruby script/server
+```
 
 Открываем браузер по адресу <a href="http://127.0.0.1:3000/product"><em>127.0.0.1:3000/product</em></a> и наблюдаем то, что было создано магией Ruby!
 

@@ -15,48 +15,62 @@ keywords: rails,refinery
 
 Переходим в папку разработки и выполняем команду:
 
-    $ git clone git://github.com/resolve/Refinery.git test
+```shell
+$ git clone git://github.com/resolve/Refinery.git test
+```
 
 В результате получим новую директорию <em>test</em>. В которой и продолжим дальнейшую работу, подготовив файл конфигурации для создания базы данных:
 
-    $ cd test
-    $ mv ./config/database.yml.example ./config/database.yml
+```shell
+$ cd test
+$ mv ./config/database.yml.example ./config/database.yml
+```
 
 Для того, чтобы не поднимать mysql-сервер, будем использовать sqlite3. Для этого подготовим ruby к использованию данной БД:
 
-    $ sudo gem install sqlite3-ruby unicode rmagick
+```shell
+$ sudo gem install sqlite3-ruby unicode rmagick
+```
 
 последние два модуля нужны будут для самой CMS. Теперь изменяем файл <em>.config/database.yml</em>:
 
-    login: &login
-     adapter: sqlite3
-     dbfile: db/test.db
+```yaml
+login: &login
+  adapter: sqlite3
+  dbfile: db/test.db
 
-    development:
-     <<: *login
+development:
+  <<: *login
 
-    test:
-     <<: *login
+test:
+  <<: *login
 
-    production:
-     adapter: sqlite3
-     dbfile: db/test.db
+production:
+  adapter: sqlite3
+  dbfile: db/test.db
+```
 
 Обращаю внимание на то, что все лишнее убрано. И в файле, который приходит с git есть ошибка в модуле production, там лишний tab есть, который мешает выполнить корректно следующие команды. Поэтому, если вы используете mysql-сервер и используете файл их репозитория, меняя только нужные значения, не забудьте исправить данную огрешность.
 
 Теперь, находясь в папке <em>test</em> выполняем последовательно следующие команды:
 
-    $ rake db:create
-    $ rake db:schema:load
-    $ rake db:seed
+```shell
+$ rake db:create
+$ rake db:schema:load
+$ rake db:seed
+```
 
 Все готово к использованию! Можно запускать сервер через запуск скрипта:
 
-    $ ruby script/server
+```shell
+$ ruby script/server
+```
 
 Или же использовать thin:
 
-    $ thin -a 127.0.0.1 start
+```shell
+$ thin -a 127.0.0.1 start
+```
 
 Открываем браузер и переходим по адресу 127.0.0.1:3000. Где сразу же увидим форму с предложением создать администратора сайта:
 

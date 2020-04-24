@@ -10,41 +10,55 @@ keywords: emacs,tips,daemon,emacsclient
 
 Для начала немного теории... Emacs запускается  в режиме демона командой:
 
-    $ emacs --daemon
+```shell
+$ emacs --daemon
+```
 
 После чего для того, чтобы открыть новый фрейм Emacs, в котором можно работать используется команда:
 
-    $ emacsclient -c
+```shell
+$ emacsclient -c
+```
 
 или для консоли:
 
-    $ emacsclient -t
+```shell
+$ emacsclient -t
+```
 
 Запускать демон предлагается при загрузке иксов, но существует проблема, которая заключается в том, что если демон по каким либо причинам не был запущен, то вызов emacsclient ни к чему не приведет. Для решения данной проблемы уже неоднократно предлагалось создать отдельный скрипт со следующим содержимым:
 
-    #!/bin/bash
-    emacs --daemon &amp;&amp; emacsclient -c
+```bash
+#!/bin/bash
+emacs --daemon && emacsclient -c
+```
 
-И заетм запускать клиентом с дополнительной опцией:
+И затем запускать клиентом с дополнительной опцией:
 
-    $emacsclient -c -a script.sh
+```shell
+$ emacsclient -c -a script.sh
+```
 
 Вроде бы ничего, но дополнительные костыли?? Так вот, как оказалось, все намного проще... Достаточно запускать клиент с такими опциями:
 
-    $ emacsclient -c -a ""
+```shell
+$ emacsclient -c -a ""
+```
 
 И никакого скрипта не нужно. Демон самостоятельно запуститься, если он не работал до того, отслеживать уже не нужно.
 
 Теперь разберемся за корректным завершением. Для этого в конфиге .emacs прописываем следующую функцию и навешиваем ее на клавиатурную комбинацию:
 
-    ;; Kill-server
-    (defun my-kill-emacs ()
-    (interactive)
-    (save-some-buffers)
-    (desktop-save-in-desktop-dir)
-    (kill-emacs))
+```lisp
+;; Kill-server
+(defun my-kill-emacs ()
+(interactive)
+(save-some-buffers)
+(desktop-save-in-desktop-dir)
+(kill-emacs))
 
-    (global-set-key (kbd "C-x c") 'my-kill-emacs)
+(global-set-key (kbd "C-x c") 'my-kill-emacs)
+```
 
 Как видно, используется сочетание клавиш Ctrl-x c. Перед тем, как завершить работу, нужно будет подтвердить свое действие.
 

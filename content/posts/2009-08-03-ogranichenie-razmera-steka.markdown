@@ -12,13 +12,15 @@ keywords: vps,memory,stack,kernel,limits
 
 Содержимое моего файла:
 
-    *               -       rtprio          0
-    *               -       nice            0
-    @audio          -       rtprio          65
-    @audio          -       nice           -10
-    @audio          -       memlock         40000
-    juev            -       nproc           7168
-    *               -       stack           8192
+```conf
+*               -       rtprio          0
+*               -       nice            0
+@audio          -       rtprio          65
+@audio          -       nice           -10
+@audio          -       memlock         40000
+juev            -       nproc           7168
+*               -       stack           8192
+```
 
 Я добавил последнюю строку, которая присутствует в листинге, и которая отвечает за размер выделяемой памяти под стек. В данном случае размер стека стандартный и равен 8 мегабайтам.
 

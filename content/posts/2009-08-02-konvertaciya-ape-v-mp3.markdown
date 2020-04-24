@@ -14,52 +14,56 @@ keywords: archlinex,music,ape,mp3
 
 Для использования скрипта необходимо иметь установленными пакеты <strong>mac</strong> и <strong>lame</strong>:
 
-    $ yaourt -S mac lame
+```shell
+$ yaourt -S mac lame
+```
 
 Текст скрипта:
 
-    #!/bin/bash
+```bash
+#!/bin/bash
 
-    #Saving the position so as to return afterwards
-    olddir="$(pwd)"
+#Saving the position so as to return afterwards
+olddir="$(pwd)"
 
-    #Going to target directory
-    #cd "$(dirname "$1")"
+#Going to target directory
+#cd "$(dirname "$1")"
 
-    #Checking for the output folder. If it's not there I create it
-    [ ! -d "Output" ] &amp;&amp; mkdir -p "Output"
+#Checking for the output folder. If it's not there I create it
+[ ! -d "Output" ] &amp;&amp; mkdir -p "Output"
 
-    for file in *.ape
-    do
-    #Checking filetype by extension and decompressing
-    tmp="$(basename "$file")"
-    tmp="$&#123;tmp##*.}"
+for file in *.ape
+do
+#Checking filetype by extension and decompressing
+tmp="$(basename "$file")"
+tmp="$&#123;tmp##*.}"
 
-    echo -en "\033[1;32mDecompressing APE file\n\n"
-    echo -en "\033[1;37m"
-    tm="$(basename "$file")"
-    tm="$&#123;tm%.[aA][pP][eE]}"
-    out="$(mac "$file" "Output/$&#123;tm}.wav" "-d")"
+echo -en "\033[1;32mDecompressing APE file\n\n"
+echo -en "\033[1;37m"
+tm="$(basename "$file")"
+tm="$&#123;tm%.[aA][pP][eE]}"
+out="$(mac "$file" "Output/$&#123;tm}.wav" "-d")"
 
-    cd "Output"
-    echo -en "\033[1;32m\nDecompression finished\n"
-    echo -en "\033[1;32mStarting reencoding\n\n"
-    echo -en "\033[1;37m"
-    #Calling lame. Saving output for future checking
-    out="$(lame --preset standard "$tm.wav" "$tm.mp3")"
-    echo -en "\033[1;32m\nReencoding finished\n"
-    echo -en "\033[1;32mSplitting\n\n"
-    echo -en "\033[1;37m"
-    #Using framemode becaus this settings are for VBR
-    #       out="$(mp3splt -f -c "$(basename "$2")" -o "@n+-+@t" "$tm.mp3")"
-    rm "$tm.wav"
-    cd ..
-    done
+cd "Output"
+echo -en "\033[1;32m\nDecompression finished\n"
+echo -en "\033[1;32mStarting reencoding\n\n"
+echo -en "\033[1;37m"
+#Calling lame. Saving output for future checking
+out="$(lame --preset standard "$tm.wav" "$tm.mp3")"
+echo -en "\033[1;32m\nReencoding finished\n"
+echo -en "\033[1;32mSplitting\n\n"
+echo -en "\033[1;37m"
+#Using framemode becaus this settings are for VBR
+#       out="$(mp3splt -f -c "$(basename "$2")" -o "@n+-+@t" "$tm.mp3")"
+rm "$tm.wav"
+cd ..
+done
 
-    cd "$oldir"
-    echo -en "\033[1;32m\nProcessing finished successfully\n"
-    echo -en "\033[1;37m"
-    exit 0
+cd "$oldir"
+echo -en "\033[1;32m\nProcessing finished successfully\n"
+echo -en "\033[1;37m"
+exit 0
+```
 
 Для использования данного скрипта достаточно просто его запустить в директории с ape-файлами. Создается новая директория Output, в которой будут размещены одноименные файлы, но уже в формате mp3.
 
@@ -67,6 +71,8 @@ keywords: archlinex,music,ape,mp3
 
 Если необходимо улучшить качество mp3-файла, достаточно в строке
 
-    out="$(lame --preset standard "$tm.wav" "$tm.mp3")"
+```bash
+out="$(lame --preset standard "$tm.wav" "$tm.mp3")"
+```
 
 изменить standart на extreme.

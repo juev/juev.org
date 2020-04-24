@@ -15,8 +15,10 @@ keywords: archlinux,daemon,gamin
 
 Устанавливаем gamin:
 
-    $ yaourt -Rd fam
-    $ yaourt -S gamin
+```shell
+$ yaourt -Rd fam
+$ yaourt -S gamin
+```
 
 После чего удаляем fam из строки DAEMONS файла rc.conf.
 

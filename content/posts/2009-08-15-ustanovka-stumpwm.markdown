@@ -15,25 +15,31 @@ keywords: archlinux,wm,stumpwm,lisp,sbcl
 
 Сначала готовим базу для установки:
 
-    $ yaourt -S clx cl-ppcre sbcl
+```shell
+$ yaourt -S clx cl-ppcre sbcl
+```
 
 И теперь необходимо создать в домашней директории файл <em>~/.sbclrc</em> со следующим содержимым:
 
-    ;; This is to have clx running when sbcl begins, I think
-    ;; Load ASDF first
-    (require 'asdf)
-    (pushnew #p"/usr/share/common-lisp/systems/" asdf:*central-registry* :test #'equal)
-    (asdf:operate 'asdf:load-op 'cl-ppcre)
+```lisp
+;; This is to have clx running when sbcl begins, I think
+;; Load ASDF first
+(require 'asdf)
+(pushnew #p"/usr/share/common-lisp/systems/" asdf:*central-registry* :test #'equal)
+(asdf:operate 'asdf:load-op 'cl-ppcre)
 
-    ;; This is supposed to load cl-ppcre, I think
-    ;; Note that ASDF has already been loaded (up above, in the CLX part).  If that is not so, uncomment the following line
-    ;(require 'asdf)
-    (push #p"/usr/share/common-lisp/systems/" asdf:*central-registry*)
-    (asdf:operate 'asdf:load-op 'cl-ppcre)
+;; This is supposed to load cl-ppcre, I think
+;; Note that ASDF has already been loaded (up above, in the CLX part).  If that is not so, uncomment the following line
+;(require 'asdf)
+(push #p"/usr/share/common-lisp/systems/" asdf:*central-registry*)
+(asdf:operate 'asdf:load-op 'cl-ppcre)
+```
 
 И только теперь устанавливаем сам оконный менеджер:
 
-    $ yaourt -S stumpwm-git
+```shell
+$ yaourt -S stumpwm-git
+```
 
 Если пропустить создание файла <em>.sbcl</em>, то сборка пакета будет не возможна...
 

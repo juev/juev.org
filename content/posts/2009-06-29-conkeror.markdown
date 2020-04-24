@@ -12,7 +12,9 @@ keywords: firefox,conkeror
 
 Для установки conkeror в archlinux удобнее всего использовать yaourt, хотя и с помощью pacman установка пройдет успешно. Пакет conkeror-git располагается в community:
 
-    $ yaourt -S conkeror-git
+```shell
+$ yaourt -S conkeror-git
+```
 
 После чего, установленную программу можно запускать командой <strong>conkeror</strong>.
 
@@ -26,28 +28,36 @@ keywords: firefox,conkeror
 
 Я для себя выбрал следующие варианты (описание находиться под каждым кусочком кода):
 
-    require("new-tabs.js");
+```conf
+require("new-tabs.js");
+```
 
 Данная строка позволяет изменить интерфейс программы, показывая список буферов в верхней части программы, позволяя переключаться между буферами с помощью мыши.
 
-    function define_key_buffer_switch(key, buf_num) &#123;
-    define_key(content_buffer_normal_keymap, key, function (I) &#123;
+```js
+function define_key_buffer_switch(key, buf_num) {
+  define_key(content_buffer_normal_keymap, key, function (I) {
     switch_to_buffer(I.window, I.window.buffers.get_buffer(buf_num));
-    });
-    }
+  });
+}
 
-    for (let i = 0; i &lt; 10; ++i)
-    define_key_buffer_switch(i == 9 ? "0" : (i+1).toString(), i);
+for (let i = 0; i &lt; 10; ++i)
+  define_key_buffer_switch(i == 9 ? "0" : (i+1).toString(), i);
+```
 
 Данный код позволяет переключаться между буферами по их номерам. То есть для перехода с текущего на 8-ой буфер, достаточно нажать клавишу 8.
 
-    interactive("open-gmail", "Go to gmail", "follow",
-    $browser_object = "http://gmail.com/");
-    define_key(content_buffer_normal_keymap, "f1", "open-gmail");
+```js
+interactive("open-gmail", "Go to gmail", "follow",
+            $browser_object = "http://gmail.com/");
+define_key(content_buffer_normal_keymap, "f1", "open-gmail");
+```
 
 С помощью данных строк назначаем на F1 переход на страницу гугльмейла. Точно таким же методом можно на другие клавиши назначить другие сайты.
 
-    user_pref("extensions.checkCompatibility", false);
+```js
+user_pref("extensions.checkCompatibility", false);
+```
 
 А данная строка нужна для того, чтобы отключить проверку совместимости расширений огнелиса. Использовать только в том случае, если собираетесь использовать некоторые расширения в conkeror. На официальной странице браузера перечислены те расширения, что успешно работают, но их можно сосчитать по пальцам.
 

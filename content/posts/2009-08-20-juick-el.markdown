@@ -21,15 +21,19 @@ keywords: emacs,juick,elisp
 
 Установить довольно просто. Достаточно скачать файлы с сервера воспользовавшись кнопкой Download на указанной странице или создав локальную копию git-репозитория командой:
 
-    $git clone git://github.com/mad/emacs-juick-el.git
+```shell
+$ git clone git://github.com/mad/emacs-juick-el.git
+```
 
 Созданную папку размещаем в путях, прописанных в emacs, и в конфигурации .emacs прописываем следующее:
 
-    (add-to-list 'load-path "~/.emacs.d/plugins/juick-el/")
-    (require 'juick)
-    (setq juick-tmp-dir "~/.emacs.d/juick-avatars/")
-    (setq juick-tag-subscribed '("emacs" "linux" "juick" "GTD" "todo"))
-    ;(juick-auto-update t)
+```lisp
+(add-to-list 'load-path "~/.emacs.d/plugins/juick-el/")
+(require 'juick)
+(setq juick-tmp-dir "~/.emacs.d/juick-avatars/")
+(setq juick-tag-subscribed '("emacs" "linux" "juick" "GTD" "todo"))
+;(juick-auto-update t)
+```
 
 В первой строке указан путь до папки с файлами, вторая строка для подключения расширения, третья строка для указания папки, в которой будут храниться подгружаемые аватарки, в четвертой строке прописаны теги, на которые мы подписываемся, то есть все сообщения с данными тегами будут поступать к нам, вне зависимости от того, подписаны мы на данного пользователя или нет...
 
@@ -47,6 +51,8 @@ keywords: emacs,juick,elisp
 
 Убрать его довольно просто, нужно прописать следующую строку в конфигурацию емакса:
 
-    (setq fsm-debug nil)
+```lisp
+(setq fsm-debug nil)
+```
 
 Теперь данный буфер не будет создаваться...

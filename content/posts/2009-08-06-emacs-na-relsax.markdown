@@ -12,19 +12,23 @@ keywords: emacs,rails,ror
 
 Для того, чтобы эффективно использовать Emacs в разработке приложений в среде RubyOnRails достаточно установить ряд пакетов и прописать их использование в конфигурации Emacs. Этим и займемся...
 
-    $ yaourt -S emacs-rails-mode-git emacs-snippet-template-mode  emacs-find-recursive  emacs-ruby-mode
+```bash
+$ yaourt -S emacs-rails-mode-git emacs-snippet-template-mode  emacs-find-recursive  emacs-ruby-mode
+```
 
 Только что в системе оказались все необходимые модули для работы Emacs в среде RubyOnRails. Осталось указать их использование. Для этого прописываем в файле <em>~/.emacs</em> следующие строки:
 
-    (defun try-complete-abbrev (old)
-     (if (expand-abbrev) t nil))
+```lisp
+(defun try-complete-abbrev (old)
+ (if (expand-abbrev) t nil))
 
-    (setq hippie-expand-try-functions-list
-     '(try-complete-abbrev
-     try-complete-file-name
-     try-expand-dabbrev))
+(setq hippie-expand-try-functions-list
+ '(try-complete-abbrev
+ try-complete-file-name
+ try-expand-dabbrev))
 
-    (require 'rails)
+(require 'rails)
+```
 
 Перезапускаем Emacs для того, чтобы он перечитал конфигурацию, или явно указываем ему это сделать. И можно начинать работать!
 
