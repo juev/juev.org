@@ -18,43 +18,61 @@ keywords: archlinux,yaourt,install
 единственных случаев, когда сторонний репозиторий используется в системе). Для этого в
 файл `/etc/pacman.conf` добавляем строки:
 
-    [archlinuxfr]
-    Server = http://repo.archlinux.fr/i686
+```text
+[archlinuxfr]
+Server = http://repo.archlinux.fr/i686
+```
 
 Для i686 систем, или для систем x86_64:
 
-    [archlinuxfr]
-    Server = http://repo.archlinux.fr/x86_64
+```text
+[archlinuxfr]
+Server = http://repo.archlinux.fr/x86_64
+```
 
 Затем выполняем обновление репозиториев и установку yaourt с помощью команды:
 
-    # pacman -Sy yaourt
+```bash
+# pacman -Sy yaourt
+```
 
 <strong>2</strong>. С использованием AUR. Для этого достаточно скачать файлы
 <strong>PKBIULD</strong> и <strong>yaourt.install</strong> со <a
 href="http://aur.archlinux.org/packages/yaourt/yaourt/" rel="nofollow">страницы AUR</a> в темповую папку в домашней директории. Затем дать команду <strong>$makepkg</strong> в папке, куда скачали файлы и получаем готовый к инсталляции пакет, который устанавливаем с помощью pacman:
 
-    # pacman -U yaourt-0.x.x.pkg.tar.gz
+```bash
+# pacman -U yaourt-0.x.x.pkg.tar.gz
+```
 
 Обратите внимание: пакман запускаем от имени администратора. После чего йогурт можно использовать. В отличие от пакмана он не требует для запуска прав администратора. Для поиска пакетов используется:
 
-    $ yaourt -Ss подстрока_поиска
+```bash
+$ yaourt -Ss подстрока_поиска
+```
 
 Для установки пакета:
 
-    $ yaourt -S имя_пакета
+```bash
+$ yaourt -S имя_пакета
+```
 
 Для обновления базы пакетов и обновления программ:
 
-    $ yaourt -Syu
+```bash
+$ yaourt -Syu
+```
 
 Для удаления пакета, без соблюдения зависимостей:
 
-    $ yaourt -Rdn имя_пакета
+```bash
+$ yaourt -Rdn имя_пакета
+```
 
 Для удаления пакета со всеми зависимостями:
 
-    $ yaourt -Rsn имя_пакета
+```bash
+$ yaourt -Rsn имя_пакета
+```
 
 Настройка йогурта осуществляется с помощью файла <strong>/etc/yaourtrc</strong>, путем снятия комментирования с отдельных строк. Наименования параметров говорят сами за себя.
 

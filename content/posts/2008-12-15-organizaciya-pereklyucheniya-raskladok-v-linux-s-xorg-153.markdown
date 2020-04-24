@@ -16,14 +16,18 @@ keywords: emacs,linux,ibus,scim
 
 Устанавливаем следующие пакеты: scim, scim-tables и scim-m17n, затем в ~/.xinitrc или в файл, отрабатываемый при запуске оконного менеджера прописываем следующие строки:
 
-    export XMODIFIERS=@im=SCIM
-    export GTK_IM_MODULE=xim
-    export QT_IM_MODULE=xim
-    scim -d &
+```bash
+export XMODIFIERS=@im=SCIM
+export GTK_IM_MODULE=xim
+export QT_IM_MODULE=xim
+scim -d &
+```
 
 Для того, чтобы задать игнорирование переключение раскладки в отдельных приложениях нужно в ~/.Xdefaults прописать следующее (на примере emacs):
 
-    Emacs*useXIM:false
+```bash
+Emacs*useXIM:false
+```
 
 После перезагрузки иксов scim вызывается нажатием Ctrl-Space, после чего появляется панель программки, которая показывает текущую раскладку и предоставляет возможность настроить программу. Чем мы и воспользуемся.
 

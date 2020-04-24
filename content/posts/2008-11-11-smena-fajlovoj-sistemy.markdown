@@ -17,45 +17,64 @@ keywords: ext3,reiserfs,fs
 
 Переходим в рута командой
 
-    $ sudo -s -H
+```bash
+$ sudo -s -H
+```
 
 и все дальнейшие операции совершаем уже от его имени... Даем команду
 
-    $ tar --one-file-system -cpf /home/user/root.tar --exclude=/proc --exclude=/lost+found --exclude=/mnt --exclude=/sys /
+```bash
+$ tar --one-file-system -cpf /home/user/root.tar --exclude=/proc --exclude=/lost+found --exclude=/mnt --exclude=/sys /
+```
 
 В итоге получаем файл root.tar, который находиться в вашем домашнем каталоге, естественно вместо user писать свой логин... Расшфровку всех ключей давать не буду, если интересно, то man tar...
 
 Затем грузимся с livecd, который предоставляет доступ к консоли от рута... Я использовал диск от archlinux, как раз в нем производиться загрузка в консоль с правами рута, и если необходима установка вручную запускается инсталяция... После загрузки создаем новую файловую систему:
 
-    $ mkfs.ext3 /dev/sda3
+```bash
+$ mkfs.ext3 /dev/sda3
+```
 
 Монтируем ее в созданный каталог:
 
-    $ mount /dev/sda3 /mnt/disk
+```bash
+$ mount /dev/sda3 /mnt/disk
+```
 
 Монтируем home, чтобы получить доступ к архиву:
 
-    $ mount /dev/sda4 /mnt/home
+```bash
+$ mount /dev/sda4 /mnt/home
+```
 
 И затем распаковываем то, что было в корне:
 
-    $ tar -xpf /mnt/home/user/root.tar -C /mnt/disk
+```bash
+$ tar -xpf /mnt/home/user/root.tar -C /mnt/disk
+```
 
 Придется немного подождать... после чего создаем руками пропущенные каталоги:
 
-    $ mkdir proc
-    $ mkdir mnt
-    $ mkdir sys
+```bash
+$ mkdir proc
+$ mkdir mnt
+$ mkdir sys
+```
 
 Теперь отмонтируем:
 
-    $ umount /mnt/disk
-    $ umount /mnt/home
+```bash
+$ umount /mnt/disk
+$ umount /mnt/home
+```
 
 И затем оптимизируем новую файловую систему созданием индекса:
 
-    $ tune2fs -O +dir_index /dev/sda3
-    $ e2fsck -Df /dev/sda3
+
+```bash
+$ tune2fs -O +dir_index /dev/sda3
+$ e2fsck -Df /dev/sda3
+```
 
 Можно перезагружаться и смотреть результат...
 С корнем я быстро разобрался, а вот с домашним разделом пришлось довольно долго ждать... Обьем информации там был большой. Пришлось позаимствовать у отца внешний винт на 640 гигабайт... Скопировал все то, что было крупным, типа фильмов, музыки, книг... Музыки оказалось только на 51 гиг... :(

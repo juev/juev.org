@@ -13,7 +13,9 @@ pdnsd -- это локальный кэширующий dns-сервер, кот
 
 Для таких случаев и был создан pdnsd. Он позволяет сохранить в базе все ip-адреса, к которым обращались и использовать в дальнейшем их уже с локальной машины, без обращения в сеть. Установить этот пакет в archlinux не составляет труда:
 
-    $ sudo pacman -S pdnsd
+```bash
+$ sudo pacman -S pdnsd
+```
 
 После чего приступаем к его конфигурированию. Для этого переименовываем файл <code>/etc/pdsnd.conf.sample</code> в <code>/etc/pdsnd.conf</code> и затем его начинаем изменять. В секции global можно ничего не трогать, все настроено на оптимальную производительность и безопасность. Нас в данный момент времени интересуют секции server, важен порядок указания серверов.
 
@@ -21,33 +23,43 @@ pdnsd -- это локальный кэширующий dns-сервер, кот
 
 Приложения обычно узнают адрес DNS-сервера из файла <strong>/etc/resolv.conf</strong>. Поэтому для использования локального dns-сервера достаточно прописать в самом начале следующую строку:
 
-    >nameserver 127.0.0.1
+```text
+>nameserver 127.0.0.1
+```
 
 Однако, если у вас используется динамическая адресация, то данный файл будет каждый раз при перезапуске компьютера сбрасывать все изменения. Поэтому создаем файл <strong>/etc/resolv.conf.head</strong> в который прописываем вышеуказанную строчку.
 
 Теперь нужно только прописать запуск данного сервера на автомате при запуске компьютера. Для этого изменяем в файле <strong>/etc/rc.conf</strong> строку DAEMONS, добавляя в самый конец имя демона, в моем случае данная строка имеет вид:
 
-    DAEMONS=(syslog-ng crond @hal @cpufreq @iptables @network !netfs @hddtemp @sensors @pdnsd @xfs @alsa @mpd @lastfmsubmitd @lastmp @vboxnet @xinetd @preload @fam @cups)
+```text
+DAEMONS=(syslog-ng crond @hal @cpufreq @iptables @network !netfs @hddtemp @sensors @pdnsd @xfs @alsa @mpd @lastfmsubmitd @lastmp @vboxnet @xinetd @preload @fam @cups)
+```
 
 Для запуска демона без перезапуска компьютера используем команду:
 
-    $ sudo /etc/rc.d/pdnsd start
+```bash
+$ sudo /etc/rc.d/pdnsd start
+```
 
 И теперь проверяем работу сервера, для этого можно использовать команду nslookup, которая возвращает ip-адрес указанного доменного имени:
 
-    nslookup ya.ru
-    Server:         127.0.0.1
-    Address:        127.0.0.1#53
+```bash
+$ nslookup ya.ru
+Server:         127.0.0.1
+Address:        127.0.0.1#53
 
-    Non-authoritative answer:
-    Name:   ya.ru
-    Address: 213.180.204.8
+Non-authoritative answer:
+Name:   ya.ru
+Address: 213.180.204.8
+```
 
 Как видим 0 используется именно локальный dns-сервер. И при повторном обращении к dns адрес будет возвращен почти сразу, без задержек.
 
 Размер кэша можно определить следующим образом:
 
-    $ sudo ls -l /var/cache/pdnsd/pdnsd.cache
-    -rw-r----- 1 nobody root 272860 Мар 17 20:23 /var/cache/pdnsd/pdnsd.cache
+```bash
+$ sudo ls -l /var/cache/pdnsd/pdnsd.cache
+-rw-r----- 1 nobody root 272860 Мар 17 20:23 /var/cache/pdnsd/pdnsd.cache
+```
 
 Как видим, у меня за несколько дней работы кэш уже порядка 270 Килобайт. Но в дальнейшем, судя по отзывам, размер кэша изменяется не так значительно.
