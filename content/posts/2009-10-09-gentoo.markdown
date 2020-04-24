@@ -28,25 +28,31 @@ keywords: gentoo,linux,install
 
 Для начала выбрал следующие параметры в файле <em>/etc/make.conf</em>:
 
-    CFLAGS="-march=nocona -O2 -pipe"
-    CXXFLAGS="$&#123;CFLAGS}"
-    USE="-kde -qt3 -qt4"
-    ACCEPT_KEYWORDS="amd64 ~amd64"
-    MAKEOPTS="-j5"
+```conf
+CFLAGS="-march=nocona -O2 -pipe"
+CXXFLAGS="$&#123;CFLAGS}"
+USE="-kde -qt3 -qt4"
+ACCEPT_KEYWORDS="amd64 ~amd64"
+MAKEOPTS="-j5"
 
-    SYNC="rsync://rsync.europe.gentoo.org/gentoo-portage"
-    GENTOO_MIRRORS="http://gentoo.kiev.ua/ftp/ "
+SYNC="rsync://rsync.europe.gentoo.org/gentoo-portage"
+GENTOO_MIRRORS="http://gentoo.kiev.ua/ftp/ "
+```
 
 На установку базовой системы ушло чуть меньше часа. Затем добавил строки для указания используемого драйвера в иксах:
 
-    INPUT_DEVICES="evdev"
-    VIDEO_CARDS="intel"
+```conf
+INPUT_DEVICES="evdev"
+VIDEO_CARDS="intel"
+```
 
 И запустил установку иксов. Время было позднее, поэтому в соседней консоли я запустил установку гнома и пошел спать. Утром обнаружил, что иксы установились полностью, а гном не до конца (4 пакета не поставились), причина в обновлении питона. Запустил <strong>python-updater</strong>, после чего перезапустил установку гнома и недостающие несколько пакетов легко встали на место.
 
 Перед первым запуском иксов не забываем запустить демон <strong>hald</strong>. Иначе придется жестко перезагружать машину. Делаем следующее:
 
-    #/etc/init.d/hald start
+```bash
+#/etc/init.d/hald start
+```
 
 После чего иксы нормально запускаются и работают. Это небольшой нюанс, на который хотелось бы обратить внимание. Все остальное хорошо прописано в документации.
 
@@ -60,7 +66,9 @@ keywords: gentoo,linux,install
 
 При установке одной из программ обратил внимание на то, что во флагах прописана переменная <em>LINGUAS</em>, в которой перечислены множество языков. Стало понятным, что в этой переменной описывается, какие языки интерфейса мы собираемся использовать. Тут же прописал в <em>make.conf</em>:
 
-    LINGUAS="ru en"
+```conf
+LINGUAS="ru en"
+```
 
 Примерно на второй или третий день использования <strong>gentoo</strong> столкнулся с непонятками. Свободное пространство в корневом разделе просто закончилось. Из отведенных <em>10 гигобайт</em> места осталось от силы <em>300 мегабайт</em>. Начал разбираться.
 
@@ -68,8 +76,10 @@ keywords: gentoo,linux,install
 
 Стало понятно, что <em>10 гигабайт</em> под корень явно маловато при данной системе установки пакетов. Потому было решено перенести <em>distfiles</em> и <em>tmp</em> в раздел <em>home</em>, где место как раз имелось. Для этого создал <strong>/home/gentoo</strong>, в которой разместил <strong>distfiles</strong>, <strong>tmp</strong> и <strong>packages</strong>. После чего в <em>/etc/make.conf</em> определил переменные:
 
-    PORTAGE_TMPDIR="/home/gentoo/tmp"
-    DISTDIR="/home/gentoo/distfiles"
+```conf
+PORTAGE_TMPDIR="/home/gentoo/tmp"
+DISTDIR="/home/gentoo/distfiles"
+```
 
 И после переноса файлов из <em>/usr/portage/distfiles</em> в <em>/home/gentoo/distfiles</em> дал команду <strong>env-update</strong>. Таким образом в корне осталась только сама система (на данный момент у меня занимает порядка <em>4,7 гигабайта</em>), а хранение исходников и сборка производиться на разделе, где места всегда хватает.
 

@@ -27,7 +27,9 @@ keywords: ratpoison,wm,linux,tiling
 
 Для изменения префикса используется команда *escape*, например для использования **win-z**:
 
-    escape s-z
+```conf
+escape s-z
+```
 
 Все окна открываются на весь экран, не перекрывая друг друга. Причем режим плавающих окон в данном оконном менеджере даже не предусмотрен, хотя диалоговые окна показываются корректно. Рабочую область экрана можно разбивать на определенные части, в которых будут размещаться открытые программы. Управление рабочими областями осуществляется путем ввода определенной клавиатурной последовательности. По умолчанию **C-t s** разбивает область на две части по горизонтали, а **C-t S** на две части по вертикали.
 
@@ -37,67 +39,85 @@ keywords: ratpoison,wm,linux,tiling
 
 Для того, чтобы задать оформление основных элементов *RatPoison*, используются следующие строки:
 
-    unmanage MPlayer                         # делаем MPlayer плавающим
-    startup_message off                      # отключаем приветствие
-    exec xsetroot -cursor_name left_ptr      # устанавливаем курсор
-    # Причем установка курсора действует великолепно, в отличие от awesome.
-    exec rpws init 4 -k                      # создаем 4 рабочих стола
-    msgwait 3                                # задаем ожидание при показе оповещений
-    wrap on                                  #
-    set winname name                         # отображение имени окна
-    set winliststyle column                  #
-    set font -*-terminus-medium-r-normal-*-14-*-*-*-*-*-*-* # используемый шрифт
-    set bgcolor #e7e3e7                      # цвет фона
-    set fgcolor #737373                      # цвет шрифта
-    set inputwidth 300                       # ширина строки ввода по умолчанию
-    set border 0                             # толщина обрамления окна
-    set wingravity center                    #
-    set barborder 1                          # толщина обрамления диалогового окна
-    set bargravity center                    # расположение диалогового окна
-    set barpadding 2 2                       #
+```conf
+unmanage MPlayer                         # делаем MPlayer плавающим
+startup_message off                      # отключаем приветствие
+exec xsetroot -cursor_name left_ptr      # устанавливаем курсор
+# Причем установка курсора действует великолепно, в отличие от awesome.
+exec rpws init 4 -k                      # создаем 4 рабочих стола
+msgwait 3                                # задаем ожидание при показе оповещений
+wrap on                                  #
+set winname name                         # отображение имени окна
+set winliststyle column                  #
+set font -*-terminus-medium-r-normal-*-14-*-*-*-*-*-*-* # используемый шрифт
+set bgcolor #e7e3e7                      # цвет фона
+set fgcolor #737373                      # цвет шрифта
+set inputwidth 300                       # ширина строки ввода по умолчанию
+set border 0                             # толщина обрамления окна
+set wingravity center                    #
+set barborder 1                          # толщина обрамления диалогового окна
+set bargravity center                    # расположение диалогового окна
+set barpadding 2 2                       #
+```
 
 Теперь нам необходимо определить клавиатурные комбинации для запуска основных программ, переключения между открытыми окнами, и т.д.
 Для этого используется команда *bind*, например для изменения запуска терминала на другую программу:
 
-    unbind c
-    bind c exec sakura
+```conf
+unbind c
+bind c exec sakura
+```
 
 При использовании *bind* нужно помнить, что если описывается только клавиатурная комбинация, то она используется вместе с префиксом *C-t*, для того, чтобы определить комбинацию, которая будет работать без префикса, необходимо перед описанием сочетания клавиш указывать команду *definekey* с ключевым словом *top*, например:
 
-    definekey top s-S-Return exec sakura
+```conf
+definekey top s-S-Return exec sakura
+```
 
 Для того, чтобы изменить сочетание клавиш на переключение между окнами на привычные *Alt-Tab* нужно указать следующие строки:
 
-    definekey top M-Tab next
-    definekey top M-ISO_Left_Tab prev
+```conf
+definekey top M-Tab next
+definekey top M-ISO_Left_Tab prev
+```
 
 Определим довольно сложную задачу, такую как запуск gimp:
 
-    # -- gimp (after second command (s-G), to restore gimp in frames, run s-2)
-    definekey top s-g exec ratpoison -c "hsplit 1/5" -c "focusright" -c "hsplit 3/4" &amp;&amp; exec gimp
-    definekey top s-G exec ratpoison -c "exchangeright" -c "focusleft" -c "select 0" -c "focusleft" -c "select 1" &amp;&amp; exec ratpoison -c "dedicate" -c "focusright" &amp;&amp; exec ratpoison -c "dedicate" -c "focusright" &amp;&amp; exec ratpoison -c "dedicate" -c "focusleft" &amp;&amp; exec ratpoison -c "setenv fs2 `ratpoison -c 'fdump'`"
+```conf
+# -- gimp (after second command (s-G), to restore gimp in frames, run s-2)
+definekey top s-g exec ratpoison -c "hsplit 1/5" -c "focusright" -c "hsplit 3/4" && exec gimp
+definekey top s-G exec ratpoison -c "exchangeright" -c "focusleft" -c "select 0" -c "focusleft" -c "select 1" && exec ratpoison -c "dedicate" -c "focusright" && exec ratpoison -c "dedicate" -c "focusright" && exec ratpoison -c "dedicate" -c "focusleft" && exec ratpoison -c "setenv fs2 `ratpoison -c 'fdump'`"
+```
 
 Для переключения между рабочими столами используются сочетания Alt-&#123;F1-F9}, для переопределения можно использовать следующую конструкцию:
 
-    definekey top s-1 exec rpws 1
-    definekey top s-2 exec rpws 2
-    definekey top s-3 exec rpws 3
-    definekey top s-4 exec rpws 4
+```conf
+definekey top s-1 exec rpws 1
+definekey top s-2 exec rpws 2
+definekey top s-3 exec rpws 3
+definekey top s-4 exec rpws 4
+```
 
 Для того, чтобы запустить программу, используется сочетание клавиш **C-t !** Но для того, чтобы организовать более удобный запуск программ, необходимо использовать сторонние программы. На мой взгляд самой удобной является программа **dmenu.**
 
-    definekey top s-m exec $(dmenu_path | dmenu)
+```conf
+definekey top s-m exec $(dmenu_path | dmenu)
+```
 
 С ее же помощью можно получить список открытых окон на текущем рабочем столе:
 
-    definekey top s-w exec ratpoison -c "select `ratpoison -c "windows" | dmenu | awk '&#123;print $1}'`"
+```conf
+definekey top s-w exec ratpoison -c "select `ratpoison -c "windows" | dmenu | awk '&#123;print $1}'`"
+```
 
 Эта же функция есть непосредственно в самом оконном менеджере, и по умолчанию назначена на сочетание клавиш **C-t w**.
 
 По умолчанию *RatPoison* не имеет никаких панелей и для получения служебной информации очень удобно использовать *dzen2* или *conky*.
 Для того, чтобы показывать панель, не перекрываемую другими окнами, достаточно в файла конфигурации добавить следующую строку:
 
-    set padding 0 14 0 0
+```conf
+set padding 0 14 0 0
+```
 
 В данном случае показан пример отведения поля в 14 пикселей вверху экрана. И теперь можно в выделенной области выводить панель *dzen2* или организовывать вывод *conky*.
 

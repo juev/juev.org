@@ -20,79 +20,81 @@ keywords: xbindkeys,hotkeys,linux
 
 Текст моего конфига <strong>~/.xbindkeysrc.scm</strong>:
 
-    ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-    ;; Start of xbindkeys guile configuration ;;
-    ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+```lisp
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;; Start of xbindkeys guile configuration ;;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
-    ;; List of modifier:
-    ;;   Release, Control, Shift, Mod1 (Alt), Mod2 (NumLock),
-    ;;   Mod3 (CapsLock), Mod4, Mod5 (Scroll).
+;; List of modifier:
+;;   Release, Control, Shift, Mod1 (Alt), Mod2 (NumLock),
+;;   Mod3 (CapsLock), Mod4, Mod5 (Scroll).
 
-    (define (first-binding)
-      "First binding"
-      (xbindkey '(XF86Calculator) "emacsclient -c -a \"\"")
+(define (first-binding)
+  "First binding"
+  (xbindkey '(XF86Calculator) "emacsclient -c -a \"\"")
 
-      (xbindkey '(Mod1 F2) "dmenu_run")
-      (xbindkey '(Mod4 F2) "dmenu_run")
+  (xbindkey '(Mod1 F2) "dmenu_run")
+  (xbindkey '(Mod4 F2) "dmenu_run")
 
-      (xbindkey '(Print) "scrot -q 10")
-      (xbindkey '(Mod1 Print) "scrot -q 10 -s")
+  (xbindkey '(Print) "scrot -q 10")
+  (xbindkey '(Mod1 Print) "scrot -q 10 -s")
 
-      (xbindkey '(XF86Sleep) "/home/juev/.scripts/off")
+  (xbindkey '(XF86Sleep) "/home/juev/.scripts/off")
 
-      (xbindkey '(XF86AudioLowerVolume) "amixer -q set Master 5- unmute")
-      (xbindkey '(XF86AudioRaiseVolume) "amixer -q set Master 5+ unmute")
-      (xbindkey '(XF86AudioMute) "amixer -q sset Master toggle")
+  (xbindkey '(XF86AudioLowerVolume) "amixer -q set Master 5- unmute")
+  (xbindkey '(XF86AudioRaiseVolume) "amixer -q set Master 5+ unmute")
+  (xbindkey '(XF86AudioMute) "amixer -q sset Master toggle")
 
-      (xbindkey '(XF86AudioPrev) "mpc prev")
-      (xbindkey '(XF86AudioPlay) "mpc toggle")
-      (xbindkey '(XF86AudioNext) "mpc next")
+  (xbindkey '(XF86AudioPrev) "mpc prev")
+  (xbindkey '(XF86AudioPlay) "mpc toggle")
+  (xbindkey '(XF86AudioNext) "mpc next")
 
-      (xbindkey-function '(Mod4 a) second-binding))
+  (xbindkey-function '(Mod4 a) second-binding))
 
-    (define (reset-first-binding)
-      "reset first binding"
-      (ungrab-all-keys)
-      (remove-all-keys)
-      (first-binding)
-      (grab-all-keys))
+(define (reset-first-binding)
+  "reset first binding"
+  (ungrab-all-keys)
+  (remove-all-keys)
+  (first-binding)
+  (grab-all-keys))
 
-    (define (second-binding)
-     "Second binding"
-     (ungrab-all-keys)
-     (remove-all-keys)
-     (xbindkey-function 'f
-         (lambda ()
-             (run-command "firefox")
-             (reset-first-binding)))
-     (xbindkey-function 'c
-         (lambda ()
-             (run-command "conkeror")
-             (reset-first-binding)))
-     (xbindkey-function 'g
-         (lambda ()
-             (run-command "gcalctool")
-             (reset-first-binding)))
-     (xbindkey-function 't
-         (lambda ()
-             (run-command "thunar")
-             (reset-first-binding)))
-     (xbindkey-function 'k
-         (lambda ()
-             (run-command "keepassx")
-             (reset-first-binding)))
-     (xbindkey-function 'e
-         (lambda ()
-             (run-command "emacsclient -c -a \"\"")
-             (reset-first-binding)))
-     (xbindkey-function '(control g) reset-first-binding)
-     (grab-all-keys))
+(define (second-binding)
+ "Second binding"
+ (ungrab-all-keys)
+ (remove-all-keys)
+ (xbindkey-function 'f
+     (lambda ()
+         (run-command "firefox")
+         (reset-first-binding)))
+ (xbindkey-function 'c
+     (lambda ()
+         (run-command "conkeror")
+         (reset-first-binding)))
+ (xbindkey-function 'g
+     (lambda ()
+         (run-command "gcalctool")
+         (reset-first-binding)))
+ (xbindkey-function 't
+     (lambda ()
+         (run-command "thunar")
+         (reset-first-binding)))
+ (xbindkey-function 'k
+     (lambda ()
+         (run-command "keepassx")
+         (reset-first-binding)))
+ (xbindkey-function 'e
+     (lambda ()
+         (run-command "emacsclient -c -a \"\"")
+         (reset-first-binding)))
+ (xbindkey-function '(control g) reset-first-binding)
+ (grab-all-keys))
 
-    (first-binding)
+(first-binding)
 
-    ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-    ;; End of xbindkeys guile configuration ;;
-    ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;; End of xbindkeys guile configuration ;;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+```
 
 Подробно расписывать, как тут и что задается, я не буду, по сути все понятно из текста. И формат вызова функций и прописывание самих комбинаций. Хочу только остановиться на том, какие комбинации тут используются для составных клавиатурных сочетаний.
 

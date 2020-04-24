@@ -23,7 +23,9 @@ keywords: ubuntu,wm,gnome,tips
 
 На следующий день приступил к настройке системы. Начал с русификации консоли, которая автоматом у меня почему то не прошла. Для этого просто запустил в консоли
 
-    $ sudo dpkg-reconfigure console-setup
+```shell
+$ sudo dpkg-reconfigure console-setup
+```
 
 Ответил на ряд вопросов и уже наслаждался консолью с русским языком, с переключением по CapsLock.
 
@@ -31,9 +33,11 @@ keywords: ubuntu,wm,gnome,tips
 
 Сначала воспользовался простым способом создания скрипта в папке <em>/etc/network/if-pre-up.d</em>, в котором описывались строки загрузки правил. Ну а затем мне захотелось избавиться от <strong>Network Manager</strong>, который используется в системе по умолчанию. Компьютер у меня стоит дома, подключен к локальной сети, где адреса раздаются по <em>dhpc</em>, поэтому решено было просто описать конфигурацию в файле <em>/etc/network/interfaces</em>, а <strong>Network Manager</strong> просто отключить. Добавил в файл следующие строки:
 
-    auto eth0
-    iface eth0 inet dhcp
-        pre-up iptables-restore &lt; /etc/iptables.rules
+```conf
+auto eth0
+iface eth0 inet dhcp
+    pre-up iptables-restore &lt; /etc/iptables.rules
+```
 
 Как видно, сетевой экран инициализируется уже в этом файле, поэтому ранее созданный скрипт я просто удалил. А на экране появилось немного больше свободного пространства из-за избавления от значка <strong>Network Manager</strong>.
 
