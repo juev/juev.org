@@ -17,7 +17,8 @@
     <link rel="shortcut icon" crossorigin="anonymous" href="https://static.juev.org/favicon.ico">
     <link rel="apple-touch-icon" href="{{- .Site.BaseURL -}}apple-touch-icon.png">
     <link rel="alternate" type="application/rss" href="{{- .Site.BaseURL -}}atom.xml" title="Denis Evsyukov">
-    <link rel="stylesheet" type="text/css" crossorigin="anonymous" href="https://static.juev.org/css/master.fc091916.css">
+    {{ $style := resources.Get "scss/master.scss" | toCSS | minify | fingerprint -}}
+    <link rel="stylesheet" href="{{ $style.Permalink }}" integrity="{{ $style.Data.Integrity }}">
     <link rel="sitemap" type="application/xml" title="Sitemap" href="{{ .Site.BaseURL }}sitemap.xml" />
     {{- with .PrevInSection }}
     <link rel="prev" href="{{.Permalink}}">
@@ -64,7 +65,7 @@
 <body class="wide" itemscope itemtype="https://schema.org/WebPage">
     <div class="navigation" itemscope itemtype="https://schema.org/SiteNavigationElement">
         <div class="width-fix">
-            <a itemprop="url" href="{{- .Site.BaseURL -}}" id="home" rel="nofollow"></a>
+            <a itemprop="url" href="{{- .Site.BaseURL -}}" id="home" rel="nofollow"><img src="{{- .Site.BaseURL -}}images/home.png" alt="Home"></a>
             <ul>
                 <li><a itemprop="url" href="{{- .Site.BaseURL -}}posts/" rel="nofollow">Статьи</a></li>
                 <li>|</li>
