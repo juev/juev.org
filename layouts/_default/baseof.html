@@ -22,11 +22,9 @@
     <link rel="sitemap" type="application/xml" title="Sitemap" href="{{ .Site.BaseURL }}sitemap.xml" />
     {{- with .PrevInSection }}
     <link rel="prev" href="{{.Permalink}}">
-    <link rel="prefetch" href="{{.Permalink}}">
     {{- end }}
     {{- with .NextInSection }}
     <link rel="next" href="{{.Permalink}}">
-    <link rel="prefetch" href="{{.Permalink}}">
     {{- end }}
     {{ "<!-- og:meta -->" | safeHTML }}
     <meta property="og:title" content="{{- .Title -}}" />
