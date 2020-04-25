@@ -1,9 +1,9 @@
 {{- $pages := where site.RegularPages "Section" .Section -}}
 <div class="pagination">
-    {{- with $pages.ByDate.Next . }}
+    {{- with .PrevInSection }}
     <p class="previous">Previous post: <a itemprop="url" rel="prev" href="{{.Permalink}}" title="View {{ .Title }}">{{ .Title }}</a></p>
     {{ end -}}
-    {{- with $pages.ByDate.Prev . }}
+	{{- with .NextInSection }}
     <p class="next">Next post: <a itemprop="url" rel="next" href="{{.Permalink}}" title="View {{ .Title }}">{{ .Title }}</a></p>
     {{ end -}}
 </div>
