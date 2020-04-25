@@ -4,10 +4,6 @@ date: 2020-02-15T10:31:38+0300
 image: https://static.juev.org/images/links.jpg
 tags:
   - links
-  - golang
-  - cloud
-  - cpp
-  - cli
 ---
 
 За прошедшую неделю сохранил 58 ссылок.

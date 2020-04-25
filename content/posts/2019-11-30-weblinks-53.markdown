@@ -4,8 +4,6 @@ date: 2019-11-30T09:01:24+0300
 image: https://static.juev.org/images/links.jpg
 tags:
   - links
-  - golang
-  - haskell
 ---
 Прошедшая неделя была насыщена находками, сохранил 99 ссылок. Своеобразный рекорд.
 

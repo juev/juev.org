@@ -5,8 +5,6 @@ date: 2020-02-29 10:31
 image: https://static.juev.org/images/links.jpg
 tags:
   - links
-  - golang
-  - rust
 ---
 За прошедшую неделю сохранил 54 ссылки. Лучшая находка недели это сайт [fasterthanli.me](https://fasterthanli.me)
 с очень подробными и интересными статьями по языкам программирования. Ссылки на статьи в списке

@@ -1,0 +1,22 @@
+---
+title: "Ссылки #74"
+date: 2020-04-25T08:45:20+0300
+image: https://static.juev.org/images/links.jpg
+tags:
+  - links
+---
+За прошедшую неделю сохранил 41 ссылку.
+
+* [A Guide to My Organizational Workflow: How I Do Everything](http://cachestocaches.com/2020/3/my-organized-life/) --  про организацию GTD с использованием emacs
+* [shazow/ssh-chat](https://github.com/shazow/ssh-chat) -- интересный проект, чат по ssh
+* [The Art of Automation](https://blog.jessfraz.com/post/the-art-of-automation/) -- про автоматизацию всего и вся от Джесики
+* [Hydra Framework](https://github.com/graninas/Hydra/tree/labyrinth-game) -- фреймворк для написания игр на Haskell
+* [Writing a RISC-V Emulator from Scratch in 10 Steps](https://book.rvemu.app/) -- создание компилятора. На текущий момент готовы две части из предполагаемых десяти
+* [Using go/analysis to write a custom linter](https://arslan.io/2019/06/13/using-go-analysis-to-write-a-custom-linter/) -- хороший гайд от Фатиха, по написанию линтеров
+* [Мех Гайд](http://rumech.guide/#/) -- сайт посвященный механическим клавиатурам, там же есть ссылка на Discord с обсуждениями
+* [How I take Zettelkasten notes with Notion](https://youtu.be/e2tttUPGlB8) -- про использование метода Zettelkasten в Notion, последний мне нравится, но очень смущает его платность
+* [How to Take Smart Notes | Zettelkasten Method in Roam Research](https://www.youtube.com/watch?v=ljyo_WAJevQ) -- еще одно видео на тему Zettelkasten-метода, но уже с использованием Roam Research
+* [Digital fingerprints are the new cookies — and advertisers want yours](https://thenextweb.com/podium/2020/04/02/digital-fingerprints-are-the-new-cookies-and-advertisers-want-yours/) -- новые методы отслеживания в интернете, на что стоит обратить внимание
+* [A no_std Rust binary](https://fasterthanli.me/blog/2020/a-no-std-rust-binary/) -- очередная статья от Амоса, посвященная Rust
+
+Хорошей вам недели!

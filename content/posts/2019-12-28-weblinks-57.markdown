@@ -4,9 +4,6 @@ date: 2019-12-28T13:16:51+0300
 image: https://static.juev.org/images/links.jpg
 tags:
   - links
-  - haskell
-  - golang
-  - linux
 ---
 На прошедшей неделе сохранил в свой аккаунт 51 ссылку, лучшие как обычно представлю вам.
 

@@ -4,7 +4,6 @@ date: 2020-01-04T10:11:15+0300
 image: https://static.juev.org/images/links.jpg
 tags:
   - links
-  - vim
 ---
 За прошедшую неделю сохранил 52 ссылки. Из интересного:
 

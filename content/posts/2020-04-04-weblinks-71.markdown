@@ -5,9 +5,6 @@ date: 2020-04-04 10:37
 image: https://static.juev.org/images/links.jpg
 tags:
   - links
-  - golang
-  - notes
-  - ansible
 ---
 За прошедшую неделю нашел 47 ссылок, лучшие представляю вам.
 

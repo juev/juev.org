@@ -4,8 +4,6 @@ date: 2020-01-11T09:32:32+0300
 image: https://static.juev.org/images/links.jpg
 tags:
   - links
-  - rust
-  - golang
 ---
 За прошедшую неделю сохранил 49 ссылок.
 

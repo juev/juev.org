@@ -4,9 +4,6 @@ date: 2020-02-08T09:17:23+0300
 image: https://static.juev.org/images/links.jpg
 tags:
   - links
-  - emacs
-  - golang
-  - docker
 ---
 За прошедшую неделю сохранил 66 ссылок, из которых порядка 20 только вчера и еще не все успел прочесть.
 

@@ -4,8 +4,6 @@ date: 2020-03-14T10:34:14+0300
 image: https://static.juev.org/images/links.jpg
 tags:
   - links
-  - golang
-  - rust
 ---
 Еще одна неделя позади. Нашел и сохранил у себя в Pocket 51 ссылку. Как обычно, лучшими ссылками делюсь с вами.
 

@@ -4,10 +4,6 @@ date: 2020-04-11T08:54:01+0300
 image: https://static.juev.org/images/links.jpg
 tags:
   - links
-  - golang
-  - vpn
-  - tips
-  - soft
 ---
 За прошедшую неделю нашел на просторах интернета 65 ссылок.
 

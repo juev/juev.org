@@ -4,7 +4,6 @@ date: 2019-11-09T10:21:12+0300
 image: https://static.juev.org/images/links.jpg
 tags:
   - links
-  - haskell
 ---
 Прошедшая неделя оказалась довольно спокойной, сохранил порядка 60 ссылок.
 

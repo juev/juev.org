@@ -4,8 +4,6 @@ date: 2020-02-22T07:54:55+0300
 image: https://static.juev.org/images/links.jpg
 tags:
   - links
-  - golang
-  - cpp
 ---
 За прошедшую неделю сохранил 66 ссылок.
 

@@ -4,8 +4,6 @@ date: 2020-01-25T10:54:48+0300
 image: https://static.juev.org/images/links.jpg
 tags:
   - links
-  - golang
-  - vpn
 ---
 За прошедшую неделю сохранил 78 ссылок.
 

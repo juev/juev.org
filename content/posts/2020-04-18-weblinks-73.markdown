@@ -4,9 +4,6 @@ date: 2020-04-18T10:12:18+0300
 image: https://static.juev.org/images/links.jpg
 tags:
   - links
-  - rust
-  - golang
-  - git
 ---
 За прошедшую неделю сохранил в свой Pocket 58 ссылок.
 

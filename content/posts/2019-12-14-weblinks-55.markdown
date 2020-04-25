@@ -4,7 +4,6 @@ date: 2019-12-14T10:47:25+0300
 image: https://static.juev.org/images/links.jpg
 tags:
   - links
-  - vim
 ---
 За прошедшую неделю нашел 53 ссылки, лучшие из которых представляю вам.
 
