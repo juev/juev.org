@@ -294,6 +294,16 @@ pre code
   font-size: 11pt;
 }
 
+pre code:before,
+pre code:after {
+  content: '';
+}
+
+code:before,
+code:after {
+  content: "`";
+  display: inline;
+}
 
 #feed
 {
