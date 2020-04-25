@@ -25,12 +25,16 @@ description: Сегодня занимался тем, что работал н�
 
 Использовать расширение довольно просто. Достаточно добавить в заголовок документа строки:
 
-    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js"></script>
-    <script type="text/javascript" src="http://twitter-trackbacks-widget.googlecode.com/files/jquery.twittertrackbacks-1.0.min.js"></script>
+```html
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js"></script>
+<script type="text/javascript" src="http://twitter-trackbacks-widget.googlecode.com/files/jquery.twittertrackbacks-1.0.min.js"></script>
+```
 
 И затем в тем месте, где будут располагаться реплаи добавить строку:
 
-    <div class="twitter-trackbacks">loading..</div>
+```html
+<div class="twitter-trackbacks">loading..</div>
+```
 
 В данном случае показываться будет только один trackback, который с течением определенного
 времени будем сменяться другим, если он есть. Если же необходимо показать список из
@@ -39,20 +43,22 @@ replay, то необходимо дополнительно задавать о
 
 Для себя я выбрал следующие значения:
 
-    <script type="text/javascript">
-        $(document).ready(function(){
-                $('div.twitter-trackbacks').twitterTrackbacks({
-                        header:'<h2>Twitter trackback</h2>'
-                        ,url:'http://www.juev.ru{{ page.url }}'
-                        ,n:8
-                        ,show_n:0
-                        ,inf_tip:0
-                        ,show_avatar:0
-                        ,show_author:1
-                        ,info:''
-                });
-        });
-    </script>
+```html
+<script type="text/javascript">
+    $(document).ready(function(){
+            $('div.twitter-trackbacks').twitterTrackbacks({
+                    header:'<h2>Twitter trackback</h2>'
+                    ,url:'http://www.juev.ru{{ page.url }}'
+                    ,n:8
+                    ,show_n:0
+                    ,inf_tip:0
+                    ,show_avatar:0
+                    ,show_author:1
+                    ,info:''
+            });
+    });
+</script>
+```
 
 Кода минимум, и все работает. Код `css` для trackback, которые я прописал у себя, приводить не буду, так как взял его из кода
 примеров, приведенных на официальной странице расширения.

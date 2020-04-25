@@ -17,9 +17,9 @@ keywords: html, standart, encoding, title, кодировка, html5, xhtml
 
 В связи с этим добавил в заголовок файла строку:
 
-{% highlight html %}
+```html
 <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
-{% endhighlight %}
+```
 
 И только после этого все заработало как положено. И в **InstaPaper** и в **Readability** стали нормально отображаться заголовки статей.
 
@@ -27,7 +27,7 @@ keywords: html, standart, encoding, title, кодировка, html5, xhtml
 
 Было:
 
-{% highlight html %}
+```html
 <!DOCTYPE HTML>
 <html lang="ru">
 <head>
@@ -38,10 +38,10 @@ keywords: html, standart, encoding, title, кодировка, html5, xhtml
 
 </body>
 </html>
-{% endhighlight %}
+```
 
 Стало:
-{% highlight html %}
+```html
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ru" lang="ru_RU">
 <head>
@@ -52,7 +52,7 @@ keywords: html, standart, encoding, title, кодировка, html5, xhtml
 
 </body>
 </html>
-{% endhighlight %}
+```
 
 Таким образом можно подвести небольшой итог. Стандарт **html5** можно использовать уже сейчас, но лишь в том случае, если сайт создается на английском языке. В противном случае придется столкнуться с проблемой определения кодировки файла при использовании сторонних сервисов.
 

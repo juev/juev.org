@@ -19,16 +19,20 @@ description: Ускоряем сайт за счет асинхронной за
 
 Для этого достаточно вместо стандартного включения скрипта в разделе `head` файла
 
-	<script type="text/javascript" src="http://url_to_file.js"></script>
+```html
+<script type="text/javascript" src="http://url_to_file.js"></script>
+```
 
 прописать перед закрывающим тегом `</body>` следующий блок:
 
-	<script type="text/javascript">
-		var script = document.createElement("script")
-		script.type = "text/javascript";
-		script.src = 'http://url_to_file.js';
-		document.getElementsByTagName("head")[0].appendChild(script);
-	</script>
+```html
+<script type="text/javascript">
+	var script = document.createElement("script")
+	script.type = "text/javascript";
+	script.src = 'http://url_to_file.js';
+	document.getElementsByTagName("head")[0].appendChild(script);
+</script>
+```
 
 После чего загрузка файлов уже не блокируется и загрузка страницы стала проходить гораздо быстрее.
 
@@ -37,8 +41,10 @@ description: Ускоряем сайт за счет асинхронной за
 В будущем, при использовании `html5` использовать `async` загрузку будет еще проще. Достаточно будет в разделе `head` прописать
 включение скриптов в виде:
 
-	<script async src="someAsyncScript.js" onload="someInit()"></script>
-	<script defer src="someDeferScript.js" onload="someInit()"></script>
+```html
+<script async src="someAsyncScript.js" onload="someInit()"></script>
+<script defer src="someDeferScript.js" onload="someInit()"></script>
+```
 
 *Аргумент `onload` не обязательный.*
 

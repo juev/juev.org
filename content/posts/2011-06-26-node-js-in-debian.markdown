@@ -22,21 +22,25 @@ description: Рассмотрим установку node.js в среде debia
 
 Предварительно установим в системе необходимые пакеты:
 
-    $ sudo aptitude install build-essential
-    $ sudo aptitude install python-software-properties libssl-dev libreadline-dev
+```shell
+$ sudo aptitude install build-essential
+$ sudo aptitude install python-software-properties libssl-dev libreadline-dev
+```
 
 Теперь выбираем один из скриптов для установки, что представлены на странице [gist.github.com/579814][2]. Я взял один из них и изменил директорию установки на `~/.node`, получилось следующее:
 
-    #!/bin/bash
-    echo 'export PATH=$HOME/.node/bin:$PATH' >> ~/.bashrc
-    . ~/.bashrc
-    mkdir ~/.node
-    mkdir ~/node-latest-install
-    cd ~/node-latest-install
-    curl http://nodejs.org/dist/node-latest.tar.gz | tar xz --strip-components=1
-    ./configure --prefix=~/.node
-    make install # ok, fine, this step probably takes more than 30 seconds...
-    curl http://npmjs.org/install.sh | sh
+```bash
+#!/bin/bash
+echo 'export PATH=$HOME/.node/bin:$PATH' >> ~/.bashrc
+. ~/.bashrc
+mkdir ~/.node
+mkdir ~/node-latest-install
+cd ~/node-latest-install
+curl http://nodejs.org/dist/node-latest.tar.gz | tar xz --strip-components=1
+./configure --prefix=~/.node
+make install # ok, fine, this step probably takes more than 30 seconds...
+curl http://npmjs.org/install.sh | sh
+```
 
 Пишут, что устанавливаться будет порядка 30 секунд, но на моей довольно мощной машине (Core2DUO E8400, 2GB) компиляция шла несколько минут.
 
@@ -46,17 +50,21 @@ description: Рассмотрим установку node.js в среде debia
 
 Для того, чтобы проверить работу **node.js** достаточно создать типовой файл `example.js`:
 
-    var http = require('http');
-    http.createServer(function (req, res) {
-        res.writeHead(200, {'Content-Type': 'text/plain'});
-        res.end('Hello World\n');
-    }).listen(1337, "127.0.0.1");
-    console.log('Server running at http://127.0.0.1:1337/');
+```js
+var http = require('http');
+http.createServer(function (req, res) {
+    res.writeHead(200, {'Content-Type': 'text/plain'});
+    res.end('Hello World\n');
+}).listen(1337, "127.0.0.1");
+console.log('Server running at http://127.0.0.1:1337/');
+```
 
 И теперь запускаем сам сервер командой:
 
-    $ node example.js
-    Server running at http://127.0.0.1:1337/
+```shell
+$ node example.js
+Server running at http://127.0.0.1:1337/
+```
 
 Запуск совершается мгновенно, после чего можно открывать в браузере адрес `http://127.0.0.1:1337/`, и наблюдать строчку `Hello World!`.
 
@@ -64,7 +72,9 @@ description: Рассмотрим установку node.js в среде debia
 
 Установить дополнительные модули с помощью пакетного менеджера **npm** очень просто. Например:
 
-    $ npm install -g coffee-script
+```shell
+$ npm install -g coffee-script
+```
 
 Данная команда установит *coffee-script* в директорию `~/.node` и позволит использовать coffee в своих проектах. Использование ключа `-g` строго обязательно, иначе установка будет осуществляться в текущую директорию.
 
