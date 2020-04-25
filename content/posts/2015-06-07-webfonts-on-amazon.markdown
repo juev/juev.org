@@ -13,22 +13,24 @@ image: https://static.juev.org/2015/06/amazon-web-services.png
 
 Оказалось, что дело именно в разрешениях, что задаются с помощью CORS. Решение нашлось довольно быстро: заходим через веб-интерфейс в консоль управления, выбираем нашу корзину, в которой хранятся все данные для Cloudfront и как описывал в выше упоминавшейся статье, вносим изменения в CORS-конфигурацию:
 
-	<CORSConfiguration>
-	  <CORSRule>
-		<AllowedOrigin>http://mydomain.com</AllowedOrigin>
-		<AllowedMethod>GET</AllowedMethod>
-		<MaxAgeSeconds>3000</MaxAgeSeconds>
-		<AllowedHeader>Content-*</AllowedHeader>
-		<AllowedHeader>Host</AllowedHeader>
-	  </CORSRule>
-	  <CORSRule>
-		<AllowedOrigin>http://*.mydomain.com</AllowedOrigin>
-		<AllowedMethod>GET</AllowedMethod>
-		<MaxAgeSeconds>3000</MaxAgeSeconds>
-		<AllowedHeader>Content-*</AllowedHeader>
-		<AllowedHeader>Host</AllowedHeader>
-	  </CORSRule>
-	</CORSConfiguration>
+```xml
+<CORSConfiguration>
+  <CORSRule>
+	<AllowedOrigin>http://mydomain.com</AllowedOrigin>
+	<AllowedMethod>GET</AllowedMethod>
+	<MaxAgeSeconds>3000</MaxAgeSeconds>
+	<AllowedHeader>Content-*</AllowedHeader>
+	<AllowedHeader>Host</AllowedHeader>
+  </CORSRule>
+  <CORSRule>
+	<AllowedOrigin>http://*.mydomain.com</AllowedOrigin>
+	<AllowedMethod>GET</AllowedMethod>
+	<MaxAgeSeconds>3000</MaxAgeSeconds>
+	<AllowedHeader>Content-*</AllowedHeader>
+	<AllowedHeader>Host</AllowedHeader>
+  </CORSRule>
+</CORSConfiguration>
+```
 
 После чего в той же консоли нужно перейти в управление Cloudfront. Там выбрать "Distribution Settings" и вкладку "Behaviors". Минимум одна группа поведения там уже должна присутствовать, поэтому выбираем ее и переходим к ее изменению, нажав кнопку Edit. Для параметра "Forward Headers" меняем значение с "None (Improves Caching)" на "Whitelist" и затем в секции "Whitelist Headers" выбираем Origin:
 

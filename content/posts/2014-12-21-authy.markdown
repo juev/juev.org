@@ -31,5 +31,5 @@ Google Authenticator является стандартом дефакто в в�
 
 [![Two Factor Authentication app on Android](https://static.juev.org/2014/12/google_play_btn-2x-4b46fc6711c7f3c0fed55d645e2f4ba8.png)](https://play.google.com/store/apps/details?id=com.authy.authy&hl=en)
 
-[![Two Factor Authentication app on Android](https://static.juev.org/2014/12/chrome_store_btn-2x-196a82bcc152a5ef31a77c0a193e585b.png")](https://chrome.google.com/webstore/detail/authy/gaedmjdfmmahhbjefcbgaolhhanlaolb?hl=en)
+[![Two Factor Authentication app on Android](https://static.juev.org/2014/12/chrome_store_btn-2x-196a82bcc152a5ef31a77c0a193e585b.png)](https://chrome.google.com/webstore/detail/authy/gaedmjdfmmahhbjefcbgaolhhanlaolb?hl=en)
 

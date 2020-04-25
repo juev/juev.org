@@ -8,46 +8,56 @@ tags:
 ---
 В качестве эксперимента завел себе дополнительный сервер в Linode. В качестве операционной системы выбрал по прежнему Debian. И после первичной настройки попытался от имени обычного пользователя запустить пару сервисов: Emacs в режиме демона и вебхук для перехвата событий от Github. Неожиданно столкнулся с проблемой, и при попытке запуска нового сервиса получил ошибку:
 
-    ~$ systemctl --user status
-    Failed to get D-Bus connection: Connection refused
+```shell
+~$ systemctl --user status
+Failed to get D-Bus connection: Connection refused
+```
 
 Потратил несколько часов, перебирая вероятные причины и возможные решения. Пока наконец не посмотрел зависимости для `systemd`:
 
-    Recommends: libpam-systemd, dbus
+```text
+Recommends: libpam-systemd, dbus
+```
 
 Обратил внимание на то, что по умолчанию установлен только dbus. И установка второй зависимости решила проблемы с запуском systemd:
 
-    ~$ sudo aptitude install libpam-systemd
+```shell
+~$ sudo aptitude install libpam-systemd
 
-    ~$ systemctl --user status
-    ● debian    State: running
-    Jobs: 0 queued
-    Failed: 0 units
-    Since: Mon 2015-05-25 12:02:08 SAMT; 9h ago
-    CGroup: /user.slice/user-1000.slice/user@1000.service
-    ├─8056 /lib/systemd/systemd --user
-    ├─8057 (sd-pam)
-    └─emacs.service
-      └─ 8060 /usr/bin/emacs --daemon
+~$ systemctl --user status
+● debian    State: running
+Jobs: 0 queued
+Failed: 0 units
+Since: Mon 2015-05-25 12:02:08 SAMT; 9h ago
+CGroup: /user.slice/user-1000.slice/user@1000.service
+├─8056 /lib/systemd/systemd --user
+├─8057 (sd-pam)
+└─emacs.service
+  └─ 8060 /usr/bin/emacs --daemon
+```
 
 В качестве примера, сервис, используемый для запуска emacs в режиме демона:
 
-    [Unit]
-    Description=Emacs: the extensible, self-documenting text editor
-    
-    [Service]
-    Type=forking
-    ExecStart=/usr/bin/emacs --daemon
-    ExecStop=/usr/bin/emacsclient --eval "(kill-emacs)"
-    Environment=SSH_AUTH_SOCK=%t/keyring/ssh
-    Restart=always
-    
-    [Install]
-    WantedBy=default.target
-    
+```text
+[Unit]
+Description=Emacs: the extensible, self-documenting text editor
+
+[Service]
+Type=forking
+ExecStart=/usr/bin/emacs --daemon
+ExecStop=/usr/bin/emacsclient --eval "(kill-emacs)"
+Environment=SSH_AUTH_SOCK=%t/keyring/ssh
+Restart=always
+
+[Install]
+WantedBy=default.target
+```
+
 Указанный контент помещаем в файл `~/.config/systemd/user/emacs.service`, после чего активируем его и запускаем:
 
-    ~$ systemctl enable --user emacs
-    ~$ systemctl start --user emacs
+```shell
+~$ systemctl enable --user emacs
+~$ systemctl start --user emacs
+```
 
 Вроде одна и та же система, но на разных хостинг-площадках имеет различную конфигурацию.

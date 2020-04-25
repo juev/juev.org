@@ -38,7 +38,7 @@ image: https://static.juev.org/2015/03/amazon_logo_RGB.jpg
 
 [![photos](https://static.juev.org/2015/03/photos-th.png)](https://static.juev.org/2015/03/photos.png "Photos")
 
-На изображении видно, что интерфейс делится на две части: 
+На изображении видно, что интерфейс делится на две части:
 
 1. Все файлы
 1. Фотографии и видео

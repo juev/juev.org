@@ -24,47 +24,63 @@ image: https://static.juev.org/2015/04/docker.png
 
 Для его использования достаточно [установить Docker](https://docs.docker.com/installation/ "Docker Installation Page") на компьютер. И затем скачать образ:
 
-    $ docker pull juev/ruby
+```shell
+$ docker pull juev/ruby
+```
 
 Или же создать образ самому:
 
-    $ git clone [https://github.com/Juev/dockerfiles.git](https://github.com/Juev/dockerfiles.git)
-    $ cd dockerfiles/ruby
-    $ docker build --no-cache --force-rm -t juev/ruby -f Dockerfile .
+```shell
+$ git clone [https://github.com/Juev/dockerfiles.git](https://github.com/Juev/dockerfiles.git)
+$ cd dockerfiles/ruby
+$ docker build --no-cache --force-rm -t juev/ruby -f Dockerfile .
+```
 
 В поставку включены ruby v.1.9.3, nodejs 0.10.38, bundler, библиотека GSL и сторонние библиотеки для сборки расширений. Образ сконфигурирован таким образом, что bundler производит установку расширений (gems) в локальную директорию vendor/bundle.
 
 Таким образом, для установки программных модулей и расширений, достаточно в корневой директории приложения создать файл Gemfile, к примеру для моего сайта:
 
-    source "https://rubygems.org"
+```ruby
+source "https://rubygems.org"
 
-    gem 'rake'
-    gem 'jekyll'
-    gem 'jekyll-tagging'
-    gem 'compass'
-    gem 'rouge'
+gem 'rake'
+gem 'jekyll'
+gem 'jekyll-tagging'
+gem 'compass'
+gem 'rouge'
+```
 
 И затем дать команду для установки указанных зависимостей:
 
-    $ docker run --rm -v $(pwd):/srv/work  juev/ruby bundle install
+```shell
+$ docker run --rm -v $(pwd):/srv/work  juev/ruby bundle install
+```
 
 В корневой директории будет создана директория `vendor/bundle` в которой будут размещены все зависимости. Директория `vendor/bundle/bin` уже прописана в переменной PATH, поэтому можно запускать новые команды без префикса `bundle exec`.
 
 Для того, чтобы запустить irb используем команду:
 
-    $ docker run -it --rm -v $(pwd):/srv/work juev/ruby irb
+```shell
+$ docker run -it --rm -v $(pwd):/srv/work juev/ruby irb
+```
 
 А для сборки Jekyll сайта, находясь в рабочей директории:
 
-    $ docker run --rm -v $(pwd):/srv/work juev/ruby jekyll build
+```shell
+$ docker run --rm -v $(pwd):/srv/work juev/ruby jekyll build
+```
 
 Или, если определены цели сборки в Rakefile:
 
-    $ docker run --rm -v $(pwd):/srv/work juev/ruby rake build
+```shell
+$ docker run --rm -v $(pwd):/srv/work juev/ruby rake build
+```
 
 Для того, чтобы использовать Jekyll в режиме слежения и предпросмотра, достаточно указать параметр для проброса портов:
 
-    $ docker run --rm -v $(pwd):/srv/work -p 127.0.0.1:4000:4000 juev/ruby jekyll serve
+```shell
+$ docker run --rm -v $(pwd):/srv/work -p 127.0.0.1:4000:4000 juev/ruby jekyll serve
+```
 
 Есть сомнение по поводу того, как я назвал образ. Все таки при создании я ориентировался только на запуск Jekyll (по крайней мере пока). Но самое главное, что теперь есть возможность использовать Ruby в среде Windows, а так же не нужно больше мучиться с установкой библиотеки GSL, что используется для ускорения построения связей между статьями в среде Jekyll.
 

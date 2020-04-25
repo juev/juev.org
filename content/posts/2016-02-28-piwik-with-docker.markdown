@@ -20,26 +20,32 @@ tags:
 
 После создания, заходим на сервер по ssh, под именем core и используем следующие команды для установки требуемой утилиты:
 
-    $ sudo mkdir -p /opt/bin
-    $ curl -L https://github.com/docker/compose/releases/download/1.6.2/docker-compose-`uname -s`-`uname -m` > docker-compose
-    $ chmod +x docker-compose
-    $ sudo mv docker-compose /opt/bin/
+```shell
+$ sudo mkdir -p /opt/bin
+$ curl -L https://github.com/docker/compose/releases/download/1.6.2/docker-compose-`uname -s`-`uname -m` > docker-compose
+$ chmod +x docker-compose
+$ sudo mv docker-compose /opt/bin/
+```
 
 Core OS поставляется с файловой системой в ReadOnly режиме и не имеет своего пакетного менеджера, все необходимые сервисы и рабочее окружение создается через Docker, обновление проводиться путем замены образа файловой системы и быстрой перезагрузки с переключением в новый образ. Это и безопасно и удобно.
 
 Теперь запускаем собственно piwik:
 
-    $ mkdir Projects && cd Projects
-    $ git clone https://github.com/Juev/docker-piwik.git
-    $ cd docker-piwik
-    $ docker-compose up -d
+```shell
+$ mkdir Projects && cd Projects
+$ git clone https://github.com/Juev/docker-piwik.git
+$ cd docker-piwik
+$ docker-compose up -d
+```
 
 Просто, не правда ли? Да, да, на это все. Сервер готов к использованию, больше ничего не нужно делать. Осталось только настроить сам piwik к использованию. Для этого просто переходим по адресу вашего сервера и проходим стандартную конфигурацию через мастер. Единственное, на что стоит обратить внимание, при настройке соединения с базой данных необходимо использовать следующие значения:
 
-    Database Server: mysql
-    Login: piwik
-    Password: vdZggFUwSZcKcq9fFczH7AsjAfgF59r
-    Database name: piwik
+```yaml
+Database Server: mysql
+Login: piwik
+Password: vdZggFUwSZcKcq9fFczH7AsjAfgF59r
+Database name: piwik
+```
 
 Если вас смущает то, что логины и пароль уже заданы, можете в любой момент их сменить, изменив файл `docker-compose.yml`. Главное, что при настройке piwik вам нужно использовать значения из данного файла. Обратиться к mysql извне невозможно, доступ к контейнеру с базой данных есть только у контейнера с piwik и оба контейнера размещаются за NAT.
 

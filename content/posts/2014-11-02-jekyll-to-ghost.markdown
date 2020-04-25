@@ -28,10 +28,12 @@ Jekyll интересный движок, но не без недостатко�
 
 Как я уже упоминал выше, Ghost не требует для своей работы базу данных, по умолчанию используется sqlite. И все данные просто хранятся в отдельном файле. Поэтому на сервере достаточно было развернуть только nodejs:
 
-	$ sudo apt-get install python-software-properties 
-	$ sudo apt-add-repository ppa:chris-lea/node.js 
-	$ sudo apt-get update 
-	$ sudo apt-get install nodejs
+```shell
+$ sudo apt-get install python-software-properties
+$ sudo apt-add-repository ppa:chris-lea/node.js
+$ sudo apt-get update
+$ sudo apt-get install nodejs
+```
 
 Первые две строки используются для подключения стороннего репозитория, а последующие строки это уже установка nodejs на сервер. Уточнение, данные команды используются на сервере с Ubuntu.
 
@@ -39,13 +41,15 @@ Jekyll интересный движок, но не без недостатко�
 
 Загружаем Ghost на сервер и запускаем:
 
-	$ curl -L https://ghost.org/zip/ghost-latest.zip -o ghost.zip
-    $ unzip -uo ghost.zip -d /path/to/ghost
-    $ cd /path/to/ghost
-    $ npm install --production
-    $ npm start --production
+```shell
+$ curl -L https://ghost.org/zip/ghost-latest.zip -o ghost.zip
+$ unzip -uo ghost.zip -d /path/to/ghost
+$ cd /path/to/ghost
+$ npm install --production
+$ npm start --production
+```
 
-Обращаю внимание на то, что если вы не планируете дорабатывать Ghost своими руками, то опция `--production` во время установки и запуска обязательна. 
+Обращаю внимание на то, что если вы не планируете дорабатывать Ghost своими руками, то опция `--production` во время установки и запуска обязательна.
 
 Если все прошло нормально, то в консоли можно будет увидеть сообщение о том, что ghost запущен и доступен по адресу 127.0.0.1:2368, завершаем работу сервиса нажатием Ctrl+C и переходим к конфигурированию.
 
@@ -55,62 +59,70 @@ Jekyll интересный движок, но не без недостатко�
 
 Если на сервере до их пор еще не установлен Nginx, исправляем это недоразумение:
 
-	$ nginx=stable # use nginx=development for latest development version
-	$ sudo add-apt-repository ppa:nginx/$nginx
-	$ sudo apt-get update 
-	$ sudo apt-get install nginx
+```shell
+$ nginx=stable # use nginx=development for latest development version
+$ sudo add-apt-repository ppa:nginx/$nginx
+$ sudo apt-get update
+$ sudo apt-get install nginx
+```
 
 Теперь прописыванием конфигурацию сайта, для этого создаем новый файл в директории `/etc/nginx/sites-available/`:
 
-	$ sudo vim /etc/nginx/sites-available/sitename
+```shell
+$ sudo vim /etc/nginx/sites-available/sitename
+```
 
 И вносим следующее содержимое:
 
-	# redirect to www
-	server {
-	  server_name  juev.ru juev.org www.juev.ru;
-	  rewrite ^(.*) http://www.juev.org$1 permanent;
-	}
-
-	server {
-	  listen 80;
-	  server_name www.juev.org;
-	  charset utf-8;
-	  
-      # log settings
-	  access_log  /home/username/logs/juevru/access.log;
-	  error_log   /home/username/logs/juevru/error.log;
-
-	  # allow upload files with size ~5M
-	  client_max_body_size 5M;
-
-	  # robots.txt and favicon.ico from specific directory
-	  location ~ ^/(robots\.txt|favicon\.ico) {
-	    root /home/username/web/seo/;
-	  }
-
-	  # send images direct from nginx
-      location ~ ^/(content/images/) {
-        root /home/username/web/ghost;
-        expires 30d;
-        access_log off;
-      }
-
-	  # proxy to ghost
-      location / {
-        proxy_set_header X-Real-IP $remote_addr;
-        proxy_set_header HOST $http_host;
-        proxy_set_header X-NginX-Proxy true;
-        proxy_pass http://127.0.0.1:2368;
-      }
+```nginx
+    # redirect to www
+    server {
+      server_name  juev.ru juev.org www.juev.ru;
+      rewrite ^(.*) http://www.juev.org$1 permanent;
     }
+
+    server {
+      listen 80;
+      server_name www.juev.org;
+      charset utf-8;
+
+  # log settings
+      access_log  /home/username/logs/juevru/access.log;
+      error_log   /home/username/logs/juevru/error.log;
+
+      # allow upload files with size ~5M
+      client_max_body_size 5M;
+
+      # robots.txt and favicon.ico from specific directory
+      location ~ ^/(robots\.txt|favicon\.ico) {
+	root /home/username/web/seo/;
+      }
+
+      # send images direct from nginx
+  location ~ ^/(content/images/) {
+    root /home/username/web/ghost;
+    expires 30d;
+    access_log off;
+  }
+
+      # proxy to ghost
+  location / {
+    proxy_set_header X-Real-IP $remote_addr;
+    proxy_set_header HOST $http_host;
+    proxy_set_header X-NginX-Proxy true;
+    proxy_pass http://127.0.0.1:2368;
+  }
+}
+```
 
 По возможности я прокомментировал основные блоки конфигурации, если возникнут вопросы, обращайтесь в почту.
 
 Теперь остается только задать данную конфигурацию как рабочую:
 
-	$ sudo ln -s /etc/nginx/sites-available/sitename /etc/nginx/sites-enabled/sitename
-    $ sudo service nginx restart
+```shell
+$ sudo ln -s /etc/nginx/sites-available/sitename /etc/nginx/sites-enabled/sitename
+$ sudo service nginx restart
+```
 
 Если после этого запустить ghost из его рабочей директории, к сайту уже можно будет обратиться по его адресу. Автоматизируем запуск Ghost.
 
@@ -120,32 +132,38 @@ Jekyll интересный движок, но не без недостатко�
 
 Для этого создаем новый файл:
 
-	$ sudo vim /etc/init/ghost.conf
+```shell
+$ sudo vim /etc/init/ghost.conf
+```
 
 И заполняем его:
 
-	# ghost
-	# description "An Upstart task to make sure that my Ghost server is always running"
-	# author "Denis Evsyukov"
+```conf
+# ghost
+# description "An Upstart task to make sure that my Ghost server is always running"
+# author "Denis Evsyukov"
 
-	start on startup
-	stop on shutdown
+start on startup
+stop on shutdown
 
-	console none
-	respawn
+console none
+respawn
 
-	script
-	  cd /home/username/web/ghost/
-	  exec su username -c "npm start --production"
-	end script
+script
+  cd /home/username/web/ghost/
+  exec su username -c "npm start --production"
+end script
+```
 
 В данном случае нужно лишь корректно указать рабочую директорию, в которой размещается Ghost и верно прописать имя пользователя, от которого будет проводиться запуск.
 
 После сохранения файла, появляется возможность использовать команды для запуска, остановки и перезапуска Ghost на сервере:
 
-	$ sudo start ghost
-    $ sudo restart ghost
-    $ sudo stop ghost
+```shell
+$ sudo start ghost
+$ sudo restart ghost
+$ sudo stop ghost
+```
 
 При этом, согласно заданной конфигурации, Ghost будет запускаться каждый раз во время перезагрузки сервера.
 

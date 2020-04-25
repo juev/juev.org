@@ -19,13 +19,17 @@ tags:
 
 **Нюанс**: дистрибутивы Java размещаются на серверах Oracle ([Download Page](http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html "Java SE DEvelopment Kit 8 Downloads")), где перед загрузкой необходимо принять лицензионное соглашение. Для того, чтобы провести загрузку непосредственно со своего сервера, необходимо использовать команду:
 
-    wget --no-check-certificate -c --header "Cookie: oraclelicense=accept-securebackup-cookie" http://download.oracle.com/otn-pub/java/jdk/8u45-b14/jdk-8u45-linux-x64.tar.gz
+```shell
+wget --no-check-certificate -c --header "Cookie: oraclelicense=accept-securebackup-cookie" http://download.oracle.com/otn-pub/java/jdk/8u45-b14/jdk-8u45-linux-x64.tar.gz
+```
 
 Ссылку можно взять на указанной выше странице загрузки.
 
 После загрузки необходимо распаковать полученный файл в предполагаемую директорию:
 
-    tar zxf jdk-8u45-linux-x64.tar.gz -C /target/directory
+```shell
+tar zxf jdk-8u45-linux-x64.tar.gz -C /target/directory
+```
 
 Архив после распаковки можно удалить. В директории `/target/directory` будет создана поддиректория `jdk1.8.0_45`. При необходимости ее можно перенести или переименовать.
 
@@ -36,19 +40,25 @@ tags:
 
 Достаточно определить две переменные:
 
-    export JAVA_HOME=/target/directory/jdk1.8.0_45
-    export PATH=$PATH:$JAVA_HOME/bin
+```bash
+export JAVA_HOME=/target/directory/jdk1.8.0_45
+export PATH=$PATH:$JAVA_HOME/bin
+```
 
 Переменная `JAVA_HOME` указывает на директорию нашей установки. Теперь осталось только применить нашу конфигурацию, для этого используем команду:
 
-    source ~/.bash_profile
+```bash
+source ~/.bash_profile
+```
 
 И теперь можно проверять, все ли у нас работает:
 
-    $ java -version
-    java version "1.8.0_45"
-    Java(TM) SE Runtime Environment (build 1.8.0_45-b14)
-    Java HotSpot(TM) 64-Bit Server VM (build 25.45-b02, mixed mode)
+```shell
+$ java -version
+java version "1.8.0_45"
+Java(TM) SE Runtime Environment (build 1.8.0_45-b14)
+Java HotSpot(TM) 64-Bit Server VM (build 25.45-b02, mixed mode)
+```
 
 Вот так просто мы получили на своем сервере рабочую Java, не устанавливая при этом массу ненужных зависимостей.
 

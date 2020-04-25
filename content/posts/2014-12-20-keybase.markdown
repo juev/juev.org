@@ -12,25 +12,33 @@ image: https://static.juev.org/2014/12/logo.png
 
 Сложность заключается в том, что для того, чтобы начать переписку, нужно обменяться ключами. Со знакомыми людьми особых проблем это не вызывает, а вот с незнакомыми, начинаются проблемы. Обычно для этого используются сервера, на которых публикуются публичные ключи, но произвести поиск можно только по заранее известному адресу электронной почты. И возникают сложности с отзывом ранее опубликованных ключей.
 
-Именно эту проблему позволяет решить сервис [keybase.io](https://keybase.io). На данный момент сервис находиться в тестировании, и регистрация проводиться по приглашениям. У меня есть 8 инвайтов, для получения обращайтесь в [Twitter](http://twitter.com/juev) или [Facebook](https:/www.facebook.com/de.evsyukov). 
+Именно эту проблему позволяет решить сервис [keybase.io](https://keybase.io). На данный момент сервис находиться в тестировании, и регистрация проводиться по приглашениям. У меня есть 8 инвайтов, для получения обращайтесь в [Twitter](http://twitter.com/juev).
 
 После регистрации на сервере, создается страница пользователя, в которой указываются "контактные данные", по которым в дальнейшем будет проводиться поиск. Сначала необходимо подтвердить адрес своей электронной почты, и затем создать или импортировать существующие ключи. Для этого можно использовать curl, или, что более функционально, использовать официальный клиент для командной строки. На компьютере к тому времени уже должны быть установлены GnuPG и NodeJS. Для установки в OSX используем пакетный менеджер [Homebrew](http://brew.sh):
 
-    brew install nodejs
-    brew install gpg
+```shell
+brew install nodejs
+brew install gpg
+```
 
 Затем генерируем ключи, если это не было проделано ранее:
 
-    gpg --gen-key
+```shell
+gpg --gen-key
+```
 
 И теперь устанавливаем сам клиент для работы с сервисом:
 
-    npm install -g keybase-installer
-    keybase-installer
+```shell
+npm install -g keybase-installer
+keybase-installer
+```
 
 После чего можно опубликовать свой ключ на сервер, с использованием команды:
 
-    keybase push
+```shell
+keybase push
+```
 
 Этого вполне достаточно для того, чтобы ваш ключ можно быть найти в данном сервисе. Но чтобы найти вас было еще проще, нужно добавить так же ссылки на другие социальные сети (твиттер, гитхаб) или сылку на свой персональный сайт. Каждая ссылка при добавлении верифицируется.
 
@@ -38,12 +46,14 @@ image: https://static.juev.org/2014/12/logo.png
 
 К примеру, чтобы найти пользователя, и зашифровать для него сообщение, используются команды:
 
-    keybase search juev                      # search user juev
-    keybase encrypt juev -m 'secret'         # encrypt
-    keybase encrypt juev -s -m 'secret'      # also sign with -s
-    keybase encrypt juev foo.txt             # foo.txt -> foo.txt.asc
-    keybase encrypt juev foo.txt -o bar.asc  # foo.txt -> bar.asc
-    echo 'secret' | keybase encrypt juev     # stream
+```shell
+keybase search juev                      # search user juev
+keybase encrypt juev -m 'secret'         # encrypt
+keybase encrypt juev -s -m 'secret'      # also sign with -s
+keybase encrypt juev foo.txt             # foo.txt -> foo.txt.asc
+keybase encrypt juev foo.txt -o bar.asc  # foo.txt -> bar.asc
+echo 'secret' | keybase encrypt juev     # stream
+```
 
 Можно воспользоваться так же веб-интерфейсом. Соответственно, страница [Encrypt](https://keybase.io/encrypt) для того, чтобы зашифровать сообщение для
 определенного пользователя. Достаточно будет знать только его имя в социальных сетях или адрес электронной почты. И при этом

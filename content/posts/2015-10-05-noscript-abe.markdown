@@ -17,33 +17,41 @@ image: https://static.juev.org/2015/10/ABE.png
 
 По умолчанию правила включены и прописано только одно системное:
 
-    # Prevent Internet sites from requesting LAN resources.
-    Site LOCAL
-    Accept from LOCAL
-    Deny
+```conf
+# Prevent Internet sites from requesting LAN resources.
+Site LOCAL
+Accept from LOCAL
+Deny
+```
 
 Здесь же можно разрешить сайтам устанавливать свои правила (на данный момент времени таких сайтов по пальцам пересчитать можно).
 
 Общие правила прописываются разделе System, все остальные в разделе User. К примеру, для того, чтобы разрешить выполнение скриптов Facebook только на сайте Facebook и запретить внедрять их на остальных сайтах, можно использовать следующее правило:
 
-    Site .facebook.com .fbcdn.net
-    Accept from .facebook.com .fbcdn.net
-    Deny INCLUSION(SCRIPT, OBJ, SUBDOC)
+```conf
+Site .facebook.com .fbcdn.net
+Accept from .facebook.com .fbcdn.net
+Deny INCLUSION(SCRIPT, OBJ, SUBDOC)
+```
 
 Аналогичное правило для twitter:
 
-    Site platform.twitter.com
-    Accept from twitter.com
-    Deny INCLUSION(SCRIPT, OBJ, SUBDOC)
+```conf
+Site platform.twitter.com
+Accept from twitter.com
+Deny INCLUSION(SCRIPT, OBJ, SUBDOC)
+```
 
 Для того, чтобы разрешить RECAPTCHA на сайтах, замкнуть Google на самого себя, а Youtube использовать анонимно, можно использовать следующие правила:
 
-    Site ^https?://www\.google\.com/recaptcha/*
-    Accept
-    Site ^https?://www\.google\.com/*
-    Sandbox
-    Site .youtube.com .ytimg.com .googlevideo.com
-    Anonymize
+```conf
+Site ^https?://www\.google\.com/recaptcha/*
+Accept
+Site ^https?://www\.google\.com/*
+Sandbox
+Site .youtube.com .ytimg.com .googlevideo.com
+Anonymize
+```
 
 Больше примеров и пояснений по правилам можно найти на [официальной странице](https://noscript.net/abe/ "ABE - Application Boundaries Enforcer") и на [форуме](https://forums.informaction.com/viewforum.php?f=3 "InformAction Forums").
 

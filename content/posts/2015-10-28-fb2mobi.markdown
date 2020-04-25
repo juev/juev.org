@@ -14,39 +14,51 @@ tags:
 
 Предварительно требуется установить XCode:
 
-    $ xcode-select --install
+```shell
+$ xcode-select --install
+```
 
 Затем ставим третью версию питона и пару модулей:
 
-    $ brew install python3
-    $ pip3 install cssutils lxml
+```shell
+$ brew install python3
+$ pip3 install cssutils lxml
+```
 
 Для конвертации в формат для устройств Kindle нужно так же поставить официальную утилиту [kindlegen](http://www.amazon.com/gp/feature.html?ie=UTF8&docId=1000234621). Ее достаточно скачать, распаковать и бинарник разместить в $PATH директории.
 
 Теперь остается только загрузить в локальную директорию саму утилиту и приступать к работе:
 
-    $ git clone https://github.com/rupor-github/fb2mobi.git
-    $ cd fb2mobi
-    $ chmod +x fb2mobi.py
-    $ ./fb2mobi.py filename.fb2.zip
+```shell
+$ git clone https://github.com/rupor-github/fb2mobi.git
+$ cd fb2mobi
+$ chmod +x fb2mobi.py
+$ ./fb2mobi.py filename.fb2.zip
+```
 
 Обратите внимание на то, что утилита настроена по умолчанию на конвертацию в формат azw3. И если вы хотите получать на выходе mobi, достаточно изменить один параметр в файле fb2mobi.config:
 
-    <outputFormat>mobi</outputFormat>
+```xml
+<outputFormat>mobi</outputFormat>
+```
 
 По моим ощущениям, утилита стала работать немного быстрее.
 
 **UPDATE 23/04/16** Долгое время не обновлял репозиторий, и как оказалось, с недавних пор стала появляться новая ошибка:
 
-    Traceback (most recent call last):
-      File "./fb2mobi.py", line 17, in <module>
-        from modules.fb2html import Fb2XHTML
-      File "/Users/juev/Projects/fb2mobi/modules/fb2html.py", line 18, in <module>
-        from PIL import Image
-    ImportError: No module named 'PIL'
+```text
+Traceback (most recent call last):
+  File "./fb2mobi.py", line 17, in <module>
+    from modules.fb2html import Fb2XHTML
+  File "/Users/juev/Projects/fb2mobi/modules/fb2html.py", line 18, in <module>
+    from PIL import Image
+ImportError: No module named 'PIL'
+```
 
 Решается проблема просто:
 
-    $ pip3 install pillow
+```shell
+$ pip3 install pillow
+```
 
 После чего утилита снова начинает работать.

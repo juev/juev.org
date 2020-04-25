@@ -16,18 +16,24 @@ tags:
 
 Для этого достаточно в директории `/etc/ufw/applications.d/` создать текстовый файл, используя синтаксис INI-файла. К примеру для FaceTime:
 
-    [FaceTime]
-    title=FaceTime
-    description=Rules for FaceTime messanger
-    ports=53,80,443,4080,5223,16393:16472/udp
+```ini
+[FaceTime]
+title=FaceTime
+description=Rules for FaceTime messanger
+ports=53,80,443,4080,5223,16393:16472/udp
+```
 
 После чего нужно инициализировать правила в UFW, для чего можно использовать команду:
 
-    ufw reload
+```shell
+ufw reload
+```
 
 И затем разрешить доступ согласно созданному профилю:
 
-    ufw allow FaceTime
+```shell
+ufw allow FaceTime
+```
 
 Это гораздо проще и удобнее, чем постоянно перед глазами держать список портов, используемых программой. Так же легко менять эти правила, достаточно изменить файл профайла и перечитать его в UFW.
 

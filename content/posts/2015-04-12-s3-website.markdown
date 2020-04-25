@@ -11,49 +11,61 @@ tags:
 
 Для её использования на компьютере должны быть установлены **Ruby** и **Java**. Устанавливаем утилиту:
 
-    $ sudo gem install s3_website
+```shell
+$ sudo gem install s3_website
+```
 
 Или прописываем `s3_website` в Gemfile и проводим установку с помощью [bundle](http://bundler.io "Bundler").
 
 Для создания файла конфигурации используется команда:
 
-    $ s3_website cfg create
+```shell
+$ s3_website cfg create
+```
 
 Примеры заполнения созданного файла конфигурации приведены на [официальной странице](https://github.com/laurilehmijoki/s3_website "s3_website") и на странице [примеров конфигураций](https://github.com/laurilehmijoki/s3_website/blob/master/additional-docs/example-configurations.md "Example-configurations").
 
 Применяем конфигурацию и проводим загрузку файлов на сервер командами:
 
-    $ s3_website cfg apply
-    $ s3_website push
+```shell
+$ s3_website cfg apply
+$ s3_website push
+```
 
 Во время запуска первой команды, если корзина для размещения файлов не была ранее создана, она создается автоматически с использованием того имени, что было указано в файле конфигурации.
 
 Из плюсов данной утилиты хочется отметить упростившуюся процедуру настройки кеширования различных типов файлов. К примеру, задать для всех файлов время жизни в 300 секунд, а для файлов, находящихся в директории `assets` в 6000 секунд:
 
-    max_age:
-      "assets/*": 6000
-      "*": 300
+```yaml
+max_age:
+  "assets/*": 6000
+  "*": 300
+```
 
 Можно также задать автоматическое сжатие gzip всех файлов, или только для файлов определенного типа:
 
-    gzip:
-      - .html
-      - .css
-      - .md
+```yaml
+gzip:
+  - .html
+  - .css
+  - .md
+```
 
 И сама загрузка на сервера амазона производиться в несколько потоков (по умолчанию в три потока), что приводит к значительному ускорению передачи файлов. К примеру, для моего сайта:
 
-    $ time s3_website push --force
-    [info] Deploying /Users/juev/Projects/Github/juev.org/public/* to test.juev.org
-    [succ] Updated index.html (no-cache; max-age=0 | text/html; charset=utf-8 | gzip)
-    ...
-    [succ] Invalidated 414 items on CloudFront
-    [info] Summary: Updated 413 files. Transferred 1.6 MB, 826.0 kB/s.
-    [info] Successfully pushed the website to http://test.juev.org.s3-website-eu-west-1.amazonaws.com
+```shell
+$ time s3_website push --force
+[info] Deploying /Users/juev/Projects/Github/juev.org/public/* to test.juev.org
+[succ] Updated index.html (no-cache; max-age=0 | text/html; charset=utf-8 | gzip)
+...
+[succ] Invalidated 414 items on CloudFront
+[info] Summary: Updated 413 files. Transferred 1.6 MB, 826.0 kB/s.
+[info] Successfully pushed the website to http://test.juev.org.s3-website-eu-west-1.amazonaws.com
 
-    real    0m41.954s
-    user    0m40.617s
-    sys 0m3.059s
+real    0m41.954s
+user    0m40.617s
+sys 0m3.059s
+```
 
 Как видно, 413 файлов были переданы за 41 секунду. При использовании `s3cmd` это время растягивается на несколько минут.
 

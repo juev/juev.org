@@ -9,16 +9,22 @@ tags:
 
 Попробовал отключить звук, используя команду:
 
-    sudo nvram SystemAudioVolume=" "
+```shell
+sudo nvram SystemAudioVolume=" "
+```
 
 Но безрезультатно, как оказалось, данная опция перестала работать как раз начиная с Yosemite. Пока нашел единственно работающий вариант, через использование хуков на включение/выключение системы. И для использования этого способа достаточно клонировать репозиторий [teored90/nobootsound](https://github.com/teored90/nobootsound "nobootsound") и установить хуки в систему:
 
-    $ git clone https://github.com/teored90/nobootsound.git
-    $ cd nobootsound
-    $ sudo ./install.sh
+```shell
+$ git clone https://github.com/teored90/nobootsound.git
+$ cd nobootsound
+$ sudo ./install.sh
+```
 
 Для удаления хуков из системы достаточно в локальной копии репозитория использовать команду:
 
-    $ sudo ./install.sh -u
+```shell
+$ sudo ./install.sh -u
+```
 
 На этом все. Можно перезагружаться и проверять, что звуков при запуске компьютера больше нет.

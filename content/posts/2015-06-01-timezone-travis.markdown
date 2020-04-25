@@ -12,18 +12,22 @@ tags:
 
 Первый способ нашелся довольно быстро. Потребовалось указать в настройках использование sudo и выполнить стандартны е команды по изменению таймзоны в Ubuntu. Все это выглядит следующим образом в `.travis.yml`:
 
-    sudo: required
-    before_install:
-      - echo "Europe/Samara" | sudo tee /etc/timezone
-      - sudo dpkg-reconfigure --frontend noninteractive tzdata
+```yaml
+sudo: required
+before_install:
+  - echo "Europe/Samara" | sudo tee /etc/timezone
+  - sudo dpkg-reconfigure --frontend noninteractive tzdata
+```
 
 Первая строка разрешает использование sudo, а последующий блок перед запуском установки выполняет команды смены таймзоны. Но, как в дальнейшем оказалось, использование sudo нарушает работу кеша зависимостей и время генерации сайта, пусть и незначительно, но выросло.
 
 Как оказалось, есть более простой способ задания временной зоны, который не требует запуска от имени администратора. Для этого используется следующий блок в файле `.travis.yml`:
 
-    before_install:
-      - export TZ=Europe/Samara
-      - date
+```yaml
+before_install:
+  - export TZ=Europe/Samara
+  - date
+```
 
 Вполне достаточно использование только экспорт переменной `TZ`, вторая команда используется только для того, чтобы проверить во время запуска сборки, в какой временной зоне она совершается.
 

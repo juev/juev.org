@@ -12,7 +12,9 @@ image: https://static.juev.org/2014/12/alfred.png
 
 После установки приложения из репозитория [HomeBrew](http://brew.sh/) программы размещаются не в директории Applications, а в `/usr/local/Cellar/`. И для того, чтобы разместить программу в Applications, обычно используют команду:
 
-	brew linkapps
+```shell
+brew linkapps
+```
 
 При этом создаются символически ссылки на собранные приложения. Запустить программу можно, но вот [Alfred](http://www.alfredapp.com/) видеть их отказывается.
 
@@ -22,7 +24,9 @@ image: https://static.juev.org/2014/12/alfred.png
 
  К примеру, добавить строку:
 
-	/usr/local/Cellar/macvim
+ ```shell
+/usr/local/Cellar/macvim
+```
 
 для возможности запуска MacVim с использованием Alfred.
 
