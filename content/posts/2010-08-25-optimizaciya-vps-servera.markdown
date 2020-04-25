@@ -28,10 +28,12 @@ keywords: vps,nginx,php-fpm
 
 Еще немного спасло положение изменение настроек php5-fpm. В файле */etc/php5/fpm/php5-fpm.conf* изменил следующие значения:
 
-    emergency_restart_threshold = 10
-    emergency_restart_interval = 1m
-    process_control_timeout = 5s
-    pm.max_requests = 500
+```conf
+emergency_restart_threshold = 10
+emergency_restart_interval = 1m
+process_control_timeout = 5s
+pm.max_requests = 500
+```
 
 Стало чуть легче. Теперь спустя определенное время процессы php5-fpm стали перезапускаться, высвобождая занятую память. Но утечки продолжались.
 
@@ -41,17 +43,23 @@ keywords: vps,nginx,php-fpm
 
 Сегодня решил попробовать в работе модуль **memcached**. Перед этим пришлось думать и решать, стоит ли это делать, так как на дополнительный модуль потребуется выделить определенное количество оперативной памяти, а ее и так катастрофически не хватало. Решил все таки рискнуть и посмотреть, что выйдет. Все равно на сайте нагрузка не большая. Устанавливаем и запускаем:
 
-    # apt-get install memcached php5-memcache
-    # /etc/init.d/memcached start
+```shell
+# apt-get install memcached php5-memcache
+# /etc/init.d/memcached start
+```
 
 Теперь необходимо прописать использование memcached в php5-fpm, для этого изменяем файл
 */etc/php5/fpm/php.ini* и в самое начало, после директивы `[PHP]` прописываем:
 
-    extension=memcache.so
+```php
+extension=memcache.so
+```
 
 Теперь перезапускаем php:
 
-    # /etc/init.d/php5-fpm restart
+```shell
+# /etc/init.d/php5-fpm restart
+```
 
 И смотрим, появился ли блок memcache в выводе функции phpinfo(), если появилось, значит все нормально. Единственно, перед самим запуском memcached я еще изменил его настройки, увеличив используемую память с 16 мегабайт до 64.
 
@@ -61,7 +69,9 @@ keywords: vps,nginx,php-fpm
 
 Для того, чтобы посмотреть, сколько памяти используется в данный момент времени сам memcached, использовал команду:
 
-    ps -e | grep 'memcached'  | awk '{print $0}{sum+=$1} END {print "\nMemory usage for memcached:", sum/1024, "MB\n"}'
+```shell
+ps -e | grep 'memcached'  | awk '{print $0}{sum+=$1} END {print "\nMemory usage for memcached:", sum/1024, "MB\n"}'
+```
 
 Результат -- чуть больше 6 мегабайтов оперативной памяти. То есть 64 мегабайта, что я выделил, с лихвой хватает на все.
 
@@ -69,7 +79,9 @@ keywords: vps,nginx,php-fpm
 
 Провел ряд тестов, для того, чтобы отследить, какое число процессов nginx и php5-fpm является оптимальным для использования на VPS от Linode на минимальном тарифе. Для этого, как и в прошлый раз, использовал утилиту ab из поставки веб-сервера apache. Запускал следующим образом:
 
-    ab -n 1000 -n 50 http://domain.ru/index.php
+```shell
+ab -n 1000 -n 50 http://domain.ru/index.php
+```
 
 Увеличил число запросов до 1000 и увеличил число одновременных запросов к серверу до 50. Меня интересовал расход оперативной памяти и естественно, производительность веб-сервера, то есть сколько запросов он сможет обрабатывать в секунду.
 
@@ -79,97 +91,105 @@ keywords: vps,nginx,php-fpm
 
 ### 2 nginx и 2 php5-fpm</em>
 
-    Concurrency Level:      50
-    Time taken for tests:   89.755 seconds
-    Complete requests:      1000
-    Failed requests:        0
-    Write errors:           0
-    Non-2xx responses:      1000
-    Total transferred:      283000 bytes
-    HTML transferred:       0 bytes
-    Requests per second:    11.14 [#/sec] (mean)
-    Time per request:       4487.736 [ms] (mean)
-    Time per request:       89.755 [ms] (mean, across all concurrent requests)
-    Transfer rate:          3.08 [Kbytes/sec] received
+```conf
+Concurrency Level:      50
+Time taken for tests:   89.755 seconds
+Complete requests:      1000
+Failed requests:        0
+Write errors:           0
+Non-2xx responses:      1000
+Total transferred:      283000 bytes
+HTML transferred:       0 bytes
+Requests per second:    11.14 [#/sec] (mean)
+Time per request:       4487.736 [ms] (mean)
+Time per request:       89.755 [ms] (mean, across all concurrent requests)
+Transfer rate:          3.08 [Kbytes/sec] received
 
-    Connection Times (ms)
-                  min  mean[+/-sd] median   max
-    Connect:        0    0   0.7      0       4
-    Processing:  1656 4379 320.6   4390    6135
-    Waiting:     1656 4379 320.6   4390    6135
-    Total:       1661 4379 320.3   4390    6137
+Connection Times (ms)
+              min  mean[+/-sd] median   max
+Connect:        0    0   0.7      0       4
+Processing:  1656 4379 320.6   4390    6135
+Waiting:     1656 4379 320.6   4390    6135
+Total:       1661 4379 320.3   4390    6137
+```
 
 Максимальный расход памяти при этом 123Mb. Свободной памяти еще много, а вот производительность невысока, заметно, что в работе участвуют только два из четырех выделенных ядер. Увеличиваем число php процессов до 4.
 
 ### 2 nginx и 4 php5-fpm
 
-    Concurrency Level:      50
-    Time taken for tests:   46.838 seconds
-    Complete requests:      1000
-    Failed requests:        0
-    Write errors:           0
-    Non-2xx responses:      1000
-    Total transferred:      283000 bytes
-    HTML transferred:       0 bytes
-    Requests per second:    21.35 [#/sec] (mean)
-    Time per request:       2341.875 [ms] (mean)
-    Time per request:       46.838 [ms] (mean, across all concurrent requests)
-    Transfer rate:          5.90 [Kbytes/sec] received
+```conf
+Concurrency Level:      50
+Time taken for tests:   46.838 seconds
+Complete requests:      1000
+Failed requests:        0
+Write errors:           0
+Non-2xx responses:      1000
+Total transferred:      283000 bytes
+HTML transferred:       0 bytes
+Requests per second:    21.35 [#/sec] (mean)
+Time per request:       2341.875 [ms] (mean)
+Time per request:       46.838 [ms] (mean, across all concurrent requests)
+Transfer rate:          5.90 [Kbytes/sec] received
 
-    Connection Times (ms)
-                  min  mean[+/-sd] median   max
-    Connect:        0    0   0.7      0       5
-    Processing:   401 2287 225.4   2286    3039
-    Waiting:      401 2286 225.4   2286    3039
-    Total:        406 2287 225.0   2286    3041
+Connection Times (ms)
+              min  mean[+/-sd] median   max
+Connect:        0    0   0.7      0       5
+Processing:   401 2287 225.4   2286    3039
+Waiting:      401 2286 225.4   2286    3039
+Total:        406 2287 225.0   2286    3041
+```
 
 Максимальный расход памяти в данном случае 157Mb. Количество обрабатываемых запросов выросло почти в два раза. Не плохо. Пробуем увеличить число процессов nginx, по сути должно вырасти значение максимального количества одновременных соединений.
 
 ### 4 nginx и 4 php5-fpm
 
-    Concurrency Level:      50
-    Time taken for tests:   45.951 seconds
-    Complete requests:      1000
-    Failed requests:        0
-    Write errors:           0
-    Non-2xx responses:      1000
-    Total transferred:      283000 bytes
-    HTML transferred:       0 bytes
-    Requests per second:    21.76 [#/sec] (mean)
-    Time per request:       2297.534 [ms] (mean)
-    Time per request:       45.951 [ms] (mean, across all concurrent requests)
-    Transfer rate:          6.01 [Kbytes/sec] received
+```conf
+Concurrency Level:      50
+Time taken for tests:   45.951 seconds
+Complete requests:      1000
+Failed requests:        0
+Write errors:           0
+Non-2xx responses:      1000
+Total transferred:      283000 bytes
+HTML transferred:       0 bytes
+Requests per second:    21.76 [#/sec] (mean)
+Time per request:       2297.534 [ms] (mean)
+Time per request:       45.951 [ms] (mean, across all concurrent requests)
+Transfer rate:          6.01 [Kbytes/sec] received
 
-    Connection Times (ms)
-                  min  mean[+/-sd] median   max
-    Connect:        0    0   0.7      0       4
-    Processing:   494 2239 214.0   2245    2988
-    Waiting:      494 2239 214.0   2245    2988
-    Total:        498 2240 213.6   2245    2990
+Connection Times (ms)
+              min  mean[+/-sd] median   max
+Connect:        0    0   0.7      0       4
+Processing:   494 2239 214.0   2245    2988
+Waiting:      494 2239 214.0   2245    2988
+Total:        498 2240 213.6   2245    2990
+```
 
 Максимальный расход памяти в этом случае 154Mb. Что даже чуть меньше чем в предыдущем случае, что немного странно. Однако число запросов, которое обрабатывает сервер каждую секунду, осталось неизменным. Имеет ли тогда смысл держать запущенными несколько nginx??
 
 ### 1 nginx и 4 php5-fpm
 
-    Concurrency Level:      50
-    Time taken for tests:   46.050 seconds
-    Complete requests:      1000
-    Failed requests:        0
-    Write errors:           0
-    Non-2xx responses:      1000
-    Total transferred:      283000 bytes
-    HTML transferred:       0 bytes
-    Requests per second:    21.72 [#/sec] (mean)
-    Time per request:       2302.504 [ms] (mean)
-    Time per request:       46.050 [ms] (mean, across all concurrent requests)
-    Transfer rate:          6.00 [Kbytes/sec] received
+```conf
+Concurrency Level:      50
+Time taken for tests:   46.050 seconds
+Complete requests:      1000
+Failed requests:        0
+Write errors:           0
+Non-2xx responses:      1000
+Total transferred:      283000 bytes
+HTML transferred:       0 bytes
+Requests per second:    21.72 [#/sec] (mean)
+Time per request:       2302.504 [ms] (mean)
+Time per request:       46.050 [ms] (mean, across all concurrent requests)
+Transfer rate:          6.00 [Kbytes/sec] received
 
-    Connection Times (ms)
-                  min  mean[+/-sd] median   max
-    Connect:        0    0   0.7      0       4
-    Processing:   527 2246 201.0   2260    2968
-    Waiting:      526 2246 201.0   2260    2968
-    Total:        531 2246 200.6   2260    2969
+Connection Times (ms)
+              min  mean[+/-sd] median   max
+Connect:        0    0   0.7      0       4
+Processing:   527 2246 201.0   2260    2968
+Waiting:      526 2246 201.0   2260    2968
+Total:        531 2246 200.6   2260    2969
+```
 
 Максимальный расход памяти 151Mb. Как видим, на расход памяти это влияет мало, и на число обрабатываемых запросов тоже. Пока не вижу смысла запускать дополнительные процессы nginx.
 
@@ -177,26 +197,28 @@ keywords: vps,nginx,php-fpm
 
 ### 1 nginx и 8 php5-fpm
 
-    220 Mb max
-    Concurrency Level:      50
-    Time taken for tests:   47.617 seconds
-    Complete requests:      1000
-    Failed requests:        0
-    Write errors:           0
-    Non-2xx responses:      1000
-    Total transferred:      283000 bytes
-    HTML transferred:       0 bytes
-    Requests per second:    21.00 [#/sec] (mean)
-    Time per request:       2380.835 [ms] (mean)
-    Time per request:       47.617 [ms] (mean, across all concurrent requests)
-    Transfer rate:          5.80 [Kbytes/sec] received
+```conf
+220 Mb max
+Concurrency Level:      50
+Time taken for tests:   47.617 seconds
+Complete requests:      1000
+Failed requests:        0
+Write errors:           0
+Non-2xx responses:      1000
+Total transferred:      283000 bytes
+HTML transferred:       0 bytes
+Requests per second:    21.00 [#/sec] (mean)
+Time per request:       2380.835 [ms] (mean)
+Time per request:       47.617 [ms] (mean, across all concurrent requests)
+Transfer rate:          5.80 [Kbytes/sec] received
 
-    Connection Times (ms)
-                  min  mean[+/-sd] median   max
-    Connect:        0    0   1.2      0       7
-    Processing:   544 2331 202.2   2336    3307
-    Waiting:      544 2331 202.2   2336    3307
-    Total:        549 2331 201.9   2336    3312
+Connection Times (ms)
+              min  mean[+/-sd] median   max
+Connect:        0    0   1.2      0       7
+Processing:   544 2331 202.2   2336    3307
+Waiting:      544 2331 202.2   2336    3307
+Total:        549 2331 201.9   2336    3312
+```
 
 Максимальный расход памяти составил 220Mb. Число запросов даже несколько упало, изменения нет. То есть фактически увеличивать число процессов php выше 4 для моего сервера вряд ли стоит.
 
@@ -208,9 +230,11 @@ keywords: vps,nginx,php-fpm
 
 До этого момента использовал настройки XCache по умолчанию. Решил немного повозиться и поискать варианты конфигураций в сети интернет. Изменил лишь несколько настроек в файле */etc/php5/conf.d/xcache.ini*:
 
-    xcache.size  =               64M
-    xcache.count =                 4
-    xcache.var_size  =           64M
+```conf
+xcache.size  =               64M
+xcache.count =                 4
+xcache.var_size  =           64M
+```
 
 Значение *xcache.size* увеличил с 16 до 64 мегабайт. Параметр *xcache.count* указывает на количество используемых на машине ядер, установил в 4. И *xcache.var_size* изменил с 0 на 64 мегабайта.
 

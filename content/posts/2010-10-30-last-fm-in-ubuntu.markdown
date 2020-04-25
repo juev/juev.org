@@ -18,10 +18,12 @@ keywords: lastfm,last.fm,ubuntu
 
 В Ubuntu установить довольно просто:
 
-    $ wget -q http://apt.last.fm/last.fm.repo.gpg -O- | sudo apt-key add -
-    $ sudo echo 'deb http://apt.last.fm/ debian stable' > /etc/apt/sources.list.d/last-fm.list
-    $ sudo apt-get update
-    $ sudo apt-get install lastfm
+```shell
+$ wget -q http://apt.last.fm/last.fm.repo.gpg -O- | sudo apt-key add -
+$ sudo echo 'deb http://apt.last.fm/ debian stable' > /etc/apt/sources.list.d/last-fm.list
+$ sudo apt-get update
+$ sudo apt-get install lastfm
+```
 
 Для работы приложения используется <em>qt4</em>, поэтому будут установлены соответствующие библиотеки.
 

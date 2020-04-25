@@ -18,38 +18,46 @@ keywords: vps,security,ssh,fail2ban,ufw,ubuntu
 
 На сервере под управлением Debian/Ubuntu даем команду:
 
-    $ sudo apt-get install fail2ban
+```shell
+$ sudo apt-get install fail2ban
+```
 
 И теперь остается только настроить его, для это редактируется файл <code>/etc/fail2ban/jail.conf</code>. По умолчанию включена защита только <code>ssh</code>-соединений. По сути этого достаточно, однако не помешает включить защиту еще ряда сервисов, например <code>vsftpd</code>, если он используется на сервере. Для этого достаточно в соответствующем разделе конфигурационного файла изменить значение параметра <code>enabled</code> с <code>false</code> на <code>true</code>.
 
 После изменений конфигурации необходимо перезапустить сервис <code>fail2ban</code>:
 
-    $ sudo service fail2ban restart
+```shell
+$ sudo service fail2ban restart
+```
 
 После чего, при попытке подобрать пароль, уже после 6 соединения ip-адрес будет заблокирован на 10 минут. Чего вполне достаточно для того, чтобы избежать успешной атаки.
 
 Для проверки числа попыток подбора паролей можно воспользоваться командой:
 
-    $ zcat /var/log/auth.log* | grep 'Failed password' | grep sshd | awk '&#123;print $1,$2}' | sort -k 1,1M -k 2n | uniq -c
+```shell
+$ zcat /var/log/auth.log* | grep 'Failed password' | grep sshd | awk '&#123;print $1,$2}' | sort -k 1,1M -k 2n | uniq -c
+```
 
 Сейчас, на моем сервере, она выдает следующее:
 
-    1818 Sep 6
-     183 Sep 7
-     118 Sep 9
-     596 Sep 10
-       7 Sep 13
-       5 Sep 15
-       7 Sep 16
-      13 Sep 17
-       4 Sep 18
-       7 Sep 19
-       6 Sep 20
-      14 Sep 22
-       3 Sep 23
-       9 Sep 24
-       6 Sep 25
-       3 Sep 26
+```conf
+1818 Sep 6
+ 183 Sep 7
+ 118 Sep 9
+ 596 Sep 10
+   7 Sep 13
+   5 Sep 15
+   7 Sep 16
+  13 Sep 17
+   4 Sep 18
+   7 Sep 19
+   6 Sep 20
+  14 Sep 22
+   3 Sep 23
+   9 Sep 24
+   6 Sep 25
+   3 Sep 26
+```
 
 Как видно, еще в начале сентября число попыток было довольно большим. После установки <code>fail2ban</code> число попыток зайти на сервер по ssh сильно сократилось.
 
@@ -59,32 +67,46 @@ keywords: vps,security,ssh,fail2ban,ufw,ubuntu
 
 <code>UFW</code> -- это надстройка над iptables, которая позволяет на очень простом языке задавать правила <code>netfilter</code> ядра операционной системы. Синтаксис очень прост. По умолчанию разрешаются все исходящие соединения и блокируются все входящие. Проходящие пакеты запрещены по умолчанию.
 
-    $ sudo ufw status
+```shell
+$ sudo ufw status
+```
 
 для проверки текущего состояния фаервола и активных правил.
 
-    $ sudo ufw allow 80
+```shell
+$ sudo ufw allow 80
+```
 
 для разрешения входящих соединений по 80 порту <code>tcp/udp</code>. Есть возможность указания используемого протокола, например <code>80/tcp</code>.
 
 Помимо указания портов, есть возможность использования шаблонов приложений, которые можно посмотреть командой
 
-    $ sudo ufw app list
+```shell
+$ sudo ufw app list
+```
 
 И, соответственно, для включения нужного профиля, используется команда:
 
-    $ sudo ufw allow Nginx Full
+```shell
+$ sudo ufw allow Nginx Full
+```
 
 Перед включением фаервола необходимо как минимум прописать разрешающее правило для SSH-соединений. Сделать это можно несколькими способами:
 
-    $ sudo ufw allow OpenSSH
+```shell
+$ sudo ufw allow OpenSSH
+```
 
 или
 
-    $ sudo ufw allow 22/tcp
+```shell
+$ sudo ufw allow 22/tcp
+```
 
 Теперь активируем фаервол:
 
-    $ sudo ufw enable
+```shell
+$ sudo ufw enable
+```
 
 И расслабляемся. Теперь <code>SSH</code>-соединения защищены от атак перебором пароля. И сам сервер прикрыт от воздействия на опасные сервисы.

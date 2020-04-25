@@ -12,13 +12,17 @@ keywords: gentoo,ibus
 
 В gentoo достаточно установить следующие пакеты:
 
-    $ emerge ibus ibus-m17n ibus-table
+```shell
+$ emerge ibus ibus-m17n ibus-table
+```
 
 Если используется стабильная ветка, то данные пакеты, нужно предварительно размаскировать... Для использования переключения раскладки в qt-приложениях нужно еще установить дополнительно <em>ibus-qt</em>. После установки добавляем в автозапуск (я использовал <em>~/.xinitrc</em>) следующие строки:
 
-    export XMODIFIERS="@im=ibus"   
-    export GTK_IM_MODULE="ibus" 
-    export QT_IM_MODULE="xim" 
-    ibus-daemon -d -x
+```conf
+export XMODIFIERS="@im=ibus"
+export GTK_IM_MODULE="ibus"
+export QT_IM_MODULE="xim"
+ibus-daemon -d -x
+```
 
 Теперь можно перезапускать свой оконный менеджер и запустив <em>ibus-setup</em> задать нужные параметры переключения. Собственно все...

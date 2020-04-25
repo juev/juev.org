@@ -16,17 +16,19 @@ keywords: xmonad,wm,tiling,xmobar
 
 В конце концов, в результате экспериментов нашел удачную конфигурацию. Заключается она в том, что бордюр активного окна делаем черным, а вот бордюр неактивного окна делаем светлым. Тогда и фильмы смотреть можно, и по цвету легко различаются окна в тайловом режиме.
 
-    myNormalBorderColor  = "#AEB2C1"
-    myFocusedBorderColor = "#000000"
-    myBorderWidth   = 1
-    main = do
-         xmproc &lt;- spawnPipe "xmobar"
-         xmonad $ withUrgencyHook NoUrgencyHook $ defaultConfig &#123;
-             terminal = myTerminal
-             , normalBorderColor = myNormalBorderColor
-             , focusedBorderColor = myFocusedBorderColor
-             , borderWidth        = myBorderWidth
-             }
+```haskell
+myNormalBorderColor  = "#AEB2C1"
+myFocusedBorderColor = "#000000"
+myBorderWidth   = 1
+main = do
+     xmproc <- spawnPipe "xmobar"
+     xmonad $ withUrgencyHook NoUrgencyHook $ defaultConfig {
+         terminal = myTerminal
+         , normalBorderColor = myNormalBorderColor
+         , focusedBorderColor = myFocusedBorderColor
+         , borderWidth        = myBorderWidth
+         }
+```
 
 Это кусочек конфига, в котором это реализовано.
 

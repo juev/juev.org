@@ -7,7 +7,7 @@ tags:
   - ruby
 keywords: jekyll,wordpress,ruby,github,миграция,переход
 ---
-Не мало уже статей написал про платформу <a href="http://pages.github.com" rel="nofollow">Github.com</a>. И постоянно готовил себя к переносу сайта. 
+Не мало уже статей написал про платформу <a href="http://pages.github.com" rel="nofollow">Github.com</a>. И постоянно готовил себя к переносу сайта.
 
 После некоторых тестов, возник вопрос о переносе существующих записей на новый движок. В разделе <a href="https://github.com/mojombo/jekyll/wiki/Blog-Migrations" rel="nofollow">Blog migrations</a> официальной документации <code>jekyll</code> представлены примеры миграции с различных платформ. Решил попробовать, так ли все безоблачно?
 
@@ -15,21 +15,27 @@ keywords: jekyll,wordpress,ruby,github,миграция,переход
 
 Предварительно нужно подготовить сервер установкой ряда пакетов:
 
-    $ sudo gem install sequel
-    $ sudo apt-get install libmysql-ruby
+```shell
+$ sudo gem install sequel
+$ sudo apt-get install libmysql-ruby
+```
 
 Теперь вытягиваем с помощью Git последнюю версию <code>jekyll</code> (можно этого и не делать, ведь мы уже устанавливали <code>jekyll</code> на сервер, и просто скопировать требуемые файлы из <code>/usr/lib/ruby/gems/1.8/gems/jekyll-0.7.0/</code>, это кому как проще), и создаем директорию для работы:
 
-    $ cd
-    $ mkdir temp; cd temp
-    $ git clone https://github.com/mojombo/jekyll.git
+```shell
+$ cd
+$ mkdir temp; cd temp
+$ git clone https://github.com/mojombo/jekyll.git
+```
 
 И проводим сам импорт, вместо соответствующих значений подставляя свои:
 
-    $ export DB=my_wpdb
-    $ export USER=dbuser 
-    $ export PASS=dbpass 
-    $ ruby -r './jekyll/lib/jekyll/migrators/wordpress' -e 'Jekyll::WordPress.process( "#&#123;ENV["DB"]}", "#&#123;ENV["USER"]}", "#&#123;ENV["PASS"]}")'
+```shell
+$ export DB=my_wpdb
+$ export USER=dbuser
+$ export PASS=dbpass
+$ ruby -r './jekyll/lib/jekyll/migrators/wordpress' -e 'Jekyll::WordPress.process( "#&#123;ENV["DB"]}", "#&#123;ENV["USER"]}", "#&#123;ENV["PASS"]}")'
+```
 
 Если префикс таблиц базы данных не менялся, то все пройдет достаточно спокойно. В противном случае экспорт закончится сообщением об ошибке соединения с таблицей базы данных <code>wp_post</code>, что у меня и произошло.
 

@@ -25,7 +25,9 @@ keywords: emacs,windows
 
 Теперь в своей домашней папке (<code>/home/username</code>) в запущенном Cygwin даем команду:
 
-    $ git clone git://github.com/technomancy/emacs-starter-kit.git
+```shell
+$ git clone git://github.com/technomancy/emacs-starter-kit.git
+```
 
 Можно конечно и просто скачать файлы в архиве, воспользовавшись соответствующей кнопкой на странице. Но затем придется переименовывать папки, а в данном случае получаем уже все в готовом виде. Да и GIT на машине никогда лишним не бывает.
 
@@ -33,31 +35,33 @@ keywords: emacs,windows
 
 Для себя я определил следующее:
 
-    (setq make-backup-files nil) ; stop creating those backup~ files
-    (setq auto-save-default nil) ; stop creating those #auto-save# files
+```lisp
+(setq make-backup-files nil) ; stop creating those backup~ files
+(setq auto-save-default nil) ; stop creating those #auto-save# files
 
-    ;;; WINDOW SPLITING
-    (global-set-key (kbd "M-2") 'split-window-vertically) ; was digit-argument
-    (global-set-key (kbd "M-1") 'delete-other-windows) ; was digit-argument
-    (global-set-key (kbd "M-s") 'other-window) ; was center-line
+;;; WINDOW SPLITING
+(global-set-key (kbd "M-2") 'split-window-vertically) ; was digit-argument
+(global-set-key (kbd "M-1") 'delete-other-windows) ; was digit-argument
+(global-set-key (kbd "M-s") 'other-window) ; was center-line
 
-    (set-language-environment 'UTF-8)
-    (setq default-input-method 'russian-computer)
-    (set-selection-coding-system 'windows-1251)
-    (set-default-coding-systems 'windows-1251)
-    (prefer-coding-system 'windows-1251)
+(set-language-environment 'UTF-8)
+(setq default-input-method 'russian-computer)
+(set-selection-coding-system 'windows-1251)
+(set-default-coding-systems 'windows-1251)
+(prefer-coding-system 'windows-1251)
 
-    (setq visible-bell nil)
+(setq visible-bell nil)
 
-    (global-set-key [(control tab)] 'previous-buffer)
-    (global-set-key [(control shift tab)] 'next-buffer)
+(global-set-key [(control tab)] 'previous-buffer)
+(global-set-key [(control shift tab)] 'next-buffer)
 
-    ;; sample easy shortcuts
+;; sample easy shortcuts
 
-    (global-set-key (kbd "<f5>") 'find-file) ; Open file or dir
-    (global-set-key (kbd "<f6>") 'ibuffer) ; list buffers
+(global-set-key (kbd "<f5>") 'find-file) ; Open file or dir
+(global-set-key (kbd "<f6>") 'ibuffer) ; list buffers
 
-    (global-set-key (kbd "<f8>") 'kill-this-buffer) ; Close file
+(global-set-key (kbd "<f8>") 'kill-this-buffer) ; Close file
+```
 
 Все изменения касаются только некоторых клавиатурных комбинаций и изменения в поведении редактора (используемая кодировка, автосохранение).
 

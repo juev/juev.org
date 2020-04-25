@@ -15,8 +15,10 @@ keywords: wordpress,vps,domain,dns,store,images
 <h2>Создание поддомена</h2>
 Создать поддомен довольно просто. Достаточно у регистратора доменных имен в панели управления зоной создать отдельную запись, если она еще не была создана:
 
-    Имя    Тип записи    Данные
-    *      A             117.12.56.31
+```conf
+Имя    Тип записи    Данные
+*      A             117.12.56.31
+```
 
 <img class="alignleft size-full wp-image-1175" src="https://static.juev.org/2010/08/photo-04.jpg" alt="" width="210" height="210" />
 
@@ -26,30 +28,34 @@ keywords: wordpress,vps,domain,dns,store,images
 
 Для nginx я прописал следующее:
 
-    server {
-      server_name domain.ru;
-      ...
-    }
+```nginx
+server {
+  server_name domain.ru;
+  ...
+}
 
-    server {
-      server_name static.domain.ru;
+server {
+  server_name static.domain.ru;
 
-      if ($request_uri !~* "\.(jpe?g|gif|css|png|js|ico|pdf|zip|gz)$") {
-        rewrite ^(.*) http://www.domain.ru$1 permanent;
-        break;
-      }
+  if ($request_uri !~* "\.(jpe?g|gif|css|png|js|ico|pdf|zip|gz)$") {
+    rewrite ^(.*) http://www.domain.ru$1 permanent;
+    break;
+  }
 
-      location / {
-        root   /var/www/domain.ru/web/wordpress/wp-content/uploads/;
-        access_log off;
-        expires max;
-        add_header Cache-Control private;
-      }
-    }
+  location / {
+    root   /var/www/domain.ru/web/wordpress/wp-content/uploads/;
+    access_log off;
+    expires max;
+    add_header Cache-Control private;
+  }
+}
+```
 
 После чего указываем nginx перечитать файлы конфигурации:
 
-    /etc/init.d/nginx reload
+```shell
+/etc/init.d/nginx reload
+```
 
 И переходим к настройке WordPress.
 
@@ -65,25 +71,31 @@ keywords: wordpress,vps,domain,dns,store,images
 
 Необходимо открыть phpMyAdmin, либо любой другой mysql-клиент, подключиться к базе данных. Перед всеми изменениями лучше заранее создать бекап базы данных, чтобы в случае ошибки, можно было ее восстановить. И теперь выполняем следующий sql-запрос:
 
-    UPDATE wp_posts
-    SET post_content = REPLACE(
-    post_content,
-    'http://www.domain.ru/wordpress/wp-content/uploads/',
-    'http://static.domain.ru/')
+```sql
+UPDATE wp_posts
+SET post_content = REPLACE(
+post_content,
+'http://www.domain.ru/wordpress/wp-content/uploads/',
+'http://static.domain.ru/')
+```
 
 Не забудьте сменить имя таблицы, а точнее ее префикс на тот, что используете вы в своей базе данных, и прописать тот домен и поддомен, что используется у вас. Не забывайте так же проверять и точно указывать адрес папки <em>uploads</em>.
 
 Теперь необходимо изменить пути к файлам, которые прописаны в Media Library. Для этого выполняем следующий sql-запрос:
 
-    UPDATE wp_posts
-    SET guid = REPLACE(
-    guid,
-    'http://www.domain.ru/wordpress/wp-content/uploads/',
-    'http://static.domain.ru/')
+```sql
+UPDATE wp_posts
+SET guid = REPLACE(
+guid,
+'http://www.domain.ru/wordpress/wp-content/uploads/',
+'http://static.domain.ru/')
+```
 
 <h2>Redirect</h2>
 Поисковые сервера помнят о изображениях, что были раньше на сервере и для корректной работы необходимо сделать редиректы со старых адресов на новые. Для этого в nginx прописываем следующую строку:
 
-    rewrite ^/wordpress/wp-content/uploads/(.*)$ http://static.domain.ru/$1 permanent;
+```nginx
+rewrite ^/wordpress/wp-content/uploads/(.*)$ http://static.domain.ru/$1 permanent;
+```
 
 На этом все!

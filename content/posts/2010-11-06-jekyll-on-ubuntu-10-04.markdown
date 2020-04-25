@@ -21,20 +21,26 @@ keywords: jekyll,ruby,ubuntu,vps
 
 Нам понадобиться репозиторий <a href="https://edge.launchpad.net/~ubuntu-on-rails/+archive/ppa" rel="nofollow">Ubuntu on Rails Team</a>, организованный энтузиастами, поддерживающих актуальные версии целого ряда пакетов, необходимых для работы Rails приложений. Подключаем его:
 
-    $ sudo apt-add-repository ppa:ubuntu-on-rails/ppa
-    $ sudo apt-get update
-    $ sudo apt-get upgrade
-    $ sudo apt-get install ruby1.8-dev rubygems
+```shell
+$ sudo apt-add-repository ppa:ubuntu-on-rails/ppa
+$ sudo apt-get update
+$ sudo apt-get upgrade
+$ sudo apt-get install ruby1.8-dev rubygems
+```
 
 И теперь ставим сам jekyll:
 
-    $ sudo gem install jekyll
+```shell
+$ sudo gem install jekyll
+```
 
 После подключения репозитория и обновления пакета <code>rubygems</code> установка проходит без проблем. 
 
 При попытке публикации сайта возможно придется установить дополнительные модули <code>gem</code>. Если собираемся использовать подсветку синтаксиса, то в Ubuntu необходимо дать следующую команду:
 
-    sudo apt-get install python-pygments
+```shell
+sudo apt-get install python-pygments
+```
 
 Про используемую структуру каталогов и файлов, а также примеров использования подробно описано в <a href="https://github.com/mojombo/jekyll/wiki" rel="nofollow">документации jekyll</a>.
 

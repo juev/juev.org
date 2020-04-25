@@ -26,14 +26,16 @@ keywords: windows,soft,time,sync,time.is,neutron
 
 Примерное содержимое файла:
 
-    [Options]
-    AutoSync=1
-    AutoExit=1
-    Server=14
-    Retry=1
-    [Servers]
-    0="cuckoo.nevada.edu"
-    1="ntp.nblug.org"
+```conf
+[Options]
+AutoSync=1
+AutoExit=1
+Server=14
+Retry=1
+[Servers]
+0="cuckoo.nevada.edu"
+1="ntp.nblug.org"
+```
 
 Из серверов оставил только первые два, список по умолчанию довольно обширный.
 

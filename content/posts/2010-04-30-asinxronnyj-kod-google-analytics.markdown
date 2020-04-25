@@ -23,33 +23,37 @@ href="http://www.google.com/analytics/" rel="nofollow">www.google.com/analytics<
 
 Обычный код скрипта, который до сих пор предлагают для установки на сайте GA, выглядит вот так:
 
-    <script type="text/javascript">
-    var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
-    document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
-    </script>
+```html
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
 
-    <script type="text/javascript">
-    try {
-    var pageTracker = _gat._getTracker("UA-XXXXX-X");
-    pageTracker._trackPageview();
-    } catch(err) {}</script>
-    <script type="text/javascript">var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));</script><script type="text/javascript">try {var pageTracker = _gat._getTracker("UA-7957198-2");pageTracker._trackPageview();} catch(err) {}</script>
+<script type="text/javascript">
+try {
+var pageTracker = _gat._getTracker("UA-XXXXX-X");
+pageTracker._trackPageview();
+} catch(err) {}</script>
+<script type="text/javascript">var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));</script><script type="text/javascript">try {var pageTracker = _gat._getTracker("UA-7957198-2");pageTracker._trackPageview();} catch(err) {}</script>
+```
 
 На странице кода отслеживания появилась еще ссылка для выбора асинхронного кода:
 
-    <script type="text/javascript">
+```html
+<script type="text/javascript">
 
-      var _gaq = _gaq || [];
-      _gaq.push(['_setAccount', 'UA-XXXXX-X']);
-      _gaq.push(['_trackPageview']);
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-XXXXX-X']);
+  _gaq.push(['_trackPageview']);
 
-      (function() {
-        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-      })();
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
 
-    </script>
+</script>
+```
 
 Как видно, код представляет собой только один скрипт, а не как раньше два. И сам код значительно сократился.
 

@@ -28,20 +28,28 @@ keywords: gentoo,tips,linux
 
 Достаточно было проверить обратные зависимости пакета lvm2, для этого используется команда:
 
-    $ equery d lvm2
+```shell
+$ equery d lvm2
+```
 
 Он мне выдал, что lvm2 установлен как зависимость для cryptsetup, аналогично проверил обратные зависимости для данного пакета:
 
-    $ equery d cryptsetup
+```shell
+$ equery d cryptsetup
+```
 
 На что получил зависимости данного пакета от <strong>hal</strong> и <strong>pmount</strong>, при этом рядом с каждым пакетом были описаны флаги, которые устанавливали нашу зависимость. В моем случае я получил два флага, это <strong>crypt</strong> и <strong>kernel_linux</strong>. Второй флаг является системным и отключению не подлежит, поэтому просто пересобираем наши пакеты <strong>hal</strong> и <strong>pmount</strong> с флагом <strong>-crypt</strong>, прописав предварительно данный use в файл <em>/etc/portage/packages.use</em>.
 
 После чего просто удаляем cryptsetup и lvm2. Не забывая отследить, не нарушились ли зависимости с помощью команды:
 
-    $ revdep-rebuild
+```shell
+$ revdep-rebuild
+```
 
 И соответственно:
 
-    $ emerge -auND world
+```shell
+$ emerge -auND world
+```
 
 Если все нормально, и удаленные пакеты не были установлены вновь, значит наша операция прошла успешно!

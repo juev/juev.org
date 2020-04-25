@@ -28,43 +28,45 @@ keywords: vps,mysql,оптимизация,настройка
 
 Главное, что удалось запустить сервер с новыми параметрами, скрипт <a href="http://mysqltuner.pl/mysqltuner.pl" rel="nofollow">mysqltuner.pl</a> больше не показывал на недостаток оперативной памяти. И стал выдавать примерно следующее:
 
-    -------- General Statistics --------------------------------------------------
-    [--] Skipped version check for MySQLTuner script
-    [OK] Currently running supported MySQL version 5.1.41-3ubuntu12.7-log
-    [OK] Operating on 32-bit architecture with less than 2GB RAM
+```text
+-------- General Statistics --------------------------------------------------
+[--] Skipped version check for MySQLTuner script
+[OK] Currently running supported MySQL version 5.1.41-3ubuntu12.7-log
+[OK] Operating on 32-bit architecture with less than 2GB RAM
 
-    -------- Storage Engine Statistics -------------------------------------------
-    [--] Status: -Archive -BDB -Federated -InnoDB -ISAM -NDBCluster
-    [--] Data in MyISAM tables: 15M (Tables: 108)
-    [!!] Total fragmented tables: 10
+-------- Storage Engine Statistics -------------------------------------------
+[--] Status: -Archive -BDB -Federated -InnoDB -ISAM -NDBCluster
+[--] Data in MyISAM tables: 15M (Tables: 108)
+[!!] Total fragmented tables: 10
 
-    -------- Performance Metrics -------------------------------------------------
-    [--] Up for: 6m 11s (1K q [4.674 qps], 212 conn, TX: 4M, RX: 285K)
-    [--] Reads / Writes: 95% / 5%
-    [--] Total buffers: 160.0M global + 1.6M per thread (151 max threads)
-    [OK] Maximum possible memory usage: 395.9M (79% of installed RAM)
-    [OK] Slow queries: 1% (18/1K)
-    [OK] Highest usage of available connections: 7% (11/151)
-    [OK] Key buffer size / total MyISAM indexes: 16.0M/10.9M
-    [OK] Key buffer hit rate: 99.8% (242K cached / 454 reads)
-    [OK] Query cache efficiency: 40.3% (522 cached / 1K selects)
-    [OK] Query cache prunes per day: 0
-    [OK] Sorts requiring temporary tables: 0% (0 temp sorts / 225 sorts)
-    [!!] Temporary tables created on disk: 35% (187 on disk / 526 total)
-    [OK] Thread cache hit rate: 94% (11 created / 212 connections)
-    [OK] Table cache hit rate: 25% (135 open / 535 opened)
-    [OK] Open file limit used: 26% (267/1K)
-    [OK] Table locks acquired immediately: 100% (958 immediate / 958 locks)
+-------- Performance Metrics -------------------------------------------------
+[--] Up for: 6m 11s (1K q [4.674 qps], 212 conn, TX: 4M, RX: 285K)
+[--] Reads / Writes: 95% / 5%
+[--] Total buffers: 160.0M global + 1.6M per thread (151 max threads)
+[OK] Maximum possible memory usage: 395.9M (79% of installed RAM)
+[OK] Slow queries: 1% (18/1K)
+[OK] Highest usage of available connections: 7% (11/151)
+[OK] Key buffer size / total MyISAM indexes: 16.0M/10.9M
+[OK] Key buffer hit rate: 99.8% (242K cached / 454 reads)
+[OK] Query cache efficiency: 40.3% (522 cached / 1K selects)
+[OK] Query cache prunes per day: 0
+[OK] Sorts requiring temporary tables: 0% (0 temp sorts / 225 sorts)
+[!!] Temporary tables created on disk: 35% (187 on disk / 526 total)
+[OK] Thread cache hit rate: 94% (11 created / 212 connections)
+[OK] Table cache hit rate: 25% (135 open / 535 opened)
+[OK] Open file limit used: 26% (267/1K)
+[OK] Table locks acquired immediately: 100% (958 immediate / 958 locks)
 
-    -------- Recommendations -----------------------------------------------------
-    General recommendations:
-        Run OPTIMIZE TABLE to defragment tables for better performance
-        MySQL started within last 24 hours - recommendations may be inaccurate
-        When making adjustments, make tmp_table_size/max_heap_table_size equal
-        Reduce your SELECT DISTINCT queries without LIMIT clauses
-    Variables to adjust:
-        tmp_table_size (> 128M)
-        max_heap_table_size (> 128M)
+-------- Recommendations -----------------------------------------------------
+General recommendations:
+    Run OPTIMIZE TABLE to defragment tables for better performance
+    MySQL started within last 24 hours - recommendations may be inaccurate
+    When making adjustments, make tmp_table_size/max_heap_table_size equal
+    Reduce your SELECT DISTINCT queries without LIMIT clauses
+Variables to adjust:
+    tmp_table_size (> 128M)
+    max_heap_table_size (> 128M)
+```
 
 Указывается на фрагментированность таблиц баз данных, и на использование временных файлов на жестком диске. Первое решается путем оптимизации таблиц базы данных в панели <code>phpmyadmin</code>. А второе уже не так страшно.
 
@@ -73,13 +75,17 @@ keywords: vps,mysql,оптимизация,настройка
 Стоит еще отключить использование таблиц InnoDB, BDB за счет включения следующих строк в
 секцию `[mysqld]`:
 
-    skip-innodb
-    skip-bdb
+```conf
+skip-innodb
+skip-bdb
+```
 
 Осталось еще поэкспериментировать со значением переменных
 
-    query_cache_size (> 16M)
-    tmp_table_size (> 128M)
-    max_heap_table_size (> 128M)
+```conf
+query_cache_size (> 16M)
+tmp_table_size (> 128M)
+max_heap_table_size (> 128M)
+```
 
 Посмотрим, к чему это приведет! А главное, что я для себя вынес из данного эксперимента, не стоит останавливаться на полпути, и нужно разбираться во всем, что касается работы сервера!

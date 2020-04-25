@@ -21,28 +21,32 @@ keywords: facebook,javascript,webdesign
 
 Рассмотрим пример создания комментариев для своего сайта. Для этого переходим на страницу <a href="http://developers.facebook.com/setup" rel="nofollow">Create an App</a>, где создаем новое приложение и в итоге получаем API-код, который будет использоваться в нашем скрипте.
 
-После чего в самом верху страницы меняем блок тега &lt;html&gt;:
+После чего в самом верху страницы меняем блок тега `<html>`:
 
-<pre><code>&lt;html xmlns="http://www.w3.org/1999/xhtml"
-      <strong>xmlns:fb="http://www.facebook.com/2008/fbml"</strong>&gt;</code></pre>
+```html
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:fb="http://www.facebook.com/2008/fbml">
+```
 
 Была добавлена выделенная строчка. Затем в том месте страницы, где собираемся размещать комментарии, добавляем следующий код:
 
-    <div id="fb-root"></div>
-    <script type="text/javascript">
-      var c = document.getElementById('fb-root');
-      var e = document.createElement('fb:comments');
-      c.appendChild(e);
-      window.fbAsyncInit = function() {
-        FB.init({appId: 'you-apps-code', status: true, cookie: true,
-                 xfbml: true});
-      };
-      (function() {
-        var e = document.createElement('script'); e.async = true;
-        e.src = document.location.protocol +
-          '//connect.facebook.net/en_US/all.js';
-        document.getElementById('fb-root').appendChild(e);
-      }());
-    </script>
+```html
+<div id="fb-root"></div>
+<script type="text/javascript">
+  var c = document.getElementById('fb-root');
+  var e = document.createElement('fb:comments');
+  c.appendChild(e);
+  window.fbAsyncInit = function() {
+    FB.init({appId: 'you-apps-code', status: true, cookie: true,
+             xfbml: true});
+  };
+  (function() {
+    var e = document.createElement('script'); e.async = true;
+    e.src = document.location.protocol +
+      '//connect.facebook.net/en_US/all.js';
+    document.getElementById('fb-root').appendChild(e);
+  }());
+</script>
+```
 
 Что интересно, скорость загрузки комментариев увеличилась и довольно существенно. И так как теперь отсутствуют теги, которые не прописаны в стандарте, страница проходит валидацию.

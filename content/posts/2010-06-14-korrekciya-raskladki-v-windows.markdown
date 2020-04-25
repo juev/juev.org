@@ -18,17 +18,21 @@ keywords: windows,keyboard,tips
 
 Устанавливаем AutoHotkey, и меняем текущий сценарий, прописав следующие строки:
 
-    ; CapsLock to Ctrl
-    SetCapsLockState, off
-    Capslock::Ctrl ; make Caps Lock key do Ctrl
+```conf
+; CapsLock to Ctrl
+SetCapsLockState, off
+Capslock::Ctrl ; make Caps Lock key do Ctrl
+```
 
 Перезагружаем скрипт и видим, что капс стал выполнять функции контрола! Нужно поменять клавиши местами? Нет ничего проще! К примеру, я поменял местами Win и Ctrl:
 
-    ; Swap Win &amp; Ctrls
-    Lwin::LCtrl
-    Rwin::RCtrl
-    LCtrl::Lwin
-    RCtrl::Rwin
+```conf
+; Swap Win &amp; Ctrls
+Lwin::LCtrl
+Rwin::RCtrl
+LCtrl::Lwin
+RCtrl::Rwin
+```
 
 У меня клавиатура Apple aluminium, и Win клавиша расположена рядом с пробелом. Как оказалось, там намного удобнее размещать клавишу Ctrl (имхо конечно).
 

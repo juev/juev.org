@@ -15,25 +15,29 @@ keywords: wordpress,varnish,speed,vps
 
 В Ubuntu устанавливается, как всегда, очень просто:
 
-    # apt-get install varnish
+```shell
+# apt-get install varnish
+```
 
 Сразу после установки он запускается, но для его использования нужно еще верно указать порты frontend-серверу, что используются Varnish. Но перед этим немного изменим конфигурацию, для корректного использования WordPress. Изменяем файл <code>/etc/varnish/default.vcl</code>:
 
-    backend default {
-         .host = "127.0.0.1";
-         .port = "8080";
-     }
+```conf
+backend default {
+     .host = "127.0.0.1";
+     .port = "8080";
+ }
 
-    # Unless this is the login or admin page, unset the cookie!
-    sub vcl_recv {
-    # admin users always miss the cache
-      if( req.url ~ "^/wp-(login|admin)" || req.http.Cookie ~ "wordpress_logged_in_" ){
-        return (pass);
-      }
-      # ignore any other cookies
-      unset req.http.Cookie;
-      return (lookup);
-    }
+# Unless this is the login or admin page, unset the cookie!
+sub vcl_recv {
+# admin users always miss the cache
+  if( req.url ~ "^/wp-(login|admin)" || req.http.Cookie ~ "wordpress_logged_in_" ){
+    return (pass);
+  }
+  # ignore any other cookies
+  unset req.http.Cookie;
+  return (lookup);
+}
+```
 
 <img class="aligncenter" src="https://static.juev.org/2010/09/varnishprojsoft1.jpg" alt="" width="240" height="140" />
 
@@ -41,42 +45,48 @@ keywords: wordpress,varnish,speed,vps
 
 Теперь перезапускаем Varnish:
 
-    # /etc/init.d/varnish restart
+```shell
+# /etc/init.d/varnish restart
+```
 
 И изменяем конфигурацию виртуального сервера в nginx, у меня это файл <code>/etc/nginx/sites-available/juev.ru</code>, меняется только следующий раздел:
 
-            location / {
-                    proxy_set_header X-Real-IP  $remote_addr;
-                    proxy_set_header Host $host;
-                    proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
-    #               proxy_pass http://127.0.0.1:8080; # Apache listening
-                    proxy_pass http://127.0.0.1:6081; # Varnish listening
-            }
+```nginx
+        location / {
+                proxy_set_header X-Real-IP  $remote_addr;
+                proxy_set_header Host $host;
+                proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+#               proxy_pass http://127.0.0.1:8080; # Apache listening
+                proxy_pass http://127.0.0.1:6081; # Varnish listening
+        }
+```
 
 То есть просто указали другой порт backend'а. Перезапускаем nginx и смотрим на работу сайта. Я протестировал работу сайта с помощью <em>ab</em>:
 
-    # ab -n 5000 -c 100 http://www.juev.ru/index.php
-     . . . 
-    Concurrency Level:      100
-    Time taken for tests:   0.952 seconds
-    Complete requests:      5000
-    Failed requests:        0
-    Write errors:           0
-    Non-2xx responses:      5000
-    Total transferred:      1875000 bytes
-    HTML transferred:       0 bytes
-    Requests per second:    5253.66 [#/sec] (mean)
-    Time per request:       19.034 [ms] (mean)
-    Time per request:       0.190 [ms] (mean, across all concurrent requests)
-    Transfer rate:          1923.95 [Kbytes/sec] received
+```shell
+# ab -n 5000 -c 100 http://www.juev.ru/index.php
+ . . . 
+Concurrency Level:      100
+Time taken for tests:   0.952 seconds
+Complete requests:      5000
+Failed requests:        0
+Write errors:           0
+Non-2xx responses:      5000
+Total transferred:      1875000 bytes
+HTML transferred:       0 bytes
+Requests per second:    5253.66 [#/sec] (mean)
+Time per request:       19.034 [ms] (mean)
+Time per request:       0.190 [ms] (mean, across all concurrent requests)
+Transfer rate:          1923.95 [Kbytes/sec] received
 
-    Connection Times (ms)
-                  min  mean[+/-sd] median   max
-    Connect:        0    2   2.5      1      11
-    Processing:     2   17   5.8     17      46
-    Waiting:        2   16   6.0     16      45
-    Total:          2   19   5.7     18      46
-     . . .
+Connection Times (ms)
+              min  mean[+/-sd] median   max
+Connect:        0    2   2.5      1      11
+Processing:     2   17   5.8     17      46
+Waiting:        2   16   6.0     16      45
+Total:          2   19   5.7     18      46
+ . . .
+```
 
 При этом, во время теста процессор практически не нагружался. Заметить работу теста было просто не возможно.
 

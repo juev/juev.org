@@ -26,16 +26,18 @@ keywords: jekyll,хостинг,github
 
 В репозитории создается следующая файловая структура:
 
-     .
-     |-- _config.yml
-     |-- _layouts
-     |   |-- default.html
-     |   `-- post.html
-     |-- _posts
-     |   |-- 2007-10-29-why-every-programmer-should-play-nethack.textile
-     |   `-- 2009-04-26-barcamp-boston-4-roundup.textile
-     |-- _site
-     `-- index.html
+```text
+ .
+ |-- _config.yml
+ |-- _layouts
+ |   |-- default.html
+ |   `-- post.html
+ |-- _posts
+ |   |-- 2007-10-29-why-every-programmer-should-play-nethack.textile
+ |   `-- 2009-04-26-barcamp-boston-4-roundup.textile
+ |-- _site
+ `-- index.html
+ ```
 
 Где:
 <strong>_config.yml</strong> -- файл, который содержит в себе конфигурацию <code>jekyll</code>, о которой подробно можно прочесть на странице <a href="https://github.com/mojombo/jekyll/wiki/configuration" rel="nofollow">Configuration</a>. Причем в файле обычно прописываются только какие-то изменения. По умолчанию используется стандартная конфигурация.
