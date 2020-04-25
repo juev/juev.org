@@ -9,11 +9,15 @@ tags:
 
 Поиск дал результат, необходимо изменить настройки apm, либо выполнив команду:
 
-    apm config set strict-ssl false
+```shell
+apm config set strict-ssl false
+```
 
 Либо вручную добавив строку:
 
-    strict-ssl = false
+```ini
+strict-ssl = false
+```
 
 к файлу `~/.atom./apmrc`. Но как показал опыт, проблему это не решило. В самом редакторе по прежнему ловил описанную выше ошибку.
 
@@ -21,8 +25,10 @@ tags:
 
 > Because of a poor software architecture decision early in the NPM project, there is an env var that that will reject self-signed certificates, even if you have strict-ssl set to none. The solution is to set NODE_TLS_REJECT_UNAUTHORIZED=0 in your init.coffee (you can test it by running NODE_TLS_REJECT_UNAUTHORIZED=0 atom . and then trying to install a package.
 
-    # $EDITOR $ATOM_HOME/init.coffee
-    # Disable TLS Verification.
-    process.env.NODE_TLS_REJECT_UNAUTHORIZED = 0
+```coffee
+# $EDITOR $ATOM_HOME/init.coffee
+# Disable TLS Verification.
+process.env.NODE_TLS_REJECT_UNAUTHORIZED = 0
+```
 
 Добавил указанную строку в файл `init.coffee`, перезапустил редактор. Проблема была решена.

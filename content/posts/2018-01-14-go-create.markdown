@@ -8,7 +8,9 @@ tags:
 
 В новых языках программирования создание проекта автоматизируют. Чтобы не приходилось каждый раз копировать конфигурационные файлы, править их. Тратить время на то, что можно сделать автоматически. К примеру в том же Rust:
 
-    $ cargo new newproject
+```shell
+$ cargo new newproject
+```
 
 И будет создана новая директория newproject, в которой будут представлены и файлы конфигурации и простой файл исходного кода. Замечательно, но почему этого нет в Go?
 
@@ -16,19 +18,21 @@ tags:
 
 В итоге создал новый проект [go-create](https://github.com/Juev/go-create "go-create"), который именно автоматизирует сам процесс создания нового проекта. При этом проект автоматически создается в директории `$GOPATH`, с использованием вашего Github-имени пользователя. Имя пользователя берется или из git-конфигурации системы, или из параметров командной строки. Так же можно его задать в конфигурационном файле `~/.gocreate`. Имя проекта, его версия задаются из параметров командной строки:
 
-    $ go-create --help
-    usage: go-create [<flags>] <name>
+```shell
+$ go-create --help
+usage: go-create [<flags>] <name>
 
-    Flags:
-    -h, --help               Show context-sensitive help (also try --help-long and --help-man).
-    -n, --number="0.0.1"     Project version.
-    -g, --github=GITHUB      Github username.
-    -u, --username=USERNAME  Username.
-    -l, --local              Use current directory for creating.
-        --version            Show application version.
+Flags:
+-h, --help               Show context-sensitive help (also try --help-long and --help-man).
+-n, --number="0.0.1"     Project version.
+-g, --github=GITHUB      Github username.
+-u, --username=USERNAME  Username.
+-l, --local              Use current directory for creating.
+    --version            Show application version.
 
-    Args:
-    <name>  Project name.
+Args:
+<name>  Project name.
+```
 
 Создается директория проекта по образцу `go-scratch`, который упоминался чуть выше. Создаются два файла исходного кода, один из которых упрощает работу с версиями проекта. Создается Makefile для упрощения сборки проекта. Пустой `README.md` файл, файл `.gitigonre` и директория для бинарников `bin`.
 
@@ -36,7 +40,9 @@ tags:
 
 Таким образом теперь для того, чтобы начать мне не нужно что-то копировать или править. Достаточно использовать одну команду:
 
-    $ go-create petproject
+```shell
+$ go-create petproject
+```
 
 И уже можно начинать работать! Если вы пишете на Golang, надеюсь `go-create` окажется вам полезным инструментом.
 

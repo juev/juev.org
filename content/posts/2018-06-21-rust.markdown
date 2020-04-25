@@ -20,26 +20,30 @@ tags:
 ## Настройка Cargo
 
 Для того, чтобы cargo корректно работал, необходимо изменить конфигурацию для git и для cargo. Меняем файл `~/.gitconfig` добавляя:
-    
-    [credential]
-    helper = manager
 
-    [http]
-    sslVerify = false
+```gitconfig
+[credential]
+helper = manager
+
+[http]
+sslVerify = false
+```
 
 И создаем файл `~/.cargo/config`:
 
-    [http]
-    proxy = "proxy:8080"
-    sslVerify = false
-    check-revoke = false
+```ini
+[http]
+proxy = "proxy:8080"
+sslVerify = false
+check-revoke = false
 
-    [https]
-    proxy = "proxy:8080"
-    sslVerify = false
-    check-revoke = false
+[https]
+proxy = "proxy:8080"
+sslVerify = false
+check-revoke = false
+```
 
-Ключевыми опциями тут являются sslVerify и check-revoke. 
+Ключевыми опциями тут являются sslVerify и check-revoke.
 
 ## Настройка VSCode
 
@@ -47,11 +51,15 @@ tags:
 
 Мне нравится писать в VSCode, достаточно установить расширение [Rust](https://marketplace.visualstudio.com/items?itemName=rust-lang.rust) и установить требуемые утилиты:
 
-    rustup component add rls-preview rust-analysis rust-src
-    rustup default stable
+```shell
+rustup component add rls-preview rust-analysis rust-src
+rustup default stable
+```
 
 Чтобы VSCode не ругался на запуск rls, достаточно в конфигурации добавить одну строку:
 
-    "rust-client.channel": stable,
-    
+```conf
+"rust-client.channel": "stable",
+```
+
 Теперь Rust установлен и полноценно работает, даже в корпоративной среде.

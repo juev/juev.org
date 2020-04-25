@@ -21,42 +21,54 @@ image: https://static.juev.org/2016/09/logotravis.png
 
 Создание нового пользователя и выдачу ему прав описывать не буду, здесь все тривиально и ничего особенного нет. Единственно, нужно обратить внимание на создание новых SSH-ключей для нового пользователя, создавать будем ключ типа RSA (пробовал использовать ed25519, но возникли проблемы с его использованием на сервере Travis). Переходим в директорию репозитория и используем команды:
 
-    ssh-keygen -t rsa -b 4096 -C '<repo>@travis-ci.org' -f ./deploy_rsa
-    travis encrypt-file deploy_rsa --add
-    ssh-copy-id -i deploy_rsa.pub <ssh-user>@<deploy-host>
+```shell
+ssh-keygen -t rsa -b 4096 -C '<repo>@travis-ci.org' -f ./deploy_rsa
+travis encrypt-file deploy_rsa --add
+ssh-copy-id -i deploy_rsa.pub <ssh-user>@<deploy-host>
+```
 
 Первая команда генерирует ключи в текущей директории (ВАЖНО: не задавайте пароль), вторая команда шифрует приватный ключ и прописывает его использование в файл `.travis.yml`, а третья команда загружает публичный ключ на наш сервер. Не забудьте указать определенные значения вместо переменных repo, ssh-user и deploy-host.
 
 Теперь удаляем подготовленные ключи и добавляем под контроль зашифрованный файл:
 
-    rm -f deploy_rsa deploy_rsa.pub
-    git add deploy_rsa.enc 
+```shell
+rm -f deploy_rsa deploy_rsa.pub
+git add deploy_rsa.enc
+```
 
 Остается немного поправить файл конфигурации `.travis.yml`. После шифрования файла уже будут добавлены строки:
 
-     - openssl aes-256-cbc -K $encrypted_d7becb892f62_key -iv $encrypted_d7becb892f62_iv
-       -in deploy_rsa.enc -out $TRAVIS_BUILD_DIR/deploy_rsa -d
+```yaml
+ - openssl aes-256-cbc -K $encrypted_d7becb892f62_key -iv $encrypted_d7becb892f62_iv
+   -in deploy_rsa.enc -out $TRAVIS_BUILD_DIR/deploy_rsa -d
+ ```
 
 Нужно только в параметре out добавить переменную `$TRAVIS_BUILD_DIR`. И затем нужно добавить определение дополнения ssh\_known\_hosts:
 
-    addons:
-       ssh_known_hosts: <deploy-host>
+```yaml
+addons:
+   ssh_known_hosts: <deploy-host>
+```
 
 Как и ранее, не забудьте поменять переменную deploy-host на ip-адрес или доменное имя своего сервера, в зависимости от того, что вы будете использовать в команде rsync.
 
 И теперь осталось только прописать команды по инициализации нового ключа:
 
-    after_success:
-     - eval "$(ssh-agent -s)"
-     - chmod 600 $TRAVIS_BUILD_DIR/deploy_rsa
-     - ssh-add $TRAVIS_BUILD_DIR/deploy_rsa
-     - bundle exec rake publish
+```yaml
+after_success:
+ - eval "$(ssh-agent -s)"
+ - chmod 600 $TRAVIS_BUILD_DIR/deploy_rsa
+ - ssh-add $TRAVIS_BUILD_DIR/deploy_rsa
+ - bundle exec rake publish
+ ```
 
 Загрузка файлов на сервер осуществляется только в том случае, если генерация сайта прошла успешно, поэтому все команды прописываются в блоке after\_success. Первые три команды осуществляют запуск ssh-агента, установку верных прав доступа для ключа и добавление ключа в уже работающий агент. И последняя команда используется для запуска самого деплоя. Так как в моем случае производиться не только деплой, но так же оповещение поисковых систем об изменениях, запускается задача из Rakefile.
 
 Для передачи файлов используется следующая команда:
 
-    rsync -az --delete-after $TRAVIS_BUILD_DIR/public/ <ssh-user>@<deploy-host>:<directory>
+```shell
+rsync -az --delete-after $TRAVIS_BUILD_DIR/public/ <ssh-user>@<deploy-host>:<directory>
+```
 
 Текущую версию файла конфигурации Travis можно найти в моем репозитории: [.travis.yml](https://raw.githubusercontent.com/Juev/juev.org/2ce4697c24bf4f52da04dc2f0a1c5ad03a92119a/.travis.yml).
 

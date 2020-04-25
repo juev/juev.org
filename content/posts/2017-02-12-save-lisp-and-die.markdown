@@ -12,36 +12,46 @@ Steel Bank Common Lisp предоставляет функцию `save-lisp-and-
 
 Проводил запуск sbcl (на текущий момент времени SBCL 1.3.14), определял функцию `main`:
 
-    (defun main ()
-      (write-line "hello world"))
+```lisp
+(defun main ()
+  (write-line "hello world"))
+```
 
 После чего создал несколько образов с использованием различных параметров:
 
-    (sb-ext:save-lisp-and-die "hello-compress" :compression 9 :toplevel #'main :executable t)
-    (sb-ext:save-lisp-and-die "hello" :toplevel #'main :executable t)
+```lisp
+(sb-ext:save-lisp-and-die "hello-compress" :compression 9 :toplevel #'main :executable t)
+(sb-ext:save-lisp-and-die "hello" :toplevel #'main :executable t)
+```
 
 Для создания 2 образов приходилось запускать sbcl 2 раза, каждый раз определяя функцию `main` и используя определенную функцию для создания образа памяти. В результате получил 2 файла:
 
-    -rwxr-xr-x   1 juev  staff    59M Feb 12 12:03 hello
-    -rwxr-xr-x   1 juev  staff    12M Feb 12 12:06 hello-compress
+```text
+-rwxr-xr-x   1 juev  staff    59M Feb 12 12:03 hello
+-rwxr-xr-x   1 juev  staff    12M Feb 12 12:06 hello-compress
+```
 
 Как видно из приведенного примера, размер образа без компрессии составляет 59 мегабайт. С полной компресией 12 мегабайт. Осталось сопоставить время выполнения полученных программ друг с другом, для этого воспользуемся системной командой `time`:
 
-    $ time ./hello
-    hello world
+```shell
+$ time ./hello
+hello world
 
-    real	0m0.201s
-    user	0m0.014s
-    sys	0m0.035s
+real	0m0.201s
+user	0m0.014s
+sys	0m0.035s
+```
 
 Время первой загрузки чистого образа 0.2 секунды. При последующих запусках время сокращается до 0.03 секунд. Теперь посмотрим, влияет ли сжатие образа на время загрузки.
 
-    $ time ./hello-compress
-    hello world
+```shell
+$ time ./hello-compress
+hello world
 
-    real	0m0.258s
-    user	0m0.200s
-    sys	0m0.047s
+real	0m0.258s
+user	0m0.200s
+sys	0m0.047s
+```
 
 Видно увеличение времени загрузки, но не значительное. И при этом все последующие запуски обладают примерно тем же временем, без значительного ускорения, что наблюдалось в случае без использования сжатия. То есть при использовании небольших программ использование сжатия при создании образов вполне обосновано.
 

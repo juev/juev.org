@@ -21,75 +21,79 @@ tags:
 
 По сути, при использовании настроек по умолчанию, uBlock прекрасно работает. Но мне это не интересно и я использую настройки описанные в документации на странице [Blocking mode: hard mode](https://github.com/gorhill/uBlock/wiki/Blocking-mode:-hard-mode "Blocking mode: hard mode"). По умолчанию отключаются все сторонние скрипты, фреймы и ресурсы. И только для определенных ресурсов задаются определенные разрешающие правила. На текущий момент у меня сформировался следующий набор правил:
 
-    no-cosmetic-filtering: * true
-    * * 3p block
-    * * 3p-frame block
-    * * 3p-script block
-    * ajax.googleapis.com * noop
-    * akamaihd.net * noop
-    * cloudfront.net * noop
-    * facebook.com * block
-    * facebook.net * block
-    * fonts.googleapis.com * noop
-    * googletagservices.com * block
-    * googlevideo.com * noop
-    * gravatar.com * noop
-    * netdna-cdn.com * noop
-    * netdna-ssl.com * noop
-    * s3.amazonaws.com * noop
-    * services.mozilla.com * noop
-    * sstatic.net * noop
-    * taboola.com * block
-    * twitter.com * block
-    * typekit.net * noop
-    * vimeo.com * noop
-    * youtube.com * noop
-    * ytimg.com * noop
-    amazon.com images-amazon.com * noop
-    amazon.com ssl-images-amazon.com * noop
-    amazonlightsail.com awsstatic.com * noop
-    bookmate.com bmstatic.com * noop
-    dropbox.com dropboxstatic.com * noop
-    duckduckgo.com youtube-nocookie.com * noop
-    duckduckgo.com ytimg.com * noop
-    facebook.com facebook.com * noop
-    facebook.com facebook.net * noop
-    facebook.com fbcdn.net * noop
-    feedbin.com instagram.com * noop
-    feedbin.com twitter.com * noop
-    feedbin.com typography.com * noop
-    flickr.com s.yimg.com * noop
-    garmin.com garmincdn.com * noop
-    github.com githubapp.com * noop
-    github.com githubusercontent.com * noop
-    google.com googleusercontent.com * noop
-    google.com gstatic.com * noop
-    habrahabr.ru * 3p noop
-    habrahabr.ru habracdn.net * noop
-    habrahabr.ru habrastorage.org * noop
-    lifehacker.com kinja-img.com * noop
-    lifehacker.com kinja-static.com * noop
-    mozilla.org mozilla.net * noop
-    reddit.com redditmedia.com * noop
-    reddit.com redditstatic.com * noop
-    slideshare.net slidesharecdn.com * noop
-    stackoverflow.com sstatic.net * noop
-    ted.com tedcdn.com * noop
-    twitter.com twimg.com * noop
-    twitter.com twitter.com * noop
-    vimeo.com vimeocdn.com * noop
-    wikipedia.org wikimedia.org * noop
-    wiktionary.org wikimedia.org * noop
-    www.fastmail.com fastmailusercontent.com * noop
-    www.wikia.com nocookie.net * noop
-    www.youtube.com youtube-nocookie.com * noop
+```text
+no-cosmetic-filtering: * true
+* * 3p block
+* * 3p-frame block
+* * 3p-script block
+* ajax.googleapis.com * noop
+* akamaihd.net * noop
+* cloudfront.net * noop
+* facebook.com * block
+* facebook.net * block
+* fonts.googleapis.com * noop
+* googletagservices.com * block
+* googlevideo.com * noop
+* gravatar.com * noop
+* netdna-cdn.com * noop
+* netdna-ssl.com * noop
+* s3.amazonaws.com * noop
+* services.mozilla.com * noop
+* sstatic.net * noop
+* taboola.com * block
+* twitter.com * block
+* typekit.net * noop
+* vimeo.com * noop
+* youtube.com * noop
+* ytimg.com * noop
+amazon.com images-amazon.com * noop
+amazon.com ssl-images-amazon.com * noop
+amazonlightsail.com awsstatic.com * noop
+bookmate.com bmstatic.com * noop
+dropbox.com dropboxstatic.com * noop
+duckduckgo.com youtube-nocookie.com * noop
+duckduckgo.com ytimg.com * noop
+facebook.com facebook.com * noop
+facebook.com facebook.net * noop
+facebook.com fbcdn.net * noop
+feedbin.com instagram.com * noop
+feedbin.com twitter.com * noop
+feedbin.com typography.com * noop
+flickr.com s.yimg.com * noop
+garmin.com garmincdn.com * noop
+github.com githubapp.com * noop
+github.com githubusercontent.com * noop
+google.com googleusercontent.com * noop
+google.com gstatic.com * noop
+habrahabr.ru * 3p noop
+habrahabr.ru habracdn.net * noop
+habrahabr.ru habrastorage.org * noop
+lifehacker.com kinja-img.com * noop
+lifehacker.com kinja-static.com * noop
+mozilla.org mozilla.net * noop
+reddit.com redditmedia.com * noop
+reddit.com redditstatic.com * noop
+slideshare.net slidesharecdn.com * noop
+stackoverflow.com sstatic.net * noop
+ted.com tedcdn.com * noop
+twitter.com twimg.com * noop
+twitter.com twitter.com * noop
+vimeo.com vimeocdn.com * noop
+wikipedia.org wikimedia.org * noop
+wiktionary.org wikimedia.org * noop
+www.fastmail.com fastmailusercontent.com * noop
+www.wikia.com nocookie.net * noop
+www.youtube.com youtube-nocookie.com * noop
+```
 
 Само собой, что использовать весь набор правил совершенно не обязательно. Достаточно только задать первые несколько строк:
 
-    no-cosmetic-filtering: * true
-    * * 3p block
-    * * 3p-frame block
-    * * 3p-script block
+```text
+no-cosmetic-filtering: * true
+* * 3p block
+* * 3p-frame block
+* * 3p-script block
+```
 
 И далее уже самостоятельно создавать отдельные правила для каждого отдельного сайта, используя всплывающее окно управления uBlock. Хотелось бы только акцентировать внимание на основных правилах, используемых для формирвания данного списка. Для управления доступом используются три типа действия:
 
@@ -99,17 +103,21 @@ tags:
 
 Само правило формируется по принципу:
 
-    source-hostname destination-hostname request-type action
+```text
+source-hostname destination-hostname request-type action
+```
 
 То есть указывается, для какого ресурса данное правило применимо, что именно используется, тип запроса и затем указывается применимое действие.
 
 Для одного и того же ресурса можно указывать несколько правил. К примеру, для того, чтобы запретить использование facebook скриптов на всех сайтах, но разрешить их использование на самом facebook можно воспользоваться следующими строками:
 
-    * facebook.com * block
-    * facebook.net * block
-    facebook.com facebook.com * noop
-    facebook.com facebook.net * noop
-    facebook.com fbcdn.net * noop
+```text
+* facebook.com * block
+* facebook.net * block
+facebook.com facebook.com * noop
+facebook.com facebook.net * noop
+facebook.com fbcdn.net * noop
+```
 
 Просто и эффективно.
 

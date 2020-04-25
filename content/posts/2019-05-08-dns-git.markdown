@@ -13,11 +13,15 @@ tags:
 
 Установка тривиальна, либо использовать homebrew:
 
-    brew install dnscontrol
+```shell
+brew install dnscontrol
+```
 
 Либо скомпилировать с помощью Golang:
 
-    go get github.com/StackExchange/dnscontrol
+```shell
+go get github.com/StackExchange/dnscontrol
+```
 
 Создал репозиторий [juev/dns-config](https://github.com/juev/dns-config), в котором описал текущую конфигурацию своих доменов.
 

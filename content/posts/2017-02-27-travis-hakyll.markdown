@@ -12,11 +12,13 @@ tags:
 
 На мое удивление, установка Haskell и подготовка окружения на локальной машине прошли в этот раз успешно. Единственно, использовал для установки Stack, и только его. Последовательность команд для подготовки окружения:
 
-    $ brew install haskell-stack
-    $ stack setup
-    $ stack install hakyll
-    $ export $PATH=$PATH:~/.local/bin
-    $ hakyll-init blog
+```shell
+$ brew install haskell-stack
+$ stack setup
+$ stack install hakyll
+$ export $PATH=$PATH:~/.local/bin
+$ hakyll-init blog
+```
 
 Таким образом была создана основа для нового блога, в которой предсталены несколько статей и несколько статичных страниц. Для тестирования создал новый репозиторий [travis-hakyll](https://github.com/Juev/travis-hakyll "Juev/travis-hakyll"), связал его с Travis и в течение нескольких комитов провел настройку генерации.
 
@@ -24,9 +26,11 @@ tags:
 
 Ключевым в настройке Travis оказывается параметр `cache`:
 
-    cache:
-      directories:
-      - $HOME/.stack
+```yaml
+cache:
+  directories:
+  - $HOME/.stack
+```
 
 Данный параметр позволяет создавать архивы с устновленными артефактами, и при последующем запуске не генерировать их вновь, а в случае отсутствия изменений в зависимостях, просто распаковать архив в требуемую директорию.
 

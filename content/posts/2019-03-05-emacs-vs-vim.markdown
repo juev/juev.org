@@ -19,23 +19,25 @@ tags:
 
 Пробовал задавать различные параметры самого Dired, но безрезультатно. В конце концов наткнулся на пакет [dired-single](https://melpa.org/#/dired-single), который предоставляет несколько новых функций, которые можно использовать в Dired. Остается только назначить их на стандартные сочетаний клавиш:
 
-    (use-package dired-single :ensure t
-      :config
-      (progn
-        (setq dired-single-use-magic-buffer t)
-        (defun my-dired-init ()
-          "Bunch of stuff to run for dired, either immediately or when it's loaded."
-          ;; <add other stuff here>
-          (define-key dired-mode-map [return] 'dired-single-buffer)
-          (define-key dired-mode-map [mouse-1] 'dired-single-buffer-mouse)
-          (define-key dired-mode-map "^"
-            (function
-             (lambda nil (interactive) (dired-single-buffer "..")))))
-        (if (boundp 'dired-mode-map)
-            (my-dired-init)
-          (add-hook 'dired-load-hook 'my-dired-init))
-        (setq-default dired-omit-files-p t) ; Buffer-local variable
-    (setq dired-omit-files "^\\..*$")))
+```lisp
+(use-package dired-single :ensure t
+  :config
+  (progn
+    (setq dired-single-use-magic-buffer t)
+    (defun my-dired-init ()
+      "Bunch of stuff to run for dired, either immediately or when it's loaded."
+      ;; <add other stuff here>
+      (define-key dired-mode-map [return] 'dired-single-buffer)
+      (define-key dired-mode-map [mouse-1] 'dired-single-buffer-mouse)
+      (define-key dired-mode-map "^"
+        (function
+         (lambda nil (interactive) (dired-single-buffer "..")))))
+    (if (boundp 'dired-mode-map)
+        (my-dired-init)
+      (add-hook 'dired-load-hook 'my-dired-init))
+    (setq-default dired-omit-files-p t) ; Buffer-local variable
+(setq dired-omit-files "^\\..*$")))
+```
 
 После чего получаем только один буфер Dired, который удобно использовать.
 
@@ -43,7 +45,9 @@ tags:
 
 Стандартный NetRW вполне удобен и хорош. За исключением того, что буфер со списком файлов открывается в отдельном пространстве. В результате чего переход между буферами по `:bn` и `:bp` оказывается затруднительным. Плагин [vim-vinegar](https://github.com/tpope/vim-vinegar) делает работу с файлами очень простой. Но из-за того, что после открытия буфера ты не можешь переключиться на другой буфер, сильно затрудняло работу. Долгое разбирательство показало, что достаточно было избавиться от опции `set hidden` в конфигурации и добавить следующую строку:
 
-    let g:netrw_altfile = 1
+```vim
+let g:netrw_altfile = 1
+```
 
 Для того, чтобы изменить поведение NetRW и сделать его буфер вполне обычным.
 

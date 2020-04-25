@@ -9,7 +9,9 @@ tags:
 
 При этом `git merge` переносит все изменения из ветку в ветку. На ум приходит создание патча и затем его применение в нужной ветке. Но и тут все придумано для нас. Достаточно использовать `git-cherry-pick`:
 
-    % git cherry-pick master~4 master~2
+```shell
+% git cherry-pick master~4 master~2
+```
 
 > Apply the changes introduced by the fifth and third last commits pointed to by master and create 2 new commits with these changes.
 

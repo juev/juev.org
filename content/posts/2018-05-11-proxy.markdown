@@ -16,25 +16,31 @@ tags:
 
 Информация по установке серверной части размещается на странице [Servers](https://www.shadowsocks.org/en/download/servers.html) и по сути для Debian все сводится к установке и настройке:
 
-    sudo apt update
-    sudo apt install shadowsocks-libev
+```shell
+sudo apt update
+sudo apt install shadowsocks-libev
+```
 
 Для настройки меняется файл `/etc/shadowsocks-libev/config.json` в котором задаются порты подключения, пароль и тип шифрования:
 
-    {
-        "server":"127.0.01",
-        "server_port":8268,
-        "local_port":1080,
-        "password":"password!",
-        "timeout":60,
-        "method":"aes-128-cfb"
-    }
+```json
+{
+    "server":"127.0.01",
+    "server_port":8268,
+    "local_port":1080,
+    "password":"password!",
+    "timeout":60,
+    "method":"aes-128-cfb"
+}
+```
 
 Параметр server нужно изменить на ip-адрес сервера, при необходимости изменить порты подключения и пароль, а в методе задать один из типов шифрования. Рекомендуемыми являются "chacha20-ietf-poly1305" или "aes-256-gcm".
 
 После внесения изменений перезапускаем сервис:
 
-    $ sudo systemctl restart shadowsocks-libev
+```shell
+$ sudo systemctl restart shadowsocks-libev
+```
 
 И на это собственно все. Можно переходить к клиентской части. Возможные клиенты описаны на официальной странице [Clients](https://www.shadowsocks.org/en/download/clients.html).
 

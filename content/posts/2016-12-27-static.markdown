@@ -15,18 +15,20 @@ image: https://static.juev.org/2016/12/Haskell.sh-600x600.png
 
 Для сравнения производительность сборки мого сайта с использованием Jekyll:
 
-    $ time jekyll b
-    Configuration file: /Users/juev/Projects/juev.org-test/_config.yml
-                Source: source
-        Destination: public
-    Incremental build: enabled
-        Generating...
-                        done in 29.819 seconds.
-    Auto-regeneration: disabled. Use --watch to enable.
+```shell
+$ time jekyll b
+Configuration file: /Users/juev/Projects/juev.org-test/_config.yml
+            Source: source
+    Destination: public
+Incremental build: enabled
+    Generating...
+                    done in 29.819 seconds.
+Auto-regeneration: disabled. Use --watch to enable.
 
-    real	0m32.001s
-    user	0m30.792s
-    sys	0m0.940s
+real	0m32.001s
+user	0m30.792s
+sys	0m0.940s
+```
 
 Это при условии того факта, что отключена генерация списка похожих статей. Если включить данную функцию, время генерации сайта возрастает до нескольких минут.
 
@@ -34,12 +36,14 @@ image: https://static.juev.org/2016/12/Haskell.sh-600x600.png
 
 Генератор статических сайтов, написанный на питоне. Имеет очень развесистую систему плагинов и тем оформления. Предельно гибкий и функциональный. На генерацию сайта уходит немного времени, гораздо быстрее, чем jekyll:
 
-    $ time pelican content
-    Done: Processed 312 articles, 0 drafts, 3 pages and 1 hidden page in 6.01 seconds.
+```shell
+$ time pelican content
+Done: Processed 312 articles, 0 drafts, 3 pages and 1 hidden page in 6.01 seconds.
 
-    real	0m7.511s
-    user	0m5.896s
-    sys	0m1.052s
+real	0m7.511s
+user	0m5.896s
+sys	0m1.052s
+```
 
 В качестве темплейтов файлов использует [Jinja](http://jinja.pocoo.org "Jinja2 is a full featured template engine for Python"). Очень функциональный, по синтаксису очень похож на используемый мной Liquid. Глубоко в его изучение не погружался, но в достаточно короткое время переписал используемые темплейты для Jinja.
 
@@ -49,23 +53,25 @@ image: https://static.juev.org/2016/12/Haskell.sh-600x600.png
 
 Генератор статических сайтов, написанный на Go. Работает предельно быстро:
 
-    $ time hugo
-    Started building sites ...
-    Built site for language en:
-    0 draft content
-    0 future content
-    0 expired content
-    313 regular pages created
-    127 other pages created
-    1 non-page files copied
-    0 paginator pages created
-    0 articles created
-    124 tags created
-    total in 447 ms
+```shell
+$ time hugo
+Started building sites ...
+Built site for language en:
+0 draft content
+0 future content
+0 expired content
+313 regular pages created
+127 other pages created
+1 non-page files copied
+0 paginator pages created
+0 articles created
+124 tags created
+total in 447 ms
 
-    real	0m0.489s
-    user	0m1.127s
-    sys	0m0.296s
+real	0m0.489s
+user	0m1.127s
+sys	0m0.296s
+```
 
 Как видно, разница составляет порядки. Несколько секунд или минут потратить на генерацию сайта или же всего секунду. Генератор очень хорошо документирован. В качестве темплейтов использует стандартную систему go-template.
 
@@ -77,46 +83,56 @@ image: https://static.juev.org/2016/12/Haskell.sh-600x600.png
 
 Через cabal установка у меня так и не прошла, сколько не бился. Удалось поставить с помощью stack. Для этого ставим сам stack:
 
-    $ curl -sSL https://get.haskellstack.org/ | sh
+```shell
+$ curl -sSL https://get.haskellstack.org/ | sh
+```
 
 Установить с помощью stack просто так тоже не получиться, необходимо выкачать репозиторий с hakyll и только затем провести установку:
 
-    $ git clone https://github.com/jaspervdj/hakyll.git
-    $ cd hakyll
-    $ stack build
-    $ stack install
+```shell
+$ git clone https://github.com/jaspervdj/hakyll.git
+$ cd hakyll
+$ stack build
+$ stack install
+```
 
 Сборка занимает довольно много времени, у меня на моем макбуке потребовалось более 10 минут на то, чтобы провести установку. Но, если вы думаете, что на этом все, вы ошибаетесь. Необходимо провести подготовку окружения для работы и сборки сайта. Для этого создаем новую директорию для нашего сайта и используем команды:
 
-    $ hakyll-init mysite
-    $ cd mysite
-    $ stack init
-    $ stack build
-    $ stack exec site build
+```shell
+$ hakyll-init mysite
+$ cd mysite
+$ stack init
+$ stack build
+$ stack exec site build
+```
 
 На всю операцию подготовки локальной директории для сборки сайта у меня ушло более получаса времени. В результате получил бинарный файл, размером в 123 мегабайта:
 
-    $ la .stack-work/dist/x86_64-osx/Cabal-1.24.0.0/build/site/site
-    -rwxr-xr-x  1 juev  staff   123M Dec 27 14:07 .stack-work/dist/x86_64-osx/Cabal-1.24.0.0/build/site/site
+```shell
+$ la .stack-work/dist/x86_64-osx/Cabal-1.24.0.0/build/site/site
+-rwxr-xr-x  1 juev  staff   123M Dec 27 14:07 .stack-work/dist/x86_64-osx/Cabal-1.24.0.0/build/site/site
+```
 
 Но, что приятно, Hakyll без проблем воспринял мои статьи, используется очень простой язык темплейтов, позволяющий бысто задавать оформление своего сайта.
 Но на полную генерацию сайта у меня ушло более одинадцати секунд:
 
-    $ rm -rf _cache/ _site/
-    $ time stack exec site build
-    Initialising...
-    Creating store...
-    Creating provider...
-    Running rules...
-    Checking for out-of-date items
-    Compiling
-    updated templates/default.html
-    updated index.html
-    Success
+```shell
+$ rm -rf _cache/ _site/
+$ time stack exec site build
+Initialising...
+Creating store...
+Creating provider...
+Running rules...
+Checking for out-of-date items
+Compiling
+updated templates/default.html
+updated index.html
+Success
 
-    real	0m11.738s
-    user	0m9.646s
-    sys	0m1.373s
+real	0m11.738s
+user	0m9.646s
+sys	0m1.373s
+```
 
 Почти час времени на подготовку, и 11 секунд на сборку?? На мой взгляд это излишне.
 

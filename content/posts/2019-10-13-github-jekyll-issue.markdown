@@ -9,7 +9,7 @@ tags:
 
 Проблема Github Pages заключается в том, что логи сборки недоступны. И что конкретно произошло, неизвестно. Отписал в поддержку и в течение нескольких часов получил ответ, в котором процитировали ошибку:
 
-```
+```text
 Timezone: "Europe/Moscow"
             Source: /page-build/repo
        Destination: /page-build/site-source-pagesjekyll-ftw
