@@ -13,14 +13,20 @@ keywords: bash, git, autocomlete, tips
 
 Решение довольно простое, делаем раз:
 
-    curl "https://raw.github.com/git/git/master/contrib/completion/git-completion.bash" -o ~/.git-completion.bash
+```bash
+curl "https://raw.github.com/git/git/master/contrib/completion/git-completion.bash" -o ~/.git-completion.bash
+```
 
 либо используем wget:
 
-    wget "https://raw.github.com/git/git/master/contrib/completion/git-completion.bash" -O ~/.git-completion.bash
+```bash
+wget "https://raw.github.com/git/git/master/contrib/completion/git-completion.bash" -O ~/.git-completion.bash
+```
 
 После чего делаем два, то есть добавляем следующую строку к файлу `~/.bashrc` или в macos это файл `~/.profile`:
 
-    source ~/.git-completion.bash
+```bash
+source ~/.git-completion.bash
+```
 
 Теперь для того, чтобы изменения сразу же применились, можно эту же команду дать в терминале.

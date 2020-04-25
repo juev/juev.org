@@ -54,29 +54,39 @@ GitHub у меня отпал по той простой причине, что 
 
 Просто дописываем в наше Rakefile в правило для deploy следующую команду:
 
-    sh "rsync -az --delete public/ server:~/app/repo/php/"
+```shell
+sh "rsync -az --delete public/ server:~/app/repo/php/"
+```
 
 Где app -- это имя нашего приложения, а server -- это имя конфигурации SSH, что была прописана в файле `~/.ssh/config`, которая задается в виде:
 
-    Host server
-        HostName app-namespace.rhcloud.com
-        User f34545176723434502d345a1e345492
-        Port 22
+```conf
+Host server
+    HostName app-namespace.rhcloud.com
+    User f34545176723434502d345a1e345492
+    Port 22
+```
 
 Где app-namespace.rhcloud.com -- домен нашего приложения, а f34545176723434502d345a1e345492 -- идентификатор пользователя, который будет указан после создания приложения.
 
 Собственно на этом все. Генерируем сайт и загружаем его на сервер. Осталось только задать доменное имя. Для этого используется консольная утилита rhc, установим ее:
 
-    $ sudo gem install json_pure
-    $ sudo gem install rhc
+```shell
+$ sudo gem install json_pure
+$ sudo gem install rhc
+```
 
 И теперь определяем привязку к домену:
 
-    $ rhc app add-alias -a app --alias www.domain.com -l user@mail.com
+```shell
+$ rhc app add-alias -a app --alias www.domain.com -l user@mail.com
+```
 
 При этом app -- это имя нашего приложения, а user@mail.com -- это адрес электронной почты, на который был зарегистрирован аккаунт. На данном этапе, после ввода команды, необходимо будет ввести пароль от нашего аккаунта. В случае успеха, появится сообщение SUCCESS, если этого не произошло, а выдалось сообщение об ошибке, но в веб-интерфейсе привязка появилась, рекомендую удалить привязку и проделать эту операцию повторно. Для удаления привязки используется команда:
 
-    $ rhc app remove-alias -a app --alias www.domain.com -l user@mail.com
+```shell
+$ rhc app remove-alias -a app --alias www.domain.com -l user@mail.com
+```
 
 Если все прошло успешно, необходимо у своего доменного регистратора создать запись типа CNAME, которая будет указывать на домен с нашим приложением.
 

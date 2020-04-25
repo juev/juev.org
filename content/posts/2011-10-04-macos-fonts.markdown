@@ -44,7 +44,9 @@ keywords: macos, font, aliasing, lcd, config
 
 Достаточно в консоли использовать следующую команду:
 
-    defaults -currentHost write -globalDomain AppleFontSmoothing -int 2
+```conf
+defaults -currentHost write -globalDomain AppleFontSmoothing -int 2
+```
 
 Где двойка на конце команды соответствует усредненному варианту сглаживания. Также может быть значение 1 – легкое сглаживание – или 3, что соответствует полному.
 

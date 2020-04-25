@@ -16,25 +16,33 @@ description: cntlm - как решение проблемы при работе 
 
 В Ubuntu есть довольно много вариантов прокси-серверов, но было решено использовать **cntlm**. Устанавливаем:
 
-    $ sudo apt-get update && sudo apt-get install cntlm
+```shell
+$ sudo apt-get update && sudo apt-get install cntlm
+```
 
 После установки сервис оказывается запущенным, но не настроенным. Исправляем данную ситуацию:
 
-    $ sudo nano /etc/cntlm.conf
+```shell
+$ sudo nano /etc/cntlm.conf
+```
 
 Здесь нам потребуется изменить только несколько параметров, если рассматривать минимально необходимую конфигурацию:
 
-    Username	user
-    #Domain		corp-uk
-    Password	pass
+```conf
+Username	user
+#Domain		corp-uk
+Password	pass
 
-    Proxy		192.168.1.1:3128
+Proxy		192.168.1.1:3128
+```
 
 Обратите внимание на то, что имя основного прокси-сервера задается именно в виде ip-адреса. Параметры Username и Password соответственно передают имя пользователя и пароль.
 
 Осталось перезапустить сервис и настроить программы на его использование:
 
-    $ sudo service cntlm restart
+```shell
+$ sudo service cntlm restart
+```
 
 Теперь во всех программах, которым необходим доступ в сеть интернет, указываем в качестве прокси-сервера **localhost:3128**.
 

@@ -13,7 +13,7 @@ keywords: w3c, validate, html, html5, jquery, javascript, web, design, twitter, 
 
 ### 1-й способ
 
-Как не странно, но данный способ заключается в отказе от xhtml в пользу html5. Последний, еще не завершенный, стандарт языка html позволяет использовать любые параметры размещаемых элементов. Поэтому все кнопки социальных сетей будут проходить валидацию. Но! При этом мы будем получать предупреждение об использовании html5, который все еще находиться в режиме формирования и наполнения. 
+Как не странно, но данный способ заключается в отказе от xhtml в пользу html5. Последний, еще не завершенный, стандарт языка html позволяет использовать любые параметры размещаемых элементов. Поэтому все кнопки социальных сетей будут проходить валидацию. Но! При этом мы будем получать предупреждение об использовании html5, который все еще находиться в режиме формирования и наполнения.
 
 Способ рабочий, но ведь не для этого мы затевали весь сыр-бор?
 
@@ -37,19 +37,25 @@ keywords: w3c, validate, html, html5, jquery, javascript, web, design, twitter, 
 
 На странице в нужном месте располагаем элемент div с заданным id:
 
-    <div id="gplusone"></div>
+```html
+<div id="gplusone"></div>
+```
 
 После чего в коде javascript задаем следующее:
 
-    var campisi = document.createElement('g:plusone'); 
-    campisi.setAttribute("align","left");
-    campisi.setAttribute("size","medium");
-    campisi.setAttribute("annotation","none");
-    document.getElementById("gplusone").appendChild(campisi);
-  
+```js
+var campisi = document.createElement('g:plusone');
+campisi.setAttribute("align","left");
+campisi.setAttribute("size","medium");
+campisi.setAttribute("annotation","none");
+document.getElementById("gplusone").appendChild(campisi);
+```
+
 Если код размещается не в отдельном файле, а непосредственно в коде страницы, то необходимо его заключить между тегами:
 
-    <script type="text/javascript"></script>
+```html
+<script type="text/javascript"></script>
+```
 
 Аналогичным же образом задаются параметры у кнопки twitter.
 

@@ -21,21 +21,29 @@ keywords: mac, terminal, zsh, console, slow, options
 
 Для автоматической установки необходимо дать команду:
 
-	$ wget --no-check-certificate https://github.com/robbyrussell/oh-my-zsh/raw/master/tools/install.sh -O - | sh
+```shell
+$ wget --no-check-certificate https://github.com/robbyrussell/oh-my-zsh/raw/master/tools/install.sh -O - | sh
+```
 
 Если же проводить установку вручную, прийдется дать чуть больше команд:
 
 1. клонируем репозиторий
 
-		$ git clone git://github.com/robbyrussell/oh-my-zsh.git ~/.oh-my-zsh
+```shell
+$ git clone git://github.com/robbyrussell/oh-my-zsh.git ~/.oh-my-zsh
+```
 
 2. копируем заготовку настроек в домашнюю директорию
 
-		$ cp ~/.oh-my-zsh/templates/zshrc.zsh-template ~/.zshrc
+```shell
+$ cp ~/.oh-my-zsh/templates/zshrc.zsh-template ~/.zshrc
+```
 
 3. устанавливаем zsh интерпретатором по умолчанию
 
-		$ chsh -s /bin/zsh
+```shell
+$ chsh -s /bin/zsh
+```
 
 Теперь можно перезапустить Terminal.app и посмотреть на то, что получилось. По умолчанию поведение терминала очень напоминает Bash, мне было комфортно. Плюс ко всему добавляются некоторые "плюшки", типа исправление ошибок при наборе команд, дополнение параметров команд и т.п.
 
@@ -43,18 +51,24 @@ keywords: mac, terminal, zsh, console, slow, options
 
 Осталось только немного настроить оболочку под себя. Для этого открываем для редактирования файл `~/.zshrc` и начинаем его править. Я лишь немного дописал список используемых расширений:
 
-	plugins=(git ruby textmate brew gem github npm node osx pow powder)
+```conf
+plugins=(git ruby textmate brew gem github npm node osx pow powder)
+```
 
 И затем изменил цветовую схему и настройки приглашения командного интерпретатора:
 
-	ZSH_THEME="robbyrussell"
+```conf
+ZSH_THEME="robbyrussell"
+```
 
 Для использования данной темы оформления лучше всего изменить настройки цветового профиля, что используется в Terminal.app. Рекомендуется использовать цветовой профиль [Solarized][]. Для его использования достаточно только скопировать архив с профилем на свой компьютер, либо клонировать репозиторий:
 
 [Solarized]: http://ethanschoonover.com/solarized
 	"Solarized - Ethan Schoonover"
 
-	$ git clone git://github.com/altercation/solarized.git
+```shell
+$ git clone git://github.com/altercation/solarized.git
+```
 
 В папке `osx-terminal.app-colors-solarized` располагаются файлы цветовых профилей для Terminal.app. Двойным кликом устанавливаем нужный вариант (их два -- один светлый, другой темный), при этом открываются настройки Terminal.app с выбранным профилем Solarized. Я использую светлую схему. И в настройках терминала я изменил лиловый цвет на ярко-голубой (14 цвет). Именно он используется при показе директорий и лиловый был слишком светлым.
 

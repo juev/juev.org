@@ -19,12 +19,16 @@ keywords: mac, ssh, tunnel, openssh, autossh, launchd
 
 Наткнулся на описание программы [autossh](http://www.harding.motd.ca/autossh/ "AutoSSH"), которая обеспечивает поддержание туннеля в рабочем состоянии и при потере соединения, автоматически создает новое. Для установки в среде MacOS лучше всего использовать homebrew:
 
-    $ brew install autossh
+```shell
+$ brew install autossh
+```
 
 И теперь можно использовать туннель следующим образом (первая команда с использованием ssh, вторая ее аналог с autossh):
 
-    $ ssh -q -D 8080 -N shell
-    $ /usr/local/bin/autossh -M0 -q -D 8080 -N shell
+```shell
+$ ssh -q -D 8080 -N shell
+$ /usr/local/bin/autossh -M0 -q -D 8080 -N shell
+```
 
 Где shell -- это имя сервера, которое я использовал в файле `~/.ssh/config` при описании его конфигурации. Итак, стабильное соединение уже организовано, осталось разобраться, каким образом автоматически его запускать.
 
@@ -40,35 +44,41 @@ keywords: mac, ssh, tunnel, openssh, autossh, launchd
 
 При организации ssh-туннеля наиболее разумным видится использование именно третьего варианта. Переходим в эту директорию и создаем plist-файл с описанием конфигурации создаваемой задачи:
 
-    $ cd ~/Library/LaunchAgents
-    $ vim org.evsyukov.shell.plist
+```shell
+$ cd ~/Library/LaunchAgents
+$ vim org.evsyukov.shell.plist
+```
 
 За основу я взял файл, который используется для запуска демона [Pow](/2011/12/10/pow/ "Pow - простой локальный вебсервер").
 
-    <?xml version="1.0" encoding="UTF-8"?>
-    <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
-    <plist version="1.0">
-    <dict>
-    	<key>Label</key>
-    	<string>org.evsyukov.shell</string>
-    	<key>ProgramArguments</key>
-    	<array>
-    		<string>sh</string>
-    		<string>-i</string>
-    		<string>-c</string>
-    		<string>$SHELL --login -c "'/Users/juev/Library/Scripts/ssh-tunnel.sh'"</string>
-    	</array>
-    	<key>KeepAlive</key>
-    	<true/>
-    	<key>RunAtLoad</key>
-    	<true/>
-    </dict>
-    </plist>
+```xml
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>Label</key>
+    <string>org.evsyukov.shell</string>
+    <key>ProgramArguments</key>
+    <array>
+        <string>sh</string>
+        <string>-i</string>
+        <string>-c</string>
+        <string>$SHELL --login -c "'/Users/juev/Library/Scripts/ssh-tunnel.sh'"</string>
+    </array>
+    <key>KeepAlive</key>
+    <true/>
+    <key>RunAtLoad</key>
+    <true/>
+</dict>
+</plist>
+```
 
 В данном примере я использую скрипт `ssh-tunnel.sh`, который разместил в директории `~/Library/Scripts/`, сам скрипт содержит только строки для запуска туннеля:
 
-    #!/bin/bash
-    /usr/local/bin/autossh -M0 -q -D 8080 -N shell
+```bash
+#!/bin/bash
+/usr/local/bin/autossh -M0 -q -D 8080 -N shell
+```
 
 Фактически можно было бы обойтись без создания отдельного файла, но во время экспериментов с plist, столкнулся с определенными проблемами, которые частично удалось решить созданием скрипта.
 
@@ -80,16 +90,20 @@ keywords: mac, ssh, tunnel, openssh, autossh, launchd
 
 Теперь, после создания файла описания конфигурации задачи, ее необходимо загрузить:
 
-    $ launchctl load /Users/juev/Library/LaunchAgents/org.evsyukov.shell.plist
+```shell
+$ launchctl load /Users/juev/Library/LaunchAgents/org.evsyukov.shell.plist
+```
 
 Для того, чтобы убедиться, что задача была добавлена, используем следующие команды:
 
-    $ launchctl list | grep org.evsyukov
-    1451	-	org.evsyukov.shell
+```shell
+$ launchctl list | grep org.evsyukov
+1451	-	org.evsyukov.shell
 
-    $ ps -e | grep autossh
-    1453 ??         0:00.00 /usr/local/bin/autossh -M0 -q -D 8080 -N shell
-    1730 ttys000    0:00.00 grep autossh
+$ ps -e | grep autossh
+1453 ??         0:00.00 /usr/local/bin/autossh -M0 -q -D 8080 -N shell
+1730 ttys000    0:00.00 grep autossh
+```
 
 Здесь же показан вывод этих команд, в случае удачного запуска.
 

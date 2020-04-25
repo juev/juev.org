@@ -53,12 +53,14 @@ CodeBox платная программа, мне удалось в Черную
 
 Так же, как и в Dash, можно создавать абберивиатуры, по умолчанию они так же разворачиваются автоматически во время написания. Но есть возможность изменить данное поведение. На официальном сайте на странице [Tips and Tricks][] предлагаются следующие варианты:
 
-    # To define Tab as delimiter
-    $ defaults write com.shpakovski.mac.codebar ShortcutFormat -string "%@"$'\t'
-    # To define Space as delimiter
-    $ defaults write com.shpakovski.mac.codebar ShortcutFormat -string "%@ "
-    # To reset default behavior
-    $ defaults delete com.shpakovski.mac.codebar ShortcutFormat
+```bash
+# To define Tab as delimiter
+$ defaults write com.shpakovski.mac.codebar ShortcutFormat -string "%@"$'\t'
+# To define Space as delimiter
+$ defaults write com.shpakovski.mac.codebar ShortcutFormat -string "%@ "
+# To reset default behavior
+$ defaults delete com.shpakovski.mac.codebar ShortcutFormat
+```
 
 [Tips and Tricks]: http://www.shpakovski.com/codebox/hidden-features
     "CodeBox: Tips and Tricks"
