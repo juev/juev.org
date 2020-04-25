@@ -23,24 +23,30 @@ keywords: webserver, vps, ubuntu, server, digitalocean
 
 В отличие от Amazon, на сервере DigitalOcean по умолчанию доступ предоставляется только пользователю Root, и вход осуществляется по паролю. Поэтому первым делом нужно было закрыть данную дыру в безопасности. Чтобы в дальнейшем было проще, опишу всю последовательность действий по настройке сервера.
 
-    (root)# locale-gen ru_RU.UTF-8
-    (root)# update-locale LANG=ru_RU.UTF-8 LC_MESSAGES=POSIX
-    (root)# dpkg-reconfigure locales
+```shell
+(root)# locale-gen ru_RU.UTF-8
+(root)# update-locale LANG=ru_RU.UTF-8 LC_MESSAGES=POSIX
+(root)# dpkg-reconfigure locales
 
-    (root)# adduser ubuntu
-    (root)# adduser ubuntu sudo
-    (root)# apt-get update
-    (root)# apt-get install vim
-    (root)# vim /etc/ssh/sshd_config
+(root)# adduser ubuntu
+(root)# adduser ubuntu sudo
+(root)# apt-get update
+(root)# apt-get install vim
+(root)# vim /etc/ssh/sshd_config
+```
 
 Здесь находим строки, снимаем при необходимости комментарий, и меняем значение с `yes` на `no`:
 
-    PermitRootLogin no
-    PasswordAuthentication no
+```conf
+PermitRootLogin no
+PasswordAuthentication no
+```
 
 Теперь, перед тем, как перезапустим сервис ssh, нам необходимо передать свои ключи на сервер (команды выполняются на локальной машине):
 
-    $ ssh-copy-id -i ~/.ssh/id_dsa.pub ubuntu@198.199.81.151
+```shell
+$ ssh-copy-id -i ~/.ssh/id_dsa.pub ubuntu@198.199.81.151
+```
 
 Примечание: в OSX утилита ssh-copy-id отсутствует по умолчанию, но ее легко установить с помощью homebrew.
 
@@ -48,77 +54,93 @@ keywords: webserver, vps, ubuntu, server, digitalocean
 
 Теперь нужно перезапустить сервис ssh и продолжать настройку (дальнейшие команды уже выполняются на сервере от имени созданного пользователя).
 
-    (ubuntu)$ sudo service ssh restart
+```shell
+(ubuntu)$ sudo service ssh restart
+```
 
 На данном этапе можно попробовать произвести логин на сервер с локальной машины, используя логин `root` или парольную аутентификацию, для того, чтобы убедиться, что данные способы входа закрыты.
 
 Теперь настраиваем часовой пояс, ставим сервер точного времени и устанавливаем фаервол:
 
-    (ubuntu)$ sudo dpkg-reconfigure tzdata
-    (ubuntu)$ sudo apt-get install openntpd denyhosts ufw
-    (ubuntu)$ sudo ufw allow Apache
-    (ubuntu)$ sudo ufw allow OpenSSH
-    (ubuntu)$ sudo ufw enable
-    (ubuntu)$ sudo ufw status verbose
+```shell
+(ubuntu)$ sudo dpkg-reconfigure tzdata
+(ubuntu)$ sudo apt-get install openntpd denyhosts ufw
+(ubuntu)$ sudo ufw allow Apache
+(ubuntu)$ sudo ufw allow OpenSSH
+(ubuntu)$ sudo ufw enable
+(ubuntu)$ sudo ufw status verbose
+```
 
 На экране должно появится примерно следующее:
 
-    Status: active
-    Logging: on (low)
-    Default: deny (incoming), allow (outgoing)
-    New profiles: skip
+```text
+Status: active
+Logging: on (low)
+Default: deny (incoming), allow (outgoing)
+New profiles: skip
 
-    To                         Action      From
-    --                         ------      ----
-    80/tcp (Apache)            ALLOW IN    Anywhere
-    22/tcp (OpenSSH)           ALLOW IN    Anywhere
-    80/tcp (Apache (v6))       ALLOW IN    Anywhere (v6)
-    22/tcp (OpenSSH (v6))      ALLOW IN    Anywhere (v6)
+To                         Action      From
+--                         ------      ----
+80/tcp (Apache)            ALLOW IN    Anywhere
+22/tcp (OpenSSH)           ALLOW IN    Anywhere
+80/tcp (Apache (v6))       ALLOW IN    Anywhere (v6)
+22/tcp (OpenSSH (v6))      ALLOW IN    Anywhere (v6)
+```
 
 Это говорит о том, что теперь все порты сервера закрыты по умолчанию и разрешены соединения только с SSH и Web. Теперь переходим к установке и настройке веб-сервера апач.
 
-    (ubuntu)$ sudo apt-get install apache2
-    (ubuntu)$ sudo a2enmod headers
-    (ubuntu)$ sudo a2enmod rewrite
-    (ubuntu)$ sudo a2enmod expires
-    (ubuntu)$ sudo service apache2 restart
-    (ubuntu)$ cd /etc/apache2/sites-available/
-    (ubuntu)$ sudo cp default site.ru
-    (ubuntu)$ sudo vim site.ru
+```shell
+(ubuntu)$ sudo apt-get install apache2
+(ubuntu)$ sudo a2enmod headers
+(ubuntu)$ sudo a2enmod rewrite
+(ubuntu)$ sudo a2enmod expires
+(ubuntu)$ sudo service apache2 restart
+(ubuntu)$ cd /etc/apache2/sites-available/
+(ubuntu)$ sudo cp default site.ru
+(ubuntu)$ sudo vim site.ru
+```
 
 И приводим этот файл примерно к следующему виду (минимальные настройки, необходимые для работы сайта):
 
-    <VirtualHost *:80>
-        ServerAdmin ubuntu@site.ru
-        ServerName site.ru
-        ServerAlias site.ru www.site.ru
+```apache
+<VirtualHost *:80>
+    ServerAdmin ubuntu@site.ru
+    ServerName site.ru
+    ServerAlias site.ru www.site.ru
 
-        DocumentRoot /home/ubuntu/www/siteru
-        <Directory /home/ubuntu/www/siteru>
-                Options None
-                Order allow,deny
-                allow from all
-        </Directory>
+    DocumentRoot /home/ubuntu/www/siteru
+    <Directory /home/ubuntu/www/siteru>
+            Options None
+            Order allow,deny
+            allow from all
+    </Directory>
 
-        ErrorLog /home/ubuntu/logs/siteru/error.log
+    ErrorLog /home/ubuntu/logs/siteru/error.log
 
-        # Possible values include: debug, info, notice, warn, error, crit,
-        # alert, emerg.
-        LogLevel warn
-    </VirtualHost>
+    # Possible values include: debug, info, notice, warn, error, crit,
+    # alert, emerg.
+    LogLevel warn
+</VirtualHost>
+```
 
 Для того, чтобы при перезапуске Apache не появлялось предупреждений, необходимо в файл `/etc/apache2/httpd.conf` добавить строку (файл по умолчанию пустой):
 
-    ServerName localhost
+```apache
+ServerName localhost
+```
 
 Теперь необходимо создать директории для размещения своего сайта (для этого используется домашняя директория):
 
-    (ubuntu)$ cd; mkdir -p www/siteru; mkdir -p logs/siteru
+```shell
+(ubuntu)$ cd; mkdir -p www/siteru; mkdir -p logs/siteru
+```
 
 Пришла пора активировать свой сайт и перезапускать веб-сервер:
 
-    (ubuntu)$ sudo a2ensite site.ru
-    (ubuntu)$ sudo service apache2 reload
+```shell
+(ubuntu)$ sudo a2ensite site.ru
+(ubuntu)$ sudo service apache2 reload
+```
 
 Если ошибок при запуске не было, значит все нормально и можно проверять работу. Для этого достаточно в браузере набрать ip-адрес своего сервера, на что он должен будет показать простенькую веб-страницу.
 

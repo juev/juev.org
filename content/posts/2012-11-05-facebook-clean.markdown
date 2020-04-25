@@ -22,9 +22,11 @@ keywords: facebook, style, stylish, safari, ads, clean
 
 Код стилей для Facebook у меня получился следующим:
 
-    .rhcFooter, .homeSideNav#connectNav, .homeSideNav#appsNav, #rightCol, .megaphone_story_wrapper { display: none !important; }
-    #boulder_fixed_header { width: 655px !important; }
-    #contentArea, #pagelet_composer { width: 755px !important; }
+```css
+.rhcFooter, .homeSideNav#connectNav, .homeSideNav#appsNav, #rightCol, .megaphone_story_wrapper { display: none !important; }
+#boulder_fixed_header { width: 655px !important; }
+#contentArea, #pagelet_composer { width: 755px !important; }
+```
 
 И после всех изменений Facebook стал выглядеть следующим образом:
 

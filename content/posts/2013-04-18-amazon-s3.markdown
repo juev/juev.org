@@ -30,15 +30,21 @@ keywords: amazon, s3, cloudfront, gzip, compression
 
 Для использования расширения необходимо в Gemfile добавить строку:
 
-    require 'jekyll-asset-pipeline'
+```ruby
+require 'jekyll-asset-pipeline'
+```
 
 И использовать команду:
 
-    $ bundle install
+```shell
+$ bundle install
+```
 
 Затем в директории `_plugins` создаем новый файл, к примеру `jekyll_assets_ppeline.rb`, в который первой строкой добавляем:
 
-    require 'jekyll_asset_pipeline'
+```ruby
+require 'jekyll_asset_pipeline'
+```
 
 Обратите внимание на то, что в Gemfile добавляли файл с тире, а в коде используем уже файл с подчеркиванием.
 
@@ -46,28 +52,34 @@ keywords: amazon, s3, cloudfront, gzip, compression
 
 Для вставки подготовленных тегов необходимо в шаблон страницы добавить в нужные места следующие блоки кода:
 
-    {% css_asset_tag global %}
-    - /_assets/foo.css
-    - /_assets/bar.css
-    {% endcss_asset_tag %}
+```ruby
+{% css_asset_tag global %}
+- /_assets/foo.css
+- /_assets/bar.css
+{% endcss_asset_tag %}
+```
 
-    {% javascript_asset_tag global %}
-    - /_assets/foo.js
-    - /_assets/bar.js
-    {% endjavascript_asset_tag %}
+```ruby
+{% javascript_asset_tag global %}
+- /_assets/foo.js
+- /_assets/bar.js
+{% endjavascript_asset_tag %}
+```
 
 Первый соответственно для вставки тега `link`, второй для тега `script`. Внутри блока просто перечисляются в нужном порядке те файлы, что будут включаться в результирующий файл, имя которого задается в первых строках кода (в примере это файл global).
 
 Для управлением поведением расширения в файле `_config.yml` добавляется следующий блок кода:
 
-    asset_pipeline:
-      bundle: true            # Default = true
-      compress: true          # Default = true
-      output_path: assets     # Default = assets
-      display_path: nil       # Default = nil
-      gzip: false             # Default = false
+```yml
+asset_pipeline:
+  bundle: true            # Default = true
+  compress: true          # Default = true
+  output_path: assets     # Default = assets
+  display_path: nil       # Default = nil
+  gzip: false             # Default = false
+```
 
-В коммментариях указаны значения по умолчанию.
+В комментариях указаны значения по умолчанию.
 
 ## GZip
 
@@ -77,28 +89,30 @@ keywords: amazon, s3, cloudfront, gzip, compression
 
 Для всего этого организовал отдельные Rake-задачи:
 
-    desc "GZip HTML"
-    task :gzip_html do
-      puts "## GZipping HTML"
-      system 'find public/ -type f -name \*.html -exec gzip -9 {} \;'
-      # Batch rename .html.gz to .html
-      Dir['**/*.html.gz'].each do |f|
-        test(?f, f) and File.rename(f, f.gsub(/\.html\.gz/, '.html'))
-      end
-    end
+```ruby
+desc "GZip HTML"
+task :gzip_html do
+  puts "## GZipping HTML"
+  system 'find public/ -type f -name \*.html -exec gzip -9 {} \;'
+  # Batch rename .html.gz to .html
+  Dir['**/*.html.gz'].each do |f|
+    test(?f, f) and File.rename(f, f.gsub(/\.html\.gz/, '.html'))
+  end
+end
 
-    desc "GZip Assets"
-    task :gzip_assets do
-      puts "## GZipping Assets"
-      styles_dir = "public/assets"
-      system "gzip -9 #{styles_dir}/*"
-      Dir["#{styles_dir}/*.css.gz"].each do |f|
-        test(?f, f) and File.rename(f, f.gsub(/\.css\.gz/, '.css'))
-      end
-      Dir["#{styles_dir}/*.js.gz"].each do |f|
-        test(?f, f) and File.rename(f, f.gsub(/\.js\.gz/, '.js'))
-      end
-    end
+desc "GZip Assets"
+task :gzip_assets do
+  puts "## GZipping Assets"
+  styles_dir = "public/assets"
+  system "gzip -9 #{styles_dir}/*"
+  Dir["#{styles_dir}/*.css.gz"].each do |f|
+    test(?f, f) and File.rename(f, f.gsub(/\.css\.gz/, '.css'))
+  end
+  Dir["#{styles_dir}/*.js.gz"].each do |f|
+    test(?f, f) and File.rename(f, f.gsub(/\.js\.gz/, '.js'))
+  end
+end
+```
 
 Главное что все получилось, и в итоге значение Page Speed для моего сайта поднялось до 99 из 100. Замечательный результат!
 

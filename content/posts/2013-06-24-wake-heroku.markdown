@@ -14,25 +14,31 @@ keywords: heroku, wake, wakeup, low traffic
 
 Для использования сначала клонируем репозиторий:
 
-    $ git clone https://github.com/Juev/wake-heroku.git
-    $ cd wake-heroku
+```shell
+$ git clone https://github.com/Juev/wake-heroku.git
+$ cd wake-heroku
+```
 
 Теперь нам необходимо отредактировать файл worker.rb, в котором необходимо изменить временной интервал, по умолчанию используется 20 минут. И затем указать свои сайты, что необходимо поддерживать в рабочем состоянии. По умолчанию используется только один сайт, но строчку можно клонировать:
 
-    include Clockwork
+```ruby
+include Clockwork
 
-    every(20.minutes, 'Fetch data from meta-info') do
-      Net::HTTP.get(URI('http://meta-info.heroku.com'))
-      Net::HTTP.get(URI('http://asdad-sdff.heroku.com'))
-      Net::HTTP.get(URI('http://sfsf-werw-wr.heroku.com'))
-    end 
+every(20.minutes, 'Fetch data from meta-info') do
+  Net::HTTP.get(URI('http://meta-info.heroku.com'))
+  Net::HTTP.get(URI('http://asdad-sdff.heroku.com'))
+  Net::HTTP.get(URI('http://sfsf-werw-wr.heroku.com'))
+end
+```
 
 Далее необходимо установить на компьютер [Heroku toolbelt](https://toolbelt.heroku.com "Heroku toolbelt"), если не сделали этого ранее. Сохраняем произведенные изменения и создаем новый сайт:
 
-    $ git commit -a -m "New changes"
-    $ heroku apps:create
-    $ git push heroku master
-    $ heroku ps:scale web=0 clock=1
+```shell
+$ git commit -a -m "New changes"
+$ heroku apps:create
+$ git push heroku master
+$ heroku ps:scale web=0 clock=1
+```
 
 После создания нового сайта нами произведена загрузка и конфигурирование. Последняя строка кода отвечает за то, чтобы отключить процесс web и переключиться на использование процесса clock. Теперь каждые 20 минут наши сайты будут опрашиваться с помощью данного приложения и это не позволит им уснуть. И время реакции на действия пользователя будет вполне адекватным.
 

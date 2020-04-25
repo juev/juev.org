@@ -11,11 +11,15 @@ keywords: ruby, utf8, jekyll, octopress, middleman
 
 Все работает, что еще нужно? Но проблемы стали возникать, когда я стал экспериментировать с другими движками. Пробовал использовать Middleman, Octopress. И каждый раз, когда я запускал генерацию сайта, я получал примерно следующее:
 
-    Liquid Exception: incompatible character encodings: ASCII-8BIT and UTF-8 in post
+```text
+Liquid Exception: incompatible character encodings: ASCII-8BIT and UTF-8 in post
+```
 
 Проверял кодировку файлов с помощью enca, и на все попытки получал:
 
-    Universal transformation format 8 bits; UTF-8
+```text
+Universal transformation format 8 bits; UTF-8
+```
 
 То есть вполне нормальный UTF-8. Я непонимал, что происходит, и думал, что все проблемы из-за того, что Ruby новых версий как-то неправильно работает с UTF-8.
 
@@ -23,7 +27,9 @@ keywords: ruby, utf8, jekyll, octopress, middleman
 
 Стало понятно, что причина не в Ruby и не в движке. Что-то не так именно в моих статьях. Неожиданно вспомнил, что у меня есть статьи, в которых заголовки задаются в закодированном виде, то есть:
 
-    title: !binary | 0YHQvNC10L3QsCDRhNCw0LnQu9C+0LLQvtC5INGB0LjRgdGC0LXQvNGL
+```yaml
+title: !binary | 0YHQvNC10L3QsCDRhNCw0LnQu9C+0LLQvtC5INGB0LjRgdGC0LXQvNGL
+```
 
 Прошелся поиском, оказалось, что подобных статей у меня свыше сотни, то есть почти добрая половина. Подобные заголовки появились у меня еще со времен миграции, а часть после того, как я создавал статьи с помощью rake-задачи и при этом задавал название на русском языке.
 
@@ -31,48 +37,54 @@ keywords: ruby, utf8, jekyll, octopress, middleman
 
 Править руками свыше сотни статей пробематично, поэтому написал небольшой скрипт на ruby, который производит конвертирование:
 
-    #!/usr/bin/env ruby
+```bash
+#!/usr/bin/env ruby
 
-    require "yaml"
+require "yaml"
 
-    unless not ARGV.empty?
-      puts "syntax: binary.rb dirname"
-      exit
-    end
+unless not ARGV.empty?
+  puts "syntax: binary.rb dirname"
+  exit
+end
 
-    dir = ARGV[0]
-    unless Dir.exist?(dir)
-      puts "#{dir} not exist or not a dir"
-      exit
-    end
+dir = ARGV[0]
+unless Dir.exist?(dir)
+  puts "#{dir} not exist or not a dir"
+  exit
+end
 
-    Dir.chdir(dir)
-    unless Dir.exist?("../temp")
-      Dir.mkdir("../temp")
-    end
+Dir.chdir(dir)
+unless Dir.exist?("../temp")
+  Dir.mkdir("../temp")
+end
 
-    Dir.glob("*").each do |f|
-      yaml_file = YAML::load_file(f)
-      yaml_file['title'] = yaml_file['title'].force_encoding("UTF-8")
-      yaml_file['date'] = yaml_file['date'].strftime("%F %R")
-      file = File.open(f, "rb")
-      contents = file.read.gsub(/^---(.|\n)*^---/, '')
-      File.open("../temp/#{f}", 'w+') do |fo|
-        fo.write(yaml_file.to_yaml)
-        fo.write("---")
-        fo.write(contents)
-      end
-    end
+Dir.glob("*").each do |f|
+  yaml_file = YAML::load_file(f)
+  yaml_file['title'] = yaml_file['title'].force_encoding("UTF-8")
+  yaml_file['date'] = yaml_file['date'].strftime("%F %R")
+  file = File.open(f, "rb")
+  contents = file.read.gsub(/^---(.|\n)*^---/, '')
+  File.open("../temp/#{f}", 'w+') do |fo|
+    fo.write(yaml_file.to_yaml)
+    fo.write("---")
+    fo.write(contents)
+  end
+end
+```
 
 В качестве параметров скрипт принимает имя директории, в которой размещаются статьи, и затем рядом с исходной создается директория temp, в которую и помещается результат конвертации.
 
 После проверки в Octopress, сайт опять отказался у меня генерироваться, но уже с совершенно другой ошибкой:
 
-    octopress/plugins/raw.rb:11:in `gsub': invalid byte sequence in UTF-8 (ArgumentError)
+```text
+octopress/plugins/raw.rb:11:in `gsub': invalid byte sequence in UTF-8 (ArgumentError)
+```
 
 Поиск в интернете указывал на то, что подобные ошибки обычно возникают при использовании адресов ссылок, в которых присутсвуют национальные символы. Вспомнил, что у меня используется тег с именем "хостинг", и он же используется в части адресов. Произвел быструю замену с помощью `sed`:
 
-    sed -i 's/-\ хостинг/-\ hosting/g' source/_posts/*
+```sh
+sed -i 's/-\ хостинг/-\ hosting/g' source/_posts/*
+```
 
 Единственно, чтобы произвести данную операцию в OSX, пришлось из репозитория homebrew ставить gnu-sed, так как системная версия очень ограничена.
 

@@ -18,72 +18,80 @@ OpenShift по умолчанию предоставляет возможнос�
 
 Создаем в корне своео репозитория директорию `_deploy`, и добавляем ее сразу в файл `.gitignore`. В данной директории будет размещаться еще один git-репозиторий, с помощью которого будет осуществляться публикация сайта в отдельную ветку нашего репозитория. Итак, даем следующие команды:
 
-    $ cd repo
-    $ mkdir _deploy
-    $ cd _deploy
-    $ git init
-    $ git add .
-    $ git commit -m "Init gh-pages"
-    $ git branch -m gh-pages
-    $ git remote add origin #repo_url#
+```shell
+$ cd repo
+$ mkdir _deploy
+$ cd _deploy
+$ git init
+$ git add .
+$ git commit -m "Init gh-pages"
+$ git branch -m gh-pages
+$ git remote add origin #repo_url#
+```
 
 В последней строке вместо `#repo_url#` нужно указать url-адрес своего репозитория. При этом адрес репозитория нужно брать с SSH, а не https протоколом. При этом для публикации будут использоваться ключи, а не спрашиваться каждый раз имя пользователя и пароль, что, на мой взгляд, гораздо удобнее. И по сути на этом предварительная работа закончена, репозиторий готов к публикации, осталось только изменить одну задачу в файле `Rakefile`.
 
 Для начала стоит в начале файла определить несколько переменных:
 
-    domain          = "denis.evsyukov.org"
+```ruby
+domain          = "denis.evsyukov.org"
 
-    public_dir      = "public"    # compiled site directory
-    source_dir      = "source"    # source file directory
-    deploy_dir      = "_deploy"   # deploy directory (for Github pages deployment)
+public_dir      = "public"    # compiled site directory
+source_dir      = "source"    # source file directory
+deploy_dir      = "_deploy"   # deploy directory (for Github pages deployment)
 
-    deploy_branch   = "gh-pages"
-    deploy_default  = "push"
+deploy_branch   = "gh-pages"
+deploy_default  = "push"
+```
 
 Обратите внимание на то, что я использую структуру директорий из octopress, а не из классического jekyll, на мой взгляд, она более удобная для восприятия и работы. Отличия заключаются в том, что исходный код сайта размещается не в корне, а в директории `source`. И генерация производится не в директорию `_site`, а в `public`. Что помимо прочего позволяет использовать jekyll с целым рядом сторонних движков и веб-серверов.
 
 И теперь определяем задачу для размещения готового сайта на сервере GitHub:
 
-    desc 'Build, deploy.'
-    task :deploy => :build do
-    #  Rake::Task[:copydot].invoke(source_dir, public_dir)
-      Rake::Task["#{deploy_default}"].execute
-    end
+```ruby
+desc 'Build, deploy.'
+task :deploy => :build do
+#  Rake::Task[:copydot].invoke(source_dir, public_dir)
+  Rake::Task["#{deploy_default}"].execute
+end
 
-    desc "copy dot files for deployment"
-    task :copydot, :source, :dest do |t, args|
-      exclusions = [".", "..", ".DS_Store"]
-      Dir["#{args.source}/**/.*"].each do |file|
-        if !File.directory?(file) && !exclusions.include?(File.basename(file))
-          cp(file, file.gsub(/#{args.source}/, "#{args.dest}"));
-        end
-      end
+desc "copy dot files for deployment"
+task :copydot, :source, :dest do |t, args|
+  exclusions = [".", "..", ".DS_Store"]
+  Dir["#{args.source}/**/.*"].each do |file|
+    if !File.directory?(file) && !exclusions.include?(File.basename(file))
+      cp(file, file.gsub(/#{args.source}/, "#{args.dest}"));
     end
+  end
+end
 
-    desc "deploy public directory to github pages"
-    multitask :push do
-      puts "## Deploying branch to Github Pages "
-      (Dir["#{deploy_dir}/*"]).each { |f| rm_rf(f) }
-      Rake::Task[:copydot].invoke(public_dir, deploy_dir)
-      puts "\n## copying #{public_dir} to #{deploy_dir}"
-      cp_r "#{public_dir}/.", deploy_dir
-      cd "#{deploy_dir}" do
-        system "git add ."
-        system "git add -u"
-        puts "\n## Commiting: Site updated at #{Time.now.utc}"
-        message = "Site updated at #{Time.now.utc}"
-        system "git commit -m \"#{message}\""
-        puts "\n## Pushing generated #{deploy_dir} website"
-        system "git push origin #{deploy_branch} --force"
-        puts "\n## Github Pages deploy complete"
-      end
-    end
+desc "deploy public directory to github pages"
+multitask :push do
+  puts "## Deploying branch to Github Pages "
+  (Dir["#{deploy_dir}/*"]).each { |f| rm_rf(f) }
+  Rake::Task[:copydot].invoke(public_dir, deploy_dir)
+  puts "\n## copying #{public_dir} to #{deploy_dir}"
+  cp_r "#{public_dir}/.", deploy_dir
+  cd "#{deploy_dir}" do
+    system "git add ."
+    system "git add -u"
+    puts "\n## Commiting: Site updated at #{Time.now.utc}"
+    message = "Site updated at #{Time.now.utc}"
+    system "git commit -m \"#{message}\""
+    puts "\n## Pushing generated #{deploy_dir} website"
+    system "git push origin #{deploy_branch} --force"
+    puts "\n## Github Pages deploy complete"
+  end
+end
+```
 
 Первая задача `:deploy` только вызывает задачу `:push`, можно было бы и без нее обойтись, но именно с ее помощью можно будет в дальнейшем значительно упростить изменение метода размещения сайта. Достаточно будет прописать новую задачу и использовать ее имя в переменной `deploy_default`. Задача `copydot` призвана после генерации сайта производить копирование файлов из директории `public` в директорию `_deploy`, после чего `:push` заканчивает весь процесс, обновляя git-репозиторий в директории `_deploy` и публикуя его на сервере.
 
 Теперь осталось только в директории `source` создать файл `CNAME`, в котором прописывается необходимый домен. Запускаем генерацию сайта и его публикацию на сервере github:
 
-    $ rake deploy
+```shell
+$ rake deploy
+```
 
 После чего остается только изменить dns-зону у нашего домена. Для домена создается **A record** со значением `204.232.175.78`. Теперь ждем обновления зоны и наблюдаем свой рабочий сайт уже на сервере GitHub.
 

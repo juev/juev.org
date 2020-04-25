@@ -11,12 +11,14 @@ keywords: cloudfront, amazon, htaccess, seo
 
 С точки зрения поисковых систем это не очень хорошо. Для решения данной проблемы, в файл `.htaccess` необходимо добавить строки:
 
-    <ifmodule mod_rewrite.c>
-        RewriteEngine on
-        RewriteCond %{HTTP_HOST} ^juevru-evsyukov\.rhcloud\.com$ [NC]
-        RewriteCond %{HTTP_USER_AGENT} !Amazon\ CloudFront [NC]
-        RewriteRule ^(.*)$ http://www.juev.ru/$1 [R=301,L]
-    </ifmodule>
+```apache
+<ifmodule mod_rewrite.c>
+    RewriteEngine on
+    RewriteCond %{HTTP_HOST} ^juevru-evsyukov\.rhcloud\.com$ [NC]
+    RewriteCond %{HTTP_USER_AGENT} !Amazon\ CloudFront [NC]
+    RewriteRule ^(.*)$ http://www.juev.ru/$1 [R=301,L]
+</ifmodule>
+```
 
 Где строки с RewriteCond задают определенные условия для выполнения действия, которое описано в строке с RewriteRule. В данном примере в качестве условий выбраны -- обращение по доменному имени `juevru-evsyukov.rhcloud.com`, на котором располагается оригинальный сайт и проверка, что зашедший пользователь не является ботом от амазона. А в качестве выполняемого действия задан переход на домен `www.juev.ru` с сохранением пути, по которому пользователь зашел на сайт.
 

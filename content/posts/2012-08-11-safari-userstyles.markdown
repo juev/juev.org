@@ -7,7 +7,7 @@ tags:
   - tips
 keywords: safari, mac, tips, ads block, ghostery
 ---
-После того, как разработка почтового клиента Sparrow была остановлена в связи с покупкой его Google, я вернулся к использованию веб-интерфейса Gmail. И столкнулся с тем, что на его страницах показывается просто масса контекстной рекламы, которая и отвлекает и просто мешает. 
+После того, как разработка почтового клиента Sparrow была остановлена в связи с покупкой его Google, я вернулся к использованию веб-интерфейса Gmail. И столкнулся с тем, что на его страницах показывается просто масса контекстной рекламы, которая и отвлекает и просто мешает.
 
 Раньше, когда использовал веб-интерфейс Gmail, я спасался с помощью Adblock, потому и решил вернуться к его использованию. Но обратил внимание на то, что скорость загрузки страниц значительно падает, и порой бывает, что определенные элементы начинают мелькать перед глазами, прежде чем скрыться[^1]. В результате экспериментов я решил отказаться от всех подписок, оставил только пользовательские фильтры, которые задавал сам, и расширение стало меньше влиять на скорость загрузки страниц. Но с мельканием элементов я так ничего поделать и не смог.
 
@@ -25,22 +25,29 @@ keywords: safari, mac, tips, ads block, ghostery
 
 Сперва добавил стили, которые убирают рекламу из gmail и немного изменяют само рабочее пространство, убирая панель справа и освобождая пространство для тела письма:
 
-    .mq { display:none; } .N92wfe { border-top:none; } .nH.PS { margin: 52px 0 44px 52px !important; } .Zs { display:none; } .u5 { display:none; }
-    .adC { display:none; } .z0DeRc { display:none; } .oM { display:none; } .u7 { display:none; } .nH.PS { display:none; } .ao8 table tr td.Bu + td.Bu { display:none; } td.Bu.yPPMxf { display:none !important; } td.Bu.y3  { display:none !important;}
+```css
+.mq { display:none; } .N92wfe { border-top:none; } .nH.PS { margin: 52px 0 44px 52px !important; } .Zs { display:none; } .u5 { display:none; }
+.adC { display:none; } .z0DeRc { display:none; } .oM { display:none; } .u7 { display:none; } .nH.PS { display:none; } .ao8 table tr td.Bu + td.Bu { display:none; } td.Bu.yPPMxf { display:none !important; } td.Bu.y3  { display:none !important;}
+```
 
 Для того, чтобы скрыть рекламу на страницах поиска Google, использовал следующую строку:
 
-    .rhstc5#rhs_block { display:none; }
+```css
+.rhstc5#rhs_block { display:none; }
+```
 
 Ghostery блокирует работу комментариев от Disqus, и на их месте остается иконка и индикатор загрузки, чтобы их убрать, добавил следующую строку:
 
-    #disqus_thread { display:none !important; }
-
+```css
+#disqus_thread { display:none !important; }
+```
 
 А для того, чтобы убрать кнопки твиттера и фейсбука, использовал следующие строки:
 
-    .sharelinks, .btntweetwrap, .btnfbshare { display:none !important; }
-    .twitter-share-button, .share, .dd_outer { display:none !important; }
+```css
+.sharelinks, .btntweetwrap, .btnfbshare { display:none !important; }
+.twitter-share-button, .share, .dd_outer { display:none !important; }
+```
 
 После создания файла таблицы стилей, в настройках Safari указал на его использование.
 

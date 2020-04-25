@@ -37,53 +37,69 @@ keywords: amazon, instance, web. server
 
 Теперь производим подключение к серверу по ssh. Предварительно рекомендую добавить опции подключения в файл `~/.ssh/config`:
 
-    Host ec2
-    HostName 8.8.8.8
-    User ubuntu
-    IdentityFile ~/.ssh/mykey.pem
-    Port 22
+```conf
+Host ec2
+HostName 8.8.8.8
+User ubuntu
+IdentityFile ~/.ssh/mykey.pem
+Port 22
+```
 
 В первой строке определяется имя сервера, по которому будет производиться подключение, во второй строке определяется или домен или ip-адрес сервера. В третьей строке определяется имя пользователя (для серверов на операционной системе ubuntu по умолчанию используется пользователь ubuntu). Следующей строкой определяем имя файла, в котором располагается ключ, который был загружен в момент создания сервера и самая последняя строка определяет порт, по которому производиться подключение.
 
 Добавили конфигурацию и теперь можно входить на сервер простой командой в терминале:
 
-    $ ssh ec2
+```shell
+$ ssh ec2
+```
 
 Сначала необходимо создать русскую локализацию и установить часовой пояс:
 
-    $ sudo apt-get update
-    $ sudo locale-gen ru_RU.UTF8
-    $ sudo dpkg-reconfigure tzdata
+```shell
+$ sudo apt-get update
+$ sudo locale-gen ru_RU.UTF8
+$ sudo dpkg-reconfigure tzdata
+```
 
 Из списка выбираем нужную нам зону, после чего устанавливаем сервер точного времени `openntpd`:
 
-    $ sudo apt-get install openntpd
+```shell
+$ sudo apt-get install openntpd
+```
 
 Безопасность уже находиться на очень высоком уровне, извне доступны только два порта, сетевой экран дополнительно настраивать нет необходимости, за этим следит политика безопасности амазона. Вход на сервер производиться только по ключу, но все таки стоит показать любопытным, что им тут делать нечего. Для этого установим denyhosts, про который я писал в статье [DenyHost на страже сервера](/2011/01/15/denyhost-security-server/):
 
-    $ sudo apt-get install denyhosts
+```shell
+$ sudo apt-get install denyhosts
+```
 
 Можно оставить настройки по умолчанию, а можно немного с ними поиграться, за дополнительными сведениями отправляю к указанной выше статье.
 
 Теперь осталось установить apache:
 
-    $ sudo apt-get install apache2
-    $ sudo a2enmod expires
-    $ sudo a2enmod headers
-    $ sudo a2enmod rewrite
-    $ sudo service apache2 restart
+```shell
+$ sudo apt-get install apache2
+$ sudo a2enmod expires
+$ sudo a2enmod headers
+$ sudo a2enmod rewrite
+$ sudo service apache2 restart
+```
 
 Все готово для создания сайтов, за основу берем конфигурацию по умолчанию:
 
-    $ cd /etc/apache2/sites-available/
-    $ cp default site1
-    $ cp default site2
+```shell
+$ cd /etc/apache2/sites-available/
+$ cp default site1
+$ cp default site2
+```
 
 Убираем и добавляем те опции, что нам необходимы для работы и активируем созданные сайты:
 
-    $ sudo a2ensite site1
-    $ sudo a2ensite site2
-    $ sudo service apache2 reload
+```shell
+$ sudo a2ensite site1
+$ sudo a2ensite site2
+$ sudo service apache2 reload
+```
 
 На этом все, достаточно только в панели регистратора доменных имен указать ip-адрес созданного сервера.
 Амазон предоставляет уникальный сервис с очень дешевыми серверами, которые быстро запускаются и которыми очень просто управлять.

@@ -23,7 +23,9 @@ keywords: fonts, webdesign, typekit, google, webfonts
 
 1. Использование внешнего css-файла, загружаемого с сервера google. (используется по умолчанию)
 
-        <link href='http://fonts.googleapis.com/css?family=Playfair+Display+SC:400,400italic,700&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+```html
+<link href='http://fonts.googleapis.com/css?family=Playfair+Display+SC:400,400italic,700&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+```
 
 2. Использование директивы @import в css-файле
 3. Использование javascript
@@ -52,8 +54,10 @@ keywords: fonts, webdesign, typekit, google, webfonts
 
 Всего шрифтов на сервере Typekit -- 783, но с поддержкой русского языка 92. Для подключения используется JS-скрипт, который генерируется отдельно для каждого проекта.
 
-    <script type="text/javascript" src="//use.typekit.net/sux8vth.js"></script>
-    <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+```html
+<script type="text/javascript" src="//use.typekit.net/sux8vth.js"></script>
+<script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+```
 
 [![typekit-editor](https://static.juev.org/2012/11/th-typekit-editor.png)](https://static.juev.org/2012/11/typekit-editor.png "Typekit Editor")
 

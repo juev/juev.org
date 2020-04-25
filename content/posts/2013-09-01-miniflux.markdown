@@ -25,95 +25,119 @@ keywords: ubuntu, vps, miniflux, rss, feeds, reader, php, nginx
 
 1. Установим nginx:
 
-        $ sudo add-apt-repository ppa:nginx/stable
-        $ sudo apt-get update
-        $ sudo apt-get upgrade --show-upgraded
-        $ sudo apt-get install nginx
+    ```shell
+    $ sudo add-apt-repository ppa:nginx/stable
+    $ sudo apt-get update
+    $ sudo apt-get upgrade --show-upgraded
+    $ sudo apt-get install nginx
+    ```
 
 2. Установим php5:
 
-        $ sudo apt-get install php5-fpm php5-sqlite php-xml-parser php-xml-serializer
+    ```shell
+    $ sudo apt-get install php5-fpm php5-sqlite php-xml-parser php-xml-serializer
+    ```
 
 3. Настраиваем php5 и его связку с nginx:
 
-        $ sudo vim /etc/php5/fpm/php.ini
+    ```shell
+    $ sudo vim /etc/php5/fpm/php.ini
+    ```
 
     Ищем строку с `date.timezone`, снимаем с нее комментарий и приводим к следующему виду:
 
-        date.timezone = "Europe/Moscow"
+    ```conf
+    date.timezone = "Europe/Moscow"
+    ```
 
     Естественно, что в значении указываете свой часовой пояс. Теперь аналогичные изменения производим в файле `/etc/php5/cli/php.ini`. Теперь меняем поведение php5 с прослушивания tcp-соединения на использование сокетов:
 
-        $ sudo vim /etc/php5/fpm/pool.d/www.conf
+    ```shell
+    $ sudo vim /etc/php5/fpm/pool.d/www.conf
+    ```
 
     В этом файле ищем строку `listen = 127.0.0.1:9000`, комментируем ее или просто меняем на:
 
-        listen = /var/run/php5-fpm.sock
+    ```conf
+    listen = /var/run/php5-fpm.sock
+    ```
 
     Остается перезапустить php5, чтобы использовать новые настройки:
 
-        $ sudo service php5-fpm restart
+    ```shell
+    $ sudo service php5-fpm restart
+    ```
 
     И теперь остается создать новый сайт в nginx, для это выполняем следующие команды:
 
-        $ cd /etc/nginx/site-available
-        $ sudo vim sitename
+    ```shell
+    $ cd /etc/nginx/site-available
+    $ sudo vim sitename
+    ```
 
     Новый файл приводим примерно к следующему виду, большинство настроек понятны из контекста:
 
-        server {
-            listen 80;
-            server_name sitename.ru;
+    ```nginx
+    server {
+        listen 80;
+        server_name sitename.ru;
 
-            root /home/username/www/miniflux;
-            index index.php;
-            autoindex off;
+        root /home/username/www/miniflux;
+        index index.php;
+        autoindex off;
 
-            charset utf-8;
+        charset utf-8;
 
-            location / {
-                try_files $uri $uri/ =404;
-            }
-
-            access_log  off;
-            error_log   /home/username/logs/miniflux/error.log;
-
-            location ~ /\. {
-                deny all;
-                access_log      off;
-                log_not_found   off;
-            }
-
-            location ~ /data {
-                deny all;
-                access_log      off;
-                log_not_found   off;
-            }
-
-            location ~ \.php$ {
-                fastcgi_pass unix:/var/run/php5-fpm.sock;
-                fastcgi_index index.php;
-                include fastcgi_params;
-            }
+        location / {
+            try_files $uri $uri/ =404;
         }
+
+        access_log  off;
+        error_log   /home/username/logs/miniflux/error.log;
+
+        location ~ /\. {
+            deny all;
+            access_log      off;
+            log_not_found   off;
+        }
+
+        location ~ /data {
+            deny all;
+            access_log      off;
+            log_not_found   off;
+        }
+
+        location ~ \.php$ {
+            fastcgi_pass unix:/var/run/php5-fpm.sock;
+            fastcgi_index index.php;
+            include fastcgi_params;
+        }
+    }
+    ```
 
     Теперь создаем используемые в конфигурации директории:
 
-        $ mkdir -p ~/www/miniflux ~/logs/miniflux
+    ```shell
+    $ mkdir -p ~/www/miniflux ~/logs/miniflux
+    ```
 
     Активируем новую конфигурацию сайта и перезапускаем nginx:
 
-        $ sudo ln -s /etc/nginx/sites-available/sitename /etc/nginx/sites-enabled
-        $ sudo service nginx restart
+    ```shell
+    $ sudo ln -s /etc/nginx/sites-available/sitename /etc/nginx/sites-enabled
+    $ sudo service nginx restart
+    ```
 
 4. Устанавливаем miniflux:
 
-        $ cd ~/www/miniflux
-        $ wget https://github.com/fguillot/miniflux/archive/master.zip
-        $ sudo apt-get install unzip
-        $ unzip master.zip
-        $ mv miniflux-master/* .
-        $ rm -rf master.zip miniflux-master
+    ```shell
+    $ cd ~/www/miniflux
+    $ wget https://github.com/fguillot/miniflux/archive/master.zip
+    $ sudo apt-get install unzip
+    $ unzip master.zip
+    $ mv miniflux-master/* .
+    $ rm -rf master.zip miniflux-master
+    ```
 
 Собственно на этом все. Остается только у своего доменного регистратора прописать на используемый sitename.ru требуемый ip-адрес, дождаться его делегирования, и можно открывать уже свой ридер в браузере.
 
@@ -121,11 +145,15 @@ keywords: ubuntu, vps, miniflux, rss, feeds, reader, php, nginx
 
 Обновление подписок производится вручную, либо можно использовать crontab для обновления по времени, для это используется команда:
 
-    $ crontab -e
+```shell
+$ crontab -e
+```
 
 И в открывшемся файле добавляем строку:
 
-    */20 * * * * cd /home/ubuntu/www/miniflux && php cronjob.php > /dev/null 2>&1
+```text
+*/20 * * * * cd /home/ubuntu/www/miniflux && php cronjob.php > /dev/null 2>&1
+```
 
 Согласно данной настройке, обновление лент будет производиться каждые 20 минут.
 

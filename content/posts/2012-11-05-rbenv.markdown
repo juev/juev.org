@@ -15,10 +15,12 @@ keywords: ruby, bundle, rbenv, config, settings
 
 По идее rbenv можно довольно просто установить, используя пакетный менеджер homebrew, который очень часто используется в osx. Но используя его я столкнулся с тем, что в последствии совершенно запутался, где и какие пути прописывать в конфигурации rbenv. Поэтому рекомендую устанавливать с использованием git.
 
-    $ cd
-    $ git clone git://github.com/sstephenson/rbenv.git ~/.rbenv
-    $ echo 'export PATH="$HOME/.rbenv/bin:$PATH"' >> ~/.bash_profile
-    $ echo 'eval "$(rbenv init -)"' >> ~/.bash_profile
+```shell
+$ cd
+$ git clone git://github.com/sstephenson/rbenv.git ~/.rbenv
+$ echo 'export PATH="$HOME/.rbenv/bin:$PATH"' >> ~/.bash_profile
+$ echo 'eval "$(rbenv init -)"' >> ~/.bash_profile
+```
 
 При использовании zsh, в последних двух строках необходимо использовать файл `~/.zshenv` вместо `~/.bash_profile`.
 
@@ -28,22 +30,30 @@ keywords: ruby, bundle, rbenv, config, settings
 
 Для упрощения данной операции рекомендуется установить расширение [ruby-build](https://github.com/sstephenson/ruby-build "ruby-build"), которое позволяет устанавливать ruby с использованием всего одной команды. Для установки достаточно дать всего одну команду:
 
-    $ git clone git://github.com/sstephenson/ruby-build.git ~/.rbenv/plugins/ruby-build
+```shell
+$ git clone git://github.com/sstephenson/ruby-build.git ~/.rbenv/plugins/ruby-build
+```
 
 Теперь можно установить необходимую версию ruby:
 
-    $ rbenv install 1.9.3-p194
-    $ rbenv rehash
+```shell
+$ rbenv install 1.9.3-p194
+$ rbenv rehash
+```
 
 Команда `rbenv rehash` используется для того, чтобы rbenv обновила пути, и используется каждый раз при установке ruby.
 
 Для того, чтобы данная версия использовалась в системе по умолчанию, достаточно использовать команду:
 
-    $ rbenv global 1.9.3-p194
+```shell
+$ rbenv global 1.9.3-p194
+```
 
 Для того, чтобы в проекте использовалась ruby с версией, отличной от глобальной, достаточно в директории проекта создать файл `.rbenv-version`, в которую помещаем номер версии:
 
-    $ echo 'ree-1.8.7-2012.02' > .rbenv-version
+```shell
+$ echo 'ree-1.8.7-2012.02' > .rbenv-version
+```
 
 Да, после того, как я стал использовать rbenv, я совершенно перестал использовать системный ruby. А для использования ruby версии 1.8.7 я установил Ruby Enterprise Edition, которая отличается более высокими требованиями к безопасности. Данную версию я использую при работе с jekyll.
 
@@ -61,35 +71,43 @@ keywords: ruby, bundle, rbenv, config, settings
 
 Устанавливать bundle лучше всего глобально, чтобы команда была доступна везде и всегда:
 
-    $ gem install bundler
+```shell
+$ gem install bundler
+```
 
 Обращаю внимание на то, что при установке пакетов с использованием версий ruby, которые мы ставили через rbenv, не нужно использовать sudo.
 
 Для упрощения работы с командой bundle, рекомендуется создать алиасы в командной оболочке:
 
-    # bundle alias
-    alias b="bundle"
-    alias bi="bundle install --path .bundle/gems --binstubs .bundle/bin"
-    alias bu="b update"
-    alias be="b exec"
+```bash
+# bundle alias
+alias b="bundle"
+alias bi="bundle install --path .bundle/gems --binstubs .bundle/bin"
+alias bu="b update"
+alias be="b exec"
+```
 
 Теперь для использования пакетов в проекте достаточно создать файл Gemfile, в котором описываем, какие именно пакеты необходимо использовать и откуда их требуется брать, например:
 
-    source :rubygems
+```ruby
+source :rubygems
 
-    group :development do
-      gem 'rake'
-      gem 'jekyll'
-      gem 'kramdown'
-      gem 'jammit'
-      gem 'liquid'
-    end
+group :development do
+  gem 'rake'
+  gem 'jekyll'
+  gem 'kramdown'
+  gem 'jammit'
+  gem 'liquid'
+end
+```
 
 Теперь просто используем команду `bi`, которая установит все пакеты в локальную директорию `.bundle/gems` и при этом еще создаст ссылки на программы в директорию `.bundle/bin`.
 
 Если изменить переменную PATH следующим образом:
 
-    $ export PATH="./.bundle/bin:$PATH"
+```shell
+$ export PATH="./.bundle/bin:$PATH"
+```
 
 То при нахождении в директории проекта можно запускать установленные пакеты, как обычные системные, что очень удобно.
 
@@ -103,10 +121,12 @@ keywords: ruby, bundle, rbenv, config, settings
 
 Для избавления от некоторых сложностей при использовании bundle, рекомендуется создать файл конфигурации `~/.bundle/config`, в который поместить следующее:
 
-    ---
-    BUNDLE_PATH: .bundle
-    BUNDLE_SHEBANG: ruby-local-exec
-    BUNDLE_BIN: ./.bundle/bin
+```yaml
+---
+BUNDLE_PATH: .bundle
+BUNDLE_SHEBANG: ruby-local-exec
+BUNDLE_BIN: ./.bundle/bin
+```
 
 Теперь и просто используя команду `bundle` или ее синоним `b`, который мы создали чуть ранее, мы получим тот же самый результат, что и при использовании нашего синонима `bi`. То есть все пакеты будут устанавливаться в локальную директорию проекта и при этом у нас будет возможность запускать установленные пакеты, как обычные системные.
 

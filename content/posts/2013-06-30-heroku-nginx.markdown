@@ -17,25 +17,31 @@ keywords: heroku, nginx, buildpack, tips, static
 Выбор пал на [heroku-buildpack-nginx](https://github.com/abhishekmunie/heroku-buildpack-nginx "heroku-buildpack-nginx"), просто потому, что при использовании данного рабочего окружения не нужно каждый раз заново компилировать nginx. 
 По умолчанию, для определения корректного типа приложения, используется следующая структура сайта:
 
-    |
-    |- conf
-    | |- nginx.conf.erb
-    | |- mime.types
-    |- index.html
+```text
+|
+|- conf
+| |- nginx.conf.erb
+| |- mime.types
+|- index.html
+```
 
 Директория `conf`, в которой располагаются конфигурационные файлы nginx и рядом с этой директорией само содержимое сайта. Я посчитал это несколько неудобным и создал свою конфигурацию [heroku-nginx-conf](https://github.com/Juev/heroku-nginx-conf "heroku-nginx-conf"), в которой переместил все содержимое сайта в директорию `public`, и при этом задал в конфигурации параметры кеширования статических объектов и ряд дополнительных заголовков, типа:
 
-    Vary: Accept-Encoding
-    X-Ua-Compatible: IE=Edge,chrome=1
+```nginx
+Vary: Accept-Encoding
+X-Ua-Compatible: IE=Edge,chrome=1
+```
 
 В итоге при проверке pagespeed, получил значение 100 балов. В то время как при отключенном кешировании выходило максимум 83.
 
 Использовать конфигурацию довольно просто, достаточно только создать ее копию, затем создать приложении на основе определенного рабочего окружения и собственно загрузить файлы на сервер, для этого используются следующие команды:
 
-    (~) $ mkdir test
-    (~) $ cd test
-    (test) $ git clone https://github.com/Juev/heroku-nginx-conf.git
-    (test) $ heroku create --stack cedar --buildpack https://github.com/abhishekmunie/heroku-buildpack-nginx.git
-    (test) $ git push heroku master
+```shell
+(~) $ mkdir test
+(~) $ cd test
+(test) $ git clone https://github.com/Juev/heroku-nginx-conf.git
+(test) $ heroku create --stack cedar --buildpack https://github.com/abhishekmunie/heroku-buildpack-nginx.git
+(test) $ git push heroku master
+```
 
 Не знаю только, считать ли минусом то, что теперь при каждом комите (загрузке файлов на сервер Heroku) осуществляется установка и перезапуск веб-сервера? Время покажет. Но возможность создавать свои собственные рабочие окружения на серверах Heroku заслуживает особого внимания.

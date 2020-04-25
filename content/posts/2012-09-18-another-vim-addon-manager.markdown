@@ -22,23 +22,27 @@ keywords: vim, rube, rake, addons, addons manager
 
 Кстати, команда `rake` может принимать один из следующих аргументов:
 
-    $ rake -T
+```shell
+$ rake -T
 
-    rake clean    # Remove excess plugins in bundle directory
-    rake default  # Install new and remove excess plugins in bundle directory
-    rake install  # Install new plugins in bundle directory
-    rake list     # List plugins in bundle directory
-    rake update   # Update plugins in bundle directory
+rake clean    # Remove excess plugins in bundle directory
+rake default  # Install new and remove excess plugins in bundle directory
+rake install  # Install new plugins in bundle directory
+rake list     # List plugins in bundle directory
+rake update   # Update plugins in bundle directory
+```
 
 По умолчанию производится очистка дополнений от тех, чьи адреса были удалены из файла конфигурации и затем устанавливаются новые дополнения, если они были указаны.
 
 Минимально необходимый файл `vimrc` располагается в репозитории. Он содержит в себе строки для активизации расширения `vim-pathogen`.
 
-    runtime bundle/vim-pathogen/autoload/pathogen.vim
+```vim
+runtime bundle/vim-pathogen/autoload/pathogen.vim
 
-    call pathogen#infect()
-    syntax on
-    filetype plugin indent on
+call pathogen#infect()
+syntax on
+filetype plugin indent on
+```
 
 При необходимости, можно добавлять свои опции в конце файла `vimrc`.
 
@@ -48,21 +52,27 @@ keywords: vim, rube, rake, addons, addons manager
 
 Для установки достаточно клонировать данный репозиторий в директорию, где должны располагаться файлы конфигурации VIM, обычно это директория `~/.vim`:
 
-    $ git clone https://github.com/Juev/another-vim-addon-manager.git ~/.vim
+```shell
+$ git clone https://github.com/Juev/another-vim-addon-manager.git ~/.vim
+```
 
 После чего достаточно перейти в указанную директорию и выполнить команду:
 
-    ~/.vim $ rake
+```shell
+~/.vim $ rake
+```
 
 Будет установлено расширение `vim-pathogen`, которое требуется для работы менеджера. Затем дополняем файл `plugins.yaml`, прописывая адреса репозиториев требуемых расширений, к примеру:
 
-    ---
-    - https://github.com/tpope/vim-pathogen
-    - https://github.com/scrooloose/nerdtree
-    - https://github.com/vim-scripts/L9
-    - https://github.com/mileszs/ack.vim
-    - https://github.com/tpope/vim-rails
-    - https://github.com/vim-ruby/vim-ruby
+```yaml
+---
+- https://github.com/tpope/vim-pathogen
+- https://github.com/scrooloose/nerdtree
+- https://github.com/vim-scripts/L9
+- https://github.com/mileszs/ack.vim
+- https://github.com/tpope/vim-rails
+- https://github.com/vim-ruby/vim-ruby
+```
 
 После очередного запуска команды `rake` будет произведена установка этих расширений.
 
