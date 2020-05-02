@@ -1,0 +1,19 @@
+---
+title: "Ссылки #75"
+date: 2020-05-02T07:22:46+0300
+image: https://static.juev.org/images/links.jpg
+tags:
+  - links
+---
+За прошедшую неделю сохранил 59 ссылок.
+
+* [Declarative, Decentralised, and Secure communication via Matrix, Jitsi, & NixOS](https://kaushikc.org/posts/matrix-jitsi-nixos.html) -- про использование NixOS, нравится мне их концепция. Хотя с некоторыми моментами и несогласен. И плюс в новых версиях MacOS пока нет возможности использовать Nix в виду ограничений системы
+* [Building a reproducible blog with Nix](https://blog.ysndr.de/posts/internals/2020-04-10-built-with-nix/) -- еще немного про Nix, для сборки блога.
+* [Inlining optimisations in Go](https://dave.cheney.net/2020/04/25/inlining-optimisations-in-go) -- про оптимизации в Go
+* [a-Shell](https://holzschu.github.io/a-Shell_iOS/) -- новый шел для iOS, имхо очень удачный
+* [Jekyll GitHub Actions](https://jekyllrb.com/docs/continuous-integration/github-actions/) -- про использование Github Actions для сборки сайта, официальная документация Jekyll
+* [GolangConf 2019](https://www.youtube.com/playlist?list=PL4jag8ijtDPwmF-BRtOrCvhlHSGW3l9D3) -- видео с конференции GolangConf 2019
+* [How to find cause of high kernel_task cpu usage?](https://apple.stackexchange.com/questions/363337/how-to-find-cause-of-high-kernel-task-cpu-usage/363933) -- вы знали, что нагрузка на CPU зависит от того, с какой стороны вы заряжаете свой MacBook Pro?
+* [Rob Pike interview: “Go has indeed become the language of cloud infrastructure“](https://evrone.com/rob-pike-interview) -- интервью с Робом Пайком
+
+Хорошей вам недели!
