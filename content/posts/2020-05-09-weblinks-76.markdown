@@ -1,0 +1,23 @@
+---
+title: "Ссылки #76"
+date: 2020-05-09T08:47:10+0300
+image: https://static.juev.org/images/links.jpg
+tags:
+  - links
+---
+За прошедшую неделю сохранил 92 ссылки.
+
+* [ckulka/baikal-docker](https://github.com/ckulka/baikal-docker) -- docker дистрибутив Baikal (lightweight CalDAV+CardDAV server)
+* [git-up/GitUp](https://github.com/git-up/GitUp) -- gui для git
+* [Getting Started with Rust by Building a Tiny Markdown Compiler](https://jesselawson.org/rust/getting-started-with-rust-by-building-a-tiny-markdown-compiler/) -- изучение Rust через создание своего markdown компилятора
+* [Hierarchical Free Monads: The Most Developed Approach In Haskell](https://github.com/graninas/hierarchical-free-monads-the-most-developed-approach-in-haskell) -- статья Александра Гранина про монады
+* [Personal Infrastructure](https://blog.jessfraz.com/post/personal-infrastructure/) -- в очередной раз вспоминал про статью Джесики про ее персональную инфраструктуру, думаю перенять часть наработок
+* [A new kind of extensible platform for server apps.](https://caddyserver.com/v2) -- вышла новая версия веб-сервера Caddy
+* [actions-cli](https://github.com/remorses/actions-cli) -- Monitor your Github Actions in real time from the command line
+* [Introducing Inkscape 1.0](https://inkscape.org/news/2020/05/04/introducing-inkscape-10/) -- вышла первая версия inkscape, с полноценной поддержкой MacOS
+* [PixelMe : Convert your photo into pixelart.](https://pixel-me.tokyo/en/) -- сервис для преобразования фотографий в пиксельные изображения
+* [Tmux for mere mortals](https://zserge.com/posts/tmux/) -- один из вариантов конфигурации tmux
+* [Keybase joins Zoom](https://keybase.io/blog/keybase-joins-zoom) -- печальная новость про продажу Keybase
+* [Научитесь программировать за десять лет](http://www.williamspublishing.com/21-days.html) -- рецепт достижения успеха в программировании
+
+Хорошей вам недели! И с праздником Победы!
