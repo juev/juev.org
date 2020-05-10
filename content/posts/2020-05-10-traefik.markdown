@@ -1,0 +1,98 @@
+---
+title: "Traefik"
+date: 2020-05-10T06:52:20+0300
+image: https://static.juev.org/2020/05/traefik.png
+tags:
+  - web
+  - traefik
+  - nginx
+  - docker
+  - loadbalance
+---
+В статье [Wireguard and Pi-Hole](https://www.juev.org/2020/05/01/wireguard-pi-hole/) показывал, как через docker-compose организовать взаимосвязь между двумя docker-сервисами и показывал один из способов работы веб-сервиса с жесткой привязкой к IP-адресу.
+
+Но что если нам необходимо поднять несколько веб-сервисов на одном сервере, и организовать доступ к ним по различным доменам? Рассмотрим варианты.
+
+## Nginx
+
+Сначала рассмотрим вариант, который кажется самым простым. При организации docker-контейнеров пробрасываем порты во вне, при этом нужно будет самостоятельно учитывать, какие порты уже были заняты и какие порты можно использовать в дальнейшем. Так же необходимо настраивать фаервол на сервере таким образом, чтобы доступными были только строго определенные порты.
+
+Поднимаем отдельно Nginx, которые будет выступать балансировщиком и затем в зависимости от используемого домена отправляем запросы на требуемый порт.
+
+В результате получаем массу ручной работы, и плюс увеличиваем шансы поймать ошибку при внесении новых изменений.
+
+## Traefik
+
+В случае с [Traefik](https://containo.us/traefik/) весь ручной труд сводиться к нулю. Рассмотрим чуть более подробнее.
+
+Сначала установим, используя docker, создаем `docker-compose.yaml` файл:
+
+```yaml
+version: '3'
+
+services:
+  app:
+    image: traefik
+    restart: always
+    ports:
+      - "80:80"
+    command:
+      - "--providers.docker=true"
+      - "--providers.docker.exposedbydefault=false"
+      - "--entrypoints.web.address=:80"
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock:ro
+      - /etc/localtime:/etc/localtime
+    networks:
+      - web
+
+networks:
+  web:
+    external: true
+```
+
+В приведенном примере мы запускаем traefik на сервере, настраиваем его на использование docker-провайдера, и будем использовать только 80 порт для работы. После запуска демона через команду `docker-compose up -d`мы получаем работающий Traefik, который отслеживает все запущенные на сервере докер-контейнеры.
+
+Осталось только привязать контейнеры к их доменам, для чего их запуске указываем определенные метки. Пример для `whoami` контейнера:
+
+```yaml
+version: '3'
+
+services:
+  whoami:
+    # A container that exposes an API to show its IP address
+    image: containous/whoami
+    labels:
+      - "traefik.enable=true"
+      - "traefik.http.routers.whoami.rule=Host(`whoami.docker.localhost`)"
+```
+
+После запуска контейнера он будет доступен на сервере по домену `whoami.docker.localhost`:
+
+```bash
+$ curl -H Host:whoami.docker.localhost http://127.0.0.1
+Hostname: a656c8ddca6c
+IP: 172.27.0.3
+#...
+```
+
+### Dashboard
+
+При использовании опции [dashboard](https://docs.traefik.io/operations/api/#dashboard) получаем возможность доступа к служебной странице Traefik:
+
+![dashboard](https://static.juev.org/2020/05/traefik.png)
+
+Таким образом мы полностью избавляемся от ручного труда при управлении работающими сервисами и избегаем возможных ошибок в конфигурации. В рамках статьи мы рассмотрели управление только Docker-контейнерами, но Traefik позволяет брать конфигурацию из множества источников:
+
+- Docker
+- Kubernetes
+- Consul Catalog
+- Marathon
+- Rancher
+- File
+- Consul
+- etcd
+- Redis
+- ZooKeeper
+
+Получаем удобный балансировщик с динамической конфигурацией.
