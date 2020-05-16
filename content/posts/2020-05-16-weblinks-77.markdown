@@ -1,0 +1,20 @@
+---
+title: "Ссылки #77"
+date: 2020-05-16T12:04:22+0300
+image: https://static.juev.org/images/links.jpg
+tags:
+  - links
+---
+За прошедшую неделю сохранил 53 ссылки.
+
+* [Setup CI & CD service with gogs & registry and drone](https://github.com/wenweih/drone-gogs-registry-example) -- на этой неделе настраивал свой git-хостинг, рассматривал целый ряд продуктов и этот вариант очень понравился
+* [SSH Tips & Tricks](https://smallstep.com/blog/ssh-tricks-and-tips/) -- есть несколько интересных моментов, на которые стоит обратить внимание
+* [Racket is 25](https://blog.racket-lang.org/2020/05/racket-is-25.html) -- языку Racket 25 лет
+* [Pi-hole v5.0 is here!](https://pi-hole.net/2020/05/10/pi-hole-v5-0-is-here/) -- вышла новая версия PI-Hole, рекомендую обновиться
+* [Организация дня](https://felixit.blog/2020/05/12/organizaciia-dnia/) -- немного на тему тайм-менеджмента от Крыжановского Сергея
+* [Janet Language](https://janet-lang.org/) -- язык программирования использующий для работы один бинарник, любителям Lisp стоит обратить внимание
+* [wgcf](https://github.com/ViRb3/wgcf) -- если вы используете на мобильном телефоне Warp+ от Cloudflare, стоит обратить внимание на данный продукт. Позволяет генерировать Wireguard профайлы для подключения к Warp с различных устройств
+* [Emacs27 on macOS - Now (Again❓) With Emoji!‼️](https://github.crookster.org/emacs27-from-homebrew-on-macos-with-emoji/) -- использовал рецепт для установки Emacs 28
+* [Change your online habits](https://mullvad.net/ru/help/first-steps-towards-online-privacy/) -- статья от mullvad-провайдера по безопасности в сети
+
+Хорошей вам недели!
