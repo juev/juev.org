@@ -1,0 +1,24 @@
+---
+title: "Ссылки #78"
+date: 2020-05-23T10:30:22+0300
+image: https://static.juev.org/images/links.jpg
+tags:
+  - links
+---
+На прошедшей неделе занимался обустройством Traefik, о котором писал ранее. Для того, чтобы не потерять наработки, завел репозиторий [docker-compose](https://github.com/juev/docker-compose), в котором фиксирую используемые файлы. Если интересно, заходите, ставьте звезды.
+
+За эту неделю сохранил 76 ссылок.
+
+* [How I write my unit tests in Go quickly](https://dev.to/ilyakaznacheev/how-i-write-my-unit-tests-in-go-quickly-4bd5) -- про написание тестов для golang
+* [goaction](https://github.com/posener/goaction) -- создание Github Actions на golang
+* [Farewell, GitHub](https://emacsninja.com/posts/farewell-github.html) -- про организацию селф-хостинга git-репозиториев. Очень меня заинтересовала эта статья, после нее потратил много времени на исследование различных существующих подходов. Репозиторий автора [depp: Git self-hosting helper](https://depp.brause.cc/depp/)
+* [email + git = <3](https://git-send-email.io/) -- про использование git через отправку патчей по почте
+* [Terraform GitHub Actions](https://www.terraform.io/docs/github-actions/index.html) -- недавно переключился на использование Terraform для управления своими серверами, и это вариант использования Terraform с помощью Github Actions
+* [Functional Design and Architecture](https://leanpub.com/functional-design-and-architecture) -- Александр Гранин опубликовал свою книгу на leanpub. Книга не дешевая, еще в процессе написания, но уже рекомендую обратить на нее внимание
+* [Org Flashcards](https://github.com/l3kn/org-fc) -- Anki в Emacs
+* [Promnesia](https://beepb00p.xyz/promnesia.html) -- A journey in fixing browser history, интересная идея, но немного заморочено с установкой и использованием
+* [A Material Design theme for MkDocs](https://github.com/squidfunk/mkdocs-material) -- тема оформления для использования в mkdocs
+* [go-resty/resty](https://github.com/go-resty/resty) -- Simple HTTP and REST client library for Go
+
+Хорошей вам недели!
+
