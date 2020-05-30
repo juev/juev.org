@@ -1,0 +1,22 @@
+---
+title: "Ссылки #79"
+date: 2020-05-30T08:21:34+0300
+image: https://static.juev.org/images/links.jpg
+tags:
+  - links
+---
+За прошедшую неделю сохранил 67 ссылок.
+
+* [Fixing Common Git Mistakes](https://maggieappleton.com/git-mistakes) -- красивые иллюстрации, посвященные Git
+* [A Machine Learning Workflow for the iPad Pro](https://roberttlange.github.io/posts/2020/04/blog-post-11/) -- Использование связки iPad Pro + Raspberry Pi для машинного обучения
+* [myspaghetti/macos-virtualbox](https://github.com/myspaghetti/macos-virtualbox) -- запуск MacOS в VirtualBox
+* [Wireguard Manager](https://github.com/complexorganizations/wireguard-manager) -- скрипт для быстрой организации Wireguard сервера и настройки клиентов
+* [Wireguard Endpoint Discovery and NAT Traversal using DNS-SD](https://www.jordanwhited.com/posts/wireguard-endpoint-discovery-nat-traversal/) -- про использование dns для доставки информации о работающих клиентах wireguard между пирами. Используют в работе клиент [wgsd](https://github.com/jwhited/wgsd)
+* [The One-Touch Guide to Doing a Weekly Review: How I Go From Chaos to Clarity in 30 Minutes](https://fortelabs.co/blog/the-one-touch-guide-to-doing-a-weekly-review/) -- неплохая статья про еженедельное ревью задач, для чего проводиться и как необходимо его проводить
+* [pace/bricks](https://github.com/pace/bricks) -- golang библиотека для написания микросервисов
+* [The Fastest Google Fonts](https://csswizardry.com/2020/05/the-fastest-google-fonts/) -- про использование ряда параметров для ускорения неблокирующей загрузки веб-шрифтов
+* [Go vs Python. Виталий Левченко](https://habr.com/ru/post/488644/) -- сравнение Python и Golang. Во многом согласен с автором
+* [LaTeX.css](https://latex.now.sh) -- css-стили для сайта, позволяющие отображать страницу в виде Latex-документа
+* [zyedidia/micro](https://github.com/zyedidia/micro) -- A modern and intuitive terminal-based text editor. Написан на golang
+
+Хорошей вам недели!
