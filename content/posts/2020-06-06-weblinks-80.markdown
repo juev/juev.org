@@ -1,0 +1,22 @@
+---
+title: "Ссылки #80"
+date: 2020-06-06T08:30:13+0300
+image: https://static.juev.org/images/links.jpg
+tags:
+  - links
+---
+За прошедшую неделю сохранил 54 ссылки.
+
+* [k3c - Classic Docker for a Kubernetes world](https://github.com/rancher/k3c) -- кубер на локальной машине
+* [go-interview](https://github.com/shomali11/go-interview) -- коллекция вопрос из технических интервью, решенных с помощью Golang
+* [shomali11/gridder](https://github.com/shomali11/gridder) -- A Grid based 2D Graphics library
+* [Purrito Bin](https://github.com/PurritoBin/PurritoBin) -- сервер для организации собственного pastebin
+* [Fennel](https://fennel-lang.org/) -- lisp-like язык программирования, написанный на Lua
+* [Maza ad blocking](https://maza-ad-blocking.andros.dev/) -- локальный pi-hole для Linux/MacOS
+* [dani-garcia/bitwarden_rs](https://github.com/dani-garcia/bitwarden_rs) -- Bitwarden-сервер, написанный на Rust (оригинальный password-manager)
+* [pivpn/pivpn](https://github.com/pivpn/pivpn) -- простой инсталер для организации своего vpn-сервера на Raspberry Pi
+* [Connection Speed Test](https://speed.cloudflare.com) -- новый speedtest от Cloudflare
+* [dim-an/cod](https://github.com/dim-an/cod) -- cod is a completion daemon for bash/zsh
+* [Docker-OSX](https://github.com/sickcodes/Docker-OSX) -- запуск MacOS в docker
+
+Хорошей вам недели!
