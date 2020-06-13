@@ -1,0 +1,23 @@
+---
+title: "Ссылки #81"
+date: 2020-06-13T15:09:42+0300
+image: https://static.juev.org/images/links.jpg
+tags:
+  - links
+---
+Прошедшая неделя была очень насыщенной. Проводил миграцию на Windows 10, телефон сломался, пришлось срочно искать замену.
+
+За неделю сохранил 84 ссылки.
+
+* [mmv](https://github.com/itchyny/mmv) -- утилита для быстрого переименования группы файлов с помощью текстового редактора
+* [xkeys](https://github.com/vsec7/xkeys) -- Extract Sensitive Keys, Secret, Token Or Interested thing from source
+* [budparr/awesome-hugo](https://github.com/budparr/awesome-hugo) -- список статей, ресурсов, посвященных генератору Hugo
+* [immudb](https://github.com/codenotary/immudb) -- immudb is a lightweight, high-speed immutable database for systems and applications
+* [PopSocket Grip: как я перестал ронять свой iPhone](https://macosworld.ru/popsocket-grip/) -- Влад Гороховский дал обзор интересного крепления для iPhone
+* [Cloudflare TV | Cloudflare](https://cloudflare.tv) -- список каналов Cloudflare TV, посвященных технологиям
+* [Zettlr — A Supercharged Markdown Editor](https://www.zettlr.com/#download) -- markdown-редактор для использования методики Zettlekasten
+* [10 типовых ошибок при использовании Kubernetes](https://habr.com/ru/company/flant/blog/504396/) -- без комментариев
+* [Building My Bullet-Journal-Based Hybrid Productivity System](https://thesweetsetup.com/mikes-hybrid-bullet-journal-system/) -- описание построения системы списка задач
+* [How we use HashiCorp Nomad](https://blog.cloudflare.com/how-we-use-hashicorp-nomad/) -- про использования Nomad в компании Cloudflare
+
+Хорошей вам недели!
