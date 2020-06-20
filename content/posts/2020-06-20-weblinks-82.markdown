@@ -1,0 +1,20 @@
+---
+title: "Ссылки #82"
+date: 2020-06-20T10:39:41+0300
+image: https://static.juev.org/images/links.jpg
+tags:
+  - links
+---
+За прошедшую неделю сохранил только 36 ссылок.
+
+* [Containerize Your Go Developer Environment – Part 1](https://www.docker.com/blog/containerize-your-go-developer-environment-part-1/) -- про использование Docker для разработки в Golang.
+* [An intro to Go for non-Go developers](https://benhoyt.com/writings/go-intro/) -- введение в Golang для программистов
+* [Is Dark Mode Such A Good Idea?](https://kevq.uk/is-dark-mode-such-a-good-idea/) -- так ли хорош DarkMode? Ответ: нет
+* [Computers as I used to love them](https://tonsky.me/blog/syncthing/) -- статья от Никиты Прокопова про Syncthing, единственное что меня останавливает от его использования, это отсутствия версии для телефонов. Во всем остальном отличная программа
+* [Time to upgrade your monitor](https://tonsky.me/blog/monitors/) -- еще одна статья от Никиты Прокопова про мониторы. Приводятся ряд настроек, на которые следуем обратить внимание для лучшего отображения шрифтов
+* [2020 Chrome Extension Performance Report](https://www.debugbear.com/blog/2020-chrome-extension-performance-report) -- рассматривались ряд расширений для Google Chrome и их влияние на производительность
+* [Finding secrets by decompiling Python bytecode in public repositories](https://blog.jse.li/posts/pyc/) -- Python сохраняет секреты в кеш-файлах. Некоторые их комитят в репозитории. И в результате они становятся доступны всем
+* [Предзаказ книги](https://grishaev.me/clj-book-preorder/) -- Иван Гришаев открыл предзаказ на свою книгу по Кложе
+* [Introducing Firefox Private Network VPN’s Official Product – the Mozilla VPN](https://blog.mozilla.org/futurereleases/2020/06/18/introducing-firefox-private-network-vpns-official-product-the-mozilla-vpn) -- Mozilla анонсировала свой собственный VPN, пока доступен только в США
+
+Хорошей вам недели!
