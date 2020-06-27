@@ -1,0 +1,21 @@
+---
+title: "Ссылки #83"
+date: 2020-06-27T08:39:41+0300
+image: https://static.juev.org/images/links.jpg
+tags:
+  - links
+---
+За прошедшую неделю сохранил 79 ссылок. Было много интересного.
+
+* [Elfeed for Videos](https://irreal.org/blog/?p=8950) -- про использование Elfeed в Emacs для подписок на YouTube
+* [Lisp 1.5](https://github.com/robpike/lisp) -- реализация Lisp от Rob Pike на Golang
+* [Tips for Faster Rust Compile Times](https://endler.dev/2020/rust-compile-times/) -- рекомендации по ускорению компиляции Rust программ
+* [Nix package manager on macOS 10.15 a.k.a Catalina](https://zbrox.com/posts/nix-on-macos-catalina/) -- после того, как в MacOS перешли на RO корневую файловую систему, возникли проблемы в использовании Nix Package Manager. Тут варианты решения
+* [Видеоконференция по ФП #2](https://www.youtube.com/watch?v=8b_KHsfPKNU) -- Александр Гранин проводит интересные видеоконференции
+* [Вы не знаете JS (серия книг)](https://github.com/azat-io/you-dont-know-js-ru) -- серия переводных книг по JS
+* [Task](https://taskfile.dev/#/) -- альтернатива Make
+* [ARM Mac: Why I'm Worried About Virtualization](https://bmalehorn.com/arm-mac/) -- не все так хорошо с новыми маками на арм-процессорах. Как минимум есть проблемы в использовании Docker
+* [Новый MacBook Pro перегревается и троттлит. Нашел бюджетное решение](https://macosworld.ru/tg-pro-fan-control-and-macbook-overheat/) -- Владу не повезло и у него перегревается новый макбук. Интересная серия статей
+* [A new website for 2020](https://fasterthanli.me/articles/a-new-website-for-2020) -- автор долго перебирал генераторы статичного сайта, в результате написал свой. На Rust
+
+Хорошей вам недели!
