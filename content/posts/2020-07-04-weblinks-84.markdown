@@ -1,0 +1,19 @@
+---
+title: "Ссылки #84"
+date: 2020-07-04T10:06:30+0300
+image: https://static.juev.org/images/links.jpg
+tags:
+  - links
+---
+За прошедшую неделю сохранил 73 ссылки. Часть которых была посвящена Elixir, языку программирования на основе Erlang.
+
+* [browsertunnel](https://github.com/veggiedefender/browsertunnel) -- Surreptitiously exfiltrate data from the browser over DNS
+* [headscale](https://github.com/juanfont/headscale) -- An open source implementation of the Tailscale coordination server
+* [Building a high performance JSON parser](https://dave.cheney.net/high-performance-json.html) -- статья Дейва Чейна по построению парсера
+* [How to Create Desktop Application with Elixir](https://puddleofcode.com/story/how-to-create-desktop-application-with-elixir) -- описание создания десктоп-приложения на Elixir
+* [Введение в приложения на Elixir](https://code.tutsplus.com/ru/articles/elixir-applications--cms-29598) -- статья по основам Elixir
+* [Foam](https://foambubble.github.io/foam/) -- Foam is a personal knowledge management and sharing system inspired by Roam Research, built on Visual Studio Code and GitHub. Пока в альфа, но выглядит интересно
+* [Beware the Google Password Manager](https://fasterthanli.me/articles/beware-the-google-password-manager) -- подробная и интересная статья по безопасности
+* [Open Source Rotary Cellphone](https://justine-haupt.com/rotarycellphone/index.html) -- опенсурсный телефон
+
+Хорошей вам недели!
