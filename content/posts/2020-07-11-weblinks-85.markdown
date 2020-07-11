@@ -1,0 +1,21 @@
+---
+title: "Ссылки #85"
+date: 2020-07-11T10:27:32+0300
+image: https://static.juev.org/images/links.jpg
+tags:
+  - links
+---
+На этой неделе сохранил 73 ссылок. Лучшее по традиции публикую.
+
+* [Github Actions, C++ with Boost and cmake, almost a 50% speedup with caching](https://raymii.org/s/articles/Github_Actions_cpp_boost_cmake_speedup.html) -- Github Actions для сборки C++ проекта с использованием Boost и кешированием зависимостей для ускорения работы
+* [Play STAX](https://buildyourstax.com/) -- финансовая игра, рассчитанная на 20 минут времени. Используются реальные исторические данные, на которых выбирается произвольный промежуток времени в 20 лет, и предлагается сыграть. За минуту проходит год, в течение которого вам выделают определенные суммы денег, которые необходимо вкладывать в различные инструменты финансового рынка. Задача за 20 лет получить максимальную прибыль. Мне еще ни разу не удалось обыграть компьютер.
+* [Почему политики конфиденциальности Apple и Google неэффективны](https://adguard.com/ru/blog/why-google-and-apple-app-stores-arent-effective-at-protecting-users-privacy.html) -- новая публикация в блоге Adguard, в которой рассматриваются политики конфиденциальности, используемые в магазинах приложений Apple и Google, довольно поучительно.
+* [khakhalin/Sketches](https://github.com/khakhalin/Sketches/tree/master/ru_vote_2020) -- опубликованы реальные данные с выборов России 2020, в репозитории представлен анализ этих данных
+* [PWDB - New generation of Password Mass-Analysis](https://github.com/FlameOfIgnis/Pwdb-Public) -- A collection of all the data i could extract from 1 billion leaked credentials from internet
+* [Infinite Storage with Nextcloud and Object Storage](https://www.scaleway.com/en/docs/install-and-configure-nextcloud-object-storage/) -- создание Nextcloud с неограниченным хранилищем на основе Object Storage от Scaleway
+* [Rust: The New LLVM | Will Crichton](http://willcrichton.net/notes/rust-the-new-llvm/) -- Почему Rust должен заменить C++
+* [Cargo [features] explained with examples](https://dev.to/rimutaka/cargo-features-explained-with-examples-194g) -- описание понятия features в Rust
+* [Using Arch Linux on a Macbook Pro](https://www.0value.com/using-arch-linux-on-a-macbook-pro) -- про установку ArchLinux на Macbook Pro, правда как в дальнейшем пишет автор, это не очень хорошо сказалось на аккумуляторе макбука
+* [Linux on the Dell XPS 13 (2020)](https://mna.dev/posts/linux-on-the-dell-xps-13-2020.html) -- статья того же автора, про установку Fedora на последнюю модель Dell XPS 13. Была только одна проблема, во всем остальном можно считать систему полностью работоспособной
+
+Хорошей вам недели!
