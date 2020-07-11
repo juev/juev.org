@@ -85,7 +85,7 @@
         </div>
     </div>
     {{ $js := resources.Get "js/email.js" | minify | fingerprint -}}
-    <script defer src="{{ $js.Permalink }}" integrity="{{ $js.Data.Integrity }}" type="text/javascript" charset="utf-8"></script>
+    <script defer src="{{ $js.Permalink }}" integrity="{{ $js.Data.Integrity }}"></script>
 </body>
 
 </html>
