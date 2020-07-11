@@ -58,6 +58,7 @@
     <meta itemprop="description" content="{{- .Summary | default .Site.Params.Description -}}" />
     {{ with .Params.image }}<meta itemprop="image" content="{{ . | absURL }}" />{{ else }}<meta itemprop="image" content="{{ .Site.Params.ogimage | absURL }}" />{{ end }}
     {{ "<!-- end schema.org -->" | safeHTML }}
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src 'self' static.juev.org; script-src 'self' 'unsafe-inline' static.juev.org static.cloudflareinsights.com; font-src fonts.gstatic.com; child-src 'none'; upgrade-insecure-requests">
 </head>
 
 <body class="wide" itemscope itemtype="https://schema.org/WebPage">
