@@ -296,7 +296,7 @@ pre code
 
 pre code:before,
 pre code:after {
-  content: '';
+  content: none;
 }
 
 code:before,

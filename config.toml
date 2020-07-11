@@ -72,7 +72,7 @@ email			= "denis@evsyukov.org"
     lineNoStart = 1
     lineNos = false
     lineNumbersInTable = true
-    noClasses = true
+    noClasses = false
     style = "monokailight"
     tabWidth = 4
 
