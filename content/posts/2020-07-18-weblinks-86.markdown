@@ -1,0 +1,25 @@
+---
+title: "Ссылки #86"
+date: 2020-07-18T09:50:50+0300
+image: https://static.juev.org/images/links.jpg
+tags:
+  - links
+---
+За прошедшую неделю сохранил 91 ссылку, было много интересного.
+
+* [Test driven development with Rust](https://matthewkmayer.github.io/blag/public/post/tdd-with-rust/) -- Описание разработки на Rust с использованием TDD
+* [Troy Fletcher's Custom Ergonomic Mechanical Keyboard Sales](http://troyfletcher.net/keyboard_sales.html#signum_31) -- интересная механическая клавиатура, которую нужно самостоятельно собирать
+* [GopherCon Europe : Online 2020](https://www.youtube.com/playlist?list=PLtoVuM73AmsKnUvoFizEmvWo0BbegkSIG) -- выложили выступления с европейской Go-конференции 2020
+* [Adding simple email address obfuscation for your blog like Cloudflare Scrape Shield](https://andrewlock.net/simple-obfuscation-of-email-addresses-using-javascript/) -- обфускация почтовых адресов на страницах сайта с использованием JS
+* [Learn Vim (the Smart Way)](https://github.com/iggredible/Learn-Vim) -- репозиторий, в котором пишется книга по vim
+* [Clojure, GraalVM, PolyglotVM: paste.in.ua](https://solovyov.net/blog/2020/clojure-graalvm-polyglotvm-paste-in-ua/) -- Александр Соловьев рассказывает, как переписал paste.in.ua на кложе
+* [ЦРУ и СССР, часть I](https://felixit.blog/2020/07/14/cru-sssr-i/) -- ряд статей на основе документов 50-60 годов про компьютеризацию в СССР и США
+* [How to finish your side project.](https://hugozap.com/posts/how-to-finish-your-side-project/) -- чтобы закончить свой проект важно выделять маленькие части и решать их
+* [Upterm - Secure Terminal Sharing](https://owenou.com/upterm/) -- интересное решение на Go для шаринга терминала
+* [Rust code in Linux kernel looks more likely as language team lead promises support](https://www.theregister.com/2020/07/13/rust_code_in_linux_kernel/) -- ждем использования Rust в кернеле Linux
+* [Exercises for understanding lenses](https://williamyaoh.com/posts/2019-04-25-lens-exercises.html) -- объясняют, что такое линзы в Haskell
+* [Книга для читалки и телефона](https://grishaev.me/book-mobile/) -- Иван Гришаев выпустил свою книгу по кложе, и представил электронную версию на [Gumroad](https://gum.co/ZcEET). Рекомендую обратить внимание и поддержать автора, подобные книги крайне редко встречаются.
+* [Hello Swift, Hello World](https://github.com/apple/swift/commit/18844bc65229786b96b89a9fc7739c0fc897905e) -- 18 июля 2010 года ознаменовался появлением языка Swift
+* [freetonik/castlemacs](https://github.com/freetonik/castlemacs) -- конфигурация Emacs от Рахима, ориентированная на работу в маке со стандартными сочетаниями клавиш
+
+На этом пока все, хорошей вам недели!
