@@ -1,0 +1,20 @@
+---
+title: "Ссылки #87"
+date: 2020-07-25T11:55:57+0300
+image: https://static.juev.org/images/links.jpg
+tags:
+  - links
+---
+За прошедшую неделю сохранил 79 ссылок.
+
+* [Cloudflare outage on July 17, 2020](https://blog.cloudflare.com/cloudflare-outage-on-july-17-2020/) -- утром 18 июля получил уведомление о недоступности сайта ночью, и это после того, как провел миграцию на S3+Cloudflare. Как оказалось пол интернета не работало часть времени из-за проблем в Cloudflare. Ссылка с описанием происходящего
+* [О зипперах в Clojure (часть 1)](https://grishaev.me/clj-zippers-1/) -- Иван Гришаев публикует ряд статей по кложе. Четыре части уже на сайте, это ссылка на первую
+* [Spotify в России: какие преимущества, в чём подводные камни, стоит ли переходить. Ответы на основные вопросы Материал редакции](https://tjournal.ru/internet/188040-spotify-v-rossii-kakie-preimushchestva-v-chem-podvodnye-kamni-stoit-li-perehodit-otvety-na-osnovnye-voprosy) -- Spotify пришел в Россию. И тут рассматривается, какие преимущества и какие недостатки у него есть. Какие альтернативы, что выбрать, решать только вам
+* [penrose - a tiling window manager library](https://github.com/sminez/penrose) -- тайловый менеджер окон на Rust
+* [OpenAI API](https://openai.com/blog/openai-api/) -- статья-презентация выхода в свет OpenAI
+* [IPFCP, ой, то есть ICFPC-2020](https://tonsky.livejournal.com/325818.html) -- Никита Прокопов рассказывает об очередном соревновании ICFPC, в котором принимал участие.
+* [Что такое carry trade и почему он может обвалить российский рубль?](https://smart-lab.ru/company/tinkoff_invest/blog/635077.php) -- немного не в тему, но чтобы вы немного понимали что происходит и чего можно ждать в ближайшем будущем
+* [Как замена термопасты избавила мой MacBook Pro от перегрева](https://macosworld.ru/thermal-paste-replacement-macbook-pro-2020/) -- Влад Гороховский продолжает свои эксперименты над новым MacBook Pro, вместо того, чтобы сменить ноут по гарантии. Увлеченный человек и очень интересно пишет
+* [OpenDiablo2](https://github.com/OpenDiablo2/OpenDiablo2) -- Diablo 2 переписали на Golang
+
+Хорошей вам недели!
