@@ -1,0 +1,20 @@
+---
+layout: post
+title: "Ссылки #88"
+date: 2020-08-01 09:58
+image: https://static.juev.org/images/links.jpg
+tags:
+  - links
+---
+За прошедшую неделю сохранил 71 ссылку.
+
+* [sharkdp/hexyl](https://github.com/sharkdp/hexyl) --  A command-line hex viewer
+* [10 Reasons to Use Haskell](https://serokell.io/blog/10-reasons-to-use-haskell) -- преимущества Haskell
+* [Highlights from Git 2.28](https://github.blog/2020-07-27-highlights-from-git-2-28/) -- нет расизму в Git, теперь можно использовать иное имя для основной ветки разработки
+* [Firefox Relay protects your email address from hackers and spammers](https://blog.mozilla.org/firefox/firefox-relay) -- новый сервис от Mozilla для защиты электроной почты. Сейчас пока в beta-статусе
+* [How Google manages open source](https://blog.tidelift.com/how-google-manages-open-source) -- о преимуществах монорепы
+* [mre/idiomatic-rust](https://github.com/mre/idiomatic-rust) -- список проверенных статей про Rust
+* [A Thorough Beginner’s Guide to Roam Research](https://thesweetsetup.com/a-thorough-beginners-guide-to-roam-research/) -- обзор сервиса Roam Research, рекомендую обратить внимание
+* [How we migrated Dropbox from Nginx to Envoy](https://dropbox.tech/infrastructure/how-we-migrated-dropbox-from-nginx-to-envoy) -- интересное про инфраструктуру Dropbox
+
+Хорошей вам недели!
