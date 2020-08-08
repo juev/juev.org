@@ -1,0 +1,21 @@
+---
+title: "Ссылки #89"
+date: 2020-08-08T09:40:19+0300
+image: https://static.juev.org/images/links.jpg
+tags:
+  - links
+---
+За прошедшую неделю сохранил 57 ссылок.
+
+* [Monitoring server applications with Vortex](https://dropbox.tech/infrastructure/monitoring-server-applications-with-vortex) -- Dropbox рассказывает про свою систему мониторинга
+* [Taking ML to production with Rust: a 25x speedup](https://lpalmieri.com/posts/2019-12-01-taking-ml-to-production-with-rust-a-25x-speedup/) -- использование Rust в машинном обучении привело к увеличению скорости работы в 25 раз
+* [mailgo · a new concept of mailto and tel links](https://mailgo.dev/) -- интересный концепт ссылок
+* [50 Developer tools to make your life a little easier](https://dev.to/iainfreestone/50-developer-tools-to-make-your-life-a-little-easier-4oc5) -- утилиты для упрощения работы
+* [Go vs Rust: Writing a CLI tool](https://cuchi.me/posts/go-vs-rust) -- сравнение Go и Rust
+* [9 Rust authentication libraries that are ready for production](https://blog.logrocket.com/9-rust-authentication-libraries-that-are-ready-for-production/) -- библиотеки для аутентификации в Rust
+* [How to speed up the Rust compiler some more in 2020](https://blog.mozilla.org/nnethercote/2020/08/05/how-to-speed-up-the-rust-compiler-some-more-in-2020/) -- как ускорить компиляцию Rust
+* [Easy OCR](https://github.com/JaidedAI/EasyOCR) -- библиотека для распознавания текстов на многих языках с изображений
+* [Miniflux](https://miniflux.app/) -- еще раз упоминаю ссылку на miniflux, которым пользуюсь на протяжении нескольких месяцев. Переписали на Go, стал удобнее
+* [Haskell — язык, позволяющий глубже понять программирование. Как он устроен и почему его выбирают разработчики?](https://ru.hexlet.io/blog/posts/haskell-yazyk-pozvolyayuschiy-glubzhe-ponyat-programmirovanie-kak-on-ustroen-i-pochemu-ego-vybirayut-razrabotchiki) -- про Haskell от ряда авторов и разработчиков, обратите внимание
+
+Хорошей вам недели!
