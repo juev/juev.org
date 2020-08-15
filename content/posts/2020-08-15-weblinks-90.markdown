@@ -1,0 +1,24 @@
+---
+title: "Ссылки #90"
+date: 2020-08-15T19:14:56+0300
+image: https://static.juev.org/images/links.jpg
+tags:
+  - links
+---
+Прошедшая неделя была очень оживленной в плане новостей, тут тебе и Mozilla уволила 250 сотрудников, против Apple и Google открываются новые судебные тяжбы. Выход версии Golang 1.15, и много чего еще. Но обо всем по порядку. За эту неделю сохранил 87 ссылок.
+
+* [Build, notarize, and sign Golang binaries for MacOS with GitHub Actions](https://www.kencochrane.com/2020/08/01/build-and-sign-golang-binaries-for-macos-with-github-actions/) -- как использовать Github Action для сборки подписанных Golang приложений, что можно использовать на MacOS без предупреждений
+* [Why QEMU should move from C to Rust](https://blog.vmsplice.net/2020/08/why-qemu-should-move-from-c-to-rust.html) -- почему QEMU должны перейти на использование Rust, хорошее объяснение, и объяснение причин, почему это не произойдет в ближайшее время
+* [rustlings 🦀❤️](https://github.com/rust-lang/rustlings) -- упражнения для изучения Rust
+* [Cargo [features] explained with examples](https://dev.to/rimutaka/cargo-features-explained-with-examples-194g) -- описание возможностей Rust
+* [Emacs 27.1 released](https://lists.gnu.org/archive/html/emacs-devel/2020-08/msg00237.html) -- вышла версия 27.1 емакса
+* [SetApp Now Includes iOS Apps](https://thesweetsetup.com/setapp-now-includes-ios-apps/) -- SetApp теперь включает в подписку iOS приложения. Правда за дополнительную плату
+* [Impulse 🔔](https://github.com/shekohex/impulse) -- программа на Rust, которая позволяет отправлять нотификации по завершению выполнения заданной команды
+* [Go 1.15 Release Notes](https://golang.org/doc/go1.15) -- релизнотсы новой версии Golang
+* [Changing World, Changing Mozilla](https://blog.mozilla.org/blog/2020/08/11/changing-world-changing-mozilla) -- мозилла делиться своими планами
+* [Что происходит с сегментом BY (Беларусь) в терминах BGP и IPv4/IPv6](https://telegra.ph/What-is-happening-with-the-BY-internet-segment-in-terms-of-BGP-and-IPv4IPv6-08-11) -- что происходит в интернете Беларусии
+* [rust-cross](https://github.com/japaric/rust-cross) -- все что необходимо знать о кросскомпиляции в Rust
+* [Keychron K8 Wireless Mechanical Keyboard](https://www.keychron.com/products/keychron-k8-tenkeyless-wireless-mechanical-keyboard) -- еще одна механическая клавиатура, на которую стоит обратить внимание
+* [zackify/cli.rs](https://github.com/zackify/cli.rs) -- использование домена вида `*.cli.rs` через создание PR в Github
+
+Хорошей вам недели!
