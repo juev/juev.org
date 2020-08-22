@@ -1,0 +1,30 @@
+---
+title: "Ссылки #91"
+date: 2020-08-22T10:17:46+0300
+image: https://static.juev.org/images/links.jpg
+tags:
+  - links
+---
+За прошедшую неделю сохранил 78 ссылок. Сама по себе неделя была очень насыщенной, складывалось впечатление, что почти ничего не нашел и почти ничего не читал. Но подводим итоги, есть нечто интересное.
+
+* [konfy](https://www.youtube.com/channel/UCiCM4CjouAflq5FlyehNoBg) -- целый набор видео с докладами по Haskell
+* [GoSpider](https://github.com/jaeles-project/gospider) -- Gospider - Fast web spider written in Go
+* [From Python to Go: migrating our entire API](https://www.repustate.com/blog/migrating-entire-api-go-python/) -- миграция с Питона на Go и описание причин
+* [Create a Serverless Application in Golang With Aws – Shubham Chadokar](https://schadokar.dev/posts/create-a-serverless-application-in-golang-with-aws/) -- создание Go-приложения в AWS Lambda
+* [Shopify/sarama](https://github.com/Shopify/sarama) -- библиотека Golang для работы с Kafka
+* [Dear Google Cloud: Your Deprecation Policy is Killing You](https://medium.com/@steve.yegge/dear-google-cloud-your-deprecation-policy-is-killing-you-ee7525dc05dc) -- что не так с политикой Google
+* [Parsers](https://github.com/apex/parsers) -- Performant Go log format parsers
+* [Containers the hard way: Gocker: A mini Docker written in Go](https://github.com/shuveb/containers-the-hard-way) -- имплементация контейнеров на Golang
+* [Bits, Bytes, and Byte Slices in Go](https://medium.com/@tyler_brewer2/bits-bytes-and-byte-slices-in-go-8a99012dcc8f) -- описание структур данных в Golang
+* [What's New in Emacs 27.1?](https://www.masteringemacs.org/article/whats-new-in-emacs-27-1) -- подробный разбор новшеств Emacs 27.1
+* [twtxt](https://github.com/prologic/twtxt) -- 📕 twtxt is a Self-Hosted, Twitter™-like Decentralised microBlogging platform. No ads, no tracking, your content, your data!
+* [edn-format/edn](https://github.com/edn-format/edn) -- спека от Рича Хики по формату данных EDN
+* [Learning Assembly Language - A Helpful Guide [Part 1]](https://www.techteaching.co.uk/posts/learning-assembly-language-a-helpful-guide-part-1) -- первая часть группы статей по обучению ассемблеру
+* [Writing an Emacs module in Rust](https://ryanfaulhaber.com/posts/first-emacs-module-rust/) -- написание emacs-модулей на Rust
+* [GopherCon Russia 2020 August](https://www.youtube.com/playlist?list=PLJTW0ZQ22rrEtvqbz0rxhNQTm0bkJV4Nb) -- видео с конференции по Golang
+* [RustConf 2020](https://www.youtube.com/watch?v=ESXMg9OzWrQ&feature=emb_title) -- видео с конференции по Rust
+* [ent · An entity framework for Go](https://entgo.io/) -- ORM-фреймворк на Golang
+* [Task](https://taskfile.dev/#/) -- альтернатива make нп Golang с описанием в yaml-формате
+* [fast.ai releases new deep learning course, four libraries, and 600-page book · fast.ai](https://www.fast.ai/2020/08/21/fastai2-launch/) -- новые библиотеки по глубокому обучению
+
+Хорошей вам недели!
