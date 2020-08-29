@@ -1,0 +1,25 @@
+---
+title: "Ссылки #92"
+date: 2020-08-29T10:58:00+0300
+image: https://static.juev.org/images/links.jpg
+tags:
+  - links
+---
+За прошедшую неделю сохранил 54 ссылки.
+
+* [RustConf 2020 Summary](https://github.com/poteto/rustconf-2020) -- ссылки с конференции RustConf 2020
+* [matryer/moq](https://github.com/matryer/moq) -- Interface mocking tool for go generate
+* [RSSHub](https://github.com/DIYgod/RSSHub) -- генерация RSS из сторонних источников
+* [Eldev](https://github.com/doublep/eldev) -- альтернатива Cask для Emacs, написанная на elisp
+* [The Folgezettel Conundrum](https://medium.com/@ethomasv/the-folgezettel-conundrum-20b14dc986ec) -- немного иная концепция ведения заметок, чем Zettelkasten
+* [Как развалить систему образования за семь шагов?](https://zen.yandex.ru/media/physics_math/kak-razvalit-sistemu-obrazovaniia-za-sem-shagov-5f440c5b089db813d2bb739b) -- не технологичная, но "правильная" статья про образование в России
+* [betty200744/ultimate-go](https://github.com/betty200744/ultimate-go) -- заметки про работу с Golang и компьютерные системы
+* [How NAT traversal works](https://tailscale.com/blog/how-nat-traversal-works/) -- статья от Tailscale по работе с Nat и фаерволами
+* [Using Go at Google](https://go.dev/solutions/google/) -- как Google использует Golang в своих сервисах
+* [Adding todos with SMS](https://www.kevincunningham.co.uk/posts/emacs-sms-todo) -- как используют sms для создания todo в Emacs
+* [organice - /’ɔ:gənaɪz/](https://github.com/200ok-ch/organice) -- org-mode в вебе, работающий вариант можно найти на сайте [organice](https://organice.200ok.ch/)
+* [p-ranav/awesome-hpp](https://github.com/p-ranav/awesome-hpp) -- A curated list of awesome header-only C++ libraries
+* [Mu for Haskell](https://github.com/higherkindness/mu-haskell) -- Mu (μ) is a purely functional framework for building micro services
+* [modernc.org/sqlite](https://godoc.org/modernc.org/sqlite) -- sqlite библиотека для Golang без использования cgo
+
+Хороших вам выходных!
