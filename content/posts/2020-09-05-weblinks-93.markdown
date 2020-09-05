@@ -1,0 +1,23 @@
+---
+title: "Ссылки #93"
+date: 2020-09-05T10:21:19+0300
+image: https://static.juev.org/images/links.jpg
+tags:
+  - links
+---
+За прошедшую неделю сохранил 52 ссылки.
+
+* [«Современный» C++: сеанс плача с причитаниями](https://habr.com/ru/company/jugru/blog/438260/) -- хорошая статья с описанием основных проблем современного C++
+* [sjwhitworth/golearn](https://github.com/sjwhitworth/golearn) --  Machine Learning for Go
+* [selfupdate: Build self-updating Go programs](https://github.com/minio/selfupdate) -- Build self-updating Go programs
+* [Molecule](https://github.com/richardartoul/molecule) -- Molecule is a Go library for parsing protobufs in an efficient and zero-allocation manner
+* [Dhghomon/easy_rust](https://github.com/Dhghomon/easy_rust) -- Rust explained using easy English
+* [(N)vim for Clojure development Aug 24, 2020](https://tomekw.com/nvim-for-clojure-development/) -- конфигурация nvim для работы с Clojure
+* [🔥 Как выбрать внешний монитор для MacBook и не пожалеть о покупке](https://macosworld.ru/external-monitor-for-macbook/) -- Влад Гороховский описывает про выбор монитора для макбука
+* [Why is Facebook not Paying the Apple Tax?](https://ia.net/topics/why-is-facebook-not-paying-the-apple-tax) -- почему Facebook не платит Apple?
+* [Introducing GitHub Container Registry](https://github.blog/2020-09-01-introducing-github-container-registry/) -- Github анонсировали Container Registry
+* [Go: Multiple Errors Management](https://medium.com/a-journey-with-go/go-multiple-errors-management-a67477628cf1) -- интересная концепция обработки ошибок в Golang от Uber
+* [Artist creates gorgeous sketches using an analog typewriter](https://boingboing.net/2020/09/01/artist-creates-gorgeous-sketch.html) -- красивые работы, сделанные печатной машинкой
+* [Интервью с Дональдом Кнутом](https://vk.com/@physics_math-intervu-s-donaldom-knutom)
+
+Хорошей вам недели!
