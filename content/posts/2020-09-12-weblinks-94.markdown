@@ -1,0 +1,24 @@
+---
+title: "Ссылки #94"
+date: 2020-09-12T09:10:13+0300
+image: https://static.juev.org/images/links.jpg
+tags:
+  - links
+---
+Ну вот, IFTTT переходят на подписку. И сегодня я не получил очередного письма со своими ссылками. Таким образом нужно снова что-то придумывать и что-то предпринимать. Не могу сказать, сколько ссылок я сохранил, просто пройдусь по тем, что зацепили меня.
+
+* [willkurt/CS326-Haskell](https://github.com/willkurt/CS326-Haskell) -- Lecture notes and sample code for the Haskell portion of UNR's CS 326
+* [How to speed up the Rust compiler one last time](https://blog.mozilla.org/nnethercote/2020/09/08/how-to-speed-up-the-rust-compiler-one-last-time/) -- пути ускорения компилятора Rust
+* [sethvargo/go-limiter](https://github.com/sethvargo/go-limiter) -- A supersonic rate limiting package for Go with HTTP middleware
+* [OpenAPI.tools](https://openapi.tools/) -- список утилит по работе с OpenAPI
+* [danielgtaylor/restish](https://github.com/danielgtaylor/restish) -- Restish is a CLI for interacting with REST-ish HTTP APIs with some nice features built-in
+* [BitTorrent v2](https://blog.libtorrent.org/2020/09/bittorrent-v2/) -- новая версия протокола BitTorrent
+* [tailscale/depaware](https://github.com/tailscale/depaware) -- depaware makes you aware of your Go dependencies
+* [Deserializing JSON really fast](https://blog.datalust.co/deserializing-json-really-fast/) -- обзор быстрого json-парсера
+* [Rust GitHub Template](https://rust-github.github.io/) -- быстрое создание Rust-проекта из темплейта
+* [aspenluxxxy/nanorand-rs](https://github.com/aspenluxxxy/nanorand-rs) -- A tiny, fast, zero-dep library for random number generation
+* [ICFP Contest 2020 от идеи до воплощения. Как организовать контест и выжить](https://habr.com/ru/company/skbkontur/blog/518490/) -- статья про организацию IPCP Contest 2020
+* [Kindness for Mean Girls: a discussion on type-level programming in Haskell](https://www.aymannadeem.com/haskell/2020/05/15/Kindness-for-Mean-Girls.html) -- про использование типов в Haskell
+* [Rust: Structuring and handling errors in 2020](https://nick.groenen.me/posts/rust-error-handling/) -- обработка ошибок в Rust
+
+Хорошей вам недели!
