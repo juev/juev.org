@@ -1,0 +1,23 @@
+---
+layout: post
+title: "Ссылки #95"
+date: 2020-09-19 08:41
+image: https://static.juev.org/images/links.jpg
+tags:
+  - links
+---
+Сегодня IFTTT отработал нормально, вероятно по причине удаления "лишних" аплетов. И письмо пришло вовремя.
+
+За прошедшую неделю сохранил 49 ссылок.
+
+* [Технологии фондового рынка: 10 заблуждений о нейронных сетях](https://habr.com/ru/company/iticapital/blog/302120/) -- статья 2016 года, но все еще актуальна и интересна
+* [vasanthv/talk](https://github.com/vasanthv/talk) -- A group video call for the web. No signups. No downloads
+* [hackstream/zettel](https://github.com/hackstream/zettel) -- программа на Golang для ведения заметок по методу zettelkasten
+* [Как собрать компьютер для ML](https://habr.com/ru/company/jetinfosystems/blog/480482/) -- ML не только очень интересная технология, но и очень затратная по ресурсам. В статье описывается вариант построения компьютера для вычислений
+* [Deep Diamond - Deep Learning in Clojure is Fast, Simpler than Keras](https://dragan.rocks/articles/20/Deep-Diamond-Deep-Learning-in-Clojure-is-Fast-and-Simpler-than-Keras) -- немного про ML на Clojure
+* [Boosting numpy : Why BLAS Matters](https://markus-beuckelmann.de/blog/boosting-numpy-blas.html) -- намучился с Python за эту неделю, а это просто один из примеров что не все так просто в этом мире
+* [KeySeeBee](https://github.com/TeXitoi/keyseebee) -- пример самодельной клавиатуры с прошивкой на Rust
+* [gorgonia/gorgonia](https://github.com/gorgonia/gorgonia) -- Gorgonia is a library that helps facilitate machine learning in Go. На этот раз с минимальным использованием cgo
+* [ory/oathkeeper](https://github.com/ory/oathkeeper) -- A cloud native Identity & Access Proxy / API (IAP) and Access Control Decision API that authenticates, authorizes, and mutates incoming HTTP(s) requests. Inspired by the BeyondCorp / Zero Trust white paper. Written in Go
+
+Хорошей вам недели!
