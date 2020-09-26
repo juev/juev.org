@@ -1,0 +1,26 @@
+---
+layout: post
+title: "Ссылки #96"
+date: 2020-09-26 10:40
+image:
+tags:
+  - links
+---
+За прошедшую неделю сохранил 72 ссылки. Лучшее представляю вам.
+
+* [Debugging Go in prod using eBPF](https://blog.pixielabs.ai/blog/ebpf-function-tracing/post/) -- интересная статья из серии про отладку ПО в рабочем окружении
+* [yarr](https://github.com/nkanaev/yarr) -- yet another rss reader
+* [schollz/croc](https://github.com/schollz/croc) -- Easily and securely send things from one computer to another 🐊 📦
+* [moshebe/gebug](https://github.com/moshebe/gebug) -- Debug Dockerized Go applications better
+* [Ecarlosedp/lbconfig-operator](https://github.com/carlosedp/lbconfig-operator) -- A Kubernetes/Openshift Operator to configure external Load Balancers
+* [How we tracked down (what seemed like) a memory leak in one of our Go microservices](https://blog.detectify.com/2019/09/05/how-we-tracked-down-a-memory-leak-in-one-of-our-go-microservices/) -- про отслеживание утечек памяти в golang приложениях
+* [blackjack4494/youtube-dlc](https://github.com/blackjack4494/youtube-dlc) -- youtube-dlc is a fork of youtube-dl with the intention of getting features tested by the community merged in the tool faster, since youtube-dl's development seems to be slowing down
+* [adept/full-fledged-hledger](https://github.com/adept/full-fledged-hledger) -- Tutorial on Hledger setup with multi-year files, multi-source imports and a range of auto-generated reports
+* [Shake build system](http://shakebuild.com/) -- система сборки на Haskell
+* [Lazy Sort: Counting Comparisons](https://jaspervdj.be/posts/2020-09-17-lazysort.html) -- использование ленивости в сортировке на Haskell
+* [A wreq tutorial](http://www.serpentine.com/wreq/tutorial.html) -- описание использования Haskell web client library
+* [The Dhall configuration language](https://dhall-lang.org/) -- программирование конфигурационных файлов с обеспечением гарантии корректности
+* [Git Internals by Nikita Leshenko](https://www.leshenko.net/p/ugit/) -- написание Git клиента на Python
+* [IFTTT Pro: Power Users Rejoice](https://merecivilian.com/iftttpro/) -- IFTTT наконец описали, чем отличается бесплатная версия от PRO
+
+Хорошей вам недели!
