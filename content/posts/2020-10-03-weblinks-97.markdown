@@ -1,0 +1,23 @@
+---
+layout: post
+title: "Ссылки #97"
+date: 2020-10-03 11:16
+image:
+tags:
+  - links
+---
+За прошедшую неделю сохранил 71 ссылку.
+
+* [ChrisPenner/slick](https://github.com/ChrisPenner/slick) -- Static site generator built on Shake configured in Haskell
+* [Haskell binaries release with GitHub Actions](https://vrom911.github.io/blog/github-actions-releases) -- статья Вероники Ромашкиной про сборку бинарных файлов в Haskell-проекте
+* [kowainik/relude](https://github.com/kowainik/relude) -- 🌀 Safe, performant, user-friendly and lightweight Haskell standard library
+* [Лаборатория Тинькофф: как студенты разрабатывают визуального робота](https://habr.com/ru/company/tinkoff/blog/520052/) -- про образовательный проект Тинькофф и про его проекты
+* [nomeata/haskell-via-sokoban](https://github.com/nomeata/haskell-via-sokoban) -- A haskell tutorial using CodeWorld
+* [Battery Day](https://blog.jessfraz.com/post/battery-day/) -- статья Джесси Фразель про презентацию Теслы
+* [learn4haskell](https://github.com/kowainik/learn4haskell) -- 👩‍🏫 👨‍🏫 Learn Haskell basics in 4 pull requests. Проект Дмитрия Кованикова и Вероники Ромашкиной, посвященному обучению Haskell. Выполняете задачния, создаете 4 PR и получаете обзор кода и рекомендации.
+* [KMonad](https://github.com/david-janssen/kmonad) -- An advanced keyboard manager. Правда для использования в OSX потребуется установка кернел-модулей
+* [govnokod.ru/haskell](http://govnokod.ru/haskell) -- как не нужно писать на Haskell
+* [resume.md](https://github.com/williamsmj/resume.md) -- Write your resume in Markdown, style it with CSS, output to HTML and PDF
+* [Firefox Relay](https://relay.firefox.com/) -- сервис пока в beta режиме, и не понятна его дальнейшая судьба. Сервис для скрытия своего почтового адреса при регистрации
+
+Хорошей вам недели!
