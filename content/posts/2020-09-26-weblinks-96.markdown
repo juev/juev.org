@@ -2,7 +2,7 @@
 layout: post
 title: "Ссылки #96"
 date: 2020-09-26 10:40
-image:
+image: https://static.juev.org/images/links.jpg
 tags:
   - links
 ---
