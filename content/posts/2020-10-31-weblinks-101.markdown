@@ -1,0 +1,24 @@
+---
+title: "Ссылки #101"
+date: 2020-10-31T10:38:06+0300
+image: https://static.juev.org/images/links.jpg
+tags:
+  - links
+---
+За прошедшую неделю сохранил 59 ссылок.
+
+* [Chronos](https://github.com/amit-davidson/Chronos) -- A static race detector for the go language
+* [Dealing with Optional Parameters in Go](https://medium.com/@petomalina/dealing-with-optional-parameters-in-go-9780f9bfbd1d) -- как реализуются опциональные параметры функций в Golang
+* [karlicoss/spotifyexport](https://github.com/karlicoss/spotifyexport) -- Export your personal Spotify data: playlists, saved tracks/albums/shows, etc. as JSON
+* [go-interview](https://github.com/shomali11/go-interview) -- Collection of Technical Interview Questions solved with Go
+* [taskflow](https://github.com/pellared/taskflow) -- Create build pipelines in Go
+* [⚡️ nat ⚡️](https://github.com/willdoescode/nat) -- Nat is a complete replacement for the 'ls' command
+* [go-echarts](https://github.com/go-echarts/go-echarts) -- 🎨 The adorable charts library for Golang
+* [Возрастное](https://grishaev.me/getting-older/) -- Иван Гришаев очень хорошо описал, что меняется с возрастом
+* [dmjio/miso](https://github.com/dmjio/miso) -- 🍜 A tasty Haskell front-end framework
+* [fastbuild/fastbuild](https://github.com/fastbuild/fastbuild) -- High performance build system for Windows, OSX and Linux. Supporting caching, network distribution and more.
+* [Бьярне Страуструп о контроле над языком, удалении старых функций, заимствованиях у Rust и многом другом](https://habr.com/ru/company/jugru/blog/525288/) -- интервью с создателем языка C++
+* [rvirding/lfe](https://github.com/rvirding/lfe) --  Lisp Flavoured Erlang (LFE)
+* [innaky/lg](https://github.com/innaky/lg) -- 🔥 List greater files or lg (Free Unix-like binary command)
+
+Хорошей вам недели!
