@@ -1,0 +1,24 @@
+---
+title: "Ссылки #102"
+date: 2020-11-07T15:22:28+0300
+image: https://static.juev.org/images/links.jpg
+tags:
+  - links
+---
+Прошедшая неделя ознаменовалась отказом от твиттера. Целую неделю провел не читая сообщений. Но даже в этом случае сохранил 34 ссылки.
+
+* [awk: `BEGIN { ...`](https://jemma.dev/blog/awk-part-1) -- изучение языка программирования за 2 часа? Вызов принят!
+* [A Principled, Complete, and Efficient Representationof C++](https://www.stroustrup.com/macis09.pdf) -- PDF от Бьерна Страуструпа по изменениям в C++
+* [Thriving in a Crowded and Changing World: C++ 2006–2020](https://dl.acm.org/doi/pdf/10.1145/3386320) -- еще одно произведение Бьерна по истории языка C++ на 168 страницах
+* [datasciencemasters/go](https://github.com/datasciencemasters/go) -- The Open Source Data Science Masters
+* [feuerbach/tasty](https://github.com/feuerbach/tasty) -- Modern and extensible testing framework for Haskell
+* [Ox editor](https://github.com/curlpipe/ox) -- An independent Rust text editor that runs in your terminal! Пока довольно простой, но планов много
+* [ron-rs/ron](https://github.com/ron-rs/ron) -- Rusty Object Notation, описание структур данных с помощью Rust-типов
+* [Hierarchical Free Monads: The Most Developed Approach In Haskell](https://github.com/graninas/hierarchical-free-monads-the-most-developed-approach-in-haskell) -- Big article about Hierarchical Free Monads, the most developed approach to build real software in Haskell
+* [google/gitiles](https://github.com/google/gitiles) -- A simple browser for Git repositories
+* [sosedoff/gitkit](https://github.com/sosedoff/gitkit) -- Git toolkit for Go: Smart HTTP server, SSH server, hook receiver
+* [Making a small game with Gloss](https://herebeseaswines.net/essays/2020-11-01-making-a-small-game-with-gloss) -- эссе по написанию игр на Haskell
+* [Using Rust for a simple hardware project](https://blog.tonari.no/rust-simple-hardware-project) -- использование Rust для управления оборудованием
+* [Go Channels Internals / Егор Гришечко (Insolar)](https://www.youtube.com/watch?v=Tp5xhTMFuLU) -- о внутренностях Go-каналов
+
+Хорошей вам недели!
