@@ -1,0 +1,27 @@
+---
+layout: post
+title: "Ссылки #103"
+date: 2020-11-14 10:59
+image: https://static.juev.org/images/links.jpg
+tags:
+  - links
+---
+За прошедушую неделю сохранил 54 ссылки.
+
+* [snsinfu/reverse-tunnel](https://github.com/snsinfu/reverse-tunnel) -- Reverse tunnel TCP and UDP
+* [🚀 Visualizing memory management in Golang](https://deepu.tech/memory-management-in-golang/) -- про работу с памятью в Golang
+* [edent/SuperTinyIcons](https://github.com/edent/SuperTinyIcons) -- Under 1KB each! Super Tiny Icons are miniscule SVG versions of your favourite website and app logos
+* [logfmt](https://github.com/go-logfmt/logfmt) -- Package logfmt marshals and unmarshals logfmt messages
+* [SOPS: Secrets OPerationS](https://github.com/mozilla/sops) -- Simple and flexible tool for managing secrets
+* [oneinfra](https://github.com/oneinfra/oneinfra) -- Kubernetes as a Service
+* [Privacy Badger Is Changing to Protect You Better](https://www.eff.org/deeplinks/2020/10/privacy-badger-changing-protect-you-better) -- описание изменений в работе расширения Privacy Badger. С каждым изменением работает все лучше и лучше
+* [Eleven Years of Go](https://blog.golang.org/11years) -- языку Go исполнилоось 11 лет
+* [json-to-haskell](https://github.com/ChrisPenner/json-to-haskell) -- программа для генерации Haskell структур на основе json
+* [koekeishiya/skhd](https://github.com/koekeishiya/skhd) -- Simple hotkey daemon for macOS
+* [Platypus](http://sveinbjorn.org/platypus) -- программа, позволяющая из скриптов создавать полноценные MacOS приложения
+* [soupi/learn-haskell-blog-generator](https://github.com/soupi/learn-haskell-blog-generator) -- Learning Haskell by building a simple static blog generator, one commit at a time
+* [No free lunch. Введение в участие в соревнованиях по анализу данных на платформе Kaggle](https://habr.com/ru/post/323938/) -- про соревнования Kaggle от одного из участников
+* [galeone/tfgo](https://github.com/galeone/tfgo) -- Tensorflow + Go, the gopher way
+* [kitabisa/teler](https://github.com/kitabisa/teler) -- Real-time HTTP Intrusion Detection
+
+Хорошей вашм недели!
