@@ -1,0 +1,23 @@
+---
+layout: post
+title: "Ссылки #104"
+date: 2020-11-21 10:29
+image: https://static.juev.org/images/links.jpg
+tags:
+  - links
+---
+За прошедшую неделю сохранил 61 ссылку.
+
+* [What is Play with Go?](https://play-with-go.dev/about) -- новый ресурс по изучению Golang
+* [Bind The Gap](https://bindthegap.news) -- новостная рассылка по функциональному программированию от Дмитрия Кованикова и Вероники Ромашкиной. Первый выпуск ожидается
+* [Your Computer Isn't Yours 12 November 2020](https://sneak.berlin/20201112/your-computer-isnt-yours/) -- владельцам маков рекомендуется к прочтению. Apple собирает очень много информации о пользователях, вплоть до того, какие программы и где вы их используете
+* [This is how I git](https://daniel.haxx.se/blog/2020/11/09/this-is-how-i-git/) -- описание рабочей схемы использования Git. Какие сокращения используются, как проводиться исправление, и тп
+* [Implementing Zettelkasten in Roam: A practical guide](https://www.roambrain.com/implementing-zettelkasten-in-roam/) -- если вы пользователь Roam, то это инструкция для вас, как использовать его для техники ведения заметок Zettelkasten
+* [Black Friday deal](https://protonvpn.com/blackfriday) -- временное предложение от ProtonVPN, почта и впн за полцены
+* [Graphics for JVM](https://tonsky.me/blog/skija/) -- Никита Прокопов рассказал про библиотеки для создания GUI
+* [objective-see/LuLu](https://github.com/objective-see/LuLu) -- LuLu is the free macOS firewall. В новой версии MacOS не проверял
+* [Firefox 83 introduces HTTPS-Only Mode](https://blog.mozilla.org/security/2020/11/17/firefox-83-introduces-https-only-mode) -- Firefox теперь может по умолчанию использовать HTTPS-Only режим, предупреждая о том, что используется небезопасная версия
+* [americanexpress/earlybird](https://github.com/americanexpress/earlybird) -- EarlyBird is a sensitive data detection tool capable of scanning source code repositories for clear text password violations, PII, outdated cryptography methods, key files and more
+* [Apple cuts 30% commission to 15% for small developers](https://ia.net/topics/apple-cuts-30-commission-to-15-for-small-developers) -- хорошая новость для разработчиков, Apple уменьшает комиссию для определенных категорий программистов
+
+Хорошей вам недели!
