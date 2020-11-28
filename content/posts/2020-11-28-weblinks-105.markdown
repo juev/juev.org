@@ -1,0 +1,23 @@
+---
+layout: post
+title: "Ссылки #105"
+date: 2020-11-28 12:50
+image: https://static.juev.org/images/links.jpg
+tags:
+  - links
+---
+За прошедшую неделю сохранил только 35 ссылок. Это не связано с тем, что мало стал читать, или что мало стали публиковать интересного. Больше времени уделяю семье и работе.
+
+* [Nickel: better configuration for less](https://www.tweag.io/blog/2020-10-22-nickel-open-sourcing/) -- Nickel is an experimental configuration language developed at Tweag
+* [Dev Fonts](https://devfonts.gafi.dev/) -- список шрифтов, рекомендованных для использования в разработке
+* [Reusable development containers with Docker Compose and Dip](https://evilmartians.com/chronicles/reusable-development-containers-with-docker-compose-and-dip) -- So, I only installed Git, Docker, and Dip on my new computer to see how productive I can be with a barebones system setup
+* [Ping, but with a graph](https://github.com/orf/gping) -- консольное приложение на Rust, отображение результата ping в виде графики
+* [k0s - Zero Friction Kubernetes](https://github.com/k0sproject/k0s) -- k0s is an all-inclusive Kubernetes distribution with all the required bells and whistles preconfigured to make building a Kubernetes clusters a matter of just copying an executable to every host and running it
+* [PostgREST/postgrest](https://github.com/PostgREST/postgrest) --  REST API for any Postgres database on Haskell
+* [Certified Kubernetes Security Specialist (CKS)](https://github.com/walidshaari/Certified-Kubernetes-Security-Specialist) -- Online curated resources that will help you prepare for taking the Kubernetes Certified Kubernetes Security Specialist CKS Certification exam
+* [Как стать специалистом по Data Science](https://praktikum.yandex.ru/praktikum.yandex.ru/data-scientist) -- практикум от Яндекса по Науке о данных. Хорошо структурированный курс, правда не из дешевых
+* [entr: rerun your build when files change](https://jvns.ca/blog/2020/06/28/entr/) -- очередная статья от Julia Evans про entr, автоматический запуск тестов или команд при изменении файлов
+* [upptime/upptime](https://github.com/upptime/upptime) -- Uptime monitor and status page powered by GitHub
+* [cargo-mobile](https://github.com/BrainiumLLC/cargo-mobile) -- cargo-mobile takes care of generating Xcode and Android Studio project files, building and running on device, generating project boilerplate, and a few other things
+
+Хорошей вам недели!
