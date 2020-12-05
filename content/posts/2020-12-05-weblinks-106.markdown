@@ -1,0 +1,22 @@
+---
+layout: post
+title: "Ссылки #106"
+date: 2020-12-05 10:31
+image: https://static.juev.org/images/links.jpg
+tags:
+  - links
+---
+За прошедшую неделю сохранил 41 ссылку.
+
+* [vhakulinen/gnvim](https://github.com/vhakulinen/gnvim) -- GUI for neovim, without any web bloat
+* [Базы данных в Clojure (1)](https://grishaev.me/clj-jdbc-1/) -- начало серии статей по базам данных в кложе
+* [Linear base](https://github.com/tweag/linear-base) -- Standard library for linear types in Haskell
+* [Implementing char-rnn with PyTorch](https://jvns.ca/blog/2020/11/30/implement-char-rnn-in-pytorch/) -- интересная статья по машинному обучению от Юлии Эванс
+* [Fermat's Library | Margins](https://fermatslibrary.com/margins) -- Save, annotate and share your papers with anyone
+* [New for AWS Lambda – Container Image Support](https://aws.amazon.com/blogs/aws/new-for-aws-lambda-container-image-support/) -- AWS Lambda теперь умеет запускать поризвольные контейнеры
+* [AlphaFold: a solution to a 50-year-old grand challenge in biology](https://deepmind.com/blog/article/alphafold-a-solution-to-a-50-year-old-grand-challenge-in-biology) -- с помощью машинного обучения решили задачу по проблеме сворачивания белка
+* [My journey into Haskell](https://gustavofranke.github.io/posts/2020-12-01-my-journey-into-haskell.html) -- один из вариантов изучения Haskell
+* [Не паникуйте: Kubernetes и Docker](https://habr.com/ru/company/flant/blog/531120/) -- перевод на русский новости из мира кубера
+* [Kubernetes Python Client](https://github.com/kubernetes-client/python) -- Python библиотека для работы с кубером
+
+Хорошей вам недели!
