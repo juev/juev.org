@@ -1,0 +1,23 @@
+---
+layout: post
+title: "Ссылки #107"
+date: 2020-12-12 10:04
+image: https://static.juev.org/images/links.jpg
+tags:
+  - links
+---
+За прошедшую неделю сохранил 71 ссылку. От Pocket получил уведомление о том что вошел в 1% самых активных пользователей.
+
+* [Radicle - Peer-to-peer code collaboration](https://radicle.xyz/) -- A peer-to-peer stack for building software together
+* [DevTerm | ClockworkPi](https://www.clockworkpi.com/devterm) -- Открыли предзаказы на PI-компьютеры
+* [openfaas/faasd](https://github.com/openfaas/faasd) -- A lightweight & portable faas engine. faasd is OpenFaaS reimagined, but without the cost and complexity of Kubernetes
+* [DigitalOcean Blog](https://www.digitalocean.com/blog/gear-up-for-pycon-2019-with-digitaloceans-free-python-machine-learning-projects-ebook/) -- Celebrate PyCon 2019 With Our Free Python Machine Learning Projects eBook
+* [TinyCheck](https://github.com/KasperskyLab/TinyCheck) -- TinyCheck allows you to easily capture network communications from a smartphone or any device which can be associated to a Wi-Fi access point in order to quickly analyze them
+* [Command Line Interface Guidelines](https://clig.dev/) -- хорошо структурированный документ по разработке CLI приложений
+* [Haskell Documentation with Haddock: Wishes'n'Tips](https://kowainik.github.io/posts/haddock-tips) -- Вероника Ромашкина и Дмитрий Коваников подготовили статью про подготовку документации в Haskell
+* [Get PyCharm, Support Python](https://www.jetbrains.com/lp/support-python) -- до конца декабря Jetbrain предоставляет скидку в 30% на Pycharm
+* [Depix](https://github.com/beurtschipper/Depix) -- Recovers passwords from pixelized screenshots
+* [On hiring Haskellers](https://gist.github.com/graninas/7daaccdc4de615be91d887d8ec0ecf0a) -- статья от Александра Гранина
+* [anuraghazra/github-readme-stats](https://github.com/anuraghazra/github-readme-stats) -- статистика для Github Readme
+
+Хорошей вам недели!
