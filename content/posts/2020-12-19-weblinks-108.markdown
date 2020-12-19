@@ -1,0 +1,26 @@
+---
+layout: post
+title: "Ссылки #108"
+date: 2020-12-19 10:27
+image: https://static.juev.org/images/links.jpg
+tags:
+  - links
+---
+За прошедшую неделю сохранил 74 ссылки.
+
+* [faasd - serverless with containerd](https://github.com/openfaas/faasd) -- A lightweight & portable faas engine
+* [GitAlias/gitalias](https://github.com/GitAlias/gitalias) -- Git alias commands for faster easier version control
+* [Управление окружением Python c Pipenv](https://habr.com/ru/post/413009/) -- описание использования pipenv
+* [WeblateOrg/weblate](https://github.com/WeblateOrg/weblate) -- Web based localization tool with tight version control integration
+* [Crush](https://github.com/liljencrantz/crush) -- Crush is a command line shell that is also a powerful modern programming language
+* [SOPS: Secrets OPerationS](https://github.com/mozilla/sops) -- Simple and flexible tool for managing secrets
+* [CentOS Linux is dead—and Red Hat says Stream is “not a replacement”](https://arstechnica.com/gadgets/2020/12/centos-shifts-from-red-hat-unbranded-to-red-hat-beta/) -- прощай Centos, с тобой было весело
+* [ieure/sicp](https://github.com/ieure/sicp) -- Structure and Interpretation of Computer Programs, Second Edition
+* [Как мы Redis Cluster готовили](https://habr.com/ru/post/320902/) -- как готовить редиску в кластере
+* [marshmallow: simplified object serialization](https://github.com/marshmallow-code/marshmallow) -- A lightweight library for converting complex objects to and from simple Python datatypes
+* [Deep Diamond](https://github.com/uncomplicate/deep-diamond) -- A fast Clojure Tensor & Deep Learning library
+* [Chrome is Bad](https://chromeisbad.com/) -- почему стоит удалить Chrome прямо сейчас
+* [Amazon Managed Service for Prometheus](https://aws.amazon.com/prometheus/) -- Амазон запускает прометеус в вид сервиса
+* [Organise your commits](https://www.ncameron.org/blog/organise-your-commits/)  -- учимся работать с комитами
+
+Хорошей вам недели!
