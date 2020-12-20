@@ -2,7 +2,7 @@
 layout: post
 title: "Miniflux on Heroku"
 date: 2020-12-20 13:07
-image:
+image: https://static.juev.org/2020/12/heroku.png
 tags:
   - heroku
   - miniflux
