@@ -1,0 +1,26 @@
+---
+layout: post
+title: "Ссылки #109"
+date: 2020-12-26 12:33
+image: https://static.juev.org/images/links.jpg
+tags:
+  - links
+---
+Последняя суббота уходящего 2020 года. А это значит, что и завершающий выпуск ссылок этого года.
+
+За эту неделю сохранил 83 ссылки.
+
+* [google/mundane](https://github.com/google/mundane) -- Mundane is a Rust cryptography library backed by BoringSSL that is difficult to misuse, ergonomic, and performant (in that order)
+* [Why I left the U.S. · Fatih Arslan](https://arslan.io/2020/12/20/why-i-left-the-us/) -- пандемия очень сильно меняет окружащий нас мир. Фатих принял решение вернуться в Турцию
+* [Lisp Project of the Day](http://40ants.com/lisp-project-of-the-day/) -- еще раз обращаю внимание на проект Александра Артеменко
+* [Automate Terraform with GitHub Actions](https://learn.hashicorp.com/tutorials/terraform/github-actions) -- про использование terraform в Github Actions
+* [GopherCon 2020](https://www.youtube.com/playlist?list=PL2ntRZ1ySWBfUint2hCE1JRxRWChloasB) -- видео с конференции GopherCon 2020
+* [NumPy Illustrated: The Visual Guide to NumPy](https://medium.com/better-programming/numpy-illustrated-the-visual-guide-to-numpy-3b1d4976de1d) -- хорошее введение в библиотеку NumPy
+* [yesodweb/persistent](https://github.com/yesodweb/persistent) -- Persistence interface for Haskell allowing multiple storage methods
+* [mitmath/18337](https://github.com/mitmath/18337) -- 18.337 - Parallel Computing and Scientific Machine Learning
+* [Coding up Bear.app blog workflow](https://www.youtube.com/watch?v=5ll2JM-Rj2o) -- Алесандр Соловьев рассказывает про свой воркфлоу при работе с сайтом
+* [I rewrote a Clojure tool in Rust](https://timofreiberg.github.io/clojure-vs-rust/) -- интересное сопоставление двух языков програмирования
+* [Self-hosting Kubernetes on your Raspberry Pi](https://blog.alexellis.io/self-hosting-kubernetes-on-your-raspberry-pi/) -- кубер на основе raspberry
+*  [Enhance your privacy in Firefox with Temporary Containers](https://medium.com/@stoically/enhance-your-privacy-in-firefox-with-temporary-containers-33925cd6cd21) -- про использование расширения Temporary Container в Firefox
+
+Хорошей вам недели! С наступающим Новым Годом!
