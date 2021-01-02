@@ -1,0 +1,29 @@
+---
+title: "Ссылки #110"
+date: 2021-01-02T10:22:34+0300
+image: https://static.juev.org/images/links.jpg
+tags:
+  - links
+---
+Привет вам в новом году! :smile:
+
+За прошедшую неделю сохранил в свой Pocket 83 ссылки.
+
+* [Using One Cron Parser Everywhere With Rust and Saffron](https://blog.cloudflare.com/using-one-cron-parser-everywhere-with-rust-and-saffron/) -- Cloudflare представляют свою библиотеку для парсинга Cron выражений, которую сами использую у себя
+* [fimad/prometheus-haskell](https://github.com/fimad/prometheus-haskell) -- Haskell client library for exposing prometheus.io metrics
+* [Сравнение одинакового проекта в Rust, Haskell, C++, Python, Scala и OCaml](https://habr.com/ru/post/456638/) -- перевод статьи, сравнение программ на разных языках по числу строк. Что интересно, проводится сопоставление программ, написанных на одном и том же языке, но разными разработчиками
+* [100 Tips for a Better Life](https://www.lesswrong.com/posts/7hFeMWC6Y5eaSixbD/100-tips-for-a-better-life) -- рекомендации из различных областей жизни
+* [Executable PNGs](https://djharper.dev/post/2020/12/26/executable-pngs/) -- описывается техника стеганографии по скрытию программы в png-файле
+* [Terraform GitHub Actions](https://github.com/dflook/terraform-github-actions) -- GitHub actions for terraform, интересный проект, но я пока пользуюсь официальным от Hashicorp
+* [(Haskell in Haskell) 0. Introduction](https://cronokirby.com/posts/2020/11/haskell-in-haskell-0/) -- создание Haskell с использованием Haskell, ссылка на первую статью из серии
+* [poacpm/poac](https://github.com/poacpm/poac) -- A package manager for C++, like Rust's Cargo
+* [tmcw/github-best-practices](https://github.com/tmcw/github-best-practices) -- рекомендации по использованию Github
+* [tfmigrate](https://github.com/minamijoyo/tfmigrate) -- A Terraform state migration tool for GitOps
+* [Running Arm Binaries on x86 with QEMU-User](https://azeria-labs.com/arm-on-x86-qemu-user/) -- запуск программ для Arm-процессора на x86
+* [lewissbaker/cppcoro](https://github.com/lewissbaker/cppcoro) -- A library of C++ coroutine abstractions for the coroutines TS
+* [lefticus/cppbestpractices](https://github.com/lefticus/cppbestpractices) -- Collaborative Collection of C++ Best Practices. This online resource is part of Jason Turner's collection of C++ Best Practices resources
+* [Corus — коллекция русскоязычных NLP-датасетов](https://natasha.github.io/corus/)
+* [terraform-compliance](https://github.com/eerkunt/terraform-compliance) -- a lightweight, security focused, BDD test framework against terraform
+* [Debugging in Go with Delve](https://eleni.blog/2020/12/19/debugging-in-go-with-delve/) -- про отладку golang-программ с использованием Delve
+
+Хорошей вам недели! С Новым Годом!

@@ -13,6 +13,8 @@ rssLimit = 5
 pygmentsOptions = ["noclasses"]
 pygmentsCodeFences = true
 
+enableEmoji = true
+
 [author]
 name = "Denis Evsyukov"
 
