@@ -1,0 +1,28 @@
+---
+title: "Ссылки #112"
+date: 2021-01-16T12:26:40+0300
+image: https://static.juev.org/images/links.jpg
+tags:
+  - links
+---
+За прошедшую неделю сохранил 91 ссылку. Своеобразный рекорд.
+
+* [re-txt](https://github.com/alash3al/re-txt) -- converts text-formats from one to another, it is very useful if you want to re-format a json file to yaml, toml to yaml, csv to yaml, ... etc
+* [hajimehoshi/oto](https://github.com/hajimehoshi/oto) -- ♪ A low-level library to play sound on multiple platforms ♪
+* [EncodePanda's home-manager configuration](https://github.com/EncodePanda/h) -- home-manager for my MacOS computers
+* [Getting a Gig: A Guide](https://github.com/cassidoo/getting-a-gig) -- Guide for getting a gig as a tech student.
+* [Parsing JSON at the CLI: A Practical Introduction to `jq` (and more!)](https://sequoia.makes.software/parsing-json-at-the-cli-a-practical-introduction-to-jq-and-more/) -- хорошее объяснение про консольную утилиту `jq`
+* [hybridgroup/gocv](https://github.com/hybridgroup/gocv/) -- Go package for computer vision using OpenCV 4 and beyond
+* [TDD (Test-Driven Development) - My personal journey](https://alabeduarte.com/tdd/) -- что такое TDD с точки зрения личного опыта
+* [Go Slice Tricks Cheat Sheet](https://ueokande.github.io/go-slice-tricks/) -- некоторые хитрости использования сайсов в Golang
+* [nlp-datasets](https://github.com/niderhoff/nlp-datasets) -- Alphabetical list of free/public domain datasets with text data for use in Natural Language Processing (NLP)
+* [Home Manager using Nix](https://github.com/nix-community/home-manager) -- Manage a user environment using Nix
+* [Gopher Reading List](https://github.com/enocom/gopher-reading-list) -- A curated selection of blog posts on Go
+* [Learn how to build Haskell applications](https://alpacaaa.net/simple-haskell-book/) -- еще одна книга по Haskell, ожидается в ближайшее время
+* [Scrive Nix Workshop](https://scrive.github.io/nix-workshop) -- This book contains the workshop materials used for training Haskell developers at Scrive.
+* [ЗОЖ](https://denisshevchenko.github.io/healthy-life/) -- от Дениса Шевченко
+* [Welcome to nix.dev — nix.dev documentation](https://nix.dev/) -- еще в копилку документации по Nix
+* [brianvoe/gofakeit](https://github.com/brianvoe/gofakeit) -- Random fake data generator written in go
+* [Networking: Accessing my k3s cluster securely from anywhere with Tailscale](https://blog.dsb.dev/posts/accessing-my-k3s-cluster-from-anywhere-with-tailscale/) -- кубернетес кластер на машинках с доступом по Tailscale
+
+Хорошей вам недели!
