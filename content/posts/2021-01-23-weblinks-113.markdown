@@ -1,0 +1,24 @@
+---
+title: "Ссылки #113"
+date: 2021-01-23T10:08:40+0300
+image: https://static.juev.org/images/links.jpg
+tags:
+  - links
+---
+За прошедшую неделю сохранил 62 ссылки.
+
+* [Using Nix to set up my new Mac](https://adrianhesketh.com/2020/07/03/mac-setup-with-nix-darwin/) -- использование Nix для установки ПО на Mac
+* [Dev Environment Setup With Nix on MacOS](https://www.mathiaspolligkeit.de/dev/exploring-nix-on-macos/) -- еще немного про Nix
+* [Why Zig When There is Already C++, D, and Rust?](https://ziglang.org/learn/why_zig_rust_d_cpp/) -- о преимуществе Zig перед другими языками
+* [An unlikely database migration](https://tailscale.com/blog/an-unlikely-database-migration/) -- о миграции базы в Tailscale, что интересно, используется SQLite
+* [go-profiler-notes](https://github.com/felixge/go-profiler-notes) -- My notes on the various go profiling methods that are available
+* [From note-taking to note-making](https://nesslabs.com/from-note-taking-to-note-making) -- про разновидности заметок и рекомендации по их ведению
+* [go-internals](https://github.com/teh-cmc/go-internals) -- A book about the internals of the Go programming language
+* [xy2xy](https://github.com/kirillsulim/xy2xy) -- A list of technologies similar to inner Yandex technologies
+* [jhuangtw / xg2xg](https://github.com/jhuangtw/xg2xg) -- by ex-googlers, for ex-googlers - a lookup table of similar tech & services
+* ["Distroless" Docker Images](https://github.com/GoogleContainerTools/distroless) -- 🥑 Language focused docker images, minus the operating system
+* [Self-hosting Kubernetes on your Raspberry Pi](https://blog.alexellis.io/self-hosting-kubernetes-on-your-raspberry-pi/) -- организация собственного кубернетес-кластера на основе RaspberryPI
+* [IPFS Support in Brave](https://brave.com/ipfs-support/) -- браузер Brave начали поддерживать IPFS. Децентрализованная схема хранения, при которой не будет возможности блокировать сайты
+* [Install NIXOS on raspberry pi 4](https://schauderbasis.de/posts/install_nixos_on_raspberry_pi_4/) -- установка NixOS на RaspberryPI
+
+Хорошей вам недели!
