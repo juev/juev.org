@@ -1,0 +1,27 @@
+---
+title: "Ссылки #114"
+date: 2021-01-30T10:13:56+0300
+image: https://static.juev.org/images/links.jpg
+tags:
+  - links
+---
+За прошедшую неделю сохранил 86 ссылок.
+
+* [Errors vs. exceptions in Go and C++ in 2020 Why and how exceptions are still better for performance, even in Go](https://dr-knz.net/go-errors-vs-exceptions-2020.html) -- сопоставление обработчиков ошибок в Go и C++
+* [Packages as layers, not groups](https://www.gobeyond.dev/packages-as-layers/) -- концепция зависимостей в Golang
+* [Managing Firefox on macOS with Nix](https://cmacr.ae/post/2020-05-09-managing-firefox-on-macos-with-nix/) -- установка и настройка Firefox с помощью Nix home-manager
+* [NixOS/nixops](https://github.com/NixOS/nixops) -- NixOps is a tool for deploying to NixOS machines in a network or cloud
+* [Naming cheatsheet](https://github.com/kettanaito/naming-cheatsheet) -- Comprehensive language-agnostic guidelines on variables naming. Home of the A/HC/LC pattern
+* [Non-Blocking Parallelism for Services in Go](http://www.goldsborough.me/go/2020/12/06/12-24-24-non-blocking_parallelism_for_services_in_go/)
+* [Atarity/deploy-your-own-saas](https://github.com/Atarity/deploy-your-own-saas) -- List of "only yours" cloud services for everyday needs
+* [PIVPN: Simplest way to setup a VPN](http://pivpn.io/)
+* [polysemy-research/polysemy](https://github.com/polysemy-research/polysemy) -- ♊ higher-order, no-boilerplate monads
+* [Как перестать бояться и полюбить Clojure](https://dou.ua/forums/topic/32578/) -- хороший гайд по Clojure, как начать работать и о сферах применения
+* [leahneukirchen/nq](https://github.com/leahneukirchen/nq) -- Unix command line queue utility
+* [Better Commit Messages with a .gitmessage Template](https://thoughtbot.com/blog/better-commit-messages-with-a-gitmessage-template) -- про упрощение создания сообщений для комитов на основе темплейтов
+* [Prometheus Operator](https://github.com/prometheus-operator/prometheus-operator) -- Prometheus Operator creates/configures/manages Prometheus clusters atop Kubernetes
+* [A Huge Number of Go Examples, Exercises and Quizzes](https://github.com/inancgumus/learngo) -- 1000+ Hand-Crafted Go Examples, Exercises, and Quizzes
+* [Assorted thoughts on zig (and rust)](https://scattered-thoughts.net/writing/assorted-thoughts-on-zig-and-rust/) -- сравнение Zig и Rust
+* [microsoft/windows-rs](https://github.com/microsoft/windows-rs) -- Rust for Windows
+
+Хорошей вам недели!
