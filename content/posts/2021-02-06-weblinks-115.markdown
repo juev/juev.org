@@ -1,0 +1,24 @@
+---
+title: "Ссылки #115"
+date: 2021-02-06T10:07:44+0300
+image: https://static.juev.org/images/links.jpg
+tags: 
+  - links
+---
+За прошедшую неделю сохранил 88 ссылок.
+
+* [The PGP Problem](https://latacora.micro.blog/2019/07/16/the-pgp-problem.html) -- о проблемах PGP, простой ответ: не используйте его, когда есть альтернативы
+* [jpillora/chisel](https://github.com/jpillora/chisel) --  A fast TCP/UDP tunnel over HTTP
+* [Нет серверным веб-приложениям](https://habr.com/ru/company/ruvds/blog/537898/) -- переводная статья про технологию JAMstack
+* [Literate atomic commits](https://www.iamjonas.me/2021/01/literate-atomic-commits.html) -- интересная концепция разработки, но, на мой взгляд слишком много внимания описанию
+* [Transfering files between two computers](https://schollz.com/blog/croc6/) -- описание croc, программного обеспечения для безопасной передачи файлов между компьютерами
+* [🏙️ IPFS enabled personal internet archive](https://schollz.com/blog/ipfs-enabled-personal-internet-archive/) -- использование IPFS для создания интернет-архива. Имхо дополнительный оверхед в системе
+* [IPFS powers the Distributed Web](https://ipfs.io/) -- официальный сайт IPFS, есть интересные моменты
+* [Backup Your iOS Devices to a Private IPFS Node](https://codyhatfield.me/2020/03/backup-your-ios-devices-to-a-private-ipfs-node/index.html) -- использование IPFS для бекапов iOS устройств
+* [Бессерверный статический сайт с помощью IPFS](https://habr.com/ru/post/430172/) -- создание статического сайта в IPFS
+* [Nix: A Reproducible Setup for Linux and macOS](https://nmattia.com/posts/2018-03-21-nix-reproducible-setup-linux-macos.html) -- простыми словами про Nix
+* [What Is Nix and Why You Should Use It](https://serokell.io/blog/what-is-nix) -- и еще немного про Nix
+* [Lightning Introduction to Nix for Developers](https://blog.sulami.xyz/posts/nix-for-developers/) -- Nix для разработчиков
+* [Rewriting git history, removing files permanently. Cheatsheet & guide](https://blog.gitguardian.com/rewriting-git-history-cheatsheet/) -- решение проблем в Git с историей и секретными данными
+
+Хорошей вам недели!
