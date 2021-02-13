@@ -1,0 +1,26 @@
+---
+title: "Ссылки #116"
+date: 2021-02-13T10:37:31+0300
+image: https://static.juev.org/images/links.jpg
+tags: 
+  - links
+---
+За прошедшую неделю сохранил 65 ссылок.
+
+* [Cloudflare Registrar](https://www.cloudflare.com/products/registrar/) -- Cloudflare представили своего регистратора доменных имен
+* [From Homebrew to Home Manager](https://lucperkins.dev/blog/home-manager/) -- личный опыт миграции с homebrew на nix
+* [uchess](https://github.com/tmountain/uchess) -- ♛♔ Play chess against UCI engines in your terminal
+* [koekeishiya/yabai](https://github.com/koekeishiya/yabai) -- A tiling window manager for macOS based on binary space partitioning
+* [go-json](https://github.com/goccy/go-json) -- Fast JSON encoder/decoder compatible with encoding/json for Go
+* [State of the Common Lisp ecosystem, 2020 🎉](https://lisp-journey.gitlab.io/blog/state-of-the-common-lisp-ecosystem-2020/) -- обзор SBCL библиотек на 2020
+* ["Programming Algorithms in Lisp" Is Out!](http://lisp-univ-etc.blogspot.com/2021/02/programming-algorithms-in-lisp-is-out.html) -- Всеволод Демкин презентовал выход своей книги по алгоритмам на Lisp
+* [A Lisp REPL as my main shell](https://ambrevar.xyz/lisp-repl-shell/index.html) -- использование Lisp в качестве основной командной оболочки
+* [Anti-patterns](https://quii.gitbook.io/learn-go-with-tests/meta/anti-patterns) -- изучение Golang с помощью тестов
+* [Telescope.nvim](https://github.com/nvim-telescope/telescope.nvim) -- Find, Filter, Preview, Pick. All lua, all the time. Расширение для беты nvim
+* [How to teach Git](https://rachelcarmena.github.io/2018/12/12/how-to-teach-git.html) -- интересный сайт Рейчел Кармены, и ее статья про изучение Git
+* [ziglings](https://github.com/ratfactor/ziglings) -- Self-contained series of exercises for learning the Zig programming language
+* [ocramz/xeno](https://github.com/ocramz/xeno) -- Fast Haskell XML parser
+* [termhn/rayn](https://github.com/termhn/rayn) -- A small path tracing renderer written in Rust, рекомендую обратить внимание на работы, которые получены с его использованием
+* [sol/doctest](https://github.com/sol/doctest) -- An implementation of Python's doctest for Haskell
+
+Хорошей вам недели!
