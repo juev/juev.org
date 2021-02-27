@@ -1,0 +1,25 @@
+---
+title: "Ссылки #118"
+date: 2021-02-27T13:11:13+0300
+image: https://static.juev.org/images/links.jpg
+tags: 
+  - links
+---
+За прошедшую неделю сохранил только 44 ссылки. Основная причина праздники и выходные.
+
+* [Embedding static files in a go binary using go embed](https://harsimranmaan.medium.com/embedding-static-files-in-a-go-binary-using-go-embed-bac505f3cb9a) -- описание новых возможностей Golang 1.16
+* [Changes to LastPass Free](https://blog.lastpass.com/2021/02/changes-to-lastpass-free/) -- изменения в бесплатном плане LastPass, которое повлекло массовый отток пользователей
+* [Bitwarden self-hosted on Google Cloud for Free](https://github.com/dadatuputi/bitwarden_gcloud) -- бесплатное размещение Bitwarden в gCloud
+* [Go is not an easy language](https://www.arp242.net/go-easy.html) -- простая сложность языка Golang
+* [spaGO](https://github.com/nlpodyssey/spago) -- Self-contained Machine Learning and Natural Language Processing library in Go
+* [Log in quickly and privately](https://simplelogin.io/) -- сервис по созданию email alias
+* [Firefox 86 Introduces Total Cookie Protection](https://blog.mozilla.org/security/2021/02/23/total-cookie-protection) -- Firefox теперь иначе работает с куками при использовании Strict режима работы
+* [Bitwarden Review](https://cybernews.com/best-password-managers/bitwarden-review/) -- обзор парольного менеджера Bitwarden
+* [Understanding Allocations in Go](https://medium.com/eureka-engineering/understanding-allocations-in-go-stack-heap-memory-9a2631b5035d) -- про использование памяти в Golang
+* [Anykey](https://github.com/temochka/Anykey) -- A free macOS app for binding shell commands to system-wide or app-specific hotkeys
+* [Modules, monoliths, and microservices](https://tailscale.com/blog/modules-monoliths-and-microservices/) -- про монолиты и микросервисы от Tailscale
+* [Lifetime variance in Rust](https://github.com/sunshowers/lifetime-variance-example) -- Working Rust example to demonstrate variance
+* [andymass/vim-matchup](https://github.com/andymass/vim-matchup) -- vim match-up: even better % 👊 navigate and highlight matching words 👊 modern matchit and matchparen replacement
+* [Securely run operating systems on your Mac](https://mac.getutm.app/) -- QEMU without the headache
+
+Хорошей вам недели!
