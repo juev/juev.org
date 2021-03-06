@@ -1,0 +1,22 @@
+---
+title: "Ссылки #119"
+date: 2021-03-06T09:32:35+0300
+image: https://static.juev.org/images/links.jpg
+tags: 
+  - links
+---
+За прошедшую неделю сохранил 47 ссылок.
+
+* [chriswalz/bit](https://github.com/chriswalz/bit) -- Bit is a modern Git CLI
+* [F´: A Flight-Proven, Multi-Platform, Open-Source Flight Software Framework](https://github.com/nasa/fprime) -- фреймворк от Nasa для разработки приложений
+* [Write self-deprecating comments](https://thepugautomatic.com/2021/02/write-self-deprecating-comments/) -- хорошая рекомендация по написанию комментариев
+* [Temporal Workflow and Microservices](https://spiralscout.com/blog/temporal-workflow-and-microservices) -- разработка Golang-приложений с использованием Temporal.io
+* [Как работает функция Defer в Golang](https://nuancesprog.ru/p/6940/)
+* [Production-ready Database Connection Pooling in Go](https://making.pusher.com/production-ready-connection-pooling-in-go/) -- настройка пула соединений в Golang при работе с базами данных
+* [FizzBuzz по-сениорски](https://habr.com/ru/post/540136/) -- немного юмора вам в ленты
+* [Cloudflare Pages](https://pages.cloudflare.com/) -- новый сервис от Cloudflare для публикаций статических сайтов
+* [Effective Shell](https://effective-shell.com/) -- электронная книга по работе с shell
+* [HSTR](https://github.com/dvorka/hstr) -- bash and zsh shell history suggest box - easily view, navigate, search and manage your command history
+* [swiss-army knife for data](https://sq.io/)
+
+Хорошей вам недели!
