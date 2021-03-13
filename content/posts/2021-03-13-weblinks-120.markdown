@@ -1,0 +1,22 @@
+---
+title: "Ссылки #120"
+date: 2021-03-13T10:27:09+0300
+image: https://static.juev.org/images/links.jpg
+tags: 
+  - links
+---
+За прошедшую неделю сохранил 65 ссылок.
+
+* [inlets/inlets](https://github.com/inlets/inlets) -- Expose your local endpoints to the Internet or within a remote network, without touching firewalls
+* [shops - SHell OPerationS](https://github.com/prologic/shops) -- shops is a simple command-line tool written in Go that helps you simplify the way you manage configuration across a set of machines
+* [Why I rewrote my Rust keyboard firmware in Zig: consistency, mastery, and fun](https://kevinlynagh.com/rust-zig/) -- сопоставление Rust и Zig, аргументы в пользу обоих языков
+* [Plausible Analytics](https://github.com/plausible/analytics) -- Simple, open-source, lightweight and privacy-friendly web analytics alternative to Google Analytics
+* [generativeart](https://github.com/jdxyw/generativeart) -- Generative Art in Go
+* [Semantic](https://github.com/github/semantic) -- Parsing, analyzing, and comparing source code across many languages
+* [panjf2000/ants](https://github.com/panjf2000/ants) -- ants is a high-performance and low-cost goroutine pool in Go, inspired by fasthttp
+* [Sampler. Visualization for any shell command.](https://github.com/sqshq/sampler) -- Tool for shell commands execution, visualization and alerting. Configured with a simple YAML file
+* [Developing with Rust on Windows](https://docs.microsoft.com/en-us/windows/dev-environment/rust/) -- Microsoft размещает документацию по Rust на своих сайтах
+* [Conferer, a configuration library for Haskell](https://blog.10pines.com/2021/03/02/conferer-a-configuration-library-for-haskell/) -- простое определение конфигураций в Haskell
+* [The Zettelkasten Method: Examples to help you get started.](https://medium.com/@rebeccawilliams9941/the-zettelkasten-method-examples-to-help-you-get-started-8f8a44fa9ae6) -- использование Zettelkasten метода ведения заметок при работе с Obsidian
+
+Хорошей вам недели!
