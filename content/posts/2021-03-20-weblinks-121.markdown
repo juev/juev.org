@@ -1,0 +1,24 @@
+---
+title: "Ссылки #121"
+date: 2021-03-20T18:50:41+0300
+image: https://static.juev.org/images/links.jpg
+tags: 
+  - links
+---
+За прошедшую неделю сохранил 57 ссылок.
+
+* [Goroutines Are Not Significantly Smaller Than Threads](https://matklad.github.io/2021/03/12/goroutines-are-not-significantly-smaller-than-threads.html) -- сравнение goroutines с системными потоками
+* [teddit](https://teddit.net/) -- облегченный интерфейс для reddit
+* [Книга «Си для встраиваемых систем»](http://themagicsmoke.ru/books/c_for_embedded_systems/) -- в открытом доступе
+* [Bitwarden Send](https://bitwarden.com/products/send/) -- новый продукт от Bitwarden, для безопасной передачи текстов и файлов и то как [оно работает](https://bitwarden.com/blog/post/bitwarden-send-how-it-works/)
+* [uutils/coreutils](https://github.com/uutils/coreutils) -- Cross-platform Rust rewrite of the GNU coreutils
+* [BenRoe/awesome-mechanical-keyboard](https://github.com/BenRoe/awesome-mechanical-keyboard) -- ⌨️  A curated list of Open Source Mechanical Keyboard resources
+* [nifty-site-manager/nsm](https://github.com/nifty-site-manager/nsm) -- World's fastest cross-platform open source website generator. Написан на C, и использует интересные концепции
+* [Quad CI](https://github.com/alpacaaa/quad-ci) -- A CI server written in Simple Haskell
+* [Writing Small CLI Programs in Common Lisp](https://stevelosh.com/blog/2021/03/small-common-lisp-cli-programs/)
+* [Self-hosting Git](https://peppe.rs/posts/self-hosting_git/) -- вариант для любителей селф-хостинг решений
+* [Scriptable](https://scriptable.app/) -- Automate iOS using JavaScript
+* [Getting started with … Rust](https://stackoverflow.blog/2021/03/15/getting-started-with-rust/) -- для начинающих изучать Rust
+* [Mage is My Favorite Make](https://carolynvanslyck.com/blog/2021/01/mage-is-my-favorite-make/)
+
+Хорошей вам недели!
