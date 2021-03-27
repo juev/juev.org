@@ -1,0 +1,25 @@
+---
+title: "Ссылки #122"
+date: 2021-03-27T10:43:15+0300
+image: https://static.juev.org/images/links.jpg
+tags: 
+  - links
+---
+В очередной раз IFTTT дал сбой и не прислал сегодня еженедельный дайджест сохраненных ссылок. В результате приходиться вручную обрабатывать то что осталось, и часть ссылок уже была удалена.
+
+Так же не могу сказать, сколько в общей сложности сохранил ссылок, так как статистику так же не получил с дайджестом. По всей видимости нужно будет придумывать новый воркфлоу, чтобы в следующий раз избегать подобных ситуаций.
+
+* [mitchellh/go-ps](https://github.com/mitchellh/go-ps) -- Find, list, and inspect processes from Go (golang)
+* [A Simple Rule for Better Errors](https://blog.mediocregopher.com/2021/03/20/a-simple-rule-for-better-errors.html) -- описывают разные способы обработки ошибок
+* [Overv/outrun](https://github.com/Overv/outrun) -- Execute a local command using the processing power of another Linux machine
+* [Nyxt browser: the internet on your terms](https://nyxt.atlas.engineer/) -- интересная концепция веб-браузера
+* [In March, we see Firefox 87](https://hacks.mozilla.org/2021/03/in-march-we-see-firefox-87/) -- обзор новой версии Firefox, главное на что я бы обратил внимание это [Smartblock](https://blog.mozilla.org/security/2021/03/23/introducing-smartblock/), скорость отрисовки страниц в новой версии выросла в несколько раз
+* [How much can a Clojure developer do alone?](https://yyhh.org/blog/2021/03/how-much-can-a-clojure-developer-do-alone/) -- обзор Clojure и упор на преимуществах языка
+* [Many faces of Internal Functions](https://kowainik.github.io/posts/internal-functions) -- очередная статья Вероники Ромашкиной, на этот раз про функции в Haskell
+* [SpectralOps/teller](https://github.com/SpectralOps/teller) -- A secrets management tool for developers built in Go - never leave your command line for secrets
+* [Practical Go Lessons](https://www.practical-go-lessons.com/) -- новая книга по Golang
+* [An introduction to typeclass metaprogramming](https://lexi-lambda.github.io/blog/2021/03/25/an-introduction-to-typeclass-metaprogramming/) -- хорошая вводная по использованию техники программирования в Haskell
+* [SQLite is not a toy database](https://antonz.org/sqlite-is-not-a-toy-database/) -- почему стоит обратить внимание на SQLite как на рабочий инструмент
+* [Good First Issue](https://goodfirstissue.dev/) -- Good First Issue curates easy pickings from popular open-source projects, and helps you make your first contribution to open-source
+
+Хорошей вам недели!
