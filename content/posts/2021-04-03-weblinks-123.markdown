@@ -1,0 +1,20 @@
+---
+title: "Ссылки #123"
+date: 2021-04-03T09:27:00+0300
+image: https://static.juev.org/images/links.jpg
+tags: 
+  - links
+---
+За прошедшую неделю сохранил 34 ссылки. При этом ifttt в очередной раз не прислал мне дайджест вовремя, поэтому вручную обрабатываю то, что сохранил.
+
+* [Pin and suffering](https://fasterthanli.me/articles/pin-and-suffering) -- очередная пространная статья Amos про async технологии в Rust
+* [Life of a Go module](https://jayconrod.com/posts/118/life-of-a-go-module) -- про модули в Golang
+* [How to Participate in a Kaggle Competition](https://serokell.io/blog/kaggle-competition) -- про конкурсы на Kaggle
+* [connorskees/grass](https://github.com/connorskees/grass) -- A near-feature-complete Sass compiler written purely in Rust
+* [karlseguin/ccache](https://github.com/karlseguin/ccache) -- A golang LRU Cache for high concurrency
+* [World Backup Day -- Top tips to protect your passwords](https://bitwarden.com/blog/post/world-backup-day/) -- рекомендации от Bitwarden по безопасности аккаунта
+* [magnologan/awesome-k8s-security](https://github.com/magnologan/awesome-k8s-security) -- A curated list for Awesome Kubernetes Security resources
+* [git-tips/tips](https://github.com/git-tips/tips) -- Most commonly used git tips and tricks
+* [How I create small Go apps quickly](https://adhoc.team/2021/03/29/simple-web-app-in-golang/) -- рекомендации по написанию простых Golang приложений
+
+Хорошей вам недели!
