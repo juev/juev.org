@@ -1,0 +1,25 @@
+---
+title: "Ссылки #124"
+date: 2021-04-10T07:02:21+0300
+image: https://static.juev.org/images/links.jpg
+tags: 
+  - links
+---
+За прошедшую неделю сохранил 74 ссылки. Чтобы не возникало проблем с IFTTT изменил расписание, и вместо 7 утра назначил письмо на 1 ночи. В результате заветное послание получил сегодня только в районе 5 часов утра. Но главное получил!
+
+* [Vilicus](https://github.com/edersonbrilhante/vilicus) -- Vilicus is an open source tool that orchestrates security scans of container images(docker/oci) and centralizes all results into a database for further analysis and metrics
+* [Never use environment variables for configuration](https://nibblestew.blogspot.com/2021/03/never-use-environment-variables-for.html) -- интересное мнение про использование переменных окружения для конфигурирования программ, но я с ним не согласен
+* [My simple org mode system](https://luca.cambiaghi.me/posts/org-gtd.html) -- GTD на основе Org-mode, из интересного воркфлоу на телефоне
+* [What problems do people solve with strace?](https://jvns.ca/blog/2021/04/03/what-problems-do-people-solve-with-strace/) -- Julia Evans проводила опрос по тому, как кто использует strace и в итоге собрала всю информации в виде статьи
+* [Default exception handler in Haskell](https://taylor.fausak.me/2021/04/03/default-exception-handler-in-haskell/) -- про использование обработчиков ошибок в Haskell
+* [nixify](https://github.com/kampka/nixify) -- Bootstrap nix-shell environments
+* [Writing a kernel driver with Rust.](https://not-matthias.github.io/kernel-driver-with-rust/) -- про написание windows kernel driver на Rust
+* [mtorrent](https://github.com/nektro/mtorrent) -- A totally configurable terminal torrent client
+* [Bionic](https://github.com/bionic-dev/bionic) -- Convert data exports from various services to a single SQLite database
+* [bcicen/ctop](https://github.com/bcicen/ctop) -- Top-like interface for container metrics
+* [Error Flags · npf.io](https://npf.io/2021/04/errorflags/) -- обработчик ошибок в Golang
+* [nix-community/awesome-nix](https://github.com/nix-community/awesome-nix) -- A curated list of the best resources in the Nix community
+* [Plotly for Rust](https://github.com/igiagkiozis/plotly) -- A plotting library for Rust powered by Plotly.js
+* [BrianHicks/nix-script](https://github.com/BrianHicks/nix-script) -- write scripts in compiled languages that run in the nix ecosystem, with no separate build step
+
+Хорошей вам недели!
