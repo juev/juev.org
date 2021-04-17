@@ -1,0 +1,23 @@
+---
+layout: post
+title: "Ссылки #125"
+date: 2021-04-17 10:11
+image: https://static.juev.org/images/links.jpg
+tags:
+  - links
+---
+За прошедшую неделю сохранил 72 ссылки.
+
+* [Rust SQLite](https://github.com/joaoh82/rust_sqlite) -- SQLite clone from scratch in Rust
+* [DavHau/nix-portable](https://github.com/DavHau/nix-portable) -- Nix - Static, Permissionless, Installation-free, Pre-configured
+* [An introduction to nix-shell](https://ghedam.at/15978/an-introduction-to-nix-shell) -- хорошее введение по использованию nix-shell
+* [mach-nix - Create highly reproducible python environments](https://github.com/DavHau/mach-nix) -- Create highly reproducible python environments
+* [reproxy](https://github.com/umputun/reproxy) -- Simple edge server / reverse proxy
+* [org-rs/org-rs](https://github.com/org-rs/org-rs) -- org-mode parser rewrite in Rust
+* [[Личный опыт] Страна фермеров и банков: как живётся разработчику в крошечном Люксембурге](https://habr.com/ru/company/gms/blog/551996/)
+* [ali](https://github.com/nakabonne/ali) -- Generate HTTP load and plot the results in real-time
+* [Уязвимость в Тинькофф Инвестиции: увеличиваем размер плеча в 100 раз и выводим маржинальные средства на карту](https://m.habr.com/ru/post/551740/) -- занятно :smile:
+* [It's time to say goodbye to the GPL](https://martin.kleppmann.com/2021/04/14/goodbye-gpl.html) -- времена меняются и меняются требования к лицензиям
+* [Lisp & the Web](https://medium.math.dev/lisp-the-web-4c00c88d11f9) -- хорошее введение по использованию Lisp в Web. Но это кошмар для девопса, все делаается вручную
+
+Хорошей вам недели!
