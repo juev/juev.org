@@ -1,0 +1,27 @@
+---
+layout: post
+title: "Ссылки #126"
+date: 2021-04-24 10:10
+image: https://static.juev.org/images/links.jpg
+tags:
+  - links
+---
+За прошедшую неделю сохранил 43 ссылки. IFTTT снова меня удивил, прислав письмо на сутки раньше, чем было запланировано.
+
+* [QUIC and HTTP/3 Support now in Firefox Nightly and Beta – Mozilla Hacks : the Web developer blog](https://hacks.mozilla.org/2021/04/quic-and-http-3-support-now-in-firefox-nightly-and-beta) -- Mozilla планирует включить в 88 версию новые протоколы
+
+* [Implementing HTTP/3 in Haskell](https://kazu-yamamoto.hatenablog.jp/entry/2020/06/09/155236) -- Использование HTTP/3 в Haskell
+
+* [LKML: Linus Torvalds: Re: [PATCH 00/13] [RFC] Rust support](https://lkml.org/lkml/2021/4/14/1099) -- ответ Линуса на патч в linux kernel, [перевод](https://www.opennet.ru/opennews/art.shtml?num=54970)
+
+* [Reducing Rust Incremental Compilation Times on macOS by 70%](https://jakedeichert.com/blog/reducing-rust-incremental-compilation-times-on-macos-by-70-percent/) -- как уменьшить время компиляции Rust-программ на маке
+
+* [Setting up a Hugo website with Cloudflare pages](https://sysrant.com/posts/setting-up-a-hugo-website-with-cloudflare-pages/) -- настройка Hugo для работы с Cloudflare Pages, параметр о котором не знал это указание версии
+
+* [KonishchevDmitry/investments](https://github.com/KonishchevDmitry/investments) -- Helps you with managing your investments
+
+* [yarle: Yet Another Rope Ladder from Evernote](https://github.com/akosbalasko/yarle) -- Yarle - The ultimate converter of Evernote notes to Markdown
+
+* [What's in the box?](https://fasterthanli.me/articles/whats-in-the-box) -- сравнение rust и golang с привлечением примеров на JS
+
+Хорошей вам недели!
