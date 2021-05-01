@@ -1,0 +1,48 @@
+---
+layout: post
+title: "Ссылки #127"
+date: 2021-05-01 09:10
+image: https://static.juev.org/images/links.jpg
+tags:
+  - links
+---
+За прошедшую неделю сохранил 63 ссылки.
+
+* [IlanCosman/tide](https://github.com/IlanCosman/tide) -- 🌊 The ultimate Fish
+  prompt.
+
+* [Advice for Haskell
+  beginners](https://www.haskellforall.com/2017/10/advice-for-haskell-beginners.html)
+  -- рекомендации начинающим изучать Haskell, на что стоит обращать внимание, а
+  что стоит оставить на потом
+
+* [jarun/nnn](https://github.com/jarun/nnn) -- n³ The unorthodox terminal file
+  manager
+
+* [cmacrae/spacebar](https://github.com/cmacrae/spacebar) -- A minimal status
+  bar for macOS. Ideal for use with tiling window managers like yabai
+
+* [Screw it, I’ll host it
+  myself](https://www.markozivanovic.com/screw-it-ill-host-it-myself/) -- еще
+  одна статья про размещение своих сервисов вне гугла
+
+* [Crypto miners are killing free
+  CI](https://layerci.com/blog/crypto-miners-are-killing-free-ci/) -- в погоне
+  за деньгами криптомайнеры убили индустрию бесплатных CI
+
+* [Переназначение клавиш на Маке](https://grishaev.me/key-remap/) -- Иван
+  Гришаев рассказывает про переназначение клавиш на маке без Карабинера
+
+* [awslabs/git-secrets](https://github.com/awslabs/git-secrets) -- Prevents you
+  from committing secrets and credentials into git repositories
+
+* [Как мы выбираем языки программирования в
+  Typeable](https://habr.com/ru/company/typeable/blog/554516/) -- хороший подход
+  к выбору инструментов для работы
+
+* [pint](https://github.com/cloudflare/pint) -- Prometheus rule linter
+
+* [ema](https://github.com/srid/ema) -- Haskell static site generator that is
+  change-aware
+
+Хорошей вам недели!
