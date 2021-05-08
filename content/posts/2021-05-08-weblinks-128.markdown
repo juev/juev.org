@@ -1,0 +1,61 @@
+---
+layout: post
+title: "Ссылки #128"
+date: 2021-05-08 12:11
+image: https://static.juev.org/images/links.jpg
+tags:
+  - links
+---
+За прошедшую неделю сохранил 106 сссылок.
+
+* [C++ Russia 2020
+  Piter](https://www.youtube.com/playlist?list=PLZN9ZGiWZoZpzXS_y_1tZJW0OaL-HrU1F)
+  -- подоспели видео с конференции по C++
+
+* [neuron](https://github.com/srid/neuron) -- Future-proof note-taking and
+  publishing based on Zettelkasten
+
+* [📫 S3 Email](https://github.com/0x4447/0x4447_product_s3_email) -- 📫 A
+  serverless email server on AWS using S3 and SES
+
+* [ugit](https://github.com/Bhupesh-V/ugit) -- 🚨️ ugit helps you undo your last
+  git command. Your damage control git buddy. Powered by FZF
+
+* [Applicative Options Parsing in
+  Haskell](https://thoughtbot.com/blog/applicative-options-parsing-in-haskell)
+  -- использование апаликативных парсеров для обработки команндной строки в
+  Haskell
+
+* [Elvish Shell](https://elv.sh/) -- Elvish is an expressive programming
+  language and a versatile interactive shell, combined into one seamless
+  package. It runs on Linux, BSDs, macOS and Windows.
+
+* [GopherCon Russia
+  2021](https://www.youtube.com/playlist?list=PLJTW0ZQ22rrF13VQbakM7MBiQcKb31mpk)
+  -- видео с конфренции GopherCon Russia 2021
+
+* [gcla/termshark](https://github.com/gcla/termshark) -- A terminal UI for
+  tshark, inspired by Wireshark
+
+* [Hosting SQLite databases on Github
+  Pages](https://phiresky.github.io/blog/2021/hosting-sqlite-databases-on-github-pages/)
+  -- использование SQLite базы данных в статике
+
+* [Notable](https://github.com/notable/notable) -- достойная программа для
+  ведения заметок
+
+* [Practical Nix Flakes](https://serokell.io/blog/practical-nix-flakes) -- про
+  использование flakes в nix
+
+* [ClearURLs](https://github.com/ClearURLs/Addon) -- дополнение для Chrome и
+  Firefox, убирающее отслеживающие элементы из ссылок
+
+* [usql](https://github.com/xo/usql) -- Universal command-line interface for SQL
+  databases
+
+* [browserpass/browserpass-extension](https://github.com/browserpass/browserpass-extension)
+  -- расширение для браузеров, позволяющее использовать
+  [pass](https://www.passwordstore.org/) для хранения паролей, обратите внимание
+  на рекомендации из README
+
+Хорошей вам недели!
