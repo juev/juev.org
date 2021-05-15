@@ -1,0 +1,45 @@
+---
+layout: post
+title: "Ссылки #129"
+date: 2021-05-15 10:29
+image: https://static.juev.org/images/links.jpg
+tags:
+  - links
+---
+За прошедшую неделю сохранил 83 ссылки.
+
+* [Training to Be Relaxed in Stressful
+  Situations](https://zenhabits.net/relaxed/) -- статья Лео Бабауты про
+  тренировку через расслабление в стрессовой ситуации.
+
+* [AltTab](https://alt-tab-macos.netlify.app/) -- свободная программа под macOS,
+  меняющая принцип переключения между окнами, более привычно
+
+* [ory/kratos](https://github.com/ory/kratos) -- Next-gen identity server (think
+  Auth0, Okta, Firebase) with Ory-hardened authentication, MFA, FIDO2, profile
+  management, identity schemas, social sign in, registration, account recovery,
+  service-to-service and IoT auth
+
+* [matrix-org/dendrite](https://github.com/matrix-org/dendrite) -- Dendrite is a
+  second-generation Matrix homeserver written in Go
+
+* [osmos::feed](https://github.com/osmoscraft/osmosfeed) -- ПО для организации
+  RSS-ридера на основе Github Pages. Организовал свой вариант
+  [juev.github.io/rss](https://juev.github.io/rss/)
+
+* [greyblake/whatlang-rs](https://github.com/greyblake/whatlang-rs) -- Natural
+  language detection library for Rust
+
+* [Ginger](https://github.com/tdammers/ginger) -- A Haskell implementation of
+  the Jinja template language
+
+* [RazrFalcon/pico-args](https://github.com/RazrFalcon/pico-args) -- An ultra
+  simple CLI arguments parser
+
+* [openquery-io/synth](https://github.com/openquery-io/synth) -- The Declarative
+  Data Generator
+
+* [Lima](https://github.com/AkihiroSuda/lima/tree/master) -- Lima: Linux-on-Mac
+  ("macOS subsystem for Linux", "containerd for Mac")
+
+Хорошей ваам недели!
