@@ -1,0 +1,64 @@
+---
+layout: post
+title: "Ссылки #130"
+date: 2021-05-22 11:08
+image: https://static.juev.org/images/links.jpg
+tags:
+  - links
+---
+За прошедшую неделю сохранил 76 ссылок.
+
+* [What you can’t do in Rust (and what to do
+  instead)](https://blog.logrocket.com/what-you-cant-do-in-rust-and-what-to-do-instead/)
+  -- чего лучше не делать в Rust и как это лучше реализовывать
+
+* [Watt](https://github.com/dtolnay/watt) -- Watt is a runtime for executing
+  Rust procedural macros compiled as WebAssembly
+
+* [kahing/catfs](https://github.com/kahing/catfs) -- Cache AnyThing filesystem
+  written in Rust
+
+* [Rust cryptography libraries: A comprehensive
+  list](https://blog.logrocket.com/rust-cryptography-libraries-a-comprehensive-list/)
+  -- список Rust библиотек для работы с крипто
+
+* [На пальцах: ассоциированные типы в Rust и в чём их отличие от аргументов
+  типов](https://habr.com/ru/post/441444/)
+
+* [Replacing Elasticsearch with Rust and
+  SQLite](https://nickb.dev/blog/replacing-elasticsearch-with-rust-and-sqlite)
+  -- интересный опыт замены эластика своей программой
+
+* [sagiegurari/cargo-make](https://github.com/sagiegurari/cargo-make) -- Rust
+  task runner and build tool
+
+* [Adding a Russian Keyboard to Protect against
+  Ransomware](https://www.schneier.com/blog/archives/2021/05/adding-a-russian-keyboard-to-protect-against-ransomware.html)
+
+* [Using GitHub Actions and Tailscale to build and deploy applications
+  securely](https://tailscale.com/blog/2021-05-github-actions-and-tailscale/) --
+  использование Tailscale в Github Actions для доступа к серверу
+
+* [Introducing Site Isolation in
+  Firefox](https://blog.mozilla.org/security/2021/05/18/introducing-site-isolation-in-firefox)
+  -- новая фича Firefox, позволяющая работать с сайтами в отдельных процессах,
+  повышая безопаность. Способ включения на текущих версиях. [Подробное
+  описание](https://hacks.mozilla.org/2021/05/introducing-firefox-new-site-isolation-security-architecture/)
+
+* [zoxide](https://github.com/ajeetdsouza/zoxide) -- zoxide is a blazing fast
+  replacement for your cd command, inspired by z and z.lua. It keeps track of
+  the directories you use most frequently, and uses a ranking algorithm to
+  navigate to the best match
+
+* [Clear explanation of Rust’s module
+  system](https://www.sheshbabu.com/posts/rust-module-system/) -- хорошая вводная по модулям в Rust
+
+* [My review of the Moonlander MK1 keyboard · Fatih
+  Arslan](https://arslan.io/2021/05/19/a-review-of-my-first-split-keyboard-moonlander-mk1/)
+  -- Фатих рассказывает про механическую клавиатуру Moonlander MK1
+
+* [Образ жизни Тима Ферриса: титановый чай, ледяные ванны и разговоры с
+  субличностями](https://reminder.media/post/tim-ferris-routine) -- В reminder
+  часто публикуют интересные статьи, на этот раз про Тима Фериса
+
+Хорошей вам недели!
