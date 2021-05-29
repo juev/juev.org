@@ -1,0 +1,29 @@
+---
+layout: post
+title: "Ссылки #131"
+date: 2021-05-29 11:02
+image: https://static.juev.org/images/links.jpg
+tags:
+  - links
+---
+За прошедшшую неделю сохранил 88 ссылок.
+
+* [Mark Watson: consultant specializing in artificial intelligence, natural language processing, and machine learning](http://markwatson.com/) -- сайт интересного человека и автора многих книг по программированию
+
+* [Как мыслить неординарно? Самое популярное эссе инвестора Пола Грэма](https://reminder.media/post/samoe-populyarnoe-esse-pola-grema) -- перевод статьи Пола Грэма, рекомендую
+
+* [Как правильно хранить криптовалюту в 2021 году. Обзор кошельков](https://www.rbc.ru/crypto/news/601518f29a79471424899d99) -- если вы работаете или только планируете работатьт с криптовалютой, тут рекомендации для вас от rbc
+
+* [Making Generative Art with Rust](https://blog.abor.dev/p/making-generative-art-with-rust) -- описание нескольких фремворков, которые могут быть использованы для генерации изображений
+
+* [The Best Mechanical Keyboards](https://www.nytimes.com/wirecutter/reviews/our-favorite-mechanical-keyboards/) -- список из 7 моделей механических клавиатур
+
+* [Clojure by Example](https://kimh.github.io/clojure-by-example/#about) -- небольшой курс по Clojure
+
+* [Rust Linz, May 2021 - Lisa Passing - Creative Rust](https://www.youtube.com/watch?v=VJUhINt5dF0) -- выступление Lisa Passing про Rust для искусства
+
+* [awesome-privacy](https://github.com/pluja/awesome-privacy) -- список рекомендаций по сохранению приватности
+
+* [DevDocs](https://devdocs.io) -- интересная альтенатива [Dash](https://kapeli.com/dash) в виде веб-интерфейса, способного работать в офлайне
+
+Хорошей вам недели!
