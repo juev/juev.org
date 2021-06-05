@@ -1,0 +1,25 @@
+---
+layout: post
+title: "Ссылки #132"
+date: 2021-06-05 10:03
+image: https://static.juev.org/images/links.jpg
+tags:
+  - links
+---
+За прошедшую неделю сохранил всего 50 ссылок.
+
+* [The Voids Of Haskell](https://github.com/graninas/The-Voids-Of-Haskell)
+
+* [WireGuard Easy](https://github.com/WeeJeWel/wg-easy) -- The easiest way to run WireGuard VPN + Web-based Admin UI
+
+* [opera-proxy](https://github.com/Snawoot/opera-proxy) -- Standalone client for proxies of Opera VPN
+
+* [Helix](https://github.com/helix-editor/helix) -- A post-modern modal text editor
+
+* [Terra](http://terralang.org/) -- Terra is a low-level system programming language that is embedded in and meta-programmed by the Lua programming language
+
+* [How Does The Unix `history` Command Work?](https://endler.dev/2021/history/) -- очередная статья Matthias Endler про то, как работает команда history и создание собственной версии
+
+* [How to Test](https://matklad.github.io//2021/05/31/how-to-test.html) -- про тестировавние ПО в Rust
+
+Хорошей вам недели!
