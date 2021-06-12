@@ -1,0 +1,41 @@
+---
+layout: post
+title: "Ссылки #133"
+date: 2021-06-12 17:10
+image: https://static.juev.org/images/links.jpg
+tags:
+  - links
+---
+За прошедшую неделю сохранил 78 ссылок:
+
+* [Getting started with Haskell projects using Scotty](https://www.stackbuilders.com/tutorials/haskell/getting-started-with-haskell-projects-using-scotty/index.html) - пример разработки приложения на Haskell
+
+* [apandhi/Autumn](https://github.com/apandhi/Autumn) -- A macOS window manager for JavaScript hackers
+
+* [Release It! ?](https://github.com/release-it/release-it) -- Automate versioning and package publishing
+
+* [Software Design and Architecture in Haskell](https://github.com/graninas/software-design-in-haskell) -- Software Design in Haskell. A structured set of materials. How to build real-world applications in Haskell
+
+* [Firefox UI FIX](https://github.com/black7375/Firefox-UI-Fix) -- I respect proton UI and aim to improve it
+
+* [Building and Deploying a Rust library on iOS](https://mozilla.github.io/firefox-browser-architecture/experiments/2017-09-06-rust-on-ios.html) -- разработка iOS приложений с помощью Rust
+
+* [Bevy - A data-driven game engine built in Rust](https://bevyengine.org/) -- движок для разработки игр на Rust
+
+* [iOS Programming with Lua](https://luanova.org/ioswithlua/) -- разработка iOS приложений на Lua
+
+* [Как я искал работу в США во время пандемии, подался на 200 вакансий и получил оффер на $380K](https://dou.ua/lenta/interviews/get-job-in-usa-during-pandemic/)
+
+* [katychuang/getting-started-with-haskell](https://github.com/katychuang/getting-started-with-haskell) -- notes on where to find Haskell tutorials and tips to complete them
+
+* [novelWriter](https://github.com/vkbo/novelWriter) -- novelWriter is an open source plain text editor designed for writing novels
+
+* [Aniseed](https://github.com/Olical/aniseed) -- Neovim configuration and plugins in Fennel (Lisp compiled to Lua)
+
+* [bitflags](https://github.com/bitflags/bitflags) -- A macro to generate structures which behave like bitflags
+
+* [ChrisPenner/rasa](https://github.com/ChrisPenner/rasa) -- Extremely modular text editor built in Haskell
+
+* [Dhall for Kubernetes](https://christine.website/blog/dhall-kubernetes-2020-01-25) -- генерация k8s конфигурации с помощью Dhall
+
+Хорошей вам недели!
