@@ -1,0 +1,37 @@
+---
+layout: post
+title: "Ссылки #134"
+date: 2021-06-19 10:06
+image: https://static.juev.org/images/links.jpg
+tags:
+  - links
+---
+За прошедшую неделю сохранил 67 ссылок.
+
+* [Do You Need Redis? PostgreSQL Does Queuing, Locking, & Pub/Sub](https://spin.atomicobject.com/2021/02/04/redis-postgresql/) -- использование Postgres в роли Redis
+
+* [SSH quoting](https://www.chiark.greenend.org.uk/~cjwatson/blog/ssh-quoting.html) -- особенность использования команд в ssh
+
+* [Lima: Linux-on-Mac ("macOS subsystem for Linux", "containerd for Mac")](https://github.com/AkihiroSuda/lima) -- Linux virtual machines, on macOS
+
+* [RedisLess](https://github.com/Qovery/RedisLess) -- RedisLess is a fast, lightweight, embedded and scalable in-memory Key/Value store library compatible with the Redis API
+
+* [uber-go/goleak](https://github.com/uber-go/goleak) -- Goroutine leak detector
+
+* [IHP: Integrated Haskell Platform](https://github.com/digitallyinduced/ihp) -- IHP is a new batteries-included web framework optimized for longterm productivity and programmer happiness
+
+* [Vinix](https://github.com/vlang/vinix) -- Vinix is an effort to write a modern, fast, and useful operating system in the V programming language
+
+* [Rust в ядре Linux](https://habr.com/ru/company/macloud/blog/562510/)
+
+* [neuronika/neuronika](https://github.com/neuronika/neuronika) -- Tensors and dynamic neural networks in pure Rust
+
+* [Extend and automate self-hosted Gitea with functions](https://www.openfaas.com/blog/gitea-faas/) -- gitea сервис с помощью faasd
+
+* [Brave, the false sensation of privacy](https://ebin.city/~werwolf/posts/brave-is-shit/) -- почему Brave не такой безопасный, как считается
+
+* [Asynchronous Programming in Rust](https://doc.rust-lang.ru/async-book/)
+
+* [Rust by example](https://doc.rust-lang.ru/stable/rust-by-example/)
+
+Хорошей вам недели!
