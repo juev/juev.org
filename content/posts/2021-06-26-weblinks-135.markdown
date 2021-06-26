@@ -1,0 +1,31 @@
+---
+layout: post
+title: "Ссылки #135"
+date: 2021-06-26 11:37
+image: https://static.juev.org/images/links.jpg
+tags:
+  - links
+---
+За прошедшую неделю сохранил 91 ссылку.
+
+* [Telepresence](https://www.telepresence.io/) -- Fast, local development for Kubernetes and OpenShift microservices
+
+* [jackal](https://github.com/ortuman/jackal) -- Instant messaging server for the Extensible Messaging and Presence Protocol (XMPP)
+
+* [yaydl](https://github.com/dertuxmalwieder/yaydl) -- yet another youtube down loader
+
+* [The Document Culture of Amazon](https://justingarrison.com/blog/2021-03-15-the-document-culture-of-amazon/) -- культура проведения встреч в Амазон
+
+* [Modern Unix](https://github.com/ibraheemdev/modern-unix) -- A collection of modern/faster/saner alternatives to common unix commands
+
+* [Deserializing Binary Data Files in Rust](https://adventures.michaelfbryan.com/posts/deserializing-binary-data-files/) -- десериализация данных, используемых в C на Rust
+
+* [Error Handling In Rust - A Deep Dive](https://www.lpalmieri.com/posts/error-handling-rust/) -- This article is a sample from Zero To Production In Rust, a book on backend development in Rust
+
+* [Not another markup langauge.](https://github.com/kris-nova/naml) -- Not another markup language. Framework for replacing Kubernetes YAML with Go
+
+* [dog](https://github.com/ogham/dog) -- A command-line DNS client
+
+* [nitro](https://github.com/couchbase/nitro) -- A high performance in-memory index storage engine
+
+Хорошей вам недели!
