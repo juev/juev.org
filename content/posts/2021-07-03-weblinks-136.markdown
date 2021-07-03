@@ -1,0 +1,35 @@
+---
+layout: post
+title: "Ссылки #136"
+date: 2021-07-03 10:03
+image: https://static.juev.org/images/links.jpg
+tags:
+  - links
+---
+За прошедшую неделю сохранил 75 ссылок.
+
+* [Опасности пользования онлайн-менеджерами паролей](https://habr.com/ru/company/vdsina/blog/564578/) -- про некоторые векторы атаки на менеджеры паролей
+
+* [trimstray/the-book-of-secret-knowledge](https://github.com/trimstray/the-book-of-secret-knowledge) -- A collection of inspiring lists, manuals, cheatsheets, blogs, hacks, one-liners, cli/web tools and more
+
+* [zigup](https://github.com/marler8997/zigup) -- Download and manage zig compilers
+
+* [Buttercup](https://buttercup.pw/) -- еще один парольный менеджер
+
+* [Polymorphism in Rust](https://oswalt.dev/2021/06/polymorphism-in-rust/)
+
+* [Should you store your 2FA/TOTP tokens in your password manager?](https://jamesrcridland.medium.com/should-you-store-your-2fa-totp-tokens-in-your-password-manager-9798199b728) -- интересное мнение про использование TOTP
+
+* [grafana/tanka](https://github.com/grafana/tanka) -- Flexible, reusable and concise configuration for Kubernetes
+
+* [git-crypt - transparent file encryption in git](https://github.com/AGWA/git-crypt) -- Transparent file encryption in git
+
+* [6 Best KeePass apps for iOS — A Comparison](https://keepassium.com/articles/keepass-apps-for-ios) -- программы для работы с keepass базами данных на iOS, пока больше всего нравится [Strongbox](https://strongboxsafe.com/) , хотя на маке он не так удобен
+
+* [namvdo/CS-and-Programming-Books](https://github.com/namvdo/CS-and-Programming-Books) -- Free computer science, programming books. Code examples, programming project guidlines, and more...
+
+* [Command Line Interface Guidelines](https://clig.dev/)
+
+* [Release NVIM v0.5.0 · neovim/neovim](https://github.com/neovim/neovim/releases/tag/v0.5.0) -- наконец-то дождались выхода nvim версии 0.5.0!
+
+Хорошей вам недели!
