@@ -92,4 +92,5 @@ gzip = true
 
 [[deployment.matchers]]
 pattern = "^.+\\.(html|xml|json)$"
+cacheControl = "no-cache"
 gzip = true
