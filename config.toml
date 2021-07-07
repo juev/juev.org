@@ -32,7 +32,14 @@ tag = "tags"
 home = ["HTML", "RSS"]
 page = ["HTML"]
 
+[mediaTypes]
+[mediaTypes."application/xml"]
+suffixes = ["xml"]
+
 [outputFormats]
+
+[outputFormats.Sitemap]
+mediaType = "application/xml"
 
 [outputFormats.RSS]
 baseName = "atom"
