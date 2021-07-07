@@ -33,8 +33,13 @@ home = ["HTML", "RSS"]
 page = ["HTML"]
 
 [outputFormats]
+
+[outputFormats.Sitemap]
+mediatype = "application/xml"
+baseName = "sitemap"
+
 [outputFormats.RSS]
-mediatype = "application/rss"
+mediatype = "application/rss+xml"
 baseName = "atom"
 
 [params]
