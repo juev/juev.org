@@ -32,10 +32,6 @@ tag = "tags"
 home = ["HTML", "RSS"]
 page = ["HTML"]
 
-[mediaTypes]
-[mediaTypes."application/rss"]
-suffixes = ["xml"]
-
 [outputFormats]
 [outputFormats.RSS]
 mediatype = "application/rss"
