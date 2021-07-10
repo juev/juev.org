@@ -1,0 +1,33 @@
+---
+layout: post
+title: "Ссылки #137"
+date: 2021-07-10 11:03
+image: https://static.juev.org/images/links.jpg
+tags:
+  - links
+---
+За неделю сохранил 63 ссылки.
+
+* [Second-Brain](https://github.com/KasperZutterman/Second-Brain) -- A curated list of awesome Public Zettelkastens 🗄️ / Second Brains 🧠 / Digital Gardens 🌱
+
+* [My Thoughts About Using Android Again as an iPhone User](https://christine.website/blog/android-thoughts-2021-07-03)
+
+* [Branchless workflow for Git](https://github.com/arxanas/git-branchless) -- добавляет ряд новых команд для git. Правда собрать мне так и не удалось
+
+* [Snap](https://github.com/camspiers/snap) -- A fast finder system for neovim
+
+* [git update: the odyssey for a sensible git pull](https://felipec.wordpress.com/2021/07/05/git-update/)
+
+* [bep/workers](https://github.com/bep/workers) -- Set up tasks to be executed in parallel
+
+* [alekcz/pcp](https://github.com/alekcz/pcp) -- PCP: Clojure Processor -- A Clojure replacement for PHP
+
+* [Announcing Arti, a pure-Rust Tor implementation](https://blog.torproject.org/announcing-arti) -- Tor переписали на Rust
+
+* [StrongPath](https://github.com/wasp-lang/strong-path) -- Strongly typed paths in Haskell
+
+* [CertMagic - Automatic HTTPS using Let's Encrypt](https://github.com/caddyserver/certmagic) -- Automatic HTTPS for any Go program: fully-managed TLS certificate issuance and renewal
+
+* [balerter/balerter](https://github.com/balerter/balerter) -- Script Based Alerting Manager
+
+Хорошей вам недели!
