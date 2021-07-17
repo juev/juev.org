@@ -1,0 +1,31 @@
+---
+layout: post
+title: "Ссылки #138"
+date: 2021-07-17 08:05
+image: https://static.juev.org/images/links.jpg
+tags:
+  - links
+---
+За прошедшую неделю сохранил 101 ссылку.
+
+* [Inline In Rust](https://matklad.github.io//2021/07/09/inline-in-rust.html) -- Алексей Кладов рассказывает про инлайны в Rust
+
+* [feline.nvim](https://github.com/famiu/feline.nvim) -- A minimal, stylish and customizable statusline for Neovim written in Lua
+
+* [🪓 hck](https://github.com/sstadick/hck) -- A sharp cut(1) clone
+
+* [It's Difftastic!](https://github.com/Wilfred/difftastic) -- a syntax-aware diff
+
+* [profiling](https://github.com/aclysma/profiling) -- Provides a very thin abstraction over instrumented profiling crates like puffin, optick, tracy, and superluminal-perf
+
+* [Neorg - An Organized Future](https://github.com/vhyrro/neorg) -- Modernity meets insane extensibility. The future of organizing your life in Neovim
+
+* [Thesis Toolbox Template](https://github.com/thesis-toolbox/template) -- A template for writing your Bachelor, Master or PhD thesis
+
+* [С++ на практике](https://habr.com/ru/company/jugru/blog/563988/)
+
+* [dkarter/bullets.vim](https://github.com/dkarter/bullets.vim) -- 🔫 Bullets.vim is a Vim/NeoVim plugin for automated bullet lists
+
+* [gojuno/minimock](https://github.com/gojuno/minimock) -- Powerful mock generation tool for Go programming language
+
+Хорошей вам недели!
