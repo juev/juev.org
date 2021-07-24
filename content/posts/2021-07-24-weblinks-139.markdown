@@ -1,0 +1,33 @@
+---
+layout: post
+title: "Ссылки #139"
+date: 2021-07-24 10:03
+image: https://static.juev.org/images/links.jpg
+tags:
+  - links
+---
+За прошедшую неделю сохранил 110 ссылок.
+
+* [xargs considered harmful](https://codefaster.substack.com/p/xargs-considered-harmful) -- почему xargs не всегда хорошо, и чем его заменить
+
+* [Parsing logs 230x faster with Rust](https://andre.arko.net/2018/10/25/parsing-logs-230x-faster-with-rust/) -- опыт обработки логов с помощью Rust
+
+* [Notify](https://github.com/notify-rs/notify) -- 🔭 Cross-platform filesystem notification library for Rust
+
+* [Piped](https://github.com/TeamPiped/Piped) -- An alternative privacy-friendly YouTube frontend which is efficient by design
+
+* [`zig cc`: a Powerful Drop-In Replacement for GCC/Clang](https://andrewkelley.me/post/zig-cc-powerful-drop-in-replacement-gcc-clang.html)
+
+* [Best practices for writing code comments](https://stackoverflow.blog/2021/07/05/best-practices-for-writing-code-comments/)
+
+* [Setting up Git syncing for Obsidian on Android](https://lucidhacker.substack.com/p/setting-up-git-syncing-for-obsidian) -- интересный опыт настройки синхронизации файлов на Android
+
+* [signing git commits without gpg](https://andre.arko.net/2021/02/06/signing-git-commits-without-gpg/)
+
+* Серия коротких интервью: [Dev Tool Time with Suz Hinton](https://www.youtube.com/watch?v=nNPWV1igjt8), [Dev Tool Time with Leah Culver](https://www.youtube.com/watch?v=QNYoOCLocAI&t=65s), [Dev Tool Time with Michael Stapelberg](https://www.youtube.com/watch?v=lgJfs5GkjQw&t=81s)
+
+* [Veronika Romashkina & Dmitrii Kovanikov – Stan – Haskell Static Analyser](https://www.youtube.com/watch?v=wb5PLv6-e6I&t=8s)
+
+* [wiremock](https://github.com/LukeMathWalker/wiremock-rs) -- HTTP mocking to test Rust applications
+
+Хорошей вам недели!
