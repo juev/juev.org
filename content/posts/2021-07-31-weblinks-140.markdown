@@ -1,0 +1,29 @@
+---
+layout: post
+title: "Ссылки #140"
+date: 2021-07-31 10:58
+image: https://static.juev.org/images/links.jpg
+tags:
+  - links
+---
+За прошедшую неделю сохранил 74 ссылки.
+
+* [cudatext](https://cudatext.github.io/) -- CudaText is a cross-platform text editor, written in Object Pascal. It is open source project and can be used free of charge, even for business
+
+* [Tarpaulin](https://github.com/xd009642/tarpaulin) -- A code coverage tool for Rust projects
+
+* [Network, Service & Security Observability for Kubernetes](https://github.com/cilium/hubble)
+
+* [zricethezav/gitleaks](https://github.com/zricethezav/gitleaks) -- Scan git repos (or files) for secrets using regex and entropy 🔑
+
+* [Why we 💚 Vim](https://changelog.com/podcast/450) -- подкаст с целым набором ссылок на конфигурацию vim, интересных плагинов
+
+* [A privacy-first, open-source knowledge base](https://logseq.com)
+
+* [Automatically audit your Mac for basic security hygiene](https://github.com/ParetoSecurity/pareto-mac)
+
+* [RSS by email](https://rssby.email/)
+
+* [Health](https://github.com/alexliesenfeld/health) -- A simple and flexible health check library for Go
+
+Хороших вам дней!
