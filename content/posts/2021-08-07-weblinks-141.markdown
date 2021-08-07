@@ -1,0 +1,33 @@
+---
+layout: post
+title: "Ссылки #141"
+date: 2021-08-07 10:47
+image: https://static.juev.org/images/links.jpg
+tags:
+  - links
+---
+За прошедшую неделю сохранил 74 ссылки.
+
+* [grigoryvp/vscode-language-xi](https://github.com/grigoryvp/vscode-language-xi) -- "xi" markup language support for syntax highlighting and link jumps
+
+* [A Haskell library for building JSON-RPC servers (work in progress), with servers for Cryptol and SAW](https://github.com/GaloisInc/argo)
+
+* [Back to Linux](http://metaredux.com/posts/2021/07/31/back-to-linux.html) -- Bozhidar Batsov описывает, почему он перешел на Linux и как он это сделал
+
+* [Как помнить чт](https://ncase.me/remember/ru.html) -- замечательный комикс про интервальные повторения для запоминания информации
+
+* [Как развитие алгоритмов сжатия остановилось 20 лет назад, или о новом конкурсе на 200 тысяч евро](https://habr.com/ru/post/570694/)
+
+* [How To Take Smart Notes: 10 Principles to Revolutionize Your Note-Taking and Writing](https://fortelabs.co/blog/how-to-take-smart-notes/)
+
+* [Cryptocoding](https://github.com/veorq/cryptocoding) -- Guidelines for low-level cryptography software
+
+* [Bye CUPS: Printing with netcat](https://retrohacker.substack.com/p/bye-cups-printing-with-netcat) -- в Linux можно печатать и без CUPS
+
+* [japaric/heapless](https://github.com/japaric/heapless) -- Heapless, `static` friendly data structures
+
+* [How I use Obsidian to manage my goals, tasks, notes, and software development knowledge base](https://joshwin.imprint.to/post/how-i-use-obsidian-to-manage-my-goals-tasks-notes-and-software-development-knowledge-base)
+
+* [cloudflare-go](https://github.com/cloudflare/cloudflare-go) -- Go library for the Cloudflare v4 API
+
+Хорошей вам недели!
