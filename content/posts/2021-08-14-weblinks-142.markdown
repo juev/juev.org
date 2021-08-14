@@ -1,0 +1,41 @@
+---
+layout: post
+title: "Ссылки #142"
+date: 2021-08-14 11:47
+image: https://static.juev.org/images/links.jpg
+tags:
+  - links
+---
+За прошедшую неделю сохранил 59 ссылок.
+
+* [How to choose the right note-taking app](https://nesslabs.com/how-to-choose-the-right-note-taking-app) -- предложения программного обеспечения для ведения заметок
+
+* [Yi](https://github.com/yi-editor/yi) -- The Haskell-Scriptable Editor
+
+* [Note taking in 2021](https://blog.dornea.nu/2021/06/13/note-taking-in-2021/) -- описание одного из методов ведения заметок, плюс небольшой обзор ПО для заметок
+
+* [Second-Brain](https://github.com/KasperZutterman/Second-Brain) -- A curated list of awesome Public Zettelkastens 🗄️ / Second Brains 🧠 / Digital Gardens 🌱
+
+* [Gitly](https://github.com/vlang/gitly) -- Light and fast GitHub/GitLab alternative written in V, пока не очень рабочая
+
+* [CalyxOS](https://calyxos.org/) -- Everyone needs a phone. Not everyone wants to be spied on. Reclaim your privacy with CalyxOS. Образы для установки на Pixel телефоны
+
+* [s](https://github.com/zquestz/s) -- Open a web search in your terminal
+
+* [Monomer](https://github.com/fjvallarino/monomer) -- An easy to use, cross platform, GUI library for writing Haskell applications
+
+* [cohomolo-gy/haskell-resources](https://github.com/cohomolo-gy/haskell-resources) -- A List of Foundational Haskell Papers
+
+* [Paranoid NixOS on AWS](https://christine.website/blog/paranoid-nixos-aws-2021-08-11)
+
+* [Maestral](https://github.com/SamSchott/maestral) -- Open-source Dropbox client for macOS and Linux
+
+* [mjlbach/defaults.nvim](https://github.com/mjlbach/defaults.nvim) -- A small, featureful neovim template
+
+* [Share end-to-end encrypted secrets with others via a one-time URL](https://sniptt.com/ots)
+
+* [Bitwarden encrypted backup tool](https://www.snoyman.com/blog/2021/08/bitwarden-encrypted-backup-tool/)
+
+* [Ziglings](https://github.com/ratfactor/ziglings) -- Learn the Zig programming language by fixing tiny broken programs
+
+Хорошей вам недели!
