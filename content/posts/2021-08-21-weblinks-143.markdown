@@ -1,0 +1,37 @@
+---
+layout: post
+title: "Ссылки #143"
+date: 2021-08-21 11:11
+image: https://static.juev.org/images/links.jpg
+tags:
+  - links
+---
+За прошедшую неделю сохранил 66 ссылок.
+
+* [Bitwarden encrypted backup tool](https://www.snoyman.com/blog/2021/08/bitwarden-encrypted-backup-tool/)
+
+* [Observability Isn't About Logs, Metrics, and Traces](https://www.akitasoftware.com/blog-posts/observability-isnt-about-logs-metrics-and-traces)
+
+* [MacOS Web](https://macos.now.sh/)
+
+* [spinners](https://github.com/patrickt/spinners) -- A Haskell library for rendering animated spinners in the terminal
+
+* [fmt](https://github.com/cdornan/fmt) -- New Haskell formatting library
+
+* [jgm/gitit](https://github.com/jgm/gitit) -- A wiki using HAppS, pandoc, and git
+
+* [Interview with John Kozubik, rsync.net](https://console.dev/interviews/rsync-john-kozubik/)
+
+* [Go 1.17 Release Notes](https://golang.org/doc/go1.17)
+
+* [Haskellings](https://github.com/MondayMorningHaskell/haskellings) -- An automated tutorial to teach you about Haskell
+
+* [Headscale](https://github.com/juanfont/headscale) -- An open source, self-hosted implementation of the Tailscale control server
+
+* [Announcing Amber, encrypted secrets management](https://www.fpcomplete.com/blog/announcing-amber-ci-secret-tool/)
+
+* [Как настроить AdGuard Home на публичном сервере](https://adguard.com/ru/blog/adguard-home-on-public-server.html)
+
+* [GoKart - Go Security Static Analysis](https://github.com/praetorian-inc/gokart) -- A static analysis tool for securing Go code
+
+Хорошей вам недели!
