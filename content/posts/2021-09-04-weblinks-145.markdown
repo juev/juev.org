@@ -1,0 +1,33 @@
+---
+layout: post
+title: "Ссылки #145"
+date: 2021-09-04 10:01
+image: https://static.juev.org/images/links.jpg
+tags:
+  - links
+---
+За прошедшую неделю сохранил 89 ссылок.
+
+* [RBAC like it was meant to be](https://tailscale.com/blog/rbac-like-it-was-meant-to-be/)
+
+* [What is Miller?](https://github.com/johnkerl/miller) -- Miller is like awk, sed, cut, join, and sort for name-indexed data such as CSV, TSV, and tabular JSON
+
+* [Bashly - Bash CLI Framework and Generator](https://github.com/DannyBen/bashly) -- Bash command line framework and CLI generator
+
+* [flagger](https://github.com/fluxcd/flagger) -- Progressive delivery Kubernetes operator (Canary, A/B Testing and Blue/Green deployments)
+
+* [Darktile](https://github.com/liamg/darktile) -- 🌘 Darktile is a GPU rendered terminal emulator designed for tiling window managers.
+
+* [Statsviz](https://github.com/arl/statsviz) -- 🚀 Instant live visualization of your Go application runtime statistics (GC, MemStats, etc.) in the browser
+
+* [GOCUI - Go Console User Interface](https://github.com/jroimartin/gocui) -- Minimalist Go package aimed at creating Console User Interfaces
+
+* [How to install Syncthing on Raspberry Pi + start on boot [semi-automatic]](https://gist.github.com/hdml/7b079c114d3e20bf69f1) -- набор скриптов для запуска Syncthing на Raspberry PI, что использовал
+
+* [Terraboard](https://github.com/camptocamp/terraboard) -- 🌍 📋 A web dashboard to inspect Terraform States
+
+* [Podman: A tool for managing OCI containers and pods](https://github.com/containers/podman) -- одна из вменяемых альтернатив Docker, после того, как Docker Desktop перевели в платные продукты. Да, он бесплатен для персонального использования. Но для всех остальных случаев Podman самое то. И ряд проблем обсуждается в статье [Migrating from Docker to Podman](https://marcusnoble.co.uk/2021-09-01-migrating-from-docker-to-podman/)
+
+* [Joker](https://joker-lang.org/) -- Joker is a small interpreted dialect of Clojure written in Go
+
+Хорошей вам недели!
