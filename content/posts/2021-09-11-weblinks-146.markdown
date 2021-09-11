@@ -1,0 +1,29 @@
+---
+layout: post
+title: "Ссылки #146"
+date: 2021-09-11 10:05
+image: https://static.juev.org/images/links.jpg
+tags:
+  - links
+---
+За прошедшую неделю сохранил 82 ссылки.
+
+* [Podman for macOS](https://github.com/heyvito/podman-macos) -- "Podman for macOS" is a macOS frontend for Podman
+
+* [One step closer to "Tabless" workflow](https://vladimir.varank.in/notes/2021/08/one-step-closer-to-tabless-workflow/) -- убираем вкладки в Firefox
+
+* [containerd & Lima: Open source alternative to Docker for Mac](https://medium.com/nttlabs/containerd-and-lima-39e0b64d2a59)
+
+* [redis-lua](https://github.com/nrk/redis-lua) -- A Lua client library for the redis key value storage system
+
+* [Changelog](https://github.com/orhun/git-cliff) -- A highly customizable Changelog Generator that follows Conventional Commit specifications
+
+* [How Tailscale works](https://tailscale.com/blog/how-tailscale-works/)
+
+* [Раскладка Ильи Шепрута — Блог optozorax'а](https://optozorax.github.io/p/my-keyboard-layout/)
+
+* [Maintain it With Zig](https://kristoff.it/blog/maintain-it-with-zig/)
+
+* [Compile a C/C++ Project with Zig](https://zig.news/kristoff/compile-a-c-c-project-with-zig-368j)
+
+Хорошей вам недели!
