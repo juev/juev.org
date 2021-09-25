@@ -1,0 +1,25 @@
+---
+layout: post
+title: "Ссылки #148"
+date: 2021-09-25 17:34
+image: https://static.juev.org/images/links.jpg
+tags:
+  - links
+---
+За прошедшую неделю сохранил 88 ссылок.
+
+* [RSS by email](https://rssby.email/)
+* [The Behavior Of Channels](https://www.ardanlabs.com/blog/2017/10/the-behavior-of-channels.html) -- про каналы в Golang
+* [websocket](https://github.com/nhooyr/websocket) -- Minimal and idiomatic WebSocket library for Go
+* [Reducing Memory Allocations in Golang](https://chris124567.github.io/2021-06-21-go-performance/) -- оптимизация работы программ в Golang
+* [Package management made easy](https://akkuscm.org/) -- Akku.scm is a language package manager for Scheme
+* [golang-lru](https://github.com/hashicorp/golang-lru) -- This provides the lru package which implements a fixed-size thread safe LRU cache. It is based on the cache in Groupcache. И его rust-версия: [HashiCorp-LRU](https://github.com/al8n/hashicorp-lru)
+* [Copy as Markdown](https://github.com/notlmn/copy-as-markdown) -- 🖱 Browser extension to copy hyperlinks, images, and selected text as Markdown with GFM support
+* [Анализ механизма сбора мусора Go](https://russianblogs.com/article/3396205378/)
+* [GO memory ballast](https://medium.com/clean-code-channel/go-memory-ballast-dec0c04830b1)
+* [Learning Haskell by building a static blog generator](https://soupi.github.io/learn-haskell-blog-generator)
+* [Вопросы и ответы для собеседования Back-end/Golang разработчика и не только](https://github.com/goavengers/go-interview)
+* [go101/go101](https://github.com/go101/go101) -- An online book focusing on Go syntax/semantics and runtime related things
+* [go-quartz](https://github.com/reugn/go-quartz) -- Minimalist and zero-dependency scheduling library for Go
+
+Хорошей вам недели!
