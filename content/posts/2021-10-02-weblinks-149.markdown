@@ -1,0 +1,23 @@
+---
+layout: post
+title: "Ссылки #149"
+date: 2021-10-02 09:26
+image: https://static.juev.org/images/links.jpg
+tags:
+  - links
+---
+За прошедшую неделю сохранил 86 ссылок.
+
+* [LeftWM](https://github.com/leftwm/leftwm) -- LeftWM - A tiling window manager for Adventurers
+* [git-try-merge](https://github.com/cecton/git-tools) -- Git subcommands to help with your workflow
+* [Code Review from the Command Line – Jake Zimmerman](https://blog.jez.io/cli-code-review/)
+* [Command line interface](https://github.com/mkideal/cli) -- CLI - A package for building command line app with go
+* [health-go](https://github.com/hellofresh/health-go) -- Library to provide basic healthcheck functionality to Go applications
+* [Logics as categories](https://boris-marinov.github.io/category-theory-illustrated/05_logic/)
+* [A 5x reduction in RAM usage with Zoekt memory optimizations](https://about.sourcegraph.com/blog/zoekt-memory-optimizations-for-sourcegraph-cloud/)
+* [Implementing a Generic Filter Function in Go](https://preslav.me/2021/09/22/implementing-a-generic-filter-function-in-golang/)
+* [Топ-10 приложений для электронного цеттелькастен](https://fedorovpishet.ru/zettelkasten-apps/)
+* [👋 Awesome Prometheus Alerts](https://github.com/samber/awesome-prometheus-alerts)
+* [Understanding AWK](https://earthly.dev/blog/awk-examples/)
+
+Хорошей вам недели!
