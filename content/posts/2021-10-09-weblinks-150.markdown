@@ -1,0 +1,26 @@
+---
+layout: post
+title: "Ссылки #150"
+date: 2021-10-09 10:04
+image: https://static.juev.org/images/links.jpg
+tags:
+  - links
+---
+Юбилейный 150 выпуск. 150 недель и почти без перерыва удавалось проводить публикацию ссылок.
+
+За прошедшую неделю сохранил 79 ссылок.
+
+* [sh](https://github.com/mvdan/sh) -- A shell parser, formatter, and interpreter with bash support; includes shfmt
+* [Put a lock on your cloud](https://cryptomator.org/)
+* [kedacore/keda](https://github.com/kedacore/keda) -- KEDA is a Kubernetes-based Event Driven Autoscaling component. It provides event driven scale for any container running in Kubernetes
+* [otpgen](https://github.com/RijulGulati/otpgen) -- Library to generate TOTP/HOTP codes
+* [What I Wish I Knew When Learning Haskell](https://github.com/sdiehl/wiwinwlh) -- What I Wish I Knew When Learning Haskell
+* [How singleton pattern works with Golang](https://medium.com/golang-issue/how-singleton-pattern-works-with-golang-2fdd61cd5a7f) -- про использование пакета Sync в golang
+* [Abusing AWS Lambda to make an Aussie Search Engine](https://boyter.org/posts/abusing-aws-to-make-a-search-engine/)
+* [Sql driver mock for Golang](https://github.com/DATA-DOG/go-sqlmock) -- Sql mock driver for golang to test database interactions
+* [gofuzz](https://github.com/google/gofuzz) -- Fuzz testing for go
+* [go-delve/delve](https://github.com/go-delve/delve) -- Delve is a debugger for the Go programming language
+* [Write better integration tests! Dockertest helps you boot up ephermal docker images for your Go tests with minimal work.](https://github.com/ory/dockertest)
+* [Keyb](https://github.com/ZevEisenberg/Keyb) -- Type with one hand on a Mac
+
+Хорошей вам недели!
