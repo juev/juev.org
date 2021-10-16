@@ -1,0 +1,22 @@
+---
+layout: post
+title: "Ссылки #151"
+date: 2021-10-16 15:56
+image: https://static.juev.org/images/links.jpg
+tags:
+  - links
+---
+За прошедшую неделю сохранил 59 ссылок.
+
+* [gomonkey](https://github.com/agiledragon/gomonkey) -- gomonkey is a library to make monkey patching in unit tests easy
+* [A Hacker's Guide to Git](https://wildlyinaccurate.com/a-hackers-guide-to-git)
+* [json-iterator/go](https://github.com/json-iterator/go) -- A high-performance 100% compatible drop-in replacement of "encoding/json"
+* [Maintain it With Zig](https://kristoff.it/blog/maintain-it-with-zig/)
+* [sarama](https://github.com/Shopify/sarama) -- Sarama is a Go library for Apache Kafka 0.8, and up
+* [Alternative (more granular) approach to a DNS library](https://github.com/miekg/dns) -- DNS library in Go
+* [Memcached vs Redis - More Different Than You Would Expect](https://engineering.kablamo.com.au/posts/2021/memcached-vs-redis-whats-the-difference)
+* [Psst! Now you can securely share 1Password items with anyone](https://blog.1password.com/psst-item-sharing/) -- 1Password запустили сервис для того, чтобы безопасно делиться паролями
+* [Lightning-fast rebases with git-move](https://blog.waleedkhan.name/in-memory-rebases/)
+* [How To Use Structured JSON Logging in Golang Applications](https://betterprogramming.pub/how-to-use-structured-json-logging-in-golang-applications-7fc5e2751dbd)
+
+Хорошей вам недели!
