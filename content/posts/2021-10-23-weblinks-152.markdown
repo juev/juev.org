@@ -1,0 +1,21 @@
+---
+layout: post
+title: "Ссылки #152"
+date: 2021-10-23 16:28
+image: https://static.juev.org/images/links.jpg
+tags:
+  - links
+---
+За прошедшую неделю сохранил 41 ссылку.
+
+* [Let's talk about exit codes](https://www.jntrnr.com/exit-codes/) -- не все так просто с кодами выхода
+* [Micro Services](https://github.com/micro/services) -- Programmable real world Micro services
+* [kdigger](https://github.com/quarkslab/kdigger) -- kdigger is a context discovery tool for Kubernetes penetration testing
+* [gost - GO Simple Tunnel](https://github.com/ginuerzh/gost) -- GO Simple Tunnel - a simple tunnel written in golang
+* [gotests](https://github.com/cweill/gotests) -- Automatically generate Go test boilerplate from your source code
+* [Kubernetes and container management on the desktop](https://rancherdesktop.io/)
+* [olivia-ai/olivia](https://github.com/olivia-ai/olivia) -- 💁‍♀️Your new best friend powered by an artificial neural network
+* [pulumi/pulumi](https://github.com/pulumi/pulumi) -- Pulumi - Modern Infrastructure as Code. Any cloud, any language 🚀
+* [Netflix/chaosmonkey](https://github.com/Netflix/chaosmonkey) -- Chaos Monkey is a resiliency tool that helps applications tolerate random instance failures
+
+Хорошей вам недели!
