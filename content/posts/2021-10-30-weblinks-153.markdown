@@ -1,0 +1,23 @@
+---
+layout: post
+title: "Ссылки #153"
+date: 2021-10-30 19:10
+image: https://static.juev.org/images/links.jpg
+tags:
+  - links
+---
+За прошедшую неделю сохранил 66 ссылок.
+
+* [Создание и использование динамических библиотек в Rust](https://habr.com/ru/company/otus/blog/584248/)
+* [A UCI compatible chess engine written in Golang](https://github.com/algerbrex/blunder)
+* [Harp](https://github.com/elastic/harp) -- Secret management toolchain
+* [A 16 Year History of the Git Init Command](https://initialcommit.com/blog/history-git-init-command)
+* [Toxiproxy](https://github.com/Shopify/toxiproxy) -- ⏰ 🔥 A TCP proxy to simulate network and system conditions for chaos and resiliency testing
+* [Copilot.vim](https://github.com/github/copilot.vim) -- Neovim plugin for GitHub Copilot
+* [Envconfig](https://github.com/sethvargo/go-envconfig) -- A Go library for parsing struct tags from environment variables
+* [Run MacOS Software On Linux Using Darling](https://ostechnix.com/run-macos-software-on-linux-using-darling/)
+* [$8000 ЗА КОД НА HASKELL / "Фримонады ваше всё!" / Интервью с адептом haskell Александром Граниным](https://www.youtube.com/watch?v=fhMVCRWpNVc)
+* [Jeffail/gabs](https://github.com/Jeffail/gabs) -- For parsing, creating and editing unknown or dynamic JSON in Go
+* [What could Go wrong with a mutex, or the Go profiling story](https://evilmartians.com/chronicles/what-could-go-wrong-with-a-mutex-or-the-go-profiling-story)
+
+Хорошей вам недели!
