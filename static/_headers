@@ -1,13 +1,11 @@
 /*
   Access-Control-Allow-Origin: *
-  Content-Security-Policy: default-src 'self' static.juev.org; font-src 'self' fonts.gstatic.com; child-src 'none'; script-src static.cloudflareinsights.com; upgrade-insecure-requests;
   Strict-Transport-Security: max-age=1000
   X-Xss-Protection: 1; mode=block
   X-Frame-Options: DENY
   X-Content-Type-Options: nosniff
-  Referrer-Policy: strict-origin-when-cross-origin
-  Feature-Policy: fullscreen *
   Permissions-Policy: document-domain=()
+  Cache-Control: public, no-cache, must-revalidate
 
 https://:project.pages.dev/*
   X-Robots-Tag: noindex
