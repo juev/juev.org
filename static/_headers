@@ -1,6 +1,6 @@
 /*
   Access-Control-Allow-Origin: *
-  Content-Security-Policy: default-src 'self' static.juev.org; font-src 'self' fonts.gstatic.com; child-src 'none'; upgrade-insecure-requests;
+  Content-Security-Policy: default-src 'self' static.juev.org static.cloudflareinsights.com; font-src 'self' fonts.gstatic.com; child-src 'none'; upgrade-insecure-requests;
   Strict-Transport-Security: max-age=1000
   X-Xss-Protection: 1; mode=block
   X-Frame-Options: DENY
