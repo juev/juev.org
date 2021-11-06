@@ -1,0 +1,28 @@
+---
+layout: post
+title: "Ссылки #154"
+date: 2021-11-06 10:48
+image: https://static.juev.org/images/links.jpg
+tags:
+  - links
+---
+Сегодня 154 неделя, как я начал публиковать найденные за неделю интересные ссылки. Все бы ничего, но закрадывается мысль о том, что это никому не нужно. В том числе и мне самому. За все эти несколько лет я ни разу не возвращался к своим ссылкам. В результате возникает мысль, стоит ли продолжать?
+
+Буду думать.
+
+За прошедшую неделю сохранил 86 ссылок.
+
+* [BuildKit](https://github.com/moby/buildkit) -- concurrent, cache-efficient, and Dockerfile-agnostic builder toolkit
+* [3 базовых вещи относительно параллельных вычислений](https://www.1024cores.net/home/in-russian/3-bazovyh-vesi-otnositelno-parallelnyh-vycislenij) -- рекомендую обратить внимание на блог в целом, много интересных материалов
+* [Git from the inside out](https://maryrosecook.com/blog/post/git-from-the-inside-out)
+* [Air](https://github.com/cosmtrek/air) -- ☁️ Live reload for Go apps
+* [How “go build” Works](https://maori.geek.nz/how-go-build-works-750bb2ba6d8e)
+* [yandex-cloud/geesefs](https://github.com/yandex-cloud/geesefs) -- Finally, a good FUSE FS implementation over S3
+* [Redigo](https://github.com/gomodule/redigo) -- Go client for Redis
+* [Ddosify - High-performance load testing tool](https://github.com/ddosify/ddosify) -- High-performance load testing tool, written in Golang
+* [Carbon](https://github.com/golang-module/carbon) -- A simple, semantic and developer-friendly golang package for datetime
+* [gopherjs/gopherjs](https://github.com/gopherjs/gopherjs) -- A compiler from Go to JavaScript for running Go code in a browser
+* [Building a Highly Available Kubernetes Operator Using Golang](https://betterprogramming.pub/building-a-highly-available-kubernetes-operator-using-golang-fe4a44c395c2)
+* [revive](https://github.com/mgechev/revive) -- 🔥 ~6x faster, stricter, configurable, extensible, and beautiful drop-in replacement for golint
+
+Хорошей вам недели!
