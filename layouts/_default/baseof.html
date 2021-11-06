@@ -14,12 +14,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     {{ "<!-- end -->" | safeHTML }}
     <link rel="canonical" href="{{- .Permalink -}}">
-    <link rel="shortcut icon" href="{{- .Site.BaseURL -}}favicon.ico">
-    <link rel="apple-touch-icon" href="{{- .Site.BaseURL -}}apple-touch-icon.png">
-    <link rel="alternate" type="application/rss" href="{{- .Site.BaseURL -}}atom.xml" title="Denis Evsyukov">
+    <link rel="shortcut icon" href="/favicon.ico">
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+    <link rel="alternate" type="application/rss" href="/atom.xml" title="Denis Evsyukov">
     {{ $style := resources.Get "scss/master.scss" | toCSS | minify | fingerprint -}}
     <link rel="stylesheet" href="{{ $style.Permalink }}">
-    <link rel="sitemap" type="application/xml" title="Sitemap" href="{{ .Site.BaseURL }}sitemap.xml" />
+    <link rel="sitemap" type="application/xml" title="Sitemap" href="/sitemap.xml" />
     {{- with .PrevInSection }}
     <link rel="prev" href="{{.Permalink}}">
     {{- end }}
@@ -63,9 +63,9 @@
 <body class="wide" itemscope itemtype="https://schema.org/WebPage">
     <div class="navigation" itemscope itemtype="https://schema.org/SiteNavigationElement">
         <div class="width-fix">
-            <a itemprop="url" href="{{- .Site.BaseURL -}}" id="home" rel="nofollow"><img src="{{- .Site.BaseURL -}}images/home.png" alt="Home"></a>
+            <a itemprop="url" href="/" id="home" rel="nofollow"><img src="/images/home.png" alt="Home"></a>
             <ul>
-                <li><a itemprop="url" href="{{- .Site.BaseURL -}}posts/" rel="nofollow">Статьи</a></li>
+                <li><a itemprop="url" href="/posts/" rel="nofollow">Статьи</a></li>
                 <li>|</li>
                 <li><a itemprop="url" href="https://denis.evsyukov.org">Об авторе</a></li>
             </ul>
@@ -79,7 +79,7 @@
     </div>{{ "<!-- noindex -->" | safeHTML }}
     <div class="footer">
         <div class="width-fix">
-            <p><a href="{{- .Site.BaseURL -}}posts/" rel="nofollow">Список статей</a> :: <a href="{{- .Site.BaseURL -}}recommendations.html" rel="nofollow">Рекомендации</a> :: <a href="{{- .Site.BaseURL -}}atom.xml" rel="nofollow">RSS</a></p>
+            <p><a href="/posts/" rel="nofollow">Список статей</a> :: <a href="/recommendations.html" rel="nofollow">Рекомендации</a> :: <a href="/atom.xml" rel="nofollow">RSS</a></p>
             <p>&copy;&nbsp;<span itemprop="author" itemscope itemtype="https://schema.org/Person"><a rel="author" itemprop="url" href="https://denis.evsyukov.org">Denis Evsyukov</a></span>,&nbsp;2008&ndash;{{ now.Format "2006" }}&nbsp;Contact me via
             <a itemprop="email" href="&#109;&#97;&#105;&#108;&#116;&#111;&#58;&#100;&#101;&#110;&#105;&#115;&#64;&#101;&#118;&#115;&#121;&#117;&#107;&#111;&#118;&#46;&#111;&#114;&#103;">email</a>, <a itemprop="url" href="https://twitter.com/#!/Juev" rel="nofollow">twitter</a> or&nbsp;<a itemprop="url" href="https://github.com/Juev" rel="nofollow">github</a></p>
         </div>
