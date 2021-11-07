@@ -101,12 +101,12 @@ gzip = false
 
 [[deployment.matchers]]
 pattern = "^.+\\.(html|xml|json)$"
-cacheControl = "no-cache"
+cacheControl = "public, no-cache, must-revalidate"
 gzip = true
 
 [[deployment.matchers]]
 # Set custom content type for /sitemap.xml
 pattern = "^sitemap\\.xml$"
-cacheControl = "no-cache"
+cacheControl = "public, no-cache, must-revalidate"
 contentType = "application/xml"
 gzip = true
