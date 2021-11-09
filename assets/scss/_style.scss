@@ -3,6 +3,10 @@ html,body.wide
   height:100%
 }
 
+html.wf-loading * {
+  opacity: 0;
+}
+
 body
 {
   border-top:3px solid #BC5007;
@@ -16,10 +20,12 @@ body
   {
    font:16px 'Open Sans', arial, serif !important;
    line-height: 26px !important;
+   font-display: optional;
   }
   code
   {
    font-family:'Source Code Pro', monospace !important;
+   font-display: optional;
   }
 }
 
@@ -332,11 +338,11 @@ a#license
   border-top:1px dotted #ddd
 }
 
-.footnotes
-{
-/*  border-color:#D3D3D3;
-  border-top:1px dotted
-*/}
+// .footnotes
+// {
+// /*  border-color:#D3D3D3;
+//   border-top:1px dotted
+// */}
 
 .footnotes p
 {
