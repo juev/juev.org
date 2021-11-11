@@ -89,13 +89,13 @@ URL = "s3://www.juev.org?region=eu-west-2"
 
 [[deployment.matchers]]
 # Cache static assets for 20 years.
-pattern = "^.+\\.(js|css)$"
+pattern = "^.+\\.(js|css|ttf|ico)$"
 cacheControl = "max-age=630720000, no-transform, public"
 gzip = true
 
 [[deployment.matchers]]
 # Cache static assets for 20 years.
-pattern = "^.+\\.(png|jpg|gif|svg|ttf|ico)$"
+pattern = "^.+\\.(png|jpg|gif|svg)$"
 cacheControl = "max-age=630720000, no-transform, public"
 gzip = false
 
