@@ -1,0 +1,28 @@
+---
+routes:
+    - route: "^.+\\.(js|css)$"
+      #  cache static assets for 20 years
+      headers:
+        Cache-Control: "max-age=630720000, no-transform, public"
+      gzip: true
+    - route: "^.+\\.(png|jpg|gif|svg|ttf|ico)$"
+      headers:
+        Cache-Control: "max-age=630720000, no-transform, public"
+      gzip: false
+    - route: "^.+\\.(html|xml|json)$"
+      headers:
+        Cache-Control: "public, no-cache, must-revalidate"
+        Content-Security-Policy: "default-src 'self' 'unsafe-inline' static.juev.org; font-src 'self' fonts.gstatic.com; child-src 'none'; upgrade-insecure-requests"
+        Strict-Transport-Security: "max-age=1000"
+        X-Xss-Protection: "1; mode=block"
+        X-Frame-Options: "DENY"
+        X-Content-Type-Options: "nosniff"
+        Referrer-Policy: "strict-origin-when-cross-origin"
+        Feature-Policy: "fullscreen *"
+      gzip: true
+    - route: "^sitemap\\.xml$"
+      headers:
+        Cache-Control: "public, no-cache, must-revalidate"
+        Content-Type: "application/xml"
+      gzip: true
+
