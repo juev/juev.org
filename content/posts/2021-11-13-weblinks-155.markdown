@@ -1,0 +1,23 @@
+---
+layout: post
+title: "Ссылки #155"
+date: 2021-11-13 11:50
+image: https://static.juev.org/images/links.jpg
+tags:
+  - links
+---
+За прошедшую неделю сохранил 95 ссылок.
+
+* [Memcached vs Redis - More Different Than You Would Expect](https://engineering.kablamo.com.au/posts/2021/memcached-vs-redis-whats-the-difference) -- сравнение Redis и Memcached, преимущества и недостатки
+* [go-ruleguard](https://github.com/quasilyte/go-ruleguard) -- Define and run pattern-based custom linting rules
+* [Why SQLite Does Not Use Git](https://sqlite.org/whynotgit.html) -- почему Sqlite использует [Fossil](https://fossil-scm.org/) для версионирования своего кода
+* [My Logging Best Practices – Thomas Uhrig](https://tuhrig.de/my-logging-best-practices/) -- интересная концепция по использованию логов, но есть спорные моменты
+* [go-github](https://github.com/google/go-github) --  Go library for accessing the GitHub API
+* [Blocky](https://github.com/0xERR0R/blocky) -- Fast and lightweight DNS proxy as ad-blocker for local network with many features
+* [BadgerDB](https://github.com/dgraph-io/badger) -- Fast key-value DB in Go
+* [gomock](https://github.com/golang/mock) -- GoMock is a mocking framework for the Go programming language
+* [Maestral](https://www.maestral.app/) -- Open source Dropbox client
+* [Pragmatic Type-Level Design](https://leanpub.com/pragmatic-type-level-design) -- новая книга от Александра Гранина, в процессе написания, но уже сейчас можно заказать
+* [Useful sed scripts](https://github.com/adrianscheff/useful-sed)
+
+Хорошей вам недели!
