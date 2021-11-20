@@ -1,0 +1,27 @@
+---
+layout: post
+title: "Ссылки #156"
+date: 2021-11-20 20:31
+image: https://static.juev.org/images/links.jpg
+tags:
+  - links
+---
+За прошедшую неделю сохранил 75 ссылок.
+
+* [yandex/odyssey](https://github.com/yandex/odyssey) -- Scalable PostgreSQL connection pooler
+* [Go Developer Roadmap](https://github.com/Alikhll/golang-developer-roadmap) -- Roadmap to becoming a Go developer in 2020
+* [It's Now Possible To Sign Arbitrary Data With Your SSH Keys](https://www.agwa.name/blog/post/ssh_signatures) -- теперь можно подписывать файлы с помощью ssh
+* [Atlas](https://atlas.engineer/technical-article/why-lisp.org) -- вы еще не используете common lisp? Тогда мы идем к вам!
+* [Date Time Expression](https://github.com/mvrozanti/dte) -- 🕟 date and time processing language
+* [go101/go101](https://github.com/go101/go101) -- An online book focusing on Go syntax/semantics and runtime related things
+* [Замыкания в Rust](https://habr.com/ru/post/588917/)
+* [Bramble: A Purely Functional Build System and Package Manager](https://maxmcd.com/posts/bramble/) -- презентация нового пакетного менеджера, альтернатива nix
+* [Highlights from Git 2.34](https://github.blog/2021-11-15-highlights-from-git-2-34/) -- новая версия Git, в которой появляется подпись с помощью ssh
+* [Bartib](https://github.com/nikolassv/bartib) -- A simple timetracker for the command line
+* [go-internals](https://github.com/teh-cmc/go-internals) -- A book about the internals of the Go programming language
+* [Why Emacs: Redux](https://batsov.com/articles/2021/11/16/why-emacs-redux/) -- стоит ли использовать Emacs в 21 веке?
+* [gojuno/minimock](https://github.com/gojuno/minimock) -- Powerful mock generation tool for Go programming language
+* [AppFlowy.IO ⭐️ The Open Source Notion Alternative ⭐️](https://github.com/AppFlowy-IO/appflowy)
+* [Блокирование контента при помощи DNS: прошлое, настоящее, будущее](https://adguard.com/ru/blog/dns-content-blocking-at-scale.html)
+
+Хорошей вам недели!
