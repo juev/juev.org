@@ -1,0 +1,23 @@
+---
+layout: post
+title: "Ссылки #158"
+date: 2021-12-04 11:48
+image: https://static.juev.org/images/links.jpg
+tags:
+  - links
+---
+За прошедшую неделю сохранил 61 ссылку.
+
+* [Code Like a Pro by Manning Publications](https://www.humblebundle.com/books/code-like-pro-manning-publications-books) -- 20 книг от Manning продаются в подборке HumbleBundle, предложение ограничено по времени
+* [Why I'm donating $150/month (10% of my income) to the musl libc project](https://andrewkelley.me/post/why-donating-to-musl-libc-project.html)
+* [CodisLabs/codis](https://github.com/CodisLabs/codis) -- Proxy based Redis cluster solution supporting pipeline and scaling dynamically
+* [From zsh to fish: A Complete Setup Guide](https://reckoning.dev/blog/fish-shell/) -- предпринял попытку переключиться на fish в очередной раз, но хватило от силы на несколько дней, вернулся обратно на zsh
+* [Jet - A Structural JSON editor](https://github.com/ChrisPenner/jet) -- A structural editor for JSON values
+* [Will Nix Overtake Docker?](https://blog.replit.com/nix-vs-docker) -- сравнение docker и nix. После того, как поработал с nix в течение нескольких месяцев, я бы делал ставку на docker.
+* [Generics in Go: Viva La Revolution!](https://levelup.gitconnected.com/generics-in-go-viva-la-revolution-e27898bf5495)
+* [Advent of Go Profiling: Day 1-1](https://felixge.de/2021/12/01/advent-of-go-profiling-2021-day-1-1/) -- Felix Geisendörfer публикует свои очерки по профилированию golang-программ, это первая публикация серии
+* [How to Consume Kafka Efficiently in Golang?](https://medium.com/swlh/how-to-consume-kafka-efficiently-in-golang-264f7fe2155b)
+* [Ristretto](https://github.com/dgraph-io/ristretto) -- A high performance memory-bound Go cache
+* [Для мониторинга CronJob в Kubernetes нужен простой советский…](https://habr.com/ru/company/ozontech/blog/586308/)
+
+Хорошей вам недели!
