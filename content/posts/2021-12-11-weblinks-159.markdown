@@ -1,0 +1,24 @@
+---
+layout: post
+title: "Ссылки #159"
+date: 2021-12-11 08:48
+image: https://static.juev.org/images/links.jpg
+tags:
+  - links
+---
+За прошедшую неделю сохранил 90 ссылок.
+
+* [How to use dig](https://jvns.ca/blog/2021/12/04/how-to-use-dig/) -- вводная от Julia Evans по использованию dig. Взял на заметку конфигурацию
+* [gotestfmt: go test output for humans](https://github.com/haveyoudebuggedit/gotestfmt) -- утилита для форматирования вывода golang тестов
+* [ivy](https://github.com/robpike/ivy) -- ivy, an APL-like calculator от Роба Пайка
+* [pet : CLI Snippet Manager](https://github.com/knqyf263/pet) -- Simple command-line snippet manager, written in Go
+* [Property-Based Testing In Go](https://earthly.dev/blog/property-based-testing/)
+* [Cloud storage abstraction package for Go](https://github.com/graymeta/stow)
+* [Dolt is Git for Data!](https://github.com/dolthub/dolt)
+* [Git User Check](https://github.com/maksim77/gitcheck) -- Sometimes, after cloning a repository from a corporate server and having already sent several commits there, you notice that you forgot to change the user settings in git. This extension is written to avoid this
+* [hakyll-shortcut-links](https://github.com/kowainik/hakyll-shortcut-links) -- ✂️ Hakyll shortcut-links in markdown files
+* [Advent of Code](https://grishaev.me/advent-of-code/) -- почему вам не нужно участвовать в Advent of Code, мнение Ивана Гришаева, с которым я полностью согласен
+* [Haskell Beginners 2022 Course Announcement](https://kodimensional.dev/course) -- курс по Хаскел от Дмитрия Кованикова
+* [Protect your Privacy with Firefox Containers](https://gadgetboy.org/protect-your-privacy-with-firefox-containers/) -- пытался использовать контейнеры в Firefox, но пока не заходит у меня, может дам им еще один шанс
+
+Хорошей вам недели!
