@@ -1,0 +1,33 @@
+---
+layout: post
+title: "Ссылки #160"
+date: 2021-12-18 10:30
+image: https://static.juev.org/images/links.jpg
+tags:
+  - links
+---
+В последние несколько дней обратил внимание на то, что как Плюшкин собираю информацию, но никак ее не использую.
+Да, у меня есть аккаунты в сервисах закладок, и в Pinboard и в Raindrop. В каждом из них уже более 2 тыс закладок.
+Когда я последний раз обращался к ним? Минимум за последний год ни разу. То есть сохраняю, складирую, но не пользуюсь.
+
+Возникает ощущение того, что да, у меня есть информация по любой теме. Стоит только спросить и могу найти все что угодно.
+И все такое нужное, полезное. Каждый день просматриваю твиттер, читаю RSS-фиды, все интересное и полезное снова сохраняю в закладки.
+
+Но как только возникает какой-нибудь вопрос, просто обращаюсь к интернету и провожу поиск в поисковых системах. Потому что это гораздо проще и быстрее.
+В результате решил отказаться от всех сервисов и теперь пользуюсь только локальными закладками, что есть в браузере и которые содержат только самые востребованные и нужные ресурсы, с которыми работаю каждый день.
+
+За прошедшую неделю сохранил 90 ссылок.
+
+* [Sleep technique used by Salvador Dalí really works](https://www.livescience.com/little-known-sleep-stage-may-be-creative-sweet-spot) -- техника сна, что использовал Сальвадор Дали, вроде как показывает свою эффективность
+* [SimpleX chat](https://github.com/simplex-chat/simplex-chat) -- 🚀 SimpleX - decentralized chat with a focus on users’ privacy - doesn't use global user identities - now with groups and sending files!
+* [Professional maintainers: a wake-up call](https://blog.filippo.io/professional-maintainers/) -- мысли про опен-сурс и про роль разработчика в ней
+* [actions-setup-zig](https://github.com/nektro/actions-setup-zig) -- Use a @ziglang compiler in your Github Actions workflows
+* [Notes on RSI for Developers](https://www.swyx.io/rsi-tips)
+* [mmark](https://github.com/mmarkdown/mmark) -- Mmark: a powerful markdown processor in Go geared towards the IETF
+* [ozonru/file.d](https://github.com/ozonru/file.d) -- A blazing fast tool for building data pipelines: read, process and output events
+* [Go Patterns](https://github.com/tmrts/go-patterns) -- Curated list of Go design patterns, recipes and idioms
+* [Lapce](https://github.com/lapce/lapce) -- Lightning-fast and Powerful Code Editor written in Rust
+* [Как вести «умные заметки»: обзор метода по книге Зонке Аренса](https://fedorovpishet.ru/zonke-ahrens-smart-notes/)
+* [FiloSottile/passage : A fork of password-store (https : //www.passwordstore.org) that uses age as backend.](https://github.com/FiloSottile/passage)
+
+Хорошей вам недели!
