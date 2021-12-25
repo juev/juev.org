@@ -1,0 +1,24 @@
+---
+layout: post
+title: "Ссылки #161"
+date: 2021-12-25 11:26
+image: https://static.juev.org/images/links.jpg
+tags:
+  - links
+---
+За прошедшую неделю сохранил 53 ссылки.
+
+* [Моё разочарование в софте](https://tonsky.me/blog/disenchantment/ru/) -- во многом согласен с автором статьи
+* [Ютуб в настольном приложении](https://grishaev.me/youtube-desktop/) -- интересная концепция использования стороннего ПО для просмотра видео с сайтов. Но кажется оверхедом. Во-первых, видео почти не смотрю, так как считаю малоэффективным источником информации, во-вторых просмотр с сайта вполне устраивает.
+* [How I Learned To Stop Worrying and Push To Master](https://thenable.io/push-to-master/) -- когда надоедает работать с ветками и когда неохота разбираться с vcs рождаются подобные статьи. Пуш в мастер, и так сойдет. 😃
+* [Generic Data Structures](https://github.com/zyedidia/generic) -- An experimental collection of generic data structures written in Go. Начали появляться подобные репозитории с образцами кода, использующими generics в go.
+* [Neovim from scratch](https://github.com/LunarVim/Neovim-from-scratch) -- A Neovim config designed from scratch to be understandable
+* [Generics facilitators in Go · rakyll.org](https://rakyll.org/generics-facilititators/) -- еще немного по generics в golang
+* [C++ Roadmap](https://github.com/salmer/CppDeveloperRoadmap) -- Roadmap for learning the C++ programming language for beginners and experienced devs
+* [«Один разработчик заменяет пять программистов на JavaScript»: для чего нужен Haskell](https://skillbox.ru/media/code/odin-razrabotchik-zamenyaet-pyat-programmistov-na-javascript-dlya-chego-nuzhen-haskell/)
+* [Go Optimizations 101](https://go101.org/optimizations/101.html) -- новая книга по оптимизации программ в golang, ограниченое время по сниженной стоимости
+* [A library to display rich (Markdown) snippets and texts in a rust terminal application](https://github.com/Canop/termimad)
+* [nix-learning](https://github.com/humancalico/nix-learning) -- A bunch of links to blog posts, articles, videos, etc for learning Nix
+* [Emacs Plus](https://github.com/d12frosted/homebrew-emacs-plus) -- Emacs Plus formulae for the Homebrew package manager
+
+Хорошей вам недели!
