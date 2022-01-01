@@ -1,0 +1,26 @@
+---
+layout: post
+title: "Ссылки #162"
+date: 2022-01-01 11:18
+image: https://static.juev.org/images/links.jpg
+tags:
+  - links
+---
+С Новым Годом! Счастья и удачи!
+
+За прошедшую неделю сохранил 77 ссылок.
+
+* [Sicher](https://github.com/dsa0x/sicher) -- Sicher is a go module that allows secure storage of encrypted credentials in a version control system
+* [Best practices for writing code comments](https://stackoverflow.blog/2021/12/23/best-practices-for-writing-code-comments/)
+* [Implementing distributed lock with Go + Redis](https://kevwan.medium.com/implementing-distributed-lock-with-go-redis-8d943267e21f)
+* [iawia002/annie](https://github.com/iawia002/annie) -- 👾 Fast and simple video download library and CLI tool written in Go
+* [Why Go modules are faster than GOPATH](https://dev.to/tbpalsulich/why-go-modules-are-faster-than-gopath-blj)
+* [go-zero](https://github.com/zeromicro/go-zero) -- go-zero is a web and rpc framework written in Go
+* [Ten Years of Logging My Life](https://chaidarun.com/ten-years-of-logging-my-life)
+* [Learn Haskell by building a blog generator](https://lhbg-book.link)
+* [fq](https://github.com/wader/fq) -- jq for binary formats
+* [Secretive](https://github.com/maxgoedjen/secretive) -- Store SSH keys in the Secure Enclave
+* [Emacs for You (Emfy)](https://github.com/susam/emfy) -- Emacs for You - 72 lines of Emacs Lisp to quickly set up vanilla Emacs for general purpose editing and programming
+* [5 tips for better unit testing in Golang](https://reshefsharvit.medium.com/5-tips-for-better-unit-testing-in-golang-b25f9e79885a)
+
+Хорошей вам недели и отличного нового года!!!
