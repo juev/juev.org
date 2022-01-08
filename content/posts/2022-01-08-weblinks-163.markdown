@@ -1,0 +1,21 @@
+---
+layout: post
+title: "Ссылки #163"
+date: 2022-01-08 09:44
+image: https://static.juev.org/images/links.jpg
+tags:
+  - links
+---
+За прошедшую неделю сохранил 41 ссылку.
+
+* [The Modern Guide to OAuth](https://fusionauth.io/learn/expert-advice/oauth/modern-guide-to-oauth/)
+* [gopass](https://github.com/gopasspw/gopass) -- The slightly more awesome standard unix password manager for teams
+* [tvu-compare: a comparison of rust and zig](https://expandingman.gitlab.io/tvu-compare/)
+* [wormhole-gui](https://github.com/Jacalz/wormhole-gui) -- Cross-platform application for easy encrypted sharing of files, folders, and text between devices
+* [The fastest browser made for work](https://www.meetsidekick.com/) -- браузер, который требует минимум памяти
+* [On the Feeding and Care of Password Managers](https://www.reddit.com/r/Passwords/comments/qu68zj/on_the_feeding_and_care_of_password_managers/)
+* [iodine](https://github.com/yarrick/iodine) -- Official git repo for iodine dns tunnel
+* [fzgen](https://github.com/thepudds/fzgen) -- Auto-gen Go 1.18 fuzzing wrappers from normal code
+* [The Backend Development Engine built for Go](https://github.com/encoredev/encore)
+
+Хорошей вам недели!
