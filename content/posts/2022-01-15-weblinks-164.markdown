@@ -1,0 +1,25 @@
+---
+layout: post
+title: "Ссылки #164"
+date: 2022-01-15 14:41
+image: https://static.juev.org/images/links.jpg
+tags:
+  - links
+---
+За прошедшую неделю сохранил 79 ссылок.
+
+* [Effective Error Handling in Golang](https://earthly.dev/blog/golang-errors/)
+* [CharaChorder - Type at the speed of thought™](https://www.charachorder.com/product-page/charachorder) -- очень интересная клавиатура, которая позволяет ставить рекорды в скорости набора текста. Подробное описание в статье [This Keyboard Lets People Type So Fast It’s Banned From Typing Competitions](https://www.vice.com/en/article/3abavv/this-keyboard-lets-people-type-so-fast-its-banned-from-typing-competitions)
+* [Deploy your website on IPFS: Why and How](https://tarunbatra.com/blog/decentralization/Deploy-your-website-on-IPFS-Why-and-How/index.html) -- инструкция по размещению сайта в IPFS
+* [What is IPFS? - A Beginner's Guide](https://hackernoon.com/a-beginners-guide-to-ipfs-20673fedd3f) -- что такое IPFS
+* [Neovim Monokai](https://github.com/tanvirtin/monokai.nvim) -- цветовая схема для nvim
+* [Hacker News RSS](https://hnrss.github.io/) -- список RSS-лент для подписки на Hacker News
+* [protoc-gen-doc](https://github.com/pseudomuto/protoc-gen-doc) -- Documentation generator plugin for Google Protocol Buffers
+* [Why I Use a Debugger](http://blog.pnkfx.org/blog/2022/01/10/why-i-use-a-debugger/) -- описание того, как и для чего используется дебагер
+* [Мониторинг веб-приложения на Rust с использованием Prometheus и Grafana](https://habr.com/ru/post/645231/)
+* [Wordle (ru)](https://wordle.belousov.one) -- русская версия популярной игры Wordle
+* [rrss2imap](https://github.com/Riduidel/rrss2imap) -- A rust reimplementation of rss2email (the Rui Carno branch)
+* [Tutorial: Getting started with generics](https://go.dev/doc/tutorial/generics.html)
+* [Tutorial: Getting started with fuzzing](https://go.dev/doc/tutorial/fuzz)
+
+Хорошей вам недели!
