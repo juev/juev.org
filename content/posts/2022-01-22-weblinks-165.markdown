@@ -1,0 +1,23 @@
+---
+title: "Ссылки #165"
+date: 2022-01-22T07:49:49+0300
+image: https://static.juev.org/images/links.jpg
+tags: 
+  - links
+---
+За прошедшую неделю сохранил 63 ссылки.
+
+* [Best Practices for API Error Handling in Go](https://www.vultr.com/docs/best-practices-for-api-error-handling-in-go)
+* [Структурированное логирование JSON в приложениях на Golang](https://nuancesprog.ru/p/14977/)
+* [I Did 2-Minute Plank Every Day for 42 Days — Here’s What Happened](https://betterhumans.pub/what-happens-if-you-do-a-2-minute-plank-everyday-6688767fad69) -- статья, которая меня сподвигла на очередной эксперимент по выполнению планки каждый день
+* [Defragment your life](https://www.vitabenes.com/defragment) -- рекомендации по дефрагментации жизни. Краткий [перевод](https://twitter.com/gotonomad/status/1482736808354103297) на русский
+* [Prometheus Rust client library](https://github.com/prometheus/client_rust) -- мы этого дождались! Официальный клиент Prometheus на Rust
+* [telega.el](https://github.com/zevlg/telega.el) -- GNU Emacs telegram client (unofficial)
+* [The note-taking tool that grows with you](https://www.dendron.so/) -- расширение vscode для ведения заметок
+* [Legacy free edition of G Suite](https://support.google.com/a/answer/2855120) -- все уже слышали про то, что Google закрывает бесплатную версию почты для доменов? Это официальное подтверждение
+* [Amazon WorkMail](https://aws.amazon.com/ru/workmail/) -- один из вариантов, что я рассматриваю в качестве замены Google G Suit
+* [Go recipes 🦩](https://github.com/nikolaydubina/go-recipes) -- 🪄 Handy commands to run in Go projects
+* [The Most Backdoor-Looking Bug I’ve Ever Seen](https://words.filippo.io/dispatches/telegram-ecdh/) -- немного про телеграмм от Filippo Valsorda
+
+Хорошей вам недели!
+
