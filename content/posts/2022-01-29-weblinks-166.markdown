@@ -1,0 +1,24 @@
+---
+title: "Ссылки #166"
+date: 2022-01-29T10:17:49+0300
+image: https://static.juev.org/images/links.jpg
+tags: 
+  - links
+---
+За прошедшую неделю сохранил 79 ссылок.
+
+* [Homelab](https://github.com/khuedoan/homelab) -- My self-hosting infrastructure, fully automated from empty disk to operating services
+* [Goss - Quick and Easy server validation](https://github.com/aelsabbahy/goss)
+* [f1](https://github.com/form3tech-oss/f1) -- A tool for writing load test scenarios in Golang with a powerful command line runner
+* [go-imap](https://github.com/emersion/go-imap) -- 📥 An IMAP library for clients and servers
+* [How I Got Pwned by My Cloud Costs](https://www.troyhunt.com/how-i-got-pwned-by-my-cloud-costs/)
+* [Why we're migrating (many of) our servers from Linux to FreeBSD](http://it-notes.dragas.net/2022/01/24/why-were-migrating-many-of-our-servers-from-linux-to-freebsd/)
+* [GYB](https://github.com/GAM-team/got-your-back) -- Got Your Back (GYB) is a command line tool for backing up your Gmail messages to your computer using Gmail's API over HTTPS
+* [Inbucket](https://github.com/inbucket/inbucket) -- Disposable webmail server (similar to Mailinator) with built in SMTP, POP3, RESTful servers; no DB required
+* [LibreWolf](https://librewolf.net/) -- A fork of Firefox, focused on privacy, security and freedom
+* [Как мы отказались от JPEG, JSON, TCP и ускорили ВКонтакте в два раза](https://habr.com/ru/company/vk/blog/594633/)
+* [widdler](https://github.com/qbit/widdler) -- A WebDAV server for TiddlyWikis
+* [Zadig](https://github.com/koderover/zadig) -- Zadig is a cloud native, distributed, developer-oriented continuous delivery product
+
+Хорошей вам недели!
+
