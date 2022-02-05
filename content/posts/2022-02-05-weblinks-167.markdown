@@ -1,0 +1,25 @@
+---
+title: "Ссылки #167"
+date: 2022-02-05T10:54:26+0300
+image: https://static.juev.org/images/links.jpg
+tags: 
+  - links
+---
+За прошедшую неделю сохранил 73 ссылки.
+
+* [Добавление пользовательского домена электронной почты в Почте iCloud на сайте iCloud.com](https://support.apple.com/ru-ru/guide/icloud/mma473945269/icloud) -- если интересно, процедура миграции почты на своем домене в iCloud
+* [Migrating from Google Workspaces to iCloud+](https://blah.cloud/miscellaneous/migrating-google-workspaces-to-icloud-custom-domain/)
+* [An Overview of Docker Desktop Alternatives](https://matt-rickard.com/docker-desktop-alternatives/)
+* [timediff](https://github.com/mergestat/timediff) -- Go library for printing human readable, relative time differences 🕰️
+* [Golang URL Shortener](https://jrstupkadev.medium.com/golang-url-shortener-22ba6c970792)
+* [How I Discovered Thousands of Open Databases on AWS](https://infosecwriteups.com/how-i-discovered-thousands-of-open-databases-on-aws-764729aa7f32)
+* [Public APIs](https://github.com/public-apis/public-apis) -- A collective list of free APIs
+* [Gnomock – tests without mocks](https://github.com/orlangure/gnomock) -- Test your code without writing mocks with ephemeral Docker containers 📦
+* [GopherCon 2017: Mitchell Hashimoto - Advanced Testing with Go](https://www.youtube.com/watch?v=8hQG7QlcLBk)
+* [Ledger for Obsidian](https://github.com/tgrosinger/ledger-obsidian) -- Plain text accounting in Obsidian.md
+* [clidle](https://github.com/ajeetdsouza/clidle) -- Play Wordle over SSH
+* [shortuuid](https://github.com/lithammer/shortuuid) -- 🍄 A generator library for concise, unambiguous and URL-safe UUIDs
+* [AstroVim](https://github.com/kabinspace/AstroVim) -- AstroVim is an aesthetic and feature-rich neovim config that is extensible and easy to use with a great set of plugins
+
+Хорошей вам недели!
+
