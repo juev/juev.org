@@ -1,0 +1,25 @@
+---
+title: "Ссылки #168"
+date: 2022-02-12T10:22:27+0300
+image: https://static.juev.org/images/links.jpg
+tags: 
+  - links
+---
+За прошедшую неделю сохранил 68 ссылок.
+
+* [Neorg - An Organized Future](https://github.com/nvim-neorg/neorg) -- Modernity meets insane extensibility. The future of organizing your life in Neovim
+* [A shell command to create JSON: jo](https://jpmens.net/2016/03/05/a-shell-command-to-create-json-jo/)
+* [Выходим за рамки тестового покрытия](https://habr.com/ru/company/otus/blog/649617/) -- непопулярное мнение, но в целом с ним согласен
+* [oniongrok](https://github.com/cmars/oniongrok) -- Onion addresses for anything
+* [Free Password Manager Compatible with KeePass: KeeWeb](https://keeweb.info/) -- неплохой password manager, работающий с keepass-базами. Очень удачный, хотя и не совсем удобный
+* [Sha256 Algorithm Explained](https://sha256algorithm.com/) -- пошаговое объяснение алгоритма шифрования SHA256, красиво сделано
+* [Download Youtube Video in Golang](https://github.com/kkdai/youtube)
+* [Alternative (more granular) approach to a DNS library](https://github.com/miekg/dns)
+* [Reversing Golang](https://suvaditya.one/blog/2021/reversing-go/) -- типы данных golang под микроскопом
+* [Exposing a web service with Cloudflare Tunnel](https://erisa.dev/exposing-a-web-service-with-cloudflare-tunnel/)
+* [How does UTF-8 turn “😂” into “F09F9882”?](https://sethmlarson.dev/blog/utf-8)
+* [hakrawler](https://github.com/hakluke/hakrawler) -- Simple, fast web crawler designed for easy, quick discovery of endpoints and assets within a web application
+* [berty/berty](https://github.com/berty/berty) -- Berty is a secure peer-to-peer messaging app that works with or without internet access, cellular data or trust in the network
+
+Хорошей вам недели!
+
