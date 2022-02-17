@@ -30,6 +30,7 @@ sudo dpkg -i cloudflared-linux-amd64.deb
 ```bash
 wget -q https://github.com/cloudflare/cloudflared/releases/latest/download/cloudflared-linux-arm
 sudo mv cloudlfared-linux-arm /usr/local/bin/cloudflared
+sudo chmod +x /usr/local/bin/cloudflared
 ```
 
 Во-вторых, проводим аутентификацию:
