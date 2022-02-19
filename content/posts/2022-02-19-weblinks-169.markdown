@@ -1,0 +1,26 @@
+---
+title: "Ссылки #169"
+date: 2022-02-19T09:39:30+0300
+image: https://static.juev.org/images/links.jpg
+tags: 
+  - links
+---
+За прошедшую неделю сохранил 97 ссылок.
+
+* [PhotoPrism: Browse Your Life in Pictures](https://github.com/photoprism/photoprism) -- Photos App powered by Go and Google TensorFlow 🌈 ✨
+* [browserexport](https://github.com/seanbreckenridge/browserexport) -- backup and parse browser history databases (chrome, firefox, safari, and other chrome/firefox derivatives)
+* [q](https://github.com/ryboe/q) -- Quick and dirty debugging output for tired Go programmers
+* [Age Encrypted Notebook (aen)](https://github.com/3c7/age-encrypted-notebook) -- Age encrypted notes saved in a bolt DB
+* [errcheck](https://github.com/kisielk/errcheck) -- errcheck is a program for checking for unchecked errors in go programs
+* [RichardKnop/machinery](https://github.com/RichardKnop/machinery) -- Machinery is an asynchronous task queue/job queue based on distributed message passing
+* [sundowndev/hacker-roadmap](https://github.com/sundowndev/hacker-roadmap) -- A collection of hacking tools, resources and references to practice ethical hacking
+* [1Password Developer Documentation](https://developer.1password.com/docs/ssh) -- 1Password в бете версии запустил возможность хранения и использования ssh-ключей
+* [Zig](https://mitchellh.com/zig) -- серия статей от Mitchell Hashimoto, посвященных языку программирования
+* [Rob Pike's 5 Rules of Programming](https://users.ece.utexas.edu/~adnan/pike.html)
+* [Configure Pi-Hole DNS + Cloudflare DNS over HTTPS (DoH) on a Raspberry Pi](https://nathancatania.com/posts/pihole-dns-doh/)
+* [Алгоритмика](https://ru.algorithmica.org) -- Algorithmica is an open-access web book dedicated to the art and science of computing
+* [Jujutsu](https://github.com/martinvonz/jj) -- Jujutsu is a Git-compatible DVCS
+* [8 месяцев в Минске](https://doam.ru/8_months_in_minsk/) -- статья Антона Рябова про его опыт в EPAM по релокейту
+
+Хорошей вам недели!
+
