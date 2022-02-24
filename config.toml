@@ -15,8 +15,6 @@ pygmentsCodeFences = true
 
 enableEmoji = true
 
-disableKinds = ["section"]
-
 [author]
 name = "Denis Evsyukov"
 
