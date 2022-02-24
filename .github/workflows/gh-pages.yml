@@ -16,7 +16,7 @@ jobs:
           hugo-version: "0.92.0"
           extended: true
       - name: Build
-        run: hugo --gc && rm -rf public/pages
+        run: hugo --gc
       - name: Deploy to S3
         run: hugo deploy --force --maxDeletes -1
         env:

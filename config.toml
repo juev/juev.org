@@ -15,6 +15,8 @@ pygmentsCodeFences = true
 
 enableEmoji = true
 
+disableKinds = ["section"]
+
 [author]
 name = "Denis Evsyukov"
 
@@ -110,3 +112,4 @@ pattern = "^sitemap\\.xml$"
 cacheControl = "public, no-cache, must-revalidate"
 contentType = "application/xml"
 gzip = true
+
