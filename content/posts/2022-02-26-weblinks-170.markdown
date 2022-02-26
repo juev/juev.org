@@ -1,0 +1,24 @@
+---
+title: "Ссылки #170"
+date: 2022-02-26T12:19:10+0300
+image: https://static.juev.org/images/links.jpg
+tags: 
+  - links
+---
+За прошедшую неделю сохранил 67 ссылок.
+
+* [retry](https://github.com/Rican7/retry) -- A simple, stateless, functional mechanism to perform actions repetitively until successful
+* [Going IPv6 only](https://blog.brixit.nl/going-ipv6-only/) -- интересный опыт использования ipv6 сети
+* [The Block List Project](https://github.com/blocklistproject/Lists) -- списки для блокировки трекеров и рекламы
+* [Bart Simpson Chalkboard Generator | enufstyle.com](https://www.ranzey.com/generators/bart/index.html) -- генератор изображения с Бартом, который пишет фразу
+* [Be anonymous](https://kg.dev/thoughts/be-anonymous)
+* [SMTP protocol basics from scratch in Go: receiving email from Gmail](https://notes.eatonphil.com/handling-email-from-gmail-smtp-protocol-basics.html)
+* [DNS Security, Part I: Basic DNS](https://educatedguesswork.org/posts/dns-security/) -- серия статей по безопаcности DNS
+* [Sioyek](https://github.com/ahrm/sioyek) -- Sioyek is a PDF viewer designed for reading research papers and technical books
+* [Минимальная реализация Lua на Rust](https://habr.com/ru/company/ruvds/blog/649973/)
+* [How to Secure Anything](https://github.com/veeral-patel/how-to-secure-anything) -- How to systematically secure anything: a repository about security engineering
+* [Security/How Bitwarden encrypts your data](https://huy.rocks/everyday/02-22-2022-security-how-bitwarden-encrypts-your-data)
+* [Zig Build System Internals](https://mitchellh.com/zig/build-internals)
+
+Хорошей вам недели!
+
