@@ -17,6 +17,7 @@
     <link rel="shortcut icon" href="{{ .Site.BaseURL }}favicon.ico">
     <link rel="apple-touch-icon" href="{{ .Site.BaseURL }}apple-touch-icon.png">
     <link rel="alternate" type="application/rss" href="{{ .Site.BaseURL }}atom.xml" title="Denis Evsyukov">
+    <link rel="manifest" href="/site.webmanifest">
     {{ $style := resources.Get "scss/master.scss" | toCSS | minify | fingerprint -}}
     <link rel="stylesheet" href="{{ $style.Permalink }}">
     <link rel="sitemap" type="application/xml" title="Sitemap" href="{{ .Site.BaseURL }}sitemap.xml" />

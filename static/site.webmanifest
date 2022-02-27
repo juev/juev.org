@@ -1,0 +1,18 @@
+{
+  "short_name": "Juev",
+  "name": "Denis Evsyukov",
+  "icons": [{
+    "src": "juev.png",
+    "type": "image/png",
+    "sizes": "400x400"
+  },
+  {
+    "src": "apple-touch-icon.png",
+    "type": "image/png",
+    "sizes": "72x72"
+  }
+  ],
+  "start_url": "/",
+  "background_color": "#fafafa",
+  "theme_color": "#fafafa"
+}
