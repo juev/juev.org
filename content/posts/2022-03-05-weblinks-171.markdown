@@ -1,0 +1,28 @@
+---
+title: "Ссылки #171"
+date: 2022-03-05T09:19:04+0300
+image: https://static.juev.org/images/links.jpg
+tags: 
+  - links
+---
+
+За прошедшую неделю сохранил 89 ссылок.
+
+* [Is Grammarly a Keylogger? What Can You Do About It?](https://www.kolide.com/blog/is-grammarly-a-keylogger-what-can-you-do-about-it) -- Grammarly оправдывается, что они не являются кейлогерами. Но так ли это?
+* [awesome-tunneling](https://github.com/anderspitman/awesome-tunneling) -- List of ngrok alternatives and other ngrok-like tunneling software and services. Focus on self-hosting
+* [Tink](https://github.com/google/tink) -- Tink is a multi-language, cross-platform, open source library that provides cryptographic APIs that are secure, easy to use correctly, and hard(er) to misuse
+* [iCloud+ Custom Email Domains should be better](https://domlaut.com/icloud-custom-email-domains-should-be-better/)
+* [Conversations is a Jabber/XMPP client for Android 5.0+ smartphones that has been optimized to provide a unique mobile experience.](https://conversations.im)
+* [Using Zig As Cross Platform C Toolchain](https://ruoyusun.com/2022/02/27/zig-cc.html)
+* [Juniper](https://github.com/bradenaw/juniper) -- Juniper is an extension to the Go standard library using generics, including containers, iterators, and streams
+* [Reproducing Go binaries byte-by-byte](https://words.filippo.io/reproducing-go-binaries-byte-by-byte/)
+* [go-restful](https://github.com/emicklei/go-restful) -- package for building REST-style Web Services using Go
+* [SingleFile](https://github.com/gildas-lormeau/SingleFile) -- Web Extension for Firefox/Chrome/MS Edge and CLI tool to save a faithful copy of an entire web page in a single HTML file
+* [Что стоит на моем Mac в 2022 году](https://www.macosworld.net/best-apps-for-mac/) -- MacOsWorld переехал на новый домен. К статье периодически возвращаюсь, много интересного нахожу
+* [Save data & money. Browse faster.](https://tripmode.ch/)
+* [lo](https://github.com/samber/lo) -- 💥 A Lodash-style Go library based on Go 1.18+ Generics (map, filter, contains, find...)
+* [semgroup](https://github.com/fatih/semgroup) -- Like errgroup/waitgroup, but only runs a maximum of tasks at any time
+* [Version 100 in Chrome and Firefox – Mozilla Hacks : the Web developer blog](https://hacks.mozilla.org/2022/02/version-100-in-chrome-and-firefox) -- обновление версии в браузерах может привести к проблемам
+
+Хорошей вам недели!
+
