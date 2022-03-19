@@ -1,0 +1,28 @@
+---
+title: "Ссылки #173"
+date: 2022-03-19T09:39:54+0300
+image: https://static.juev.org/images/links.jpg
+tags: 
+  - links
+---
+
+За прошедшую неделю сохранил 85 ссылок.
+
+* [No more ads, tracking and other virtual garbage](https://github.com/notracking/hosts-blocklists) -- Automatically updated, moderated and optimized lists for blocking ads, trackers, malware and other garbage
+* [Dockerized](https://github.com/datastack-net/dockerized) -- Run popular commandline tools within docker
+* [Building Password Purgatory with Cloudflare Pages and Workers](https://www.troyhunt.com/building-password-purgatory-with-cloudflare-pages-and-workers/)
+* [WireGuard installer](https://github.com/angristan/wireguard-install) -- WireGuard VPN installer for Linux servers
+* [kycnot.me](https://kycnot.me/) -- Find best NON-KYC online services
+* [xshell: Making Rust a Better Bash](https://github.com/matklad/xshell) -- xshell provides a set of cross-platform utilities for writing cross-platform and ergonomic "bash" scripts
+* [File system for GitHub](https://github.com/winfsp/hubfs)
+* [Go 1.18 Release Notes](https://go.dev/doc/go1.18)
+* [Встречайте открытую бета-версию приватного AdGuard DNS!](https://adguard.com/ru/blog/public-beta-adguard-dns.html)
+* [schachmat/wego](https://github.com/schachmat/wego) -- weather app for the terminal
+* [awnumar/memguard](https://github.com/awnumar/memguard) -- Secure software enclave for storage of sensitive information in memory
+* [Awesome TUIs](https://github.com/rothgar/awesome-tuis) -- List of projects that provide terminal user interfaces
+* [Lapce](https://lapce.dev/) -- Lightning-fast and Powerful Code Editor
+* [Hacking sum types with Go generics](https://blog.lawrencejones.dev/go-sum-type/)
+* [Tunnel WireGuard via Websockets](https://kirill888.github.io/notes/wireguard-via-websocket/)
+
+Хорошей вам недели!
+
