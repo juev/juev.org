@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Облачные сервисы для работы с Jupyter-блокнотами"
-date: 2020-12-13 12:33
+date: 2020-12-13T12:33:00+0300
 image: https://static.juev.org/2020/12/sigmund-HsTnjCVQ798-unsplash.jpg
 tags:
   - python

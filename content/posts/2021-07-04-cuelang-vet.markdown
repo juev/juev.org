@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Cue: валидация конфигурации"
-date: 2021-07-04 19:05
+date: 2021-07-04T19:05:00+0300
 image: https://static.juev.org/2021/07/cue.svg
 tags:
   - yaml

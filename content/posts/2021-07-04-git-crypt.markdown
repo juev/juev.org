@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Git Crypt"
-date: 2021-07-04 08:53
+date: 2021-07-04T08:53:00+0300
 image: https://static.juev.org/2021/07/git-crypt.png
 tags:
   - git

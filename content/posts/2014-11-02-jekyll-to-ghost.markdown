@@ -1,6 +1,6 @@
 ---
 title: "Ghost"
-date: "0001-01-01T00:00:00+0000"
+date: "2014-11-02T00:00:00+0400"
 tags:
   - jekyll
   - nginx

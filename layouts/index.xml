@@ -1,8 +1,4 @@
-{{- $pages := .RegularPages -}}
-{{- if .IsHome -}}
-  {{- $pages = .Site.RegularPages -}}
-{{- else -}}
-{{- end -}}
+{{- $posts := ($.Site.GetPage "section" "posts").Pages.ByPublishDate.Reverse -}}
 {{ printf "<?xml version=\"1.0\" encoding=\"utf-8\" standalone=\"yes\" ?>" | safeHTML }}
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
@@ -15,15 +11,15 @@
     <webMaster>{{.}}{{ with $.Site.Author.name }} ({{.}}){{end}}</webMaster>{{end}}{{ with .Site.Copyright }}
     <copyright>{{.}}</copyright>{{end}}{{ if not .Date.IsZero }}
     <lastBuildDate>{{ .Date.Format "Mon, 02 Jan 2006 15:04:05 -0700" | safeHTML }}</lastBuildDate>{{ end }}
-    {{ with .OutputFormats.Get "RSS" }}
-        {{ printf "<atom:link href=%q rel=\"self\" type=%q />" .Permalink .MediaType | safeHTML }}
-    {{ end }}
-    {{ range first 5 $pages }}
+    {{ with .OutputFormats.Get "RSS" -}}
+    {{ printf "<atom:link href=%q rel=\"self\" type=%q />" .Permalink .MediaType | safeHTML }}
+    {{ end -}}
+    {{ range first 5 $posts -}}
     <item>
       <title>{{ .Title }}</title>
       <link>{{ .Permalink }}</link>
-      <pubDate>{{ .Date.Format "Mon, 02 Jan 2006 15:04:05 -0700" | safeHTML }}</pubDate>
-      {{ with .Site.Author.email }}<author>{{.}}{{ with $.Site.Author.name }} ({{.}}){{end}}</author>{{end}}
+      <pubDate>{{ .PublishDate.Format "Mon, 02 Jan 2006 15:04:05 -0700" | safeHTML }}</pubDate>
+      {{ with .Site.Author.email -}}<author>{{.}}{{ with $.Site.Author.name }} ({{.}}){{end}}</author>{{end -}}
       <guid>{{ .Permalink }}</guid>
       <description>{{ .Content | html }}&lt;p&gt;Читайте оригинал на странице: &lt;a href=&quot;{{.Permalink }}&quot; alt=&quot;{{ .Title }}&quot;&gt;{{ .Title }}&lt;/a&gt; ({{ .Site.Title }})&lt;/p&gt;</description>
     </item>

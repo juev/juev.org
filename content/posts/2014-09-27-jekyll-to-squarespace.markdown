@@ -1,6 +1,6 @@
 ---
 title: "Миграция с Jekyll на Squarespace"
-date: "0001-01-01T00:00:00+0000"
+date: "2014-09-27T00:00:00+0400"
 tags:
   - web
   - jekyll

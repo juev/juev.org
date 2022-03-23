@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Ссылки #95"
-date: 2020-09-19 08:41
+date: 2020-09-19T08:41:00+0300
 image: https://static.juev.org/images/links.jpg
 tags:
   - links

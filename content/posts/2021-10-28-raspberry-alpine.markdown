@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Alpine on Raspberry PI"
-date: 2021-10-28 08:31
+date: 2021-10-28T08:31:00+0300
 image: https://static.juev.org/2021/10/library-alpine-logo.png
 tags:
   - raspberrypi

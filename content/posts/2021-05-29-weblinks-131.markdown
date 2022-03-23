@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Ссылки #131"
-date: 2021-05-29 11:02
+date: 2021-05-29T11:02:00+0300
 image: https://static.juev.org/images/links.jpg
 tags:
   - links

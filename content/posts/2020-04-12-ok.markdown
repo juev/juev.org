@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Ok"
-date: 2020-04-12 08:17
+date: 2020-04-12T08:17:00+0300
 image: https://static.juev.org/2020/04/ok.jpg
 tags:
   - rust

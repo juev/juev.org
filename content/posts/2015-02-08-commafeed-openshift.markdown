@@ -1,6 +1,6 @@
 ---
 title: "Commafeed на бесплатном сервере OpenShift"
-date: "0001-01-01T00:00:00+0000"
+date: "2015-02-08T00:00:00+0400"
 tags:
   - git
   - openshift

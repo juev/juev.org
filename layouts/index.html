@@ -1,7 +1,7 @@
 {{ define "title" }}{{ .Site.Title }}{{ end }}
 
 {{ define "main" }}
-{{ $posts := ($.Site.GetPage "section" "posts").Pages }}
+{{ $posts := ($.Site.GetPage "section" "posts").Pages.ByPublishDate.Reverse }}
 {{ range first 1 $posts }}
 <h1 class="title"><a href="{{ .RelPermalink }}">{{ .Title }}</a></h1>
 <div id="metainfo"><span class="date">{{ .Date.Format "2 January 2006" }}</span></div>

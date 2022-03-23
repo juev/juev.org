@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Подготовка MacOS к использованию ML"
-date: 2020-12-13 10:24
+date: 2020-12-13T10:24:00+0300
 image: https://static.juev.org/2020/12/markus-spiske-466ENaLuhLY-unsplash.jpg
 tags:
   - python
