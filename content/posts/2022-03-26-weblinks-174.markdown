@@ -1,0 +1,23 @@
+---
+title: "Ссылки #174"
+date: 2022-03-26T09:36:48+0300
+image: https://static.juev.org/images/links.jpg
+tags: 
+  - links
+---
+
+За прошедшую неделю сохранил 93 ссылки.
+
+* [stefanmaric/g](https://github.com/stefanmaric/g) -- Simple go version manager, gluten-free, про который описывал в статье [Simple go version manager](https://www.juev.org/2022/03/20/simple-go-version-manager/)
+* [Learn Go with tests](https://quii.gitbook.io/learn-go-with-tests/go-fundamentals/generics) -- новая глава про женерики
+* [LibreWolf](https://librewolf.net/) -- форк Firefox, ориентированный на безопасность
+* [Возня с файлами](https://grishaev.me/files/) -- Иван рассказывает про бекапы и не только.
+* [Secretive](https://github.com/maxgoedjen/secretive) -- Store SSH keys in the Secure Enclave
+* [Banking without banks](https://www.bankoff.co/) -- немного мутная компания, предоставляющая возможность оплаты с помощью карт виза
+* [org-web - org mode on the web](https://github.com/DanielDe/org-web)
+* [Artichoke Ruby](https://github.com/artichoke/artichoke) -- 💎 Artichoke is a Ruby made with Rust
+* [Мессенджер для шпионов. Как правительственные агенты переписываются друг с другом](https://exploit.media/stories/matrix-protocol/)
+* [Stringer](https://github.com/stringer-rss/stringer) -- A self-hosted, anti-social RSS reader
+
+Хорошей вам недели!
+
