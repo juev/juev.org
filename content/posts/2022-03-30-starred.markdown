@@ -1,0 +1,91 @@
+---
+title: "Starred"
+date: 2022-03-30T15:15:47+0300
+image: https://static.juev.org/2022/03/shirt.png
+tags: 
+  - github
+  - golang
+---
+
+12 октября 2020 года создал репозиторий в Github [juev/awesome-stars](https://github.com/juev/awesome-stars) на основе проекта [maguowei/starred](https://github.com/maguowei/starred). Каждый день в определенное время запускается github actions, выгружает информацию о всех звездах, что проставил в Github, и формирует новый Readme.md файл на основе этой информации.
+
+Полтора года все работало безотказно. И несколько дней назад все сломалось. При обновлении репозитория стала появляться ошибка:
+
+```python
+Traceback (most recent call last):
+  File "/opt/hostedtoolcache/Python/3.7.12/x64/bin/starred", line 8, in <module>
+    sys.exit(starred())
+  File "/opt/hostedtoolcache/Python/3.7.12/x64/lib/python3.7/site-packages/click/core.py", line 829, in __call__
+    return self.main(*args, **kwargs)
+  File "/opt/hostedtoolcache/Python/3.7.12/x64/lib/python3.7/site-packages/click/core.py", line 782, in main
+    rv = self.invoke(ctx)
+  File "/opt/hostedtoolcache/Python/3.7.12/x64/lib/python3.7/site-packages/click/core.py", line 1066, in invoke
+    return ctx.invoke(self.callback, **ctx.params)
+  File "/opt/hostedtoolcache/Python/3.7.12/x64/lib/python3.7/site-packages/click/core.py", line 610, in invoke
+    return callback(*args, **kwargs)
+  File "/opt/hostedtoolcache/Python/3.7.12/x64/lib/python3.7/site-packages/starred/starred.py", line 72, in starred
+    for s in stars:
+  File "/opt/hostedtoolcache/Python/3.7.12/x64/lib/python3.7/site-packages/github3/structs.py", line 122, in __iter__
+    yield cls(i)
+  File "/opt/hostedtoolcache/Python/3.7.12/x64/lib/python3.7/site-packages/github3/models.py", line 48, in __init__
+    self._update_attributes(json)
+  File "/opt/hostedtoolcache/Python/3.7.12/x64/lib/python3.7/site-packages/github3/repos/repo.py", line 97, in _update_attributes
+    self.owner = users.ShortUser(repo["owner"], self)
+  File "/opt/hostedtoolcache/Python/3.7.12/x64/lib/python3.7/site-packages/github3/models.py", line 48, in __init__
+    self._update_attributes(json)
+  File "/opt/hostedtoolcache/Python/3.7.12/x64/lib/python3.7/site-packages/github3/users.py", line 311, in _update_attributes
+    self.avatar_url = user["avatar_url"]
+TypeError: 'NoneType' object is not subscriptable
+Error: Process completed with exit code 1.
+```
+
+Питон я не люблю, разбираться в кишках starred не стал. Завел [тикет](https://github.com/maguowei/starred/issues/77), чтобы была информация о проблеме. И затем решил реализовать starred на гошечке.
+
+Потратил немного времени на создание [juev/starred](https://github.com/juev/starred). Протестировал и опубликовал уже две версии. Вторая исправляет ошибку, возникающую при обновлении существующего репозитория.
+
+Теперь мой [juev/awesome-stars](https://github.com/juev/awesome-stars) настроен и использует starred реализованный на Golang. Помимо запуска в github action, теперь есть возможность использовать starred почти из любой операционной системы, будь то windows, linux или macos. Для этого достаточно скачать бинарный дистрибутив со страницы [релиза](https://github.com/juev/starred/releases/latest) и далее задав токен, запускать в командной строке.
+
+Для примера, собираем информацию по отмеченным репозиториям пользователя `juev` и создаем новый репозиторий `test-repo`:
+
+```bash
+$ export GITHUB_TOKEN=yourtoken
+$ starred --username juev --repository test-repo --sort
+```
+
+Для того, чтобы проводить регулярное обновление с помощью github actions, создаем репозиторий и добавляем в него файл `.github/workflows/main.yml`:
+
+```yaml
+name: update awesome-stars
+on:
+  schedule:
+  - cron: 0 6 * * *
+jobs:
+  awesome-stars:
+    name: update awesome-stars
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2
+    - uses: robinraju/release-downloader@v1.3
+      with:
+        repository: "juev/starred"
+        latest: true
+        fileName: "*"
+    - name: unpack starred
+      run: tar xfz starred_*_Linux_x86_64.tar.gz
+    - name: update repo
+      env:
+        GITHUB_TOKEN: ${{ secrets.TOKEN }}
+      run: ./starred --username juev --repository awesome-stars --sort --token ${GITHUB_TOKEN} --message 'update stars'
+```
+
+В приведенном примере обновление настроено на 6 утра и состоит из 4 шагов:
+
+1. Обновляем локальный репозиторий
+1. Проводим загрузку последнего релиза starred
+1. Распаковываем архив для Linux
+1. Запускаем starred с параметрами для обновления репозитория с именем awesome-stars с сортировкой по языкам программирования для пользователя `juev`.
+
+Постарался вывести всю необходимую информацию для использования starred в ридми его репозитория и во встроенной справке программы.
+
+Теперь и у вас есть альтернатива в виде golang-версии starred.
+
