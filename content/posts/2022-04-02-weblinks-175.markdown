@@ -1,0 +1,27 @@
+---
+title: "Ссылки #175"
+date: 2022-04-02T15:55:30+0300
+image: https://static.juev.org/images/links.jpg
+tags: 
+  - links
+---
+
+За прошедшую неделю сохранил 84 ссылки.
+
+* [github.com/elliotchance/pie](https://github.com/elliotchance/pie) -- 🍕 Enjoy a slice! A utility library for dealing with slices and maps that focuses on type safety and performance
+* [go-randomdata](https://github.com/Pallinder/go-randomdata) -- A tiny generator of random data for golang, also known as a faker
+* [Globally Unique ID Generator](https://github.com/rs/xid) -- xid is a globally unique id generator thought for the web
+* [Чат v. 3](https://start.chatv3.ru/) -- Оставайся на связи с семьёй и друзьями с интернетом или без него
+* [Ferret](https://github.com/MontFerret/ferret) -- Declarative web scraping
+* [What I Learned During My Three Days Offline](https://www.raptitude.com/2022/02/what-i-learned-during-my-three-days-offline/)
+* [High Assurance Rust: Developing Secure and Robust Software](https://highassurance.rs/)
+* [Single Sign-On SSH](https://smallstep.com/sso-ssh/)
+* [Не смотрю и не слушаю](https://grishaev.me/no-media/) -- поддерживаю точку зрения Ивана в отношении подскастов и видосиков
+* [Go generate configuration](https://github.com/evald24/go-gen-config) -- Generate the configuration of your application using yaml and env
+* [lrlna/smol-zines : sketching out concepts one 📝 at a time](https://github.com/lrlna/smol-zines)
+* [Data Science for Beginners - A Curriculum](https://github.com/microsoft/Data-Science-For-Beginners) -- 10 Weeks, 20 Lessons, Data Science for All!
+* [Awesome Cabal](https://github.com/kowainik/awesome-cabal) -- 💫 A curated list of awesome resources for the Haskell Cabal build tool
+* [Go mod's lesser known features](https://verdverm.com/go-mods/)
+
+Хорошей вам недели!
+
