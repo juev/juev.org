@@ -1,0 +1,26 @@
+---
+title: "Ссылки #176"
+date: 2022-04-09T11:15:19+0300
+image: https://static.juev.org/images/links.jpg
+tags: 
+  - links
+---
+
+За прошедшую неделю сохранил 95 ссылок.
+
+* [Writing a document database from scratch in Go: Lucene-like filters and indexes](https://notes.eatonphil.com/documentdb.html)
+* [Your Favorite Programming Language Sucks](https://new.pythonforengineers.com/blog/favorite-programming-language-sucks/)
+* [📊 Metrics](https://github.com/lowlighter/metrics) -- 📊 An infographics generator with 30+ plugins and 200+ options to display stats about your GitHub account and render them as SVG, Markdown, PDF or JSON!
+* [Tailscale’s human-scale networks are still controlled by Google and Microsoft](https://iliana.fyi/blog/tailscale-auth-and-threat-modeling/)
+* [Readability.js](https://github.com/mozilla/readability) -- A standalone version of the readability lib
+* [25+ Years of Personal Knowledge Management. From scattered ideas to networked thoughts](https://dsebastien.net/blog/2022-04-03-25-years-of-personal-knowledge-management)
+* [exatorrent](https://github.com/varbhat/exatorrent) -- Easy to Use Torrent Client. Can be hosted in Cloud. Files can be streamed in Browser/Media Player
+* [onion](https://github.com/goraz/onion) -- Layer based configuration for golang
+* [binance-trade-bot](https://github.com/edeng23/binance-trade-bot)
+* [Рефакторинг программы на Go: ускорение в 23 раза](https://habr.com/ru/company/badoo/blog/415919/) -- статья 2018 года, но читается взахлеб
+* [Style guideline for Go packages · rakyll.org](https://rakyll.org/style-packages/)
+* [You may not need Cloudflare Tunnel. Linux is fine.](https://kiwiziti.com/~matt/wireguard/)
+* [Zig Makes Go Cross Compilation Just Work](https://dev.to/kristoff/zig-makes-go-cross-compilation-just-work-29ho)
+* [Comparing Go vs. C in embedded applications](https://stackoverflow.blog/2022/04/04/comparing-go-vs-c-in-embedded-applications/)
+
+Хорошей вам недели!
