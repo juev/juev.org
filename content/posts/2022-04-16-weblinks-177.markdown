@@ -1,0 +1,28 @@
+---
+title: "Ссылки #177"
+date: 2022-04-16T10:50:33+0300
+image: https://static.juev.org/images/links.jpg
+tags: 
+  - links
+---
+
+За прошедшую неделю сохранил 115 ссылок.
+
+* [Goroutines Are Not Significantly Smaller Than Threads](https://matklad.github.io//2021/03/12/goroutines-are-not-significantly-smaller-than-threads.html)
+* [End-to-End Encryption and Messaging Interoperability](https://educatedguesswork.org/posts/messaging-e2e/)
+* [Impervious Browser: Functionality Overview](https://newsletter.impervious.ai/impervious-browser-functionality-overview/) -- жду выхода представленного браузера
+* [ghorg](https://github.com/gabrie30/ghorg) -- Quickly clone an entire org/users repositories into one directory - Supports GitHub, GitLab, Bitbucket, and more 🥚
+* [An Ode to Apples Hide My Email](https://empty.coffee/an-ode-to-apples-hide-my-email/)
+* [Impressions from a first-time Mac user](https://loganmarchione.com/2022/04/impressions-from-a-first-time-mac-user/) -- вспоминаю, как начинал работать на маках, те же мысли были
+* [Buying Bitcoin Anonymously (More or Less)](https://www.coindesk.com/layer2/privacyweek/2022/01/24/buying-bitcoin-anonymously-more-or-less/)
+* [The Private YouTube Client](https://freetubeapp.io/)
+* [3 Tips for Extra Security with Your Bitwarden Account](https://bitwarden.com/blog/3-tips-for-extra-security-with-your-bitwarden-account/) -- интересные рекомендации по защите своего аккаунта в Bitwarden
+* [warp-plus-cloudflare](https://github.com/ALIILAPRO/warp-plus-cloudflare) -- Script for getting unlimited GB on Warp+
+* [Unstoppable Web](https://vas3k.ru/blog/unstoppable_web/) -- взгляд в будущее от Вастрика
+* [The smallest Docker image to serve static websites](https://lipanski.com/posts/smallest-docker-image-static-website)
+* [Блокчейн изнутри: как устроен биткоин](https://vas3k.ru/blog/blockchain/) -- что такое блокчейн от Вастрика
+* [BIP39 Tool](https://github.com/iancoleman/bip39) -- A web tool for converting BIP39 mnemonic codes
+* [Matt Roelle | Fennel: The Practical Lisp](https://www.mattroelle.com/fennel-the-practical-lisp)
+
+Хорошей вам недели!
+
