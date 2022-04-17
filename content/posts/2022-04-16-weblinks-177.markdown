@@ -25,4 +25,3 @@ tags:
 * [Matt Roelle | Fennel: The Practical Lisp](https://www.mattroelle.com/fennel-the-practical-lisp)
 
 Хорошей вам недели!
-
