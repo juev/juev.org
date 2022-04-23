@@ -1,0 +1,25 @@
+---
+title: "Ссылки #178"
+date: 2022-04-23T09:23:53+0300
+image: https://static.juev.org/images/links.jpg
+tags: 
+  - links
+---
+
+За прошедшую неделю сохранил 129 ссылок.
+
+* [What's New in Emacs 28.1?](https://www.masteringemacs.org/article/whats-new-in-emacs-28-1) -- очень развесистая статья по новым возможностям Emacs 28.1
+* [orhun/systeroid](https://github.com/orhun/systeroid) -- A more powerful alternative to sysctl(8) with a terminal user interface 🐧
+* [Stephen Marz: Blog](http://osblog.stephenmarz.com/) -- The Adventures of OS: Making a RISC-V Operating System using Rust
+* [Crossbeam](https://github.com/crossbeam-rs/crossbeam) -- Tools for concurrent programming in Rust
+* [Майним Bitcoin с помощью бумаги и ручки](https://habr.com/ru/post/258181/)
+* [How to run end-to-end tests 10x faster with firecracker](https://webapp.io/blog/github-actions-10x-faster-with-firecracker/)
+* [Kopia](https://github.com/kopia/kopia) -- Cross-platform backup tool for Windows, macOS & Linux with fast, incremental backups, client-side end-to-end encryption, compression and data deduplication. CLI and GUI included.
+* [We need Bitcoin full nodes. Economic ones.](https://shiftcrypto.ch/blog/we-need-bitcoin-full-nodes-economic-ones/)
+* [Emacs Configuration Generator](https://emacs.amodernist.com/)
+* [Certify](https://github.com/johanbrandhorst/certify) -- Automatic client and server certificate distribution and maintenance
+* [AltStore](https://altstore.io/) -- A home for apps that push the boundaries of iOS. No jailbreak required.
+* [gofeed](https://github.com/mmcdole/gofeed) -- Parse RSS, Atom and JSON feeds in Go
+
+Хорошей вам недели!
+
