@@ -1,0 +1,25 @@
+---
+title: "Ссылки #179"
+date: 2022-04-30T10:44:13+0300
+image: https://static.juev.org/images/links.jpg
+tags: 
+  - links
+---
+
+За прошедшую неделю сохранил 112 ссылок.
+
+* [Home Lab Beginners guide – Hardware](https://haydenjames.io/home-lab-beginners-guide-hardware/)
+* [privacyidea/privacyidea](https://github.com/privacyidea/privacyidea) -- 🔐 multi factor authentication system (2FA, MFA, OTP Server)
+* [infobyte/faraday](https://github.com/infobyte/faraday) -- Collaborative Penetration Test and Vulnerability Management Platform
+* [OWASP Nettacker](https://github.com/OWASP/Nettacker) -- Automated Penetration Testing Framework - Open-Source Vulnerability Scanner - Vulnerability Management
+* [Extracting WhatsApp messages from an iOS backup](https://yasoob.me/posts/extracting-whatsapp-messages-from-ios-backup/)
+* [P2P-Trading-Exchanges](https://github.com/cointastical/P2P-Trading-Exchanges) -- Person-to-Person bitcoin Trading Exchanges
+* [How macOS manages M1 CPU cores](https://eclecticlight.co/2022/04/25/how-macos-manages-m1-cpu-cores/)
+* [Simple Ledger visualisations using Python](https://wilw.dev/blog/2022/04/24/ledger-python-visualisation/) -- сама визуализация получилась совершенно не говорящая ни о чем, но идея интересная
+* [How to Write a Git Commit Message](https://cbea.ms/git-commit/) -- читаю и перечитываю, так как сам считаю, что в логах git должно содержаться все необходимое для того, чтобы понимать, что и для чего это было сделано
+* [Understanding the Git Workflow](https://sandofsky.com/workflow/git-workflow) -- снова про git, основы работы, про которые многие быстро забывают
+* [Ultimate Blockchain](https://github.com/ardanlabs/blockchain) -- This class teaches you how to build a semantically correct blockchain in Go
+* [How I put my whole life into a single database · Felix Krause](https://krausefx.com//blog/how-i-put-my-whole-life-into-a-single-database)
+
+Хорошей вам недели!
+
