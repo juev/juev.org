@@ -1,0 +1,24 @@
+---
+title: "Ссылки #180"
+date: 2022-05-07T08:58:51+0300
+image: https://static.juev.org/images/links.jpg
+tags: 
+  - links
+---
+
+За прошедшую неделю сохранил 114 ссылок.
+
+* [Go and Dogma](https://research.swtch.com/dogma)
+* [mutt-wizard](https://github.com/LukeSmithxyz/mutt-wizard) -- A system for automatically configuring mutt and isync with a simple interface and safe passwords
+* [Настройка собственного почтового сервера](https://habr.com/ru/post/544376/)
+* [Creating an Easy Mode for Rust](https://tim.mcnamara.nz/post/683022094467039232/easy-mode-for-rust)
+* [How I Use Restic to Back up My Home Folders to Backblaze B2](https://www.seanh.cc/2022/04/03/restic/)
+* [Mouthful is a self-hosted alternative to Disqus.](https://github.com/vkuznecovas/mouthful)
+* [go-randomdata](https://github.com/Pallinder/go-randomdata) -- A tiny generator of random data for golang, also known as a faker
+* [Zcash Upcoming Upgrade First Step in Move Away From Trusted Setup](https://z.cash/)
+* [LISP in Space](https://corecursive.com/lisp-in-space-with-ron-garret/)
+* [rain](https://github.com/cenkalti/rain) -- 🌧 BitTorrent client and library in Go
+* [What are your Most Used Self Hosted Applications?](https://noted.lol/what-are-your-most-used-self-hosted-applications/)
+
+Хорошей вам недели!
+
