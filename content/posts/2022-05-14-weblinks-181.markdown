@@ -1,0 +1,24 @@
+---
+title: "Ссылки #181"
+date: 2022-05-14T10:21:10+0300
+image: https://static.juev.org/images/links.jpg
+tags: 
+  - links
+---
+
+За прошедшую неделю сохранил 104 ссылки.
+
+* [WireGuard Tools - Configuration Generator](https://www.wireguardconfig.com)
+* [rq](https://github.com/dflemstr/rq) -- Record Query - A tool for doing record analysis and transformation
+* [ngrok for the wicked#](https://solovyov.net/blog/2022/ngrok-for-the-wicked/)
+* [Building a static site generator in 100 lines of Rust](https://kerkour.com/rust-static-site-generator/)
+* [Self-hosted newsletter and mailing list manager](https://listmonk.app/)
+* [10 Tips - Preview the Mac app people forget about](https://www.fourth-wall.co.uk/post/10-tips-for-preview-the-default-mac-app-that-people-forget-about)
+* [Mastodon IP anonymization](https://libreops.cc/2022/05/09/mastodon/)
+* [About the 1Password security model](https://support.1password.com/1password-security/)
+* [gorse: Go Recommender System Engine](https://github.com/gorse-io/gorse) -- An open source recommender system service written in Go
+* [Proton's CEO Wanted to Fight Dictatorships. Now He's Fighting Big Tech Too](https://time.com/6176214/proton-ceo-andy-yen-profile/)
+* [Fast git handover with mob](https://github.com/remotemobprogramming/mob) -- Tool for smooth git handover
+
+Хорошей вам недели!
+
