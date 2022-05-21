@@ -1,0 +1,22 @@
+---
+title: "Ссылки #182"
+date: 2022-05-21T09:38:35+0300
+image: https://static.juev.org/images/links.jpg
+tags: 
+  - links
+---
+
+За прошедшую неделю сохранил 77 ссылок.
+
+* [How to Pixelate Images in Go](https://golangprojectstructure.com/how-to-pixelate-images-in-go-code/)
+* [Render](https://github.com/unrolled/render) -- Go package for easily rendering JSON, XML, binary data, and HTML templates responses
+* [Find commands at the speed of thought](https://www.commands.dev/)
+* [Насколько хорошо защищены ваши пароли? Проверка проекта Bitwarden](https://pvs-studio.com/ru/blog/posts/csharp/0947/)
+* [Linux Inside на русском](https://github.com/proninyaroslav/linux-insides-ru)
+* [Четыре простых лайфхака при написании тестов на Go + testify](https://habr.com/ru/company/joom/blog/666440/)
+* [prose](https://github.com/jdkato/prose) -- 📖 A Golang library for text processing, including tokenization, part-of-speech tagging, and named-entity extraction
+* [Хакатон Demhack 4](https://demhack.ru) -- в эти два дня будет проходить Онлайн-хакатон задач в области прайваси и свободы интернета
+* [Building my first mechanical keyboard.](https://not-matthias.github.io/posts/mechanical-keyboard/)
+
+Хорошей вам недели!
+
