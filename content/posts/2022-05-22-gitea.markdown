@@ -1,0 +1,159 @@
+---
+title: "Gitea"
+date: 2022-05-22T15:43:30+0300
+image: https://static.juev.org/2022/05/gitea_icon_146173.png
+tags: 
+  - gitea
+  - git
+  - soft
+  - raspberrypi
+---
+
+Я уже писал ранее про бекапы Github репозиториев: [Github Backup](https://www.juev.org/2022/03/04/github-backup/). Но в результате решил пойти другим путем, и не просто создавать бекапы данных, а создавать полноценные зеркала репозиториев на своем сервере (raspberry pi).
+
+Выбирать ПО для сервера долго не пришлось, у меня уже был опыт работы с [Gitea](https://gitea.com). Легковесный и очень удобный сервер.
+
+## Установка
+
+Сначала необходимо создать пользователя, под которым будет работать приложение:
+
+```bash
+sudo adduser --disabled-login --gecos 'Gitea' git
+```
+
+Переключаемся на нового пользователя и создаем директории для gitea:
+
+```bash
+sudo su git
+cd ~
+mkdir gitea
+cd gitea
+```
+
+Теперь идем на страницу <https://dl.gitea.io/gitea/> и выбираем последнюю версию для малинки, загружаем ее в созданную директорию под именем gitea:
+
+```bash
+wget https://dl.gitea.io/gitea/1.16.8/gitea-1.16.8-linux-arm-6 -O gitea
+```
+
+## Настройка сервиса
+
+Сначала необходимо задать права доступа для запуска, после чего выходим из нового пользователя:
+
+```bash
+chmod +x gitea
+exit
+```
+
+И теперь создаем сервис для автоматического запуска сервера в системе:
+
+```bash
+sudo vim /etc/systemd/system/gitea.service
+```
+
+Копируем содержимое в файл:
+
+```plain
+[Unit]
+Description=Gitea (Git with a cup of tea)
+After=syslog.target
+After=network.target
+
+[Service]
+# Modify these two values and uncomment them if you have
+# repos with lots of files and get to HTTP error 500 because of that
+###
+# LimitMEMLOCK=infinity
+# LimitNOFILE=65535
+RestartSec=2s
+Type=simple
+User=git
+Group=git
+WorkingDirectory=/home/git/gitea
+ExecStart=/home/git/gitea/gitea web
+Restart=always
+Environment=USER=git 
+HOME=/home/git
+
+[Install]
+WantedBy=multi-user.target
+```
+
+И теперь активируем и запускаем новый сервис:
+
+```bash
+sudo systemctl enable gitea.service
+sudo systemctl start gitea.service
+```
+
+Теперь переходим по адресу нашего сервера по порту 3000 и завершаем настройку Gitea. Здесь я выбрал базу данных sqlite, и все остальные параметры оставил без изменения. Добавил только имя домена, на котором планировал видеть Gitea.
+
+## Reverse proxy
+
+В качестве веб-сервера (или реверсивного прокси) я использую [Caddy](https://caddyserver.com). Сейчас не буду останавливаться на вопросе установки и настройки Caddy, приведу лишь файл конфигурации, что используется у меня:
+
+```plain
+{
+    acme_dns cloudflare <token>
+}
+
+
+(common) {
+        header /* {
+                # Enable HTTP Strict Transport Security (HSTS)
+                Strict-Transport-Security "max-age=31536000;"
+                # Enable cross-site filter (XSS) and tell browser to block detected attacks
+                X-XSS-Protection "1; mode=block"
+                # Disallow the site to be rendered within a frame (clickjacking protection)
+                X-Frame-Options "DENY"
+                # Prevent search engines from indexing (optional)
+                X-Robots-Tag "none"
+                # Server name removing
+                -Server
+        }
+}
+
+git.example.com {
+        import common
+        reverse_proxy 127.0.0.1:3000
+        request_body {
+                max_size 500MB
+        }
+        log {
+                output file /var/log/caddy/git.access.log
+        }
+}
+```
+
+Первый блок используется для настройки https, второй блок задает основные заголовки, что будут использоваться при передаче всех файлов с сервера и последний блок задает параметры домена и прокси.
+
+Для получения доступа к малинке из любой точки мира используется Cloudflare туннель. Об этом я так же писал: [Хостинг сайтов с помощью Cloudflare tunnel](https://www.juev.org/2022/02/13/cloudflared/). В конфигурации указываем следующий блок:
+
+```plain
+tunnel: <uuid>
+credentials-file: /home/pi/.cloudflared/<uuid>.json
+
+ingress:
+  - hostname: git.example.com
+    service: https://localhost:443
+    originRequest:
+      originServerName: "git.example.com"
+  - service: http_status:404
+```
+
+После чего перезапускаем сервис cloudflare и меняем настройки DNS, чтобы домен `git.example.com` указывал на запись CNAME с именем <uuid\>.cfargotunnel.com
+
+Собственно все, если теперь мы переходим по нашему домену, видим интерфейс gitea:
+
+![gitea](https://static.juev.org/2022/05/gitea.png)
+
+На снимке экрана приведен пример с уже созданными зеркалами. Но на данном этапе нам еще предстоит создать все эти зеркала. Я провел импорт всех репозиториев вручную, но есть способы создания через скрипты ([один из примеров](https://dev.to/nicolasboyer/migrate-all-of-your-repos-from-github-to-gitea-3fk)).
+
+Сначала создаем токен для своего пользователя в Github, который имеет права для работы с репозиториями. Затем в Gitea создаем новую миграцию, и выбираем Github из списка. Указываем, что этот репозиторий будет зеркалом и завершаем миграцию. Обратите внимание на то, что адрес репозитория следуем указывать в https-формате. 
+
+![migrate](https://static.juev.org/2022/05/migrate.png)
+
+После чего в параметрах репозитория можно будет указать, как часто обращаться к Github за изменениями, по умолчанию Gitea ходит раз в 8 часов.
+
+Собственно на этом все. Я провел настройку зеркалирования моих репозиториев с Github. И теперь у меня есть полноценная рабочая копия всех моих репозиториев.
+
