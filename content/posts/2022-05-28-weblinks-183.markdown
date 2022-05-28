@@ -1,0 +1,24 @@
+---
+title: "Ссылки #183"
+date: 2022-05-28T10:11:59+0300
+image: https://static.juev.org/images/links.jpg
+tags: 
+  - links
+---
+
+За прошедшую неделю сохранил 105 ссылок.
+
+* [Why we chose gRPC over REST for Multy](https://docs.multy.dev/blog/why-rest-is-dead)
+* [resolved](https://github.com/barrucadu/resolved) -- A simple DNS server for home networks
+* [💤 forgit](https://github.com/wfxr/forgit) -- A utility tool powered by fzf for using git interactively
+* [dimensionhq/fleet](https://github.com/dimensionhq/fleet) -- 🚀 The blazing fast build tool for Rust
+* [Wikipedia Over WhatsApp](https://alexanderell.is/posts/wikipedia-over-whatsapp/)
+* [WireGuard UI](https://github.com/EmbarkStudios/wg-ui) -- WireGuard Web UI for self-serve client configurations, with optional auth
+* [go-zero](https://github.com/zeromicro/go-zero) -- A cloud-native Go microservices framework with cli tool for productivity
+* [bitfield/script](github.com/bitfield/script) -- Making it easy to write shell-like scripts in Go
+* [How Uber Uses Zig](https://jakstys.lt/2022/how-uber-uses-zig/)
+* [Donald Knuth on work habits, problem solving, and happiness](https://shuvomoy.github.io/blogs/posts/Knuth-on-work-habits-and-problem-solving-and-happiness/)
+* [Store files as YouTube videos == infinite disk space](https://github.com/dzhang314/YouTubeDrive)
+
+Хорошей вам недели!
+
