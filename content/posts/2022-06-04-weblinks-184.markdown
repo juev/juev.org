@@ -1,0 +1,25 @@
+---
+title: "Ссылки #184"
+date: 2022-06-04T09:39:52+0300
+image: https://static.juev.org/images/links.jpg
+tags: 
+  - links
+---
+
+За прошедшую неделю сохранил 116 ссылок.
+
+* [The Open Source VPN Server and Firewall](https://www.firezone.dev/) -- Firezone is an open-source VPN and firewall server built on WireGuard® to be stable, performant, and lightweight
+* [sish](https://github.com/antoniomika/sish) -- HTTP(S)/WS(S)/TCP Tunnels to localhost using only SSH
+* [GTD in 15 minutes – A Pragmatic Guide to Getting Things Done](https://hamberg.no/gtd)
+* [Programming in the Apocalypse](https://matduggan.com/programming-in-the/) -- отличная статья, рассматривающая возможности разработки после апокалипсиса
+* [pomerium/pomerium](https://github.com/pomerium/pomerium) -- Pomerium is an identity-aware access proxy
+* [mo - Monads](https://github.com/samber/mo) -- 🦄 Monads and popular FP abstractions, powered by Go 1.18+ Generics (Option, Result, Either...)
+* [Hyprspace](https://github.com/hyprspace/hyprspace) -- A Lightweight VPN Built on top of IPFS + Libp2p for Truly Distributed Networks
+* [Awesome KeePass](https://github.com/lgg/awesome-keepass)
+* [wireproxy](https://github.com/octeep/wireproxy) -- Wireguard client that exposes itself as a socks5 proxy
+* [depaware](https://github.com/tailscale/depaware) -- depaware makes you aware of your Go dependencies
+* [Spacedrive](https://github.com/spacedriveapp/spacedrive) -- Spacedrive is an open source cross-platform file explorer, powered by a virtual distributed filesystem written in Rust
+* [DNS over HTTPS / DNS over Tor / DNSCrypt client, firewall, and connection tracker for Android.](https://github.com/celzero/rethink-app)
+
+Хорошей вам недели!
+
