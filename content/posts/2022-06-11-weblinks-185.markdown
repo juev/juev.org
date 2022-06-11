@@ -1,0 +1,25 @@
+---
+title: "Ссылки #185"
+date: 2022-06-11T11:15:33+0300
+image: https://static.juev.org/images/links.jpg
+tags: 
+  - links
+---
+
+За прошедшую неделю сохранил 108 ссылок.
+
+* [Golang: simple optimization notes](https://medium.com/scum-gazeta/golang-simple-optimization-notes-70bc64673980)
+* [Writing memory efficient and CPU optimized Go Structs](https://towardsdev.com/golang-writing-memory-efficient-and-cpu-optimized-go-structs-62fcef4dbfd0)
+* [Черно-белый режим](https://grishaev.me/no-bw-color/) -- Иван описал ровно то, что я думаю про черно-белый режим на устройствах
+* [Useful utilities and toys over DNS](https://dns.toys/)
+* [Tools for better thinking](https://untools.co/)
+* [Quest for the Lost Console Trailer](https://1passwordconsolequest.gg/) -- интересный квест от 1Password
+* [I've locked myself out of my digital life](https://shkspr.mobi/blog/2022/06/ive-locked-myself-out-of-my-digital-life/) -- крайне рекомендую ознакомиться с этой статьей и подумать, а что бы вы делали в этой ситуации?
+* [SpoofDPI](https://github.com/xvzc/SpoofDPI) -- A simple and fast anti-censorship tool written in Go
+* [a bitcoin wallet for the streets](https://samouraiwallet.com) -- криптокошелек для андроид-телефонов
+* [voidint/g](https://github.com/voidint/g) -- еще один Golang Version Manager
+* [Getting Things Done (GTD)](https://todoist.com/productivity-methods/getting-things-done) -- краткий экскурс от Todoist
+* [Introducing Gitsign](https://blog.sigstore.dev/introducing-gitsign-9fd3f1b682aa)
+
+Хорошей вам недели!
+
