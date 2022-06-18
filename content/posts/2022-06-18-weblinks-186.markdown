@@ -1,0 +1,23 @@
+---
+title: "Ссылки #186"
+date: 2022-06-18T09:13:21+0300
+image: https://static.juev.org/images/links.jpg
+tags: 
+  - links
+---
+
+За прошедшую неделю сохранил 120 ссылок.
+
+* [I’m Switching form VS Code to VS Codium](https://ruky.me/2022/06/11/im-switching-form-vs-code-to-vs-codium/)
+* [airgeddon](https://github.com/v1s1t0r1sh3r3/airgeddon) -- This is a multi-use bash script for Linux systems to audit wireless networks
+* [The different kinds of notes](https://www.baldurbjarnason.com/2022/the-different-kinds-of-notes/) -- различные подходы к ведению заметок
+* [Once In A Lifetime](https://www.collaborativefund.com/blog/once-in-a-lifetime/) -- о теории вероятности в масштабах человечества
+* [dreddsa5dies/goHackTools](https://github.com/dreddsa5dies/goHackTools) -- Hacker tools on Go (Golang)
+* [Keyoxide](https://keyoxide.org/) your online identity and profile page
+* [bensadeh/circumflex : 🌿 It's Hacker News in your terminal](https://github.com/bensadeh/circumflex)
+* [iA-Fonts](https://github.com/iaolo/iA-Fonts) -- шрифты от известной IA Writer
+* [Is IPv6 Faster Than IPv4?](https://pansift.com/blog/is-ipv6-faster-than-ipv4/)
+* [Password Managers: Under the Hood of Secrets Management](https://www.ise.io/casestudies/password-manager-hacking/) -- очень сильная статья, описывающая уязвимости современных парольных менеджеров
+
+Хорошей вам недели!
+
