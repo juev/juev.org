@@ -1,0 +1,27 @@
+---
+title: "Ссылки #187"
+date: 2022-06-25T09:33:53+0300
+image: https://static.juev.org/images/links.jpg
+tags: 
+  - links
+---
+
+За прошедшую неделю сохранил 174 ссылки.
+
+* [awesome-malware-development](https://github.com/rootkit-io/awesome-malware-development) -- Organized list of my malware development resources
+* [LGUG2Z/unsubscan](https://github.com/LGUG2Z/unsubscan) -- A tool to help you find unsubscribe links in your emails
+* [~ rawtext.club ~](https://rawtext.club/)
+* [pojntfx/htorrent](https://github.com/pojntfx/htorrent) -- HTTP to BitTorrent gateway with seeking support
+* [V Language Review (2022)](https://mawfig.github.io/2022/06/18/v-lang-in-2022.html)
+* [dstotijn/hetty](https://github.com/dstotijn/hetty) -- An HTTP toolkit for security research
+* [Overthinking](https://kerkour.com/overthinking) -- меньше думай, больше делай ;)
+* [Two Years of Life with PinePhone](https://linmob.net/two-years-of-owning-a-pinephone/)
+* [Are blockchains decentralized?](https://blog.trailofbits.com/2022/06/21/are-blockchains-decentralized/)
+* [Matrix notes](https://anarc.at/blog/2022-06-17-matrix-notes/) -- о всех недостатках матрицы
+* [Start all of your commands with a comma](https://rhodesmill.org/brandon/2009/commands-with-comma/) -- отличный рецепт, который стоит взять на вооружение
+* [Build a PinePhone App with Zig and zgt](https://lupyuen.github.io/articles/pinephone)
+* [Locking down Signal](https://freedom.press/training/locking-down-signal/)
+* [How to Use Signal Without Giving Out Your Phone Number: A Gendered Security Issue](https://www.vice.com/en/article/9kaxge/how-to-use-signal-without-giving-out-your-phone-number-a-gendered-security-issue)
+
+Хорошей вам недели!
+
