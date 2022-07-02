@@ -1,0 +1,24 @@
+---
+title: "Ссылки #188"
+date: 2022-07-02T09:21:24+0300
+image: https://static.juev.org/images/links.jpg
+tags: 
+  - links
+---
+
+За прошедшую неделю сохранил 116 ссылок.
+
+* [Hardening macOS](https://www.bejarano.io/hardening-macos/) -- This guide is about security, not privacy
+* [shaarli/Shaarli](https://github.com/shaarli/Shaarli) -- The personal, minimalist, super-fast, database free, bookmarking service - community repo
+* [Why I still recommend Julia](https://huijzer.xyz/posts/recommend/)
+* [Two types of privacy](https://seirdy.one/posts/2022/06/25/two-types-of-privacy/)
+* [Stop Interviewing With Leet Code](https://fev.al/posts/leet-code/)
+* [Life Is Not Short](https://dkb.show/post/life-is-not-short)
+* [Haskell in Production: Channable](https://serokell.io/blog/haskell-in-production-channable)
+* [SQLite or PostgreSQL? It's Complicated!](https://www.twilio.com/blog/sqlite-postgresql-complicated)
+* [How to Learn Haskell Fast](https://serokell.io/blog/how-to-learn-haskell-in-10-minutes)
+* [gliderlabs/ssh](https://github.com/gliderlabs/ssh)
+* [Introducing 1Password for Visual Studio Code](https://blog.1password.com/1password-visual-studio-code/)
+
+Хорошей вам недели!
+
