@@ -3,9 +3,12 @@
 {{- define "main" -}}
 <h1 itemprop="name headline" class="title">{{- .Title -}}</h1>
 <div id="metainfo">
-    <span class="date" itemprop="datePublished">{{ .Date.Format "2 January 2006" }}</span>{{ with .Params.tags }}
+    <span class="date" itemprop="datePublished">{{- if .GitInfo }}
+        <a href="{{ .Site.Params.gitUrl -}}{{ .GitInfo.Hash }}" target="_blank" rel="noopener">{{ .Date.Format "2 January 2006" }}</a>{{- else }}
+        {{ .Date.Format "2 January 2006" }}{{- end }}
+    </span>{{ with .Params.tags }}
     <span class="tags" itemprop="keywords">{{ range . }}
-        <a rel="category tag" href="{{ "tags" | absURL }}/{{ . | urlize }}" title="View posts tagged with &quot;&quot;{{ . }}">#{{ . }}</a>{{ end }}
+        <a rel="category tag" href="{{ "tags" | absURL }}/{{ . | urlize }}" title="View posts tagged with &quot;{{ . }}&quot;">#{{ . }}</a>{{ end }}
     </span>{{ end }}
 </div>
 <div class="post" itemprop="articleBody">
