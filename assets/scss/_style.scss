@@ -422,13 +422,13 @@ h1,h2
 
 h1
 {
-  font-size:34px;
-  line-height:48px
+  font-size:28px;
+  line-height:28px
 }
 
 h2
 {
-  font-size:26px;
+  font-size:24px;
   line-height:30px;
   color:#444!important;
 }
@@ -453,7 +453,7 @@ h3.title
 #home
 {
   float:left;
-  display:inline-block;
+  // display:inline-block;
   margin:45px 1em 0 0;
   width:32px;
   height:48px;
@@ -492,6 +492,13 @@ h3.title
   text-decoration:none;
 }
 
+.info
+{
+  display:inline-block;
+  // font-weight:bold;
+  font-size:9pt;
+}
+
 .tags
 {
   display:inline-block;
@@ -502,6 +509,7 @@ h3.title
   border:none;
   text-decoration:none;
   margin-left: 5px;
+  font-size:9pt;
 }
 
 #tag-cloud a
