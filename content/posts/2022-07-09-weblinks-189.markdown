@@ -1,0 +1,22 @@
+---
+title: "Ссылки #189"
+date: 2022-07-09T10:31:38+0300
+image: https://static.juev.org/images/links.jpg
+tags: 
+  - links
+---
+
+За прошедшую неделю сохранил 68 ссылок.
+
+* [How The Fiat Standard Has Impacted Relationships, Sex And Family — And How Bitcoin Can Fix It](https://bitcoinmagazine.com/culture/how-fiat-impacts-relationships-family) -- реальные проблемы нашего поколения, только не понятно, как биткоин их решает
+* [pet : CLI Snippet Manager](https://github.com/knqyf263/pet) -- Simple command-line snippet manager, written in Go
+* [Goodbye, Feedly](https://erikgahner.dk/2022/goodbye-feedly/) -- автор описывает недостатки Feedly и переходит на использование программы, ну а я продолжаю использовать Miniflux для чтения лент
+* [`zig cc`: a Powerful Drop-In Replacement for GCC/Clang](https://andrewkelley.me/post/zig-cc-powerful-drop-in-replacement-gcc-clang.html)
+* [Y Combinator: русскоговорящие основатели](https://vc.ru/life/178364-y-combinator-russkogovoryashchie-osnovateli)
+* [wezm/rsspls](https://github.com/wezm/rsspls) -- Generate RSS feeds from websites
+* [Browsh](https://www.brow.sh/) -- fully-modern text-based browser
+* [How Caddy 2 works, a deep dive into the source](https://sourcegraph.com/notebooks/Tm90ZWJvb2s6MTM2Nw==)
+* [Self-hosting a static site with OpenBSD, httpd, and relayd](https://citizen428.net/blog/self-hosting-static-site-openbsd-httpd-relayd/)
+
+Хорошей вам недели!
+
