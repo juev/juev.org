@@ -1,0 +1,19 @@
+---
+title: "Ссылки #190"
+date: 2022-07-16T12:31:26+0300
+image: https://static.juev.org/images/links.jpg
+tags: 
+  - links
+---
+
+За прошедшую неделю сохранил 78 ссылок.
+
+* [Go generics are not bad](https://lemire.me/blog/2022/07/08/go-generics-are-not-bad/)
+* [The facts](https://why-openbsd.rocks/fact/) -- только факты почему OpenBSD это круто
+* [This repo contains my notes on working with Go and computer systems.](https://github.com/betty200744/ultimate-go)
+* [Rust Editors to Replace TextMate 2 - The Agony of Despair](http://fuzzyblog.io/blog/rust/2022/07/08/rust-alternatives-to-textmate-2-the-agony-of-despair.html)
+* [Is your smartphone ruining your memory? A special report on the rise of ‘digital amnesia’](https://www.theguardian.com/global/2022/jul/03/is-your-smartphone-ruining-your-memory-the-rise-of-digital-amenesia)
+* [kevincobain2000/gobrew](https://github.com/kevincobain2000/gobrew) -- Go version manager. Super simple tool to install and manage Go versions. Install go without root. Gobrew doesn't require shell rehash
+* [«Один разработчик заменяет пять программистов на JavaScript»: для чего нужен Haskell](https://skillbox.ru/media/code/odin-razrabotchik-zamenyaet-pyat-programmistov-na-javascript-dlya-chego-nuzhen-haskell/)
+
+Хорошей вам недели!
