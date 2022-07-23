@@ -1,0 +1,20 @@
+---
+title: "Ссылки #191"
+date: 2022-07-23T10:39:16+0300
+image: https://static.juev.org/images/links.jpg
+tags: 
+  - links
+---
+
+За прошедшую неделю сохранил 53 ссылки.
+
+* [go-cache](https://github.com/patrickmn/go-cache) -- An in-memory key:value store/cache (similar to Memcached) library for Go, suitable for single-machine applications
+* [I've started using Mozilla Firefox and now I can never go back to Google Chrome](https://www.techradar.com/in/features/ive-started-using-mozilla-firefox-and-now-i-can-never-go-back-to-google-chrome)
+* [Clash](https://github.com/Dreamacro/clash) -- A rule-based tunnel in Go
+* [Does Bionic Reading actually work? We timed over 2,000 readers and the results might surprise you](https://blog.readwise.io/bionic-reading-results/) -- сюрприз, сюрприз, оказалось шрифт не влияет на скорость чтения и восприятие текста
+* [How Web Works](https://github.com/vasanthk/how-web-works)
+* [kevwan/tproxy](https://github.com/kevwan/tproxy) -- A cli tool to proxy and analyze TCP connections
+* [nb · command line and local web plain text note-taking, bookmarking, archiving, and knowledge base application](https://xwmx.github.io/nb/)
+* [Analyzing iOS 16 Lockdown Mode: Browser Features and Performance](https://www.sevarg.net/2022/07/20/ios16-lockdown-mode-browser-analysis/)
+
+Хорошей вам недели!
