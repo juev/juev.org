@@ -1,0 +1,19 @@
+---
+title: "Ссылки #192"
+date: 2022-07-30T10:39:16+0300
+image: https://static.juev.org/images/links.jpg
+tags: 
+  - links
+---
+
+За прошедшую неделю сохранил 39 ссылок.
+
+* [Lua конфигурация Neovim для разработки на Go](https://habr.com/ru/post/678298/)
+* [omniedgeio/omniedge](https://github.com/omniedgeio/omniedge) -- OmniEdge is an Open source p2p layer 2 mesh VPN infrastructure
+* [Why Writing Your Own Search Engine is Hard](https://queue.acm.org/detail.cfm?id=988407)
+* [Magefiles: Stop on first error](https://carolynvanslyck.com/blog/2022/07/magefiles-stop-on-first-error/)
+* [Xz format inadequate for long-term archiving](https://www.nongnu.org/lzip/xz_inadequate.html)
+* [A Little Story About the `yes` Unix Command](https://endler.dev/2017/yes/)
+* [The tar archive format, its extensions, and why GNU tar extracts in quadratic time](https://mort.coffee/home/tar/)
+
+Хорошей вам недели!
