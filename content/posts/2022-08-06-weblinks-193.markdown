@@ -1,0 +1,21 @@
+---
+title: "Ссылки #193"
+date: 2022-08-06T10:25:16+0300
+image: https://static.juev.org/images/links.jpg
+tags: 
+  - links
+---
+
+За прошедшую неделю сохранил 80 ссылок.
+
+* [A dead simple parser package for Go](https://github.com/alecthomas/participle) -- A parser library for Go
+* [Lefthook](https://github.com/evilmartians/lefthook) -- Fast and powerful Git hooks manager for any type of projects
+* [go-quartz](https://github.com/reugn/go-quartz) -- Minimalist and zero-dependency scheduling library for Go
+* [Library webhooks](https://github.com/go-playground/webhooks) -- 🎣 Webhook receiver for GitHub, Bitbucket, GitLab, Gogs
+* [🔍 ImHex](https://github.com/WerWolv/ImHex) -- 🔍 A Hex Editor for Reverse Engineers, Programmers and people who value their retinas when working at 3 AM
+* [kffl/speedbump](https://github.com/kffl/speedbump) -- TCP proxy for simulating variable, yet predictable network latency 🌐⏳
+* [🔍 gowitness](https://github.com/sensepost/gowitness) -- 🔍 gowitness - a golang, web screenshot utility using Chrome Headless
+* [Golang: Using buffered channel like a mutex](https://towardsdev.com/golang-using-buffered-channel-like-a-mutex-9c7c80ec5c27)
+* [Easy memory-saving tricks in Go](https://ribice.ba/golang-memory-savings/)
+
+Хорошей вам недели!
