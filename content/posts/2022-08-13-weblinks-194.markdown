@@ -1,0 +1,24 @@
+---
+title: "Ссылки #194"
+date: 2022-08-13T10:12:12+0300
+image: https://static.juev.org/images/links.jpg
+tags: 
+  - links
+---
+
+За прошедшую неделю сохранил 56 ссылок.
+
+* [Psiphon Tunnel Core](https://github.com/Psiphon-Labs/psiphon-tunnel-core) -- Psiphon is an Internet censorship circumvention system
+* [Technical reasons to choose FreeBSD over GNU/Linux](https://unixsheikh.com/articles/technical-reasons-to-choose-freebsd-over-linux.html)
+* [Using Landlock to Sandbox GNU Make](https://justine.lol/make/)
+* [UTM](https://github.com/utmapp/UTM) -- Virtual machines for iOS and macOS
+* [Soft Serve](https://github.com/charmbracelet/soft-serve) -- A tasty, self-hostable Git server for the command line🍦
+* [Fixing Memory Exhaustion Bugs in My Golang Web App](https://mtlynch.io/notes/picoshare-perf/)
+* [Clash](https://github.com/Dreamacro/clash) -- A rule-based tunnel in Go
+* [Why books don’t work](https://andymatuschak.org/books)
+* [How to write good prompts: using spaced repetition to create understanding](https://andymatuschak.org/prompts)
+* [How I Found a Go Issue on ARM that Crashed the Database Server](https://en.pingcap.com/blog/how-i-found-a-go-issue-on-arm-that-crashed-the-database-server/)
+* [iOS Privacy: Instagram and Facebook can track anything you do on any website in their in-app browser](https://krausefx.com/blog/ios-privacy-instagram-and-facebook-can-track-anything-you-do-on-any-website-in-their-in-app-browser)
+* [privacy.sexy](https://github.com/undergroundwires/privacy.sexy) -- Open-source tool to enforce privacy & security best-practices on Windows and macOS, because privacy is sexy 🍑🍆
+
+Хорошей вам недели!
