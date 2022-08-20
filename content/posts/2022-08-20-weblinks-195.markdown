@@ -1,0 +1,23 @@
+---
+title: "Ссылки #195"
+date: 2022-08-20T10:09:12+0300
+image: https://static.juev.org/images/links.jpg
+tags: 
+  - links
+---
+
+За прошедшую неделю сохранил 111 ссылок.
+
+* [just](https://github.com/casey/just) -- 🤖 Just a command runner
+* [gokrazy/syslogd](https://github.com/gokrazy/syslogd) -- gokrazy remote syslog server daemon: writes to disk what it receives via remote syslog
+* [What exactly is TTY?](https://www.sobyte.net/post/2022-05/tty/)
+* [diy code hosting with gitea and fly.io.](https://mat.services/posts/gitea-on-fly-io/)
+* [bosha/alfred-quicklinks-workflow](https://github.com/bosha/alfred-quicklinks-workflow) -- Quicklist Alfred workflow
+* [heroiclabs/nakama](https://github.com/heroiclabs/nakama) -- Distributed server for social and realtime games and apps
+* [A robots.txt Problem](http://avodonosov.blogspot.com/2022/08/a-robotstxt-problem.html)
+* [SQLite — не игрушка](https://habr.com/ru/post/547448/)
+* [Signal сообщил об утечке, коснувшейся 1900 пользователей](https://roskomsvoboda.org/post/signal-utechka/)
+* [VPNs on iOS are a scam](https://www.michaelhorowitz.com/VPNs.on.iOS.are.scam.php) -- если считаете, что vpn на iOS работает так как вы думаете, то вы ошибаетесь
+* [jank programming language - Clojure/LLVM/Gradual Typing](https://jank-lang.org/)
+
+Хорошей вам недели!
