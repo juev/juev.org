@@ -12,7 +12,7 @@ routes:
     - route: "^.+\\.(html|xml|json)$"
       headers:
         Cache-Control: "public, no-cache, must-revalidate"
-        Content-Security-Policy: "default-src 'self' 'unsafe-inline' static.juev.org; font-src 'self' fonts.gstatic.com; child-src 'none'; upgrade-insecure-requests"
+        Content-Security-Policy: "default-src 'self' 'unsafe-inline' static.juev.org data:; font-src 'self' fonts.gstatic.com data:; child-src 'none'; upgrade-insecure-requests"
         Strict-Transport-Security: "max-age=1000"
         X-Xss-Protection: "1; mode=block"
         X-Frame-Options: "DENY"
