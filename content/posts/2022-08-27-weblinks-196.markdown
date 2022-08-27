@@ -1,0 +1,23 @@
+---
+title: "Ссылки #196"
+date: 2022-08-27T13:12:12+0300
+image: https://static.juev.org/images/links.jpg
+tags: 
+  - links
+---
+
+За прошедшую неделю сохранил 91 ссылку.
+
+* [Resolving an unusual wifi issue](http://blog.ando.fyi/posts/diagnosing-an-unsual-wifi-issue/)
+* [Mar​ta](https://marta.sh/) -- File Manager for macOS. Native. Extensible. Fast. 🚀
+* [Geneva](https://github.com/Kkevsterrr/geneva) -- automated censorship evasion for the client-side and server-side
+* [Turning SQLite into a distributed database](https://univalence.me/posts/mvsqlite)
+* [Offline-First Apps: Why Should Apps Be Made To Work In An Offline State?](https://www.dewsolutions.in/offline-first-apps/)
+* [An encrypted ZIP file can have two correct passwords — here's why](https://www.bleepingcomputer.com/news/security/an-encrypted-zip-file-can-have-two-correct-passwords-heres-why/)
+* [Caddy-Docker-Proxy](https://github.com/lucaslorentz/caddy-docker-proxy) -- Caddy as a reverse proxy for Docker
+* [Coffee with Brian Kernighan - Computerphile](http://www.youtube.com/watch?v=GNyQxXw_oMQ)
+* [Why your website should be under 14kb in size](https://endtimes.dev/why-your-website-should-be-under-14kb-in-size/)
+* [Switching git back to GPG signing](https://sethmlarson.dev/blog/switching-git-back-to-gpg-signing)
+* [США объявили войну крипто-анонимности: как санкции на Tornado Cash меняют будущее блокчейна](https://habr.com/ru/post/684536/)
+
+Хорошей вам недели!
