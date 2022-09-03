@@ -1,0 +1,21 @@
+---
+title: "Ссылки #197"
+date: 2022-09-03T09:53:03+0300
+image: https://static.juev.org/images/links.jpg
+tags: 
+  - links
+---
+
+За прошедшую неделю сохранил 81 ссылку.
+
+* [MatrixTM/MHDDoS](https://github.com/MatrixTM/MHDDoS) -- Best DDoS Attack Script Python3, (Cyber / DDos) Attack With 56 Methods
+* [Dear application developer: how far can you really go without a message queue?](https://blog.chiselstrike.com/dear-application-developer-how-far-can-you-really-go-without-a-message-queue-d9e5385fab64)
+* [Writing Useful go/analysis Linter](https://disaev.me/p/writing-useful-go-analysis-linter/)
+* [Disposable Temporary Email](https://getnada.com/)
+* [Rewriting my blog in Rust for fun and profit](https://www.jonashietala.se/blog/2022/08/29/rewriting_my_blog_in_rust_for_fun_and_profit/)
+* [chshersh/tool-sync](https://github.com/chshersh/tool-sync) -- 🧰 Download pre-built binaries of all your favourite tools with a single command
+* [How to Write Accurate Benchmarks in Go](https://teivah.medium.com/how-to-write-accurate-benchmarks-in-go-4266d7dd1a95)
+* [natesales/q](https://github.com/natesales/q) -- A tiny command line DNS client with support for UDP, TCP, DoT, DoH, DoQ and ODoH
+* [teamhanko/hanko](https://github.com/teamhanko/hanko) -- A passkey-first approach to authentication that takes you on the journey beyond passwords. For better security, conversion rates, and happier users
+
+Хорошей вам недели!
