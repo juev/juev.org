@@ -1,0 +1,20 @@
+---
+title: "Ссылки #198"
+date: 2022-09-10T09:39:13+0300
+image: https://static.juev.org/images/links.jpg
+tags: 
+  - links
+---
+
+За прошедшую неделю сохранил 83 ссылки.
+
+* [Lightly "sandboxed" homebrew on macOS](https://gist.github.com/pudquick/29bc95b6c49703992981864e48f8e341)
+* [How we clone a running VM in 2 seconds](https://codesandbox.io/post/how-we-clone-a-running-vm-in-2-seconds)
+* [leon-ai/leon](https://github.com/leon-ai/leon) -- 🧠 Leon is your open-source personal assistant
+* [Extending SQLite with Rust](https://ricardoanderegg.com/posts/extending-sqlite-with-rust/)
+* [A Complete Guide to Logging in Go with Zerolog](https://betterstack.com/community/guides/logging/zerolog/)
+* [Revisiting the design approach to the Zig programming language](https://about.sourcegraph.com/blog/zig-programming-language-revisiting-design-approach)
+* [Почему у заметок должна быть цель 🎯](https://fedorovpishet.ru/zettel-goal/)
+* [Правило 3-х часов: Сколько нужно работать в день](https://habr.com/ru/post/685756/)
+
+Хорошей вам недели!
