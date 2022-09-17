@@ -1,0 +1,19 @@
+---
+title: "Ссылки #199"
+date: 2022-09-17T10:35:11+0300
+image: https://static.juev.org/images/links.jpg
+tags: 
+  - links
+---
+
+За прошедшую неделю сохранил 88 ссылок.
+
+* [Spectre: Passwords, Privacy-first](https://spectre.app/) -- один из менеджеров паролей
+* [Раздобыть бейджик «Яндекса» и изучить компанию изнутри](https://vc.ru/yandex/491916-razdobyt-beydzhik-yandeksa-i-izuchit-kompaniyu-iznutri) -- о работе в Яндекс изнутри
+* [Regular expressions in Go](https://medium.com/@hrosch/regular-expressions-in-go-c90ebedf58d6)
+* [Разбираемся с Redis](https://habr.com/ru/company/wunderfund/blog/685894/)
+* [jetpack-io/devbox](https://github.com/jetpack-io/devbox) -- Instant, easy, predictable shells and containers
+* [How to learn modern Rust](https://github.com/joaocarvalhoopen/How_to_learn_modern_Rust)
+* [tensorchord/envd](https://github.com/tensorchord/envd) -- 🏕️ Development environment for AI/ML, based on buildkit
+
+Хорошей вам недели!
