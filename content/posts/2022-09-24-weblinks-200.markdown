@@ -1,0 +1,22 @@
+---
+title: "Ссылки #200"
+date: 2022-09-24T09:07:11+0300
+image: https://static.juev.org/images/links.jpg
+tags: 
+  - links
+---
+
+Юбилейный, 200-ый выпуск ссылок. Круглое число, за которым скрывается масса времени. Это не просто 200, это 200 недель, в течение которых проводился отбор интересных ссылок и их публикация. [Первая публикация](https://www.juev.org/2018/11/25/weblinks-1/) вышла в уже далеком 2018 году. Прошло уже почти 4 года.
+
+За прошедшую неделю сохранил 73 ссылки.
+
+* [Push notification two-factor auth considered harmful](https://xeiaso.net/blog/push-2fa-considered-harmful)
+* [Blocking Web Fonts for Speed and Privacy](https://collinmbarrett.com/block-web-fonts/)
+* [A Reasonable Secure Environment for Reading Potentially Harmful Emails](https://karl-voit.at/2018/03/22/secure-email-environment/)
+* [QR codes](https://typefully.com/DanHollick/qr-codes-T7tLlNi)
+* [I have complicated feelings about TDD](https://buttondown.email/hillelwayne/archive/i-have-complicated-feelings-about-tdd-8403/)
+* [Squash, Merge, or Rebase?](https://matt-rickard.com/squash-merge-or-rebase) -- очень интересный вопрос, какой из подходов использовать в работе. Я больше склоняюсь к периодическому ребейзу, если моя ветка начинает отставать от базы. В то время как мои коллеги предпочитают проводить мерж. Так же ссылка по теме: [Rebase Considered Harmful Login](https://www.fossil-scm.org/home/doc/trunk/www/rebaseharm.md)
+* [How I manage my passwords](https://bitspook.in/blog/how-i-manage-my-passwords/) -- интеерсный подход, но на мой взгляд не очень удобный.
+* [Go is More Object-Oriented Than Java](https://medium.com/star-gazers/go-is-more-object-oriented-than-java-6d49e9015dec) -- ООП не совсем то, как мы его себе предсатвляем
+
+Хорошей вам недели!
