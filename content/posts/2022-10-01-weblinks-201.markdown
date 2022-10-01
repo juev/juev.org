@@ -1,0 +1,18 @@
+---
+title: "Ссылки #201"
+date: 2022-10-01T09:45:11+0300
+image: https://static.juev.org/images/links.jpg
+tags: 
+  - links
+---
+
+За прошедшую неделю сохранил 65 ссылок.
+
+* [Schedule Cronjob for the First Monday of Every Month, the Funky Way](https://blog.healthchecks.io/2022/09/schedule-cron-job-the-funky-way/)
+* [Why you should do printf debugging](https://www.timdbg.com/posts/why-you-should-printf/)
+* [Learning is Remembering](https://saveall.ai/blog/learning-is-remembering)
+* [The Internet Shutdowns Issue](https://jigsaw.google.com/the-current/shutdown/)
+* [Maps and Memory Leaks in Go](https://teivah.medium.com/maps-and-memory-leaks-in-go-a85ebe6e7e69)
+* [How we reduced our annual server costs by 80%](https://levelup.gitconnected.com/how-we-reduced-our-annual-server-costs-by-80-from-1m-to-200k-by-moving-away-from-aws-2b98cbd21b46)
+
+Хорошей вам недели!
