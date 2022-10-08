@@ -1,0 +1,21 @@
+---
+title: "Ссылки #202"
+date: 2022-10-08T10:20:11+0300
+image: https://static.juev.org/images/links.jpg
+tags: 
+  - links
+---
+
+За прошедшую неделю сохранил 73 ссылки.
+
+* [epasveer/seer](https://github.com/epasveer/seer) -- a gui frontend to gdb
+* [The Thorny Problem of Keeping the Internet’s Time](https://www.newyorker.com/tech/annals-of-technology/the-thorny-problem-of-keeping-the-internets-time)
+* [evilmartians/mono](https://github.com/evilmartians/mono) -- Free and open-source monospaced font from Evil Martians
+* [Как начать заниматься багхантингом веб-приложений](https://habr.com/ru/company/pt/blog/690716/)
+* [Writing a DNS Server in Rust](https://dev.to/xfbs/writing-a-dns-server-in-rust-1gpn)
+* [auth - authentication via oauth2, direct and email](https://github.com/go-pkgz/auth)
+* [How to secretly travel with bitcoin using Steganography](https://medium.com/@Marketsbylili/how-to-secretly-travel-with-bitcoin-using-steganography-6e99a7ca9ad9)
+* [Signal is secure, as proven by hackers](https://www.kaspersky.co.uk/blog/signal-hacked-but-still-secure/24864/)
+* [Программа Preview](https://grishaev.me/preview/) -- Иван Гришаев пишет про стандартный Preview, и я полностью с ним согласен
+
+Хорошей вам недели!
