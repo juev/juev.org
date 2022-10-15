@@ -1,0 +1,19 @@
+---
+title: "Ссылки #203"
+date: 2022-10-15T10:22:11+0300
+image: https://static.juev.org/images/links.jpg
+tags: 
+  - links
+---
+
+За прошедшую неделю сохранил 67 ссылок.
+
+* [inancgumus/learngo](https://github.com/inancgumus/learngo) -- ❤️ 1000+ Hand-Crafted Go Examples, Exercises, and Quizzes. 🚀 Learn Go by fixing 1000+ tiny programs
+* [Zig-style generics are not well-suited for most languages](https://typesanitizer.com/blog/zig-generics.html)
+* [Bitcoin and economic nihilism](https://xeiaso.net/blog/cryptocurrency-ownership)
+* [Why the Internet needs the InterPlanetary File System](https://spectrum.ieee.org/peer-to-peer-network)
+* [immich-app/immich](https://github.com/immich-app/immich) -- Self-hosted photo and video backup solution directly from your mobile phone
+* [aerc a pretty good email client](https://aerc-mail.org/)
+* [How I fixed git-grep macOS UTF-8 support](https://www.spinellis.gr/blog/20221012/)
+
+Хорошей вам недели!
