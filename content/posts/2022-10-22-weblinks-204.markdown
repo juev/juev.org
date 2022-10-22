@@ -1,0 +1,21 @@
+---
+title: "Ссылки #204"
+date: 2022-10-22T16:43:11+0300
+image: https://static.juev.org/images/links.jpg
+tags: 
+  - links
+---
+
+За прошедшую неделю сохранил 76 ссылок.
+
+* [pwnesia/ssb](https://github.com/pwnesia/ssb) -- Secure Shell Bruteforcer — A faster & simpler way to bruteforce SSH server 
+* [Disposable Root Servers](https://blog.thc.org/disposable-root-servers)
+* [Стоит ли бояться блокировок бирж? 8-ой пакет санкций от ЕС. Кто поддержит ограничения? Как сохранить свою крипту?](https://vc.ru/finance/518284-stoit-li-boyatsya-blokirovok-birzh-8-oy-paket-sankciy-ot-es-kto-podderzhit-ogranicheniya-kak-sohranit-svoyu-kriptu)
+* [OpenBSD Minimalist Desktop](https://nechtan.io/articles/openbsd_minimalist_desktop.html)
+* [codecrafters-io/build-your-own-x](https://github.com/codecrafters-io/build-your-own-x) -- Master programming by recreating your favorite technologies from scratch
+* [bulwarkid/virtual-fido](https://github.com/bulwarkid/virtual-fido) --  A Virtual FIDO2 USB Device
+* [gemacs: an emacs written in Go](https://github.com/glycerine/gemacs)
+* [Securely Generating TOTP tokens with Emacs](https://www.masteringemacs.org/article/securely-generating-totp-tokens-emacs)
+* [smoke.sh](https://github.com/asm89/smoke.sh) -- A minimal smoke testing framework in Bash
+
+Хорошей вам недели!
