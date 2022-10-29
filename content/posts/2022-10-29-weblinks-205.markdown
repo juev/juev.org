@@ -1,0 +1,20 @@
+---
+title: "Ссылки #205"
+date: 2022-10-29T11:02:11+0300
+image: https://static.juev.org/images/links.jpg
+tags: 
+  - links
+---
+
+За прошедшую неделю сохранил 47 ссылок.
+
+* [Тулинг для разработки на Lua](https://bronevichok.ru/posts/lua-tooling.html)
+* [Review of the Kinesis Advantage360 Professional](https://arslan.io/2022/10/22/review-of-the-kinesis-advantage360-professional/) 
+* [Engagespot/heroku-free-alternatives](https://github.com/Engagespot/heroku-free-alternatives)
+* [Ninja Bot](https://github.com/rodrigo-brito/ninjabot) -- A fast trading bot platform for cryptocurrency in Go (Binance)
+* [Reverse VPN All The Things](https://blog.jessfraz.com/post/reverse-vpn-for-all-the-things/)
+* [The Cult of DD](https://eklitzke.org/the-cult-of-dd)
+* [Уезжала «посмотреть страну», а осталась навсегда](https://luxtoday.lu/interview-ru/uezzhala-posmotret-stranu-a-ostalas-navsegda)
+* [Shell Script Best Practices](https://sharats.me/posts/shell-script-best-practices/)
+
+Хорошей вам недели!
