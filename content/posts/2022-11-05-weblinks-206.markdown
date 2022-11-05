@@ -1,0 +1,17 @@
+---
+title: "Ссылки #206"
+date: 2022-11-05T18:00:11+0300
+image: https://static.juev.org/images/links.jpg
+tags: 
+  - links
+---
+
+За прошедшую неделю сохранил всего 22 ссылки.
+
+* [jamealg/KT-companion](https://github.com/jamealg/KT-companion) -- A hiking and backpacking trail companion progressive web app
+* [The Zen of Go / Dave Cheney](http://www.youtube.com/watch?v=yd_rtwYaXps)
+* [NaïveProxy](https://github.com/klzgrad/naiveproxy) -- Make a fortune quietly
+* [The Real Problem with Go](https://vanitynotes.com/posts/20221101-the-real-problem-with-go)
+* [Use RSS for privacy and efficiency](https://rsapkf.org/weblog/q2z)
+
+Хорошей вам недели!
