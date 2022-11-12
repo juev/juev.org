@@ -1,0 +1,19 @@
+---
+title: "Ссылки #207"
+date: 2022-11-12T11:05:11+0300
+image: https://static.juev.org/images/links.jpg
+tags: 
+  - links
+---
+
+За прошедшую неделю сохранил 93 ссылки.
+
+* [From Google to Twitter (initial thoughts)](https://ma.nu/blog/from-google-to-twitter)
+* [It looks like I’m moving to Mastodon](https://simonwillison.net/2022/Nov/5/mastodon/)
+* [Try, Try again](https://www.2doapp.com/try-try-again/) -- обзор работы над 2do
+* [diracdeltas/tweets](https://github.com/diracdeltas/tweets) -- janky twitter replacement
+* [simonw/scrape-fediverse](https://github.com/simonw/scrape-fediverse) -- Git scrapers for scraping the fediverse
+* [Hacking with Go](https://github.com/parsiya/Hacking-with-Go) -- Golang for Security Professionals
+* [Pruning test dependencies from Go binaries](https://dolthub.com/blog/2022-11-07-pruning-test-dependencies-from-golang-binaries/)
+
+Хорошей вам недели!
