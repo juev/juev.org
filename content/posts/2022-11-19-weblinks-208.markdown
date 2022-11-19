@@ -1,0 +1,21 @@
+---
+title: "Ссылки #208"
+date: 2022-11-19T11:04:11+0300
+image: https://static.juev.org/images/links.jpg
+tags: 
+  - links
+---
+
+За прошедшую неделю сохранил 108 ссылкок. Своеобразный рекорд, ранее не помню случая, когда больше 100 набирал за неделю.
+
+* [Notmuch -- Just an email system](http://notmuchmail.org/)
+* [aleixrodriala/wa-tunnel](https://github.com/aleixrodriala/wa-tunnel) -- Tunneling Internet traffic over Whatsapp
+* [Goodbye Twitter, Hello Fediverse!](https://xeiaso.net/blog/rip-twitter)
+* [Tracing HTTP Requests with tcpflow](https://ananthakumaran.in/2022/11/12/trace-http-requests.html)
+* [Tunneling all traffic over DNS with a SOCKS proxy](https://0day.work/tunneling-all-traffic-over-dns-with-a-socks-proxy/)
+* [Making a Go program 42% faster with a one character change](https://hmarr.com/blog/go-allocation-hunting/)
+* [Тайм-менеджмент для разработчика. Секреты эффективности в работе и в жизни](https://habr.com/ru/post/699228/)
+* [Sapling: Source control that’s user-friendly and scalable](https://engineering.fb.com/2022/11/15/open-source/sapling-source-control-scalable/) -- Sapling is a new Git-compatible source control client
+* [GO Simple Tunnel](https://v2.gost.run/en/)
+
+Хорошей вам недели!
