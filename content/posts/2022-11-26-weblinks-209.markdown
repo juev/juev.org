@@ -1,0 +1,19 @@
+---
+title: "Ссылки #209"
+date: 2022-11-26T10:00:11+0300
+image: https://static.juev.org/images/links.jpg
+tags: 
+  - links
+---
+
+За прошедшую неделю сохранил 119 ссылкок.
+
+* [Having a safe CEX: proof of solvency and beyond](https://vitalik.ca/general/2022/11/19/proof_of_solvency.html)
+* [ssh-chat](https://github.com/shazow/ssh-chat)
+* [Don't store TOTP in Bitwarden for your online accounts!](https://prezu.ca/post/dont-use-totp-in-bitwarden/)
+* [jafarlihi/rssnix](https://github.com/jafarlihi/rssnix) -- Unix-style filesystem-based RSS/Atom/JSON Feed fetcher/reader
+* [Bit is a modern Git CLI](https://github.com/chriswalz/bit)
+* [pemistahl/lingua-go](https://github.com/pemistahl/lingua-go) -- The most accurate natural language detection library for Go, suitable for long and short text alike
+* [git-bug](https://github.com/MichaelMure/git-bug) -- Distributed, offline-first bug tracker embedded in git, with bridges
+
+Хорошей вам недели!
