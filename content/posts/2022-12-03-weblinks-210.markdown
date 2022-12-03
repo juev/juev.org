@@ -1,0 +1,43 @@
+---
+title: "Ссылки #210"
+date: 2022-12-03T10:20:11+0300
+image: https://static.juev.org/images/links.jpg
+tags: 
+  - links
+---
+
+Pocket хорош для сохранения ссылок на короткий промежуток времени. Почитал, удалил.
+Функцией архивирования я почти не пользуюсь, прочитал -- сразу удалил.
+
+Возникла мысль создать общую историю всех ссылок, что я сохраняю в Pocket.
+Организационно это просто, у каждого аккаунта есть свой RSS-канал, куда транслируются ссылки различных типов.
+И нужно было лишь подписаться на этот канал и сохранять новые данные.
+
+Потратив один день, создал [juev/getpocket-collector](https://github.com/juev/getpocket-collector),
+который принимает на вход две переменные:
+
+- `GETPOCKET_FEED_URL` -- ссылка на RSS-канал пользователя
+- `UserName` -- используется для формирования ссылки лицензии в футере, если не
+задать, будет использоваться `juev`
+
+В `README` есть описание того, как работает, и как использовать программу. И сам
+пример можно найти в отдельном репозитории: [juev/links](https://github.com/juev/links),
+в котором формируется история прочитанного из моего аккаунта.
+
+Единственное, нужно обратить внимание на то, что RSS-каналы в Pocket обычно
+закрыты паролем, и имеют ограничение на число обращений к закрытому каналу.
+Поэтому, если планируете использовать внешний аггрегатор, в настройках Pocket
+откройте RSS-канал для всех.
+
+За прошедшую неделю сохранил всего 38 ссылкок. По всей видимости причина в том,
+что теперь более осознанно сохраняю статьи в свой ларец.
+
+- [Closing in on fully free BIOSes with the FSF tech team](https://www.fsf.org/blogs/sysadmin/closing-in-on-fully-free-bioses-with-the-fsf-tech-team)
+- [Run and Test HTTP Requests](https://hurl.dev/)
+- [SSHGuard](https://www.sshguard.net/)
+- [Little Languages Are The Future Of Programming](https://chreke.com/little-languages.html)
+- [DeterminateSystems/macos-ephemeral](https://github.com/DeterminateSystems/macos-ephemeral) -- Scripts and instructions for making ephemeral macOS machines with Mosyle MDM support
+- [Deploying a Hugo blog to Cloudflare using Terraform](https://bialon.net/post/deploying-hugo-blog-to-cloudflare-with-terraform/)
+- [A Vim Guide for Advanced Users](https://thevaluable.dev/vim-advanced/)
+
+Хорошей вам недели!
