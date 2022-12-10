@@ -1,0 +1,23 @@
+---
+title: "Ссылки #211"
+date: 2022-12-10T09:58:11+0300
+image: https://static.juev.org/images/links.jpg
+tags: 
+  - links
+---
+
+Напоминаю, что все ссылки, без исключения у меня теперь можно отслеживать в
+репозитории [juev/links](https://github.com/juev/links).
+
+За прошедшую неделю сохранил 56 ссылкок.
+
+- [Using Liquibase as a Solution for Deploying and Tracking MySQL Schema Changes](https://www.percona.com/blog/using-liquibase-as-a-solution-for-deploying-and-tracking-mysql-schema-changes/)
+- [Privaxy](https://github.com/Barre/privaxy) -- Privaxy is the next generation tracker and advertisement blocker. It blocks ads and trackers by MITMing HTTP(s) traffic
+- [Functional table-driven tests in Go](https://arslan.io/2022/12/04/functional-table-driven-tests-in-go/)
+- [ent/ent](https://github.com/ent/ent) -- An entity framework for Go
+- [Golang CSRF Defense in Practice](https://dev.to/llance_24/golang-csrf-defense-in-practice-10k)
+- [Comprehensive Guide to Testing in Go](https://blog.jetbrains.com/go/2022/11/22/comprehensive-guide-to-testing-in-go/)
+- [runfinch/finch](https://github.com/runfinch/finch) --The Finch CLI an open source client for container development
+- [Rust в стартапе: поучительная история](https://habr.com/ru/post/704362/)
+
+Хорошей вам недели!
