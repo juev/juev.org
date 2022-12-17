@@ -1,0 +1,22 @@
+---
+title: "Ссылки #212"
+date: 2022-12-17T11:37:32+0300
+image: https://static.juev.org/images/links.jpg
+tags: 
+  - links
+---
+
+Напоминаю, что все ссылки, без исключения у меня теперь можно отслеживать в
+репозитории [juev/links](https://github.com/juev/links).
+
+За прошедшую неделю сохранил 50 ссылкок.
+
+- [bep/lazycache](https://github.com/bep/lazycache) -- Thread safe in-memory LRU cache with non-blocking cache priming on cache misses
+- [Getting started with tmux](https://ittavern.com/getting-started-with-tmux/)
+- [А что, медитация бывает разная?](https://glebkalinin.ru/meditation-types/)
+- [rsc/github](https://github.com/rsc/github) -- Go code for interacting with GitHub
+- [kamstrup/fn](https://github.com/kamstrup/fn) -- Functional programming in Go
+- [odnoletkov/advent-of-code-jq](https://github.com/odnoletkov/advent-of-code-jq) -- Solving Advent of Code with jq
+- [Journalist. An RSS aggregator.](https://github.com/mrusme/journalist) -- An RSS aggregator
+
+Хорошей вам недели!
