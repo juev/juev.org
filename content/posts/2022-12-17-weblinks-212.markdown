@@ -9,7 +9,7 @@ tags:
 Напоминаю, что все ссылки, без исключения у меня теперь можно отслеживать в
 репозитории [juev/links](https://github.com/juev/links).
 
-За прошедшую неделю сохранил 50 ссылкок.
+За прошедшую неделю сохранил 50 ссылок.
 
 - [bep/lazycache](https://github.com/bep/lazycache) -- Thread safe in-memory LRU cache with non-blocking cache priming on cache misses
 - [Getting started with tmux](https://ittavern.com/getting-started-with-tmux/)

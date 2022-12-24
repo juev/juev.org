@@ -1,0 +1,29 @@
+---
+title: "Ссылки #213"
+date: 2022-12-24T09:55:11+0300
+image: https://static.juev.org/images/links.jpg
+tags: 
+  - links
+---
+
+Напоминаю, что все ссылки, без исключения у меня теперь можно отслеживать в
+репозитории [juev/links](https://github.com/juev/links).
+
+Обратил внимание на то, что в последний раз писал статьи аж в мае. Перед этим в марте.
+Длительный перерыв. И если вынести все ссылки на отдельный домен, получается, что за
+текущий год написал только [7 статей](https://www.juev.org/posts/). :(
+
+Ну это так, самокритика. Перейдем к основной теме.
+
+За прошедшую неделю сохранил 36 ссылок.
+
+- [pemistahl/lingua-go](https://github.com/pemistahl/lingua-go) -- The most accurate natural language detection library for Go, suitable for long and short text alike
+- [SQLite Extensions](https://github.com/riyaz-ali/sqlite) -- Golang library to build sqlite extensions
+- [ax/apk.sh](https://github.com/ax/apk.sh) -- apk.sh makes reverse engineering Android apps easier, automating some repetitive tasks like pulling, decoding, rebuilding and patching an APK
+- [Switching to RayCast!](https://typefully.com/altryne/switching-to-raycast-jXXQYLj) -- несколько раз пытался и я переключиться на RayCast, но пока безрезультатно
+- [icyphox/legit](https://github.com/icyphox/legit) -- web frontend for git, written in go
+- [Samsar4/Ethical-Hacking-Labs](https://github.com/Samsar4/Ethical-Hacking-Labs) -- Practical Ethical Hacking Labs 🗡🛡
+- [Marshaling SSH Private Keys](https://charm.sh/blog/ssh-key-marshal/)
+- [evald24/vscode-extensions-profiles](https://github.com/evald24/vscode-extensions-profiles) -- Lets you create profiles to include the selected extensions in the desired project
+
+Хорошей вам недели!
