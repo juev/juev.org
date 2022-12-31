@@ -1,0 +1,21 @@
+---
+title: "Ссылки #214"
+date: 2022-12-31T10:44:11+0300
+image: https://static.juev.org/images/links.jpg
+tags: 
+  - links
+---
+
+Напоминаю, что все ссылки, без исключения у меня теперь можно отслеживать в
+репозитории [juev/links](https://github.com/juev/links).
+
+За прошедшую неделю сохранил 46 ссылок.
+
+- [Setting up my new laptop: nix style](https://bmcgee.ie/posts/2022/12/setting-up-my-new-laptop-nix-style/)
+- [Cracking encrypted Lastpass vaults](https://markuta.com/cracking-lastpass-vaults/)
+- [gokey](https://github.com/cloudflare/gokey) -- A simple vaultless password manager in Go
+- [password ass (pa)](https://github.com/biox/pa) -- a simple password manager. encryption via age, written in portable posix shell
+- [Golang is evil on shitty networks](https://withinboredom.info/blog/2022/12/29/golang-is-evil-on-shitty-networks/) -- обсуждение интересной проблемы
+- [Lies we tell ourselves to keep using Golang](https://fasterthanli.me/articles/lies-we-tell-ourselves-to-keep-using-golang)
+
+С наступающим Новым Годом! Счастья и удачи! И хорошей вам недели! ☺️
