@@ -4,7 +4,7 @@ date: "2015-03-23T00:00:00+0400"
 tags:
   - internet
   - security
-  - crypt
+  - crypto
 keywords: internet, security, crypt
 image: https://static.juev.org/2015/03/big-brother_00375545.jpg
 ---
