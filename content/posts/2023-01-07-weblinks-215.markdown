@@ -1,0 +1,19 @@
+---
+title: "Ссылки #215"
+date: 2023-01-07T11:11:12+0300
+image: https://static.juev.org/images/links.jpg
+tags: 
+  - links
+---
+
+За прошедшую неделю сохранил 42 ссылок.
+
+- [procyon-projects/chrono](https://github.com/procyon-projects/chrono) -- Chrono is a scheduler library that lets you run your task and code periodically
+- [Forgejo](https://forgejo.org/) -- Forgejo is a self-hosted lightweight software forge
+- [Logging in Go with slog](https://thedevelopercafe.com/articles/logging-in-go-with-slog-a7bb489755c2)
+- [davecheney/pub](https://github.com/davecheney/pub) -- pub, a tiny ActivityPub to Mastodon bridge
+- [6 Practices for Effective Pull Requests](https://blog.thepete.net/blog/2019/05/10/6-practices-for-effective-pull-requests/)
+- [Mastodon](https://paulstamatiou.com/mastodon/) -- Thoughts on Twitter, Mastodon, and owning your data
+- [GoToSocial](https://github.com/superseriousbusiness/gotosocial) -- Fast, fun, ActivityPub server, powered by Go
+
+Хорошей вам недели!
