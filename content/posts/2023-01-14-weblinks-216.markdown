@@ -1,0 +1,19 @@
+---
+title: "Ссылки #216"
+date: 2023-01-14T10:00:02+0300
+image: https://static.juev.org/images/links.jpg
+tags: 
+  - links
+---
+
+За прошедшую неделю сохранил 41 ссылку.
+
+- [Why and How I Migrated From ProtonMail to Fastmail](https://ondrejsevcik.com/blog/migrating-from-protonmail-to-fastmail) 🤓
+- [My bad habit of hoarding information](https://andreisurugiu.com/blog/bad-habit/)
+- [Production Twitter on One Machine? 100Gbps NICs and NVMe are fast](https://thume.ca/2023/01/02/one-machine-twitter/)
+- [Feeds: The Only Civilised Way to Read Online](https://felixcrux.com/blog/feeds-the-only-civilised-way-to-read-online)
+- [life4/enc](https://github.com/life4/enc) -- 🔑🔒 A modern and friendly CLI alternative to GnuPG: generate and download keys, encrypt, decrypt, and sign text and files, and more
+- [elk-zone/elk](https://github.com/elk-zone/elk) -- A nimble Mastodon web client
+- [retry](https://github.com/avast/retry-go) -- Simple golang library for retry mechanism
+
+Хорошей вам недели!
