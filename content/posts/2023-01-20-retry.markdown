@@ -1,0 +1,96 @@
+---
+title: "Загрузка файлов"
+date: 2023-01-20T10:08:11+0300
+image: https://static.juev.org/2023/01/retry.png
+tags: 
+  - bash
+  - web
+  - tips
+  - cli
+---
+
+На базе Github организовал пары репозиториев, в которых происходит запуск
+переодических задач. В основе лежит разбор rss-ленты сервиса Getpocket, в
+котором я собираю найденные ссылки. И дальше либо проводится генерация
+markdown-файла в виде журнала, либо отправка ссылок в иные сервисы.
+
+Пробовал ранее использовать чистый bash для данной операции, но это требует
+установки дополнительных программ в систему при каждом запуске, что отнимает
+время и периодически приводит к сбою. Обычно к этому приводят ошибки на сети,
+которые периодически возникают. Выглядело это вот так:
+
+```yaml
+name: Cronjob operations
+
+on:
+  schedule:
+    - cron: "*/15 * * * *" # Runs every 15 minuts
+
+jobs:
+  pocket-to-linkding:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+        with:
+          fetch-depth: 0
+      - name: 💿 Setup
+        run: sudo apt update && sudo apt install -y git jq curl sed libxml2-utils
+      - name: 🚀 Run Automation
+        run: bash ./scripts/getpocket.sh
+        env:
+          LINKDING_TOKEN: ${{ secrets.LINKDING_TOKEN }}
+```
+
+Частично решил эту проблему тем, что отказался от установки ПО в систему и
+просто написав свою небольшую программу на Go, которая и занимается разбором
+ленты. Коммит с изменениями:
+[3b73adefd2044a214018fecd5fbe4506e6ed05ff][3b73adefd2044a214018fecd5fbe4506e6ed05ff]
+
+В скрипте загружаем бинарник программы с помощью wget и затем запускаем его:
+
+```sh
+wget https://github.com/juev/rss-parser/releases/latest/download/rss-parser-linux-amd64 -O run
+chmod +x run
+
+./run https://getpocket.com/users/juev/feed/all > $FILE
+```
+
+Ситуация улучшилась, но переодически возникали [ошибки](https://github.com/juev/cronjob/actions/runs/3959751292):
+
+```plain
+Run bash ./scripts/getpocket.sh
+  bash ./scripts/getpocket.sh
+  shell: /usr/bin/bash -e {0}
+  env:
+    LINKDING_TOKEN: ***
+--2023-01-19 15:12:06--  https://github.com/juev/rss-parser/releases/latest/download/rss-parser-linux-amd64
+Resolving github.com (github.com)... 192.30.255.112
+Connecting to github.com (github.com)|192.30.255.112|:443... connected.
+HTTP request sent, awaiting response... 302 Found
+Location: https://github.com/juev/rss-parser/releases/download/v0.0.1/rss-parser-linux-amd64 [following]
+--2023-01-19 15:12:07--  https://github.com/juev/rss-parser/releases/download/v0.0.1/rss-parser-linux-amd64
+Reusing existing connection to github.com:443.
+HTTP request sent, awaiting response... 302 Found
+Location: https://objects.githubusercontent.com/github-production-release-asset-2e65be/588492463/45fa596c-f8ba-49b4-84ca-dbaf210f0325?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAIWNJYAX4CSVEH53A%2F20230119%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20230119T151207Z&X-Amz-Expires=300&X-Amz-Signature=b41e5f0f8452c595112141930b477277460ff41330e332adbb20ea1abfcddee1&X-Amz-SignedHeaders=host&actor_id=0&key_id=0&repo_id=588492463&response-content-disposition=attachment%3B%20filename%3Drss-parser-linux-amd64&response-content-type=application%2Foctet-stream [following]
+--2023-01-19 15:12:07--  https://objects.githubusercontent.com/github-production-release-asset-2e65be/588492463/45fa596c-f8ba-49b4-84ca-dbaf210f0325?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAIWNJYAX4CSVEH53A%2F20230119%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20230119T151207Z&X-Amz-Expires=300&X-Amz-Signature=b41e5f0f8452c595112141930b477277460ff41330e332adbb20ea1abfcddee1&X-Amz-SignedHeaders=host&actor_id=0&key_id=0&repo_id=588492463&response-content-disposition=attachment%3B%20filename%3Drss-parser-linux-amd64&response-content-type=application%2Foctet-stream
+Resolving objects.githubusercontent.com (objects.githubusercontent.com)... 185.199.111.133, 185.199.108.133, 185.199.109.133, ...
+Connecting to objects.githubusercontent.com (objects.githubusercontent.com)|185.199.111.133|:443... connected.
+HTTP request sent, awaiting response... 503 Egress is over the account limit.
+2023-01-19 15:12:12 ERROR 503: Egress is over the account limit..
+```
+
+На этот раз 503 ошибка, которая снова приводит к сбою выполнения операции.
+
+Подумал, почему бы не сделать повторы, если возникает ошибка со стороны сети?
+
+Изменил команду загрузки:
+
+```sh
+curl --retry-all-errors --retry 10 --retry-delay 0 --retry-max-time 40 --max-time 10 \
+ https://github.com/juev/rss-parser/releases/latest/download/rss-parser-linux-amd64 \
+ -L -o run
+```
+
+И пока ошибок не наблюдаю. 👌
+
+[3b73adefd2044a214018fecd5fbe4506e6ed05ff]: https://github.com/juev/cronjob/commit/3b73adefd2044a214018fecd5fbe4506e6ed05ff
