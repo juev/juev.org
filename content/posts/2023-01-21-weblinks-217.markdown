@@ -1,0 +1,20 @@
+---
+title: "Ссылки #217"
+date: 2023-01-21T16:38:02+0300
+image: https://static.juev.org/images/links.jpg
+tags: 
+  - links
+---
+
+За прошедшую неделю сохранил 37 ссылок.
+
+- [cloudflare/wildebeest](https://github.com/cloudflare/wildebeest) -- Wildebeest is an ActivityPub and Mastodon-compatible server
+- [ksuid](https://github.com/segmentio/ksuid) -- K-Sortable Globally Unique IDs
+- [The yaml document from hell](https://ruudvanasseldonk.com/2023/01/11/the-yaml-document-from-hell)
+- [For your next side project, make a browser extension](https://www.geoffreylitt.com/2023/01/08/for-your-next-side-project-make-a-browser-extension.html)
+- [Golang Crypto Trading Bot](https://github.com/saniales/golang-crypto-trading-bot)
+- [How to encrypt an email](https://proton.me/blog/how-to-encrypt-email)
+- [Notenik Home](https://notenik.app/) -- If you’re looking for a note-taking app that does more than just record your notes, then you might want to consider some of Notenik’s key attributes
+- [hodgesmr/mastodon_digest](https://github.com/hodgesmr/mastodon_digest) -- A Python script that aggregates recent popular posts from your Mastodon timeline
+
+Хорошей вам недели!
