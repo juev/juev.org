@@ -95,6 +95,7 @@ github actions, не забудьте создать нового пользов
 Ну а я перевел два своих репозитория на сборку не только бинарников, но и на
 подготовку docker-контейнеров, что использую в своих крон-репозиториях:
 
+- [juev/starred](https://github.com/juev/starred)
 - [juev/getpocket-collector](https://github.com/juev/getpocket-collector)
 - [juev/rss-parser](https://github.com/juev/rss-parser)
 
