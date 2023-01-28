@@ -1,0 +1,19 @@
+---
+title: "Ссылки #218"
+date: 2023-01-28T11:09:02+0300
+image: https://static.juev.org/images/links.jpg
+tags: 
+  - links
+---
+
+За прошедшую неделю сохранил 63 ссылок.
+
+- [An incomplete guide to stealth addresses](https://vitalik.ca/general/2023/01/20/stealth.html) 
+- [red-data-tools/YouPlot](https://github.com/red-data-tools/YouPlot) -- A command line tool that draw plots on the terminal
+- [Security of the "Pass" password manager](https://rot256.dev/post/pass/)
+- [Small VMs & Coroutines](https://blog.dziban.net/coroutines/)
+- [Git Commands You Probably Do Not Need](https://myme.no/posts/2023-01-22-git-commands-you-do-not-need.html)
+- [Building Docker Images Fast (by not using Docker)](https://blog.howardjohn.info/posts/docker-builds/)
+- [Docker Desktop Alternatives for M1 Mac](https://alexos.dev/2022/01/02/docker-desktop-alternatives-for-m1-mac/)
+
+Хорошей вам недели!
