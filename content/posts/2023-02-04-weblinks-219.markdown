@@ -1,0 +1,19 @@
+---
+title: "Ссылки #219"
+date: 2023-02-04T10:46:01+0300
+image: https://static.juev.org/images/links.jpg
+tags: 
+  - links
+---
+
+За прошедшую неделю сохранил 88 ссылок.
+
+- [Fast and concurrent scripting.](https://cyberscript.dev/) -- Cyber is a new language for
+fast, efficient, and concurrent scripting
+- [Mirroring GitHub projects in 2023](https://a13xp0p0v.github.io/2023/01/29/mirroring-github-projects.html)
+- [Features I'd like in PostgreSQL](https://gilslotd.com/blog/features_id_postgresql)
+- [shot-scraper](https://github.com/simonw/shot-scraper) -- A command-line utility for taking automated screenshots of websites
+- [yubikey-agent](https://github.com/FiloSottile/yubikey-agent) -- yubikey-agent is a seamless ssh-agent for YubiKeys
+- [What is Nostr?](https://nostr-how.vercel.app/)
+
+Хорошей вам недели!
