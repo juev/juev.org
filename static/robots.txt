@@ -5,8 +5,6 @@ Disallow: /pages/
 Disallow: /posts/
 Disallow: /tags/
 Disallow: /tags.html
-Allow: /
 User-agent: CCBot
 Disallow: /
-Sitemap: https://www.juev.org/sitemap.xml
-Host: https://www.juev.org
+Host: "https://www.juev.org"
