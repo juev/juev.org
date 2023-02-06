@@ -7,4 +7,3 @@ Disallow: /tags/
 Disallow: /tags.html
 User-agent: CCBot
 Disallow: /
-Host: "https://www.juev.org"
