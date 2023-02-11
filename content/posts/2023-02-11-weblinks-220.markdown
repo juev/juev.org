@@ -1,0 +1,19 @@
+---
+title: "Ссылки #220"
+date: 2023-02-11T08:07:01+0300
+image: https://static.juev.org/images/links.jpg
+tags: 
+  - links
+---
+
+За прошедшую неделю сохранил 87 ссылок.
+
+- [Want anonymity? Make a persona not a mystery.](https://sive.rs/anon)
+- [Регулярные выражения в SQLite](https://antonz.ru/sqlean-regexp/)
+- [Go 1.20 Experiment: Memory Arenas vs Traditional Memory Management](https://pyroscope.io/blog/go-1-20-memory-arenas/)
+- [wailsapp/wails](https://github.com/wailsapp/wails) -- Create beautiful applications using Go
+- [FOSDEM 2023 : Go devroom](https://fosdem.org/2023/schedule/track/go/)
+- [zrok](https://zrok.io/) -- An open source sharing solution built on OpenZiti, the zero trust networking platform. Available as SaaS or self-hosted
+- [matiaskorhonen/paper-age](https://github.com/matiaskorhonen/paper-age) -- Easy and secure paper backups of secrets
+
+Хорошей вам недели!
