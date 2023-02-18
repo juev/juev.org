@@ -1,0 +1,19 @@
+---
+title: "Ссылки #221"
+date: 2023-02-18T08:10:05+0300
+image: https://static.juev.org/images/links.jpg
+tags: 
+  - links
+---
+
+За прошедшую неделю сохранил 47 ссылок.
+
+- [DevEx Principles: Minimize switching Contexts](https://kathykorevec.substack.com/p/devex-principles-minimize-switching)
+- [Why you should use a BSD style license for your Open Source Project](https://docs.freebsd.org/en/articles/bsdl-gpl/)
+- [Go Enums: The Right Way to Implement and Iterate](https://levelup.gitconnected.com/go-enums-the-right-way-to-implement-and-iterate-9b1e233c8d9a)
+- [The different kinds of notes](https://www.baldurbjarnason.com/2022/the-different-kinds-of-notes/)
+- [Adding comments to your static blog with Mastodon](https://carlschwan.eu/2020/12/29/adding-comments-to-your-static-blog-with-mastodon/)
+- [SQLite the only database you will ever need in most cases](https://www.unixsheikh.com/articles/sqlite-the-only-database-you-will-ever-need-in-most-cases.html)
+- [slog: Golang's official structured logging package](https://www.sobyte.net/post/2022-10/go-slog/)
+
+Хорошей вам недели!
