@@ -1,0 +1,18 @@
+---
+title: "Ссылки #222"
+date: 2023-02-25T10:13:05+0300
+image: https://static.juev.org/images/links.jpg
+tags: 
+  - links
+---
+
+За прошедшую неделю сохранил 52 ссылки.
+
+- [mjl-/mox](https://github.com/mjl-/mox) -- modern full-featured open source secure mail server for low-maintenance self-hosted email
+- [Why Go and not Rust?](https://kristoff.it/blog/why-go-and-not-rust/)
+- [I learned 7 different programming languages so you don't have to](https://mode80.github.io/7-langs-in-12-months.html)
+- [In praise of Alpine and apk](https://whynothugo.nl/journal/2023/02/18/in-praise-of-alpine-and-apk/)
+- [Poste.io ~ complete mail server](https://poste.io/)
+- [Type embedding: Golang's fake inheritance](https://dolthub.com/blog/2023-02-22-golangs-fake-inheritance/)
+
+Хорошей вам недели!
