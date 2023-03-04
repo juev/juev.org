@@ -1,0 +1,17 @@
+---
+title: "Ссылки #223"
+date: 2023-03-04T10:16:05+0300
+image: https://static.juev.org/images/links.jpg
+tags: 
+  - links
+---
+
+За прошедшую неделю сохранил 67 ссылок.
+
+- [Learn Vim (the Smart Way)](https://github.com/iggredible/Learn-Vim)
+- [fiatjaf/relayer](https://github.com/fiatjaf/relayer) -- A Nostr relay server framework
+- [jdxcode/rtx](https://github.com/jdxcode/rtx) -- Runtime Executor (asdf rust clone)
+- [How I backup my Photos](https://arslan.io/2023/02/25/how-i-backup-my-photos/)
+- [Client-side comments with Mastodon on a static Jekyll website](https://jan.wildeboer.net/2023/02/Jekyll-Mastodon-Comments/)
+
+Хорошей вам недели!
