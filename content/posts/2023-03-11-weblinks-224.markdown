@@ -1,0 +1,19 @@
+---
+title: "Ссылки #224"
+date: 2023-03-11T05:31:05+0300
+image: https://static.juev.org/images/links.jpg
+tags: 
+  - links
+---
+
+За прошедшую неделю сохранил 58 ссылок.
+
+- [The Go libraries that never failed us: 22 libraries you need to know](https://threedots.tech/post/list-of-recommended-libraries/)
+- [How do Nix builds work?](https://jvns.ca/blog/2023/03/03/how-do-nix-builds-work-/)
+- [Write a First Person Game in 2KB With Rust](https://grantshandy.github.io/posts/raycasting/)
+- [How Your LED Lights and Screens are Killing You](https://www.sevarg.net/2023/02/11/how-your-leds-are-killing-you/)
+- [I spent a WEEK without IPv4 to understand IPv6 transition mechanisms](https://www.apalrd.net/posts/2023/network_ipv6/)
+- [How to Yubikey: a configuration cheatsheet](https://debugging.works/blog/yubikey-cheatsheet/)
+- [Who reads your email?](https://www.netmeister.org/blog/mx-diversity.html)
+
+Хорошей вам недели!
