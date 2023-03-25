@@ -1,0 +1,21 @@
+---
+title: "Ссылки #226"
+date: 2023-03-25T10:13:05+0300
+image: https://static.juev.org/images/links.jpg
+tags: 
+  - links
+---
+
+За прошедшую неделю сохранил 57 ссылок.
+
+- [Golang contexts and blocking functions](https://www.otterize.com/blog/golang-contexts-and-blocking-functions)
+- [Create Robust "Enums" in Go](https://preslav.me/2023/03/17/create-robust-enums-in-golang/)
+- [Analyzing multi-gigabyte JSON files locally](https://thenybble.de/posts/json-analysis/)
+- [8 Ways to Read (a Lot) More Books This Year](https://hbr.org/2017/02/8-ways-to-read-a-lot-more-books-this-year)
+- [vrtmrz/obsidian-livesync](https://github.com/vrtmrz/obsidian-livesync) -- Self-hosted LiveSync is a community-implemented synchronization plugin
+- [Ciphey/Ciphey](https://github.com/Ciphey/Ciphey) -- Automatically decrypt encryptions without knowing the key or cipher, decode encodings, and crack hashes
+- [sashabaranov/go-openai](https://github.com/sashabaranov/go-openai) -- OpenAI ChatGPT, GPT-3, GPT-4, DALL·E, Whisper API wrapper for Go
+- [Strong Consistency with Raft and SQLite](https://blog.sqlitecloud.io/strong-consistency-with-raft-and-sqlite)
+- [typst/typst](https://github.com/typst/typst) -- A new markup-based typesetting system that is powerful and easy to learn
+
+Хорошей вам недели!
