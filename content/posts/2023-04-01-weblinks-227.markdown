@@ -1,0 +1,19 @@
+---
+title: "Ссылки #227"
+date: 2023-04-01T10:18:05+0300
+image: https://static.juev.org/images/links.jpg
+tags: 
+  - links
+---
+
+За прошедшую неделю сохранил 43 ссылки.
+
+- [6 ways to boost the performance of your Go applications](https://medium.com/@mehmet.sezer/6-ways-to-boost-the-performance-of-your-go-applications-5382bb7532d7)
+- [go test and parallelism](https://bryce.is/writing/code/go-test-and-parallelism.html)
+- [Jsonnet - The Data Templating Language](https://jsonnet.org/)
+- [Zig And Rust](https://matklad.github.io/2023/03/26/zig-and-rust.html)
+- [Parsing the .DS_Store file format](https://0day.work/parsing-the-ds_store-file-format/)
+- [SwissMap: A smaller, faster Golang Hash Table](https://dolthub.com/blog/2023-03-28-swiss-map/)
+- [Go Integration Tests with Postgres](https://www.storj.io/blog/go-integration-tests-with-postgres)
+
+Хорошей вам недели!
