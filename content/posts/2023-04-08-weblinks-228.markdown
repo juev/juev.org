@@ -1,0 +1,19 @@
+---
+title: "Ссылки #228"
+date: 2023-04-08T09:46:05+0300
+image: https://static.juev.org/images/links.jpg
+tags: 
+  - links
+---
+
+За прошедшую неделю сохранил 50 ссылок.
+
+- [Using Tailscale without using Tailscale](https://tailscale.dev/blog/headscale-funnel)
+- [Context cancellation: Stop wasting resources on aborted requests](https://www.willem.dev/blog/context-cancellation-explained/) 
+- [Moving from Rust to C++](https://raphlinus.github.io/rust/2023/04/01/rust-to-cpp.html)
+- [My read-later service is made of paper](https://baty.net/2023/my-read-later-service-is-made-of-paper)
+- [Gluetun VPN client](https://github.com/qdm12/gluetun) -- VPN client in a thin Docker container for multiple VPN providers, written in Go, and using OpenVPN or Wireguard, DNS over TLS, with a few proxy servers built-in
+- [gitfs](https://github.com/presslabs/gitfs) -- Version controlled file system
+- [thrasher-corp/gocryptotrader](https://github.com/thrasher-corp/gocryptotrader) -- A cryptocurrency trading bot and framework supporting multiple exchanges written in Golang
+
+Хорошей вам недели!
