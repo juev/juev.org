@@ -1,0 +1,20 @@
+---
+title: "Ссылки #229"
+date: 2023-04-15T10:11:05+0300
+image: https://static.juev.org/images/links.jpg
+tags: 
+  - links
+---
+
+За прошедшую неделю сохранил 67 ссылок.
+
+- [cznic / sqlite](https://gitlab.com/cznic/sqlite) -- Package sqlite is a CGo-free port of SQLite/SQLite3
+- [Sync your Obsidian Vault on iOS with GitHub, Working Copy, and Apple Shortcuts](https://meganesulli.com/blog/sync-obsidian-vault-iphone-ipad/)
+- [The Smallest Go Binary (5KB)](https://totallygamerjet.hashnode.dev/the-smallest-go-binary-5kb)
+- [godly-devotion/MochiDiffusion](https://github.com/godly-devotion/MochiDiffusion) -- Run Stable Diffusion on Mac natively
+- [Effective Spaced Repetition](https://borretti.me/article/effective-spaced-repetition)
+- [Switching to C Over 'Modern' Programming Languages](https://devtails.xyz/@adam/switching-to-c-over-modern-programming-languages)
+- [Surpassing 10Gb/s over Tailscale](https://tailscale.com/blog/more-throughput/)
+- [Introducing the Tailscale Universal Docker Mod](https://tailscale.dev/blog/docker-mod-tailscale)
+
+Хорошей вам недели!
