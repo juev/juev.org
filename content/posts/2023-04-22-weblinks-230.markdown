@@ -1,0 +1,19 @@
+---
+title: "Ссылки #230"
+date: 2023-04-22T09:36:05+0300
+image: https://static.juev.org/images/links.jpg
+tags: 
+  - links
+---
+
+За прошедшую неделю сохранил 48 ссылок.
+
+- [IPFS-tiny: attempting to take IPFS to Space](https://libre.space/2023/04/12/ipfs-tiny/)
+- [Digital clutter](https://paulstamatiou.com/digital-clutter/)
+- [Easily Accessing All Your Stuff with a Zero-Trust Mesh VPN](https://changelog.complete.org/archives/10478-easily-accessing-all-your-stuff-with-a-zero-trust-mesh-vpn)
+- [progfolio/elpaca](https://github.com/progfolio/elpaca) -- An elisp package manager
+- [Fastmail MaskedEmail CLI](https://github.com/dvcrn/maskedemail-cli) -- CLI to create fastmail masked emails
+- [How to Give Yourself Time to Think](https://beside.media/atelier/how-to-give-yourself-time-to-think/)
+- [Пишем на Go как в Google. Лучшие практики — часть первая](https://habr.com/ru/companies/skillfactory/articles/729924/)
+
+Хорошей вам недели!
