@@ -1,0 +1,18 @@
+---
+title: "Ссылки #231"
+date: 2023-04-29T13:14:05+0300
+image: https://static.juev.org/images/links.jpg
+tags: 
+  - links
+---
+
+За прошедшую неделю сохранил 46 ссылок.
+
+- [meow-edit/meow](https://github.com/meow-edit/meow) -- Yet another modal editing on Emacs
+- [Lost at SQL: The SQL learning game](https://lost-at-sql.therobinlord.com/)
+- [Keyboard tricks from a macOS app dev](https://notes.alinpanaitiu.com/Keyboard%20tricks%20from%20a%20macOS%20app%20dev)
+- [Nine ways to shoot yourself in the foot with PostgreSQL](https://philbooth.me/blog/nine-ways-to-shoot-yourself-in-the-foot-with-postgresql)
+- [A Deep Dive into SOLID Principles with Golang Examples](https://blog.devgenius.io/a-deep-dive-into-solid-principles-with-golang-examples-56497622b53a)
+- [I write code 100 hours/week, here's why I probably won't stop](https://devlog.hexops.com/2021/i-write-code-100-hours-a-week/)
+
+Хорошей вам недели!
