@@ -1,0 +1,19 @@
+---
+title: "Ссылки #232"
+date: 2023-05-06T10:32:05+0300
+image: https://static.juev.org/images/links.jpg
+tags: 
+  - links
+---
+
+За прошедшую неделю сохранил 51 ссылку.
+
+- [Writing an OS in Go: The Bootloader](https://totallygamerjet.hashnode.dev/writing-an-os-in-go-the-bootloader)
+- [From zsh to fish: A Complete Setup Guide](https://reckoning.dev/blog/fish-shell/)
+- [dylanaraps/pure-sh-bible](https://github.com/dylanaraps/pure-sh-bible)
+- [bep/simplecobra](https://github.com/bep/simplecobra) -- A simpler API for the popular Cobra CLI
+- [redis/rueidis](https://github.com/redis/rueidis) -- A fast Golang Redis client that supports Client Side Caching, Auto Pipelining, Generics OM, RedisJSON, RedisBloom, RediSearch, etc
+- [Let's Make Sure Github Doesn't Become the only Option](https://blog.edwardloveall.com/lets-make-sure-github-doesnt-become-the-only-option)
+- [Anonymous Tor Phone](https://0ut3r.space/2023/05/02/anonymous-tor-phone/index.html)
+
+Хорошей вам недели!
