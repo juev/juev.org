@@ -1,0 +1,16 @@
+---
+title: "Ссылки #233"
+date: 2023-05-13T10:20:05+0300
+image: https://static.juev.org/images/links.jpg
+tags: 
+  - links
+---
+
+За прошедшую неделю сохранил 40 ссылок.
+
+- [WhatsApp Key Transparency with Jasleen Malvai and Kevin Lewi](https://securitycryptographywhatever.com/2023/05/06/whatsapp-key-transparency/)
+- [Интервью с представителями Tor Project](https://roskomsvoboda.org/post/view-with-tor/)
+- [SPOT](https://simplotask.com/) -- Spot (aka simplotask) is a powerful and easy-to-use tool for effortless deployment and configuration management
+- [Why your TCP-based VPN stutters (and how to fix it)](https://blog.carldong.me/2023/05/03/why-do-vpns.html)
+
+Хорошей вам недели!
