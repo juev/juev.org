@@ -1,0 +1,19 @@
+---
+title: "Ссылки #234"
+date: 2023-05-20T10:01:05+0300
+image: https://static.juev.org/images/links.jpg
+tags: 
+  - links
+---
+
+За прошедшую неделю сохранил 65 ссылок.
+
+- [sorry@idont.date](https://sorry.idont.date/) -- This is an instance of edgemail - 100% open-source disposable e-mail service.
+- [Why I Stopped Worrying and Learned to Love Denormalized Tables](https://glean.io/blog-posts/why-i-stopped-worrying-and-learned-to-love-denormalized-tables)
+- [SQL-шпаргалка](https://antonz.ru/sql-cheatsheet/)
+- [robherley/snips.sh](https://github.com/robherley/snips.sh) -- ✂️ passwordless, anonymous SSH-powered pastebin with a human-friendly TUI and web UI
+- [dirsearch - Web path discovery](https://github.com/maurosoria/dirsearch) -- Web path scanner
+- [Continuous Code Reviews using Non-Blocking Reviews](https://thinkinglabs.io/articles/2023/05/02/continuous-code-reviews-using-non-blocking-reviews-a-case-study.html)
+- [rfjakob/gocryptfs](https://github.com/rfjakob/gocryptfs) -- Encrypted overlay filesystem written in Go
+
+Хорошей вам недели!
