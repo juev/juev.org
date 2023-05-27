@@ -1,0 +1,18 @@
+---
+title: "Ссылки #235"
+date: 2023-05-27T09:16:05+0300
+image: https://static.juev.org/images/links.jpg
+tags: 
+  - links
+---
+
+За прошедшую неделю сохранил 42 ссылки.
+
+- [Tunnel via Cloudflare to any TCP Service](https://iq.thc.org/tunnel-via-cloudflare-to-any-tcp-service)
+- [Writing summaries is more important than reading more books](https://www.andreasfragner.com/writing/writing-summaries)
+- [kevincobain2000/re](https://github.com/kevincobain2000/re) -- Command Line Tool to execute commands in README.md file
+- [Web-based Password Generator](https://github.com/atoponce/webpassgen) -- Simple web-based password generator
+- [How Much Memory Do You Need to Run 1 Million Concurrent Tasks?](https://pkolaczk.github.io/memory-consumption-of-async/)
+- ["Accept interfaces, return structs" in Go](https://bryanftan.medium.com/accept-interfaces-return-structs-in-go-d4cab29a301b)
+
+Хорошей вам недели!
