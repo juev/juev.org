@@ -1,0 +1,18 @@
+---
+title: "Ссылки #236"
+date: 2023-06-03T10:27:05+0300
+image: https://static.juev.org/images/links.jpg
+tags: 
+  - links
+---
+
+За прошедшую неделю сохранил 35 ссылок.
+
+- [Markdown images are an anti-pattern](https://daverupert.com/2023/05/markdown-images-anti-pattern)
+- [Noise Is All around Us—and It's Affecting You More than You Think](https://thewalrus.ca/noise-ethics)
+- [tidwall/jj](https://github.com/tidwall/jj) -- JSON Stream Editor (command line utility)
+- [rapiz1/rathole](https://github.com/rapiz1/rathole) -- A lightweight and high-performance reverse proxy for NAT traversal, written in Rust. An alternative to frp and ngrok
+- [rdkr/oniongen-go](https://github.com/rdkr/oniongen-go) -- 🔑 v3 .onion vanity URL generator written in Go
+- [I think Zig is hard...but worth it](http://ratfactor.com/zig/hard)
+
+Хорошей вам недели!
