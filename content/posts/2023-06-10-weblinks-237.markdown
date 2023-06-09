@@ -1,0 +1,20 @@
+---
+title: "Ссылки #237"
+date: 2023-06-10T10:20:05+0300
+image: https://static.juev.org/images/links.jpg
+tags: 
+  - links
+---
+
+За прошедшую неделю сохранил 52 ссылки.
+
+- [Connect to Your Raspberry Pi Over USB Using Gadget Mode - Howchoo](https://howchoo.com/pi/raspberry-pi-gadget-mode)
+- [Sniffnet — comfortably monitor your Internet traffic](https://www.sniffnet.net/)
+- [moonD4rk/HackBrowserData](https://github.com/moonD4rk/HackBrowserData) — Decrypt passwords/cookies/history/bookmarks from the browser
+- [Decoding small QR codes by hand](https://blog.qartis.com/decoding-small-qr-codes-by-hand/)
+- [Notes apps are where ideas go to die. And that’s good](https://www.reproof.app/blog/notes-apps-help-us-forget)
+- [nadoo/glider](https://github.com/nadoo/glider) — glider is a forward proxy with multiple protocols support, and also a dns/dhcp server with ipset management features like dnsmasq
+- [openobserve/openobserve](https://github.com/openobserve/openobserve) — Elasticsearch/Splunk/Datadog alternative for (logs, metrics, traces)
+- [How to Use Tags](https://karl-voit.at/2022/01/29/How-to-Use-Tags/)
+
+Хорошей вам недели!
