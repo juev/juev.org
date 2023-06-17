@@ -1,0 +1,18 @@
+---
+title: "Ссылки #238"
+date: 2023-06-17T10:04:05+0300
+image: https://static.juev.org/images/links.jpg
+tags: 
+  - links
+---
+
+За прошедшую неделю сохранил 49 ссылок.
+
+- [Store your epoch times as 64-bit floats](https://www.leebutterman.com/2021/02/01/store-your-unix-epoch-times-as-float64.html)
+- [How much memory is needed to run 1M Erlang processes?](https://hauleth.dev/post/beam-process-memory-usage/)
+- [Using interfaces in Go the right way](https://mbinjamil.dev/writings/using-interfaces-in-go/)
+- [History and effective use of Vim](https://begriffs.com/posts/2019-07-19-history-use-vim.html)
+- [Go: Using pointers to reduce copies is premature optimization](https://trinitroglycerin.github.io/2023/06/10/Go-Using-pointers-to-reduce-copies-is-premature-optimization/)
+- [πfs: Never worry about data again!](https://github.com/philipl/pifs) 
+
+Хорошей вам недели!
