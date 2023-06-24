@@ -13,6 +13,6 @@ tags:
 - [Using interfaces in Go the right way](https://mbinjamil.dev/writings/using-interfaces-in-go/)
 - [History and effective use of Vim](https://begriffs.com/posts/2019-07-19-history-use-vim.html)
 - [Go: Using pointers to reduce copies is premature optimization](https://trinitroglycerin.github.io/2023/06/10/Go-Using-pointers-to-reduce-copies-is-premature-optimization/)
-- [πfs: Never worry about data again!](https://github.com/philipl/pifs) 
+- [πfs: Never worry about data again!](https://github.com/philipl/pifs)
 
 Хорошей вам недели!

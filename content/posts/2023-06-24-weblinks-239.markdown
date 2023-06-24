@@ -1,0 +1,22 @@
+---
+title: "Ссылки #239"
+date: 2023-06-24T10:35:05+0300
+image: https://static.juev.org/images/links.jpg
+tags: 
+  - links
+---
+
+За прошедшую неделю сохранил 64 ссылок.
+
+- [hishamk/statetrooper](https://github.com/hishamk/statetrooper) -- StateTrooper is a Go package that provides a finite state machine (FSM) for managing states. It allows you to define and enforce state transitions based on predefined rules
+- [Ganywherelan/awl](https://github.com/anywherelan/awl) -- Securely connect your devices into a private network
+- [My First Impressions of Nix ·mtlynch.io](https://mtlynch.io/notes/nix-first-impressions/)
+- [How to Read and Organize Online Articles (Without Driving Yourself Crazy)](https://www.gregoryciotti.com/reading-organization/)
+- [The Ultimate Guide to Writing Effective Commit Messages: Best Practices and Conventional Commits](https://skerritt.blog/writing-better-commit-messages/)
+- [I don't trust Signal](https://blog.dijit.sh/i-don-t-trust-signal)
+- [Style your RSS feed](https://darekkay.com/blog/rss-styling/)
+- [kopia/kopia](https://github.com/kopia/kopia) -- Cross-platform backup tool for Windows, macOS & Linux with fast, incremental backups, client-side end-to-end encryption, compression and data deduplication. CLI and GUI included
+- [My first steps with Nix on Mac OSX as Homebrew replacement - Posts - Blog - sandstorm.de](https://sandstorm.de/de/blog/post/my-first-steps-with-nix-on-mac-osx-as-homebrew-replacement.html)
+- [What happens when a Matrix server disappears?](https://blog.erethon.com/blog/2023/06/21/what-happens-when-a-matrix-server-disappears/)
+
+Хорошей вам недели!
