@@ -1,0 +1,21 @@
+---
+title: "Ссылки #240"
+date: 2023-07-01T10:42:05+0300
+image: https://static.juev.org/images/links.jpg
+tags: 
+  - links
+---
+
+За прошедшую неделю сохранил 49 ссылок.
+
+- [Make your programs run faster by better using the data cache - Johnny's Software Lab](https://johnnysswlab.com/make-your-programs-run-faster-by-better-using-the-data-cache/)
+- [yeqown/go-qrcode](https://github.com/yeqown/go-qrcode) -- To help gophers generate QR Codes with customized styles, such as color, block size, block shape, and icon
+- [Use .config to store your project configs | dot-config.github.io](https://dot-config.github.io)
+- [Lockdown Privacy](https://lockdownprivacy.com)
+- [SQLite-песочница с расширениями](https://antonz.ru/sqlime-extensions/)
+- [anderspitman/awesome-tunneling](https://github.com/anderspitman/awesome-tunneling) -- List of ngrok alternatives and other ngrok-like tunneling software and services. Focus on self-hosting
+- [Manage passwords over your tailnet with vaultwarden](https://tailscale.dev/blog/vaultwarden-tailnet)
+- [Gitopia - Code Collaboration for Web3](https://gitopia.com)
+- [Mac Commands](https://www.maccommands.com/)
+
+Хорошей вам недели!
