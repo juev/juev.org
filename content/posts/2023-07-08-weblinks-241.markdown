@@ -1,0 +1,21 @@
+---
+title: "Ссылки #241"
+date: 2023-07-08T09:13:05+0300
+image: https://static.juev.org/images/links.jpg
+tags: 
+  - links
+---
+
+За прошедшую неделю сохранил 80 ссылок.
+
+- [geziyor/geziyor](https://github.com/geziyor/geziyor) -- Geziyor, blazing fast web crawling & scraping framework for Go. Supports JS rendering
+- [How to Do Great Work](http://paulgraham.com/greatwork.html)
+- [goreleaser/nfpm](https://github.com/goreleaser/nfpm) -- nFPM is Not FPM - a simple deb, rpm, apk and arch linux packager written in Go
+- [Git is my buddy: Effective Git as a solo developer - Mikkel Paulson](https://mikkel.ca/blog/git-is-my-buddy-effective-solo-developer/)
+- [Problems of C, and how Zig addresses them](https://avestura.dev/blog/problems-of-c-and-how-zig-addresses-them)
+- [I Hate the News (Aaron Swartz's Raw Thought)](http://www.aaronsw.com/weblog/hatethenews)
+- [AlDente - AppHouseKitchen](https://apphousekitchen.com)
+- [/uses](https://uses.tech)
+- [Jane Street Tech Blog - What if writing tests was a joyful experience?](https://blog.janestreet.com/the-joy-of-expect-tests/)
+
+Хорошей вам недели!
