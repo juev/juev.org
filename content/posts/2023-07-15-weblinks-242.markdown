@@ -1,0 +1,27 @@
+---
+title: "Ссылки #242"
+date: 2023-07-15T10:08:05+0300
+image: https://static.juev.org/images/links.jpg
+tags: 
+  - links
+---
+
+Все мои ссылки, которые я сохраняю "на потом", можно найти в репозитории [juev/links](https://github.com/juev/links).
+Ссылки собираются с помощью [juev/getpocket-collector](https://github.com/juev/getpocket-collector) на основе фида getpocket.
+
+Ну а сейчас представляю лучшее из собранного.
+
+За прошедшую неделю сохранил 54 ссылки.
+
+- [ProtonMail Rewrites Your Emails](http://jfloren.net/b/2023/7/7/0)
+- [Finding bugs with fuzzing — Bitfield Consulting](https://bitfieldconsulting.com/golang/bugs-fuzzing)
+- [How to Verify your Domain on Nostr and Bluesky (for Micro.blog users)](https://mattlangford.com/2023/07/06/how-to-verify.html)
+- [Why We Replaced Firecracker with QEMU](https://hocus.dev/blog/qemu-vs-firecracker)
+- [immich-app/immich](https://github.com/immich-app/immich) -- Self-hosted photo and video backup solution directly from your mobile phone
+- [Easy HTTPS for your private networks](https://www.getlocalcert.net/)
+- [AutoFill KeePass Passwords on Mac (Chrome, Firefox, Safari)](https://strongboxsafe.com/updates/autofill-keepass-passwords-on-mac-chrome-firefox-safari/)
+- [usememos/memos](https://github.com/usememos/memos) -- A privacy-first, lightweight note-taking service. Easily capture and share your great thoughts
+- [Gval](https://github.com/PaesslerAG/gval) -- Expression evaluation in golang
+- [The European public DNS that makes your Internet safer.](https://dns0.eu/)
+
+Хорошей вам недели!
