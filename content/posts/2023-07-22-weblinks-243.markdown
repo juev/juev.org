@@ -1,0 +1,23 @@
+---
+title: "Ссылки #243"
+date: 2023-07-22T13:27:15+0300
+image: https://static.juev.org/images/links.jpg
+tags: 
+  - links
+---
+
+За прошедшую неделю сохранил 60 ссылок.
+
+- [Logseq-Git-Sync-101](https://github.com/CharlesChiuGit/Logseq-Git-Sync-101)
+- [The Perfect Laptop](https://blog.brossia.com/posts/the_perfect_laptop/)
+- [orioledb/orioledb](https://github.com/orioledb/orioledb) -- OrioleDB -- building a modern cloud-native storage engine (... and solving some PostgreSQL wicked problems)
+- [How to Create and Use Templates in Logseq](https://www.appsntips.com/learn/create-use-templates-logseq/)
+- [Consider SQLite](https://blog.wesleyac.com/posts/consider-sqlite)
+- [Lissy93/awesome-privacy](https://github.com/Lissy93/awesome-privacy)
+- [Coroutines for Go](https://research.swtch.com/coro)
+- [It's Time for a New Password Manager](https://blog.passbolt.com/its-time-for-a-new-password-manager-d468202f7d45)
+- [antifuchs/tsnsrv](https://github.com/antifuchs/tsnsrv) -- A reverse proxy that exposes services on your tailnet (as their own tailscale participants)
+- [yokoffing/Betterfox](https://github.com/yokoffing/Betterfox) -- user.js file to harden Firefox and optimize privacy, security, and speed
+- [Test-Driven Development in Go: principles and key concepts](https://adelinasimion.dev/go/tdd-in-go/)
+
+Хорошей вам недели!
