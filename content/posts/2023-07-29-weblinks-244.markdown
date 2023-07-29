@@ -1,0 +1,22 @@
+---
+title: "Ссылки #244"
+date: 2023-07-29T10:04:15+0300
+image: https://static.juev.org/images/links.jpg
+tags: 
+  - links
+---
+
+За прошедшую неделю сохранил 60 ссылок.
+
+- [Getting Friendly With CPU Caches](https://www.ardanlabs.com/blog/2023/07/getting-friendly-with-cpu-caches.html)
+- [300 Times a Day](https://randsinrepose.com/archives/300-times-a-day/)
+- [balzack/databag](https://github.com/balzack/databag) -- A tiny selfhosted federated messenger for the decentralized web
+- [Why SQLite Does Not Use Git](https://www.sqlite.org/draft/matrix/whynotgit.html)
+- [soypat/gopherlings](https://github.com/soypat/gopherlings) -- 📘️ Learn Go by fixing tiny incorrect programs
+- [Analyzing Go Heap Escapes](https://LandonTClipp.github.io/blog/2023/07/15/analyzing-go-heap-escapes/)
+- [ff](https://github.com/peterbourgon/ff) -- Flags-first package for configuration
+- [antonmedv/fx : Command-line tool and terminal JSON viewer 🔥](https://github.com/antonmedv/fx)
+- [Introducing TiddlyPWA: putting TiddlyWiki on modern web app steroids](https://val.packett.cool/blog/tiddlypwa/)
+- [peru](https://github.com/buildinspace/peru) -- a generic package manager, for including other people's code in your projects
+
+Хорошей вам недели!
