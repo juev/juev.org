@@ -1,0 +1,20 @@
+---
+title: "Ссылки #246"
+date: 2023-08-12T08:50:15+0300
+image: https://static.juev.org/images/links.jpg
+tags: 
+  - links
+---
+
+За прошедшую неделю сохранил 90 ссылок.
+
+- [An open-source, on-prem feature flag solution](https://flipt.io/)
+- [bfs 3.0: the fastest find yet!](https://tavianator.com/2023/bfs_3.0.html)
+- [Пишем менеджер пакетов](https://antonz.ru/writing-package-manager/)
+- [TunnelCrack: Widespread design flaws in VPN clients](https://tunnelcrack.mathyvanhoef.com/details.html)
+- [jless — a command-line JSON viewer](https://jless.io)
+- [I do not use a debugger](https://lemire.me/blog/2016/06/21/i-do-not-use-a-debugger/)
+- [Some tactics for writing in public](https://jvns.ca/blog/2023/08/07/tactics-for-writing-in-public/)
+- [Ceno](https://censorship.no/ru/index.html) -- первый в мире мобильный браузер разработанный для обхода современных методов Интернет-цензуры
+
+Хорошей вам недели!
