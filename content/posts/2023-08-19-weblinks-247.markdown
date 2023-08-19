@@ -1,0 +1,21 @@
+---
+title: "Ссылки #247"
+date: 2023-08-19T10:21:15+0300
+image: https://static.juev.org/images/links.jpg
+tags: 
+  - links
+---
+
+За прошедшую неделю сохранил 75 ссылок.
+
+- [Infisical/infisical](https://github.com/Infisical/infisical) -- ♾ Infisical is an open-source, end-to-end encrypted platform for secret management: sync secrets across your team/infrastructure and prevent secret leaks
+- [Notes on running a single-person Mastodon server](https://jvns.ca/blog/2023/08/11/some-notes-on-mastodon/)
+- [Understanding Go 1.21 generics type inference – Encore Blog](https://encore.dev/blog/go1.21-generics)
+- [Keyboard shortcuts for uBlock](https://github.com/gorhill/uBlock/wiki/Keyboard-shortcuts)
+- [koki-develop/gat](https://github.com/koki-develop/gat) -- 🐱 cat alternative written in Go
+- [Tor and Privoxy](https://github.com/dperson/torproxy)
+- [tclip: A pastebin for your tailnet](https://tailscale.dev/blog/tclip)
+- [deploying a website to Tor with docker-compose](https://devedge.github.io/2021-02-05/deploying-a-website-to-tor-with-docker-compose/)
+- [Learn Go with Tests reaches 20k stars](https://quii.dev/Learn_Go_with_Tests_reaches_20k_stars)
+
+Хорошей вам недели!
