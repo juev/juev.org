@@ -1,0 +1,22 @@
+---
+title: "Ссылки #248"
+date: 2023-08-26T11:04:15+0300
+image: https://static.juev.org/images/links.jpg
+tags: 
+  - links
+---
+
+За прошедшую неделю сохранил 68 ссылок.
+
+- [testcontainers/testcontainers-go](https://github.com/testcontainers/testcontainers-go) -- Testcontainers is a Golang library that providing a friendly API to run Docker container. It is designed to create runtime environment to use during your automatic tests.
+- [Dependency Injection in a nutshell](https://appliedgo.net/di/)
+- [Applying The Clean Architecture to Go applications](https://manuel.kiessling.net/2012/09/28/applying-the-clean-architecture-to-go-applications/)
+- [Writing Long Form Content With Obsidian](https://www.eleanorkonik.com/writing-long-form-content/)
+- [antonmedv/walk](https://github.com/antonmedv/walk) -- Terminal file manager
+- [dnakov/little-rat](https://github.com/dnakov/little-rat) -- 🐀 Small chrome extension to monitor (and optionally block) other extensions' network calls
+- [govalidator](https://github.com/asaskevich/govalidator) -- Package of validators and sanitizers for strings, numerics, slices and structs
+- [Writing safe-to-use Go libraries](https://blog.orsinium.dev/posts/go/safe-api/)
+- [Leaving Haskell behind](https://journal.infinitenegativeutility.com/leaving-haskell-behind)
+- [OpenVPN-web-ui](https://github.com/adamwalach/openvpn-web-ui) -- Web interface (with golang backend) for monitoring and administration of OpenVPN server
+
+Хорошей вам недели!
