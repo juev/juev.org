@@ -1,0 +1,23 @@
+---
+title: "Ссылки #249"
+date: 2023-09-02T11:19:15+0300
+image: https://static.juev.org/images/links.jpg
+tags: 
+  - links
+---
+
+За прошедшую неделю сохранил 68 ссылок.
+
+- [osteele/gojekyll](https://github.com/osteele/gojekyll) -- A fast Go implementation of the Jekyll blogging engine
+- [Interface guards in Go](https://rednafi.com/go/interface_guards/)
+- [Limit goroutines with buffered channels](https://rednafi.com/go/limit_goroutines_with_buffered_channels/)
+- [Go recipes 🦩](https://github.com/nikolaydubina/go-recipes) -- Tools for Go projects
+- [goleak](https://github.com/uber-go/goleak) -- Goroutine leak detector
+- [Golang Quirks & Intermediate Tricks, Pt 1: Declarations, Control Flow, & Typesystem](https://eblog.fly.dev/quirks.html)
+- [orsinium-labs/enum](https://github.com/orsinium-labs/enum) -- Type safe enums for Go without code generation or reflection
+- [The case for Nushell](https://www.jntrnr.com/case-for-nushell/)
+- [prefix-dev/pixi](https://github.com/prefix-dev/pixi) -- Package management made easy
+- [SSH over HTTPS](https://trofi.github.io/posts/295-ssh-over-https.html)
+- [Why I’m Betting Big on Nostr](https://hivemind.vc/nostr/)
+
+Хорошей вам недели!
