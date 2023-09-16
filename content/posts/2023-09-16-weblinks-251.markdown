@@ -1,0 +1,19 @@
+---
+title: "Ссылки #251"
+date: 2023-09-16T11:19:15+0300
+image: https://static.juev.org/images/links.jpg
+tags: 
+  - links
+---
+
+За прошедшую неделю сохранил 59 ссылок.
+
+- [Semver violations are common, better tooling is the answer](https://predr.ag/blog/semver-violations-are-common-better-tooling-is-the-answer)
+- [Today in Email Hegemony](https://www.jwz.org/blog/2023/09/today-in-email-hegemony/)
+- [storing passwords with age](https://j3s.sh/thought/storing-passwords-with-age.html)
+- [How to pass the interview for software engineering roles in Big Tech - Handbook](https://www.lambrospetrou.com/articles/big-tech-software-interviews/)
+- [Точка ноль: как вернуться в бизнес после потери образа будущего](https://www.forbes.ru/mneniya/495941-tocka-nol-kak-vernut-sa-v-biznes-posle-poteri-obraza-budusego)
+- [Using Tailscale for Authentication of Internal Tools](https://blog.cloud66.com/using-tailscale-for-authentication-of-internal-tools)
+- [Detecting SSH tunnels](https://www.trisul.org/blog/detecting-ssh-tunnels/) 
+
+Хорошей вам недели!
