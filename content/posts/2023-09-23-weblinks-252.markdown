@@ -1,0 +1,21 @@
+---
+title: "Ссылки #252"
+date: 2023-09-23T10:55:15+0300
+image: https://static.juev.org/images/links.jpg
+tags: 
+  - links
+---
+
+За прошедшую неделю сохранил 55 ссылок.
+
+- [horcrux](https://github.com/jesseduffield/horcrux) -- Split your file into encrypted fragments so that you don't need to remember a passcode
+- [Quantum Resistance and the Signal Protocol](https://signal.org/blog/pqxdh/)
+- [Use your database to power state machines](https://blog.lawrencejones.dev/state-machines/)
+- [dittofeed/dittofeed](https://github.com/dittofeed/dittofeed) -- Send marketing messages at scale
+- [avamsi/climate](https://github.com/avamsi/climate) -- "CLI Mate" autogenerates CLIs from structs / functions
+- [failsafe-go/failsafe-go](https://github.com/failsafe-go/failsafe-go) -- Fault tolerance and resilience patterns for Go
+- [Threema for iOS: Chat on the Computer Without a Connection to the Smartphone](https://threema.ch/en/blog/posts/ios-new-desktop-md)
+- [Invidious](https://github.com/iv-org/invidious) -- Invidious is an alternative front-end to YouTube
+- [SpectoLabs/hoverfly](https://github.com/SpectoLabs/hoverfly) -- Lightweight service virtualization/ API simulation / API mocking tool for developers and testers
+
+Хорошей вам недели!
