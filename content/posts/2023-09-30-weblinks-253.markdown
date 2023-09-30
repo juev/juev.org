@@ -1,0 +1,17 @@
+---
+title: "Ссылки #253"
+date: 2023-09-30T09:29:15+0300
+image: https://static.juev.org/images/links.jpg
+tags: 
+  - links
+---
+
+За прошедшую неделю сохранил удивительно мало ссылок, всего 28.
+
+- [How to Create, When You're Feeling Overwhelmed](https://zenhabits.net/chaos-creating/)
+- [Advanced Go Concurrency](https://encore.dev/blog/advanced-go-concurrency)
+- [Dependency Injection in a nutshell](https://appliedgo.net/di/)
+- [Essence](https://nakst.gitlab.io/essence) -- A desktop operating system built from scratch, for control and simplicity
+- [bruno](https://www.usebruno.com/) -- Fast, Git Friendly API Client
+
+Хорошей вам недели!
