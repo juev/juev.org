@@ -1,0 +1,19 @@
+---
+title: "Ссылки #254"
+date: 2023-10-07T16:40:15+0300
+image: https://static.juev.org/images/links.jpg
+tags: 
+  - links
+---
+
+За прошедшую неделю сохранил 67 ссылок.
+
+- [YAML config file? Pain? Try Lua](https://boston.conman.org/2023/09/29.1)
+- [mandiant/gocrack](https://github.com/mandiant/gocrack) -- GoCrack is a management frontend for password cracking tools written in Go
+- [Hardening macOS](https://www.bejarano.io/hardening-macos/)
+- [Goodbye integers. Hello UUIDs!](https://buildkite.com/blog/goodbye-integers-hello-uuids)
+- [Req](https://github.com/imroc/req) -- Simple Go HTTP client with Black Magic
+- [TheAlgorithms/Go](https://github.com/TheAlgorithms/Go) -- Algorithms and Data Structures implemented in Go for beginners, following best practices
+- [The Fu Master Productivity Checklist using Things3](https://productivewithapurpose.com/2019/05/21/the-fu-master-productivity-checklist-using-things3/)
+
+Хорошей вам недели!
