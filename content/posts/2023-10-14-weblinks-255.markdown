@@ -1,0 +1,22 @@
+---
+title: "Ссылки #255"
+date: 2023-10-14T09:54:15+0300
+image: https://static.juev.org/images/links.jpg
+tags: 
+  - links
+---
+
+За прошедшую неделю сохранил 51 ссылку.
+
+- [shell tip: print json with printf](https://j3s.sh/thought/shell-tip-print-json-with-printf.html)
+- [kevwan/tproxy](https://github.com/kevwan/tproxy) -- A cli tool to proxy and analyze TCP connections
+- [MaggieAppleton/digital-gardeners](https://github.com/MaggieAppleton/digital-gardeners) -- Resources, links, projects, and ideas for gardeners tending their digital notes on the public interwebs
+- [SQLite with pure Go](https://github.com/cvilsmeier/sqinn-go)
+- [gitiles : Git at Google](https://gerrit.googlesource.com/gitiles/)
+- [Hidden Bar](https://superbits.co/hidden)
+- [spyzhov/ajson](https://github.com/spyzhov/ajson) -- Abstract JSON for Golang with JSONPath support
+- [Lip Gloss](https://github.com/charmbracelet/lipgloss) -- Style definitions for nice terminal layouts
+- [AdNauseam](https://adnauseam.io) -- форк uBlock Origin с кликами по рекламе
+- [email + git = <3](https://git-send-email.io/)
+
+Хорошей вам недели!
