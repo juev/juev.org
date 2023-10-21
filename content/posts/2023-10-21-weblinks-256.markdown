@@ -1,0 +1,20 @@
+---
+title: "Ссылки #256"
+date: 2023-10-21T10:02:12+0300
+image: https://static.juev.org/images/links.jpg
+tags: 
+  - links
+---
+
+За прошедшую неделю сохранил 34 ссылки.
+
+- [Which version of Go was used to compile this binary?](https://www.jvt.me/posts/2023/10/14/go-compile-version/)
+- [httpie/desktop](https://github.com/httpie/desktop) -- HTTPie Desktop — cross-platform API testing client for humans. Painlessly test REST, GraphQL, and HTTP APIs
+- [Randomness in programming (with Go code)](https://lemire.me/blog/2023/10/17/randomness-in-programming-with-go-code/)
+- [Piped](https://github.com/TeamPiped/Piped) -- An alternative privacy-friendly YouTube frontend which is efficient by design
+- [counterfeiter](https://github.com/maxbrunsfeld/counterfeiter) -- A tool for generating self-contained, type-safe test doubles in go
+- [Tig: text-mode interface for Git](https://jonas.github.io/tig/)
+- [Wilfred/difftastic](https://github.com/Wilfred/difftastic) -- a structural diff that understands syntax
+- [localsend/localsend](https://github.com/localsend/localsend) -- An open source cross-platform alternative to AirDrop
+
+Хорошей вам недели!
