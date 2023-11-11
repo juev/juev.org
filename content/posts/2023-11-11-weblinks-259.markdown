@@ -1,0 +1,19 @@
+---
+title: "Ссылки #259"
+date: 2023-11-11T12:17:10+0300
+image: https://static.juev.org/images/links.jpg
+tags: 
+  - links
+---
+
+За прошедшую неделю сохранил 47 ссылок.
+
+- [11 Things I Learned About Investing](https://alchemy.substack.com/p/11-things-i-learned-about-investing)
+- [Detecting Memory Leaks in a Golang Application: Best Practices and Tools](https://www.codemio.com/2023/05/detecting-memory-leaks-in-golang.html)
+- [Git Notes: git's coolest, most unloved­ feature](https://tylercipriani.com/blog/2022/11/19/git-notes-gits-coolest-most-unloved-feature)
+- [Building a high performance JSON parser](https://dave.cheney.net/paste/gophercon-sg-2023.html)
+- [Rebase: what can go wrong?](https://jvns.ca/blog/2023/11/06/rebasing-what-can-go-wrong-/)
+- [Create mock APIs in seconds](https://mockoon.com/)
+- [Getting stack traces for errors in Go](https://dolthub.com/blog/2023-11-10-stack-traces-in-go/)
+
+Хорошей вам недели!
