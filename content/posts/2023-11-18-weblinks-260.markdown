@@ -1,0 +1,20 @@
+---
+title: "Ссылки #260"
+date: 2023-11-18T10:42:10+0300
+image: https://static.juev.org/images/links.jpg
+tags: 
+  - links
+---
+
+За прошедшую неделю сохранил 50 ссылок.
+
+- [История одного инди-разработчика: от 0 к 45 000 $ за два года](https://habr.com/ru/companies/productivity_inside/articles/773118/)
+- [Backtraces with strace](https://shane.ai/posts/backtraces-with-strace/)
+- [Archive Your Old Projects](https://arne.me/articles/archive-your-old-projects)
+- [Как департамент утилизации CPU превратился в департамент экономии железа, выдерживающий нагрузку в 1 млн RPS](https://habr.com/ru/companies/ozontech/articles/773038/)
+- [DeepWebOnion/darkweb-links](https://github.com/DeepWebOnion/darkweb-links)
+- [Privacy is Priceless, but Signal is Expensive](https://signal.org/blog/signal-is-expensive/)
+- [Increasing QUIC and UDP throughput over Tailscale](https://tailscale.com/blog/quic-udp-throughput/)
+- [Enelg52/OffensiveGo](https://github.com/Enelg52/OffensiveGo)
+
+Хорошей вам недели!
