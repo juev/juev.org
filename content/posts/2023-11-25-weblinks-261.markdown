@@ -1,0 +1,18 @@
+---
+title: "Ссылки #261"
+date: 2023-11-25T17:47:04+0300
+image: https://static.juev.org/images/links.jpg
+tags: 
+  - links
+---
+
+За прошедшую неделю сохранил 42 ссылки. Лучшее как всегда ниже.
+
+- [Credit Card Generator](https://cardgenerator.org/)
+- [12 Personal Go Tricks That Transformed My Productivity](https://blog.devtrovert.com/p/12-personal-go-tricks-that-transformed)
+- [NilAway: Practical Nil Panic Detection for Go](https://www.uber.com/en-NL/blog/nilaway-practical-nil-panic-detection-for-go/)
+- [Nothing’s iMessage app was a security catastrophe, taken down in 24 hours](https://arstechnica.com/gadgets/2023/11/nothings-imessage-app-was-a-security-catastrophe-taken-down-in-24-hours/)
+- [Smashing Decentralized Databases Together for Fun and Science](https://dolthub.com/blog/2023-11-20-smashing-decentralized-databases-together-for-fun-and-science/)
+- [Email obfuscation: What still works in 2023?](https://spencermortensen.com/articles/email-obfuscation/)
+
+Хорошей вам недели!
