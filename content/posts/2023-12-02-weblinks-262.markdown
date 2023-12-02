@@ -1,0 +1,20 @@
+---
+title: "Ссылки #262"
+date: 2023-12-02T10:32:05+0300
+image: https://static.juev.org/images/links.jpg
+tags: 
+  - links
+---
+
+За прошедшую неделю сохранил 48 ссылок. Лучшее как всегда ниже.
+
+- [Write libraries instead of services, where possible](http://catern.com/services.html)
+- [DI & IoC in Go - How and Why](https://monibot.io/blog/dependency-injection-inversion-of-control-in-go)
+- [veqryn/slog-context](https://github.com/veqryn/slog-context)
+- [Making Games in Go for Absolute Beginners](https://threedots.tech/post/making-games-in-go/)
+- [My techno-optimism](https://vitalik.ca/general/2023/11/27/techno_optimism.html)
+- [Go fonts](https://go.dev/blog/go-fonts)
+- [angelofallars/htmx-go](https://github.com/angelofallars/htmx-go)
+- [GoDS (Go Data Structures)](https://github.com/emirpasic/gods) -- Sets, Lists, Stacks, Maps, Trees, Queues, and much more
+
+Хорошей вам недели!
