@@ -1,0 +1,17 @@
+---
+title: "Ссылки #263"
+date: 2023-12-09T10:21:05+0300
+image: https://static.juev.org/images/links.jpg
+tags: 
+  - links
+---
+
+За прошедшую неделю сохранил 63 ссылки. Лучшее как всегда ниже.
+
+- [Why Are Golang Heaps So Complicated](https://dolthub.com/blog/2023-12-01-why-are-go-heaps-confusing/)
+- [Merge vs. Rebase vs. Squash](https://gist.github.com/mitchellh/319019b1b8aac9110fcfb1862e0c97fb)
+- [Speeding up debugging with local tracing](https://dev.to/encore/speeding-up-debugging-with-local-tracing-4199)
+- [Exporting Tasks from Things 3 Database to Plain Text Using Python](https://plaintextjournal.com/articles/exporting-things-3-plaintext/)
+- [dreddsa5dies/goHackTools](https://github.com/dreddsa5dies/goHackTools)
+
+Хорошей вам недели!
