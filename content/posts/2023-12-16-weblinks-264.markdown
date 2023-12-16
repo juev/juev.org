@@ -1,0 +1,21 @@
+---
+title: "Ссылки #264"
+date: 2023-12-16T10:39:05+0300
+image: https://static.juev.org/images/links.jpg
+tags: 
+  - links
+---
+
+За прошедшую неделю сохранил 68 ссылок. Лучшее как всегда ниже.
+
+- [mango](https://github.com/muesli/mango) -- mango is a man-page generator for the Go flag, pflag, cobra, coral, and kong packages
+- [Визуализация результатов escape-анализа в VS Code](https://habr.com/ru/articles/778938/)
+- [zombiezen.com/go/sqlite](https://github.com/zombiezen/go-sqlite) -- Low-level Go interface to SQLite 3
+- [Minimal CSS Framework for semantic HTML](https://github.com/picocss/pico)
+- [Canon TDD](https://tidyfirst.substack.com/p/canon-tdd)
+- [Sign in with GitHub in Go](https://eli.thegreenplace.net/2023/sign-in-with-github-in-go/)
+- [Hunting the Real Bitcoin Network Hashrate](https://blog.lopp.net/hunting-the-real-bitcoin-network-hashrate/)
+- [Reduce fetch and checkout times in git](https://heaths.dev/tips/2022/06/18/reduce-fetch-and-checkout-times-in-git.html)
+- [Analyzing Go Heap Escapes](https://LandonTClipp.github.io/blog/2023/07/15/analyzing-go-heap-escapes/)
+
+Хорошей вам недели!
