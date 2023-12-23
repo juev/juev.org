@@ -1,0 +1,21 @@
+---
+title: "Ссылки #265"
+date: 2023-12-23T10:47:05+0300
+image: https://static.juev.org/images/links.jpg
+tags: 
+  - links
+---
+
+За прошедшую неделю сохранил 71 ссылку. Лучшее как всегда ниже.
+
+- [Synchronization Constructs in the Go Standard Library](https://hjr265.me/blog/synchronization-constructs-in-go-standard-library/)
+- [francoismichel/ssh3](https://github.com/francoismichel/ssh3)
+- [Maybe We Don’t Need UUIDv7 After All](https://lu.sagebl.eu/notes/maybe-we-dont-need-uuidv7/)
+- [productiveops/dokemon](https://github.com/productiveops/dokemon) -- Docker Container Management GUI
+- [πfs: Never worry about data again!](https://github.com/philipl/pifs) -- πfs - the data-free filesystem!
+- [How to Learn Anything with the Feynman Technique](https://todoist.com/inspiration/feynman-technique)
+- [Push Notifications and Data Privacy](https://threema.ch/en/blog/posts/push-notifications-and-data-privacy)
+- [The Smallest Go Binary (5KB)](https://totallygamerjet.hashnode.dev/the-smallest-go-binary-5kb)
+- [sourcegraph/conc](https://github.com/sourcegraph/conc) -- Better structured concurrency for go
+
+Хорошей вам недели!
