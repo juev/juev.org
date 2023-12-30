@@ -1,0 +1,27 @@
+---
+title: "Ссылки #266"
+date: 2023-12-30T12:49:05+0300
+image: https://static.juev.org/images/links.jpg
+tags: 
+  - links
+---
+
+Подходит к концу 2023 год. И пришла пора публиковать очередной, уже 266-ой выпуск ссылок.
+
+25 ноября 2018 года вышел первый выпуск [ссылок](https://www.juev.org/2018/11/25/weblinks-1/). С тех пор устоялась
+структура статьи, выработана технология сбора, которая показала свою стабильность на протяжении почти 5 лет. За это
+время создал отдельный репозиторий, который собирает все ссылки, разбирая их по неделям: [juev/links](https://github.com/juev/links).
+
+В наступающем 2024 году хочу вам пожелать всего самого хорошего. И главное, чтобы мечты сбывались!
+
+И по традиции переходим к лучшему за прошедшую неделю. Всего сохранил 43 ссылки.
+
+- [SSH over HTTPS](https://trofi.github.io/posts/295-ssh-over-https.html)
+- [huandu/go-clone](https://github.com/huandu/go-clone) -- Clone any Go data structure deeply and thoroughly
+- [decimal](https://github.com/shopspring/decimal) -- Arbitrary-precision fixed-point decimal numbers in go
+- [maypok86/otter](https://github.com/maypok86/otter) -- Fastest golang in-memory cache library based on S3-FIFO algorithm. many times faster than Ristretto and friends
+- [go-funk](https://github.com/thoas/go-funk) -- A modern Go utility library which provides helpers (map, find, contains, filter, ...)
+- [SimpleX chat](https://simplex.chat/)
+- [How to Set up Logseq for Long-Form Writing](https://www.appsntips.com/learn/setup-logseq-for-long-form-writing/)
+
+Хорошей вам недели!
