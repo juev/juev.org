@@ -1,0 +1,20 @@
+---
+title: "Ссылки #268"
+date: 2024-01-13T10:07:05+0300
+image: https://static.juev.org/images/links.jpg
+tags: 
+  - links
+---
+
+За прошедшую неделю сохранил 73 ссылки. Лучшее как всегда ниже.
+
+- [iCloud Cleanup](https://andykong.org/blog/icloudconfusion)
+- [Bitcoin 2023 Annual Review](https://blog.lopp.net/bitcoin-2023-annual-review/)
+- [yolo-pkgs/gore](https://github.com/yolo-pkgs/gore) -- "npm list/update -g" for golang
+- [Execute JavaScript from Go](https://github.com/rogchap/v8go)
+- [Useful utilities and toys over DNS](https://www.dns.toys/)
+- [cvilsmeier/go-sqlite-bench](https://github.com/cvilsmeier/go-sqlite-bench)
+- [Tesla Model Y: My 6 months impressions](https://arslan.io/2024/01/08/tesla-model-y-my-6-months-impressions/)
+- [berty/weshnet](https://github.com/berty/weshnet) -- Async Mesh Network Protocol for Extreme Communication -- Innovative, Resilient, and Decentralized
+
+Хорошей вам недели!
