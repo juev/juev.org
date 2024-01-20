@@ -1,0 +1,21 @@
+---
+title: "Ссылки #269"
+date: 2024-01-20T10:20:05+0300
+image: https://static.juev.org/images/links.jpg
+tags: 
+  - links
+---
+
+За прошедшую неделю сохранил 57 ссылок. Лучшее как всегда ниже.
+
+- [The Modern Virtual Networking Platform](https://www.netmaker.io/)
+- [Exploring Podman: A More Secure Docker Alternative](https://betterstack.com/community/guides/scaling-docker/podman-vs-docker/)
+- [How my link blog works](https://justinmiller.io/posts/2024/01/11/link-blog/)
+- [Сказ о том, как я за год решил более 600 leetcode задач](https://habr.com/ru/articles/786184/)
+- [How I built a fully offline smart home, and why you should too](https://www.androidauthority.com/offline-smart-home-3398608/)
+- [Setting up Nix on macOS](https://nixcademy.com/2024/01/15/nix-on-macos/)
+- [Statsviz](https://github.com/arl/statsviz) -- 🚀 Visualise your Go program runtime metrics in real time in the browser
+- [Go interfaces](https://www.thoughtworks.com/insights/blog/programming-languages/mistakes-to-avoid-when-coming-from-an-object-oriented-language)
+- [How to Take Your Phone Off the Grid – The Markup](https://themarkup.org/levelup/2023/10/25/without-a-trace-how-to-take-your-phone-off-the-grid)
+
+Хорошей вам недели!
