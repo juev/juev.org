@@ -1,0 +1,19 @@
+---
+title: "Ссылки #270"
+date: 2024-01-27T10:44:32+0300
+image: https://static.juev.org/images/links.jpg
+tags: 
+  - links
+---
+
+За прошедшую неделю сохранил 69 ссылок. Лучшее как всегда ниже.
+
+- [Debugging Go compiler performance in a large codebase](https://incident.io/blog/go-build-faster)
+- [Building a Tiny Task Scheduler in Go](https://buildwithgo.substack.com/p/building-a-tiny-task-scheduler-in)
+- [lorenzoromani1983/wayback-keyword-search](https://github.com/lorenzoromani1983/wayback-keyword-search) -- This tool downloads each page from the Wayback Machine for a specific domain and enables further keyword search on each saved page
+- [Ditching GitHub](https://tomscii.sig7.se/2024/01/Ditching-GitHub)
+- [QR Explainer](https://qr.blinry.org/)
+- [Jan | Open-source ChatGPT Alternative](https://jan.ai/)
+- [Read More Go Code!](https://www.bytesizego.com/blog/read-more-go-code)
+
+Хорошей вам недели!
