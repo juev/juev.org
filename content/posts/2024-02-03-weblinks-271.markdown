@@ -1,0 +1,16 @@
+---
+title: "Ссылки #271"
+date: 2024-02-03T08:49:04+0300
+image: https://static.juev.org/images/links.jpg
+tags: 
+  - links
+---
+
+За прошедшую неделю сохранил 54 ссылки. Лучшее как всегда ниже.
+
+- [maxpoletaev/dendy](https://github.com/maxpoletaev/dendy) -- NES/Famicom emulator with network multiplayer
+- [Rook to XSS: How I hacked chess.com with a rookie exploit](https://skii.dev/rook-to-xss/)
+- [karpathy/nn-zero-to-hero](https://github.com/karpathy/nn-zero-to-hero) -- Neural Networks: Zero to Hero
+- [Mikescher/firefox-sync-client](https://github.com/Mikescher/firefox-sync-client) -- A cli for firefox-sync (firefox bookmarks, passwords, account, ...)
+
+Хорошей вам недели!
