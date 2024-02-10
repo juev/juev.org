@@ -1,0 +1,18 @@
+---
+title: "Ссылки #272"
+date: 2024-02-10T09:41:04+0300
+image: https://static.juev.org/images/links.jpg
+tags: 
+  - links
+---
+
+За прошедшую неделю сохранил 79 ссылок. Лучшее как всегда ниже.
+
+- [Testcontainers for Go with Dolt](https://dolthub.com/blog/2024-02-05-testcontainers-for-go-with-dolt/)
+- [jj init — Sympolymathesy, by Chris Krycho](https://v5.chriskrycho.com/essays/jj-init/) --  What if we actually could replace Git? Jujutsu might give us a real shot
+- [seaweedfs/seaweedfs](https://github.com/seaweedfs/seaweedfs) -- SeaweedFS is a fast distributed storage system for blobs, objects, files, and data lake, for billions of files
+- [Introducing Pkl, a programming language for configuration](https://pkl-lang.org/blog/introducing-pkl.html)
+- [jgm/djot](https://github.com/jgm/djot) -- A light markup language
+- [Contain your excitement: A deep dive into using Tailscale with Docker](https://tailscale.com/blog/docker-tailscale-guide)
+
+Хорошей вам недели!
