@@ -17,9 +17,6 @@ enableEmoji = true
 
 enableGitInfo = true
 
-[author]
-name = "Denis Evsyukov"
-
 [frontmatter]
 date = [":filename", ":default"]
 
@@ -60,6 +57,9 @@ gitUrl = "https://github.com/juev/juev.org/commit/"
 github		= "juev"
 twitter		= "juev"
 twitter_domain	= "www.juev.org" # This domain shows in twitter cards as "View on `twitter_domain`"
+
+[params.author]
+name = "Denis Evsyukov"
 
 [params.authors]
 [params.authors.Denis]
