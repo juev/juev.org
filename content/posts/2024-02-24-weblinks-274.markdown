@@ -1,0 +1,21 @@
+---
+title: "Ссылки #274"
+date: 2024-02-24T10:15:04+0300
+image: https://static.juev.org/images/links.jpg
+tags: 
+  - links
+---
+
+За прошедшую неделю сохранил 67 ссылок. Лучшее как всегда ниже.
+
+- [What's in my Raycast](https://jahir.dev/blog/whats-in-my-raycast)
+- [Firefox privacy, security and anti-tracking: a comprehensive user.js template for configuration and hardening](https://github.com/arkenfox/user.js)
+- [Pointer and Nil in Go: Reasons why we should be wary](https://dev.to/labasubagia/pointer-and-nil-in-go-reasons-why-we-should-be-wary-1en1)
+- [Genivia/ugrep](https://github.com/Genivia/ugrep)
+- [Iterators in Go — Bitfield Consulting](https://bitfieldconsulting.com/golang/iterators)
+- [We Have to Start Over: From Atom to Zed](https://zed.dev/blog/we-have-to-start-over)
+- [Writing CLI Applications using the standard Flag Package](http://yet-another-dev-blog.me/content/pages/blog/cli.html)
+- [Securely access home network with Cloudflare Tunnel and WARP](https://simplyexplained.com/blog/securely-access-home-network-with-Cloudflare-Tunnel-and-WARP/)
+- [ory/kratos](https://github.com/ory/kratos) -- Next-gen identity server
+
+Хорошей вам недели!
