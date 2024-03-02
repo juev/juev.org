@@ -1,0 +1,20 @@
+---
+title: "Ссылки #275"
+date: 2024-03-02T10:51:04+0300
+image: https://static.juev.org/images/links.jpg
+tags: 
+  - links
+---
+
+За прошедшую неделю сохранил 78 ссылок. Лучшее как всегда ниже.
+
+- [Git Tips 3: Really Large Repositories](https://blog.gitbutler.com/git-tips-3-really-large-repositories/)
+- [Querying JSON and XML with jq and xq](https://www.ashbyhq.com/blog/engineering/jq-and-yq)
+- [The Free Software Media System](https://jellyfin.org/)
+- [Hacking a Smart Home Device](https://jmswrnr.com/blog/hacking-a-smart-home-device)
+- [How Does BlueSky Work?](https://steveklabnik.com/writing/how-does-bluesky-work)
+- [Become a Wikipedian in 30 minutes](https://www.youtube.com/watch?v=bRRHR1NEOqE)
+- [Bloom Filters](https://samwho.dev/bloom-filters/)
+- [Dotfiles digest: git](https://adrg.se/blog/dotfiles-digest-git)
+
+Хорошей вам недели!
