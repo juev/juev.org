@@ -1,9 +1,7 @@
 User-agent: *
 Disallow: /404.html
-Disallow: /page/
-Disallow: /pages/
-Disallow: /posts/
 Disallow: /tags/
 Disallow: /tags.html
+
 User-agent: CCBot
 Disallow: /
