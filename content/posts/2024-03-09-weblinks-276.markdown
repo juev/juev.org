@@ -1,0 +1,21 @@
+---
+title: "Ссылки #276"
+date: 2024-03-09T08:10:04+0300
+image: https://static.juev.org/images/links.jpg
+tags: 
+  - links
+---
+
+За прошедшую неделю сохранил 97 ссылок. Лучшее как всегда ниже.
+
+- [Saved by NixOS Integration Tests, Surprisingly](https://boinkor.net/2024/02/saved-by-nixos-integration-tests-surprisingly/)
+- [tsnsrv, or easily accessing services on your tailscale network](https://boinkor.net/2023/07/tsnsrv-or-easily-accessing-services-on-your-tailscale-network/)
+- [Send push notifications to your phone or desktop via PUT/POST](https://ntfy.sh)
+- [exatorrent](https://github.com/varbhat/exatorrent) -- Easy to Use Torrent Client. Can be hosted in Cloud
+- [How I keep myself Alive using Golang](https://www.bytesizego.com/blog/keeping-alive-with-go)
+- [TLS Certificate for Onion domain](https://0ut3r.space/2024/02/09/tls-cert-for-onion/index.html)
+- [The First Quantum-Resistant Mesh VPN](https://netbird.io/knowledge-hub/the-first-quantum-resistant-mesh-vpn)
+- [Rosenpass](https://rosenpass.eu/)
+- [aramperes/onetun](https://github.com/aramperes/onetun) -- User space WireGuard port-forward in Rust
+
+Хорошей вам недели!
