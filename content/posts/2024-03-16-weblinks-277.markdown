@@ -1,0 +1,24 @@
+---
+title: "Ссылки #277"
+date: 2024-03-16T13:00:04+0300
+image: https://static.juev.org/images/links.jpg
+tags: 
+  - links
+---
+
+За прошедшую неделю сохранил 100 ссылок. Лучшее как всегда ниже.
+
+- [SeKey](https://github.com/sekey/sekey) -- Use Touch ID / Secure Enclave for SSH Authentication
+- [The missing type in the Go standard library: Date!](https://engineering.hardfin.com/2024/02/date-the-missing-type/)
+- [How We Went All In on sqlc/pgx for Postgres + Go](https://brandur.org/sqlc)
+- [The Copenhagen Book](https://thecopenhagenbook.com/) -- The Copenhagen Book provides a general guideline on implementing auth in web applications
+- [altsem/gitu](https://github.com/altsem/gitu) -- A TUI Git client inspired by Magit
+- [new.css](https://github.com/xz/new.css) -- A classless CSS framework to write modern websites using only HTML
+- [traefik/yaegi](https://github.com/traefik/yaegi) -- Yaegi is Another Elegant Go Interpreter
+- [Use Nix as Package Manager in macOS](https://ntzyz.space/post/use-nix-as-package-manager-in-macos/)
+- [Why Facebook doesn’t use Git](https://graphite.dev/blog/why-facebook-doesnt-use-git)
+- [flox/flox](https://github.com/flox/flox) -- Developer environments you can take with you
+- [Switch in Go: 6 Ways to Use It](https://blog.devtrovert.com/p/switch-in-go-6-ways-to-use-it)
+- [Nix is a better Docker image builder than Docker's image builder](https://xeiaso.net//talks/2024/nix-docker-build/)
+
+Хорошей вам недели!
