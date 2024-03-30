@@ -1,0 +1,21 @@
+---
+title: "Ссылки #279"
+date: 2024-03-30T09:31:04+0300
+image: https://static.juev.org/images/links.jpg
+tags: 
+  - links
+---
+
+За прошедшую неделю сохранил 64 ссылки. Лучшее как всегда ниже.
+
+- [gotest.tools](https://github.com/gotestyourself/gotest.tools) -- A collection of packages to augment the go testing package and support common patterns
+- [It's a world of feeds!](https://feedle.world/) -- Every search is an RSS feed
+- [VIM is not about speed](https://levelup.gitconnected.com/vim-is-not-about-speed-88968ae4283c)
+- [lapce/lapdev](https://github.com/lapce/lapdev) -- Self-Hosted Remote Dev Environment
+- [failsafe-go/failsafe-go](https://github.com/failsafe-go/failsafe-go) -- Fault tolerance and resilience patterns for Go
+- [derfenix/webarchive](https://github.com/derfenix/webarchive) -- Own webarchive service
+- [Y2Z/monolith](https://github.com/Y2Z/monolith) -- CLI tool for saving complete web pages as a single HTML file
+- [Owning My Own Social](https://shellsharks.com/own-my-social)
+- [TDD: You're Probably Doing It Just Fine](https://blog.thecodewhisperer.com/permalink/tdd-youre-probably-doing-it-just-fine)
+
+Хорошей вам недели!
