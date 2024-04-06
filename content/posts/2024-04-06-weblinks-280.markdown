@@ -1,0 +1,23 @@
+---
+title: "Ссылки #280"
+date: 2024-04-06T08:35:04+0300
+image: https://static.juev.org/images/links.jpg
+tags: 
+  - links
+---
+
+За прошедшую неделю сохранил 94 ссылки. Лучшее как всегда ниже.
+
+- [Hyper Performant & Hackable Code Forge Built on Open Standards](https://ayllu-forge.org/)
+- [Nickel](http://nickel-lang.org/) -- Write complex configurations. Modular, correct and boilerplate-free.
+- [Prevent sensitive data from leaking](https://www.willem.dev/articles/prevent-sensitive-data-from-leaking/)
+- [Smug - tmux session manager](https://github.com/ivaaaan/smug)
+- [Your Computer Isn't Yours](https://sneak.berlin/20201112/your-computer-isnt-yours/)
+- [migrate](https://github.com/golang-migrate/migrate) -- Database migrations. CLI and Golang library
+- [Zoomer Tries RSS: In Praise of Yarr](https://tudorr.ro/blog/zoomer-tries-rss/)
+- [🍄:Mycorrhiza Wiki](https://mycorrhiza.wiki/hypha/mycorrhiza_wiki) -- Mycorrhiza Wiki is an open-source wiki engine for the independent web
+- [Dark Reader](https://darkreader.org/help/en/)
+- [testfixtures](https://github.com/go-testfixtures/testfixtures) -- Write tests against a real database
+- [Why Don't I Like Git More?](https://matduggan.com/why-dont-i-like-git-more/)
+
+Хорошей вам недели!
