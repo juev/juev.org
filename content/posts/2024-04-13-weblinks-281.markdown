@@ -1,0 +1,19 @@
+---
+title: "Ссылки #281"
+date: 2024-04-13T06:45:04+0300
+image: https://static.juev.org/images/links.jpg
+tags: 
+  - links
+---
+
+За прошедшую неделю сохранил 60 ссылок. Лучшее как всегда ниже.
+
+- [Replacing complicated hashmaps with SQLite](https://husin.dev/ephemeral-sqlite/)
+- [The 37signals Guide to Internal Communication](https://37signals.com/how-we-communicate)
+- [xhd2015/xgo](https://github.com/xhd2015/xgo) -- Enable function trap in go, provide trace and mock to help write and debug unit test faster
+- [Building My First Homelab Server Rack](https://mtlynch.io/building-first-homelab-rack/)
+- [Why Can't My Mom Email Me?](https://matduggan.com/why-cant-my-mom-email-me/)
+- [zk-org/zk](https://github.com/zk-org/zk) -- A plain text note-taking assistant
+- [Decentralizability](https://subconscious.substack.com/p/decentralizability)
+
+Хорошей вам недели!
