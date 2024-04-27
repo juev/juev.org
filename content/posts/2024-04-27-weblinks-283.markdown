@@ -1,0 +1,19 @@
+---
+title: "Ссылки #283"
+date: 2024-04-27T09:41:04+0300
+image: https://static.juev.org/images/links.jpg
+tags: 
+  - links
+---
+
+За прошедшую неделю сохранил 57 ссылок. Лучшее как всегда ниже.
+
+- [go delve - The Golang Debugger](https://earthly.dev/blog/golang-dlv/)
+- [inhumantsar/slurp](https://github.com/inhumantsar/slurp) -- Slurps webpages and saves them as clean, uncluttered Markdown. Think Pocket, but better
+- [boyter/scc](https://github.com/boyter/scc) -- Sloc, Cloc and Code: scc is a very fast accurate code counter with complexity calculations and COCOMO estimates written in pure Go
+- [Use task.go for your Go project scripts](https://dev.to/jcbhmr/use-taskgo-for-your-go-project-scripts-2cm4)
+- [thomiceli/opengist](https://github.com/thomiceli/opengist) -- Self-hosted pastebin powered by Git, open-source alternative to Github Gist
+- [The only two log levels you need are INFO and ERROR](https://ntietz.com/blog/the-only-two-log-levels-you-need-are-info-and-error/)
+- [Go is Not Java](https://blog.vertigrated.com/go-is-not-java)
+
+Хорошей вам недели!
