@@ -1,0 +1,21 @@
+---
+title: "Ссылки #285"
+date: 2024-05-11T09:37:04+0300
+image: https://static.juev.org/images/links.jpg
+tags: 
+  - links
+---
+
+За прошедшую неделю сохранил 82 ссылки. Лучшее как всегда ниже.
+
+- [Nature of Code](https://natureofcode.com)
+- [abi/secret-llama](https://github.com/abi/secret-llama) -- Fully private LLM chatbot that runs entirely with a browser with no server needed. Supports Mistral and LLama 3
+- [Piccolo - A Stackless Lua Interpreter](https://kyju.org/blog/piccolo-a-stackless-lua-interpreter/) -- piccolo is an interpreter for the Lua language written in pure, mostly safe Rust with an eye towards safe sandboxing and resiliency
+- [Game of Trees](https://gameoftrees.org/index.html) -- Game of Trees (Got) is a version control system which prioritizes ease of use and simplicity over flexibility
+- [simdjson/simdjson](https://github.com/simdjson/simdjson) -- Parsing gigabytes of JSON per second
+- [AboutRSS/ALL-about-RSS](https://github.com/AboutRSS/ALL-about-RSS)
+- [umputun/feed-master](https://github.com/umputun/feed-master) -- Pulls multiple podcast feeds (RSS) and republishes as a common feed, properly sorted and podcast-client friendly
+- [Dokploy/dokploy](https://github.com/Dokploy/dokploy) -- Open Source Alternative to Vercel, Netlify and Heroku
+- [Zxilly/go-size-analyzer](https://github.com/Zxilly/go-size-analyzer) -- A tool for analysing the dependencies in compiled Golang binaries, providing insight into their impact on the final build
+
+Хорошей вам недели!
