@@ -1,0 +1,21 @@
+---
+title: "Ссылки #286"
+date: 2024-05-18T10:41:04+0300
+image: https://static.juev.org/images/links.jpg
+tags: 
+  - links
+---
+
+За прошедшую неделю сохранил 87 ссылок. Лучшее как всегда ниже.
+
+- [ok Considered Harmful](https://dolthub.com/blog/2024-05-10-ok-considered-harmful/)
+- [Coding Challenges](https://codingchallenges.fyi/) – прекрасный набор задач для развития
+- [Ultimate Guide to Setting Up Your Flipper Zero: A Hacker’s Swiss Army Knife](https://infosecwriteups.com/ultimate-guide-to-setting-up-your-flipper-zero-a-hackers-swiss-army-knife-f8f06488ac10)
+- [LLM : A CLI utility and Python library for interacting with Large Language Models](https://llm.datasette.io/en/stable/)
+- [jgm/gitit](https://github.com/jgm/gitit/tree/master/) – A wiki using HAppS, pandoc, and git
+- [Using Cuelang With Go for LLM Data Extraction](https://cybernetist.com/2024/05/13/using-cuelang-with-go-for-llm-data-extraction/)
+- [Merge conflicts in go.sum](https://gabnotes.org/automatically-handle-git/)
+- [Rebuilding my homelab: Suffering as a service](https://xeiaso.net//blog/2024/homelab-v2/)
+- [SimpleX: Redefining Privacy by Making Hard Choices](https://simplex.chat/blog/20240516-simplex-redefining-privacy-hard-choices.html)
+
+Хорошей вам недели!
