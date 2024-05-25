@@ -1,0 +1,20 @@
+---
+title: "Ссылки #287"
+date: 2024-05-25T14:22:04+0300
+image: https://static.juev.org/images/links.jpg
+tags: 
+  - links
+---
+
+За прошедшую неделю сохранил 73 ссылки. Лучшее как всегда ниже.
+
+- [Generic Concurrency in Go](https://sergey.kamardin.org/articles/generic-concurrency-in-go/)
+- [It's Not Safe to Click Links on X](https://lifehacker.com/tech/its-not-safe-to-click-links-on-x)
+- [Maestral](https://www.maestral.app/) – Maestral is a lightweight Dropbox client for macOS and Linux
+- [StractOrg/stract](https://github.com/StractOrg/stract) – Stract is an open source web search engine hosted at stract.com targeted towards tinkerers and developers
+- [vas3k/pepic](https://github.com/vas3k/pepic) – Image and video proxy
+- [Wez's Terminal Emulator](https://wezfurlong.org/wezterm/)
+- [Exploding Git Repositories](https://kate.io/blog/git-bomb/)
+- [mise](https://mise.jdx.dev) – The front-end to your dev env
+
+Хорошей вам недели!
