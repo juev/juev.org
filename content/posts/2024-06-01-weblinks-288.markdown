@@ -1,0 +1,17 @@
+---
+title: "Ссылки #288"
+date: 2024-06-01T13:16:04+0300
+image: https://static.juev.org/images/links.jpg
+tags: 
+  - links
+---
+
+За прошедшую неделю сохранил 67 ссылок. Лучшее как всегда ниже.
+
+- [matcha.css](https://matcha.mizu.sh) – Drop-in semantic styling library in pure CSS
+- [solo-io/protoc-gen-openapi](https://github.com/solo-io/protoc-gen-openapi) – Compile Google protobufs to openAPI v3 specs
+- [Abusing Go's infrastructure](https://reverse.put.as/2024/05/24/abusing-go-infrastructure/)
+- [sharkdp/hyperfine](https://github.com/sharkdp/hyperfine) – A command-line benchmarking tool
+- [Alternatives to Makefiles written in Go](https://dev.to/eminetto/alternatives-to-makefiles-written-in-go-dig)
+
+Хорошей вам недели!
