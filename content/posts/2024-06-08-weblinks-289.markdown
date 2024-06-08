@@ -1,0 +1,18 @@
+---
+title: "Ссылки #289"
+date: 2024-06-08T09:58:04+0300
+image: https://static.juev.org/images/links.jpg
+tags: 
+  - links
+---
+
+За прошедшую неделю сохранил 56 ссылок. Лучшее как всегда ниже.
+
+- [The developer's guide to Kubernetes Operators](https://developers.redhat.com/articles/2024/01/29/developers-guide-kubernetes-operators)
+- [EchoVault/EchoVault](https://github.com/EchoVault/EchoVault) – Embeddable Distributed in-memory data store with an emphasis on speed and reliability
+- [Brown butter nectarine tart](https://stephango.com/brown-butter-nectarine-tart)
+- [Clean Architecture in Go (Golang): A Comprehensive Guide](https://medium.com/@omidahn/clean-architecture-in-go-golang-a-comprehensive-guide-f8e422b7bfae)
+- [Stop Scraping my Git Forge](https://gabrielsimmer.com/blog/stop-scraping-git-forge)
+- [Hacking Millions of Modems (and Investigating Who Hacked My Modem)](https://samcurry.net/hacking-millions-of-modems)
+
+Хорошей вам недели!
