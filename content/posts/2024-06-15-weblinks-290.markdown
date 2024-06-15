@@ -1,0 +1,19 @@
+---
+title: "Ссылки #290"
+date: 2024-06-15T16:23:04+0300
+image: https://static.juev.org/images/links.jpg
+tags: 
+  - links
+---
+
+За прошедшую неделю сохранил 40 ссылок. Лучшее как всегда ниже.
+
+- [Modern Git Commands and Features You Should Be Using](https://martinheinz.dev/blog/109)
+- [What is PID 0?](https://blog.dave.tf/post/linux-pid0/)
+- [Assembly for Hackers](https://redteamrecipe.com/assembly-for-hackers)
+- [Sentinel errors and errors.Is() slow your code down by 3000%](https://dolthub.com/blog/2024-05-31-benchmarking-go-error-handling/)
+- [Smartphones May Affect Sleep – but Not Because of Blue Light](https://www.wired.com/story/blue-light-smartphone-screen-sleep/)
+- [Why curl closes PRs on GitHub](https://daniel.haxx.se/blog/2024/06/11/why-curl-closes-prs-on-github/)
+- [ko-build/ko](https://github.com/ko-build/ko) – Build and deploy Go applications
+
+Хорошей вам недели!
