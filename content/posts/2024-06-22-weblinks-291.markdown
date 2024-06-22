@@ -1,0 +1,21 @@
+---
+title: "Ссылки #291"
+date: 2024-06-22T06:31:04+0300
+image: https://static.juev.org/images/links.jpg
+tags: 
+  - links
+---
+
+За прошедшую неделю сохранил 46 ссылок. Лучшее как всегда ниже.
+
+- [The Problem with OpenTelemetry](https://cra.mr/the-problem-with-otel/)
+- [UUIDv7 in 20 languages](https://antonz.org/uuidv7/)
+- [Perplexity AI Is Lying about Their User Agent](https://rknight.me/blog/perplexity-ai-is-lying-about-its-user-agent/)
+- [Go evolves in the wrong direction](https://itnext.io/go-evolves-in-the-wrong-direction-7dfda8a1a620)
+- [Kubernetes Certified Administration](https://github.com/walidshaari/Kubernetes-Certified-Administrator)
+- [nil-go/konf](https://github.com/nil-go/konf) – The simplest config loader for Go that reads/watches from file, env, flag and clouds (AWS, Azure, GCP)
+- [I kind of like rebasing](https://rednafi.com/misc/on_rebasing/)
+- [Go Plugin System over RPC](https://github.com/hashicorp/go-plugin)
+- [Gosh - A pluggable interactive shell written Go](https://github.com/vladimirvivien/gosh)
+
+Хорошей вам недели!
