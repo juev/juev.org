@@ -1,0 +1,21 @@
+---
+title: "Ссылки #292"
+date: 2024-06-29T09:19:04+0300
+image: https://static.juev.org/images/links.jpg
+tags: 
+  - links
+---
+
+За прошедшую неделю сохранил 40 ссылок. Лучшее как всегда ниже.
+
+- [overmindtech/cli](https://github.com/overmindtech/cli) – Identify the blast radius and risks for Terraform changes in real time
+- [Why People are Angry over Go 1.23 Iterators](https://www.gingerbill.org/article/2024/06/17/go-iterator-design/)
+- [Lissy93/web-check](https://github.com/Lissy93/web-check) – All-in-one OSINT tool for analysing any website
+- [Start all of your commands with a comma](https://rhodesmill.org/brandon/2009/commands-with-comma/)
+- [shell-pool/shpool](https://github.com/shell-pool/shpool) – Think tmux, then aim... lower
+- [kubectx + kubens: Power tools for kubectl](https://github.com/ahmetb/kubectx)
+- [Krew](https://github.com/kubernetes-sigs/krew) – Find and install kubectl plugins
+- [kelseyhightower/kubernetes-the-hard-way](https://github.com/kelseyhightower/kubernetes-the-hard-way) – Bootstrap Kubernetes the hard way. No scripts
+- [Lightweight Kubernetes](https://k3s.io/)
+
+Хорошей вам недели!
