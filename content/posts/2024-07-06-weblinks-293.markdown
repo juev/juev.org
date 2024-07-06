@@ -1,0 +1,17 @@
+---
+title: "Ссылки #293"
+date: 2024-07-06T09:19:36+0300
+image: https://static.juev.org/images/links.jpg
+tags: 
+  - links
+---
+
+За прошедшую неделю сохранил 49 ссылок. Лучшее как всегда ниже.
+
+- [5 shortcomings of Helm](https://glasskube.eu/en/r/knowledge/5-helm-shortcomings/)
+- [gup - Update binaries installed by "go install"](https://github.com/nao1215/gup)
+- [f-tests as a replacement for table-driven tests in Go](https://valyala.medium.com/f-tests-as-a-replacement-for-table-driven-tests-in-go-8814a8b19e9e)
+- [An Experienced (Neo)Vimmer's Workflow.](https://seniormars.com/posts/neovim-workflow/)
+- [goderive](https://github.com/awalterschulze/goderive)
+
+Хорошей вам недели!
