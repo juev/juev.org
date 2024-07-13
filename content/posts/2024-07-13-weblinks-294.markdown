@@ -1,0 +1,19 @@
+---
+title: "Ссылки #294"
+date: 2024-07-13T09:11:04+0300
+image: https://static.juev.org/images/links.jpg
+tags: 
+  - links
+---
+
+За прошедшую неделю сохранил 49 ссылок. Лучшее как всегда ниже.
+
+- [Farewell MongoDB: 5 reasons why you only need PostgreSQL](https://blog.logto.io/postgresql-vs-mongodb/)
+- [Testing Golang and AWS DynamoDB with TestContainers](https://jamiehurst.co.uk/2024-07-07_testing-golang-and-dynamodb-with-testcontainers)
+- [Taking control of your Go module paths](https://www.n16f.net/blog/taking-control-of-your-go-module-paths/)
+- [Stop perfecting your config](https://arkadiuszchmura.com/posts/stop-perfecting-your-config/)
+- [Recapping the first Local‑First conference in 15 minutes](https://evilmartians.com/chronicles/recapping-the-first-local-first-conference-in-15-minutes)
+- [coroot/coroot](https://github.com/coroot/coroot?twclid=2-6rcw3hmmhyzbku9ioi1alppbt) – Coroot is an open-source APM & Observability tool, a DataDog and NewRelic alternative
+- [kevincobain2000/gol](https://github.com/kevincobain2000/gol) – All in One - Dependency free (docker, local, remote) Log Viewer in Browser
+
+Хорошей вам недели!
