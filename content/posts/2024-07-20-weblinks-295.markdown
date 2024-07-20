@@ -1,0 +1,19 @@
+---
+title: "Ссылки #295"
+date: 2024-07-20T12:00:00+0300
+image: https://static.juev.org/images/links.jpg
+tags: 
+  - links
+---
+
+За прошедшую неделю сохранил 69 ссылок. Лучшее как всегда ниже.
+
+- [Go range iterators demystified](https://dolthub.com/blog/2024-07-12-golang-range-iters-demystified/)
+- [A very happy Golang memory profiling story at CloudQuery](https://www.cloudquery.io/blog/a-very-happy-golang-memory-profiling-story-at-cloudquery)
+- [Use a Work Journal to Recover Focus Faster and Clarify Your Thoughts](https://fev.al/posts/work-journal/)
+- [Simple ways to find exposed sensitive information – Trickster Dev](https://www.trickster.dev/post/simple-ways-to-find-exposed-sensitive-information/)
+- [Profiling in Go: A Practical Guide](https://nyadgar.com/posts/go-profiling-like-a-pro/)
+- [Introducing Quartz: A Deterministic Time Testing Library for Go](https://coder.com/blog/introducing-quartz)
+- [Against choosing your political allegiances based on who is "pro-crypto"](https://vitalik.eth.limo/general/2024/07/17/procrypto.html)
+
+Хорошей вам недели!
