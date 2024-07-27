@@ -1,0 +1,20 @@
+---
+title: "Ссылки #296"
+date: 2024-07-27T07:50:02+0300
+image: https://static.juev.org/images/links.jpg
+tags: 
+  - links
+---
+
+За прошедшую неделю сохранил 42 ссылки. Лучшее как всегда ниже.
+
+- [Concerns about passkeys](https://me.micahrl.com/blog/concerns-about-passkeys/)
+- [Go 1.23: Interactive release notes](https://antonz.org/go-1-23/)
+- [Are Pointers in Go Faster Than Values?](https://blog.boot.dev/golang/pointers-faster-than-values/)
+- [My 28,000-follower Twitter account was hacked—and it changed my life for the better](https://www.fastcompany.com/91154019/my-28000-follower-twitter-account-was-hacked-and-it-changed-my-life-for-the-better)
+- [typst/typst](https://github.com/typst/typst) – A new markup-based typesetting system that is powerful and easy to learn
+- [How conditional breakpoints work](https://werat.dev/blog/how-conditional-breakpoints-work/)
+- [go-clean-arch](https://github.com/bxcodec/go-clean-arch) – Go (Golang) Clean Architecture based on Reading Uncle Bob's Clean Architecture
+- [How I Use Git Worktrees](https://matklad.github.io/2024/07/25/git-worktrees.html)
+
+Хорошей вам недели!
