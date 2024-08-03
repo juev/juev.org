@@ -1,0 +1,17 @@
+---
+title: "Ссылки #297"
+date: 2024-08-03T12:53:02+0300
+image: https://static.juev.org/images/links.jpg
+tags: 
+  - links
+---
+
+За прошедшую неделю сохранил 48 ссылок. Лучшее как всегда ниже.
+
+- [The New Internet](https://tailscale.com/blog/new-internet)
+- [Memory Management in DuckDB](https://duckdb.org/2024/07/09/memory-management.html)
+- [How to use git worktree and in a clean way](https://morgan.cugerone.com/blog/how-to-use-git-worktree-and-in-a-clean-way/)
+- [git force-push for professionals](https://evilcookie.de/git-force-push-for-professionals.html)
+- [Go Engineering 10 week - Onboarding | Notion](https://stream-wiki.notion.site/625363c8c3684753b7f2b7d829bcd67a)
+
+Хорошей вам недели!
