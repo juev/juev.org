@@ -8,7 +8,7 @@ tags:
 
 За прошедшую неделю сохранил 58 ссылок. Лучшее как всегда ниже.
 
-- [Escape JavaScript hell and write everything in Go](https:/oblivion.keyruu.de/Web-Development/Everything-in-Go)
+- [Escape JavaScript hell and write everything in Go](https://oblivion.keyruu.de/Web-Development/Everything-in-Go)
 - [Building static binaries with Go on Linux : Eli Bendersky's website](https://eli.thegreenplace.net/2024/building-static-binaries-with-go-on-linux/)
 - [Sako is a Wallabag-compatible articles safekeeper](https://sr.ht/~sbinet/sako/)
 - [How Go Arrays Work and Get Tricky with For-Range](https://victoriametrics.com/blog/go-array/)
