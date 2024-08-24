@@ -1,0 +1,22 @@
+---
+title: "Ссылки #300"
+date: 2024-08-24T09:34:02+0300
+image: https://static.juev.org/images/links.jpg
+tags: 
+  - links
+---
+
+Время идет, и вот он, 300-й выпуск ссылок. А все вроде только начиналось.
+
+За прошедшую неделю сохранил 62 ссылки. Лучшее как всегда ниже.
+
+- [Git Workspace Review](https://dolthub.com/blog/2024-08-16-workspace-review/)
+- [You might be overusing Vim visual mode](https://m4xshen.dev/posts/overuse-vim-visual-mode)
+- [Leaving Neovim for Zed](https://stevedylan.dev/posts/leaving-neovim-for-zed/)
+- [Migrating Mess With DNS to use PowerDNS](https://jvns.ca/blog/2024/08/19/migrating-mess-with-dns-to-use-powerdns/)
+- [TomWright/dasel](https://github.com/TomWright/dasel)
+- [Любой может получить доступ к удалённым и приватным данным репозиториев GitHub](https://habr.com/ru/companies/ruvds/articles/835448/)
+- [Zen Browser](https://www.zen-browser.app/)
+- [My IRC client runs on Kubernetes](https://xeiaso.net/blog/2024/k8s-irc-client/)
+
+Хорошей вам недели!
