@@ -1,0 +1,18 @@
+---
+title: "Ссылки #301"
+date: 2024-08-31T10:21:02+0300
+image: https://static.juev.org/images/links.jpg
+tags: 
+  - links
+---
+
+За прошедшую неделю сохранил 68 ссылок. Лучшее как всегда ниже.
+
+- [Go sync.Pool and the Mechanics Behind It](https://victoriametrics.com/blog/go-sync-pool/)
+- [Why Use Emacs?](https://ismailefe.org/blog/why_use_emacs/index.html)
+- [Cryptography for Hackers](https://redteamrecipe.com/cryptography-for-hackers)
+- [Practical Go: Real world advice for writing maintainable Go programs](https://dave.cheney.net/practical-go/presentations/qcon-china.html)
+- [Как я собрал солнечную станцию своими руками: детальный обзор компонентов и процесса сборки](https://habr.com/ru/companies/flant/articles/838108/)
+- [5000x faster CRDTs: An Adventure in Optimization](https://josephg.com/blog/crdts-go-brrr/)
+
+Хорошей вам недели!
