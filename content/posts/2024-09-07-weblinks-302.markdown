@@ -1,0 +1,18 @@
+---
+title: "Ссылки #302"
+date: 2024-09-07T09:18:02+0300
+image: https://static.juev.org/images/links.jpg
+tags: 
+  - links
+---
+
+За прошедшую неделю сохранил 75 ссылок. Лучшее как всегда ниже.
+
+- [Capture traffic with Golang](https://aohorodnyk.com/post/2024-08-31-golang-traffic-capturer/)
+- [Bypassing airport security via SQL injection](https://ian.sh/tsa)
+- [versity/versitygw](https://github.com/versity/versitygw) -- versity s3 gateway
+- [Deploying a Lightweight Git Server with CGit using Docker-Compose](https://brandonrozek.com/blog/lightweight-gitc-docker-compose/)
+- [Git: avoid reset \-\-hard, use reset \-\-keep instead](https://adamj.eu/tech/2024/09/02/git-avoid-reset-hard-use-keep/)
+- [New improved commit messages for scrape-hacker-news-by-domain](https://simonwillison.net/2024/Sep/6/improved-commit-messages-csv-diff/)
+
+Хорошей вам недели!
