@@ -3,7 +3,10 @@ title: "Zotero"
 date: 2024-09-14T15:51:02+0300
 image: https://static.juev.org/2024/09/zotero-main-th.png
 tags: 
-  - links
+  - zotero
+  - web
+  - tips
+  - tools
 ---
 
 Несколько лет я сохраняю прочитанное в виде ссылок. Есть возможность быстро найти нужную ссылку, но многое уже становится
