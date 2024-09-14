@@ -1,0 +1,20 @@
+---
+title: "Ссылки #303"
+date: 2024-09-14T08:35:02+0300
+image: https://static.juev.org/images/links.jpg
+tags: 
+  - links
+---
+
+За прошедшую неделю сохранил 76 ссылок. Лучшее как всегда ниже.
+
+- [Database Transactions in Go with Layered Architecture](https://threedots.tech/post/database-transactions-in-go/)
+- [Why I still self host my servers (and what I've recently learned)](https://chollinger.com/blog/2024/08/why-i-still-self-host-my-servers-and-what-ive-recently-learned/)
+- [A Better Merge Workflow with Jujutsu](https://ofcr.se/jujutsu-merge-workflow/)
+- [My Homelab Setup](https://arslan.io/2024/09/10/my-homelab-setup/)
+- [How I Review GitHub PRs](https://www.bitquabit.com/post/how-i-do-github-prs/)
+- [Kubernetes CRD generation pitfalls](https://ahmet.im/blog/crd-generation-pitfalls/)
+- [Conditionally Disabling Code with Comptime in Zig](https://mitchellh.com/writing/zig-comptime-conditional-disable)
+- [Why Haskell?](https://www.gtf.io/musings/why-haskell)
+
+Хорошей вам недели!
