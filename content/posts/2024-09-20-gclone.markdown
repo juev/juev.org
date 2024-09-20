@@ -1,5 +1,5 @@
 ---
-title: "Organizing Projects with gclone"
+title: "Организация проектов с помощью gclone"
 date: 2024-09-20T20:47:02+0300
 tags: 
   - tips
