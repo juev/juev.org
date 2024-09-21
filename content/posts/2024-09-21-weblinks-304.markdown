@@ -1,0 +1,30 @@
+---
+title: "Ссылки #304"
+date: 2024-09-21T13:12:02+0300
+image: https://static.juev.org/images/links.jpg
+tags: 
+  - links
+---
+
+У меня все ссылки, что попадают в Pocket, синхронизируются автоматически в репозиторий [links][1] и в [linkding][2].
+Судя по статистике на сегодняшний день, в репозитории сохраненно 4930 ссылок. А в linkding 7193 различных ссылок.
+
+Значения отличаются, потому что в linkding проводил импорт из Pinboard. И потому изначально там уже было несколько
+тысяч ссылок.
+
+За прошедшую неделю сохранил 109 ссылок, довольно много. Лучшее как всегда ниже.
+
+- [Migrating from AWS to Self-Hosting](https://ziglang.org/news/migrate-to-self-hosting/)
+- [Combining Mastodon timelines using mastodon.el](https://sachachua.com/blog/2024/09/combining-mastodon-timelines-using-mastodon-el/)
+- [Подготовка к интервью](https://grishaev.me/no-faang-2/)
+- [18 Months with a Framework 13 – Project Gus](https://www.projectgus.com/2024/09/18-months-with-framework-laptop/)
+- [Why Emacs Is the Best: 10 Key Advantages](https://tristancacqueray.github.io/blog/emacs-30)
+- [Collecting Emacs News from Mastodon](https://sachachua.com/blog/2024/09/collecting-emacs-news-from-mastodon/)
+- [Wonderful vi](https://world.hey.com/dhh/wonderful-vi-a1d034d3)
+- [Restish](https://rest.sh/)
+- [Zeo sleep self-experiments · Gwern.net](https://gwern.net/zeo/zeo)
+
+Хорошей вам недели!
+
+[1]: https://github.com/juev/links
+[2]: https://links.evsyukov.org
