@@ -1,0 +1,18 @@
+---
+title: "Ссылки #305"
+date: 2024-09-28T10:03:02+0300
+image: https://static.juev.org/images/links.jpg
+tags: 
+  - links
+---
+
+За прошедшую неделю сохранил 109 ссылок, довольно много. Лучшее как всегда ниже.
+
+- [Sets in Go](https://www.willem.dev/articles/sets-in-golang/)
+- [I Like Makefiles](https://switowski.com/blog/i-like-makefiles/)
+- [soypat/gopherlings](https://github.com/soypat/gopherlings) -- Learn Go by fixing tiny incorrect programs
+- [A Case for Using Neovim Without Plugins](https://blog.erikwastaken.dev/posts/2023-05-06-a-case-for-neovim-without-plugins.html)
+- [QiuYannnn/Local-File-Organizer](https://github.com/QiuYannnn/Local-File-Organizer)
+- [ecliptik/tailscale-privacy-frontends](https://github.com/ecliptik/tailscale-privacy-frontends)
+
+Хорошей вам недели!
