@@ -1,0 +1,19 @@
+---
+title: "Ссылки #306"
+date: 2024-10-05T11:08:02+0300
+image: https://static.juev.org/images/links.jpg
+tags: 
+  - links
+---
+
+За прошедшую неделю сохранил 80 ссылок. Лучшее как всегда ниже.
+
+- [Masterminds/sprig](https://github.com/Masterminds/sprig) -- Useful template functions for Go templates
+- [A Tour of Hell](https://chrisdone.com/posts/tour-of-hell)
+- [The Power of Nostr: Decentralized Social Media and More](https://www.lynalden.com/the-power-of-nostr/)
+- [A Crash Course Guide to Nostr](https://wedistribute.org/2024/05/nostr-crash-course/)
+- [Visual Studio Code is designed to fracture](https://ghuntley.com/fracture/)
+- [Interning in Go](https://medium.com/google-cloud/interning-in-go-4319ea635002)
+- [Learning Zig](https://www.openmymind.net/learning_zig/)
+
+Хорошей вам недели!
