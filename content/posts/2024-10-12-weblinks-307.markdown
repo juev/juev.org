@@ -1,0 +1,19 @@
+---
+title: "Ссылки #307"
+date: 2024-10-12T11:17:02+0300
+image: https://static.juev.org/images/links.jpg
+tags: 
+  - links
+---
+
+За прошедшую неделю сохранил 90 ссылок. Лучшее как всегда ниже.
+
+- [sickcodes/osx-optimizer](https://github.com/sickcodes/osx-optimizer)
+- [A Few Words on Testing](https://registerspill.thorstenball.com/p/a-few-words-on-testing)
+- [bepass-org/bepass](https://github.com/bepass-org/bepass)
+- [4get](https://git.lolcat.ca/lolcat/4get) — 4get is a proxy search engine that doesn’t suck
+- [tmux: my notes so far](https://neilzone.co.uk/2024/10/tmux-my-notes-so-far/)
+- [Instant sync.](https://jazz.tools/)
+- [NotesHub - Take Notes, Sync and Collaborate](https://about.noteshub.app/)
+
+Хорошей вам недели!
