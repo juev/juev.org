@@ -1,0 +1,22 @@
+---
+title: "Ссылки #308"
+date: 2024-10-19T12:05:02+0300
+image: https://static.juev.org/images/links.jpg
+tags: 
+  - links
+---
+
+За прошедшую неделю сохранил 57 ссылок. Лучшее как всегда ниже.
+
+- [uxn](https://100r.co/site/uxn.html) -- The Uxn/Varvara ecosystem is a personal computing stack based on a small virtual machine that lies at the heart of our software, and that allows us to run the same application on a variety of systems
+- [Exploring Typst, a new typesetting system similar to LaTeX](https://blog.jreyesr.com/posts/typst/)
+- [Self-Hosting a Container Registry](https://packagemain.tech/p/self-hosting-a-container-registry)
+- [What Happens When You Walk or Run Daily, Without Tech](https://zenhabits.net/tech-free/)
+- [augustss/MicroHs](https://github.com/augustss/MicroHs)
+- [Working Turing Machine](https://ideas.lego.com/projects/10a3239f-4562-4d23-ba8e-f4fc94eef5c7)
+- [tzador/x.md](https://github.com/tzador/x.md) -- Organise your shell scripts within executable markdown files
+- [My solar-powered and self-hosted website](https://dri.es/my-solar-powered-and-self-hosted-website)
+- [Using static websites for tiny archives](https://alexwlchan.net/2024/static-websites/)
+- [How I use git](https://registerspill.thorstenball.com/p/how-i-use-git)
+
+Хорошей вам недели!
