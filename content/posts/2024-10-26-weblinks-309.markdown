@@ -1,0 +1,21 @@
+---
+title: "Ссылки #309"
+date: 2024-10-26T11:05:02+0300
+image: https://static.juev.org/images/links.jpg
+tags: 
+  - links
+---
+
+За прошедшую неделю сохранил 84 ссылки. Лучшее как всегда ниже.
+
+- [git-town/git-town](https://github.com/git-town/git-town) -- Git branches made easy
+- [Focus on decisions, not tasks](https://technicalwriting.dev/strategy/decisions.html)
+- [timvisee/send](https://github.com/timvisee/send) -- Simple, private file sharing
+- [awslabs/git-remote-s3](https://github.com/awslabs/git-remote-s3)
+- [Jujutsu (jj), a git compatible VCS](https://tonyfinn.com/blog/jj/)
+- [An Introduction to Zig](https://pedropark99.github.io/zig-book/)
+- [Jujutsu in practice](https://arne.me/blog/jj-in-practice)
+- [What happens when you make a move in lichess.org?](https://www.davidreis.me/2024/what-happens-when-you-make-a-move-in-lichess)
+- [How I Stopped Worrying and Learned to Love Go Interfaces](https://dev.to/githaiga22/how-i-stopped-worrying-and-learned-to-love-go-interfaces-3m7p)
+
+Хорошей вам недели!
