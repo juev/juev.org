@@ -1,0 +1,22 @@
+---
+title: "Ссылки #310"
+date: 2024-11-02T09:00:02+0300
+image: https://static.juev.org/images/links.jpg
+tags: 
+  - links
+---
+
+За прошедшую неделю сохранил 58 ссылок. Лучшее как всегда ниже.
+
+- [Thoughts on Arc](https://macwright.com/2024/10/25/arc-browser.html)
+- [redlib-org/redlib](https://github.com/redlib-org/redlib) -- Private front-end for Reddit
+- [Announcing Ibis, the federated Wikipedia Alternative](https://ibis.wiki/article/Announcing_Ibis,_the_federated_Wikipedia_Alternative)
+- [Testing out headscale for a homelab setup](https://luislavena.info/til/testing-out-headscale-for-a-homelab-setup/)
+- [The one-and-only, must-have, eternal Go project layout](https://appliedgocourses.newzenler.com/blog/go-project-layout)
+- [Golang developers should try Odin](https://rm4n0s.github.io/posts/2-go-devs-should-learn-odin/)
+- [sachaos/viddy](https://github.com/sachaos/viddy) -- A modern watch command. Time machine and pager etc
+- [Replacing Readwise with self hosted open source: Wallabag with Obsidian Wallabag plugin](https://hashbang.nl/blog/replacing-readwise-with-self-hosted-open-source-wallabag-with-obsidian-wallabag-plugin)
+- [Archive linkding bookmarks to local Markdown](https://brettterpstra.com/2024/10/31/archive-linkding-bookmarks-to-local-markdown/)
+- [Managed Nebula Networks](https://defined.net/)
+
+Хорошей вам недели!
