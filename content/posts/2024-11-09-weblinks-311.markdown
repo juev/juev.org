@@ -1,0 +1,20 @@
+---
+title: "Ссылки #311"
+date: 2024-11-09T11:09:02+0300
+image: https://static.juev.org/images/links.jpg
+tags: 
+  - links
+---
+
+За прошедшую неделю сохранил 43 ссылки. Лучшее как всегда ниже.
+
+- [simonw/llm-gguf](https://github.com/simonw/llm-gguf)
+- [Threat modeling YubiKeys and passkeys.](https://yawnbox.is/blog/threat-modeling-yubikeys-and-passkeys/)
+- [thelounge/thelounge](https://github.com/thelounge/thelounge) -- Modern, responsive, cross-platform, self-hosted web IRC client
+- [ahmetsait/toolgit](https://github.com/ahmetsait/toolgit) -- Git Productivity Toolkit
+- [orsinium-labs/jsony](https://github.com/orsinium-labs/jsony) -- A blazing fast and safe Go package for serializing JSON
+- [paulmillr/encrypted-dns](https://github.com/paulmillr/encrypted-dns) -- DNS over HTTPS config profiles for iOS & macOS
+- [Configuring SSH Keys for Multiple GitHub Accounts](https://stevenharman.net/configure-ssh-keys-for-multiple-github-accounts)
+- [hyperlight-dev/hyperlight](https://github.com/hyperlight-dev/hyperlight) -- Hyperlight is a lightweight Virtual Machine Manager (VMM) designed to be embedded within applications
+
+Хорошей вам недели!
