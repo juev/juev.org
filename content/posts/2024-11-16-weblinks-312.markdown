@@ -1,0 +1,22 @@
+---
+title: "Ссылки #312"
+date: 2024-11-16T10:05:02+0300
+image: https://static.juev.org/images/links.jpg
+tags: 
+  - links
+---
+
+За прошедшую неделю сохранил 68 ссылок. Лучшее как всегда ниже.
+
+- [How to self-host all of Bluesky (except the AppView (for now))](https://alice.bsky.sh/post/3laega7icmi2q)
+- [galdor/go-pp](https://github.com/galdor/go-pp)
+- [taubyte/tau](https://github.com/taubyte/tau) -- Open source distributed Platform as a Service
+- [Your Standing Desk Might Actually Be as Bad as Sitting All Day](https://www.sciencealert.com/your-standing-desk-might-actually-be-as-bad-as-sitting-all-day)
+- [dragonflyoss/Dragonfly2](https://github.com/dragonflyoss/Dragonfly2) -- Dragonfly is an open source P2P-based file distribution and image acceleration system
+- [Git and jujutsu: in miniature](https://lottia.net/notes/0013-git-jujutsu-miniature.html)
+- [Very simple proxy  with Tailscale and Docker](https://almeidapaulopt.github.io/tsdproxy/)
+- [google/go-safeweb](https://github.com/google/go-safeweb) -- Secure-by-default HTTP servers in Go
+- [adept/full-fledged-hledger](https://github.com/adept/full-fledged-hledger) -- Tutorial on Hledger setup with multi-year files, multi-source imports and a range of auto-generated reports
+- [What To Use Instead of PGP](https://soatok.blog/2024/11/15/what-to-use-instead-of-pgp/)
+
+Хорошей вам недели!
