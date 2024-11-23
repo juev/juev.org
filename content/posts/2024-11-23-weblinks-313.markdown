@@ -1,0 +1,20 @@
+---
+title: "Ссылки #313"
+date: 2024-11-23T10:39:02+0300
+image: https://static.juev.org/images/links.jpg
+tags: 
+  - links
+---
+
+За прошедшую неделю сохранил 66 ссылок. Лучшее как всегда ниже.
+
+- [Yggdrasil Network](https://yggdrasil-network.github.io/)
+- [The TTY demystified](http://www.linusakesson.net/programming/tty/)
+- [oils-for-unix/oils](https://github.com/oils-for-unix/oils)
+- [Creating a VS Code Theme](https://css-tricks.com/creating-a-vs-code-theme/)
+- [Traceroute isn't real, or: Whoops! Everyone Was Wrong Forever](https://gekk.info/articles/traceroute.htm)
+- [Why I stopped using OpenBSD](https://dataswamp.org/~solene/2024-11-15-why-i-stopped-using-openbsd.html)
+- [automatisch/automatisch](https://github.com/automatisch/automatisch) -- The open source Zapier alternative
+- [Mathematical Thinking Isn’t What You Think It Is](https://www.quantamagazine.org/mathematical-thinking-isnt-what-you-think-it-is-20241118/)
+
+Хорошей вам недели!
