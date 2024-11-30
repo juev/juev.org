@@ -1,0 +1,19 @@
+---
+title: "Ссылки #314"
+date: 2024-11-30T16:02:02+0300
+image: https://static.juev.org/images/links.jpg
+tags: 
+  - links
+---
+
+За прошедшую неделю сохранил 97 ссылок. Лучшее как всегда ниже.
+
+- [Why one would use Qubes OS?](https://dataswamp.org/~solene/2023-06-17-qubes-os-why.html)
+- [How to Get Started with Tree-Sitter](https://www.masteringemacs.org/article/how-to-get-started-tree-sitter)
+- [This Website is Hosted on Bluesky](https://danielmangum.com/posts/this-website-is-hosted-on-bluesky/)
+- [Making a dev container with multiple data services](https://blog.pamelafox.org/2024/11/making-dev-container-with-multiple-data.html)
+- [Why is Golang's Compilation Speed So Fast?](https://www.pixelstech.net/article/1728356198-Why-is-Golang-s-Compilation-Speed-So-Fast)
+- [Haskell: A Great Procedural Language](https://entropicthoughts.com/haskell-procedural-programming)
+- [hkdobrev/cleanmac](https://github.com/hkdobrev/cleanmac)
+
+Хорошей вам недели!
