@@ -1,0 +1,23 @@
+---
+title: "Ссылки #315"
+date: 2024-12-07T10:58:02+0300
+image: https://static.juev.org/images/links.jpg
+tags: 
+  - links
+---
+
+За прошедшую неделю сохранил 70 ссылок. Лучшее как всегда ниже.
+
+- [15 Lessons From 15 Years of Indie App Development](http://lukaspetr.com/15-lessons-from-15-years-of-indie-app-development/)
+- [Advent of Code in Zig](https://kristoff.it/blog/advent-of-code-zig/)
+- [The Art of Not Sharing](https://joanwestenberg.com/the-art-of-not-sharing)
+- [Suture - Supervisor Trees for Go](http://www.jerf.org/iri/post/2930)
+- [Rails is better low code than low code](https://radanskoric.com/articles/rails-is-better-low-code-than-low-code)
+- [Forced to upgrade](https://herman.bearblog.dev/forced-to-upgrade/)
+- [Evolving my ergonomic setup (or, my laptop with extra steps)](https://ntietz.com/blog/evolving-ergo-setup/)
+- [No NAT November: My Month Without IPv4](https://blog.infected.systems/posts/2024-12-01-no-nat-november/)
+- [~sbinet/sako](https://git.sr.ht/~sbinet/sako) -- Wallabag-compatible set of tools for your local sako instance
+- [Omakub](https://omakub.org) -- An Omakase Developer Setup for Ubuntu 24.04+ by DHH
+- [frood, an Alpine initramfs NAS](https://words.filippo.io/dispatches/frood/)
+
+Хорошей вам недели!
