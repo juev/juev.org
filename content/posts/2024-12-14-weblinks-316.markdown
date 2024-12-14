@@ -1,0 +1,19 @@
+---
+title: "Ссылки #316"
+date: 2024-12-14T10:36:02+0300
+image: https://static.juev.org/images/links.jpg
+tags: 
+  - links
+---
+
+За прошедшую неделю сохранил 58 ссылок. Лучшее как всегда ниже.
+
+- [0006 Switching to Firefox](https://asindu.xyz/posts/switching-to-firefox/)
+- [Start With the Go Standard Library](https://matthewsanabria.dev/posts/start-with-the-go-standard-library/)
+- [jdx/mise](https://github.com/jdx/mise) -- dev tools, env vars, task runner
+- [A-F-V/obsidian-arcana](https://github.com/A-F-V/obsidian-arcana) -- Supercharge your Obsidian note-taking through AI-powered insights and suggestions
+- [Compromising OpenWrt Supply Chain via Truncated SHA-256 Collision and Command Injection](https://flatt.tech/research/posts/compromising-openwrt-supply-chain-sha256-collision/)
+- [Note-writing systems](https://notes.andymatuschak.org/%C2%A7Note-writing_systems)
+- [Building an IPv6-focused OpenBSD home router](https://blog.infected.systems/posts/2024-12-07-building-an-ipv6-focused-openbsd-home-router/)
+
+Хорошей вам недели!
