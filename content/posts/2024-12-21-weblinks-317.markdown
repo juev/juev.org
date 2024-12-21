@@ -1,0 +1,19 @@
+---
+title: "Ссылки #317"
+date: 2024-12-21T10:52:02+0300
+image: https://static.juev.org/images/links.jpg
+tags: 
+  - links
+---
+
+За прошедшую неделю сохранил 62 ссылки. Лучшее как всегда ниже.
+
+- [Helix: Why (And How) I Use It](https://jonathan-frere.com/posts/helix/)
+- [mtime comparison considered harmful](https://apenwarr.ca/log/20181113)
+- [In search of a faster SQLite](https://avi.im/blag/2024/faster-sqlite/)
+- [zylon-ai/private-gpt](https://github.com/zylon-ai/private-gpt)
+- [SQLite: a simple database for smol projects](https://adele.pages.casa/md/blog/sqlite-a-simple-database-for-smol-projects.md)
+- [Working around the IPv6-only RDNSS expiry bug affecting macOS and iOS](https://blog.infected.systems/posts/2024-12-18-working-around-macos-and-ios-rdnss-expiry-bug/)
+- [AdGuard Mail — a new AdGuard product to protect your email](https://adguard.com/en/blog/adguard-mail.html)
+
+Хорошей вам недели!
