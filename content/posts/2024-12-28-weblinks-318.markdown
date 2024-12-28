@@ -1,0 +1,22 @@
+---
+title: "Ссылки #318"
+date: 2024-12-28T09:19:02+0300
+image: https://static.juev.org/images/links.jpg
+tags: 
+  - links
+---
+
+За прошедшую неделю сохранил 54 ссылки. Лучшее как всегда ниже.
+
+- [jtroo/kanata](https://github.com/jtroo/kanata) -- Improve keyboard comfort and usability with advanced customization
+- [emacs.tv](http://emacs.tv)
+- [AsciiDoc Language Specification](https://batsov.com/articles/2024/02/22/asciidoc-language-specification/)
+- [How bloom filters made SQLite 10x faster](https://avi.im/blag/2024/sqlite-past-present-future/)
+- [Haxxnet/Compose-Examples](https://github.com/Haxxnet/Compose-Examples)
+- [Madrid 101](https://madrid101.xyz/) -- ответы на частые вопросы чата «Номады в Мадриде»
+- [Итоги Года 2024 от vas3k](https://vas3k.blog/blog/2024/)
+- [My homelab](https://blog.klein.ruhr/my-homelab/)
+- [hoarder-app/hoarder](https://github.com/hoarder-app/hoarder) -- A self-hostable bookmark-everything app
+- [Write your Own Virtual Machine](https://www.jmeiners.com/lc3-vm/)
+
+Хорошей вам недели!
