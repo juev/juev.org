@@ -1,0 +1,49 @@
+---
+title: "Git tips"
+date: 2025-01-04T10:32:02+0300
+tags: 
+  - git
+  - tips
+---
+
+## Переключение и обновление главной ветки
+
+В работе с git часто приходиться переключаться в главную ветку, обновлять ее и затем уже проводить дальнейшие операции. Проблема в том, что если ранее все главные ветви назывались master, то теперь это не так и в ряде репозиториев есть главные ветви с именем main. Запоминать проблематично. Для упрощения работы создал себе скрипт `git-m`:
+
+```sh
+#!/usr/bin/env fish
+git switch (git main-branch)
+git pull --rebase
+```
+
+И теперь достаточно вызвать команду `git m` для переключения в главную ветку, с каким именем она бы не была, и дальнейшее ее обновление.
+
+## Push на несколько серверов
+
+По умолчанию задается один origin сервер, который используется и для отслеживания изменений и для передачи изменений на него. Но можно задать несколько ссылок для того, чтобы отправлять изменения сразу в несколько remote-серверов.
+
+По умолчанию:
+
+```sh
+$ git remote -v
+origin  git@github.com:juev/dotfiles.git (fetch)
+origin  git@github.com:juev/dotfiles.git (push)
+```
+
+Определяем ссылки для push:
+
+```sh
+git remote set-url --add --push origin git@github.com:juev/dotfiles.git
+git remote set-url --add --push origin git@git-ssh.evsyukov.org:juev/chezmoi.git
+```
+
+Проверяем:
+
+```sh
+$ git remote -v
+origin  git@github.com:juev/dotfiles.git (fetch)
+origin  git@github.com:juev/dotfiles.git (push)
+origin  git@git-ssh.evsyukov.org:juev/chezmoi.git (push)
+```
+
+Теперь pull будет проводиться с GitHub, а push сразу на оба сервера.
