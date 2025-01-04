@@ -1,0 +1,20 @@
+---
+title: "Ссылки #319"
+date: 2025-01-04T09:18:02+0300
+image: https://static.juev.org/images/links.jpg
+tags: 
+  - links
+---
+
+За прошедшую неделю сохранил 44 ссылки. Лучшее как всегда ниже.
+
+- [u-root/u-root](https://github.com/u-root/u-root) -- u-root can create a one-binary root file system (initramfs) containing a busybox-like set of tools written in Go
+- [I keep turning my Google Sheets into phone-friendly webapps, and I can’t stop](https://arstechnica.com/gadgets/2024/12/making-tiny-no-code-webapps-out-of-spreadsheets-is-a-weirdly-fulfilling-hobby/)
+- [Топ-10 приложений для электронного цеттелькастен](https://fedorovpishet.ru/zettelkasten-apps/)
+- [EbookFoundation/free-programming-books](https://github.com/EbookFoundation/free-programming-books)
+- [rapiz1/rathole](https://github.com/rapiz1/rathole) -- A lightweight and high-performance reverse proxy for NAT traversal
+- [GrapheneOS: the private and secure mobile OS](https://grapheneos.org/)
+- [Déjà vu: Ghostly CVEs in my terminal title](https://dgl.cx/2024/12/ghostty-terminal-title)
+- [dunglas/mercure](https://github.com/dunglas/mercure) -- An open, easy, fast, reliable and battery-efficient solution for real-time communications
+
+Хорошей вам недели!
