@@ -1,0 +1,20 @@
+---
+title: "Ссылки #320"
+date: 2025-01-11T12:26:02+0300
+image: https://static.juev.org/images/links.jpg
+tags: 
+  - links
+---
+
+За прошедшую неделю сохранил 64 ссылки. Лучшее как всегда ниже.
+
+- [Git: force colourization with color.ui or --color](https://adamj.eu/tech/2025/01/03/git-force-colourization/)
+- [DebugString(): a handy pseudo-standard for Go libraries](https://dolthub.com/blog/2025-01-03-gos-debug-string-pseudo-standard/)
+- [Testing a linker](https://davidlattimore.github.io/posts/2024/07/17/testing-a-linker.html)
+- [How NAT traversal works](https://tailscale.com/blog/how-nat-traversal-works)
+- [Collection of insane and fun facts about SQLite](https://avi.im/blag/2024/sqlite-facts/)
+- [PrivateBin/PrivateBin](https://github.com/PrivateBin/PrivateBin)
+- [if got, want: A Simple Way to Write Better Go Tests](https://mtlynch.io/if-got-want-improve-go-tests/)
+- [Gist of Go: Context](https://antonz.org/go-concurrency/context/)
+
+Хорошей вам недели!
