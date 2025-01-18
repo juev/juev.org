@@ -1,0 +1,22 @@
+---
+title: "Ссылки #321"
+date: 2025-01-18T10:49:02+0300
+image: https://static.juev.org/images/links.jpg
+tags: 
+  - links
+---
+
+За прошедшую неделю сохранил 58 ссылок.
+
+- [Be aware of the Makefile effect](https://blog.yossarian.net/2025/01/10/Be-aware-of-the-Makefile-effect)
+- [MiniPerplx](https://mplx.run)
+- [Private BitTorrent tracker for everyone](https://privtracker.com/)
+- [Как я провёл 18 лет в консоли Linux и ни о чём не жалею](https://eugene-andrienko.com/it/2024/01/02/life-in-console.html)
+- [Modifying Private Variables of a Struct in Go Using unsafe and reflect](https://medium.com/@darshan.na185/modifying-private-variables-of-a-struct-in-go-using-unsafe-and-reflect-5447b3019a80)
+- [Don’t Use Session (Signal Fork)](https://soatok.blog/2025/01/14/dont-use-session-signal-fork/)
+- [SimpleX network: large groups and privacy-preserving content moderation](https://simplex.chat/blog/20250114-simplex-network-large-groups-privacy-preserving-content-moderation.html)
+- [Passkeys: they're not perfect but they're getting better](https://www.ncsc.gov.uk/blog-post/passkeys-not-perfect-getting-better)
+- [I Ditched the Algorithm for RSS—and You Should Too](https://joeyehand.com/blog/2025/01/15/i-ditched-the-algorithm-for-rssand-you-should-too/)
+- [Building an IPv6-focused OpenBSD home router](https://blog.infected.systems/posts/2024-12-07-building-an-ipv6-focused-openbsd-home-router/)
+
+Хорошей вам недели!
