@@ -1,0 +1,18 @@
+---
+title: "Ссылки #322"
+date: 2025-01-25T10:08:02+0300
+image: https://static.juev.org/images/links.jpg
+tags: 
+  - links
+---
+
+За прошедшую неделю сохранил 60 ссылок.
+
+- [Understand Assembly low-level programming in 22 minutes](https://www.youtube.com/watch?v=DWkImpawzhc)
+- [How Unix Spell Ran in 64kB RAM](https://blog.codingconfessions.com/p/how-unix-spell-ran-in-64kb-ram)
+- [The Fuzzing Book](https://www.fuzzingbook.org/)
+- [Revisiting wearable computing](https://sachachua.com/blog/2025/01/revisiting-wearable-computing/)
+- [Read the Code, Not the Profile](https://reasonablypolymorphic.com/blog/read-the-code/index.html)
+- [Little Snitch feature nobody knows about](https://lapcatsoftware.com/articles/2025/1/6.html)
+
+Хорошей вам недели!
