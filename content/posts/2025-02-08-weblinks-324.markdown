@@ -1,0 +1,24 @@
+---
+title: "Ссылки #324"
+date: 2025-02-08T10:28:02+0300
+image: https://static.juev.org/images/links.jpg
+tags: 
+  - links
+---
+
+За прошедшую неделю сохранил всего 24 ссылки. Как писал ранее, я удалил с телефона все социальные приложения.
+В результате появилось больше свободного времени. Но как результат, почти перестал читать статьи.
+
+Теперь читаю только то, что мне нужно по работе или дому. И сохранять на потом при подобном подходе уже нет
+необходимости. Что будет дальше, пока сложно сказать. Есть вероятность того, что на следующей неделе ссылок уже
+не будет. Посмотрим.
+
+А пока вернемся к нашей теме.
+
+- [Jailbreaking DeepSeek R1 - Prompt Injection Using Charcodes](https://substack.com/home/post/p-156004330)
+- [hoppscotch/hoppscotch](https://github.com/hoppscotch/hoppscotch) -- Open source API development ecosystem
+- [Как уйти из Google: Окончательный список лучших частных альтернатив](https://tutanota.com/blog/posts/how-to-leave-google-gmail)
+- [Просто берите Postgres](https://grishaev.me/just-use-postgres/)
+- [radicle](https://radicle.xyz/) -- open source, peer-to-peer code collaboration stack built on Git
+
+Хорошей вам недели!

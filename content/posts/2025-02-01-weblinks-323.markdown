@@ -1,6 +1,6 @@
 ---
 title: "Ссылки #323"
-date: 2025-02-02T11:41:02+0300
+date: 2025-02-01T11:41:02+0300
 image: https://static.juev.org/images/links.jpg
 tags: 
   - links
