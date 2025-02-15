@@ -1,0 +1,34 @@
+---
+title: "Ссылки #325"
+date: 2025-02-15T09:18:02+0300
+image: https://static.juev.org/images/links.jpg
+tags: 
+  - links
+---
+
+Продолжаю отказ от социализации, на этой неделе удалил Twitter аккаунт и аккаунт в Keybase.
+В Mastodon заглядываю примерно раз в день, пробегаю глазами ленту, в которой отключены ответы и репосты.
+Отвечаю на вопросы или иногда комментирую. Главное, что это занимает теперь совсем немного времени.
+
+Ранее описывал опасения о том, что не будет возможности проводить публикации ссылок, так стараюсь читать сразу
+то, что нахожу в интернете. Но подумал, что мне ничего не стоит сохранить интересную ссылку, но уже не для того
+чтобы возвращаться к ней позже, а для того, чтобы включить ее в список на публикацию.
+
+После чего провел миграцию с Getpocket на Instapaper. И все ссылки отправляются теперь в аккаунт Instapaper. А уже
+затем включаются в новостную еженедельную рассылку с помощью IFTTT.
+
+При этом на Github я отключил сбор ссылок, как и удалил свой экземпляр linkding. 
+
+Ну а теперь к нашей теме?
+
+За прошедшую неделю сохранил 41 ссылку.
+
+- [How Safari search engine extensions work](https://lapcatsoftware.com/articles/2025/2/2.html)
+- [Why does Go's io.Reader have such a weird signature?](http://rednafi.com/go/io_reader_signature/)
+- [I created a headless browser in Go. Here's what I learned](https://dev.to/stroiman/i-created-a-headless-browser-in-go-heres-what-i-learned-64j)
+- [You Should Use /tmp/ More](https://atthis.link/blog/2025/58671.html)
+- [Reasons not to refactor](https://thoughtbot.com/blog/reasons-not-to-refactor)
+- [How I Automated My Computer Life With macOS Folder Actions](https://interfacecraft.online/posts/blog/2025/how-i-automated-my-computer-life-with-macos-folder-actions/)
+- [Trying out Python packages with ipython and uvx](https://til.simonwillison.net/python/itry)
+
+Хорошей вам недели!
