@@ -1,0 +1,20 @@
+---
+title: "Ссылки #326"
+date: 2025-02-22T12:37:02+0300
+image: https://static.juev.org/images/links.jpg
+tags: 
+  - links
+---
+
+За прошедшую неделю сохранил 73 ссылки.
+
+- [Zed now predicts your next edit with Zeta, our new open model - Zed Blog](https://zed.dev/blog/edit-prediction)
+- [Epoch Semantic Versioning](https://antfu.me/posts/epoch-semver)
+- [The hardest working font in Manhattan](https://aresluna.org/the-hardest-working-font-in-manhattan/)
+- [My Life in Weeks by Gina Trapani](https://weeks.ginatrapani.org/)
+- [My Journey from IntelliJ IDEA to Minimal Configuration Emacs](https://prikaz98.github.io/blog/emacs-journey/emacs-journey.html)
+- [Reviewing the Cryptography Used by Signal - Dhole Moments](https://soatok.blog/2025/02/18/reviewing-the-cryptography-used-by-signal/)
+- [Signals of Trouble: Multiple Russia-Aligned Threat Actors Actively Targeting Signal Messenger | Google Cloud Blog](https://cloud.google.com/blog/topics/threat-intelligence/russia-targeting-signal-messenger)
+- [Excerpting Instead of Processing • Zettelkasten Method](https://zettelkasten.de/posts/field-report-9-excerpt-process/)
+
+Хорошей вам недели!
