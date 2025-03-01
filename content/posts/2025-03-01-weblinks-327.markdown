@@ -1,0 +1,18 @@
+---
+title: "Ссылки #327"
+date: 2025-03-01T14:36:02+0300
+image: https://static.juev.org/images/links.jpg
+tags: 
+  - links
+---
+
+За прошедшую неделю сохранил 51 ссылку.
+
+- [How Swift's server support powers Things Cloud](https://swift.org/blog/how-swifts-server-support-powers-things-cloud/)
+- [Bookmarklets (and Custom URL Schemes) Are Criminally Underrated](https://silly.business/blog/bookmarklets-and-custom-url-schemes-are-criminally-underrated/)
+- [My Experience Living Without Social Media](https://candost.blog/my-experience-living-without-social-media/)
+- [Style your RSS feed](https://darekkay.com/blog/rss-styling/)
+- [How Core Git Developers Configure Git](https://blog.gitbutler.com/how-git-core-devs-configure-git/)
+- [Introducing a terms of use and updated privacy notice for Firefox](https://blog.mozilla.org/en/products/firefox/firefox-news/firefox-terms-of-use/)
+
+Хорошей вам недели!
