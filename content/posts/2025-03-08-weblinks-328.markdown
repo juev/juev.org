@@ -1,0 +1,19 @@
+---
+title: "Ссылки #328"
+date: 2025-03-08T10:19:02+0300
+image: https://static.juev.org/images/links.jpg
+tags: 
+  - links
+---
+
+За прошедшую неделю сохранил 53 ссылки.
+
+- [Changing From Hledger to Beancount - Ellane W](http://ellanew.com/2025-03-01-pta-from-hledger-to-beancount)
+- [Functional Options Pattern](https://andrerfcsantos.dev/posts/functional-options-pattern/)
+- [GitHub - cloudflare/orange](https://github.com/cloudflare/orange)
+- [Towards a test-suite for TOTP codes](https://shkspr.mobi/blog/2025/03/towards-a-test-suite-for-totp-codes/)
+- [iCloud remotely triggers iMessage sign-in and sync](https://lapcatsoftware.com/articles/2025/3/1.html)
+- [Git without a forge](https://www.chiark.greenend.org.uk/~sgtatham/quasiblog/git-no-forge/)
+- [Aider: Using uv as an installer](https://simonwillison.net/2025/Mar/6/aider-using-uv-as-an-installer/)
+
+Хорошей вам недели!
