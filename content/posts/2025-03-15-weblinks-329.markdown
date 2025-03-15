@@ -1,0 +1,18 @@
+---
+title: "Ссылки #329"
+date: 2025-03-15T10:08:02+0300
+image: https://static.juev.org/images/links.jpg
+tags: 
+  - links
+---
+
+За прошедшую неделю сохранил 50 ссылок.
+
+- [How to manage tool dependencies in Go 1.24+ - Alex Edwards](https://www.alexedwards.net/blog/how-to-manage-tool-dependencies-in-go-1.24-plus)
+- [Socially self-hosting source code with Tangled on Bluesky](https://anil.recoil.org/notes/disentangling-git-with-bluesky)
+- [Zig's dot star syntax (value.*)](https://www.openmymind.net/Zig-Dot-Star-Syntax/)
+- [Kill your Feeds - Stop letting algorithms dictate how you think](https://usher.dev/posts/2025-03-08-kill-your-feeds/)
+- [I built my first mechanical keyboard – Marcin Juszkiewicz](https://marcin.juszkiewicz.com.pl/2025/03/09/i-built-my-first-mechanical-keyboard/)
+- [Too long for a toot: What media server should I use?](https://neilzone.co.uk/2025/03/too-long-for-a-toot-what-media-server-should-i-use/)
+
+Хорошей вам недели!
