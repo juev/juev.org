@@ -6,7 +6,7 @@ tags:
   - links
 ---
 
-За прошедшую неделю сохранил 44 ссылок.
+За прошедшую неделю сохранил 44 ссылки.
 
 - [I threw away Audible’s app, and now I self-host my audiobooks](https://arstechnica.com/gadgets/2025/03/i-threw-away-audibles-app-and-now-i-self-host-my-audiobooks/)
 - [Felix' Blog - A Review of Helix after 1.5 Years](https://felix-knorr.net/posts/2025-03-16-helix-review.html)
