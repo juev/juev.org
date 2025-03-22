@@ -1,0 +1,20 @@
+---
+title: "Ссылки #330"
+date: 2025-03-22T09:16:02+0300
+image: https://static.juev.org/images/links.jpg
+tags: 
+  - links
+---
+
+За прошедшую неделю сохранил 44 ссылок.
+
+- [I threw away Audible’s app, and now I self-host my audiobooks](https://arstechnica.com/gadgets/2025/03/i-threw-away-audibles-app-and-now-i-self-host-my-audiobooks/)
+- [Felix' Blog - A Review of Helix after 1.5 Years](https://felix-knorr.net/posts/2025-03-16-helix-review.html)
+- [Benchmarking: What You Can't Miss in Go 1.24](https://jarosz.dev/code/benchmarking-what-you-cannot-miss-in-go-1.24/)
+- [Leaving Neovim for Zed](https://stevedylan.dev/posts/leaving-neovim-for-zed/)
+- [Chaos in Cloudflare’s Lisbon office: securing the Internet with wave motion](https://blog.cloudflare.com/chaos-in-cloudflare-lisbon-office-securing-the-internet-with-wave-motion/)
+- [kmx.io blog : Why I stopped everything and started writing C again](https://www.kmx.io/blog/why-stopped-everything-and-started-writing-C-again/)
+- [How I use Obsidian — Steph Ango](https://stephango.com/vault)
+- [Image cache & resize service](https://wsrv.nl/)
+
+Хорошей вам недели!
