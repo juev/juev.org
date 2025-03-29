@@ -1,0 +1,21 @@
+---
+title: "Ссылки #331"
+date: 2025-03-29T08:36:02+0300
+image: https://static.juev.org/images/links.jpg
+tags: 
+  - links
+---
+
+За прошедшую неделю сохранил 61 ссылку.
+
+- [A Go Puzzle: How can this panic?](https://www.emoses.org/posts/go-puzzle-nil-panic/)
+- [Lightpanda | The headless browser](https://lightpanda.io)
+- [shaarli/Shaarli](https://github.com/shaarli/Shaarli) – The personal, minimalist, super-fast, database free, bookmarking service
+- [Go import cycles: three strategies for how to deal with them, and a plea for a fourth](https://dolthub.com/blog/2025-03-14-go-import-cycle-strategies/)
+- [Garage - An open-source distributed object storage service](https://garagehq.deuxfleurs.fr/)
+- [Ledger Implementation in PostgreSQL](https://www.pgrs.net/2025/03/24/pgledger-ledger-implementation-in-postgresql/)
+- [Why I recommend against Brave](https://thelibre.news/no-really-dont-use-brave/)
+- [Atom vs. RSS](https://nullprogram.com/blog/2013/09/23/)
+- [Getting Started with TDD: A Practical Guide to Beginning a Lasting Practice](https://8thlight.com/insights/getting-started-tdd-practical-guide)
+
+Хорошей вам недели!
