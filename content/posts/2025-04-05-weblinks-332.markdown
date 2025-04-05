@@ -1,0 +1,21 @@
+---
+title: "Ссылки #332"
+date: 2025-04-05T09:20:02+0300
+image: https://static.juev.org/images/links.jpg
+tags: 
+  - links
+---
+
+За прошедшую неделю сохранил 50 ссылок.
+
+- [tiendc/go-deepcopy: Fast deep-copy library for Go](https://github.com/tiendc/go-deepcopy)
+- [Jevons Paradox: A personal perspective](https://fakepixels.substack.com/p/jevons-paradox-a-personal-perspective)
+- [I Quit Google Search for AI—and I’m Not Going Back](https://www.wsj.com/tech/personal-tech/google-search-chatgpt-perplexity-gemini-6ac749d9)
+- [henrygd/beszel: Lightweight server monitoring hub with historical data, docker stats, and alerts.](https://github.com/henrygd/beszel)
+- [Programming with an AI copilot: My perspective as a senior dev](https://mlagerberg.com/blog-ai-copilot/)
+- [TIDGI](https://tidgi.fun/)
+- [Aiverything | Launcher to your everything](https://aiverything.me/)
+- [Why I stopped using AI code editors · Luciano Nooijen](https://lucianonooijen.com/blog/why-i-stopped-using-ai-code-editors/)
+- [Вышел Nelm 1.0: совместимая с Helm-чартами альтернатива Helm 3 / Хабр](https://habr.com/ru/companies/flant/articles/896846/) 
+
+Хорошей вам недели!
