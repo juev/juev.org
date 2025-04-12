@@ -1,0 +1,18 @@
+---
+title: "Ссылки #333"
+date: 2025-04-12T10:36:02+0300
+image: https://static.juev.org/images/links.jpg
+tags: 
+  - links
+---
+
+За прошедшую неделю сохранил 46 ссылок.
+
+- [SilverBullet v2: The Path Forward](https://community.silverbullet.md/t/silverbullet-v2-the-path-forward/2036/2?u=zef)
+- [Какой роутер для OpenWrt купить в 2025 году?](https://habr.com/ru/articles/842210/)
+- [Understanding headscale/tailscale ACL](https://anuragbhatia.com/post/2024/04/understanding-headscale-tailscale-acl/)
+- [Zero Copy Readers in Go](https://www.ianlewis.org/en/zero-copy-readers-in-go)
+- [Lets build Git from scratch](https://buildx.substack.com/p/lets-build-git-from-scratch)
+- [Writing C for curl](https://daniel.haxx.se/blog/2025/04/07/writing-c-for-curl/)
+
+Хорошей вам недели!
