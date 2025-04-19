@@ -1,0 +1,20 @@
+---
+title: "Ссылки #334"
+date: 2025-04-19T09:19:02+0300
+image: https://static.juev.org/images/links.jpg
+tags: 
+  - links
+---
+
+За прошедшую неделю сохранил 49 ссылок.
+
+- [Each Failed Project Has Failed in Its Own Way – Anna Karenina Principle of Software Failure](https://christiantietze.de/posts/2025/04/anna-karenina-software-failure/)
+- [Emacs Lisp Elements](https://protesilaos.com/emacs/emacs-lisp-elements)
+- [Stevens: a hackable AI assistant using a single SQLite table and a handful of cron jobs](https://simonwillison.net/2025/Apr/13/stevens/)
+- [Atuin Scripts: Shareable, Syncable Shell Snippets](https://blog.atuin.sh/atuin-scripts-shareable-syncable-shell-snippets/)
+- [How To Build An Agent | Amp](https://ampcode.com/how-to-build-an-agent)
+- [go:linkname в Go](https://habr.com/ru/companies/otus/articles/900306/)
+- [Datastar - The hypermedia framework.](https://data-star.dev/)
+- [Emacs for Everything](https://joshblais.com/posts/emacs-for-everything/)
+
+Хорошей вам недели!
