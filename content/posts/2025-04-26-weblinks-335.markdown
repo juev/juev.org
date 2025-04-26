@@ -1,0 +1,19 @@
+---
+title: "Ссылки #335"
+date: 2025-04-26T18:17:02+0300
+image: https://static.juev.org/images/links.jpg
+tags:
+  - links
+---
+
+За прошедшую неделю сохранил 42 ссылки. Но не все успел прочесть, впервые за столь долгое время.
+
+- [Optimizing Heap Allocations in Golang: A Case Study](https://dolthub.com/blog/2025-04-18-optimizing-heap-allocations/)
+- [The Zen of Task Management with Org](https://bzg.fr/en/the-zen-of-task-management-with-org/)
+- [Productivity](https://blog.samaltman.com/productivity/)
+- [6 Docker containers that save me serious money](https://www.xda-developers.com/docker-containers-to-save-money/)
+- [md-babel: Executable Markdown code blocks and spreadsheets](https://md-babel.org/)
+- [Про Обсидиан](https://grishaev.me/obsidian/)
+- [Reverse Geocoding is Hard](https://shkspr.mobi/blog/2025/04/reverse-geocoding-is-hard/)
+
+Хорошей вам недели!
