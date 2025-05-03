@@ -1,0 +1,19 @@
+---
+title: "Ссылки #336"
+date: 2025-05-03T10:30:02+0300
+image: https://static.juev.org/images/links.jpg
+tags:
+  - links
+---
+
+За прошедшую неделю сохранил 45 ссылок.
+
+- [Introducing Zed AI - Zed Blog](https://zed.dev/blog/zed-ai)
+- [NNCP](https://www.complete.org/nncp/)
+- [Go Singleflight Melts in Your Code, Not in Your DB](https://victoriametrics.com/blog/go-singleflight/)
+- [research!rsc: Differential Coverage for Debugging](https://research.swtch.com/diffcover)
+- [Another Periodic Suggestion to Try, Just Try, Switching to Kagi for Search](https://daringfireball.net/2025/04/try_switching_to_kagi)
+- [Реклама в «Чёрном зеркале» не антиутопия, а реальность](https://adguard.info/ru/blog/black-mirror-ads-reality-netflix-youtube.html)
+- [How to Set Up an Automated Daily Template in Logseq](https://blog.logseq.com/how-to-set-up-an-automated-daily-template-in-logseq/)
+
+Хорошей вам недели!
