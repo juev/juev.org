@@ -1,0 +1,17 @@
+---
+title: "Ссылки #337"
+date: 2025-05-10T16:36:02+0300
+image: https://static.juev.org/images/links.jpg
+tags:
+  - links
+---
+
+За прошедшую неделю сохранил 35 ссылок.
+
+- [Replacing Kubernetes with systemd](https://blog.yaakov.online/replacing-kubernetes-with-systemd/)
+- [Updating Docker Containers With Zero Downtime](https://linuxhandbook.com/update-docker-container-zero-downtime/)
+- [Go Optimization Guide](https://goperf.dev/)
+- [jj tips and tricks](https://zerowidth.com/2025/jj-tips-and-tricks/)
+- [Cloudflare Tunnel via Docker with SWAG Nginx Reverse Proxy using Subdomains in Proxy Network on Unraid](https://christiantietze.de/posts/2025/05/cloudflare-tunnel-swag-nginx-reverse-proxy-unraid/)
+
+Хорошей вам недели!
