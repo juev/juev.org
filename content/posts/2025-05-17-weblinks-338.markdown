@@ -1,0 +1,20 @@
+---
+title: "Ссылки #338"
+date: 2025-05-17T09:45:02+0300
+image: https://static.juev.org/images/links.jpg
+tags:
+  - links
+---
+
+За прошедшую неделю сохранил 55 ссылок.
+
+- [Generating Golang Source Files at Build-Time with go:generate](https://dolthub.com/blog/2025-05-09-go-generate/)
+- [blackrabbit17/xenolab](https://github.com/blackrabbit17/xenolab) -- A monitoring station for carnivorous flora
+- [Кэширование](https://grishaev.me/cache/)
+- [Org Mode - Organize Your Life In Plain Text!](https://doc.norang.ca/org-mode.html)
+- [conao3/leaf.el: Flexible, declarative, and modern init.el package configuration](https://github.com/conao3/leaf.el)
+- [emacs — Matt Gemmell](https://mattgemmell.scot/emacs/)
+- [Experiment on your code freely with Git worktree](https://opensource.com/article/21/4/git-worktree)
+- [China Just Made the World's Fastest Transistor and It Is Not Made of Silicon](https://www.zmescience.com/science/news-science/china-just-made-the-worlds-fastest-transistor-and-it-is-not-made-of-silicon/)
+
+Хорошей вам недели!
