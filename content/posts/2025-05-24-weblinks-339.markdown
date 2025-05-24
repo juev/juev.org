@@ -1,0 +1,19 @@
+---
+title: "Ссылки #339"
+date: 2025-05-24T09:57:02+0300
+image: https://static.juev.org/images/links.jpg
+tags:
+  - links
+---
+
+За прошедшую неделю сохранил 76 ссылок.
+
+- [Kokoro TTS: Free Text to Speech Online](https://kokoroai.org)
+- [I Picked Golang for My Startup — Biggest Mistake of My Life](https://medium.com/@yashbatra11111/i-picked-golang-for-my-startup-biggest-mistake-of-my-life-970153e45a6a)
+- [O2 VoLTE: locating any customer with a phone call | mastdatabase.co.uk](https://mastdatabase.co.uk/blog/2025/05/o2-expose-customer-location-call-4g/)
+- [Spaced Repetition Systems Have Gotten Way Better](https://domenic.me/fsrs/)
+- [Ditching Obsidian and building my own](https://amberwilliams.io/blogs/building-my-own-pkms)
+- [A Swift Cloud - Things Blog - Cultured Code](https://culturedcode.com/things/blog/2025/05/a-swift-cloud/)
+- [mhaeuser/Battery-Toolkit: Control the platform power state of your Apple Silicon Mac](https://github.com/mhaeuser/Battery-Toolkit)
+
+Хорошей вам недели!
