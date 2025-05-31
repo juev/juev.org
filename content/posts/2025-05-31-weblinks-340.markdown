@@ -1,0 +1,19 @@
+---
+title: "Ссылки #3340"
+date: 2025-05-31T10:09:02+0300
+image: https://static.juev.org/images/links.jpg
+tags:
+  - links
+---
+
+За прошедшую неделю сохранил 71 ссылок.
+
+- [There is no Diffie-Hellman but Elliptic Curve Diffie-Hellman](https://keymaterial.net/2025/05/23/there-is-no-diffie-hellman-but-elliptic-curve-diffie-hellman/)
+- [Configuring Jujutsu](https://oppi.li/posts/configuring_jujutsu)
+- [Use semaphores to limit processing](https://gabnotes.org/use-semaphores-to-limit-processing/)
+- [Diun](https://crazymax.dev/diun/)
+- [Using Git as S3 | Kris Tun](https://kristun.dev/posts/git-as-s3/)
+- [Awesome Emacs on macOS](https://lmno.lol/alvaro/awesome-emacs-on-macos)
+- [What I've learned from jj](https://zerowidth.com/2025/what-ive-learned-from-jj/)
+
+Хорошей вам недели!
