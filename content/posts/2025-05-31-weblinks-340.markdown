@@ -1,5 +1,5 @@
 ---
-title: "Ссылки #3340"
+title: "Ссылки #340"
 date: 2025-05-31T10:09:02+0300
 image: https://static.juev.org/images/links.jpg
 tags:
