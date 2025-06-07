@@ -1,0 +1,23 @@
+---
+title: "Ссылки #341"
+date: 2025-06-07T09:31:02+0300
+image: https://static.juev.org/images/links.jpg
+tags:
+  - links
+---
+
+На этой неделе начал миграцию с Instapaper на Wallabag. По причине того, что в iOS Instapaper не мог сохранять
+из Google Chrome. В конце недели уже этот баг поправили и выпустили новую версию. Но я уже в процессе.
+
+Как оказалось, тут немного накосячил. И ifttt сохранял мне ссылки из самого wallabag, а не оригинала статьи.
+В результате большую часть ссылок уже не восстановить.
+
+В Instapaper сохранил 14 записей. В Wallabag 66. Лучшее как всегда ниже.
+
+- [Beware of fast-math](https://simonbyrne.github.io/notes/fastmath/)
+- [Structured errors in Go | barney's tech blog](https://southcla.ws/structured-errors-in-go)
+- [Why DeepSeek is cheap at scale but expensive to run locally](https://www.seangoedecke.com/inference-batching-and-deepseek/)
+- [goforj/godump](https://github.com/goforj/godump) -- A minimal, developer-friendly pretty-printer and debug dumper for Go structs
+- [ChatGPT без VPN за 10 минут](https://habr.com/ru/articles/870494/)
+
+Хорошей вам недели!
