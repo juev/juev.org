@@ -1,0 +1,20 @@
+---
+title: "Ссылки #342"
+date: 2025-06-14T08:17:02+0300
+image: https://static.juev.org/images/links.jpg
+tags:
+  - links
+---
+
+За прошедшую неделю сохранил 79 ссылок.
+
+- [Boost Your Productivity on the iPad With Guided Access Sessions](https://preslav.me/2025/06/07/boost-ipad-productivity-guided-access/)
+- [I Read All Of Cloudflare's Claude-Generated Commits](https://www.maxemitchell.com/writings/i-read-all-of-cloudflares-claude-generated-commits/)
+- [pandoc novel — Matt Gemmell](https://mattgemmell.scot/pandoc-novel/)
+- [Poison everywhere: No output from your MCP server is safe](https://www.cyberark.com/resources/threat-research-blog/poison-everywhere-no-output-from-your-mcp-server-is-safe)
+- [The last six months in LLMs, illustrated by pelicans on bicycles](https://simonwillison.net/2025/Jun/6/six-months-in-llms/)
+- [New Quantum Algorithm Factors Numbers With One Qubit | Quanta Magazine](https://www.quantamagazine.org/new-quantum-algorithm-factors-numbers-with-one-qubit-20250609/)
+- [Vibe Coding with Claude Code](https://dolthub.com/blog/2025-06-09-vibe-coding-with-claude/)
+- [Parallel AI Coding with Git Worktrees and Custom Claude Code Commands | Agent Interviews](https://docs.agentinterviews.com/blog/parallel-ai-coding-with-gitworktrees/)
+
+Хорошей вам недели!
