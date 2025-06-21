@@ -1,0 +1,19 @@
+---
+title: "Ссылки #343"
+date: 2025-06-21T09:20:02+0300
+image: https://static.juev.org/images/links.jpg
+tags:
+  - links
+---
+
+За прошедшую неделю сохранил 83 ссылки.
+
+- [todo.txt tasks in my TRMNL](https://akselmo.dev/posts/todotxt-in-my-trmnl/)
+- [My Emacs Elfeed Configuration](https://plrj.org/2025/06/14/my-emacs-elfeed-configuration/)
+- [Stop Overthinking Obsidian: A Beginner’s Guide That Actually Works](https://medium.com/@andremonthy/stop-overthinking-obsidian-a-beginners-guide-that-actually-works-c46ae9953ac7)
+- [Building JSON on the Command Line is Obnoxious | Obiter dicta](https://blog.brossia.com/posts/annoying_json/)
+- [Resurrecting a dead torrent tracker and finding 3 million peers](https://kianbradley.com/2025/06/15/resurrecting-a-dead-tracker.html)
+- [What Would a Kubernetes 2.0 Look Like](https://matduggan.com/what-would-a-kubernetes-2-0-look-like/)
+- [Makefile Tutorial by Example](https://makefiletutorial.com)
+
+Хорошей вам недели!
