@@ -1,0 +1,20 @@
+---
+title: "Ссылки #344"
+date: 2025-06-28T09:45:02+0300
+image: https://static.juev.org/images/links.jpg
+tags:
+  - links
+---
+
+За прошедшую неделю сохранил 58 ссылок.
+
+- [Harper: Free, Open Source Grammar Checker](https://writewithharper.com)
+- [Breaking WebAuthn, FIDO2, and Forging Passkeys](https://www.nullpt.rs/forging-passkeys)
+- [Thinking about time travel with the Emacs text editor, Org Mode, and backups](https://sachachua.com/blog/2025/06/thinking-about-time-travel-with-the-emacs-text-editor-and-org-mode/)
+- [opencode-ai/opencode: A powerful AI coding agent. Built for the terminal.](https://github.com/opencode-ai/opencode)
+- [Don’t throw away your old notes](https://writingslowly.com/2025/06/23/dont-throw-away-your-old.html)
+- [Automatisch - Open Source Zapier Alternative](https://automatisch.io)
+- [How much slower is random access, really? | Sam Estep](https://samestep.com/blog/random-access/)
+- [How I Use Kagi](https://flamedfury.com/posts/how-i-use-kagi/)
+
+Хорошей вам недели!
