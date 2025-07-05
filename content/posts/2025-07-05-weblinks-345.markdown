@@ -1,0 +1,21 @@
+---
+title: "Ссылки #345"
+date: 2025-07-05T09:57:02+0300
+image: https://static.juev.org/images/links.jpg
+tags:
+  - links
+---
+
+За прошедшую неделю сохранил 75 ссылок.
+
+- [I Deleted My Second Brain](https://www.joanwestenberg.com/p/i-deleted-my-second-brain)
+- [Go is 80/20 language](https://blog.kowalczyk.info/article/d-2025-06-26/go-is-8020-language.html)
+- [Solving "Passport Application" with Haskell](https://jameshaydon.github.io/passport/)
+- [Using the Internet without IPv4 connectivity](https://jamesmcm.github.io/blog/no-ipv4/)
+- [Stop Tweaking Your Tools and Start Actually Using Them](https://www.dsebastien.net/stop-tweaking-your-tools-and-start-actually-using-them-how-perfectionism-is-killing-your-productivity/)
+- [I made my VM think it has a CPU fan](https://wbenny.github.io/2025/06/29/i-made-my-vm-think-it-has-a-cpu-fan.html)
+- [key-networks/ztncui: ZeroTier network controller UI](https://github.com/key-networks/ztncui)
+- [You should delete tests](https://andre.arko.net/2025/06/30/you-should-delete-tests/)
+- [Unpopular opinion: Kubernetes is a symptom, not a solution.](https://andreafortuna.org/2025/06/20/unpopular-opinion-kubernetes-is-a-symptom-not-a-solution.html)
+
+Хорошей вам недели!
