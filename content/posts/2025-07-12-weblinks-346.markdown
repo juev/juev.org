@@ -1,0 +1,19 @@
+---
+title: "Ссылки #346"
+date: 2025-07-12T09:59:02+0300
+image: https://static.juev.org/images/links.jpg
+tags:
+  - links
+---
+
+За прошедшую неделю сохранил 71 ссылку.
+
+- [N-Back Test - Free Online Working Memory Training](https://n-back.net/)
+- [Git experts should try Jujutsu](https://pksunkara.com/thoughts/git-experts-should-try-jujutsu/)
+- [Local First Software Is Easier to Scale](https://elijahpotter.dev/articles/local-first_software_is_easier_to_scale)
+- [Get the location of the ISS using DNS](https://shkspr.mobi/blog/2025/07/get-the-location-of-the-iss-using-dns/)
+- [I don't know how CPUs work so I simulated one in code](https://djharper.dev/post/2019/05/21/i-dont-know-how-cpus-work-so-i-simulated-one-in-code/)
+- [lraton/FlopperZiro: A Flipper Zero clone, but cheapest, DIY and simply Open Source, made with Arduino IDE](https://github.com/lraton/FlopperZiro)
+- [o3 used my saved Pocket (RIP) links to profile me](https://noperator.dev/posts/o3-pocket-profile/)
+
+Хорошей вам недели!
