@@ -1,0 +1,48 @@
+{{- $src := .Get "src" -}}
+{{- $alt := .Get "alt" | default "Изображение" -}}
+{{- $class := .Get "class" | default "" -}}
+{{- $width := .Get "width" -}}
+{{- $height := .Get "height" -}}
+{{- $loading := .Get "loading" | default "lazy" -}}
+
+{{- $image := "" -}}
+{{- $webp := "" -}}
+{{- $fallback := "" -}}
+
+{{- if $src -}}
+    {{- $imagePath := printf "static/%s" $src -}}
+    {{- if fileExists $imagePath -}}
+        {{- $image = resources.Get $src -}}
+        {{- if $image -}}
+            {{- $webp = $image.Resize "800x webp q85" -}}
+            {{- $fallback = $image.Resize "800x jpg q85" -}}
+        {{- end -}}
+    {{- end -}}
+{{- end -}}
+
+<figure class="image-container{{ with $class }} {{ . }}{{ end }}">
+    {{- if and $image $webp $fallback -}}
+    <picture>
+        <source srcset="{{ $webp.RelPermalink }}" type="image/webp">
+        <source srcset="{{ $fallback.RelPermalink }}" type="image/jpeg">
+        <img src="{{ $fallback.RelPermalink }}" 
+             alt="{{ $alt }}" 
+             {{- with $width }} width="{{ . }}"{{ end }}
+             {{- with $height }} height="{{ . }}"{{ end }}
+             loading="{{ $loading }}"
+             decoding="async">
+    </picture>
+    {{- else -}}
+    {{- /* Fallback for external images or when processing fails */ -}}
+    <img src="{{ $src }}" 
+         alt="{{ $alt }}" 
+         {{- with $width }} width="{{ . }}"{{ end }}
+         {{- with $height }} height="{{ . }}"{{ end }}
+         {{- with $class }} class="{{ . }}"{{ end }}
+         loading="{{ $loading }}"
+         decoding="async">
+    {{- end -}}
+    {{- with (.Get "caption") -}}
+    <figcaption>{{ . | markdownify }}</figcaption>
+    {{- end -}}
+</figure> 

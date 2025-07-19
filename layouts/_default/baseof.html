@@ -16,12 +16,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     {{ "<!-- end -->" | safeHTML }}
     <link rel="canonical" href="{{- .Permalink -}}">
-    <link rel="shortcut icon" href="{{ .Site.BaseURL }}favicon.ico">
-    <link rel="apple-touch-icon" href="{{ .Site.BaseURL }}apple-touch-icon.png">
+    <link rel="shortcut icon" href="/favicon.ico">
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png">
     <link rel="alternate" type="application/rss" href="{{ .Site.BaseURL }}atom.xml" title="Denis Evsyukov">
     <link rel="manifest" href="/site.webmanifest">
+    
+    <!-- Critical CSS inline for faster rendering -->
+    {{ $critical := resources.Get "scss/_critical.scss" | toCSS | minify -}}
+    <style>{{ $critical.Content | safeCSS }}</style>
+    
+    <!-- Preload main CSS for better performance -->
     {{ $style := resources.Get "scss/master.scss" | toCSS | minify | fingerprint -}}
-    <link rel="stylesheet" href="{{ $style.Permalink }}">
+    <link rel="preload" href="{{ $style.Permalink }}" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="{{ $style.Permalink }}"></noscript>
     <link rel="sitemap" type="application/xml" title="Sitemap" href="{{ .Site.BaseURL }}sitemap.xml" />
     {{- with .PrevInSection }}
     <link rel="prev" href="{{.Permalink}}">
@@ -62,32 +69,103 @@
     {{ with .Params.image }}<meta itemprop="image" content="{{ . | absURL }}" />{{ else }}<meta itemprop="image" content="{{ .Site.Params.ogimage | absURL }}" />{{ end }}
     {{ "<!-- end schema.org -->" | safeHTML }}
     {{ partial "schema.html" . }}
+    
+    <!-- Service Worker Registration -->
+    <script>
+        if ('serviceWorker' in navigator) {
+            window.addEventListener('load', function() {
+                navigator.serviceWorker.register('/sw.js')
+                    .then(function(registration) {
+                        console.log('Service Worker registered successfully:', registration.scope);
+                        
+                        // Listen for updates
+                        registration.addEventListener('updatefound', () => {
+                            const newWorker = registration.installing;
+                            newWorker.addEventListener('statechange', () => {
+                                if (newWorker.state === 'installed' && navigator.serviceWorker.controller) {
+                                    // New content is available, refresh
+                                    if (confirm('Доступна новая версия сайта. Обновить?')) {
+                                        window.location.reload();
+                                    }
+                                }
+                            });
+                        });
+                    })
+                    .catch(function(error) {
+                        console.log('Service Worker registration failed:', error);
+                    });
+            });
+            
+            // Online/offline status indicator
+            function updateOnlineStatus() {
+                const indicator = document.getElementById('connection-status');
+                if (indicator) {
+                    if (navigator.onLine) {
+                        indicator.style.display = 'none';
+                    } else {
+                        indicator.style.display = 'block';
+                    }
+                }
+            }
+            
+            window.addEventListener('online', updateOnlineStatus);
+            window.addEventListener('offline', updateOnlineStatus);
+            window.addEventListener('load', updateOnlineStatus);
+        }
+    </script>
+    
+    <!-- Image enhancement script -->
+    <!-- Image enhancement script -->
+    {{ $images := resources.Get "js/images.js" | minify | fingerprint }}
+    <script src="{{ $images.Permalink }}" defer></script>
+    
+    {{- if not hugo.IsProduction -}}
+    <!-- Development resource verification -->
+    {{ partial "resource-check.html" . }}
+    {{- end -}}
 </head>
 
 <body class="wide" itemscope itemtype="https://schema.org/WebPage">
-    <div class="navigation" itemscope itemtype="https://schema.org/SiteNavigationElement">
-        <div class="width-fix">
-            <a itemprop="url" href="{{ .Site.BaseURL }}" id="home" rel="nofollow"><img src="{{ .Site.BaseURL }}images/home.png" alt="Home" width="32" height="48"></a>
-            <ul>
-                <li><a itemprop="url" href="{{ .Site.BaseURL }}posts/" rel="nofollow">Статьи</a></li>
-                <li>|</li>
-                <li><a itemprop="url" href="https://denis.evsyukov.org">Об авторе</a></li>
-            </ul>
-        </div>
+    <!-- Offline status indicator -->
+    <div id="connection-status" class="offline-indicator" style="display: none;">
+        <span>🔌 Нет подключения к интернету</span>
     </div>
-    <div class="primary-content width-fix" itemscope itemtype="https://schema.org/Blog">
-        <div class="entry" itemscope itemtype="https://schema.org/BlogPosting">
+    
+    <!-- Skip navigation for screen readers -->
+    <a href="#main-content" class="skip-nav">Перейти к основному содержанию</a>
+    
+    <header class="navigation" role="banner" aria-label="Основная навигация" itemscope itemtype="https://schema.org/SiteNavigationElement">
+        <div class="width-fix">
+            <a itemprop="url" href="/" id="home" rel="nofollow" aria-label="Главная страница сайта Denis Evsyukov">
+                <img src="/images/home.png" alt="Иконка домой" width="32" height="48">
+            </a>
+            <nav role="navigation" aria-label="Основные разделы">
+                <ul>
+                    <li><a itemprop="url" href="/posts/" rel="nofollow">Статьи</a></li>
+                    <li role="presentation">|</li>
+                    <li><a itemprop="url" href="https://denis.evsyukov.org">Об авторе</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    
+    <main class="primary-content width-fix" id="main-content" role="main" itemscope itemtype="https://schema.org/Blog">
+        <article class="entry" itemscope itemtype="https://schema.org/BlogPosting">
             {{- block "main" . -}}
             {{- end -}}
-        </div>
-    </div>{{ "<!-- noindex -->" | safeHTML }}
-    <div class="footer">
+        </article>
+    </main>
+    
+    {{ "<!-- noindex -->" | safeHTML }}
+    <footer class="footer" role="contentinfo" aria-label="Подвал сайта">
         <div class="width-fix">
-            <p><a href="{{ .Site.BaseURL }}posts/" rel="nofollow">Список статей</a> :: <a href="{{ .Site.BaseURL }}recommendations.html" rel="nofollow">Рекомендации</a> :: <a href="{{ .Site.BaseURL }}atom.xml" rel="nofollow">RSS</a></p>
-            <p>&copy;&nbsp;<span itemprop="author" itemscope itemtype="https://schema.org/Person"><a rel="author" itemprop="url" href="https://denis.evsyukov.org">Denis Evsyukov</a></span>,&nbsp;2008&ndash;{{ now.Format "2006" }}&nbsp;Contact me via
-            <a itemprop="email" href="&#109;&#97;&#105;&#108;&#116;&#111;&#58;&#100;&#101;&#110;&#105;&#115;&#64;&#101;&#118;&#115;&#121;&#117;&#107;&#111;&#118;&#46;&#111;&#114;&#103;">email</a>, <a itemprop="url" href="https://twitter.com/#!/Juev" rel="nofollow">twitter</a>, <a rel="me" href="https://hachyderm.io/@juev">Mastodon</a> or&nbsp;<a itemprop="url" href="https://github.com/Juev" rel="nofollow">github</a></p>
+            <nav aria-label="Дополнительная навигация">
+                <p><a href="/posts/" rel="nofollow">Список статей</a> :: <a href="/recommendations.html" rel="nofollow">Рекомендации</a> :: <a href="{{ .Site.BaseURL }}atom.xml" rel="nofollow">RSS</a></p>
+            </nav>
+            <p>&copy;&nbsp;<span itemprop="author" itemscope itemtype="https://schema.org/Person"><a rel="author" itemprop="url" href="https://denis.evsyukov.org">Denis Evsyukov</a></span>,&nbsp;2008&ndash;{{ now.Format "2006" }}&nbsp;Связаться можно через
+            <a itemprop="email" href="&#109;&#97;&#105;&#108;&#116;&#111;&#58;&#100;&#101;&#110;&#105;&#115;&#64;&#101;&#118;&#115;&#121;&#117;&#107;&#111;&#118;&#46;&#111;&#114;&#103;" aria-label="Отправить письмо на адрес denis@evsyukov.org">email</a>, <a itemprop="url" href="https://twitter.com/#!/Juev" rel="nofollow" aria-label="Twitter профиль">twitter</a>, <a rel="me" href="https://hachyderm.io/@juev" aria-label="Mastodon профиль">Mastodon</a> или&nbsp;<a itemprop="url" href="https://github.com/Juev" rel="nofollow" aria-label="GitHub профиль">github</a></p>
         </div>
-    </div>
+    </footer>
 </body>
 
 </html>

@@ -1,1 +1,64 @@
-<img src="{{ .Destination | safeURL }}" alt="{{ .Text }}" loading="lazy" />
+{{- $src := .Destination -}}
+{{- $alt := .Text | default "Изображение" -}}
+{{- $title := .Title -}}
+
+{{- $image := "" -}}
+{{- $webp := "" -}}
+{{- $fallback := "" -}}
+{{- $isLocal := false -}}
+{{- $webpSrcset := slice -}}
+{{- $jpegSrcset := slice -}}
+
+{{- if not (strings.HasPrefix $src "http") -}}
+    {{- /* Local image - try advanced processing */ -}}
+    {{- $imagePath := printf "static/%s" $src -}}
+    {{- if fileExists $imagePath -}}
+        {{- $isLocal = true -}}
+        {{- $image = resources.Get $src -}}
+        {{- if $image -}}
+            {{- /* Generate responsive versions */ -}}
+            {{- $sizes := slice "400x" "800x" "1200x" -}}
+            
+            {{- range $sizes -}}
+                {{- $webpImg := $image.Resize (printf "%s webp q85" .) -}}
+                {{- $jpegImg := $image.Resize (printf "%s jpg q85" .) -}}
+                {{- $webpSrcset = $webpSrcset | append (printf "%s %sw" $webpImg.RelPermalink (strings.TrimSuffix "x" .)) -}}
+                {{- $jpegSrcset = $jpegSrcset | append (printf "%s %sw" $jpegImg.RelPermalink (strings.TrimSuffix "x" .)) -}}
+            {{- end -}}
+            
+            {{- $webp = $image.Resize "800x webp q85" -}}
+            {{- $fallback = $image.Resize "800x jpg q85" -}}
+        {{- end -}}
+    {{- end -}}
+{{- end -}}
+
+<figure class="image-figure">
+    {{- if and $isLocal $image $webp $fallback (gt (len $webpSrcset) 0) -}}
+    {{- /* Local image with WebP processing */ -}}
+    <picture>
+        <source srcset="{{ delimit $webpSrcset ", " }}" 
+                type="image/webp" 
+                sizes="(max-width: 768px) 100vw, (max-width: 1200px) 80vw, 800px">
+        <source srcset="{{ delimit $jpegSrcset ", " }}" 
+                type="image/jpeg" 
+                sizes="(max-width: 768px) 100vw, (max-width: 1200px) 80vw, 800px">
+        <img src="{{ $fallback.RelPermalink }}" 
+             alt="{{ $alt }}" 
+             {{- with $title }} title="{{ . }}"{{ end }}
+             loading="lazy"
+             decoding="async"
+             width="{{ $fallback.Width }}"
+             height="{{ $fallback.Height }}">
+    </picture>
+    {{- else -}}
+    {{- /* External or local fallback images */ -}}
+    <img src="{{ $src }}" 
+         alt="{{ $alt }}" 
+         {{- with $title }} title="{{ . }}"{{ end }}
+         loading="lazy"
+         decoding="async">
+    {{- end -}}
+    {{- with $title -}}
+    <figcaption>{{ . | markdownify }}</figcaption>
+    {{- end -}}
+</figure>

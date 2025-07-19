@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8">
+    <title>Сайт недоступен - Denis Evsyukov</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            color: #333;
+        }
+        .container {
+            background: #fff;
+            padding: 40px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            text-align: center;
+            max-width: 500px;
+        }
+        .icon {
+            font-size: 64px;
+            margin-bottom: 20px;
+            color: #BC5007;
+        }
+        h1 {
+            color: #333;
+            margin-bottom: 20px;
+            font-size: 28px;
+        }
+        p {
+            line-height: 1.6;
+            margin-bottom: 15px;
+            font-size: 16px;
+        }
+        .button {
+            display: inline-block;
+            background-color: #BC5007;
+            color: white;
+            padding: 12px 24px;
+            text-decoration: none;
+            border-radius: 4px;
+            margin-top: 20px;
+            transition: background-color 0.3s;
+        }
+        .button:hover {
+            background-color: #8B3C05;
+        }
+        .status {
+            margin-top: 20px;
+            padding: 10px;
+            border-radius: 4px;
+            font-size: 14px;
+        }
+        .offline {
+            background-color: #ffeaa7;
+            color: #d63031;
+        }
+        .online {
+            background-color: #a8e6cf;
+            color: #00b894;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="icon">📡</div>
+        <h1>Сайт временно недоступен</h1>
+        <p>К сожалению, в данный момент нет подключения к интернету или сайт недоступен.</p>
+        <p>Возможно, вы сможете просмотреть некоторые ранее посещенные страницы из кэша браузера.</p>
+        
+        <div class="status offline" id="status">
+            Статус: Не в сети
+        </div>
+        
+        <a href="/" class="button" onclick="window.location.reload();">Попробовать снова</a>
+        
+        <p style="margin-top: 30px; font-size: 14px; color: #666;">
+            <a href="/" style="color: #BC5007;">Главная страница</a> | 
+            <a href="/posts/" style="color: #BC5007;">Статьи</a>
+        </p>
+    </div>
+
+    <script>
+        // Monitor online/offline status
+        function updateStatus() {
+            const statusElement = document.getElementById('status');
+            if (navigator.onLine) {
+                statusElement.className = 'status online';
+                statusElement.textContent = 'Статус: В сети (можно попробовать перезагрузить)';
+            } else {
+                statusElement.className = 'status offline';
+                statusElement.textContent = 'Статус: Не в сети';
+            }
+        }
+
+        window.addEventListener('online', updateStatus);
+        window.addEventListener('offline', updateStatus);
+        updateStatus();
+
+        // Auto-reload when back online
+        window.addEventListener('online', () => {
+            setTimeout(() => {
+                if (confirm('Соединение восстановлено. Перезагрузить страницу?')) {
+                    window.location.reload();
+                }
+            }, 1000);
+        });
+    </script>
+</body>
+</html> 

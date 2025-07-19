@@ -84,6 +84,42 @@ email			= "denis@evsyukov.org"
     style = "monokailight"
     tabWidth = 4
 
+# Asset processing configuration
+[minify]
+  disableCSS = false
+  disableHTML = false
+  disableJS = false
+  disableJSON = false
+  disableSVG = false
+  disableXML = false
+  [minify.tdewolff]
+    [minify.tdewolff.css]
+      keepCSS2 = true
+      precision = 0
+    [minify.tdewolff.html]
+      keepComments = false
+      keepConditionalComments = true
+      keepDefaultAttrVals = true
+      keepDocumentTags = true
+      keepEndTags = true
+      keepQuotes = false
+      keepWhitespace = false
+    [minify.tdewolff.js]
+      keepVarNames = false
+      precision = 0
+
+# Image processing configuration
+[imaging]
+  resampleFilter = "CatmullRom"
+  quality = 85
+  hint = "photo"
+  
+  [imaging.exif]
+    includeFields = ""
+    excludeFields = "GPS.*"
+    disableDate = false
+    disableLatLong = true
+
 [deployment]
 
 [[deployment.targets]]

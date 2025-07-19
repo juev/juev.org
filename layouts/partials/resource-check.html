@@ -1,0 +1,41 @@
+{{- /* Resource loading verification partial */ -}}
+{{- if hugo.IsProduction -}}
+<!-- Production resource verification -->
+<script>
+console.log('Site Base URL:', '{{ .Site.BaseURL }}');
+console.log('Current Page:', '{{ .Permalink }}');
+
+// Check if critical resources are loading
+const criticalResources = [
+    '{{ .Site.BaseURL }}favicon.ico',
+    '{{ .Site.BaseURL }}apple-touch-icon.png',
+    '{{ .Site.BaseURL }}images/home.png',
+    '{{ .Site.BaseURL }}sw.js'
+];
+
+criticalResources.forEach(url => {
+    fetch(url, { method: 'HEAD' })
+        .then(response => {
+            if (!response.ok) {
+                console.warn(`Resource not found: ${url} (${response.status})`);
+            }
+        })
+        .catch(error => {
+            console.error(`Failed to load resource: ${url}`, error);
+        });
+});
+
+// Verify Service Worker registration
+if ('serviceWorker' in navigator && navigator.serviceWorker.controller) {
+    console.log('Service Worker active:', navigator.serviceWorker.controller.scriptURL);
+}
+</script>
+{{- else -}}
+<!-- Development mode - verbose logging -->
+<script>
+console.log('Development Mode - Resource Paths:');
+console.log('Base URL:', '{{ .Site.BaseURL }}');
+console.log('Site Host:', '{{ .Site.BaseURL | strings.TrimSuffix "/" }}');
+console.log('Current URL:', window.location.href);
+</script>
+{{- end -}} 

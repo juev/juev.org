@@ -13,8 +13,12 @@
     Content-Type: "application/xml; charset=utf-8"
 /*.json
     Cache-Control: "public, no-cache, must-revalidate"
+/sw.js
+    Cache-Control: public, no-cache, must-revalidate
+    Content-Type: application/javascript; charset=utf-8
+    Service-Worker-Allowed: /
 /*.js
-    Cache-Control: "max-age=630720000, no-transform, public"
+    Cache-Control: max-age=630720000, no-transform, public
 /*.css
     Cache-Control: "max-age=630720000, no-transform, public"
 /*.png
