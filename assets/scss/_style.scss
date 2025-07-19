@@ -235,13 +235,13 @@ strong
   float:left;
   margin:50px 0 0;
   padding:0;
-  list-style-type:none
+  list-style-type:none;
 }
 
 .navigation .width-fix li
 {
   float:left;
-  padding:1em 1em 1em 0
+  padding:1em 1em 1em 0;
 }
 
 .navigation .width-fix li a
@@ -251,7 +251,7 @@ strong
   color:#f7f6ee;
   text-decoration:none;
   text-transform:uppercase;
-  font-family:Helvetica,sans-serif!important
+  font-family:Helvetica,sans-serif!important;
 }
 
 .navigation .width-fix li a:hover
@@ -454,11 +454,16 @@ h3.title
 
 #home
 {
-  float:left;
-  // display:inline-block;
-  margin:45px 1em 0 0;
+  float:left !important;
+  margin:36px 1em 0 0 !important;
   width:32px;
   height:48px;
+}
+
+#home img {
+  display: block;
+  width: 32px;
+  height: 48px;
 }
 
 .aligncenter
