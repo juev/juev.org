@@ -1,22 +1,22 @@
 {{ define "title" }}{{ .Title }} &ndash; {{ .Site.Title }}{{ end }}
 
 {{- define "main" -}}
-<h1 itemprop="name headline" class="title">{{- .Title -}}</h1>
+<h1 class="title">{{- .Title -}}</h1>
 <div id="metainfo">
-    <span class="date" itemprop="datePublished">{{- if .GitInfo }}
+    <span class="date">{{- if .GitInfo }}
         <a href="{{ .Site.Params.gitUrl -}}{{ .GitInfo.Hash }}" target="_blank" rel="noopener">{{ .Date.Format "2 January 2006" }}</a>{{- else }}
         {{ .Date.Format "2 January 2006" }}{{- end }}
     </span> | 
     <span class="info">{{ .WordCount }} words </span> | 
     <span class="info">tags:</span>{{ with .Params.tags }}
-    <span class="tags" itemprop="keywords">{{ range . }}
-        <a rel="category tag" href="{{ "tags" | absURL }}/{{ . | urlize }}" title="View posts tagged with &quot;{{ . }}&quot;">#{{ . }}</a>{{ end }}
+    <span class="tags">{{ range . }}
+        <a href="{{ "tags" | absURL }}/{{ . | urlize }}" title="View posts tagged with &quot;{{ . }}&quot;">#{{ . }}</a>{{ end }}
     </span>{{ end }}
 </div>
-<div class="post" itemprop="articleBody">
+<div class="post">
     {{ .Content }}
 </div>
-<div class="meta" itemscope itemtype="https://schema.org/SiteNavigationElement">
+<div class="meta">
     {{ partial "nav.html" . }}
 </div>
 {{- end -}}
