@@ -96,6 +96,7 @@ email			= "denis@evsyukov.org"
     [minify.tdewolff.css]
       keepCSS2 = true
       precision = 0
+      keepQuotes = true
     [minify.tdewolff.html]
       keepComments = false
       keepConditionalComments = true
