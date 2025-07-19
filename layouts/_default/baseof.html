@@ -8,7 +8,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <title>{{- block "title" . -}} {{- .Site.Title -}} {{- end -}}</title>
-    <meta name="description" content="{{ .Summary | default .Site.Params.Description }}" />
+    <meta name="description" content="{{ .Summary | default .Site.Params.Description }}">
     <meta name="yandex-verification" content="59bb4b98872e096b">
     {{ "<!-- http://t.co/dKP3o1e -->" | safeHTML }}
     <meta name="HandheldFriendly" content="True">
@@ -28,7 +28,7 @@
     <!-- Preload main CSS for better performance -->
     {{ $style := resources.Get "scss/master.scss" | toCSS | minify | fingerprint -}}
     <link rel="stylesheet" href="{{ $style.Permalink }}">
-    <link rel="sitemap" type="application/xml" title="Sitemap" href="{{ .Site.BaseURL }}sitemap.xml" />
+    <link rel="sitemap" type="application/xml" title="Sitemap" href="{{ .Site.BaseURL }}sitemap.xml">
     {{- with .PrevInSection }}
     <link rel="prev" href="{{.Permalink}}">
     {{- end }}
@@ -36,21 +36,21 @@
     <link rel="next" href="{{.Permalink}}">
     {{- end }}
     {{ "<!-- og:meta -->" | safeHTML }}
-    <meta property="og:title" content="{{- .Title -}}" />
+    <meta property="og:title" content="{{- .Title -}}">
     <meta property="og:url" content="{{- .Permalink -}}">
     {{ if eq .Section "posts" -}}
-    <meta property="og:type" content="article" />
-    <meta property="og:article:published_time" content={{ .Date.Format "2006-01-02T15:04:05Z0700" | safeHTML }} />
-    <meta property="og:description" content="{{- .Summary | default .Site.Params.Description -}}" />
-    {{ with .Params.image }}<meta property="og:image" content="{{ . | absURL }}" />{{ else }}<meta property="og:image" content="{{ .Site.Params.ogimage | absURL }}" />{{ end }}
+    <meta property="og:type" content="article">
+    <meta property="og:article:published_time" content={{ .Date.Format "2006-01-02T15:04:05Z0700" | safeHTML }}>
+    <meta property="og:description" content="{{- .Summary | default .Site.Params.Description -}}">
+    {{ with .Params.image }}<meta property="og:image" content="{{ . | absURL }}">{{ else }}<meta property="og:image" content="{{ .Site.Params.ogimage | absURL }}">{{ end }}
     {{ with .Params.author -}}
-    <meta property="og:article:author" content="{{humanize . }}" />
-    <meta property="article:author" content="{{humanize . }}" />
-    <meta name="author" content="{{humanize . }}" />
+    <meta property="og:article:author" content="{{humanize . }}">
+    <meta property="article:author" content="{{humanize . }}">
+    <meta name="author" content="{{humanize . }}">
     {{ end -}}
     {{ end -}}
     {{ with .Params.tags -}}{{range . -}}
-    <meta property="article:tag" content="{{- . -}}"/>
+    <meta property="article:tag" content="{{- . -}}">
     {{end -}}
     {{end -}}
     <meta property="article:author" content="https://denis.evsyukov.org">
@@ -59,13 +59,13 @@
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="{{- .Title -}}">
     <meta name="twitter:url" content="{{- .Permalink -}}">
-    {{ with .Params.image }}<meta name="twitter:image" content="{{ . | absURL }}" />{{ else }}<meta name="twitter:image" content="{{ .Site.Params.ogimage | absURL }}" />{{ end }}
+    {{ with .Params.image }}<meta name="twitter:image" content="{{ . | absURL }}">{{ else }}<meta name="twitter:image" content="{{ .Site.Params.ogimage | absURL }}">{{ end }}
     <meta name="twitter:creator" content="@Juev">
     {{ "<!-- end twitter card -->" | safeHTML }}
     {{ "<!-- schema.org -->" | safeHTML }}
-    <meta itemprop="name" content="{{- .Title -}}" />
-    <meta itemprop="description" content="{{- .Summary | default .Site.Params.Description -}}" />
-    {{ with .Params.image }}<meta itemprop="image" content="{{ . | absURL }}" />{{ else }}<meta itemprop="image" content="{{ .Site.Params.ogimage | absURL }}" />{{ end }}
+    <meta itemprop="name" content="{{- .Title -}}">
+    <meta itemprop="description" content="{{- .Summary | default .Site.Params.Description -}}">
+    {{ with .Params.image }}<meta itemprop="image" content="{{ . | absURL }}">{{ else }}<meta itemprop="image" content="{{ .Site.Params.ogimage | absURL }}">{{ end }}
     {{ "<!-- end schema.org -->" | safeHTML }}
     {{ partial "schema.html" . }}
     
