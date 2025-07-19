@@ -79,7 +79,7 @@
             Статус: Не в сети
         </div>
         
-        <a href="/" class="button" onclick="window.location.reload();">Попробовать снова</a>
+                    <a href="/" class="button" id="retry-button">Попробовать снова</a>
         
         <p style="margin-top: 30px; font-size: 14px; color: #666;">
             <a href="/" style="color: #BC5007;">Главная страница</a> | 
@@ -103,6 +103,17 @@
         window.addEventListener('online', updateStatus);
         window.addEventListener('offline', updateStatus);
         updateStatus();
+
+        // Handle retry button
+        document.addEventListener('DOMContentLoaded', function() {
+            const retryButton = document.getElementById('retry-button');
+            if (retryButton) {
+                retryButton.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    window.location.reload();
+                });
+            }
+        });
 
         // Auto-reload when back online
         window.addEventListener('online', () => {

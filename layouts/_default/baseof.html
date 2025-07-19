@@ -27,8 +27,7 @@
     
     <!-- Preload main CSS for better performance -->
     {{ $style := resources.Get "scss/master.scss" | toCSS | minify | fingerprint -}}
-    <link rel="preload" href="{{ $style.Permalink }}" as="style" onload="this.onload=null;this.rel='stylesheet'">
-    <noscript><link rel="stylesheet" href="{{ $style.Permalink }}"></noscript>
+    <link rel="stylesheet" href="{{ $style.Permalink }}">
     <link rel="sitemap" type="application/xml" title="Sitemap" href="{{ .Site.BaseURL }}sitemap.xml" />
     {{- with .PrevInSection }}
     <link rel="prev" href="{{.Permalink}}">
@@ -71,48 +70,8 @@
     {{ partial "schema.html" . }}
     
     <!-- Service Worker Registration -->
-    <script>
-        if ('serviceWorker' in navigator) {
-            window.addEventListener('load', function() {
-                navigator.serviceWorker.register('/sw.js')
-                    .then(function(registration) {
-                        console.log('Service Worker registered successfully:', registration.scope);
-                        
-                        // Listen for updates
-                        registration.addEventListener('updatefound', () => {
-                            const newWorker = registration.installing;
-                            newWorker.addEventListener('statechange', () => {
-                                if (newWorker.state === 'installed' && navigator.serviceWorker.controller) {
-                                    // New content is available, refresh
-                                    if (confirm('Доступна новая версия сайта. Обновить?')) {
-                                        window.location.reload();
-                                    }
-                                }
-                            });
-                        });
-                    })
-                    .catch(function(error) {
-                        console.log('Service Worker registration failed:', error);
-                    });
-            });
-            
-            // Online/offline status indicator
-            function updateOnlineStatus() {
-                const indicator = document.getElementById('connection-status');
-                if (indicator) {
-                    if (navigator.onLine) {
-                        indicator.style.display = 'none';
-                    } else {
-                        indicator.style.display = 'block';
-                    }
-                }
-            }
-            
-            window.addEventListener('online', updateOnlineStatus);
-            window.addEventListener('offline', updateOnlineStatus);
-            window.addEventListener('load', updateOnlineStatus);
-        }
-    </script>
+    {{ $sw := resources.Get "js/sw-register.js" | minify | fingerprint }}
+    <script src="{{ $sw.Permalink }}" defer></script>
     
     <!-- Image enhancement script -->
     <!-- Image enhancement script -->
