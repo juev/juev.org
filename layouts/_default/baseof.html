@@ -93,12 +93,12 @@
     <!-- Skip navigation for screen readers -->
     <a href="#main-content" class="skip-nav">Перейти к основному содержанию</a>
     
-    <header class="navigation" role="banner" aria-label="Основная навигация" itemscope itemtype="https://schema.org/SiteNavigationElement">
+    <header class="navigation" aria-label="Основная навигация" itemscope itemtype="https://schema.org/SiteNavigationElement">
         <div class="width-fix">
             <a itemprop="url" href="/" id="home" rel="nofollow" aria-label="Главная страница сайта Denis Evsyukov">
                 <img src="/images/home.png" alt="Иконка домой" width="32" height="48">
             </a>
-            <nav role="navigation" aria-label="Основные разделы">
+            <nav aria-label="Основные разделы">
                 <ul>
                     <li><a itemprop="url" href="/posts/" rel="nofollow">Статьи</a></li>
                     <li role="presentation">|</li>
@@ -108,7 +108,7 @@
         </div>
     </header>
     
-    <main class="primary-content width-fix" id="main-content" role="main" itemscope itemtype="https://schema.org/Blog">
+    <main class="primary-content width-fix" id="main-content" itemscope itemtype="https://schema.org/Blog">
         <article class="entry" itemscope itemtype="https://schema.org/BlogPosting">
             {{- block "main" . -}}
             {{- end -}}
@@ -116,7 +116,7 @@
     </main>
     
     {{ "<!-- noindex -->" | safeHTML }}
-    <footer class="footer" role="contentinfo" aria-label="Подвал сайта">
+    <footer class="footer" aria-label="Подвал сайта">
         <div class="width-fix">
             <nav aria-label="Дополнительная навигация">
                 <p><a href="/posts/" rel="nofollow">Список статей</a> :: <a href="/recommendations.html" rel="nofollow">Рекомендации</a> :: <a href="{{ .Site.BaseURL }}atom.xml" rel="nofollow">RSS</a></p>
