@@ -98,7 +98,7 @@ html.wf-loading * {
 }
 
 /* Essential responsive styles */
-@media screen and (max-device-width: 480px) {
+@media screen and (max-width: 480px) {
   .wide .body {
     margin: 0;
     width: 100%;
