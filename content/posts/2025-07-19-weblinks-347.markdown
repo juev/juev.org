@@ -6,17 +6,48 @@ tags:
   - links
 ---
 
-За прошедшую неделю сохранил 71 ссылку.
+Прошедшая неделя принесла много интересных находок в мире технологий. Из 71 сохранённой ссылки выбрал самые захватывающие — от хитрых обходов блокировщиков рекламы до безопасности биткоин-кошельков.
 
-- [How I found a bypass in Google's big anti-adblock update](https://0x44.xyz/blog/web-request-blocking/)
-- [Void, the Bluesky bot that remembers everyone](https://cameron.pfiffer.org/blog/void/)
-- [Switching to Claude Code + VSCode inside Docker](https://timsh.org/claude-inside-docker/)
-- [Monitoring my Homelab, Simply](https://b.tuxes.uk/simple-homelab-monitoring.html)
-- [How secure is your Bitcoin wallet's mnemonic seed phrase?](https://bennet.org/blog/how-secure-is-your-bitcoin-wallets-mnemonic-seed-phrase/)
-- [How Monero Fulfilled Satoshi’s Promise](https://zola.ink/blog/posts/how-monero-fulfilled-satoshis-promies)
-- [Build & run a full Bitcoin node with a Raspberry Pi 5](https://bennet.org/blog/building-a-bitcoin-node-with-raspberry-pi/)
-- [You don't need testify/assert](https://antonz.org/do-not-testify/)
-- [5 reasons why I still prefer Perplexity over every other AI chatbot](https://www.zdnet.com/article/5-reasons-why-i-still-prefer-perplexity-over-every-other-ai-chatbot/)
-- [Claude Code Unleashed](https://ymichael.com/2025/07/15/claude-code-unleashed.html)
+## 🛡️ Безопасность и приватность
+
+**[How I found a bypass in Google's big anti-adblock update](https://0x44.xyz/blog/web-request-blocking/)**  
+Увлекательная история о том, как исследователь нашёл способ обойти новую систему блокировки блокировщиков рекламы от Google. Техническая детективная история с практическими выводами.
+
+**[How secure is your Bitcoin wallet's mnemonic seed phrase?](https://bennet.org/blog/how-secure-is-your-bitcoin-wallets-mnemonic-seed-phrase/)**  
+Глубокий анализ криптографической безопасности seed-фраз. Автор разбирает, насколько надёжны стандартные 12-24 слова и какие угрозы реально существуют.
+
+**[How Monero Fulfilled Satoshi's Promise](https://zola.ink/blog/posts/how-monero-fulfilled-satoshis-promies)**  
+Провокационная статья о том, как Monero воплотил изначальные идеи Сатоши о приватности и анонимности, которые Bitcoin так и не реализовал полностью.
+
+## 💻 Разработка и инструменты
+
+**[Claude Code Unleashed](https://ymichael.com/2025/07/15/claude-code-unleashed.html)**  
+Обзор новых возможностей Claude для программирования. Автор делится опытом использования ИИ-ассистента в реальных проектах.
+
+**[Switching to Claude Code + VSCode inside Docker](https://timsh.org/claude-inside-docker/)**  
+Практическое руководство по настройке Claude Code в контейнеризованной среде разработки. Полезно для тех, кто ценит изоляцию рабочих окружений.
+
+**[You don't need testify/assert](https://antonz.org/do-not-testify/)**  
+Неожиданный взгляд на тестирование в Go. Автор убедительно доказывает, что стандартная библиотека testing зачастую лучше популярных фреймворков.
+
+## 🤖 ИИ и чат-боты
+
+**[Void, the Bluesky bot that remembers everyone](https://cameron.pfiffer.org/blog/void/)**  
+Интересный проект — бот для Bluesky с памятью. Технические подробности реализации и философские размышления о роли ИИ в социальных сетях.
+
+**[5 reasons why I still prefer Perplexity over every other AI chatbot](https://www.zdnet.com/article/5-reasons-why-i-still-prefer-perplexity-over-every-other-ai-chatbot/)**  
+Сравнительный анализ ИИ-помощников от практикующего пользователя. Perplexity побеждает благодаря интеграции с поиском и качеству источников.
+
+## 🏠 Хоумлабинг и самохостинг
+
+**[Monitoring my Homelab, Simply](https://b.tuxes.uk/simple-homelab-monitoring.html)**  
+Минималистичный подход к мониторингу домашней лаборатории. Автор показывает, как избежать overengineering'а и получить работающее решение.
+
+**[Build & run a full Bitcoin node with a Raspberry Pi 5](https://bennet.org/blog/building-a-bitcoin-node-with-raspberry-pi/)**  
+Подробное руководство по запуску полной ноды Bitcoin на новейшем Raspberry Pi. От выбора железа до тонкой настройки производительности.
+
+---
+
+Особенно рекомендую статью про обход anti-adblock от Google — отличный пример того, как творческий подход помогает решать сложные технические задачи. А материал про безопасность seed-фраз заставляет задуматься о том, насколько мы полагаемся на криптографические допущения.
 
 Хорошей вам недели!
