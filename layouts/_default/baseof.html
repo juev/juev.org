@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="ru">
-
-<head itemscope itemtype="{{ .Site.BaseURL }}">
+<head>
     <meta charset="utf-8">
     <link rel="dns-prefetch" href="//static.juev.org">
     <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>
@@ -19,15 +18,10 @@
     <link rel="apple-touch-icon" href="/apple-touch-icon.png">
     <link rel="alternate" type="application/rss" href="{{ .Site.BaseURL }}atom.xml" title="Denis Evsyukov">
     <link rel="manifest" href="/site.webmanifest">
-    
-    <!-- Critical CSS inline for faster rendering -->
     {{ $critical := resources.Get "scss/_critical.scss" | toCSS | minify -}}
     <style>{{ $critical.Content | safeCSS }}</style>
-    
-    <!-- Preload main CSS for better performance -->
     {{ $style := resources.Get "scss/master.scss" | toCSS | minify | fingerprint -}}
     <link rel="stylesheet" href="{{ $style.Permalink }}">
-    <link rel="sitemap" type="application/xml" title="Sitemap" href="{{ .Site.BaseURL }}sitemap.xml">
     {{- with .PrevInSection }}
     <link rel="prev" href="{{.Permalink}}">
     {{- end }}
@@ -54,77 +48,56 @@
     {{end -}}
     <meta property="article:author" content="https://denis.evsyukov.org">
     {{ "<!-- end og:meta  -->" | safeHTML }}
-    {{ "<!-- twitter card -->" | safeHTML }}
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="{{- .Title -}}">
-    <meta name="twitter:url" content="{{- .Permalink -}}">
-    {{ with .Params.image }}<meta name="twitter:image" content="{{ . | absURL }}">{{ else }}<meta name="twitter:image" content="{{ .Site.Params.ogimage | absURL }}">{{ end }}
-    <meta name="twitter:creator" content="@Juev">
-    {{ "<!-- end twitter card -->" | safeHTML }}
-    {{ "<!-- schema.org -->" | safeHTML }}
-    <meta itemprop="name" content="{{- .Title -}}">
-    <meta itemprop="description" content="{{- .Summary | default .Site.Params.Description -}}">
-    {{ with .Params.image }}<meta itemprop="image" content="{{ . | absURL }}">{{ else }}<meta itemprop="image" content="{{ .Site.Params.ogimage | absURL }}">{{ end }}
-    {{ "<!-- end schema.org -->" | safeHTML }}
     {{ partial "schema.html" . }}
-    
-    <!-- Service Worker Registration -->
+    {{ "<!-- Service Worker Registration -->" | safeHTML }}
     {{ $sw := resources.Get "js/sw-register.js" | minify | fingerprint }}
-    <script src="{{ $sw.Permalink }}" defer></script>
-    
-    <!-- Image enhancement script -->
-    <!-- Image enhancement script -->
+    <script src="{{ $sw.Permalink }}" defer></script>    
+    {{ "<!-- Image enhancement script -->" | safeHTML }}
     {{ $images := resources.Get "js/images.js" | minify | fingerprint }}
     <script src="{{ $images.Permalink }}" defer></script>
-    
     {{- if not hugo.IsProduction -}}
-    <!-- Development resource verification -->
+    {{ "<!-- Development resource verification -->" | safeHTML }}
     {{ partial "resource-check.html" . }}
     {{- end -}}
 </head>
 
-<body class="wide" itemscope itemtype="https://schema.org/WebPage">
-    <!-- Offline status indicator -->
+<body class="wide">
+    {{ "<!-- Offline status indicator -->" | safeHTML }}
     <div id="connection-status" class="offline-indicator" style="display: none;">
         <span>🔌 Нет подключения к интернету</span>
     </div>
-    
-    <!-- Skip navigation for screen readers -->
+    {{ "<!-- Skip navigation for screen readers -->" | safeHTML }}
     <a href="#main-content" class="skip-nav">Перейти к основному содержанию</a>
-    
-    <header class="navigation" aria-label="Основная навигация" itemscope itemtype="https://schema.org/SiteNavigationElement">
+    <header class="navigation" aria-label="Основная навигация">
         <div class="width-fix">
-            <a itemprop="url" href="/" id="home" rel="nofollow" aria-label="Главная страница сайта Denis Evsyukov">
+            <a href="/" id="home" aria-label="Главная страница сайта Denis Evsyukov">
                 <img src="/images/home.png" alt="Иконка домой" width="32" height="48">
             </a>
             <nav aria-label="Основные разделы">
                 <ul>
-                    <li><a itemprop="url" href="/posts/" rel="nofollow">Статьи</a></li>
-                    <li><a itemprop="url" href="https://denis.evsyukov.org">Об авторе</a></li>
+                    <li><a href="/posts/">Статьи</a></li>
+                    <li><a href="https://denis.evsyukov.org">Об авторе</a></li>
                 </ul>
             </nav>
         </div>
     </header>
-    
-    <main class="primary-content width-fix" id="main-content" itemscope itemtype="https://schema.org/Blog">
-        <article class="entry" itemscope itemtype="https://schema.org/BlogPosting">
+    <main class="primary-content width-fix" id="main-content">
+        <article class="entry">
             {{- block "main" . -}}
             {{- end -}}
         </article>
-    </main>
-    
+    </main>    
     {{ "<!-- noindex -->" | safeHTML }}
     <footer class="footer" aria-label="Подвал сайта">
         <div class="width-fix">
             <nav aria-label="Дополнительная навигация">
-                <p><a href="/posts/" rel="nofollow">Список статей</a> :: <a href="/recommendations.html" rel="nofollow">Рекомендации</a> :: <a href="{{ .Site.BaseURL }}atom.xml" rel="nofollow">RSS</a></p>
+                <p><a href="/posts/">Список статей</a> :: <a href="/recommendations.html">Рекомендации</a> :: <a href="{{ .Site.BaseURL }}atom.xml">RSS</a></p>
             </nav>
-            <div itemscope itemtype="https://schema.org/Person">
-                <p>&copy;&nbsp;<span itemprop="name"><a rel="author" itemprop="url" href="https://denis.evsyukov.org">Denis Evsyukov</a></span>,&nbsp;2008&ndash;{{ now.Format "2006" }}&nbsp;Связаться можно через
-                <a itemprop="email" href="&#109;&#97;&#105;&#108;&#116;&#111;&#58;&#100;&#101;&#110;&#105;&#115;&#64;&#101;&#118;&#115;&#121;&#117;&#107;&#111;&#118;&#46;&#111;&#114;&#103;" aria-label="Отправить письмо">email</a>, <a rel="me" href="https://hachyderm.io/@juev" aria-label="Mastodon профиль">Mastodon</a> или&nbsp;<a itemprop="sameAs" href="https://github.com/Juev" rel="nofollow" aria-label="GitHub профиль">github</a></p>
+            <div>
+                <p>&copy;&nbsp;<a rel="author" href="https://denis.evsyukov.org">Denis Evsyukov</a>,&nbsp;2008&ndash;{{ now.Format "2006" }}&nbsp;Связаться можно через
+                <a href="&#109;&#97;&#105;&#108;&#116;&#111;&#58;&#100;&#101;&#110;&#105;&#115;&#64;&#101;&#118;&#115;&#121;&#117;&#107;&#111;&#118;&#46;&#111;&#114;&#103;" aria-label="Отправить письмо">email</a>, <a rel="me" href="https://hachyderm.io/@juev" aria-label="Mastodon профиль">Mastodon</a> или&nbsp;<a href="https://github.com/Juev" aria-label="GitHub профиль">github</a></p>
             </div>
         </div>
     </footer>
 </body>
-
 </html>
