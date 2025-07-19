@@ -59,6 +59,14 @@ html.wf-loading * {
   text-decoration: none;
 }
 
+/* Add visual separator between navigation items */
+.navigation .width-fix li:not(:last-child):after {
+  content: "|";
+  color: #ffffff;
+  margin-left: 1em;
+  float: left;
+}
+
 #home {
   float: left !important;
   margin: 36px 1em 0 0 !important;

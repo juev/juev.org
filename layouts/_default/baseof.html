@@ -101,7 +101,6 @@
             <nav aria-label="Основные разделы">
                 <ul>
                     <li><a itemprop="url" href="/posts/" rel="nofollow">Статьи</a></li>
-                    <li role="presentation">|</li>
                     <li><a itemprop="url" href="https://denis.evsyukov.org">Об авторе</a></li>
                 </ul>
             </nav>
@@ -121,8 +120,10 @@
             <nav aria-label="Дополнительная навигация">
                 <p><a href="/posts/" rel="nofollow">Список статей</a> :: <a href="/recommendations.html" rel="nofollow">Рекомендации</a> :: <a href="{{ .Site.BaseURL }}atom.xml" rel="nofollow">RSS</a></p>
             </nav>
-            <p>&copy;&nbsp;<span itemprop="author" itemscope itemtype="https://schema.org/Person"><a rel="author" itemprop="url" href="https://denis.evsyukov.org">Denis Evsyukov</a></span>,&nbsp;2008&ndash;{{ now.Format "2006" }}&nbsp;Связаться можно через
-            <a itemprop="email" href="&#109;&#97;&#105;&#108;&#116;&#111;&#58;&#100;&#101;&#110;&#105;&#115;&#64;&#101;&#118;&#115;&#121;&#117;&#107;&#111;&#118;&#46;&#111;&#114;&#103;" aria-label="Отправить письмо на адрес denis@evsyukov.org">email</a>, <a itemprop="url" href="https://twitter.com/#!/Juev" rel="nofollow" aria-label="Twitter профиль">twitter</a>, <a rel="me" href="https://hachyderm.io/@juev" aria-label="Mastodon профиль">Mastodon</a> или&nbsp;<a itemprop="url" href="https://github.com/Juev" rel="nofollow" aria-label="GitHub профиль">github</a></p>
+            <div itemscope itemtype="https://schema.org/Person">
+                <p>&copy;&nbsp;<span itemprop="name"><a rel="author" itemprop="url" href="https://denis.evsyukov.org">Denis Evsyukov</a></span>,&nbsp;2008&ndash;{{ now.Format "2006" }}&nbsp;Связаться можно через
+                <a itemprop="email" href="&#109;&#97;&#105;&#108;&#116;&#111;&#58;&#100;&#101;&#110;&#105;&#115;&#64;&#101;&#118;&#115;&#121;&#117;&#107;&#111;&#118;&#46;&#111;&#114;&#103;" aria-label="Отправить письмо на адрес denis@evsyukov.org">email</a>, <a itemprop="sameAs" href="https://twitter.com/juev" rel="nofollow" aria-label="Twitter профиль">twitter</a>, <a rel="me" href="https://hachyderm.io/@juev" aria-label="Mastodon профиль">Mastodon</a> или&nbsp;<a itemprop="sameAs" href="https://github.com/Juev" rel="nofollow" aria-label="GitHub профиль">github</a></p>
+            </div>
         </div>
     </footer>
 </body>

@@ -260,6 +260,15 @@ strong
   text-decoration:none
 }
 
+/* Add visual separator between navigation items */
+.navigation .width-fix li:not(:last-child):after
+{
+  content: "|";
+  color: #f7f6ee;
+  margin-left: 1em;
+  float: left;
+}
+
 .width-fix
 {
   margin-right:auto;
