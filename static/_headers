@@ -5,7 +5,7 @@
     X-Frame-Options: "DENY"
     X-Content-Type-Options: "nosniff"
     Referrer-Policy: "strict-origin-when-cross-origin"
-    Feature-Policy: "fullscreen *"
+    Permissions-Policy: fullscreen=*
 /*.html
     Cache-Control: "public, no-cache, must-revalidate"
 /*.xml
