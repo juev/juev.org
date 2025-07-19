@@ -1,18 +1,29 @@
 {
   "short_name": "Juev",
   "name": "Denis Evsyukov",
-  "icons": [{
-    "src": "juev.png",
-    "type": "image/png",
-    "sizes": "400x400"
-  },
-  {
-    "src": "apple-touch-icon.png",
-    "type": "image/png",
-    "sizes": "72x72"
-  }
+  "description": "My thoughts and findings",
+  "icons": [
+    {
+      "src": "juev.png",
+      "type": "image/png",
+      "sizes": "400x400",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "apple-touch-icon.png",
+      "type": "image/png",
+      "sizes": "72x72"
+    },
+    {
+      "src": "favicon.ico",
+      "type": "image/x-icon",
+      "sizes": "16x16 24x24 32x32 48x48"
+    }
   ],
   "start_url": "/",
+  "display": "standalone",
   "background_color": "#fafafa",
-  "theme_color": "#fafafa"
+  "theme_color": "#BC5007",
+  "orientation": "portrait-primary",
+  "lang": "ru"
 }

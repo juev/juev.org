@@ -1,12 +1,45 @@
-<!-- Schema.org markup -->
-<meta itemprop="name" content="{{ .Title }}">
-<meta itemprop="description" content="{{ if .Description }}{{ .Description }}{{ else }}{{if .IsPage}}{{ .Summary }}{{ end }}{{ end }}">
-<!-- Output images -->
-{{ with .Params.images }}{{ range first 6 . }}
-<meta itemprop="image" content="{{ . }}">
-{{ end }}{{ end }}
-<!-- Output all taxonomies as schema.org keywords -->
-<meta itemprop="keywords" content="{{ range $plural, $terms := .Site.Taxonomies }}{{ range $term, $val := $terms }}{{ printf "%s," $term }}{{ end }}{{ end }}" />
-{{ if .IsPage }}
-<meta itemprop="wordCount" content="{{ .WordCount }}">
-{{ end }}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  {{ if eq .Section "posts" -}}
+  "@type": "BlogPosting",
+  "headline": "{{ .Title }}",
+  "datePublished": "{{ .Date.Format "2006-01-02T15:04:05Z07:00" }}",
+  {{ with .Lastmod }}"dateModified": "{{ .Format "2006-01-02T15:04:05Z07:00" }}",{{ end }}
+  "wordCount": {{ .WordCount }},
+  "url": "{{ .Permalink }}",
+  {{ with .Params.image }}"image": "{{ . | absURL }}",{{ else }}"image": "{{ .Site.Params.ogimage | absURL }}",{{ end }}
+  "articleBody": {{ .Content | plainify | jsonify }},
+  {{ with .Params.tags }}"keywords": {{ . | jsonify }},{{ end }}
+  "author": {
+    "@type": "Person",
+    "name": "{{ .Site.Params.Author.name }}",
+    "url": "https://denis.evsyukov.org"
+  },
+  "publisher": {
+    "@type": "Person",
+    "name": "{{ .Site.Params.Author.name }}",
+    "url": "https://denis.evsyukov.org"
+  },
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "{{ .Permalink }}"
+  }
+  {{- else -}}
+  "@type": "Website",
+  "name": "{{ .Site.Title }}",
+  "url": "{{ .Site.BaseURL }}",
+  "description": "{{ .Site.Params.Description }}",
+  "author": {
+    "@type": "Person",
+    "name": "{{ .Site.Params.Author.name }}",
+    "url": "https://denis.evsyukov.org"
+  },
+  "publisher": {
+    "@type": "Person",
+    "name": "{{ .Site.Params.Author.name }}",
+    "url": "https://denis.evsyukov.org"
+  }
+  {{- end }}
+}
+</script>

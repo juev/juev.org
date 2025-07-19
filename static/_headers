@@ -1,6 +1,6 @@
 /*
-    Content-Security-Policy: "default-src 'self' 'unsafe-inline' static.juev.org data:; font-src 'self' fonts.gstatic.com data:; child-src 'none'; upgrade-insecure-requests"
-    Strict-Transport-Security: "max-age=1000"
+    Content-Security-Policy: "default-src 'self' static.juev.org data:; style-src 'self' 'unsafe-inline' fonts.googleapis.com; font-src 'self' fonts.gstatic.com data:; img-src 'self' data: https:; script-src 'self'; child-src 'none'; upgrade-insecure-requests"
+    Strict-Transport-Security: "max-age=63072000; includeSubDomains; preload"
     X-Xss-Protection: "1; mode=block"
     X-Frame-Options: "DENY"
     X-Content-Type-Options: "nosniff"

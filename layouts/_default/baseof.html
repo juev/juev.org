@@ -1,10 +1,12 @@
 <!DOCTYPE html>
 {{ "<!--\n You can email me with PGP-key: 0xE8ADA1A55B3CA4EA\n -->" | safeHTML }}
-<html prefix="og: http://ogp.me/ns#" lang="ru">
+<html lang="ru">
 
 <head itemscope itemtype="{{ .Site.BaseURL }}">
     <meta charset="utf-8">
     <link rel="dns-prefetch" href="//static.juev.org">
+    <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <title>{{- block "title" . -}} {{- .Site.Title -}} {{- end -}}</title>
     <meta name="description" content="{{ .Summary | default .Site.Params.Description }}" />
     <meta name="yandex-verification" content="59bb4b98872e096b">
@@ -59,6 +61,7 @@
     <meta itemprop="description" content="{{- .Summary | default .Site.Params.Description -}}" />
     {{ with .Params.image }}<meta itemprop="image" content="{{ . | absURL }}" />{{ else }}<meta itemprop="image" content="{{ .Site.Params.ogimage | absURL }}" />{{ end }}
     {{ "<!-- end schema.org -->" | safeHTML }}
+    {{ partial "schema.html" . }}
 </head>
 
 <body class="wide" itemscope itemtype="https://schema.org/WebPage">
