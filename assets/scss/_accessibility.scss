@@ -75,11 +75,11 @@ a:not([class]):focus {
 
 /* 3. Улучшение ссылок в подвале */
 .footer a {
-    color: #f0f0f0 !important; /* Более светлый цвет для лучшего контраста на темном фоне */
-    font-weight: 500;
+    color: #ffffff !important; /* Белый цвет для максимального контраста на темном фоне */
+    font-weight: 600; /* Увеличиваем вес шрифта */
     text-decoration: underline;
-    text-decoration-thickness: 1px;
-    text-underline-offset: 2px;
+    text-decoration-thickness: 2px; /* Увеличиваем толщину подчеркивания */
+    text-underline-offset: 3px;
     transition: all 0.2s ease;
 }
 
@@ -112,8 +112,22 @@ select:focus {
 }
 
 /* 6. Улучшение контрастности для заголовков */
+/* Обеспечиваем хорошую контрастность, но сохраняем читаемость на десктопе */
 h1, h2, h3, h4, h5, h6 {
-    color: #2c3e50; /* Темнее для лучшего контраста */
+    color: #333; /* Умеренно темный цвет для хорошего баланса */
+}
+
+/* Специальные стили для различных размеров экрана */
+@media (max-width: 768px) {
+    h1, h2, h3, h4, h5, h6 {
+        color: #2c3e50; /* Более темный на мобильных для лучшего контраста */
+    }
+}
+
+@media (min-width: 1000px) {
+    h1, h2, h3, h4, h5, h6 {
+        color: #444; /* Чуть светлее на больших экранах для лучшей эстетики */
+    }
 }
 
 /* 7. Кнопка "Перейти к основному содержанию" */
@@ -241,9 +255,38 @@ h1, h2, h3, h4, h5, h6 {
         line-height: 1.8;
     }
     
-    h1 { font-size: 2.5em; }
-    h2 { font-size: 2.2em; }
-    h3 { font-size: 1.8em; }
+    /* Улучшенные размеры заголовков для десктопа */
+    h1 { 
+        font-size: 2.2em; 
+        line-height: 1.2;
+        margin-bottom: 0.8em;
+    }
+    h2 { 
+        font-size: 1.8em; 
+        line-height: 1.3;
+        margin-bottom: 0.7em;
+    }
+    h3 { 
+        font-size: 1.5em; 
+        line-height: 1.4;
+        margin-bottom: 0.6em;
+    }
+}
+
+/* Дополнительные улучшения для среднего размера экрана (планшеты и небольшие десктопы) */
+@media (min-width: 768px) and (max-width: 1199px) {
+    h1 { 
+        font-size: 2em; 
+        line-height: 1.2;
+    }
+    h2 { 
+        font-size: 1.6em; 
+        line-height: 1.3;
+    }
+    h3 { 
+        font-size: 1.3em; 
+        line-height: 1.4;
+    }
 }
 
 /* 16. Мобильные улучшения доступности */
