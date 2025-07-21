@@ -1,0 +1,266 @@
+/* Улучшения доступности для сайта juev.org */
+
+/* 0. Утилитарные классы для screen readers */
+.sr-only {
+    position: absolute !important;
+    width: 1px !important;
+    height: 1px !important;
+    padding: 0 !important;
+    margin: -1px !important;
+    overflow: hidden !important;
+    clip: rect(0, 0, 0, 0) !important;
+    white-space: nowrap !important;
+    border: 0 !important;
+}
+
+.sr-only:focus {
+    position: static !important;
+    width: auto !important;
+    height: auto !important;
+    padding: inherit !important;
+    margin: inherit !important;
+    overflow: visible !important;
+    clip: auto !important;
+    white-space: normal !important;
+}
+
+/* 1. Исправление проблем с контрастностью ссылок */
+.allpostsmeta a,
+.allpostsmeta a:visited {
+    color: #0a2540 !important; /* Еще более темный синий для идеального контраста */
+    font-weight: 700; /* Более жирный шрифт */
+    border-bottom: 2px solid #0a2540;
+    text-decoration: none;
+    padding-bottom: 1px;
+    transition: all 0.2s ease;
+}
+
+/* Дополнительная специфичность для .meta .pagination ссылок */
+.meta .pagination a,
+.meta .pagination a:visited,
+.pagination a,
+.pagination a:visited {
+    color: #0a2540 !important;
+    font-weight: 700 !important;
+    border-bottom: 2px solid #0a2540 !important;
+    text-decoration: none !important;
+}
+
+.allpostsmeta a:hover,
+.allpostsmeta a:focus {
+    color: #d04000 !important;
+    border-bottom-color: #d04000;
+    background-color: rgba(208, 64, 0, 0.1);
+    outline: 2px solid #d04000;
+    outline-offset: 2px;
+}
+
+/* 2. Улучшение выделения ссылок в тексте */
+a:not([class]) {
+    color: #1f4e79;
+    font-weight: 500;
+    text-decoration: underline;
+    text-decoration-thickness: 2px;
+    text-decoration-color: rgba(31, 78, 121, 0.4);
+    text-underline-offset: 2px;
+    transition: all 0.2s ease;
+}
+
+a:not([class]):hover,
+a:not([class]):focus {
+    color: #d04000;
+    text-decoration-color: #d04000;
+    background-color: rgba(208, 64, 0, 0.1);
+}
+
+/* 3. Улучшение ссылок в подвале */
+.footer a {
+    color: #f0f0f0 !important; /* Более светлый цвет для лучшего контраста на темном фоне */
+    font-weight: 500;
+    text-decoration: underline;
+    text-decoration-thickness: 1px;
+    text-underline-offset: 2px;
+    transition: all 0.2s ease;
+}
+
+.footer a:hover,
+.footer a:focus {
+    color: #BC5007 !important;
+    background-color: rgba(188, 80, 7, 0.2);
+    outline: 2px solid #BC5007;
+    outline-offset: 2px;
+}
+
+/* 4. Улучшение focus-состояний для лучшей навигации с клавиатуры */
+a:focus,
+button:focus,
+input:focus,
+textarea:focus,
+select:focus {
+    outline: 3px solid #BC5007 !important;
+    outline-offset: 2px;
+    background-color: rgba(188, 80, 7, 0.1);
+    border-radius: 2px;
+}
+
+/* 5. Специальные стили для навигации */
+.navigation a:focus {
+    outline: 3px solid #fff !important;
+    outline-offset: 2px;
+    background-color: rgba(188, 80, 7, 0.3);
+    border-radius: 2px;
+}
+
+/* 6. Улучшение контрастности для заголовков */
+h1, h2, h3, h4, h5, h6 {
+    color: #2c3e50; /* Темнее для лучшего контраста */
+}
+
+/* 7. Кнопка "Перейти к основному содержанию" */
+.skip-nav {
+    position: absolute;
+    top: -40px;
+    left: 6px;
+    background-color: #BC5007;
+    color: white;
+    padding: 8px 16px;
+    text-decoration: none;
+    font-weight: 600;
+    border-radius: 4px;
+    z-index: 9999;
+    transition: top 0.2s ease;
+    border: 2px solid #fff;
+}
+
+.skip-nav:focus {
+    top: 6px;
+    outline: 3px solid #fff;
+    outline-offset: 2px;
+}
+
+/* 8. Улучшение видимости индикатора офлайн-режима */
+.offline-indicator {
+    background-color: #e74c3c;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    font-weight: 600;
+    font-size: 16px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 10000;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+/* 9. Улучшение читаемости основного текста */
+.post p,
+.entry p {
+    color: #2c3e50;
+    line-height: 1.7;
+}
+
+/* 10. Медиа-запросы для высококонтрастного режима */
+@media (prefers-contrast: high) {
+    a, a:visited {
+        color: #000080 !important;
+        text-decoration: underline !important;
+        text-decoration-thickness: 2px !important;
+    }
+    
+    .footer a, .footer a:visited {
+        color: #ffffff !important;
+        text-decoration: underline !important;
+    }
+    
+    a:hover, a:focus {
+        background-color: #ffff00 !important;
+        color: #000000 !important;
+    }
+}
+
+/* 11. Медиа-запросы для уменьшенной анимации */
+@media (prefers-reduced-motion: reduce) {
+    * {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+    }
+}
+
+/* 12. Улучшение стилей для печати */
+@media print {
+    a[href]:after {
+        content: " (" attr(href) ")";
+        font-size: 0.8em;
+        color: #666;
+    }
+    
+    .navigation, .footer, .skip-nav {
+        display: none;
+    }
+}
+
+/* 13. Темная тема (если пользователь предпочитает темную тему) */
+@media (prefers-color-scheme: dark) {
+    body {
+        background-color: #1a1a1a;
+        color: #e0e0e0;
+    }
+    
+    a, a:visited {
+        color: #7db3f0 !important;
+    }
+    
+    a:hover, a:focus {
+        color: #ff7b3d !important;
+        background-color: rgba(255, 123, 61, 0.1);
+    }
+    
+    h1, h2, h3, h4, h5, h6 {
+        color: #f0f0f0;
+    }
+    
+    .post p, .entry p {
+        color: #d0d0d0;
+    }
+}
+
+/* 14. Улучшение для людей с дислексией */
+@media (prefers-reduced-motion: reduce) {
+    body {
+        font-family: 'Open Dyslexic', 'Comic Sans MS', cursive, sans-serif;
+    }
+}
+
+/* 15. Большие размеры текста для лучшей читаемости */
+@media (min-width: 1200px) {
+    body {
+        font-size: 18px;
+        line-height: 1.8;
+    }
+    
+    h1 { font-size: 2.5em; }
+    h2 { font-size: 2.2em; }
+    h3 { font-size: 1.8em; }
+}
+
+/* 16. Мобильные улучшения доступности */
+@media (max-width: 768px) {
+    .skip-nav {
+        left: 10px;
+        right: 10px;
+        text-align: center;
+    }
+    
+    a:focus, button:focus {
+        outline-width: 4px; /* Более толстая рамка на мобильных */
+    }
+    
+    .footer a {
+        padding: 8px 4px; /* Больше области для тапа */
+        display: inline-block;
+        margin: 2px;
+    }
+}

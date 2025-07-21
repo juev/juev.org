@@ -1,3 +1,16 @@
 public
 resources
 .hugo_build.lock
+
+# Accessibility testing files and reports
+accessibility-tests/
+accessibility-analysis/
+accessibility-report/
+**/reports/
+**/node_modules/
+**/package-lock.json
+accessibility_*.json
+accessibility_*.html
+playwright-report/
+test-results/
+hugo_server.log
