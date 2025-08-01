@@ -52,12 +52,12 @@
     {{ "<!-- Service Worker Registration -->" | safeHTML }}
     {{ $sw := resources.Get "js/sw-register.js" | minify | fingerprint }}
     <script src="{{ $sw.Permalink }}" defer></script>    
-    {{ "<!-- Page preloading script -->" | safeHTML }}
-    {{ $preload := resources.Get "js/preload.js" | minify | fingerprint }}
-    <script src="{{ $preload.Permalink }}" defer></script>
     {{ "<!-- Image enhancement script -->" | safeHTML }}
     {{ $images := resources.Get "js/images.js" | minify | fingerprint }}
     <script src="{{ $images.Permalink }}" defer></script>
+    {{ "<!-- Safe page preloading script -->" | safeHTML }}
+    {{ $preload := resources.Get "js/preload.js" | minify | fingerprint }}
+    <script src="{{ $preload.Permalink }}" defer></script>
     {{- if not hugo.IsProduction -}}
     {{ "<!-- Development resource verification -->" | safeHTML }}
     {{ partial "resource-check.html" . }}
