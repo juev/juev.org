@@ -1,0 +1,22 @@
+---
+title: "Ссылки #349"
+date: 2025-08-02T09:37:02+0300
+image: https://static.juev.org/images/links.jpg
+tags:
+  - links
+---
+
+За прошедшую неделю сохранил 61 ссылку.
+
+- [Do not download the app, use the website](https://idiallo.com/blog/dont-download-apps)
+- [My Emacs writing experience :: Sacha Chua](https://sachachua.com/blog/2025/07/my-emacs-writing-experience/)
+- [How we Rooted Copilot - Eye Research](https://research.eye.security/how-we-rooted-copilot/)
+- [jkoppel/jj-workshop](https://github.com/jkoppel/jj-workshop)
+- [Jujutsu For Busy Devs | maddie, wtf?!](https://maddie.wtf/posts/2025-07-21-jujutsu-for-busy-devs)
+- [A month using XMPP (using Snikket) for every call and chat](https://neilzone.co.uk/2023/08/a-month-using-xmpp-using-snikket-for-every-call-and-chat/)
+- [OpenAI: Introducing study mode](https://simonwillison.net/2025/Jul/29/openai-introducing-study-mode/)
+- [wshobson/agents: A collection of production-ready subagents for Claude Code](https://github.com/wshobson/agents)
+- [Go Assembly Mutation Testing](https://words.filippo.io/assembly-mutation/)
+- [you might not need tmux](https://bower.sh/you-might-not-need-tmux)
+
+Хорошей вам недели!
