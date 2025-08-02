@@ -56,8 +56,12 @@
     {{ $images := resources.Get "js/images.js" | minify | fingerprint }}
     <script src="{{ $images.Permalink }}" defer></script>
     {{ "<!-- Safe page preloading script -->" | safeHTML }}
-    {{ $preload := resources.Get "js/preload.js" | minify | fingerprint }}
-    <script src="{{ $preload.Permalink }}" defer></script>
+    <script type="speculationrules">
+    {
+        "prerender": [{ "where": { "href_matches": "/*" }, "eagerness": "moderate" }],
+        "prefetch": [{ "where": { "href_matches": "/*" }, "eagerness": "moderate" }]
+    }
+    </script>
     {{- if not hugo.IsProduction -}}
     {{ "<!-- Development resource verification -->" | safeHTML }}
     {{ partial "resource-check.html" . }}
