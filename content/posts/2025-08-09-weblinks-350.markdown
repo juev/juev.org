@@ -8,15 +8,46 @@ tags:
 
 За прошедшую неделю собрал 77 ссылок.
 
-- [At 17, Hannah Cairo Solved a Major Math Mystery | Quanta Magazine](https://www.quantamagazine.org/at-17-hannah-cairo-solved-a-major-math-mystery-20250801/)
-- [Persona vectors: Monitoring and controlling character traits in language models](https://www.anthropic.com/research/persona-vectors)
-- [How To Remember Anything Forever-ish](https://ncase.me/remember/)
-- [On Organizing My Notes](https://takeonrules.com/2025/08/03/on-organizing-my-notes/)
-- [The Analog Life: 50 Ways to Unplug and Feel Human Again](https://www.insidehook.com/mental-health/analog-life-50-ways-unplug-feel-human-again)
-- [Display your Claude Code Token Usage on Your Mac's Toolbar](https://preslav.me/2025/08/04/put-claude-code-token-usage-macos-toolbar/)
-- [Why is GitHub UI getting so much slower?](https://yoyo-code.com/why-is-github-ui-getting-so-much-slower/)
-- [What we learned from creating PostCSS—Martian Chronicles, Evil Martians’ team blog](https://evilmartians.com/chronicles/what-we-learned-from-creating-postcss)
-- [GPT-5: Key characteristics, pricing and model card](https://simonwillison.net/2025/Aug/7/gpt-5/)
-- [Live coding sucks](https://hadid.dev/posts/living-coding/)
+## 🧠 Наука и мышление
+
+**[At 17, Hannah Cairo Solved a Major Math Mystery | Quanta Magazine](https://www.quantamagazine.org/at-17-hannah-cairo-solved-a-major-math-mystery-20250801/)**  
+История молодой математики, решившей сложную задачу, над которой бились десятилетиями.
+
+**[How To Remember Anything Forever-ish](https://ncase.me/remember/)**  
+Интерактивное руководство по техникам долговременной памяти.
+
+## 🤖 ИИ и технологии
+
+**[Persona vectors: Monitoring and controlling character traits in language models](https://www.anthropic.com/research/persona-vectors)**  
+Исследование о том, как управлять «характером» языковых моделей.
+
+**[GPT-5: Key characteristics, pricing and model card](https://simonwillison.net/2025/Aug/7/gpt-5/)**  
+Обзор возможностей и цен новой версии GPT.
+
+**[Display your Claude Code Token Usage on Your Mac's Toolbar](https://preslav.me/2025/08/04/put-claude-code-token-usage-macos-toolbar/)**  
+Как вывести статистику использования Claude Code прямо в меню macOS.
+
+## 📝 Организация и продуктивность
+
+**[On Organizing My Notes](https://takeonrules.com/2025/08/03/on-organizing-my-notes/)**  
+Автор делится подходами к организации заметок и личной базы знаний.
+
+**[The Analog Life: 50 Ways to Unplug and Feel Human Again](https://www.insidehook.com/mental-health/analog-life-50-ways-unplug-feel-human-again)**  
+50 способов отдохнуть от цифрового мира и почувствовать себя живым.
+
+## 💻 Разработка и инструменты
+
+**[Why is GitHub UI getting so much slower?](https://yoyo-code.com/why-is-github-ui-getting-so-much-slower/)**  
+Разбор причин замедления интерфейса GitHub.
+
+**[What we learned from creating PostCSS—Martian Chronicles, Evil Martians’ team blog](https://evilmartians.com/chronicles/what-we-learned-from-creating-postcss)**  
+Опыт команды Evil Martians по созданию популярного инструмента для CSS.
+
+**[Live coding sucks](https://hadid.dev/posts/living-coding/)**  
+Почему формат live coding не всегда эффективен для обучения.
+
+---
+
+Особенно понравились материалы о развитии памяти и о том, как молодые исследователи меняют науку. А статья о замедлении GitHub — отличный повод задуматься о качестве современных инструментов.
 
 Хорошей вам недели!
