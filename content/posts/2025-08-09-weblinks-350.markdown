@@ -1,0 +1,22 @@
+---
+title: "Ссылки #350"
+date: 2025-08-09T09:44:02+0300
+image: https://static.juev.org/images/links.jpg
+tags:
+  - links
+---
+
+За прошедшую неделю собрал 77 ссылок.
+
+- [At 17, Hannah Cairo Solved a Major Math Mystery | Quanta Magazine](https://www.quantamagazine.org/at-17-hannah-cairo-solved-a-major-math-mystery-20250801/)
+- [Persona vectors: Monitoring and controlling character traits in language models](https://www.anthropic.com/research/persona-vectors)
+- [How To Remember Anything Forever-ish](https://ncase.me/remember/)
+- [On Organizing My Notes](https://takeonrules.com/2025/08/03/on-organizing-my-notes/)
+- [The Analog Life: 50 Ways to Unplug and Feel Human Again](https://www.insidehook.com/mental-health/analog-life-50-ways-unplug-feel-human-again)
+- [Display your Claude Code Token Usage on Your Mac's Toolbar](https://preslav.me/2025/08/04/put-claude-code-token-usage-macos-toolbar/)
+- [Why is GitHub UI getting so much slower?](https://yoyo-code.com/why-is-github-ui-getting-so-much-slower/)
+- [What we learned from creating PostCSS—Martian Chronicles, Evil Martians’ team blog](https://evilmartians.com/chronicles/what-we-learned-from-creating-postcss)
+- [GPT-5: Key characteristics, pricing and model card](https://simonwillison.net/2025/Aug/7/gpt-5/)
+- [Live coding sucks](https://hadid.dev/posts/living-coding/)
+
+Хорошей вам недели!
