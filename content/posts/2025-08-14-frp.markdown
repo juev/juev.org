@@ -5,6 +5,10 @@ tags:
   - cloudflare
   - tailscale
   - network
+  - tunnel
+  - proxy
+  - server
+  - frp
 ---
 
 ## О чём эта статья
