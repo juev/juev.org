@@ -8,13 +8,38 @@ tags:
 
 За прошедшую неделю собрал 88 ссылок.
 
-- [Testing Bitchat at the music festival](https://primal.net/e/naddr1qvzqqqr4gupzpklqvpdfcuch9wkh2gary7erd4275jmrf6qw0z5sz0dhj8u06kevqqjhgetnw35kueedvf5hgcmgv96z6ct5946xsefdd46hx6tr94nx2um5d9mxzmqk5t2vw)
-- [Deep-ai-inc/ch.at: Universal Basic Chat](https://github.com/Deep-ai-inc/ch.at)
-- [From GPT-2 to gpt-oss: Analyzing the Architectural Advances](https://magazine.sebastianraschka.com/p/from-gpt-2-to-gpt-oss-analyzing-the)
-- [Optimizing My Sleep Around Claude Usage Limits](https://mattwie.se/no-sleep-till-agi)
-- [What Happened When I Tried to Replace Myself with ChatGPT in My English Classroom](https://lithub.com/what-happened-when-i-tried-to-replace-myself-with-chatgpt-in-my-english-classroom/)
-- [Claude Code Is All You Need](https://dwyer.co.za/static/claude-code-is-all-you-need.html)
-- [Getting Good Results from Claude Code](https://www.dzombak.com/blog/2025/08/getting-good-results-from-claude-code/)
-- [tanrax/org-social: Org-social is a decentralized social network that runs on an Org Mode file over HTTP.](https://github.com/tanrax/org-social)
+## 🤖 ИИ и машинное обучение
+
+**[From GPT-2 to gpt-oss: Analyzing the Architectural Advances](https://magazine.sebastianraschka.com/p/from-gpt-2-to-gpt-oss-analyzing-the)**  
+Детальный анализ архитектурных изменений в семействе GPT-моделей.
+
+**[What Happened When I Tried to Replace Myself with ChatGPT in My English Classroom](https://lithub.com/what-happened-when-i-tried-to-replace-myself-with-chatgpt-in-my-english-classroom/)**  
+Интересный эксперимент преподавателя по замене себя на ИИ в учебном процессе.
+
+**[Optimizing My Sleep Around Claude Usage Limits](https://mattwie.se/no-sleep-till-agi)**  
+Забавная история о том, как лимиты ИИ влияют на режим сна разработчика.
+
+## 💻 Инструменты разработки
+
+**[Claude Code Is All You Need](https://dwyer.co.za/static/claude-code-is-all-you-need.html)**  
+Обзор возможностей Claude Code как универсального инструмента разработчика.
+
+**[Getting Good Results from Claude Code](https://www.dzombak.com/blog/2025/08/getting-good-results-from-claude-code/)**  
+Практические советы по эффективному использованию Claude Code.
+
+## 💬 Коммуникации и соцсети
+
+**[Testing Bitchat at the music festival](https://primal.net/e/naddr1qvzqqqr4gupzpklqvpdfcuch9wkh2gary7erd4275jmrf6qw0z5sz0dhj8u06kevqqjhgetnw35kueedvf5hgcmgv96z6ct5946xsefdd46hx6tr94nx2um5d9mxzmqk5t2vw)**  
+Тестирование децентрализованного чата на музыкальном фестивале.
+
+**[Deep-ai-inc/ch.at: Universal Basic Chat](https://github.com/Deep-ai-inc/ch.at)**  
+Минималистичный чат с поддержкой ИИ и открытым исходным кодом.
+
+**[tanrax/org-social: Org-social is a decentralized social network that runs on an Org Mode file over HTTP.](https://github.com/tanrax/org-social)**  
+Необычная соцсеть, работающая поверх файлов Org Mode.
+
+---
+
+Особенно впечатлили материалы о Claude Code — этот инструмент действительно меняет подход к разработке. А эксперимент с заменой преподавателя на ИИ показывает, что мы ещё далеки от полной автоматизации образования.
 
 Хорошей вам недели!
