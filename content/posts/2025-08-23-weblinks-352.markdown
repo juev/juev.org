@@ -1,0 +1,21 @@
+---
+title: "Ссылки #352"
+date: 2025-08-23T09:52:02+0300
+image: https://static.juev.org/images/links.jpg
+tags:
+  - links
+---
+
+За прошедшую неделю собрал 64 ссылки.
+
+- [GPT-5 has a hidden system prompt](https://simonwillison.net/2025/Aug/15/gpt-5-has-a-hidden-system-prompt/)
+- [appliedgocode/git-cmt](https://github.com/appliedgocode/git-cmt)
+- [X-CMD | Lightweight POSIX script for managing tools (500+) and providing classic command extensions in an open-source environment.](https://www.x-cmd.com/)
+- [Markdown Is a Disaster: Why and What to Do Instead](https://karl-voit.at/2025/08/17/Markdown-disaster/)
+- [Small Commits, Big Wins: How Atomic Changes Transform Developer Life | HackerNoon](https://hackernoon.com/small-commits-big-wins-how-atomic-changes-transform-developer-life)
+- [Code Review Can Be Better](https://tigerbeetle.com/blog/2025-08-04-code-review-can-be-better/)
+- [The Principle of Atomicity – On the Difference Between a Principle and Its Implementation • Zettelkasten Method](https://zettelkasten.de/posts/principle-of-atomicity-difference-between-principle-and-implementation/) 
+- [Short Note: faster loading of credentials from Bitwarden using rbw](https://blog.aleksic.dev/short-note-faster-loading-of-credentials-from-bitwarden-using-rbw)
+- [Anki is Already Dead](https://miguelconner.substack.com/p/anki-is-already-dead)
+
+Хорошей вам недели!
