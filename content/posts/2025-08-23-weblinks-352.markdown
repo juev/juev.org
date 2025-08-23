@@ -8,14 +8,47 @@ tags:
 
 За прошедшую неделю собрал 64 ссылки.
 
-- [GPT-5 has a hidden system prompt](https://simonwillison.net/2025/Aug/15/gpt-5-has-a-hidden-system-prompt/)
-- [appliedgocode/git-cmt](https://github.com/appliedgocode/git-cmt)
-- [X-CMD | Lightweight POSIX script for managing tools (500+) and providing classic command extensions in an open-source environment.](https://www.x-cmd.com/)
-- [Markdown Is a Disaster: Why and What to Do Instead](https://karl-voit.at/2025/08/17/Markdown-disaster/)
-- [Small Commits, Big Wins: How Atomic Changes Transform Developer Life | HackerNoon](https://hackernoon.com/small-commits-big-wins-how-atomic-changes-transform-developer-life)
-- [Code Review Can Be Better](https://tigerbeetle.com/blog/2025-08-04-code-review-can-be-better/)
-- [The Principle of Atomicity – On the Difference Between a Principle and Its Implementation • Zettelkasten Method](https://zettelkasten.de/posts/principle-of-atomicity-difference-between-principle-and-implementation/) 
-- [Short Note: faster loading of credentials from Bitwarden using rbw](https://blog.aleksic.dev/short-note-faster-loading-of-credentials-from-bitwarden-using-rbw)
-- [Anki is Already Dead](https://miguelconner.substack.com/p/anki-is-already-dead)
+## 🤖 ИИ и машинное обучение
+
+**[GPT-5 has a hidden system prompt](https://simonwillison.net/2025/Aug/15/gpt-5-has-a-hidden-system-prompt/)**  
+Интересное исследование скрытых системных промптов в GPT-5.
+
+## 🛠️ Инструменты разработки
+
+**[appliedgocode/git-cmt](https://github.com/appliedgocode/git-cmt)**  
+Утилита для работы с Git commit сообщениями.
+
+**[X-CMD | Lightweight POSIX script for managing tools (500+) and providing classic command extensions in an open-source environment.](https://www.x-cmd.com/)**  
+Легковесный POSIX скрипт для управления инструментами и расширениями команд.
+
+## 📝 Письменность и документация
+
+**[Markdown Is a Disaster: Why and What to Do Instead](https://karl-voit.at/2025/08/17/Markdown-disaster/)**  
+Критический взгляд на проблемы Markdown и альтернативы.
+
+## 💻 Практики разработки
+
+**[Small Commits, Big Wins: How Atomic Changes Transform Developer Life | HackerNoon](https://hackernoon.com/small-commits-big-wins-how-atomic-changes-transform-developer-life)**  
+О преимуществах атомарных коммитов в разработке.
+
+**[Code Review Can Be Better](https://tigerbeetle.com/blog/2025-08-04-code-review-can-be-better/)**  
+Советы по улучшению процесса code review.
+
+**[The Principle of Atomicity – On the Difference Between a Principle and Its Implementation • Zettelkasten Method](https://zettelkasten.de/posts/principle-of-atomicity-difference-between-principle-and-implementation/)**  
+Принцип атомарности в методе Zettelkasten.
+
+## 🔐 Безопасность и управление паролями
+
+**[Short Note: faster loading of credentials from Bitwarden using rbw](https://blog.aleksic.dev/short-note-faster-loading-of-credentials-from-bitwarden-using-rbw)**  
+Ускорение загрузки учетных данных из Bitwarden с помощью rbw.
+
+## 📚 Обучение и продуктивность
+
+**[Anki is Already Dead](https://miguelconner.substack.com/p/anki-is-already-dead)**  
+Анализ состояния и будущего системы интервального повторения Anki.
+
+---
+
+Особенно интересны материалы о принципах атомарности в разработке и критический взгляд на Markdown. А обсуждение будущего Anki показывает, как даже проверенные временем инструменты могут устаревать.
 
 Хорошей вам недели!
