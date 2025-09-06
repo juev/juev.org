@@ -1,0 +1,20 @@
+---
+title: "Ссылки #354"
+date: 2025-09-06T09:15:02+0300
+image: https://static.juev.org/images/links.jpg
+tags:
+  - links
+---
+
+За прошедшую неделю собрал 55 ссылок.
+
+- [Agent Client Protocol](https://agentclientprotocol.com/overview/introduction)
+- [Йон фон Течнер высказался против ИИ в браузерах](https://xakep.ru/2025/08/29/von-tetzchner-ai/)
+- [My foray into Vlang](https://kristun.dev/posts/my-foray-into-vlang/)
+- [Jujutsu for everyone](https://jj-for-everyone.github.io/)
+- [Testing Time (and other asyncronicities) - The Go Programming Language](https://go.dev/blog/testing-time)
+- [Git exclude, a handy feature you might not know about / Marijke Luttekes](https://marijkeluttekes.dev/blog/articles/2025/09/03/git-exclude-a-handy-feature-you-might-not-know-about/)
+- [My Alpine Linux Jump Box: A Lightweight VPN Alternative](https://ramon.vanraaij.eu/my-alpine-linux-jump-box-a-lightweight-vpn-alternative/)
+- [Why Rewriting Emacs Is Hard](https://kyo.iroiro.party/en/posts/why-rewriting-emacs-is-hard/)
+
+Хорошей вам недели!
