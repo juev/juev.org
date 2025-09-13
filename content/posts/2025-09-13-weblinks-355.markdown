@@ -8,10 +8,29 @@ tags:
 
 За прошедшую неделю собрал 45 ссылок.
 
-- [Some thoughts on personal git hosting](https://shkspr.mobi/blog/2025/09/some-thoughts-on-personal-git-hosting/)
-- [Look Out For Bugs](https://matklad.github.io/2025/09/04/look-for-bugs.html)
-- [Switching from Docker to Podman](https://codesmash.dev/why-i-ditched-docker-for-podman-and-you-should-too)
-- [Thoughts on running my own forgejo (hosted git with web stuff) server](https://neilzone.co.uk/2025/09/thoughts-on-running-my-own-forgejo-hosted-git-with-web-stuff-server/)
-- [The Scam Called “You Don't Have to Remember Anything” • Zettelkasten Method](https://zettelkasten.de/posts/the-scam-called-you-dont-have-to-remember-anything/)
+## 🛠️ Инструменты и инфраструктура
+
+**[Some thoughts on personal git hosting](https://shkspr.mobi/blog/2025/09/some-thoughts-on-personal-git-hosting/)**  
+Размышления о самостоятельном размещении репозиториев Git: мотивация, риски и компромиссы.
+
+**[Switching from Docker to Podman](https://codesmash.dev/why-i-ditched-docker-for-podman-and-you-should-too)**  
+Опыт миграции с Docker на Podman: причины перехода, безопасность и совместимость.
+
+**[Thoughts on running my own forgejo (hosted git with web stuff) server](https://neilzone.co.uk/2025/09/thoughts-on-running-my-own-forgejo-hosted-git-with-web-stuff-server/)**  
+Практический опыт эксплуатации собственного сервера Forgejo: настройка, поддержка и наблюдения.
+
+## 🧪 Качество и отладка
+
+**[Look Out For Bugs](https://matklad.github.io/2025/09/04/look-for-bugs.html)**  
+Подход к систематическому поиску ошибок в коде: наблюдения и практические советы.
+
+## 🧠 Продуктивность и знания
+
+**[The Scam Called “You Don't Have to Remember Anything” • Zettelkasten Method](https://zettelkasten.de/posts/the-scam-called-you-dont-have-to-remember-anything/)**  
+Критика идеи «ничего не нужно запоминать» в системах заметок: роль памяти и осмысленного повторения.
+
+---
+
+На этой неделе выделяются темы самостоятельного хостинга Git и управления инфраструктурой, практические шаги при переходе с Docker на Podman, подходы к систематическому поиску ошибок, а также размышления о границах внешних систем знаний и важности личной памяти.
 
 Хорошей вам недели!
