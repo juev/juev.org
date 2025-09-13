@@ -1,0 +1,17 @@
+---
+title: "Ссылки #355"
+date: 2025-09-13T08:29:02+0300
+image: https://static.juev.org/images/links.jpg
+tags:
+  - links
+---
+
+За прошедшую неделю собрал 45 ссылок.
+
+- [Some thoughts on personal git hosting](https://shkspr.mobi/blog/2025/09/some-thoughts-on-personal-git-hosting/)
+- [Look Out For Bugs](https://matklad.github.io/2025/09/04/look-for-bugs.html)
+- [Switching from Docker to Podman](https://codesmash.dev/why-i-ditched-docker-for-podman-and-you-should-too)
+- [Thoughts on running my own forgejo (hosted git with web stuff) server](https://neilzone.co.uk/2025/09/thoughts-on-running-my-own-forgejo-hosted-git-with-web-stuff-server/)
+- [The Scam Called “You Don't Have to Remember Anything” • Zettelkasten Method](https://zettelkasten.de/posts/the-scam-called-you-dont-have-to-remember-anything/)
+
+Хорошей вам недели!
