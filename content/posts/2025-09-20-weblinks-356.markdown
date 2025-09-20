@@ -1,0 +1,19 @@
+---
+title: "Ссылки #356"
+date: 2025-09-20T09:21:02+0300
+image: https://static.juev.org/images/links.jpg
+tags:
+  - links
+---
+
+За прошедшую неделю собрал 51 ссылку.
+
+- [meow-edit/meow: Yet another modal editing on Emacs](https://github.com/meow-edit/meow)
+- [How to Use Claude Code Subagents to Parallelize Development](https://zachwills.net/how-to-use-claude-code-subagents-to-parallelize-development/)
+- [Fine-grained HTTP filtering for Claude Code](https://ammar.io/blog/httpjail)
+- [In-depth Review of Emacs tree-sitter integration](https://archive.casouri.cc/note/2025/emacs-tree-sitter-in-depth/index.html)
+- [How I Use Multiple Agents in Parallel](https://dolthub.com/blog/2025-08-28-how-i-use-multiple-agents-in-parallel/)
+- [Filter the tools from MCP servers](http://blog.pamelafox.org/2025/09/filter-tools-from-mcp-servers.html)
+- [Developing an AI Agent](https://dolthub.com/blog/2025-09-19-agentic-development/)
+
+Хорошей вам недели!
