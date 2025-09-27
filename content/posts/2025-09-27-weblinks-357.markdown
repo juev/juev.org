@@ -1,0 +1,17 @@
+---
+title: "Ссылки #357"
+date: 2025-09-27T09:25:02+0300
+image: https://static.juev.org/images/links.jpg
+tags:
+  - links
+---
+
+За прошедшую неделю собрал 71 ссылку.
+
+- [Less is safer: how Obsidian reduces the risk of supply chain attacks](https://obsidian.md/blog/less-is-safer/)
+- [httpjail](https://simonwillison.net/2025/Sep/19/httpjail/)
+- [Adding Org Mode link awesomeness elsewhere: my-org-insert-link-dwim](https://sachachua.com/blog/2025/09/adding-org-mode-link-awesomeness-elsewhere-my-org-insert-link-dwim/)
+- [Firefox Hardening Guide 2025](https://brainfucksec.github.io/firefox-hardening-guide-2025)
+- [How to Motivate Yourself To Do A Thing You Don't Want to Do](https://ashleyjanssen.com/how-to-motivate-yourself-to-do-a-thing-you-dont-want-to-do/)
+
+Хорошей вам недели!
