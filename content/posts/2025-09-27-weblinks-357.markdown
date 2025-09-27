@@ -6,12 +6,29 @@ tags:
   - links
 ---
 
-За прошедшую неделю собрал 71 ссылку.
+За прошедшую неделю собрал 71 ссылку; ниже — 5 наиболее примечательных.
 
-- [Less is safer: how Obsidian reduces the risk of supply chain attacks](https://obsidian.md/blog/less-is-safer/)
-- [httpjail](https://simonwillison.net/2025/Sep/19/httpjail/)
-- [Adding Org Mode link awesomeness elsewhere: my-org-insert-link-dwim](https://sachachua.com/blog/2025/09/adding-org-mode-link-awesomeness-elsewhere-my-org-insert-link-dwim/)
-- [Firefox Hardening Guide 2025](https://brainfucksec.github.io/firefox-hardening-guide-2025)
-- [How to Motivate Yourself To Do A Thing You Don't Want to Do](https://ashleyjanssen.com/how-to-motivate-yourself-to-do-a-thing-you-dont-want-to-do/)
+## 🛠️ Инструменты и инфраструктура
+
+**[Less is safer: how Obsidian reduces the risk of supply chain attacks](https://obsidian.md/blog/less-is-safer/)**
+Как подход «меньше — безопаснее» снижает риск атак цепочки поставок в экосистеме Obsidian: минимизация зависимостей и поверхностей атаки.
+
+**[httpjail](https://simonwillison.net/2025/Sep/19/httpjail/)**
+Изоляция и контроль исходящих HTTP‑запросов для инструментов/плагинов: белые списки, прозрачность и снижение рисков.
+
+**[Firefox Hardening Guide 2025](https://brainfucksec.github.io/firefox-hardening-guide-2025)**
+Практическое ужесточение настроек Firefox: приватность, телеметрия, расширения и безопасность по умолчанию.
+
+## 🧠 Продуктивность и знания
+
+**[Adding Org Mode link awesomeness elsewhere: my-org-insert-link-dwim](https://sachachua.com/blog/2025/09/adding-org-mode-link-awesomeness-elsewhere-my-org-insert-link-dwim/)**
+Функция my-org-insert-link-dwim переносит «умную» вставку ссылок из Org Mode в другие контексты и приложения.
+
+**[How to Motivate Yourself To Do A Thing You Don't Want to Do](https://ashleyjanssen.com/how-to-motivate-yourself-to-do-a-thing-you-dont-want-to-do/)**
+Короткие приёмы, чтобы запустить дела, которые не хочется делать: снижение порога входа и управление ожиданиями.
+
+---
+
+На этой неделе — акцент на безопасность и изоляцию: политика «меньше — безопаснее» в Obsidian, httpjail для контроля сетевых запросов и гайд по ужесточению Firefox; из продуктивного — улучшение работы со ссылками в Org Mode и практики преодоления прокрастинации.
 
 Хорошей вам недели!
