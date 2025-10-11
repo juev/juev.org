@@ -1,0 +1,19 @@
+---
+title: "Ссылки #359"
+date: 2025-10-11T09:57:02+0300
+image: https://static.juev.org/images/links.jpg
+tags:
+  - links
+---
+
+За прошедшую неделю собрал 49 ссылок.
+
+- [Self-Hosting Email Like It’s 1984](https://maxadamski.com/blog/2025/10/email.html)
+- [The RAG Obituary: Killed by Agents, Buried by Context Windows](https://www.nicolasbustamante.com/p/the-rag-obituary-killed-by-agents)
+- [Embracing the parallel coding agent lifestyle](https://simonwillison.net/2025/Oct/5/parallel-coding-agents/)
+- [I'm Building a Browser for Reverse Engineers](https://nullpt.rs/reverse-engineering-browser)
+- [Why I switched from HTMX to Datastar](https://everydaysuperpowers.dev/articles/why-i-switched-from-htmx-to-datastar/)
+- [A new breed of analyzers](https://daniel.haxx.se/blog/2025/10/10/a-new-breed-of-analyzers/)
+- [I'm in Vibe Code Hell](https://blog.boot.dev/education/vibe-code-hell/)
+
+Хорошей вам недели!
