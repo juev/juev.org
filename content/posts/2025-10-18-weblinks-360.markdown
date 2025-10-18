@@ -1,0 +1,18 @@
+---
+title: "Ссылки #360"
+date: 2025-10-18T09:21:02+0300
+image: https://static.juev.org/images/links.jpg
+tags:
+  - links
+---
+
+За прошедшую неделю собрал 49 ссылок.
+
+- [HTML’s Best Kept Secret: The output Tag](https://denodell.com/blog/html-best-kept-secret-output-tag)
+- [obra/superpowers: Claude Code superpowers: core skills library](https://github.com/obra/superpowers)
+- [How I'm using Helix editor | Artem Golubin](https://rushter.com/blog/helix-editor/)
+- [First look at the DGX Spark](https://xeiaso.net/blog/2025/dgx-spark-first-look/)
+- [NVIDIA DGX Spark: great hardware, early days for the ecosystem](https://simonwillison.net/2025/Oct/14/nvidia-dgx-spark/)
+- [Claude Skills are awesome, maybe a bigger deal than MCP](https://simonwillison.net/2025/Oct/16/claude-skills/)
+
+Хорошей вам недели!
