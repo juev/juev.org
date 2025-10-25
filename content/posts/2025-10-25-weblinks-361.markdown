@@ -1,0 +1,23 @@
+---
+title: "Ссылки #361"
+date: 2025-10-25T10:45:02+0300
+image: https://static.juev.org/images/links.jpg
+tags:
+  - links
+---
+
+За прошедшую неделю собрал 66 ссылок.
+
+- [Claude Code vs Codex: I Built A Sentiment Dashboard From 500+ Reddit Comments](https://www.aiengineering.report/p/claude-code-vs-codex-sentiment-analysis-reddit)
+- [What's a Claude.md File? 5 Best Practices to Use Claude.md for Claude Code](https://apidog.com/blog/claude-md/)
+- [anthropics/claude-cookbooks: A collection of notebooks/recipes showcasing some fun and effective ways of using Claude.](https://github.com/anthropics/claude-cookbooks)
+- [A complete guide to HTTP caching](https://www.jonoalderson.com/performance/http-caching/)
+- [You don't need Kafka: Building a message queue with only two UNIX signals](https://leandronsp.com/articles/you-dont-need-kafka-building-a-message-queue-with-only-two-unix-signals.html)
+- [Why UUIDs won't protect your secrets](https://alexsci.com/blog/uuids-and-idor/)
+- [Just use cURL](https://justuse.org/curl/)
+- [Scripts I wrote that I use all the time](https://evanhahn.com/scripts-i-wrote-that-i-use-all-the-time/)
+- [Redistributing Git with Nostr](https://fiatjaf.com/18ff5416.html)
+- [I see a future in jj](https://steveklabnik.com/writing/i-see-a-future-in-jj/)
+- [simonw/sqlite-utils: Python CLI utility and library for manipulating SQLite databases](https://github.com/simonw/sqlite-utils)
+
+Хорошей вам недели!
