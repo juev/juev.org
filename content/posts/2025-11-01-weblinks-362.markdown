@@ -1,0 +1,20 @@
+---
+title: "Ссылки #362"
+date: 2025-11-01T11:02:02+0300
+image: https://static.juev.org/images/links.jpg
+tags:
+  - links
+---
+
+За прошедшую неделю собрал 78 ссылок.
+
+- [How We Saved $500,000 Per Year by Rolling Our Own “S3”](https://engineering.nanit.com/how-we-saved-500-000-per-year-by-rolling-our-own-s3-6caec1ee1143)
+- [WebDAV Isn't Dead Yet](https://blog.feld.me/posts/2025/09/webdav-isnt-dead-yet/)
+- [You’re Getting ‘Screen Time’ Wrong](https://www.theatlantic.com/technology/2025/10/screen-time-television-internet/684659/)
+- [How I turned Zig into my favorite language to write network programs in](https://lalinsky.com/2025/10/26/zio-async-io-for-zig.html)
+- [We Re-Built Our Integration Service Using Postgres and Go](https://priver.dev/blog/we-rebuilt-our-integration-service-using-postgres-and-go/)
+- [PokerBattle.ai — The first-ever cash poker tournament for LLMs](https://pokerbattle.ai)
+- [The PARA Method: How to Organize Your Life in 4 Categories](https://www.todoist.com/ru/productivity-methods/para-method)
+- [mishamyrt/Lilex: 🤘Open source programming font](https://github.com/mishamyrt/Lilex)
+
+Хорошей вам недели!
