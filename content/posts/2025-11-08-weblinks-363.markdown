@@ -6,14 +6,39 @@ tags:
   - links
 ---
 
-За прошедшую неделю собрал 62 ссылки.
+За прошедшую неделю собрал 62 ссылки; ниже — 7 наиболее примечательных.
 
-- [How We Found 7 TiB of Memory Just Sitting Around](https://render.com/blog/how-we-found-7-tib-of-memory-just-sitting-around)
-- [camel-ai/camel: The first and the best multi-agent framework. Finding the Scaling Law of Agents](https://github.com/camel-ai/camel)
-- [How I Use Every Claude Code Feature](https://blog.sshh.io/p/how-i-use-every-claude-code-feature)
-- [KeePassium Review: A Flexible Password Manager for iOS and macOS](https://www.privacyguides.org/articles/2025/05/13/keepassium-review/)
-- [Helix editor Basics](https://helix-editor.vercel.app/start-here/basics/)
-- [Aider - AI Pair Programming in Your Terminal](https://aider.chat/)
-- [At the end you use git bisect](https://kevin3010.github.io/git/2025/11/02/At-the-end-you-use-git-bisect.html)
+## ☁️ Инфраструктура и производительность
+
+**[How We Found 7 TiB of Memory Just Sitting Around](https://render.com/blog/how-we-found-7-tib-of-memory-just-sitting-around)**  
+Команда Render делится практикой оптимизации облачных сервисов и поиска неиспользуемых ресурсов, что приводит к значительной экономии затрат инфраструктуры.
+
+## 🤖 AI и коллаборативная разработка
+
+**[camel-ai/camel: The first and the best multi-agent framework. Finding the Scaling Law of Agents](https://github.com/camel-ai/camel)**  
+Многопользовательский фреймворк для агентных систем с акцентом на шкалирование и синхронное взаимодействие между моделями.
+
+**[How I Use Every Claude Code Feature](https://blog.sshh.io/p/how-i-use-every-claude-code-feature)**  
+Практические советы по применению возможностей Claude Code: от навигации по проекту до отладки и автоматизации рутинных задач.
+
+**[Aider - AI Pair Programming in Your Terminal](https://aider.chat/)**  
+Командное взаимодействие с ИИ непосредственно в терминале: как Aider ускоряет итерации и снижает порог для экспериментов.
+
+## 🔐 Безопасность и личные данные
+
+**[KeePassium Review: A Flexible Password Manager for iOS and macOS](https://www.privacyguides.org/articles/2025/05/13/keepassium-review/)**  
+Обзор KeePassium: детальный разбор преимуществ, сценариев резервного копирования и тонкостей использования на iOS/macOS.
+
+## 🛠️ Практики и инструменты разработчика
+
+**[Helix editor Basics](https://helix-editor.vercel.app/start-here/basics/)**  
+Быстрый гид по Helix: основы модального редактирования, горячие клавиши и настройки для повышения продуктивности.
+
+**[At the end you use git bisect](https://kevin3010.github.io/git/2025/11/02/At-the-end-you-use-git-bisect.html)**  
+Применение `git bisect` в повседневной отладке: стратегия поиска регрессий и советы по автоматизации проверки.
+
+---
+
+На этой неделе — фокус на повышении эффективности: оптимизация облачных ресурсов, расширение возможностей AI-ассистентов и инструменты для бережной работы с кодом и данными.
 
 Хорошей вам недели!
