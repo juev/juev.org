@@ -1,0 +1,19 @@
+---
+title: "Ссылки #363"
+date: 2025-11-08T12:24:02+0300
+image: https://static.juev.org/images/links.jpg
+tags:
+  - links
+---
+
+За прошедшую неделю собрал 62 ссылки.
+
+- [How We Found 7 TiB of Memory Just Sitting Around](https://render.com/blog/how-we-found-7-tib-of-memory-just-sitting-around)
+- [camel-ai/camel: The first and the best multi-agent framework. Finding the Scaling Law of Agents](https://github.com/camel-ai/camel)
+- [How I Use Every Claude Code Feature](https://blog.sshh.io/p/how-i-use-every-claude-code-feature)
+- [KeePassium Review: A Flexible Password Manager for iOS and macOS](https://www.privacyguides.org/articles/2025/05/13/keepassium-review/)
+- [Helix editor Basics](https://helix-editor.vercel.app/start-here/basics/)
+- [Aider - AI Pair Programming in Your Terminal](https://aider.chat/)
+- [At the end you use git bisect](https://kevin3010.github.io/git/2025/11/02/At-the-end-you-use-git-bisect.html)
+
+Хорошей вам недели!
