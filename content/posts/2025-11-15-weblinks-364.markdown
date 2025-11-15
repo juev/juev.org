@@ -1,0 +1,17 @@
+---
+title: "Ссылки #364"
+date: 2025-11-15T10:38:02+0300
+image: https://static.juev.org/images/links.jpg
+tags:
+  - links
+---
+
+За прошедшую неделю собрал 35 ссылок.
+
+- [Why I love OCaml](https://mccd.space/posts/ocaml-the-worlds-best/)
+- [ZigCool](https://nilostolte.github.io/tech/articles/ZigCool.html)
+- [becoming a compiler engineer](https://rona.substack.com/p/becoming-a-compiler-engineer)
+- [The (lazy) Git UI You Didn't Know You Need](https://bwplotka.dev/2025/lazygit/)
+- [life4/enc: 🔑🔒 A modern and friendly CLI alternative to GnuPG: generate and download keys, encrypt, decrypt, and sign text and files, and more.](https://github.com/life4/enc)
+
+Хорошей вам недели!
