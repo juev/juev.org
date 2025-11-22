@@ -1,0 +1,17 @@
+---
+title: "Ссылки #365"
+date: 2025-11-22T11:13:02+0300
+image: https://static.juev.org/images/links.jpg
+tags:
+  - links
+---
+
+За прошедшую неделю собрал 58 ссылок.
+
+- [Code execution with MCP: building more efficient AI agents](https://www.anthropic.com/engineering/code-execution-with-mcp)
+- [The Internet is Cool. Thank you, TCP](https://cefboud.com/posts/tcp-deep-dive-internals/)
+- [The Rise of Subagents](https://www.philschmid.de/the-rise-of-subagents)
+- [I finally understand Cloudflare Zero Trust tunnels](https://david.coffee/cloudflare-zero-trust-tunnels/)
+- [Towards interplanetary QUIC traffic](https://ochagavia.nl/blog/towards-interplanetary-quic-traffic/)
+
+Хорошей вам недели!
