@@ -6,12 +6,29 @@ tags:
   - links
 ---
 
-За прошедшую неделю собрал 58 ссылок.
+За прошедшую неделю собрал 58 ссылок; ниже — 5 наиболее примечательных.
 
-- [Code execution with MCP: building more efficient AI agents](https://www.anthropic.com/engineering/code-execution-with-mcp)
-- [The Internet is Cool. Thank you, TCP](https://cefboud.com/posts/tcp-deep-dive-internals/)
-- [The Rise of Subagents](https://www.philschmid.de/the-rise-of-subagents)
-- [I finally understand Cloudflare Zero Trust tunnels](https://david.coffee/cloudflare-zero-trust-tunnels/)
-- [Towards interplanetary QUIC traffic](https://ochagavia.nl/blog/towards-interplanetary-quic-traffic/)
+## 🤖 AI и коллаборативная разработка
+
+**[Code execution with MCP: building more efficient AI agents](https://www.anthropic.com/engineering/code-execution-with-mcp)**  
+Обзор использования MCP для выполнения кода в AI-агентах, что повышает эффективность и точность работы.
+
+**[The Rise of Subagents](https://www.philschmid.de/the-rise-of-subagents)**  
+Анализ тенденций в развитии субагентов и их роли в современных AI-системах.
+
+## ☁️ Инфраструктура и производительность
+
+**[The Internet is Cool. Thank you, TCP](https://cefboud.com/posts/tcp-deep-dive-internals/)**  
+Глубокое погружение во внутреннюю работу TCP и его вклад в функционирование интернета.
+
+**[I finally understand Cloudflare Zero Trust tunnels](https://david.coffee/cloudflare-zero-trust-tunnels/)**  
+Пояснение принципов работы Zero Trust туннелей Cloudflare и их практическое применение.
+
+**[Towards interplanetary QUIC traffic](https://ochagavia.nl/blog/towards-interplanetary-quic-traffic/)**  
+Исследование возможностей QUIC для межпланетного трафика и будущих сетевых протоколов.
+
+---
+
+На этой неделе — фокус на AI-технологиях и сетевой инфраструктуре: от субагентов до протоколов будущего интернета.
 
 Хорошей вам недели!
