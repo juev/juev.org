@@ -6,13 +6,34 @@ tags:
   - links
 ---
 
-За прошедшую неделю собрал 39 ссылок.
+За прошедшую неделю собрал 39 ссылок; ниже — 6 наиболее примечательных.
 
-- [Agent Design Is Still Hard](https://lucumr.pocoo.org/2025/11/21/agents-are-hard/)
-- [Kevin Boone: The privacy nightmare of browser fingerprinting](https://kevinboone.me/fingerprinting.html)
-- [Implementing MapReduce in Golang](https://jitesh117.github.io/blog/implementing-mapreduce-in-golang/)
-- [How to write a great agents.md: Lessons from over 2,500 repositories](https://github.blog/ai-and-ml/github-copilot/how-to-write-a-great-agents-md-lessons-from-over-2500-repositories/)
-- [jina-ai/reader: Convert any URL to an LLM-friendly input with a simple prefix https://r.jina.ai/](https://github.com/jina-ai/reader)
-- [Migrating from GitHub to Codeberg ⚡ Zig Programming Language](https://ziglang.org/news/migrating-from-github-to-codeberg/)
+## 🤖 AI и разработка
+
+**[Agent Design Is Still Hard](https://lucumr.pocoo.org/2025/11/21/agents-are-hard/)**  
+Размышления о сложностях проектирования AI-агентов и вызовах, с которыми сталкиваются разработчики.
+
+**[How to write a great agents.md: Lessons from over 2,500 repositories](https://github.blog/ai-and-ml/github-copilot/how-to-write-a-great-agents-md-lessons-from-over-2500-repositories/)**  
+Руководство по созданию эффективных файлов agents.md на основе анализа более 2500 репозиториев.
+
+**[jina-ai/reader: Convert any URL to an LLM-friendly input with a simple prefix https://r.jina.ai/](https://github.com/jina-ai/reader)**  
+Инструмент для преобразования любого URL в формат, удобный для работы с языковыми моделями.
+
+## 🔒 Приватность и безопасность
+
+**[Kevin Boone: The privacy nightmare of browser fingerprinting](https://kevinboone.me/fingerprinting.html)**  
+Анализ проблемы браузерного фингерпринтинга и его влияния на приватность пользователей.
+
+## 💻 Программирование и инфраструктура
+
+**[Implementing MapReduce in Golang](https://jitesh117.github.io/blog/implementing-mapreduce-in-golang/)**  
+Практическое руководство по реализации паттерна MapReduce на языке Go.
+
+**[Migrating from GitHub to Codeberg ⚡ Zig Programming Language](https://ziglang.org/news/migrating-from-github-to-codeberg/)**  
+Опыт миграции проекта Zig с GitHub на Codeberg и причины такого решения.
+
+---
+
+На этой неделе — фокус на AI-разработке, приватности и практических аспектах программирования: от проектирования агентов до миграции проектов.
 
 Хорошей вам недели!
