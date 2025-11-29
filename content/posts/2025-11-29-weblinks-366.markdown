@@ -1,0 +1,18 @@
+---
+title: "Ссылки #366"
+date: 2025-11-29T12:57:02+0300
+image: https://static.juev.org/images/links.jpg
+tags:
+  - links
+---
+
+За прошедшую неделю собрал 39 ссылок.
+
+- [Agent Design Is Still Hard](https://lucumr.pocoo.org/2025/11/21/agents-are-hard/)
+- [Kevin Boone: The privacy nightmare of browser fingerprinting](https://kevinboone.me/fingerprinting.html)
+- [Implementing MapReduce in Golang](https://jitesh117.github.io/blog/implementing-mapreduce-in-golang/)
+- [How to write a great agents.md: Lessons from over 2,500 repositories](https://github.blog/ai-and-ml/github-copilot/how-to-write-a-great-agents-md-lessons-from-over-2500-repositories/)
+- [jina-ai/reader: Convert any URL to an LLM-friendly input with a simple prefix https://r.jina.ai/](https://github.com/jina-ai/reader)
+- [Migrating from GitHub to Codeberg ⚡ Zig Programming Language](https://ziglang.org/news/migrating-from-github-to-codeberg/)
+
+Хорошей вам недели!
