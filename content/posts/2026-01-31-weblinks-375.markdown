@@ -1,0 +1,37 @@
+---
+title: "Ссылки #375"
+date: 2026-01-31T11:14:02+0300
+image: https://static.juev.org/images/links.jpg
+tags:
+  - links
+---
+
+За прошедшую неделю собрал 70 ссылок; ниже — 6 наиболее примечательных.
+
+## 💻 Программирование и инфраструктура
+
+**[Raspberry Pi Drag Race: Pi 1 to Pi 5 – Performance Comparison](https://the-diy-life.com/raspberry-pi-drag-race-pi-1-to-pi-5-performance-comparison/)**  
+Сравнение производительности всех поколений Raspberry Pi от первой до пятой версии.
+
+**[Using Tailscale's Peer Relays to fix a homelab connection from across the globe](https://tailscale.com/blog/peer-relays-international-networks)**  
+Как использовать peer relays в Tailscale для стабильного доступа к homelab из другой страны.
+
+**[zerobrew: A drop-in, 5-20x faster, Rust-based experimental Homebrew alternative](https://github.com/lucasgelfond/zerobrew)**  
+Экспериментальная замена Homebrew на Rust с заявленным ускорением в 5–20 раз.
+
+**[make.ts](https://matklad.github.io/2026/01/27/make-ts.html)**  
+Идея make-подобного инструмента для TypeScript/JavaScript от Алекса Кладова.
+
+## 🤖 AI и разработка
+
+**[How I AI: Teresa Torres's Claude Code System for Task Management, Automated Research, and 'Lazy' Prompting](https://chatprd.ai/how-i-ai/teresa-torres-claude-code-obsdian-task-management)**  
+Система на базе Claude для управления задачами, исследований и «ленивого» промптинга в связке с Obsidian.
+
+**[andrej-karpathy-skills](https://github.com/forrestchang/andrej-karpathy-skills)**  
+Набор навыков/гайдлайнов от Karpathy для снижения типичных ошибок при работе с LLM.
+
+---
+
+На этой неделе — от железа и сетей до быстрого пакетного менеджера, make для TS и практик работы с AI.
+
+Хорошей вам недели!
