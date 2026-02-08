@@ -10,10 +10,8 @@ if ('serviceWorker' in navigator) {
                     const newWorker = registration.installing;
                     newWorker.addEventListener('statechange', () => {
                         if (newWorker.state === 'installed' && navigator.serviceWorker.controller) {
-                            // New content is available, refresh
-                            if (confirm('Доступна новая версия сайта. Обновить?')) {
-                                window.location.reload();
-                            }
+                            // New content is available, reload to apply update
+                            window.location.reload();
                         }
                     });
                 });
