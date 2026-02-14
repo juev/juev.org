@@ -1,0 +1,34 @@
+---
+title: "Ссылки #377"
+date: 2026-02-14T13:49:02+0300
+image: https://static.juev.org/images/links.jpg
+tags:
+  - links
+---
+
+За прошедшую неделю собрал 59 ссылок; ниже — 5 наиболее примечательных.
+
+## 💻 Программирование и инструменты
+
+**[How to effectively write quality code with AI](https://heidenstedt.org/posts/2026/how-to-effectively-write-quality-code-with-ai/)**  
+Практические советы по написанию качественного кода с помощью AI.
+
+**[setting up Zed](https://ljb.fyi/setting-up-zed/)**  
+Настройка редактора Zed под свои нужды.
+
+**[cysqlite - a new sqlite driver](https://charlesleifer.com/blog/cysqlite---a-new-sqlite-driver/)**  
+Новый драйвер SQLite от автора Peewee ORM.
+
+## 📝 Продуктивность и заметки
+
+**[Lessons about journalling and taking notes](https://taonaw.com/2026/02/07/lessons-about-journalling-and-taking.html)**  
+Выводы о ведении дневника и системе заметок.
+
+**[.plan files](https://matteolandi.net/plan-files.html)**  
+Идея использования .plan-файлов для планирования.
+
+---
+
+На этой неделе — от AI-ассистированного кода и Zed до заметок и планирования.
+
+Хорошей вам недели!
