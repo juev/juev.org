@@ -1,0 +1,48 @@
+---
+title: "Ссылки #379"
+date: 2026-02-28T10:14:02+0300
+image: https://static.juev.org/images/links.jpg
+tags:
+  - links
+---
+
+IFTTT начинает закручивать гайки и теперь для бесплатных аккаунтов уже не дает
+создавать weekly digest элементы. У меня workflow было создано давно, поэтому
+пока работает. Но сколько это будет продолжаться, не известно.
+
+Прошедшую неделю посвятил поиску другого решения по сбору ссылок. Есть подвижки,
+но пока не окончательные.
+
+В результате у меня в Instapaper было очень много дублей. И наверняка сказать,
+сколько ссылок я в результате собрал, почти не возможно. В целом получилось 172
+ссылки.
+
+## 💻 Программирование и инструменты
+
+**[Turn Dependabot Off](https://words.filippo.io/dependabot/)**  
+Обоснование отключения Dependabot.
+
+**[Git’s Magic Files](https://nesbitt.io/2026/02/05/git-magic-files.html)**  
+Обзор волшебных файлов Git.
+
+**[How I Use Claude Code](https://boristane.com/blog/how-i-use-claude-code/)**  
+Как использовать Claude Code.
+
+**[Why the KeePass format should be based on SQLite | mketab](https://mketab.org/blog/sqlite_kdbx/)**  
+Почему формат KeePass должен быть основан на SQLite.
+
+## ⌨️ Клавиатуры
+
+**[A Beginner’s Guide to Split Keyboards](https://justinmklam.com/posts/2026/02/beginners-guide-split-keyboards/)**  
+Руководство по сплит-клавиатурам для начинающих.
+
+## 📝 Продуктивность и заметки
+
+**[Adding TILs, releases, museums, tools and research to my blog](https://simonwillison.net/2026/Feb/20/beats/)**  
+Добавление TIL, релизов, музеев, инструментов и исследований в блог.
+
+---
+
+На этой неделе — от Dependabot и Git до клавиатур и продуктивности.
+
+Хорошей вам недели!
