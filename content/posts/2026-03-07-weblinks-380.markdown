@@ -1,0 +1,38 @@
+---
+title: "Ссылки #380"
+date: 2026-03-07T01:37:02+0300
+image: https://static.juev.org/images/links.jpg
+tags:
+  - links
+---
+
+За прошедшую неделю собрал 66 ссылок; ниже — 5 наиболее примечательных.
+
+## 💼 Карьера и жизнь
+
+**[Leaving Google has actively improved my life](https://pseudosingleton.com/leaving-google-improved-my-life/)**  
+Честный взгляд изнутри: почему уход из Big Tech оказался решением в пользу качества жизни.
+
+## 💻 Инфраструктура
+
+**[MinIO Is Dead, Long Live MinIO](https://blog.vonng.com/en/db/minio-resurrect/)**  
+Что произошло с MinIO и как проект обрёл вторую жизнь в open source.
+
+## 🤖 AI
+
+**[microgpt](http://karpathy.github.io/2026/02/12/microgpt/)**  
+Минималистичный GPT от Karpathy — компактная модель для экспериментов с языком.
+
+## 🔐 Безопасность и приватность
+
+**[How to Use an iPad as a Secure Calling and Messaging Device](https://yawnbox.eu/blog/how-to-use-an-ipad-as-a-secure-calling-and-messaging-device/)**  
+Настройка iPad как отдельного устройства для приватных звонков и сообщений.
+
+**[Pocket ID: Easy Passkey Authentication](https://runtimeterror.dev/pocket-id-easy-passkey-authentication/)**  
+Удобная passkey-аутентификация — один токен в кармане вместо паролей.
+
+---
+
+На этой неделе — от Big Tech и MinIO до micro GPT и passkey-аутентификации.
+
+Хорошей вам недели!
