@@ -1,0 +1,368 @@
+---
+title: "От Docker к Podman: миграция 15 сервисов на выделенном сервере"
+date: 2026-03-07T02:20:02+0300
+tags:
+  - docker
+  - podman
+---
+
+Много лет я арендовал виртуальные серверы у разных провайдеров. VPS вполне справлялись с задачами: несколько контейнеров, reverse proxy, мониторинг. Всё работало, и я не задумывался об альтернативах — пока в разговоре со знакомыми не узнал, что некоторые из них давно перешли на выделенные серверы. Аргументы были простые: предсказуемая производительность, отсутствие «шумных соседей» и полный контроль над железом.
+
+## Выделенный сервер
+
+Я оформил dedicated-сервер: Xeon на 8 ядер, 32 ГБ ECC-памяти, SSD в RAID на 480 ГБ. Разница в производительности оказалась заметной сразу. Сборка образов, запуск контейнеров, отклик сервисов — всё стало ощутимо быстрее, чем на VPS с теми же заявленными характеристиками. После переноса всех используемых сервисов на новый сервер ресурсы оставались загруженными не более чем на десятую часть. Появился простор для экспериментов.
+
+## Проблемы Docker
+
+Изначально я настроил сервер привычным образом: Docker, docker-compose, отдельные проекты для каждой группы сервисов. Всё работало до момента, когда потребовалось перенастроить сеть на сервере. После изменения DNS-настроек хоста пришлось перезагружать Docker daemon и пересоздавать все контейнеры — Docker встраивает DNS-прокси с кешированием и не пробрасывает изменения `/etc/resolv.conf` в работающие контейнеры. Единственный надёжный способ применить новые настройки — рестарт dockerd, который останавливает все контейнеры разом.
+
+Это обстоятельство высветило две фундаментальные проблемы:
+
+- **Единая точка отказа.** Docker daemon — централизованный процесс. Его перезапуск или падение затрагивает все сервисы одновременно, вне зависимости от их связности.
+- **Работа от root.** dockerd работает с привилегиями суперпользователя. Компрометация любого контейнера потенциально даёт атакующему полный контроль над хостом.
+
+## Поиск альтернатив
+
+Для анализа возможных вариантов я использовал Claude Code. В течение нескольких сессий за несколько дней было проведено исследование с рассмотрением более 70 источников. Результатом стала развёрнутая документация с детальным сравнением подходов.
+
+Рассматривались следующие варианты:
+
+- **systemd-nspawn** — системные контейнеры, встроенные в systemd. Отвергнут из-за отсутствия экосистемы образов и необходимости вручную собирать окружения для каждого сервиса.
+- **Incus (LXD)** — системные контейнеры с полноценным Linux внутри. Решает проблему DNS через встроенный dnsmasq, но создаёт двойной слой контейнеризации (Incus → Podman внутри). Избыточная сложность для задачи.
+- **NixOS / Guix** — декларативное управление системой. Привлекательно с концептуальной точки зрения, но требует радикального изменения подхода к администрированию и длительного обучения.
+- **Podman** — drop-in замена Docker без центрального демона. Rootless по умолчанию, каждый контейнер — отдельный процесс. Совместим с существующими OCI-образами.
+
+## Почему Podman и Quadlet
+
+Выбор пал на Podman, причём не на podman-compose (который по сути воспроизводит парадигму docker-compose), а на Quadlet — нативную интеграцию Podman с systemd.
+
+Quadlet превращает декларативные `.container`-файлы в systemd unit-файлы. Каждый сервис управляется через `systemctl`, имеет собственный жизненный цикл, зависимости и политику перезапуска. Это принципиально отличается от compose-подхода, где все сервисы проекта управляются как единое целое.
+
+Преимущества:
+
+- Нет демона — нет единой точки отказа
+- Rootless — контейнеры работают от обычного пользователя
+- Независимые процессы — перезапуск одного сервиса не затрагивает остальные
+- DNS задаётся явно в настройках сети, не наследуется от хоста
+- Стандартные инструменты: `systemctl`, `journalctl` для управления и логов
+
+## Подготовка
+
+Прежде чем мигрировать, потребовалась подготовка хоста.
+
+Разрешение привилегированных портов для rootless-контейнеров:
+
+```bash
+echo 'net.ipv4.ip_unprivileged_port_start=80' | sudo tee /etc/sysctl.d/90-unprivileged-ports.conf
+sudo sysctl --system
+```
+
+Включение linger, чтобы пользовательские сервисы продолжали работать после отключения SSH-сессии:
+
+```bash
+sudo loginctl enable-linger $USER
+```
+
+Установка Podman и активация socket для совместимости с Docker API:
+
+```bash
+sudo apt install podman
+systemctl --user enable --now podman.socket
+```
+
+Настройка реестра образов по умолчанию — Podman, в отличие от Docker, не подставляет `docker.io` автоматически:
+
+```bash
+mkdir -p ~/.config/containers
+cat > ~/.config/containers/registries.conf << 'EOF'
+unqualified-search-registries = ["docker.io"]
+EOF
+```
+
+Создание структуры директорий для данных — Podman, в отличие от Docker Compose, не создаёт директории для bind mount автоматически:
+
+```bash
+mkdir -p ~/volumes/{caddy,vaultwarden,linkding,forgejo,miniflux,grafana,prometheus}
+```
+
+## Конвертация сервисов
+
+### Инструмент podlet
+
+Для конвертации docker-compose файлов в Quadlet существует утилита `podlet`:
+
+```bash
+podlet -i -a compose compose.yaml
+```
+
+Однако podlet не поддерживает external networks. Если в compose-файле есть секция:
+
+```yaml
+networks:
+  caddy:
+    external: true
+```
+
+podlet завершится с ошибкой. Решение — убрать секцию `networks` из compose перед конвертацией, а затем вручную добавить `Network=caddy.network` в сгенерированный файл. На практике для простых сервисов с одним-двумя контейнерами проще написать Quadlet-файл вручную — формат тривиален.
+
+### Простой сервис
+
+Каждый docker-compose сервис превращается в `.container`-файл. Для примера — типичный сервис в Docker Compose:
+
+```yaml
+services:
+  vaultwarden:
+    image: vaultwarden/server:latest
+    restart: unless-stopped
+    environment:
+      - DOMAIN=https://vault.example.org
+      - SIGNUPS_ALLOWED=false
+    volumes:
+      - ./data:/data
+    networks:
+      - caddy
+```
+
+Его Quadlet-эквивалент:
+
+```ini
+[Unit]
+Description=Vaultwarden password manager
+
+[Container]
+ContainerName=vaultwarden
+Image=docker.io/vaultwarden/server:latest
+Volume=%h/volumes/vaultwarden/data:/data:Z
+Environment=DOMAIN=https://vault.example.org
+Environment=SIGNUPS_ALLOWED=false
+Network=caddy.network
+DNS=1.1.1.1
+AutoUpdate=registry
+
+[Service]
+Restart=always
+
+[Install]
+WantedBy=default.target
+```
+
+Маппинг понятен: `image` → `Image=`, `volumes` → `Volume=`, `networks` → `Network=`, `depends_on` → `After=` в секции `[Unit]`.
+
+### Сети и связи между контейнерами
+
+В Docker Compose сети, сервисы и их связи описаны в одном файле. В Quadlet каждая сущность — отдельный файл: `.network` для сети, `.container` для сервиса. Связь между ними — через директиву `Network=` в контейнере.
+
+Рассмотрим на примере Miniflux — RSS-ридера, которому нужна PostgreSQL. В Docker Compose это один файл с двумя сервисами и внутренней сетью. В Quadlet — три отдельных файла: сеть, контейнер базы данных и контейнер приложения.
+
+Сеть для связи Miniflux с базой данных (`miniflux_db.network`):
+
+```ini
+[Network]
+NetworkName=miniflux_db
+```
+
+Контейнер PostgreSQL (`miniflux-db.container`):
+
+```ini
+[Unit]
+Description=PostgreSQL for Miniflux
+
+[Container]
+ContainerName=miniflux-db
+Image=docker.io/library/postgres:16
+Volume=%h/volumes/miniflux-db/data:/var/lib/postgresql/data:Z
+Environment=POSTGRES_USER=miniflux
+Environment=POSTGRES_PASSWORD=secret
+Environment=POSTGRES_DB=miniflux
+Network=miniflux_db.network
+HealthCmd=pg_isready -U miniflux
+HealthInterval=10s
+AutoUpdate=registry
+
+[Service]
+Restart=always
+
+[Install]
+WantedBy=default.target
+```
+
+Контейнер Miniflux (`miniflux.container`):
+
+```ini
+[Unit]
+Description=Miniflux RSS reader
+After=miniflux-db.service
+
+[Container]
+ContainerName=miniflux
+Image=docker.io/miniflux/miniflux:latest
+Environment=DATABASE_URL=postgres://miniflux:secret@miniflux-db/miniflux?sslmode=disable
+Environment=RUN_MIGRATIONS=1
+Environment=BASE_URL=https://reader.example.org
+Network=caddy.network
+Network=miniflux_db.network
+DNS=1.1.1.1
+AutoUpdate=registry
+
+[Service]
+Restart=always
+
+[Install]
+WantedBy=default.target
+```
+
+Обратите внимание: Miniflux подключён к двум сетям. Сеть `miniflux_db.network` — для связи с PostgreSQL, сеть `caddy.network` — для доступа через reverse proxy. PostgreSQL при этом подключён только к `miniflux_db.network` и снаружи недоступен. Зависимость `After=miniflux-db.service` гарантирует порядок запуска. Сервис Miniflux обращается к базе по имени контейнера `miniflux-db` — DNS-резолвинг работает внутри общей сети.
+
+### Caddy как reverse proxy
+
+В Docker-конфигурации я использовал caddy-docker-proxy — плагин, который автоматически генерирует конфигурацию Caddy из labels контейнеров. Удобно, но добавляет неявность: конфигурация reverse proxy размазана по docker-compose файлам всех сервисов.
+
+При миграции на Podman я отказался от этого подхода в пользу единого Caddyfile. Все маршруты описаны явно в одном файле — проще читать, проще отлаживать:
+
+```caddyfile
+reader.example.org {
+    reverse_proxy miniflux:8080
+}
+
+vault.example.org {
+    reverse_proxy vaultwarden:80
+}
+
+git.example.org {
+    reverse_proxy forgejo:3000
+}
+```
+
+Caddy работает как отдельный Podman-контейнер на сети `caddy.network`. Все сервисы, которые должны быть доступны извне, подключены к этой же сети. Caddy обращается к ним по именам контейнеров — порты не публикуются на хост. Это принципиальный момент: ни один сервис не открывает порты даже на localhost. Единственный контейнер с опубликованными портами — сам Caddy (80 и 443).
+
+После изменения Caddyfile его можно провалидировать и применить без перезапуска контейнера:
+
+```bash
+# Валидация
+podman exec caddy caddy validate --config /etc/caddy/Caddyfile
+
+# Применение
+systemctl --user reload caddy
+```
+
+## Подводные камни
+
+Миграция выявила несколько нюансов, специфичных для rootless Podman.
+
+**UID mapping.** В rootless Podman root внутри контейнера соответствует пользователю хоста. Если контейнер работает от другого UID — данные на bind mount будут недоступны. Решение — директива `UserNS=keep-id`, которая маппит UID хоста на нужный UID внутри контейнера:
+
+```ini
+# Prometheus работает как nobody (65534)
+UserNS=keep-id:uid=65534,gid=65534
+
+# Grafana работает как grafana (472)
+UserNS=keep-id:uid=472,gid=0
+```
+
+Узнать нужный UID можно командой:
+
+```bash
+podman run --rm <image> id
+```
+
+**Привилегированные порты.** Rootless Podman по умолчанию не может использовать порты ниже 1024. Для Caddy, которому нужны порты 80 и 443, это означает невозможность запуска без дополнительной настройки. Решение — понизить границу на уровне ядра:
+
+```bash
+echo 'net.ipv4.ip_unprivileged_port_start=80' | sudo tee /etc/sysctl.d/90-unprivileged-ports.conf
+sudo sysctl --system
+```
+
+**Docker socket.** Инструменты, работающие с Docker API, ожидают `/var/run/docker.sock`. Podman socket совместим — достаточно монтировать его по привычному пути:
+
+```ini
+Volume=%t/podman/podman.sock:/var/run/docker.sock:ro
+```
+
+**XDG_RUNTIME_DIR при SSH.** При SSH-подключении переменная `XDG_RUNTIME_DIR` не устанавливается, а `systemctl --user` без неё не работает:
+
+```bash
+ssh server "export XDG_RUNTIME_DIR=/run/user/\$(id -u) && systemctl --user status caddy"
+```
+
+## Процесс миграции
+
+Миграцию я проводил также с помощью Claude Code. Изначально план предполагал последовательный перенос сервисов группами, но после подготовки всех Quadlet-файлов я решил мигрировать все 15 сервисов одновременно. Весь процесс занял около 15 минут.
+
+Последовательность действий:
+
+1. Подготовить все `.container`, `.network` и `.volume` файлы
+2. Скопировать данные из Docker volumes в новую структуру
+3. Сделать дамп PostgreSQL из Docker-контейнера
+4. Предварительно загрузить все образы через `podman pull`
+5. Остановить все Docker-контейнеры
+6. Выполнить `systemctl --user daemon-reload`
+7. Запустить все Podman-сервисы через `systemctl --user start`
+8. Восстановить дамп PostgreSQL в новый контейнер
+9. Проверить доступность всех сайтов
+
+Перенос данных для bind mount — простое копирование. Для named Docker volumes потребовалось копирование из `/var/lib/docker/volumes/` с последующей сменой владельца. PostgreSQL — стандартный `pg_dump` / `pg_restore`.
+
+## Архитектура после миграции
+
+Все сервисы работают в rootless Podman под обычным пользователем. Caddy выступает reverse proxy на общей сети, обращаясь к сервисам по именам контейнеров. Сервисы, которым нужна собственная база данных или кеш, используют изолированные сети.
+
+| Было (Docker) | Стало (Podman) |
+|---|---|
+| docker-compose.yml | Quadlet .container файлы |
+| Docker daemon (root) | Нет демона (rootless) |
+| `docker compose up/down` | `systemctl --user start/stop` |
+| `docker logs` | `journalctl --user -u` |
+| cAdvisor | prometheus-podman-exporter |
+| Labels → caddy-docker-proxy | Caddyfile + имена контейнеров |
+
+## Версионный контроль конфигурации
+
+Одно из преимуществ Quadlet — вся конфигурация сервисов представляет собой набор текстовых файлов в одной директории. Я организовал её с группировкой по сервисам:
+
+```text
+~/.config/containers/systemd/
+├── caddy/
+│   └── caddy.container
+├── forgejo/
+│   └── forgejo.container
+├── miniflux/
+│   ├── miniflux.container
+│   └── miniflux-db.container
+├── monitoring/
+│   ├── prometheus.container
+│   ├── grafana.container
+│   └── prometheus-podman-exporter.container
+├── networks/
+│   ├── caddy.network
+│   ├── miniflux_db.network
+│   └── searxng_cache.network
+├── configs/
+│   ├── Caddyfile
+│   └── prometheus.yml
+└── sockets.volume
+```
+
+Вся эта директория — git-репозиторий. Инициализация заняла несколько команд:
+
+```bash
+cd ~/.config/containers/systemd/
+git init
+git add .
+git commit -m "init: add all quadlet and service configs"
+git remote add origin git@git.example.org:user/server-config.git
+git push -u origin main
+```
+
+Теперь любое изменение конфигурации находит отражение в истории коммитов. Рабочий процесс прост: отредактировать файл, применить через `daemon-reload` и перезапуск сервиса, убедиться что всё работает, закоммитить.
+
+Откат при необходимости — `git checkout` нужной версии файла и перезапуск сервиса. Полная конфигурация сервера восстанавливается клонированием репозитория. При необходимости развернуть ту же инфраструктуру на другом сервере достаточно склонировать репозиторий, скорректировать пути и секреты, выполнить `daemon-reload` — и все сервисы готовы к запуску.
+
+## Результат
+
+После миграции потребление памяти сократилось примерно в полтора раза. Нагрузка на процессор снизилась пропорционально — отсутствие Docker daemon и его подсистем сказывается. Вместо одного монолитного процесса работает множество независимых друг от друга контейнеров, каждый от имени обычного пользователя.
+
+Перезапуск или обновление одного сервиса никак не затрагивает остальные. Автоматическое обновление образов через `podman auto-update`. Логи — через стандартный journalctl. Управление — через привычный systemctl.
+
+Миграция оказалась значительно проще, чем я ожидал. Формат Quadlet-файлов минималистичен и читается лучше, чем docker-compose. Экосистема образов полностью совместима. Единственная область, требующая внимания — UID mapping в rootless-режиме, но после понимания принципа это становится рутиной.
+
+Я доволен результатом. Сервер стал безопаснее, экономнее в потреблении ресурсов и проще в обслуживании.
