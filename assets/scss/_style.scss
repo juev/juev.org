@@ -71,6 +71,19 @@ table th, table td {
   line-height: 23px;
   padding: 0 1em; }
 
+.post table {
+  font-size: 0.9em;
+  line-height: 1.5;
+  width: 100%;
+}
+
+.post table th,
+.post table td {
+  font-size: inherit;
+  padding: 0.6em 1em;
+  vertical-align: top;
+}
+
 table thead {
   background: rgba(0, 0, 0, 0.15);
   border: 1px solid rgba(0, 0, 0, 0.75);
@@ -219,6 +232,21 @@ strong
   list-style-type: disc;
   margin-left: 40px;
   margin-right: 0;
+}
+
+/* Mermaid diagram container */
+.post .mermaid
+{
+  display: flex;
+  justify-content: center;
+  margin: 1.5em 0;
+  overflow-x: auto;
+}
+
+.post .mermaid svg
+{
+  max-width: 100%;
+  height: auto;
 }
 
 .navigation
