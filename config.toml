@@ -94,12 +94,12 @@ email			= "denis@evsyukov.org"
   disableXML = false
   [minify.tdewolff]
     [minify.tdewolff.css]
-      keepCSS2 = true
+      version = 2
       precision = 0
       keepQuotes = true
     [minify.tdewolff.html]
       keepComments = false
-      keepConditionalComments = true
+      keepSpecialComments = true
       keepDefaultAttrVals = true
       keepDocumentTags = true
       keepEndTags = true
