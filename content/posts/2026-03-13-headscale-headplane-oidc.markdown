@@ -178,6 +178,8 @@ services:
     container_name: headscale
     restart: always
     command: serve
+    labels:
+      me.tale.headplane.target: headscale
     ports:
       - "3478:3478/udp"
     volumes:
@@ -195,6 +197,9 @@ services:
       COOKIE_SECRET: "${HEADPLANE_COOKIE_SECRET}"
     volumes:
       - ./headplane/config.yaml:/etc/headplane/config.yaml:ro
+      - ./headscale/config.yaml:/etc/headscale/config.yaml
+      - headplane_data:/var/lib/headplane
+      - /var/run/docker.sock:/var/run/docker.sock:ro
     networks:
       - frontend
 
@@ -216,9 +221,12 @@ volumes:
   caddy_data:
   caddy_config:
   headscale_data:
+  headplane_data:
 ```
 
 Порт `3478/udp` — STUN для NAT traversal. Порты `80` и `443` — только у Caddy. Остальные сервисы общаются через внутреннюю сеть `frontend` по именам контейнеров.
+
+Label `me.tale.headplane.target` на контейнере Headscale позволяет Headplane находить его через Docker API и отправлять сигнал перезапуска при изменении DNS-настроек[^19]. Headplane также монтирует конфиг Headscale (без `:ro` — для записи изменений) и Docker-сокет (для обнаружения и перезапуска контейнера).
 
 Секреты вынесены в `.env` файл, который не коммитится в репозиторий (добавьте `.env` в `.gitignore`):
 
@@ -299,7 +307,14 @@ derp:
 ```yaml
 headscale:
   url: http://headscale:8080
+  config_path: /etc/headscale/config.yaml
+
+integration:
+  docker:
+    enabled: true
 ```
+
+Параметр `config_path` указывает путь к конфигу Headscale внутри контейнера Headplane — через него Headplane читает и записывает DNS-настройки. Секция `integration.docker` включает обнаружение контейнера Headscale по label и его перезапуск после изменения конфигурации.
 
 Headplane подключается к Headscale по внутренней сети Docker. Два секрета передаются через переменные окружения:
 
@@ -434,6 +449,7 @@ oidc:
 ```yaml
 headscale:
   url: http://headscale:8080
+  config_path: /etc/headscale/config.yaml
 
 oidc:
   issuer: "https://id.example.org"
@@ -441,6 +457,10 @@ oidc:
   client_secret: "<client_secret_from_pocket_id>"
   headscale_api_key: "<same_key_as_ROOT_API_KEY>"
   use_pkce: true
+
+integration:
+  docker:
+    enabled: true
 ```
 
 Обратите внимание на два момента:
@@ -592,6 +612,8 @@ docker exec headscale sqlite3 /var/lib/headscale/db.sqlite \
 
 **Недоступность Pocket ID.** Если Pocket ID не отвечает при запуске Headscale, поведение зависит от параметра `only_start_if_oidc_is_available` в конфигурации Headscale. По умолчанию `true` — Headscale не стартует, пока OIDC-провайдер недоступен. Это защищает от ситуации, когда ноды подключаются к серверу с нерабочей аутентификацией. Если Pocket ID падает после старта Headscale — существующие подключения не разрываются, но новые OIDC-регистрации невозможны (pre-auth ключи продолжат работать).
 
+**Label на правильном контейнере.** Label `me.tale.headplane.target` должен быть на контейнере **Headscale**, а не Headplane. Headplane ищет контейнер с этим label через Docker API для отправки сигнала перезапуска. Если label на Headplane — изменение DNS-настроек через UI будет возвращать 502/503.
+
 **Для пользователей Podman:** rootless Podman монтирует файлы по inode. Команды `sed -i`, `cat >` создают новый файл — контейнер продолжает видеть старое содержимое. После изменения `config.yaml` Headscale или Headplane через такие команды необходим полный рестарт контейнера. В Docker эта проблема не возникает.
 
 ## Устранение неполадок
@@ -602,6 +624,7 @@ docker exec headscale sqlite3 /var/lib/headscale/db.sqlite \
 | Headscale не запускается | Pocket ID недоступен при старте | Проверить `only_start_if_oidc_is_available`, временно отключить или убедиться, что `id.example.org` отвечает |
 | Ошибка валидации токена | Issuer с trailing slash | Указать `https://id.example.org` без `/` в конце во всех конфигах |
 | Headplane показывает пользователя как «unmanaged» | `provider_identifier` не прописан | Выполнить привязку через базу (путь 2 в разделе миграции) |
+| 502/503 при изменении DNS в Headplane | Label `me.tale.headplane.target` на контейнере Headplane вместо Headscale | Переместить label на контейнер Headscale, перезапустить оба сервиса |
 | После правки конфига изменения не применяются (Podman) | Монтирование по inode | `docker compose down && docker compose up -d` |
 | Браузер не открывается при `tailscale up` | Клиент ждёт ручного перехода | Открыть вручную `https://scale.example.org/register/<id>` из вывода команды |
 
