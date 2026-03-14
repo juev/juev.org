@@ -1,0 +1,38 @@
+---
+title: "Ссылки #381"
+date: 2026-03-14T09:50:02+0300
+image: https://static.juev.org/images/links.jpg
+tags:
+  - links
+---
+
+За прошедшую неделю собрал 62 ссылки; ниже — 5 наиболее примечательных.
+
+## 🔧 Инструменты
+
+**[Handy](https://handy.computer/)**  
+Бесплатная open-source утилита голосовой транскрипции — всё обрабатывается локально, без облака.
+
+**[Two Years of Emacs Solo: 35 Modules, Zero External Packages, and a Full Refactor](https://www.rahuljuliato.com/posts/emacs-solo-two-years)**  
+Два года Emacs без внешних пакетов: 35 модулей и полный рефакторинг конфигурации.
+
+## 💻 Инфраструктура
+
+**[ufw-docker: To fix the Docker and UFW security flaw without disabling iptables](https://github.com/chaifeng/ufw-docker)**  
+Закрывает уязвимость Docker и UFW, не отключая iptables.
+
+## 🤖 AI
+
+**[karpathy/autoresearch: AI agents running research on single-GPU nanochat training](https://github.com/karpathy/autoresearch)**  
+AI-агенты, автоматически ведущие исследования по обучению nanochat на одном GPU.
+
+## 🎲 Программирование
+
+**[TeXCCChess: How Coding Agents Wrote a Chess Engine in Pure TeX](https://blog.mathieuacher.com/TeXCCChessEngine/)**  
+Шахматный движок, написанный агентами на чистом TeX — неожиданный эксперимент.
+
+---
+
+На этой неделе — от локальной транскрипции и Emacs до шахмат на TeX и AI-исследований.
+
+Хорошей вам недели!
