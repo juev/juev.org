@@ -616,6 +616,35 @@ docker exec headscale sqlite3 /var/lib/headscale/db.sqlite \
 
 **Для пользователей Podman:** rootless Podman монтирует файлы по inode. Команды `sed -i`, `cat >` создают новый файл — контейнер продолжает видеть старое содержимое. После изменения `config.yaml` Headscale или Headplane через такие команды необходим полный рестарт контейнера. В Docker эта проблема не возникает.
 
+**Podman Quadlet и Docker-интеграция Headplane.** Headplane кеширует container ID контейнера Headscale при старте и использует его для отправки команды restart через Docker API. В Docker это работает — container ID сохраняется при рестарте. Но Podman Quadlet при каждом рестарте **удаляет и пересоздаёт** контейнер с новым ID. После первого restart через API кешированный ID устаревает, и все последующие попытки завершаются ошибкой `404 no such container`.
+
+Решение для Podman Quadlet — systemd `.path` юнит, который следит за конфигом Headscale и перезапускает его через systemd:
+
+```ini
+# ~/.config/systemd/user/headscale-config.path
+[Unit]
+Description=Watch Headscale config for changes
+
+[Path]
+PathModified=%h/.config/containers/systemd/configs/headscale/config.yaml
+Unit=headscale-config-reload.service
+
+[Install]
+WantedBy=default.target
+```
+
+```ini
+# ~/.config/systemd/user/headscale-config-reload.service
+[Unit]
+Description=Restart Headscale after config change
+
+[Service]
+Type=oneshot
+ExecStart=/usr/bin/systemctl --user restart headscale.service
+```
+
+Активация: `systemctl --user enable --now headscale-config.path`. После этого Headplane записывает изменения в конфиг, а systemd автоматически перезапускает Headscale — без Docker API и без проблем с container ID.
+
 ## Устранение неполадок
 
 | Симптом | Возможная причина | Действие |
@@ -625,6 +654,7 @@ docker exec headscale sqlite3 /var/lib/headscale/db.sqlite \
 | Ошибка валидации токена | Issuer с trailing slash | Указать `https://id.example.org` без `/` в конце во всех конфигах |
 | Headplane показывает пользователя как «unmanaged» | `provider_identifier` не прописан | Выполнить привязку через базу (путь 2 в разделе миграции) |
 | 502/503 при изменении DNS в Headplane | Label `me.tale.headplane.target` на контейнере Headplane вместо Headscale | Переместить label на контейнер Headscale, перезапустить оба сервиса |
+| `404 no such container` при изменении DNS (Podman Quadlet) | Headplane кеширует container ID, Quadlet пересоздаёт контейнер с новым ID | Использовать systemd `.path` юнит для рестарта (см. «Подводные камни») |
 | После правки конфига изменения не применяются (Podman) | Монтирование по inode | `docker compose down && docker compose up -d` |
 | Браузер не открывается при `tailscale up` | Клиент ждёт ручного перехода | Открыть вручную `https://scale.example.org/register/<id>` из вывода команды |
 
