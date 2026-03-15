@@ -379,17 +379,59 @@ a#license
 //   border-top:1px dotted
 // */}
 
-.footnotes p
+.footnotes
 {
-  color:#A52A2A;
-  font-size:14px
+  font-size: 14px;
+  color: #555;
 }
 
-a[rel="footnote"],
-a[rel="reference"]
+.footnotes ol
 {
-  border:none;
-  font-size:9pt;
+  padding-left: 1.5em;
+}
+
+.footnotes ol li
+{
+  margin-left: 0;
+  margin-bottom: 0.3em;
+}
+
+.footnotes p
+{
+  margin: 0.3em 0;
+}
+
+sup:has(.footnote-ref)
+{
+  vertical-align: baseline;
+  position: relative;
+  top: -0.4em;
+  font-size: 0.8em;
+  line-height: 0;
+}
+
+.footnote-ref
+{
+  border: none !important;
+  text-decoration: none !important;
+  color: #555;
+  padding: 0 1px;
+}
+
+.footnote-ref::before
+{
+  content: "[";
+}
+
+.footnote-ref::after
+{
+  content: "]";
+}
+
+.footnote-backref
+{
+  border: none !important;
+  font-size: 0.85em;
 }
 
 .pagination
