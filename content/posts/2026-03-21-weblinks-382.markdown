@@ -1,0 +1,41 @@
+---
+title: "Ссылки #382"
+date: 2026-03-21T09:22:22+0300
+image: https://static.juev.org/images/links.jpg
+tags:
+  - links
+---
+
+За прошедшую неделю собрал 43 ссылки; ниже — 6 наиболее примечательных.
+
+## 🔧 Инструменты
+
+**[stop-slop: A skill file for removing AI tells from prose](https://github.com/hardikpandya/stop-slop)**
+Skill-файл для Claude Code, вычищающий типичные AI-паттерны из текста — помогает писать естественнее.
+
+**[A Guide to vim.pack (Neovim built-in plugin manager)](https://echasnovski.com/blog/2026-03-13-a-guide-to-vim-pack)**
+Подробный гайд по встроенному менеджеру плагинов Neovim — без внешних зависимостей.
+
+## 🤖 AI
+
+**[Heaps do lie: debugging a memory leak in vLLM](https://mistral.ai/news/debugging-memory-leak-in-vllm)**
+Mistral AI разбирают утечку памяти в vLLM — глубокий дебаг с неожиданной развязкой.
+
+**[zeroboot: Sub-millisecond VM sandboxes for AI agents](https://github.com/adammiribyan/zeroboot)**
+Песочницы для AI-агентов с запуском за доли миллисекунды через copy-on-write форк VM.
+
+## 💻 Разработка
+
+**[Reviewing large changes with Jujutsu](https://ben.gesoff.uk/posts/reviewing-large-changes-with-jj/)**
+Как ревьюить большие изменения с помощью Jujutsu — приёмы, которых не хватает в Git.
+
+## 💡 Продуктивность
+
+**[How My Life Got 100x Better When I Stopped Thinking About Google](https://joostboer.com/google-quality-of-life)**
+Личный опыт: как перестать оптимизировать под Google и начать писать для людей.
+
+---
+
+На этой неделе — от вычистки AI-слога и Neovim без плагинов до дебага утечек в vLLM и песочниц для агентов.
+
+Хорошей вам недели!
