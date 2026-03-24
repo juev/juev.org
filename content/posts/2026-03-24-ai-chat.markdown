@@ -1,0 +1,352 @@
+---
+title: "Личный AI-чат: от Telegram-бота до полноценного веб-интерфейса"
+date: 2026-03-24T15:54:13+0300
+tags:
+  - openrouter
+  - ollama
+  - podman
+  - tailscale
+  - searxng
+---
+
+## Оглавление
+
+- [Введение](#введение)
+- [Требования](#требования)
+- [Какие решения рассматривали](#какие-решения-рассматривал)
+- [Почему остановлся на Open-WebUI](#почему-остановился-на-open-webui)
+- [Установка и настройка](#установка-и-настройка)
+- [Подключение провайдеров](#подключение-провайдеров)
+- [Веб-поиск через SearXNG](#веб-поиск-через-searxng)
+- [Создание агента](#создание-агента)
+- [Масштабирование: PostgreSQL и Redis](#масштабирование-postgresql-и-redis)
+- [Выводы](#выводы)
+
+## Введение
+
+Когда работаешь с AI-моделями каждый день, хочется иметь удобный интерфейс — с историей диалогов, переключением между моделями и доступом с любого устройства. Не привязанный к конкретному провайдеру, а свой, под полным контролем.
+
+Я прошёл путь от Telegram-бота до полноценного веб-интерфейса на собственном сервере. В этой статье расскажу, какие варианты рассматривал, с какими проблемами столкнулся и почему остановился на Open-WebUI.
+
+## Требования
+
+Ключевые критерии выбора:
+
+- **Доступ к OpenRouter** — единый API для 200+ моделей (Claude, GPT, Gemini, DeepSeek, Qwen). Не хочу привязываться к одному провайдеру.
+- **Self-hosted** — данные остаются на моём сервере, нет подписок и лимитов кроме API.
+- **Минимум зависимостей** — чем меньше контейнеров и баз данных, тем проще эксплуатация.
+- **Доступ с мобильных** — Telegran, PWA или адаптивный веб-интерфейс.
+- **Простой деплой** — Podman Quadlet, rootless, один-два контейнера.
+
+## Какие решения рассматривал
+
+### NullClaw
+
+Автономный AI-agent runtime на Zig[^1]. Один статический бинарник в 678 КБ, ~1 МБ RAM, старт за 2 мс. Поддерживает 50+ AI-провайдеров (включая OpenRouter, Anthropic, OpenAI, Ollama) и 19 каналов связи: CLI, Telegram, Discord, Signal, Slack, Matrix, WhatsApp, IRC, email. Модульная архитектура на vtable-интерфейсах — провайдеры, каналы, инструменты и memory-движки подключаются как плагины. Встроенный sandbox (Landlock, Firejail) для безопасного выполнения команд.
+
+**Плюсы**: минимальное потребление ресурсов, работает на $5 ARM-платах, 5300+ тестов, один бинарник без зависимостей.
+
+**Минусы**: нет собственного веб-интерфейса (нужен NullHub для дашборда), ориентирован на автономных агентов — для простого чата избыточно по концепции и недостаточно по UI.
+
+### OpenClaw
+
+Self-hosted AI-ассистент на TypeScript[^2] с 334K звёздами на GitHub. Gateway-архитектура: центральный WebSocket-шлюз нормализует протоколы 20+ мессенджеров (WhatsApp, Telegram, Slack, Discord, Signal, iMessage, Teams, Matrix) в единый формат и маршрутизирует к AI-агентам. Поддерживает голосовое управление, браузерную автоматизацию, работу с файлами, cron-задачи. Есть веб-UI, нативные приложения для macOS и мобильных, экосистема плагинов через ClawHub.
+
+**Плюсы**: огромное сообщество, мультиплатформенность (одновременно общаешься через любой мессенджер), actionable AI (не только чат — управление почтой, календарём, автоматизация).
+
+**Минусы**: требует Node.js 24+, тяжелее по ресурсам. Для задачи "простой веб-чат с OpenRouter" — overkill: Gateway-архитектура с 20+ мессенджерами не нужна, если хочешь только веб-интерфейс.
+
+### Nanobot
+
+Telegram-бот с AI через OpenRouter. Удобен тем, что Telegram уже установлен на всех устройствах — нулевой барьер входа.
+
+**Плюсы**: мгновенный доступ из Telegram, не нужен отдельный интерфейс.
+
+**Минусы**: Telegram как платформа для AI-чата оказался неудобен по нескольким причинам. Во-первых, один чат — один поток: все разговоры на разные темы сливаются в единую ленту, и найти нужную информацию через неделю практически невозможно. Во-вторых, ограничения Telegram по форматированию — markdown рендерится не полностью, длинные ответы обрезаются, блоки кода отображаются плохо. В-третьих, нет удобного переключения моделей на лету. Наконец, после блокировки Telegram Bot API пришлось настраивать proxy для бота, что добавило ещё один компонент в инфраструктуру — лишний overhead ради неидеального интерфейса.
+
+### LibreChat
+
+Мощная мультипровайдерная платформа[^6]: 30+ LLM-провайдеров, AI Agents, MCP, Code Interpreter, OIDC/2FA. React + Node.js.
+
+**Плюсы**: энтерпрайз-фичи (OIDC с Pocket ID, модерация, агенты), встроенный Code Interpreter, MCP.
+
+**Минусы**: MongoDB обязательна, MeiliSearch для поиска, Redis для масштабирования — три дополнительные зависимости. Для single-user сильный overkill. Сообщество в 3.7 раза меньше, чем у Open-WebUI (34.9K vs 126.8K звёзд).
+
+### Dify
+
+LLMOps-платформа[^8] с визуальным конструктором workflow. Это не чат-интерфейс, а среда разработки AI-приложений.
+
+**Плюсы**: drag-and-drop workflow, 50+ встроенных инструментов, мониторинг.
+
+**Минусы**: 11 контейнеров в деплое (api, worker, web, db, redis, qdrant, sandbox, nginx...), минимум 4 CPU/16 GB RAM для production. Совершенно другая категория — для multi-step AI-пайплайнов, не для простого чата.
+
+### LobeChat
+
+Современный AI-чат[^9] с агентами и маркетплейсом. Next.js, красивый UI, поддержка 13+ провайдеров.
+
+**Плюсы**: отличный дизайн, система агентов с маркетплейсом, CRDT-синхронизация между устройствами.
+
+**Минусы**: PostgreSQL 14+ обязателен для серверной версии, плюс Redis — итого 7 GB RAM. Без серверной версии данные хранятся только в IndexedDB браузера. Менее зрелый проект, чем Open-WebUI.
+
+### Open-WebUI
+
+Чат-интерфейс[^3] для Ollama и облачных провайдеров. Python backend, Svelte frontend, SQLite.
+
+**Плюсы**: один контейнер, SQLite из коробки, 126.8K звёзд на GitHub, PWA, knowledge base, memory, web search, Tools/Functions из маркетплейса.
+
+**Минусы**: аутентификация только email+пароль (нет OIDC), нет встроенного Code Interpreter.
+
+## Почему остановился на Open-WebUI
+
+Выбор определился пересечением требований:
+
+| Критерий | NullClaw | OpenClaw | Nanobot | LibreChat | Dify | LobeChat | Open-WebUI |
+|---|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
+| Веб-интерфейс | - | + | - | + | + | + | + |
+| OpenRouter | + | + | + | + | + | + | + |
+| SQLite / без внешней БД | + | + | + | - | - | - | + |
+| 1 контейнер | + | - | + | - | - | - | + |
+| История диалогов | - | + | + | + | + | + | + |
+| Переключение моделей | + | + | - | + | + | + | + |
+| PWA | - | - | - | - | - | + | + |
+| Минимум ресурсов | + | - | + | - | - | - | + |
+
+Open-WebUI — единственное решение, которое закрывает все требования при минимальной сложности деплоя. Один контейнер, SQLite, никаких внешних зависимостей.
+
+Деплой в Podman Quadlet свёлся к одному `.container` файлу и паре переменных окружения. Сервис доступен только через Tailscale — публикации в интернет не нужно.
+
+## Установка и настройка
+
+### Quadlet-файл контейнера
+
+Open-WebUI запускается одним контейнером через Podman Quadlet. Файл `open-webui.container`:
+
+```ini
+[Unit]
+Description=Open-WebUI AI chat interface
+After=network-online.target
+
+[Container]
+ContainerName=open-webui
+Image=ghcr.io/open-webui/open-webui:main
+Volume=%h/volumes/open-webui:/app/backend/data:Z
+EnvironmentFile=%h/.config/containers/systemd/open-webui/open-webui.env
+EnvironmentFile=%h/volumes/open-webui/.env
+Network=caddy-private.network
+AutoUpdate=registry
+HealthCmd=curl -fsS http://127.0.0.1:8080/health
+HealthInterval=30s
+HealthTimeout=5s
+HealthRetries=3
+
+[Service]
+Restart=always
+
+[Install]
+WantedBy=default.target
+```
+
+Ключевые моменты:
+
+- **Один volume** — `~/volumes/open-webui` хранит SQLite-базу, uploads и кэш.
+- **Два EnvironmentFile** — первый с настройками (git-tracked), второй с секретами (только на сервере).
+- **Network** — `caddy-private.network` подключает контейнер к сети приватного Caddy за Tailscale.
+- **AutoUpdate=registry** — автоматическое обновление образа через `podman auto-update`.
+- **HealthCmd** — Podman проверяет `/health` каждые 30 секунд, рестартует при 3 неудачах.
+
+### Переменные окружения
+
+Конфигурация разделена на два файла. Основной `open-webui.env` (не содержит секретов):
+
+```bash
+# Провайдеры
+ENABLE_OPENAI_API=true
+ENABLE_OLLAMA_API=true
+OLLAMA_BASE_URL=https://ollama.com
+OPENAI_API_BASE_URL=https://openrouter.ai/api/v1
+
+# Регистрация (первый пользователь = admin)
+ENABLE_SIGNUP=true
+
+# Веб-поиск
+ENABLE_RAG_WEB_SEARCH=true
+RAG_WEB_SEARCH_ENGINE=tavily
+RAG_WEB_SEARCH_RESULT_COUNT=5
+BYPASS_WEB_SEARCH_EMBEDDING_AND_RETRIEVAL=true
+BYPASS_WEB_SEARCH_WEB_LOADER=true
+RAG_TOP_K=10
+```
+
+Секреты в отдельном `.env` файле (не в git):
+
+```bash
+OPENAI_API_KEY=sk-or-...          # OpenRouter API key
+WEBUI_SECRET_KEY=...               # JWT secret (openssl rand -hex 32)
+OLLAMA_API_KEY=...                 # Ollama Cloud key
+RAG_WEB_SEARCH_API_KEY=...        # Tavily API key
+```
+
+`BYPASS_WEB_SEARCH_EMBEDDING_AND_RETRIEVAL=true` — важная настройка. Без неё Open-WebUI пропускает результаты поиска через embedding-модель и RAG-пайплайн, что требует отдельной embedding-модели. С bypass результаты поиска идут напрямую в контекст LLM — проще и быстрее.
+
+### Запуск
+
+```bash
+# Создать директорию для данных
+mkdir -p ~/volumes/open-webui
+
+# Создать файл секретов
+cat > ~/volumes/open-webui/.env << 'EOF'
+OPENAI_API_KEY=sk-or-ваш-ключ
+WEBUI_SECRET_KEY=$(openssl rand -hex 32)
+EOF
+
+# Перезагрузить Quadlet и запустить
+systemctl --user daemon-reload
+systemctl --user start open-webui
+```
+
+После старта Open-WebUI доступен на порту 8080. Первый зарегистрированный пользователь автоматически получает роль admin.
+
+## Подключение провайдеров
+
+### OpenRouter — основной провайдер
+
+OpenRouter[^4] предоставляет единый OpenAI-совместимый API для 200+ моделей. Подключение тривиально — переменные окружения:
+
+```text
+OPENAI_API_BASE_URL=https://openrouter.ai/api/v1
+OPENAI_API_KEY=sk-or-...
+```
+
+После старта контейнера все модели OpenRouter появляются в выпадающем списке. Можно переключаться между Claude, GPT, Gemini, DeepSeek в одном диалоге.
+
+### Ollama Cloud — бесплатные большие модели
+
+Отдельно подключил Ollama Cloud[^5] — облачный сервис от Ollama, который позволяет запускать большие модели (DeepSeek V3.1 671B, Qwen3 235B, MiniMax) без локального GPU.
+
+Бесплатный tier с лимитами по запросам (сброс каждые 5 часов и каждые 7 дней). Достаточно для личного использования — запустить DeepSeek V3.1 на 671B параметров бесплатно трудно переоценить.
+
+## Веб-поиск через SearXNG
+
+Open-WebUI поддерживает интеграцию с поисковыми движками. У меня уже был развёрнут SearXNG[^7] — метапоисковик, агрегирующий результаты из Google, Bing, DuckDuckGo и десятков других источников.
+
+Подключение: Admin → Settings → Web Search → SearXNG → URL.
+
+Теперь модель может искать актуальную информацию в интернете прямо из чата. При этом используется мой собственный SearXNG-инстанс — никакие запросы не уходят в сторонние поисковые API.
+
+Дополнительно подключил Tavily как альтернативный поисковый провайдер — он специализирован на AI-поиске и возвращает более структурированные результаты.
+
+## Создание агента
+
+Одна из самых полезных возможностей Open-WebUI — создание кастомных агентов (моделей с предустановленными параметрами).
+
+В разделе Workspace → Models можно создать агента с:
+
+- **Фиксированной моделью** — например, привязать к DeepSeek V3.2 для повседневных задач или Claude для кода.
+- **System prompt** — инструкции, определяющие поведение: язык ответов, стиль, область экспертизы.
+- **Навыками (Tools)** — подключить Web Search, Run Code, Adaptive Memory.
+- **Knowledge base** — привязать документы для RAG-поиска.
+
+Это упрощает ежедневную работу: вместо того чтобы каждый раз выбирать модель, настраивать контекст и подключать инструменты — просто выбираешь нужного агента из списка. Один для написания кода, другой для исследований с веб-поиском, третий для анализа документов.
+
+## Масштабирование: PostgreSQL и Redis
+
+SQLite достаточно для одного пользователя, но Open-WebUI поддерживает расширенную конфигурацию с PostgreSQL и Redis. Это имеет смысл, когда нужно:
+
+- **Несколько воркеров** — SQLite не поддерживает параллельную запись, при `UVICORN_WORKERS > 1` нужна полноценная БД.
+- **Векторный поиск (RAG)** — pgvector позволяет хранить embeddings в PostgreSQL вместо встроенного ChromaDB.
+- **WebSocket-синхронизация** — Redis/Valkey как брокер для синхронизации состояния между воркерами.
+
+### Дополнительные контейнеры
+
+PostgreSQL с расширением pgvector:
+
+```ini
+[Container]
+ContainerName=open-webui-db
+Image=docker.io/pgvector/pgvector:pg17
+Volume=%h/volumes/open-webui-db/data:/var/lib/postgresql/data:Z
+Volume=%h/.config/containers/systemd/configs/open-webui/init.sql:/docker-entrypoint-initdb.d/init.sql:ro,Z
+EnvironmentFile=%h/.config/containers/systemd/open-webui/open-webui-db.env
+EnvironmentFile=%h/volumes/open-webui/.env
+UserNS=keep-id:uid=999,gid=999
+Network=open-webui_db.network
+```
+
+Valkey (Redis-совместимый) для WebSocket:
+
+```ini
+[Container]
+ContainerName=open-webui-redis
+Image=docker.io/valkey/valkey:8-alpine
+Exec=valkey-server --save 30 1 --loglevel warning
+Volume=%h/volumes/open-webui-redis/data:/data:Z
+UserNS=keep-id:uid=999,gid=1000
+Network=open-webui_db.network
+```
+
+Init-скрипт для PostgreSQL (`init.sql`) — одна строка:
+
+```sql
+CREATE EXTENSION IF NOT EXISTS vector;
+```
+
+### Изменения в конфигурации Open-WebUI
+
+```bash
+# Включить 3 воркера
+UVICORN_WORKERS=3
+
+# Переключить векторную БД на pgvector
+VECTOR_DB=pgvector
+
+# Connection pool
+DATABASE_POOL_SIZE=5
+DATABASE_POOL_MAX_OVERFLOW=5
+
+# Redis для WebSocket
+ENABLE_WEBSOCKET_SUPPORT=true
+WEBSOCKET_MANAGER=redis
+```
+
+Строки подключения к PostgreSQL (`DATABASE_URL`) и Redis (`WEBSOCKET_REDIS_URL`) передаются через файл секретов.
+
+### Изолированная сеть
+
+Контейнеры БД и Redis подключаются к отдельной сети `open-webui_db.network`, а Open-WebUI входит в обе сети — `caddy-private` (для HTTP-трафика) и `open-webui_db` (для доступа к БД). PostgreSQL и Redis не видны ни из какой другой сети.
+
+### Стоит ли усложнять?
+
+На практике для single-user конфигурации SQLite хватает с запасом. Я пробовал миграцию на PostgreSQL + Redis + 3 воркера — работает, но прироста производительности при одном пользователе не заметно, а вот три дополнительных контейнера нужно обслуживать. В итоге вернулся на SQLite.
+
+Миграция имеет смысл, если:
+
+- Подключаете нескольких пользователей и хотите параллельную обработку запросов.
+- Активно используете Knowledge Base с большими коллекциями документов (pgvector эффективнее ChromaDB).
+- Нужна надёжная репликация и бекапы БД (pg_dump vs копирование SQLite-файла).
+
+## Выводы
+
+Путь от API-прослойки и Telegram-бота до полноценного веб-интерфейса занял несколько итераций. Главные уроки:
+
+1. **Простота побеждает**: один контейнер с SQLite надёжнее кластера из MongoDB + Redis + MeiliSearch. Для single-user нет смысла в энтерпрайз-архитектуре.
+
+2. **OpenRouter решает проблему выбора провайдера**: один API key — доступ ко всем моделям. Не нужно жонглировать ключами от OpenAI, Anthropic, Google.
+
+3. **Ollama Cloud — неожиданно полезен**: бесплатный доступ к моделям на 671B параметров. Подключается как второй OpenAI-совместимый endpoint.
+
+4. **Кастомные агенты экономят время**: настроить модель + system prompt + инструменты один раз, а потом просто выбирать из списка — это реально удобнее, чем каждый раз конфигурировать с нуля.
+
+5. **Self-hosted AI-чат в 2026 году — это один контейнер**: не нужен кластер Kubernetes или десяток Docker-контейнеров. Open-WebUI + SQLite + Podman Quadlet — и у вас полноценный AI-интерфейс за VPN.
+
+## Источники
+
+[^1]: [NullClaw](https://github.com/nullclaw/nullclaw) — AI-agent runtime на Zig, 6.7K звёзд
+[^2]: [OpenClaw](https://github.com/openclaw/openclaw) — self-hosted AI-ассистент на TypeScript, 334K звёзд
+[^3]: [Open-WebUI](https://github.com/open-webui/open-webui) — AI-чат интерфейс, 126.8K звёзд
+[^4]: [OpenRouter](https://openrouter.ai/) — единый API для 200+ LLM
+[^5]: [Ollama Cloud](https://ollama.com/search?c=cloud) — облачные модели
+[^6]: [LibreChat](https://github.com/danny-avila/LibreChat) — мультипровайдерный AI-чат, 34.9K звёзд
+[^7]: [SearXNG](https://github.com/searxng/searxng) — метапоисковик с открытым кодом
+[^8]: [Dify](https://github.com/langgenius/dify) — LLMOps-платформа
+[^9]: [LobeChat](https://github.com/lobehub/lobe-chat) — AI-чат с агентами
