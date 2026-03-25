@@ -13,8 +13,15 @@
         <a href="{{ "tags" | absURL }}/{{ . | urlize }}" title="View posts tagged with &quot;{{ . }}&quot;">#{{ . }}</a>{{ end }}
     </span>{{ end }}
 </div>
-<div class="post">
-    {{ .Content }}
+<div class="post-with-toc">
+    <div class="post">
+        {{ .Content }}
+    </div>
+    {{ if .TableOfContents }}{{ if findRE "<li>" .TableOfContents }}
+    <aside class="post-toc" id="post-toc" aria-label="Оглавление">
+        {{ .TableOfContents }}
+    </aside>
+    {{ end }}{{ end }}
 </div>
 <div class="meta">
     {{ partial "nav.html" . }}

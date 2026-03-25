@@ -56,6 +56,9 @@
     {{ "<!-- Image enhancement script -->" | safeHTML }}
     {{ $images := resources.Get "js/images.js" | minify | fingerprint }}
     <script src="{{ $images.Permalink }}" defer></script>
+    {{ "<!-- TOC active section tracking -->" | safeHTML }}
+    {{ $toc := resources.Get "js/toc.js" | minify | fingerprint }}
+    <script src="{{ $toc.Permalink }}" defer></script>
     {{ "<!-- Safe page preloading script -->" | safeHTML }}
     <script type="speculationrules">
     {

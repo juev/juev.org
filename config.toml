@@ -73,6 +73,9 @@ email			= "denis@evsyukov.org"
   [markup.goldmark]
     [markup.goldmark.renderer]
       unsafe = true
+  [markup.tableOfContents]
+    startLevel = 2
+    endLevel = 3
   [markup.highlight]
     codeFences = true
     guessSyntax = true

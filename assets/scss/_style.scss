@@ -19,7 +19,7 @@ body
   body
   {
    font:16px 'Open Sans', arial, serif !important;
-   line-height: 26px !important;
+   line-height: 1.75 !important;
   }
 }
 
@@ -31,14 +31,13 @@ caption, col, colgroup, table, tbody, td, tfoot, th, thead, tr {
   border-spacing: 0; }
 
 table {
-  border: 1px solid rgba(0, 0, 0, 0.75);
+  border: 1px solid #ddd;
   border-collapse: collapse;
+  border-radius: 6px;
   display: table;
   empty-cells: hide;
-  margin: -1px 0 1.3125em;
+  margin: 1.2em auto;
   padding: 0;
-  margin-left: auto;
-  margin-right: auto;
   width: 80%; }
 
 caption {
@@ -85,17 +84,15 @@ table th, table td {
 }
 
 table thead {
-  background: rgba(0, 0, 0, 0.15);
-  border: 1px solid rgba(0, 0, 0, 0.75);
-  border-bottom: 1px solid rgba(0, 0, 0, 0.2); }
+  background: #f0f0f0;
+  border-bottom: 2px solid #ddd; }
 
 table tbody {
-  background: rgba(0, 0, 0, 0.05); }
+  background: #fafafa; }
 
 table tfoot {
-  background: rgba(0, 0, 0, 0.15);
-  border: 1px solid rgba(0, 0, 0, 0.75);
-  border-top: 1px solid rgba(0, 0, 0, 0.2); }
+  background: #f0f0f0;
+  border-top: 2px solid #ddd; }
 
 dt, th {
   font-weight: 700; }
@@ -215,9 +212,27 @@ strong
 
 .post p
 {
-  /* text-align: justify; */
-  margin-top: 1em;
-  margin-bottom: 1em;
+  margin-top: 1.2em;
+  margin-bottom: 1.2em;
+}
+
+.post h2
+{
+  margin-top: 1.5em;
+  margin-bottom: 0.5em;
+}
+
+.post h3
+{
+  margin-top: 1.2em;
+  margin-bottom: 0.4em;
+}
+
+.post h2 a.post_hash,
+.post h3 a.post_hash,
+.post h4 a.post_hash
+{
+  color: inherit;
 }
 
 .post ol li
@@ -314,8 +329,9 @@ p.message
 pre
 {
   overflow:auto;
-  padding:1em;
-  border:#CCC solid 1px;
+  padding: 1.2em;
+  border: 1px solid #e0e0e0;
+  border-radius: 6px;
   background-color:#F6F6F6;
   margin-top: 1em;
   margin-bottom: 1em;
@@ -383,6 +399,11 @@ a#license
 {
   font-size: 14px;
   color: #555;
+}
+
+.footnotes > hr
+{
+  display: none;
 }
 
 .footnotes ol
@@ -792,6 +813,91 @@ img.error {
 {
   font-size:16px;
   border: none;
+}
+
+/* Breakout: images and tables wider than text column */
+@media (min-width: 1000px) {
+  .post table {
+    width: calc(100% + 120px);
+    margin-left: -60px;
+    margin-right: -60px;
+  }
+
+  .post figure,
+  .post picture,
+  .post > p > img {
+    width: calc(100% + 120px);
+    max-width: calc(100% + 120px);
+    margin-left: -60px;
+    margin-right: -60px;
+    display: block;
+  }
+
+  .post figure img,
+  .post picture img {
+    width: 100%;
+    height: auto;
+  }
+}
+
+/* TOC sidebar */
+.post-with-toc {
+  position: relative;
+}
+
+
+.post-toc {
+  display: none;
+}
+
+@media (min-width: 1280px) {
+  .post-toc {
+    display: block;
+    position: absolute;
+    left: calc(100% + 60px + 2rem);
+    top: 0;
+    bottom: 0;
+    width: 200px;
+    font-size: 0.75em;
+    line-height: 1.4;
+  }
+
+  .post-toc nav {
+    position: sticky;
+    top: 20px;
+    max-height: calc(100vh - 40px);
+    overflow-y: auto;
+  }
+
+  .post-toc #TableOfContents ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  .post-toc #TableOfContents ul ul {
+    padding-left: 1em;
+    margin-top: 0.2em;
+  }
+
+  .post-toc #TableOfContents a {
+    color: #888;
+    text-decoration: none;
+    display: block;
+    padding: 0.2em 0;
+    border: none;
+    transition: color 0.2s;
+  }
+
+  .post-toc #TableOfContents a:hover,
+  .post-toc #TableOfContents a.active {
+    color: #BC5007;
+  }
+
+  .post-toc #TableOfContents a.active {
+    border-left: 2px solid #BC5007;
+    padding-left: 0.5em;
+  }
 }
 
 @media screen and (max-width: 480px) {
