@@ -1,0 +1,31 @@
+---
+title: "Ссылки #383"
+date: 2026-03-28T03:09:22+0300
+image: https://static.juev.org/images/links.jpg
+tags:
+  - links
+---
+
+За прошедшую неделю собрал 53 ссылки; ниже — наиболее примечательные.
+
+## 💻 Разработка
+
+**[Anatomy of the .claude/ Folder](https://blog.dailydoseofds.com/p/anatomy-of-the-claude-folder)**
+Полный разбор структуры папки .claude/ и как оптимально организовать конфигурацию для Claude Code.
+
+**[A Week In Gas Town](https://www.dolthub.com/blog/2026-03-24-a-week-in-gas-town/)**
+Еженедельный обзор DoltHub — оптимизация Git для больших данных и SQL.
+
+## 🔧 Инструменты
+
+**[jsongrep is faster than {jq, jmespath, jsonpath-rust, jql}](https://micahkepe.com/blog/jsongrep/)**
+Новый инструмент для работы с JSON, который заметно быстрее популярных альтернатив.
+
+**[GitHub - topgrade-rs/topgrade: Upgrade all the things](https://github.com/topgrade-rs/topgrade)**
+Универсальный менеджер обновлений для всех инструментов в системе — один команда вместо множества.
+
+---
+
+На этой неделе — от оптимизации конфигурации Claude до быстрых инструментов для JSON и универсального обновления системы.
+
+Хорошей вам недели!
