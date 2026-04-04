@@ -1,0 +1,34 @@
+---
+title: "Ссылки #384"
+date: 2026-04-04T13:05:22+0300
+image: https://static.juev.org/images/links.jpg
+tags:
+  - links
+---
+
+За прошедшую неделю собрал 58 ссылок; ниже — наиболее примечательные.
+
+## 🌐 Сети и инфраструктура
+
+**[Build your own Dial-up ISP with a Raspberry Pi](https://www.jeffgeerling.com/blog/2026/build-your-own-dial-up-isp-with-a-raspberry-pi/)**
+Пошаговое руководство по созданию собственного dial-up провайдера на базе Raspberry Pi — DIY для любителей ретро-интернета.
+
+**[Jan-Piet Mens :: SSH certificates: the better SSH experience](https://jpmens.net/2026/04/03/ssh-certificates-the-better-ssh-experience/)**
+Почему SSH сертификаты лучше традиционных ключей: безопасность, удобство управления и почему стоит переходить.
+
+**[I Traced My Traffic Through a Home Tailscale Exit Node](https://tech.stonecharioteer.com/posts/2026/tailscale-exit-nodes/)**
+Практический опыт настройки домашнего exit node в Tailscale и анализ собственного трафика.
+
+**[Building a Mostly IPv6 Only Home Network – Varun Sinai Priolkar](https://varunpriolkar.com/2026/03/building-a-mostly-ipv6-only-home-network/)**
+Как построить домашнюю сеть на IPv6 и избавиться от зависимости от IPv4.
+
+## 📱 Гаджеты и DIY
+
+**[I turned my Kindle into my own personal newspaper](https://manualdousuario.net/en/how-to-kindle-personal-newspaper/)**
+Превращение Kindle в персональную газету: автоматизация поставки статей и RSS-фидов прямо на экран e-reader.
+
+---
+
+На этой неделе — от создания собственного интернета на Raspberry Pi до настройки IPv6-only сетей и превращения e-reader в информационный портал.
+
+Хорошей вам недели!
