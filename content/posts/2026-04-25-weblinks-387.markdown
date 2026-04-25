@@ -1,0 +1,36 @@
+---
+title: "Ссылки #387"
+date: 2026-04-25T19:05:13+0300
+image: https://static.juev.org/images/links.jpg
+tags:
+  - links
+---
+
+За прошедшую неделю собрал 38 ссылок; ниже — 5 наиболее примечательных.
+
+## 🤖 AI
+
+**[Headless everything for personal AI](https://interconnected.org/home/2026/04/18/headless)**  
+Почему сервисам всё чаще нужны CLI и headless-интерфейсы: персональные AI-агенты будут работать не через привычный UI.
+
+**[String Seed of Thought: Prompting LLMs for Distribution-Faithful and Diverse Generation](https://pub.sakana.ai/ssot/)**  
+Простой приём для более честной случайности в ответах LLM: сначала сгенерировать строку-зерно, а потом вывести результат из неё.
+
+## 🔐 Безопасность
+
+**[Quantum Computers Are Not a Threat to 128-bit Symmetric Keys](https://words.filippo.io/128-bits/)**  
+Разбор того, почему атака Гровера не превращает AES-128 в лёгкую добычу даже для гипотетических квантовых компьютеров.
+
+**[Bitwarden CLI Compromised in Ongoing Checkmarx Supply Chain Campaign](https://socket.dev/blog/bitwarden-cli-compromised)**  
+Компрометация Bitwarden CLI через CI/CD и напоминание о том, насколько хрупкой остаётся цепочка поставки пакетов.
+
+## 🛠 Инструменты
+
+**[Extract PDF text in your browser with LiteParse for the web](https://simonwillison.net/2026/Apr/23/liteparse-for-the-web/)**  
+Браузерная версия LiteParse: извлечение текста из PDF локально, с OCR и без отправки файлов на сервер.
+
+---
+
+На этой неделе — от headless-интерфейсов для AI-агентов и случайности в LLM до квантовой криптографии, supply chain и PDF-парсинга в браузере.
+
+Хорошей вам недели!
