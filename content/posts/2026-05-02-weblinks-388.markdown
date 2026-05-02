@@ -1,0 +1,37 @@
+---
+title: "Ссылки #388"
+date: 2026-05-02T15:12:49+03:00
+image: https://static.juev.org/images/links.jpg
+tags:
+  - links
+---
+
+За прошедшую неделю собрал 36 ссылок.
+
+## 🤖 AI
+
+**[openai/skills](https://github.com/openai/skills/tree/main)**
+Набор навыков от OpenAI для AI-агентов: как упаковывать инструкции в переиспользуемые модули.
+
+**[Sakana Fugu: A Multi-Agent Orchestration System as a Foundation Model](https://sakana.ai/fugu-beta/)**
+Мультиагентная система оркестрации от Sakana AI как базовая модель для кооперации агентов.
+
+**[addyosmani/agent-skills](https://github.com/addyosmani/agent-skills)**
+Продакшен-уровня навыки для AI-агентов, помогающих в разработке: практический подход к интеграции.
+
+**[Self-Adapting Language Models](https://jyopari.github.io/posts/seal)**
+Исследование о том, как языковые модели могут адаптироваться самостоятельно без дополнительного обучения.
+
+## 🛠 Инструменты
+
+**[Ghostty Is Leaving GitHub](https://mitchellh.com/writing/ghostty-leaving-github)**
+Терминал Ghostty объявил об уходе с GitHub: мотивы, альтернативы и что это значит для open source.
+
+**[Свой S3 или пошаговая настройка Garage](https://bashdays.ru/posts/2026/svoj-s3-ili-poshagovaya-nastrojka-garage/)**
+Пошаговое руководство по разворачиванию собственного S3-совместимого хранилища на базе Garage.
+
+---
+
+На этой неделе — от навыков и оркестрации AI-агентов до самоадаптирующихся моделей, миграции с GitHub на self-hosted и собственного S3-хранилища.
+
+Хорошей вам недели!
