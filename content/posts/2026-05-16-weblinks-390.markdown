@@ -1,0 +1,47 @@
+---
+title: "Ссылки #390"
+date: 2026-05-16T07:46:01+03:00
+image: https://static.juev.org/images/links.jpg
+tags:
+  - links
+---
+
+За прошедшую неделю собрал 22 ссылки.
+
+## 🤖 AI
+
+**[v9ai/deepseek-loop](https://github.com/v9ai/deepseek-loop)**
+Claude-Code-подобный agent loop поверх DeepSeek API: встроенные tools, permission modes, cron scheduler с /loop-семантикой и streaming SdkMessage events.
+
+**[Using LLM in the shebang line of a script](https://til.simonwillison.net/llms/llm-shebang)**
+Simon Willison показывает, как использовать LLM прямо в shebang-строке скрипта — превращаем естественный язык в исполняемый код.
+
+## 🛠 Инструменты
+
+**[dmtrKovalenko/fff](https://github.com/dmtrKovalenko/fff)**
+Самый быстрый и точный toolkit для поиска файлов для AI-агентов, Neovim, Rust, C и NodeJS.
+
+**[Getting started with jj](https://ellie.wtf/notes/jj-getting-started/)**
+Введение в jj — современную VCS, которая упрощает работу с историей по сравнению с git.
+
+**[`boring` SSH tunnel manager](https://alebeck.github.io/boring)**
+Минималистичный менеджер SSH-туннелей — без лишних настроек и сложностей.
+
+## 💻 Программирование
+
+**[Just Fucking Use Go](https://blainsmith.com/articles/just-fucking-use-go/)**
+Блейн Смит без лишних слов объясняет, почему для большинства задач стоит просто взять Go и не заниматься overengineering.
+
+**[Abstract machines for logic programs](https://chrisistyping.bearblog.dev/abstract-machines-for-logic-programs/)**
+Разбор абстрактных машин для логических программ — взгляд изнутри на то, как работают Prolog-подобные языки.
+
+## 📝 Продуктивность
+
+**[🌲 The Konik Method for Making Analog Notes](https://www.eleanorkonik.com/p/the-konik-method-for-making-analog)**
+Элеонора Коник делится собственным методом ведения аналоговых заметок — для тех, кому цифровые системы тесны.
+
+---
+
+На этой неделе — от агентных циклов и LLM в shebang до быстрого поиска файлов, jj вместо git, SSH-туннелей одной командой, защиты Go-минимализма и метода аналоговых заметок.
+
+Хорошей вам недели!
