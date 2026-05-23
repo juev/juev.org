@@ -1,0 +1,31 @@
+---
+title: "Ссылки #391"
+date: 2026-05-23T10:18:31+03:00
+image: https://static.juev.org/images/links.jpg
+tags:
+  - links
+---
+
+За прошедшую неделю собрал 22 ссылки.
+
+## 🤖 AI
+
+**[Kappaemme-git/codex-complexity-optimizer](https://github.com/Kappaemme-git/codex-complexity-optimizer)**
+Codex skill для безопасного анализа сложности кодовой базы и отчётов по оптимизации производительности.
+
+**[Ambient Associative Memory](https://timkellogg.me/blog/2026/05/17/ambient-memory)**
+Тим Келлог размышляет об ambient associative memory — модели памяти, где ассоциации возникают из окружающего контекста, а не из явного извлечения.
+
+**[Imbad0202/academic-research-skills](https://github.com/Imbad0202/academic-research-skills)**
+Набор skills для Claude Code, выстраивающий академический цикл: research → write → review → revise → finalize.
+
+## 📝 Продуктивность
+
+**[Handwriting, journaling, and LLMs](https://micro.chadkohalyk.com/2026/05/18/handwriting-journaling-and-llms.html)**
+Чад Кохалик о том, как рукописный journaling уживается с LLM — где они помогают мышлению, а где мешают рукописной рефлексии.
+
+---
+
+На этой неделе — от Codex-скилла для анализа сложности и идеи ambient-памяти до академического пайплайна на Claude Code и размышлений о рукописном journaling в эпоху LLM.
+
+Хорошей вам недели!
