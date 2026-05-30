@@ -1,0 +1,31 @@
+---
+title: "Ссылки #392"
+date: 2026-05-30T15:03:23+03:00
+image: https://static.juev.org/images/links.jpg
+tags:
+  - links
+---
+
+За прошедшую неделю собрал 27 ссылок.
+
+## 🤖 AI
+
+**[Using Claude Code: The unreasonable effectiveness of HTML](https://claude.com/blog/using-claude-code-the-unreasonable-effectiveness-of-html)**
+Команда Claude Code объясняет, почему HTML выигрывает у Markdown для результатов работы агентов: плотность информации, визуальная наглядность, лёгкий шеринг и интерактивность.
+
+**[rasbt/LLMs-from-scratch](https://github.com/rasbt/LLMs-from-scratch)**
+Реализация GPT-подобного LLM на PyTorch с нуля, шаг за шагом — официальный репозиторий книги Себастьяна Рашки, 96K звёзд.
+
+## 💻 Программирование
+
+**[Looking closer at Claude Generated Lisp Code | skybert.net](https://skybert.net/llm/looking-closer-at-claude-generated-lisp-code/)**
+Разбор AI-сгенерированного Emacs Lisp кода: автор обнаружил, что Claude написал десятки строк там, где хватило бы трёх вызовов стандартного API. Хорошее напоминание, почему AI-код нужно ревьюить.
+
+**[Production начинается там, где заканчивается вайбкодинг](https://habr.com/ru/articles/1037410/)**
+История pet-проекта, собранного с помощью LLM: демка собирается быстро, а sync, rollback, техдолг, безопасность и эксплуатация требуют ещё месяцев инженерной работы. О разрыве между вайбкодингом и production.
+
+---
+
+На этой неделе — от HTML как формата для AI-агентов и книги по LLM с нуля до ревью AI-сгенерированного кода и опыта превращения вайбкодинг-демки в production.
+
+Хорошей вам недели!
