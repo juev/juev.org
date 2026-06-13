@@ -1,0 +1,33 @@
+---
+title: "Ссылки #394"
+date: 2026-06-13T10:06:13+03:00
+image: https://static.juev.org/images/links.jpg
+tags:
+  - links
+---
+
+За прошедшую неделю собрал 35 ссылок.
+
+## 🤖 AI
+
+**[I Burned Through a $200 Claude Subscription Before I Understood How AI Agents Actually Work](https://www.linkedin.com/pulse/i-burned-through-200-claude-subscription-before-how-ai-yakutovich-nnxtf)**
+Честный рассказ о том, как автор спустил подписку за $200, пока не разобрался, как на самом деле работают AI-агенты. Главный вывод: дело не в модели, а в контексте, инструментах и цикле обратной связи — без них агент жжёт токены вхолостую.
+
+**[MiMo Code](https://mimo.xiaomi.com/coder)**
+Кодовая модель и агент от Xiaomi. Ещё один игрок в нише AI-ассистентов для разработки рядом с Claude Code и аналогами.
+
+## 💻 Разработка
+
+**[Stop Using Conventional Commits](https://sumnerevans.com/posts/software-engineering/stop-using-conventional-commits/)**
+Аргументированный разбор, почему формат Conventional Commits добавляет церемоний больше, чем пользы: префиксы `feat:`/`fix:` плохо ложатся на реальную работу, а смысл коммита лучше передаёт связное описание, а не ярлык.
+
+## 🧠 Психология
+
+**[Дофаминовое голодание: как перестать зависеть от быстрых удовольствий](https://www.rbc.ru/education/22/12/2025/693adc929a79473fb5cad24d)**
+Что такое дофаминовое голодание и как сознательно ограничить источники быстрого вознаграждения — соцсети, ленты, уведомления, — чтобы вернуть чувствительность к обычным делам.
+
+---
+
+На этой неделе — от уроков по реальной работе AI-агентов и кодовой модели Xiaomi до критики Conventional Commits и дофаминового голодания.
+
+Хорошей вам недели!
