@@ -72,7 +72,7 @@
     {{- end -}}
 </head>
 
-<body class="wide">
+<body class="wide{{ if in .Params.tags "links" }} weblinks{{ end }}">
     {{ "<!-- Offline status indicator -->" | safeHTML }}
     <div id="connection-status" class="offline-indicator" style="display: none;">
         <span>🔌 Нет подключения к интернету</span>

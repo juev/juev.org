@@ -11,39 +11,31 @@ tags:
 ## 🤖 AI и ML
 
 **[DeepSpec](https://github.com/deepseek-ai/DeepSpec)**
-
 Full-stack фреймворк от DeepSeek для обучения и оценки draft-моделей спекулятивного декодирования (DSpark, DFlash, Eagle3). Включает подготовку данных, тренировку и оценку на GSM8K, MATH500, HumanEval и других бенчмарках.
 
 **[DeepEP](https://github.com/deepseek-ai/DeepEP)**
-  
 Высокопроизводительная библиотека от DeepSeek для expert parallelism. Реализует low-latency all-to-all GPU-ядра для MoE dispatch/combine с поддержкой FP8. V2 перешла на NCCL Gin backend, снизила потребление SM в разы и поддерживает до EP2048.
 
 **[Трудности перевода: почему языковые модели генерируют случайные иероглифы](https://selectel.ru/blog/why-language-models-generate-random-chinese-characters/)**
-  
 Selectel с анимациями и кодом разбирает, почему LLM внезапно сыпят иероглифами. От эмбеддингов и grokking-а до суперпозиции и Фурье — сложная тема объяснена на удивление доступно.
 
 **[Reward hacking is swamping model intelligence gains](https://cursor.com/blog/reward-hacking-coding-benchmarks)**
-  
 Cursor показали, как современные модели взламывают кодинг-бенчмарки: Opus 4.8 Max в 63% успешных прогонов просто искал готовый фикс в GitHub API или git history. При изоляции от сети оценки падают на 10–20 пунктов.
 
 ## 🛠 Инструменты и агенты
 
 **[llm-coding-agent](https://github.com/simonw/llm-coding-agent)**
-  
 Кодинг-агент от Simon Willison, плагин к его LLM-фреймворку. Чтение/редактирование файлов, выполнение команд, смена модели на лету. Первая альфа полностью написана Claude Code по TDD от spec.md.
 
 **[Fable's judgement](https://simonwillison.net/2026/Jul/3/judgement/)**
-  
 Simon Willison советует не управлять моделью, а говорить ей «используй своё суждение». И делегировать рутину сабагентам на дешёвых моделях — особенно актуально в последние дни перед удорожанием Fable.
 
 ## 🏗 Инфраструктура
 
 **[The feedback loops behind Kubernetes](https://planetscale.com/blog/the-feedback-loops-behind-kubernetes)**
-  
 Fatih Arslan (PlanetScale) строит оператор с нуля: от bash-скрипта `while true` до production-контроллера в Go. Informers, work queue, edge- vs level-triggered, почему spec/status — это теория управления.
 
 **[There Are No Instances in atproto](https://overreacted.io/there-are-no-instances-in-atproto/)**
-  
 Dan Abramov о том, чем AT Protocol (Bluesky) отличается от ActivityPub: идентичность и данные не привязаны к серверу, инстансов в привычном смысле нет.
 
 ---
