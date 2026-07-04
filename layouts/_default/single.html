@@ -2,7 +2,7 @@
 
 {{- define "main" -}}
 <h1 class="title">{{- .Title -}}</h1>
-<div class="post">
+<div class="post{{ if in .Params.tags "links" }} weblinks{{ end }}">
     {{ .Content }}
 </div>
 <div class="meta">

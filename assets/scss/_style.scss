@@ -218,9 +218,10 @@ strong
 
 /* Weblinks: запись — один абзац «жирная ссылка + описание».
    Выносим ссылку-заголовок на отдельную строку, описание — строкой ниже.
-   Строго в scope .weblinks, чтобы не задеть обычные статьи, где абзац может
-   начинаться с жирного. */
-.weblinks .post p > strong:first-child:has(a)
+   Класс weblinks ставится на сам .post (в single- и index-шаблонах), чтобы
+   работать и на странице поста, и на главной. Scope не задевает обычные
+   статьи, где абзац может начинаться с жирного. */
+.post.weblinks p > strong:first-child:has(a)
 {
   display: block;
   margin-bottom: 0.4em;
@@ -229,7 +230,7 @@ strong
 /* Часть постов писалась с hard break (два пробела в конце строки ссылки → <br>).
    После блочного заголовка этот <br> даёт лишнюю пустую строку — убираем,
    чтобы hard-break и soft-break посты рендерились одинаково. */
-.weblinks .post p > strong:first-child:has(a) + br
+.post.weblinks p > strong:first-child:has(a) + br
 {
   display: none;
 }
