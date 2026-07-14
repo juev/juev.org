@@ -8,6 +8,7 @@
 <div class="post{{ if in .Params.tags "links" }} weblinks{{ end }}">
     {{ .Content }}
 </div>
+{{ if .Store.Get "hasMermaid" }}{{ $.Store.Set "hasMermaid" true }}{{ end }}
 {{ end }}
 <div class="meta">
     <div class="pagination">
