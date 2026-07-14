@@ -1,5 +1,5 @@
 baseURL = "https://www.juev.org/"
-languageCode = "ru-RU"
+locale = "ru-RU"
 title = "Denis Evsyukov"
 images = "https://www.juev.org/juev.png"
 description = "My thoughts and findings"
@@ -153,4 +153,3 @@ pattern = "^sitemap\\.xml$"
 cacheControl = "public, no-cache, must-revalidate"
 contentType = "application/xml"
 gzip = true
-
