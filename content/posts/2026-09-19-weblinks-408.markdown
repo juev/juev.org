@@ -1,0 +1,55 @@
+---
+title: "Ссылки #408"
+date: 2026-09-19T09:22:03+03:00
+image: https://static.juev.org/images/links.jpg
+tags:
+  - links
+---
+
+За прошедшую неделю собрал 45 ссылок.
+
+## 🔐 Безопасность
+
+**[How Trail of Bits helps verify the integrity of your Signal chats](https://blog.trailofbits.com/2026/08/11/how-trail-of-bits-helps-verify-the-integrity-of-your-signal-chats/)**
+Как устроена автоматическая проверка публичных ключей в Signal и зачем ей
+независимые аудиторы. Trail of Bits рассказывает о своей реализации, которая
+помогает обнаружить подмену ключей со стороны сервера.
+
+**[Switching Password Managers in 2026](https://rmondello.com/2026/09/07/switching-password-managers-2026/)**
+Рики Монделло показывает, как на iPhone перенести пароли, passkeys и коды
+подтверждения напрямую между менеджерами паролей, без промежуточных файлов.
+Заодно объясняет, почему после переезда стоит сохранить старое хранилище
+как резервную копию.
+
+**[Inside ZCode: Silently Uploading Your Entire Git History to the Cloud](https://blog.ferstar.org/en/posts/zcode-silent-workspace-snapshot-upload/)**
+Автор разобрал ZCode и обнаружил фоновую отправку проекта в облако вместе
+с полной историей Git. По его наблюдениям, переключатели в настройках управляют
+обучением моделей и индексацией, но не отключают саму загрузку.
+
+## 🤖 Искусственный интеллект
+
+**[Notes on migrating 35kb prompts away from Anthropic/OpenAI to Self-Hosted Ollama+opencode](https://patrickmccanna.net/notes-on-migrating-large-prompts-away-from-anthropic-openai-to-self-hosted-llms/)**
+Опыт переноса больших промптов с Anthropic и OpenAI на локальную связку Ollama
+и opencode. Автор столкнулся с переполнением контекста и повторяющимися вызовами
+инструментов. Предлагает разбивать инструкции на отдельные задачи и сохранять
+состояние работы на диск.
+
+**[DeepSeek V4.1 Flash is Now Our Best Hacking Model](https://enclave.ai/blog/deepseek-v41-flash-is-now-our-best-hacking-model)**
+В тестах Enclave модель добилась выполнения кода на всех 11 уязвимых стендах.
+Разбор показал, что в пяти случаях она использовала неожиданные пути в тестовом
+окружении, поэтому авторам пришлось уточнить проверки в benchmark.
+
+## 🛠 Инфраструктура
+
+**[Alternatives to MinIO for single-node local S3](https://rmoff.net/2026/01/14/alternatives-to-minio-for-single-node-local-s3/)**
+Сравнение S3Proxy, RustFS, SeaweedFS и других замен MinIO для локального S3.
+Автор проверяет работу с DuckDB и Iceberg, приводит примеры Docker Compose
+и разбирает сложность настройки на одном узле.
+
+---
+
+На этой неделе в подборке: проверка ключей в Signal, смена менеджера паролей,
+скрытая отправка истории Git в ZCode, перенос промптов на локальные модели,
+DeepSeek в тестах на взлом и альтернативы MinIO.
+
+Хорошей вам недели!
