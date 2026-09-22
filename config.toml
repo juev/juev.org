@@ -29,7 +29,7 @@ tag = "tags"
 
 [outputs]
 home = ["HTML", "RSS"]
-page = ["HTML"]
+page = ["HTML", "Markdown"]
 term = ["HTML", "RSS"]
 
 [mediaTypes]
@@ -43,6 +43,13 @@ mediaType = "application/xml"
 
 [outputFormats.RSS]
 baseName = "atom"
+
+# Markdown twin of every article, at <permalink>/index.md. Offered to AI
+# agents through <link rel="alternate" type="text/markdown">.
+[outputFormats.Markdown]
+mediaType = "text/markdown"
+baseName = "index"
+isPlainText = true
 
 [params]
 ogimage = "https://www.juev.org/juev.png"

@@ -17,6 +17,9 @@
     <link rel="shortcut icon" href="/favicon.ico">
     <link rel="apple-touch-icon" href="/apple-touch-icon.png">
     <link rel="alternate" type="application/rss" href="{{ .Site.BaseURL }}atom.xml" title="Denis Evsyukov">
+    {{- with .OutputFormats.Get "Markdown" }}
+    <link rel="alternate" type="text/markdown" href="{{ .Permalink }}">
+    {{- end }}
     <link rel="manifest" href="/site.webmanifest">
     {{ $critical := resources.Get "scss/_critical.scss" | toCSS | minify -}}
     <style>{{ $critical.Content | safeCSS }}</style>

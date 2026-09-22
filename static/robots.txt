@@ -3,36 +3,6 @@ Disallow: /404.html
 Disallow: /tags/
 Disallow: /tags.html
 
-User-agent: AdsBot-Google
-User-agent: Amazonbot
-User-agent: anthropic-ai
-User-agent: Applebot
-User-agent: AwarioRssBot
-User-agent: AwarioSmartBot
-User-agent: Bytespider
-User-agent: CCBot
-User-agent: ChatGPT-User
-User-agent: ClaudeBot
-User-agent: Claude-Web
-User-agent: cohere-ai
-User-agent: DataForSeoBot
-User-agent: Diffbot
-User-agent: FacebookBot
-User-agent: FriendlyCrawler
-User-agent: Google-Extended
-User-agent: GoogleOther
-User-agent: GPTBot
-User-agent: img2dataset
-User-agent: ImagesiftBot
-User-agent: magpie-crawler
-User-agent: Meltwater
-User-agent: omgili
-User-agent: omgilibot
-User-agent: peer39_crawler
-User-agent: peer39_crawler/1.0
-User-agent: PerplexityBot
-User-agent: PiplBot
-User-agent: scoop.it
-User-agent: Seekr
-User-agent: YouBot
-Disallow: /
+# AI crawler blocks removed 2026-09-22. Training, citation and
+# user-triggered agents are all allowed now. /tags/ stays out of the
+# index: it is a path rule, not an agent rule.
