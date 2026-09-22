@@ -30,6 +30,7 @@ tag = "tags"
 [outputs]
 home = ["HTML", "RSS"]
 page = ["HTML"]
+term = ["HTML", "RSS"]
 
 [mediaTypes]
 [mediaTypes."application/xml"]
