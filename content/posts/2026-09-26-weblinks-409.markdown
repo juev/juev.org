@@ -1,0 +1,53 @@
+---
+title: "Ссылки #409"
+date: 2026-09-26T09:34:46+03:00
+image: https://static.juev.org/images/links.jpg
+tags:
+  - links
+---
+
+На этой неделе в подборке: как Cloudflare вернула 100 ТБ оперативной памяти математикой, 72-часовой замер телеметрии Pixel 8 против GrapheneOS, ускорение claude.ai втрое за две недели и планировщик для заданий с состоянием.
+
+## ⚡ Производительность
+
+**[Saving another 100TB of RAM with math (and Rust) | Cloudflare Blog](https://blog.cloudflare.com/saving-100-tb-of-ram-with-math/)**
+Оптимизация consistent hashing в Pingora Backend Router снизила расход памяти, сочетая изменения в хранении хешей с математическими улучшениями алгоритма. Один из шагов заменил восьмибайтовую структуру шестибайтовым представлением и сократил память на хеширование на 25%; в совокупности изменения позволили Cloudflare вернуть в общий пул более 100 ТБ оперативной памяти.
+
+## 🔍 Приватность
+
+**[2026 DeGoogle Mobile Telemetry Study: 72-Hour Packet Benchmark](https://www.praveentechworld.com/research/degoogle-telemetry-2026)**
+Набор данных фиксирует 72 часа сетевого трафика Pixel 8 в режиме ожидания и сравнивает обращения к сервисам Google в разных конфигурациях Android и GrapheneOS. По опубликованным результатам, стандартная система отправляла 348,4 запроса в час, а GrapheneOS без сервисов Google — ни одного; выводы относятся к условиям стендового теста.
+
+## 💻 Разработка
+
+**[How we made claude.ai 3x faster in two weeks / claude.dev](https://claude.dev/blog/how-we-made-claude-ai-faster/)**
+Команда сообщает, что ускорила claude.ai втрое за две недели; разбор описывает бенчмарки, созданные Claude, и рабочий цикл в ветках Slack. Защитные меры позволили безопасно выпустить 3 000 изменений.
+
+## 🖥️ Инфраструктура
+
+**[Stateful jobs](https://rakyll.org/stateful-jobs/)**
+Планировщик для долговременных заданий с состоянием должен учитывать не только CPU и память, но и привязку к локальным данным, совместимость состояния при обновлениях и безопасное восстановление после сбоев. Поэтому обычных оркестраторов и повторного запуска недостаточно: автор обосновывает потребность в системе, которая учитывает жизненный цикл и семантику приложений.
+
+## А ещё
+
+- [juev/shareding: Share links to linkding from Android with a persistent offline queue](https://github.com/juev/shareding)
+- [F-Droid 2.0: A New Chapter for Android Freedom | F-Droid - Free and Open Source Android App Repository](https://f-droid.org/2026/09/24/f-droid-2.0-a-new-chapter-for-android-freedom.html)
+- [How local-first sync handles offline changes | Done Bear](https://donebear.com/blog/server-sequenced-sync-offline-changes?ref=localfirstnews.com)
+- [Disclosure of Vulnerability in the Network Protocol](https://radicle.dev/2026/09/23/disclosure-of-vulnerability-in-network-protocol)
+- [Science is open software · Jens Egholm Pedersen](https://jepedersen.dk/blog/202505_research/)
+- [ArchiveBox v0.9 is now released. 🎉 - HedgeDoc](https://docs.sweeting.me/s/archivebox-v0.9-announcement)
+- [Use Agents or Be Left Behind? A Personal Guide to Automating Your Own Work — Tim Dettmers](https://timdettmers.com/2026/01/13/use-agents-or-be-left-behind/)
+- [If AI coding is lowering your code quality, you’re not managing quality right](https://www.i-kh.net/p/if-ai-coding-is-lowering-your-code)
+- [Looking forward to Git 2.56 — and 3.0 [LWN.net]](https://lwn.net/SubscriberLink/1094575/2385e98583715c2b/)
+- [Zsh: find the largest files with the (OL) glob qualifier - Adam Johnson](https://adamj.eu/tech/2026/09/21/zsh-ol-glob-qualifiers/)
+- [Handwritten code | Katherine Yang](https://kayserifserif.place/posts/2026/handwritten-code/)
+- [Why MCP Was Always a Bad Idea | Maharshi Patel](https://maharship.com/blog/why-mcp-was-always-a-bad-idea/)
+- [What Zig felt like, coming from Rust](https://besok.github.io/posts/what-zig-felt-like-coming-from-rust/)
+- [Self-generated prompt injections in compaction summaries · OpenAI Alignment](https://alignment.openai.com/misalignment-reports/self-generated-prompt-injections-in-compaction-summaries/)
+- [I don't like passkeys | Ethan Hawksley](https://hawksley.dev/blog/i-dont-like-passkeys)
+
+---
+
+За прошедшую неделю собрал 67 ссылок.
+
+Хорошей вам недели!
