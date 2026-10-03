@@ -1,0 +1,51 @@
+---
+title: "Ссылки #410"
+date: 2026-10-03T11:57:42+03:00
+image: https://static.juev.org/images/links.jpg
+tags:
+  - links
+---
+
+На этой неделе в подборке: как водяные знаки меняют поведение LLM-агентов, четырёхкратное ускорение prompt lookup в llama.cpp, подводные камни AT TIME ZONE 'UTC' в Postgres и сайт, спрятанный в Tor.
+
+## 🤖 ИИ
+
+**[The Provenance Tax: Understanding the Impact of LLM Watermarking on AI Agent Behavior](https://www.lasso.security/blog/the-provenance-tax-understanding-the-impact-of-llm-watermarking-on-ai-agent-behavior)**
+Проверка водяных знаков SynthID-Text на шести моделях выявила, что маркировка меняет точность вызовов инструментов и ослабляет отказы при атаке через внедрение подсказок. На некоторых моделях вызванные маркировкой изменения поведения сильнее, чем при изменении температуры.
+
+## ⚡ Производительность
+
+**[42x Faster Prompt Lookup Drafting in llama.cpp](https://jadidbourbaki.github.io/blog/prompt-lookup-llama-cpp/)**
+Четыре изменения кэшей n-грамм в llama.cpp ускоряют подготовку токенов для prompt lookup decoding: обработка одного чернового токена становится быстрее до 41,6 раза, загрузка статического кэша — до 23,5 раза. Пиковое потребление памяти при этом снижается до 2,65 раза, но это верхние значения улучшений, а не гарантированный результат для каждого запуска.
+
+## 🗄️ Базы данных
+
+**[Postgres AT TIME ZONE 'UTC' does NOT do what you think it does](https://bookofrevenue.com/blog/6ab81e9a97a13f0001f7e4e1/postgres-at-time-zone-u-does-not-do-what-you-think-it-does)**
+В PostgreSQL выражение AT TIME ZONE 'UTC' преобразует timestamptz в timestamp без часового пояса, поэтому дальнейшие операции уже не учитывают исходный тип времени. При сравнении такого значения с timestamptz результат зависит от часового пояса сервера: равенство сработает, только если он установлен в UTC.
+
+## 🔍 Приватность
+
+**[Self-Hosting on the Dark Web | David Álvarez Rosa](https://david.alvarezrosa.com/posts/self-hosting-on-the-dark-web/)**
+Сайт размещён как скрытый сервис Tor и доступен по адресу .onion, который работает только внутри сети Tor. Описание сообщает о доступности сайта через Tor, но не раскрывает подробностей настройки или способа размещения.
+
+## А ещё
+
+- [“You Said No MCP!” | Earendil](https://earendil.com/posts/you-said-no-mcp/)
+- [What TLA+ can and can't check • Buttondown](https://buttondown.com/hillelwayne/archive/what-tla-can-and-cant-check/)
+- [5x faster Edge Functions: How we replaced v8 isolates with Firecracker MicroVMs](https://www.netlify.com/blog/edge-functions-firecracker-microvms/)
+- [Web browsers phoning home on launch](https://lapcatsoftware.com/articles/2026/9/10.html)
+- [Instapaper API v2 | Instapaper Blog](https://blog.instapaper.com/2026/09/29/instapaper-api-v2/)
+- [Building a certificate authority for the whole Internet | Cloudflare Blog](https://blog.cloudflare.com/cloudflare-certificate-authority/)
+- [Coding is NOT solved - Alex Ewerlöf Notes](https://blog.alexewerlof.com/p/coding-is-not-solved)
+- [The Problem is not the AI Code, but Nobody Knows Anything Anymore](https://www.ssp.sh/brain/the-problem-is-not-the-ai-code-but-nobody-knows-anything-anymore/)
+- [Armada: The Open Source, Encrypted Discord Alternative | Soapbox](https://soapbox.pub/armada)
+- [Gitea Runner 4.0.0 is released | Gitea Blog](https://blog.gitea.com/release-of-runner-4.0.0/)
+- [There are no “rogue” AI agents](https://eoinhiggins.substack.com/p/there-are-no-rogue-ai-agents)
+- [Docker Sandboxes для агентов](https://www.docker.com/products/docker-sandboxes/)
+- [An agent used DNS to reach an external chatbot · OpenAI Alignment](https://alignment.openai.com/misalignment-reports/an-agent-used-dns-to-reach-an-external-chatbot/)
+
+---
+
+За прошедшую неделю собрал 87 ссылок.
+
+Хорошей вам недели!
