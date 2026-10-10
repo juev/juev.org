@@ -1,0 +1,51 @@
+---
+title: "Ссылки #411"
+date: 2026-10-10T09:31:16+03:00
+image: https://static.juev.org/images/links.jpg
+tags:
+  - links
+---
+
+На этой неделе в подборке: скрытые функции слежки в мессенджере Max, разбор ссылок в Git, HTTP-туннели на SSH и nginx с временными ссылками и документация вместо памяти для AI-агентов.
+
+## 🔐 Безопасность
+
+**[The Max Messenger: An Analysis of Russia’s State-Mandated Messaging Application | InterSecLab](https://interseclab.org/research/max/)**
+Max — российский мессенджер, функции которого VK может менять для отдельных пользователей. В исследовании рассматриваются возможности слежки, которые могут включаться незаметно для пользователя.
+
+## 💻 Разработка
+
+**[On Git Refs](https://matklad.github.io/2026/10/07/git-ref.html)**
+Фрагмент посвящён тому, как автор уточнил своё понимание Git. Для этого он предлагает рассмотреть две команды, но сами команды и объяснение в предоставленном тексте отсутствуют.
+
+## 🖥️ Инфраструктура
+
+**[Self-hosted HTTP tunnels with SSH and nginx](https://vincent.bernat.ch/en/blog/2026-http-over-ssh)**
+Связка OpenSSH и nginx позволяет организовать HTTP-туннель без установки дополнительного ПО: для этого используются удалённая переадресация портов и модуль secure_link. Результат — доступная для передачи HTTPS-ссылка с токеном, срок действия которого истекает.
+
+## 🤖 Агенты
+
+**[Agents Don't Need Memory. They Need Documentation. | Kevin Liao](https://liao.gg/blog/agents-dont-need-memory)**
+Для AI-агентов предлагается использовать документацию проекта вместо извлечения нужного контекста из старых разговоров. Краткое описание формулирует этот подход, но не раскрывает, как вести документацию, и не приводит результатов сравнения.
+
+## А ещё
+
+- [Teaching Haskell in the Age of LLMs, Part 1: Ban or Embrace?](https://serokell.io/blog/teaching-haskell-in-the-age-of-llms)
+- [The people holding up the internet | Data Drop](https://sheets.works/data-viz/holding-up-the-internet)
+- [64-Day Certificate Lifetimes Coming Feb 2027 - Let's Encrypt](https://letsencrypt.org/2026/10/07/64-day-certs.html)
+- [Whistle: Speech to Text in 16.9 MB | Cactus](https://cactuscompute.com/blog/whistle)
+- [Jev-Driven SRE Diagnosis: What Worked and What Failed | SREGym Blog](https://www.sregym.com/blog/jev-driven-sre-diagnosis)
+- [EmbeddingGemma 2 is a best-in-class open model for natively multimodal embeddings](https://blog.google/innovation-and-ai/technology/developers-tools/embeddinggemma-2/)
+- [Sharing AI progress in mathematics | OpenAI](https://openai.com/index/sharing-ai-progress-in-mathematics/)
+- [Research: Qwen3.8 27B addition in words](https://simonwillison.net/2026/Oct/4/qwen38-addition-in-words/)
+- [How to fix the eSIM eUICC on a Google Pixel running GrapheneOS](https://spwoodcock.dev/blog/2026-08-05-graphene-pixel-esim-fix/)
+- [Splash: A Local Engine Built Around the Model — Inco AI](https://inco.ai/blog/splash/)
+- [Pi 1.0 | Earendil](https://earendil.com/posts/pi-1-0/)
+- [Improving site performance by shipping more CSS - The GitHub Blog](https://github.blog/engineering/architecture-optimization/improving-site-performance-by-shipping-more-css/)
+- [Lightpanda 1.0: Out of Beta and Ready for Production - Blog | Lightpanda](https://lightpanda.io/blog/posts/lightpanda-1-0)
+
+---
+
+За прошедшую неделю собрал 57 ссылок.
+
+Хорошей вам недели!
