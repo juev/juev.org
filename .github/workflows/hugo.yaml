@@ -20,7 +20,7 @@ jobs:
     env:
       DART_SASS_VERSION: 1.97.1
       GO_VERSION: 1.25.5
-      HUGO_VERSION: 0.164.0
+      HUGO_VERSION: 0.167.0
       TZ: Europe/Moscow
     steps:
       - name: Checkout
@@ -88,3 +88,9 @@ jobs:
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v5
+      - name: Notify WebSub hub
+        continue-on-error: true
+        run: |
+          curl -fsS --retry 3 -X POST https://pubsubhubbub.appspot.com/ \
+            -d hub.mode=publish \
+            -d hub.url=https://www.juev.org/atom.xml
