@@ -43,7 +43,9 @@ Without the secrets the step logs a warning and posts nothing.
 ## Manual run
 
 Actions → *Build and deploy* → *Run workflow*: `slug` announces one existing
-post (backfill), `dry_run` (default on) prints both payloads without posting.
+post (backfill), `dry_run` (default on) prints both payloads and still signs in
+with the configured tokens - it checks the credentials and the duplicate guard,
+it just does not publish.
 The same check locally:
 
 ```

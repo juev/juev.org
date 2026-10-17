@@ -356,18 +356,21 @@ def bluesky_announce(post: dict, dry_run: bool) -> tuple[str, str]:
     payload = {"text": text, "embed": embed, "rkey": post["slug"]}
     if dry_run:
         log("  bluesky dry-run payload:\n" + json.dumps(payload, ensure_ascii=False, indent=2))
-        return "dry-run", ""
 
     handle = os.environ.get("BSKY_HANDLE", "")
     password = os.environ.get("BSKY_APP_PASSWORD", "")
     if not handle or not password:
         return "skipped", "BSKY_HANDLE/BSKY_APP_PASSWORD not set"
 
+    # Even a dry run signs in and runs the duplicate check: that is what makes it
+    # a test of the tokens rather than of the text template.
     client = Bluesky(handle, password)
     client.login()
     rkey = post["slug"][:100]
     if client.exists(rkey):
         return "skipped", f"already announced (rkey {rkey})"
+    if dry_run:
+        return "dry-run", "credentials and duplicate check OK, nothing posted"
     if post["image"]:
         thumb = client.upload_thumb(post["image"])
         if thumb:
@@ -425,7 +428,6 @@ def mastodon_announce(post: dict, dry_run: bool) -> tuple[str, str]:
     if dry_run:
         log("  mastodon dry-run payload:\n" + json.dumps({"status": text}, ensure_ascii=False,
                                                          indent=2))
-        return "dry-run", ""
 
     instance = os.environ.get("MASTODON_INSTANCE", "")
     token = os.environ.get("MASTODON_TOKEN", "")
@@ -436,6 +438,8 @@ def mastodon_announce(post: dict, dry_run: bool) -> tuple[str, str]:
     client.me()
     if client.exists(post["url"]):
         return "skipped", "already announced"
+    if dry_run:
+        return "dry-run", "credentials and duplicate check OK, nothing posted"
     return "posted", client.post(text, post["slug"])
 
 
