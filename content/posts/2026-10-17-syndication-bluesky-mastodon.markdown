@@ -118,7 +118,7 @@ flowchart LR
 
 **Заголовок и лид берутся со страницы, а не из исходника.** `og:title` и `og:description` — это то, что видит читатель. Карточка не может описывать страницу, которая не собралась.
 
-**Повторный запуск не должен дублировать.** В Bluesky ключ записи (`rkey`) — это слаг статьи[^getrecord], поэтому проверка перед публикацией либо находит запись, либо получает ошибку, и повторная попытка не создаёт второй пост. В Mastodon такого ключа нет: `Idempotency-Key` живёт час и защищает только от повторов внутри прогона[^mastoapi]. Поэтому скрипт читает последние сорок своих статусов и ищет в них URL статьи.
+**Повторный запуск не должен дублировать.** Здесь обе сети устроены одинаково: скрипт читает свои последние посты и ищет в них URL статьи — в Bluesky через `app.bsky.feed.getAuthorFeed`, в Mastodon через `/api/v1/accounts/:id/statuses`. Сначала хотелось красивее: писать в Bluesky запись с ключом, равным слагу статьи, — тогда проверка была бы одним `getRecord`. AT Protocol такого не разрешает: у коллекции `app.bsky.feed.post` тип ключа `tid`[^rkey], и PDS отвечает `Invalid record key`, если ключ не похож на TID. `Idempotency-Key` в Mastodon тоже не спасение: он живёт час и защищает только от повторов внутри прогона[^mastoapi]. Остаётся поиск по адресу статьи — зато один и тот же для обеих сетей.
 
 ### Выключатель
 
@@ -156,15 +156,31 @@ announcing websub-static-blog -> https://www.juev.org/2026/10/17/websub-static-b
   mastodon: skipped already announced
 ```
 
-Две строки в этом выводе стоят отдельного разбора.
+Последняя строка стоит отдельного разбора.
 
 `mastodon: skipped already announced` — сработала проверка на дубль. Статью про WebSub я анонсировал вручную через Buffer за тридцать пять минут до dry run, и скрипт нашёл её URL среди последних статусов. То есть защита от дубля работает не только против самой себя: она видит и посты, отправленные руками.
 
-А на Bluesky в этой же ситуации написано «credentials and duplicate check OK», и настоящий прогон создал бы второй пост. Потому что ключ записи там — слаг, а у постов, отправленных клиентом, ключ другой. Проверка на дубль в Bluesky видит только то, что опубликовал этот скрипт. Отсюда правило: бэкфиллить старые статьи нельзя. Первой настоящей публикацией станет анонс этой статьи — он же и проверит то, что dry run проверить не может: право записи в оба аккаунта.
+### Первый настоящий прогон
+
+Dry run проверяет всё, кроме одного: права записи. Это выяснилось через двадцать минут после того, как статья, которую вы читаете, уехала на Pages. Job `syndicate` увидел новую статью, вошёл в оба аккаунта — и упал на Bluesky:
+
+```
+  bluesky: failed createRecord failed: HTTP 400 {'error': 'InvalidRequest',
+    'message': 'Invalid record key for app.bsky.feed.post: Invalid TID string
+    (got "syndication-bluesky-mastodon") at $'}
+  mastodon: signed in as @devsyukov
+  mastodon: posted https://infosec.exchange/@devsyukov/117458275145267408
+```
+
+Mastodon сработал: пост в ленте, а в поле «application» — `github`, не Buffer. Bluesky отказался писать, и причина ровно та, о которой речь выше: ключ записи должен быть TID, а ушёл слаг. Локальный мок этого не поймал, потому что принимал любой ключ: он проверял мой шаблон текста, а не правила PDS.
+
+Правка простая: ключ больше не передаётся вообще, его генерирует PDS, а дубль обе сети ищут по URL статьи. Мок научен той же ошибке — на ключ, не похожий на TID, он теперь отвечает `400`. Первый настоящий прогон научил фейковый сервер тому, чего не знал я.
+
+Осталось расхождение, которое стоит держать в голове: статья уже анонсирована в Mastodon и ещё нет в Bluesky. Скрипт это переживёт — на Mastodon он увидит дубль и пропустит, — но повторный запуск для отдельной статьи всё равно ручной: *Run workflow* с её `slug`.
 
 ## Чего пока нет
 
-- **Право записи не проверено ни разу.** Создание статуса в Mastodon и записи в Bluesky в настоящем аккаунте случится на первом реальном прогоне. Если токен не тот, job покраснеет, анонса не будет — поправимо и заметно, но заметно в Actions, а не в уведомлении.
+- **Право записи проверено наполовину.** Mastodon пишет: анонс этой статьи ушёл из пайплайна. Bluesky на первом же прогоне отказал, и после правки проверен только моком — настоящий пост там появится на следующей статье или при ручном запуске, и только тогда станет ясно, что он выглядит как надо.
 - **Нет ретраев.** 429 или 502 от сети — провал шага. Идемпотентность делает повтор безопасным, но повторять руками.
 - **Никто не следит.** Job падает и молчит: уведомлений из Actions у меня нет. Это та же болезнь, что у шага с WebSub, только там хотя бы `continue-on-error`.
 - **Одна запись на статью.** Ни тредов, ни отдельного текста для каждой сети: обе получают заголовок. Для моих статей хватает, для текста с интригой в лиде — нет.
@@ -180,7 +196,7 @@ announcing websub-static-blog -> https://www.juev.org/2026/10/17/websub-static-b
 
 Заодно этот шаг закрыл второй круг той же задачи: сборка теперь не только публикует страницу и [пингует хаб WebSub]({{< ref "2026-10-17-websub-static-blog.markdown" >}}), но и рассказывает о статье там, где её читают.
 
-[^getrecord]: [com.atproto.repo.getRecord](https://docs.bsky.app/docs/api/com-atproto-repo-get-record), AT Protocol. Запись `app.bsky.feed.post` адресуется парой «коллекция + rkey»; создание — [com.atproto.repo.createRecord](https://docs.bsky.app/docs/api/com-atproto-repo-create-record), авторизация — [com.atproto.server.createSession](https://docs.bsky.app/docs/api/com-atproto-server-create-session).
+[^rkey]: [Record Keys, AT Protocol](https://atproto.com/specs/record-key): у каждой коллекции свой тип ключа, у `app.bsky.feed.post` — `tid` (13 символов base32-sortable). Создание записи — [com.atproto.repo.createRecord](https://docs.bsky.app/docs/api/com-atproto-repo-create-record), авторизация — [com.atproto.server.createSession](https://docs.bsky.app/docs/api/com-atproto-server-create-session).
 [^mastoapi]: [Mastodon API: статусы](https://docs.joinmastodon.org/methods/statuses/), `POST /api/v1/statuses` и параметр `Idempotency-Key`: значение хранится один час.
 [^posts]: [Bluesky: посты, facets и embed](https://docs.bsky.app/docs/advanced-guides/posts). Смещения facet'ов считаются в байтах UTF-8, карточка ссылки — `app.bsky.embed.external`.
 [^mastotoken]: [Mastodon: получение токена](https://docs.joinmastodon.org/client/token/) и [работа с приложениями](https://docs.joinmastodon.org/methods/apps/): токен выдаётся приложению с фиксированным набором scopes.
