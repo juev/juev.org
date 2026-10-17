@@ -1,0 +1,45 @@
+---
+title: "Ссылки #411"
+date: 2026-10-17T09:13:23+03:00
+image: https://static.juev.org/images/links.jpg
+tags:
+  - links
+---
+
+На этой неделе в подборке: самодельный трекер задач с ИИ-ассистентами, собственная система контроля версий в Anthropic, ускорение DuckDB 2.0 в цифрах и статья о надёжности и ИИ в Lean.
+
+## 🤖 Агенты
+
+**[Трекер задач, в котором работают ИИ: TaskForge, Obsidian, Syncthing и пара ассистентов | Блог 3DRaven](https://3draven.github.io/blog/ai/selfhosted/2026/10/15/taskforge-ai-tracker.html)**
+Самостоятельный трекер задач хранит записи в Markdown-файлах и синхронизирует их между телефоном, ноутбуком и Linux-боксом через Syncthing; с задачами работают TaskForge, Obsidian и ИИ-ассистенты. Для управления используются CLI и MCP, а описание разбирает введённые правила и ошибки, возникшие при настройке этой системы.
+
+## 💻 Разработка
+
+**[Redesigning source control at Anthropic \ Anthropic](https://www.anthropic.com/engineering/redesigning-source-control)**
+Рост числа слияний более чем в десять раз превратил систему контроля версий в главное узкое место разработки Anthropic. Компания рассказывает, как за пять месяцев перешла на собственную систему контроля версий; подробности её устройства и результаты миграции в представленном описании не указаны.
+
+## 🗄️ Базы данных
+
+**[Why DuckDB 2.0 is faster | MotherDuck](https://motherduck.com/blog/why-duckdb-20-is-faster/)**
+Сравнение DuckDB 2.0 alpha и 1.5.5 на одном ноутбуке показывает ускорение рекурсивных CTE до 90 раз, обработку VARIANT в шесть раз быстрее, чем JSON-текста, и асинхронный ввод-вывод на S3 в 2,4 раза быстрее. Статья разбирает изменения движка и объясняет, как моделировать данные, чтобы получить эти улучшения.
+
+## 🌱 Наука
+
+**[What mathematicians should know about the Lean Theorem Prover: questions of reliability and AI | What's new](https://terrytao.wordpress.com/2026/10/09/what-mathematicians-should-know-about-the-lean-theorem-proverquestions-of-reliability-and-ai/)**
+Одного заголовка недостаточно для описания: текст статьи обрывается до изложения её содержания.
+
+## А ещё
+
+- [Свой AI-агент из почты, systemd и LLM | Блог 3DRaven](https://3draven.github.io/blog/2026/05/25/ai-agent-mail-systemd-llm.html)
+- [End-to-end encrypted relays for OCapN — Spritely Institute](https://spritely.institute/news/end-to-end-encrypted-relays-for-ocapn.html)
+- [Plannotator - Plan & Code Review for AI Coding Agents](https://plannotator.ai/?ref=console.dev)
+- [Better HTTP/1 connection reuse - The Go Programming Language](https://go.dev/blog/http-connection-reuse)
+- [GitHub - andmetoo/koona-pin: Local-first bookmark library for Windows and Linux. Save the page you're on from Chrome, Edge or Firefox in one click; your links stay in a SQLite file on your computer. · GitHub](https://github.com/andmetoo/koona-pin)
+- [nobody should type code by hand anymore. here's what's left.](https://ghuntley.com/agency/)
+- [A modern web app in c | Corey Prophitt](https://prophitt.me/writing/a-modern-web-app-in-c)
+- [Breaking out of the "brain fry" spiral of AI](https://afterburnout.co/p/breaking-out-of-the-brain-fry-spiral)
+- [Strengthening our defenses against distillation attacks \ Anthropic](https://www.anthropic.com/research/distillation-defenses)
+- [Pensieve: local code search and MCP context for AI coding agents](https://tedhaley.ca/pensieve/)
+- [Passkeys are a trap. Do not use them. - by The Hack](https://nonfunctional.substack.com/p/passkeys-are-a-trap-do-not-use-them)
+- [MASS: Recursive Self-Improvement through Multi-Agent Self-Supervision](https://pub.sakana.ai/mass/)
+- [Why Are Coding Agents So Dumb? · mtlynch.io](https://mtlynch.io/why-are-coding-agents-so-dumb/)
