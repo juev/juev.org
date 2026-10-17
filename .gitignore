@@ -3,4 +3,4 @@ resources
 .hugo_build.lock
 accessibility-tests/
 analysis_results/
-hugo_server.log
+hugo_server.log.github/scripts/__pycache__/
