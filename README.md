@@ -20,9 +20,12 @@ deploy carries no new article.
   edits and deploys without new posts are ignored.
 - `syndicate: false` in a post's front matter opts that post out. `draft: true`
   skips it as well.
-- Both networks are checked for an existing announcement first: Bluesky by a
-  deterministic record key (the slug), Mastodon by looking for the post URL in
-  the last 40 statuses. Reruns do not duplicate.
+- Both networks are checked for an existing announcement first, by looking for
+  the article URL in the account's recent posts: Bluesky through
+  `app.bsky.feed.getAuthorFeed`, Mastodon through the last 40 statuses. Reruns
+  do not duplicate. Bluesky assigns the record key itself: `app.bsky.feed.post`
+  uses the `tid` record key type, and a slug is rejected with
+  `Invalid record key ... Invalid TID string`.
 - Text matches what the accounts already publish by hand: Bluesky gets the
   title alone with a link card (`og:title`/`og:description`/`og:image` of the
   published page), Mastodon gets `title URL` on one line. Title and teaser come

@@ -24,6 +24,15 @@ SCRIPT = os.path.join(HERE, "syndicate.py")
 
 state = {"records": {}, "statuses": [], "blobs": []}
 
+# A TID is 13 characters of the base32-sortable alphabet.
+ALPHABET = "234567abcdefghijklmnopqrstuvwxyz"
+TID = rf"[{ALPHABET}]{{13}}"
+
+
+def tid(n: int) -> str:
+    """A valid-looking TID for the mock, so the fake repo obeys the same rule."""
+    return "3l" + "".join(ALPHABET[(n >> (5 * i)) & 31] for i in range(10, -1, -1))
+
 
 def newest_slug() -> str:
     posts = [p for p in os.listdir(os.path.join(REPO, "content", "posts"))
@@ -56,6 +65,15 @@ class Handler(BaseHTTPRequestHandler):
             if self.headers.get("Authorization") != "Bearer mastodon-token":
                 return self._send(401, {"error": "The access token is invalid"})
             return self._send(200, {"id": "42", "acct": "juev", "username": "juev"})
+        if url.path == "/xrpc/app.bsky.feed.getAuthorFeed":
+            feed = [{"post": {"uri": f"at://did:plc:test/app.bsky.feed.post/{rkey}",
+                              "author": {"did": "did:plc:test"},
+                              "record": record,
+                              "embed": {"$type": "app.bsky.embed.external#view",
+                                        "external": record["embed"]["external"]}}}
+                    for (collection, rkey), record in state["records"].items()
+                    if collection == "app.bsky.feed.post"]
+            return self._send(200, {"feed": feed[::-1]})
         if url.path == "/api/v1/accounts/42/statuses":
             return self._send(200, state["statuses"][-40:][::-1])
         return self._send(404, {"error": "not found"})
@@ -85,7 +103,17 @@ class Handler(BaseHTTPRequestHandler):
             external = record["embed"]["external"]
             assert external["uri"].startswith("https://www.juev.org/"), external
             assert external["title"], external
-            key = (body["collection"], body["rkey"])
+            # `app.bsky.feed.post` uses the `tid` record key type: the PDS rejects
+            # anything else and generates a TID when no key is supplied. The real
+            # run failed exactly here, so the mock has to enforce it too.
+            rkey = body.get("rkey")
+            if rkey is not None and not re.fullmatch(TID, rkey):
+                return self._send(400, {"error": "InvalidRequest",
+                                        "message": "Invalid record key for app.bsky.feed.post: "
+                                                   f'Invalid TID string (got "{rkey}") at $'})
+            if rkey is None:
+                rkey = tid(len(state["records"]) + 1)
+            key = (body["collection"], rkey)
             if key in state["records"]:
                 return self._send(400, {"error": "InvalidRequest", "message": "already exists"})
             state["records"][key] = record
@@ -134,7 +162,9 @@ def main() -> int:
             print("FAILED")
             return 1
 
-    ok = (len(state["records"]) == 1 and len(state["statuses"]) == 1)
+    keys = [rkey for (_, rkey) in state["records"]]
+    ok = (len(state["records"]) == 1 and len(state["statuses"]) == 1
+          and all(re.fullmatch(TID, k) for k in keys))
     print(f"\nbluesky records: {len(state['records'])}, mastodon statuses: {len(state['statuses'])}, "
           f"blobs: {state['blobs']}")
     if os.path.exists(summary):

@@ -301,14 +301,35 @@ class Bluesky:
     def auth(self) -> dict:
         return {"Authorization": f"Bearer {self.token}"}
 
-    def exists(self, rkey: str) -> bool:
-        status, _ = http_json(
+    def exists(self, url: str) -> bool:
+        """Is the article already in the author's own posts?
+
+        The `app.bsky.feed.post` collection uses the `tid` record key type, so the
+        record key cannot be the slug - the PDS answers `Invalid TID string` and
+        refuses the write. The duplicate check therefore reads the author feed,
+        the same way the Mastodon one reads the last statuses: the article URL in
+        a link card or in the text means the post is already there.
+        """
+        status, body = http_json(
             "GET",
-            f"{self.pds}/com.atproto.repo.getRecord?"
-            + urllib.parse.urlencode({"repo": self.did, "collection": "app.bsky.feed.post",
-                                      "rkey": rkey}),
+            f"{self.pds}/app.bsky.feed.getAuthorFeed?"
+            + urllib.parse.urlencode({"actor": self.did, "limit": 100,
+                                      "filter": "posts_no_replies"}),
             headers=self.auth())
-        return status == 200
+        feed = body.get("feed") if isinstance(body, dict) else None
+        if status != 200 or not isinstance(feed, list):
+            return False
+        needle = url.rstrip("/")
+        for item in feed:
+            post = item.get("post") or {}
+            if (post.get("author") or {}).get("did") != self.did:
+                continue
+            record = post.get("record") or {}
+            embed = record.get("embed") or post.get("embed") or {}
+            external = embed.get("external") or {}
+            if needle in str(external.get("uri", "")) or needle in str(record.get("text", "")):
+                return True
+        return False
 
     def upload_thumb(self, image_url: str) -> dict | None:
         status, data, ctype = http_bytes(image_url)
@@ -327,7 +348,7 @@ class Bluesky:
             log(f"  bluesky: thumbnail upload skipped ({exc})")
             return None
 
-    def post(self, rkey: str, text: str, embed: dict | None) -> str:
+    def post(self, text: str, embed: dict | None) -> str:
         record = {
             "$type": "app.bsky.feed.post",
             "text": text,
@@ -339,7 +360,7 @@ class Bluesky:
             record["embed"] = embed
         status, body = http_json(
             "POST", f"{self.pds}/com.atproto.repo.createRecord",
-            {"repo": self.did, "collection": "app.bsky.feed.post", "rkey": rkey,
+            {"repo": self.did, "collection": "app.bsky.feed.post",
              "record": record, "validate": True},
             headers=self.auth())
         if status != 200:
@@ -353,7 +374,7 @@ def bluesky_announce(post: dict, dry_run: bool) -> tuple[str, str]:
              "external": {"uri": post["url"], "title": post["title"][:300],
                           "description": post["lead"][:300]}}
 
-    payload = {"text": text, "embed": embed, "rkey": post["slug"]}
+    payload = {"text": text, "embed": embed}
     if dry_run:
         log("  bluesky dry-run payload:\n" + json.dumps(payload, ensure_ascii=False, indent=2))
 
@@ -366,16 +387,15 @@ def bluesky_announce(post: dict, dry_run: bool) -> tuple[str, str]:
     # a test of the tokens rather than of the text template.
     client = Bluesky(handle, password)
     client.login()
-    rkey = post["slug"][:100]
-    if client.exists(rkey):
-        return "skipped", f"already announced (rkey {rkey})"
+    if client.exists(post["url"]):
+        return "skipped", "already announced"
     if dry_run:
         return "dry-run", "credentials and duplicate check OK, nothing posted"
     if post["image"]:
         thumb = client.upload_thumb(post["image"])
         if thumb:
             embed["external"]["thumb"] = thumb
-    uri = client.post(rkey, text, embed)
+    uri = client.post(text, embed)
     return "posted", uri
 
 
