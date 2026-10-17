@@ -4,6 +4,16 @@ on:
     branches:
       - master
   workflow_dispatch:
+    inputs:
+      slug:
+        description: "Slug of a single post to announce (empty: posts added by the push)"
+        required: false
+        type: string
+      dry_run:
+        description: "Print the payloads without posting"
+        required: false
+        type: boolean
+        default: true
 permissions:
   contents: read
   pages: write
@@ -94,3 +104,24 @@ jobs:
           curl -fsS --retry 3 -X POST https://pubsubhubbub.appspot.com/ \
             -d hub.mode=publish \
             -d hub.url=https://www.juev.org/atom.xml
+
+  syndicate:
+    needs: deploy
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v5
+        with:
+          fetch-depth: 0
+      - name: Announce new posts on Bluesky and Mastodon
+        env:
+          BSKY_HANDLE: ${{ secrets.BSKY_HANDLE }}
+          BSKY_APP_PASSWORD: ${{ secrets.BSKY_APP_PASSWORD }}
+          MASTODON_INSTANCE: ${{ vars.MASTODON_INSTANCE || 'https://infosec.exchange' }}
+          MASTODON_TOKEN: ${{ secrets.MASTODON_TOKEN }}
+          POST_SLUG: ${{ inputs.slug }}
+          DRY_RUN: ${{ inputs.dry_run }}
+          BASE_SHA: ${{ github.event.before }}
+          HEAD_SHA: ${{ github.sha }}
+        run: |
+          python3 .github/scripts/syndicate.py --base "$BASE_SHA" --head "$HEAD_SHA"
