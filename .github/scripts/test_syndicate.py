@@ -75,19 +75,16 @@ class Handler(BaseHTTPRequestHandler):
             body = json.loads(raw)
             record = body["record"]
             assert record["$type"] == "app.bsky.feed.post", record
+            # The shape the account publishes by hand: title only, no URL in the
+            # text, no facets, one link card.
             assert 0 < len(record["text"]) <= 300, len(record["text"])
+            assert "http" not in record["text"], record["text"]
+            assert "facets" not in record, record
             assert record["langs"] == ["ru"], record
-            for facet in record.get("facets", []):
-                index = facet["index"]
-                text = record["text"].encode()[index["byteStart"]:index["byteEnd"]].decode()
-                feature = facet["features"][0]
-                if feature["$type"].endswith("#link"):
-                    assert text == feature["uri"], (text, feature)
-                else:
-                    assert text == "#" + feature["tag"], (text, feature)
-            if record.get("embed"):
-                assert record["embed"]["$type"] == "app.bsky.embed.external", record["embed"]
-                assert record["embed"]["external"]["uri"], record["embed"]
+            assert record["embed"]["$type"] == "app.bsky.embed.external", record["embed"]
+            external = record["embed"]["external"]
+            assert external["uri"].startswith("https://www.juev.org/"), external
+            assert external["title"], external
             key = (body["collection"], body["rkey"])
             if key in state["records"]:
                 return self._send(400, {"error": "InvalidRequest", "message": "already exists"})
@@ -105,6 +102,8 @@ class Handler(BaseHTTPRequestHandler):
             assert self.headers.get("Idempotency-Key"), "idempotency key missing"
             form = urllib.parse.parse_qs(raw.decode())
             assert form["visibility"][0] == "public" and form["language"][0] == "ru", form
+            # `title URL` on one line, like the rest of the timeline
+            assert "\n" not in form["status"][0] and "http" in form["status"][0], form["status"]
             entry = {"id": str(len(state["statuses"]) + 1), "url": "https://example.invalid/@juev/1",
                      "content": f"<p>{form['status'][0]}</p>"}
             state["statuses"].append(entry)

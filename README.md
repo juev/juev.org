@@ -23,15 +23,17 @@ deploy carries no new article.
 - Both networks are checked for an existing announcement first: Bluesky by a
   deterministic record key (the slug), Mastodon by looking for the post URL in
   the last 40 statuses. Reruns do not duplicate.
-- The Bluesky post carries a link card built from `og:title`/`og:description`
-  of the published page, so the announcement cannot describe a page that failed
-  to deploy; a 404 on the permalink skips the post.
+- Text matches what the accounts already publish by hand: Bluesky gets the
+  title alone with a link card (`og:title`/`og:description`/`og:image` of the
+  published page), Mastodon gets `title URL` on one line. Title and teaser come
+  from the live page, so an announcement cannot describe a page that failed to
+  deploy; a 404 on the permalink skips the post.
 
 ## Secrets
 
 | Name | Where it comes from |
 | --- | --- |
-| `BSKY_HANDLE` | Bluesky handle, e.g. `juev.bsky.social` — stored as a secret to keep it out of the logs |
+| `BSKY_HANDLE` | Bluesky handle, `denis.evsyukov.org` — stored as a secret to keep it out of the logs |
 | `BSKY_APP_PASSWORD` | bsky.app → Settings → App Passwords → Add App Password |
 | `MASTODON_TOKEN` | infosec.exchange → Preferences → Development → New application, scopes `write:statuses read:accounts read:statuses`, then copy *Your access token* (the two read scopes are for the "already announced?" check) |
 

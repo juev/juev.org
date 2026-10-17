@@ -45,9 +45,6 @@ USER_AGENT = "juev.org-syndicator/1.0 (+https://www.juev.org/)"
 # Bluesky counts a post in graphemes. Code points are an upper bound for
 # graphemes, so staying under the limit in code points is always safe.
 BSKY_LIMIT = 300
-# Mastodon on infosec.exchange allows 11000 characters; a teaser reads better.
-MASTO_LEAD_LIMIT = 360
-MAX_TAGS = 3
 
 HTTP_TIMEOUT = 30
 
@@ -264,84 +261,21 @@ def meta_content(page: str, prop: str) -> str:
     return clean_text(m.group(1)) if m else ""
 
 
-def hashtags(tags: list[str], limit: int = MAX_TAGS) -> list[str]:
-    out = []
-    for tag in tags:
-        tag = re.sub(r"[^0-9A-Za-z_]", "", str(tag)).lower()
-        if len(tag) < 2 or tag in out:
-            continue
-        out.append(tag)
-        if len(out) == limit:
-            break
-    return out
+def bluesky_text(title: str) -> str:
+    """The title alone: the link lives in the card embed.
+
+    That is the shape this account already publishes by hand, and it is what the
+    Bluesky client itself produces when a URL is pasted into the composer - no
+    URL in the text, no facets, one external card.
+    """
+    if len(title) <= BSKY_LIMIT:
+        return title
+    return title[:BSKY_LIMIT - 1].rstrip(" ,.:;-—") + "…"
 
 
-def build_bluesky_text(title: str, url: str, tags: list[str]) -> tuple[str, list[dict], list[str]]:
-    """Post text plus richtext facets. Facet offsets are UTF-8 byte offsets."""
-    for keep in range(len(tags), -1, -1):
-        tag_line = " ".join(f"#{t}" for t in tags[:keep])
-        length = len(title) + 2 + len(url) + (2 + len(tag_line) if tag_line else 0)
-        if length <= BSKY_LIMIT:
-            return compose_bluesky(title, url, tags[:keep])
-    # The title alone does not fit next to the link: shrink it.
-    for keep in (1, 0):
-        tag_line = " ".join(f"#{t}" for t in tags[:keep])
-        room = BSKY_LIMIT - len(url) - 2 - (2 + len(tag_line) if tag_line else 0)
-        if room > 24:
-            short = title[:room - 1].rstrip(" ,.:;-—")
-            return compose_bluesky(short + "…", url, tags[:keep])
-    return compose_bluesky("", url, [])
-
-
-def compose_bluesky(title: str, url: str, tags: list[str]) -> tuple[str, list[dict], list[str]]:
-    segments: list[tuple[str, tuple[str, str] | None]] = []
-    if title:
-        segments.append((title, None))
-        segments.append(("\n\n", None))
-    segments.append((url, ("link", url)))
-    if tags:
-        segments.append(("\n\n", None))
-        for i, tag in enumerate(tags):
-            if i:
-                segments.append((" ", None))
-            segments.append((f"#{tag}", ("tag", tag)))
-
-    text = ""
-    facets: list[dict] = []
-    pos = 0
-    for chunk, facet in segments:
-        if not chunk:
-            continue
-        size = len(chunk.encode("utf-8"))
-        if facet:
-            kind, value = facet
-            feature = ({"$type": "app.bsky.richtext.facet#link", "uri": value}
-                       if kind == "link"
-                       else {"$type": "app.bsky.richtext.facet#tag", "tag": value})
-            facets.append({"index": {"byteStart": pos, "byteEnd": pos + size},
-                           "features": [feature]})
-        text += chunk
-        pos += size
-    return text, facets, tags
-
-
-def build_mastodon_text(title: str, lead: str, url: str, tags: list[str]) -> str:
-    parts = [title]
-    if lead and lead.lower() != title.lower():
-        if len(lead) > MASTO_LEAD_LIMIT:
-            cut = lead[:MASTO_LEAD_LIMIT]
-            # prefer a sentence or word boundary
-            for sep in (". ", "! ", "? ", " — ", ", ", " "):
-                idx = cut.rfind(sep)
-                if idx > MASTO_LEAD_LIMIT * 0.6:
-                    cut = cut[:idx + len(sep)].rstrip()
-                    break
-            lead = cut.rstrip(" ,;:-—") + "…"
-        parts.append(lead)
-    parts.append(url)
-    if tags:
-        parts.append(" ".join(f"#{t}" for t in tags))
-    return "\n\n".join(p for p in parts if p)
+def mastodon_text(title: str, url: str) -> str:
+    """`title URL` on one line - the shape already in the timeline."""
+    return f"{title} {url}".strip()
 
 
 # ------------------------------------------------------------------ Bluesky
@@ -393,7 +327,7 @@ class Bluesky:
             log(f"  bluesky: thumbnail upload skipped ({exc})")
             return None
 
-    def post(self, rkey: str, text: str, facets: list[dict], embed: dict | None) -> str:
+    def post(self, rkey: str, text: str, embed: dict | None) -> str:
         record = {
             "$type": "app.bsky.feed.post",
             "text": text,
@@ -401,8 +335,6 @@ class Bluesky:
             .replace("+00:00", "Z"),
             "langs": ["ru"],
         }
-        if facets:
-            record["facets"] = facets
         if embed:
             record["embed"] = embed
         status, body = http_json(
@@ -416,14 +348,12 @@ class Bluesky:
 
 
 def bluesky_announce(post: dict, dry_run: bool) -> tuple[str, str]:
-    text, facets, tags = build_bluesky_text(post["title"], post["url"], post["tags"])
-    embed = None
-    if post["lead"] or post["image"]:
-        external = {"uri": post["url"], "title": post["title"][:300],
-                    "description": post["lead"][:1000]}
-        embed = {"$type": "app.bsky.embed.external", "external": external}
+    text = bluesky_text(post["title"])
+    embed = {"$type": "app.bsky.embed.external",
+             "external": {"uri": post["url"], "title": post["title"][:300],
+                          "description": post["lead"][:300]}}
 
-    payload = {"text": text, "facets": facets, "embed": embed, "rkey": post["slug"]}
+    payload = {"text": text, "embed": embed, "rkey": post["slug"]}
     if dry_run:
         log("  bluesky dry-run payload:\n" + json.dumps(payload, ensure_ascii=False, indent=2))
         return "dry-run", ""
@@ -438,11 +368,11 @@ def bluesky_announce(post: dict, dry_run: bool) -> tuple[str, str]:
     rkey = post["slug"][:100]
     if client.exists(rkey):
         return "skipped", f"already announced (rkey {rkey})"
-    if embed and post["image"]:
+    if post["image"]:
         thumb = client.upload_thumb(post["image"])
         if thumb:
             embed["external"]["thumb"] = thumb
-    uri = client.post(rkey, text, facets, embed)
+    uri = client.post(rkey, text, embed)
     return "posted", uri
 
 
@@ -491,7 +421,7 @@ class Mastodon:
 
 
 def mastodon_announce(post: dict, dry_run: bool) -> tuple[str, str]:
-    text = build_mastodon_text(post["title"], post["lead"], post["url"], post["tags"])
+    text = mastodon_text(post["title"], post["url"])
     if dry_run:
         log("  mastodon dry-run payload:\n" + json.dumps({"status": text}, ensure_ascii=False,
                                                          indent=2))
@@ -533,11 +463,7 @@ def collect_post(root: str, path: str) -> dict | None:
     title = meta_content(page, "og:title") or str(fm.get("title", "")).strip()
     lead = meta_content(page, "og:description")
     image = meta_content(page, "og:image")
-    tags = fm.get("tags") or []
-    if isinstance(tags, str):
-        tags = [tags]
-    return {"slug": slug, "url": url, "title": title, "lead": lead, "image": image,
-            "tags": hashtags(tags)}
+    return {"slug": slug, "url": url, "title": title, "lead": lead, "image": image}
 
 
 def write_summary() -> None:
