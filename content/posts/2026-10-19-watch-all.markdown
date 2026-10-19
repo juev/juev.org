@@ -1,0 +1,148 @@
+---
+title: "Подписка на все свои репозитории: ночной workflow вместо галочки, которой нет"
+slug: watch-all
+date: 2026-10-19T17:00:00+0300
+tags:
+  - github
+  - notifications
+  - actions
+  - automation
+---
+
+О новом issue или PR в своём репозитории GitHub сообщает только тогда, когда вы на этот репозиторий подписаны (watch). Сегодня выяснилось, что у меня подписки нет на добрую половину репозиториев. Самый свежий, `juev/brook`, создан в 13:34, и на запрос подписки API ответил `404`. Значит, кто-то мог открыть там issue, а я бы узнал об этом случайно.
+
+## Проблема
+
+Документация GitHub обещает, что подписка появляется сама: «By default, you also automatically watch all repositories that you create and are owned by your personal account», и отдельно — «You can also choose to automatically watch all repositories that you have push access to, except forks»[^about]. Там же сказано, что это настраивается в уведомлениях. На странице настроек уведомлений такой галочки я не нашёл, а в статье о настройке уведомлений про автоподписку нет ни слова[^config].
+
+Проверка по API подтвердила, что автоподписка не работает. Из пяти самых новых репозиториев подписки не было у `brook` (создан сегодня) и у `claude` (февраль). У `memcue` подписка была, но появилась через 44 минуты после создания репозитория, скорее всего, я поставил её руками.
+
+Массовой подписки в интерфейсе тоже нет. На странице https://github.com/watching можно только массово отписаться.
+
+## Какие есть варианты
+
+**Руками.** Открыть каждый репозиторий и нажать Watch → All Activity. У меня 89 своих репозиториев без форков и архивных, и про каждый новый придётся помнить. Это ровно то, что уже не сработало.
+
+**Разовый скрипт.** У REST API есть `PUT /repos/{owner}/{repo}/subscription`[^watching], и `gh` позволяет пройти им по всему списку:
+
+```bash
+gh repo list --limit 1000 --json nameWithOwner -q '.[].nameWithOwner' \
+  | xargs -I{} gh api -X PUT repos/{}/subscription -F subscribed=true --silent
+```
+
+`subscribed=true` соответствует уровню «All activity». Уровень Custom с отдельными флажками для issues, PR и релизов через этот вызов не выставить. Скрипт закрывает существующие репозитории, но не новые: их придётся подписывать следующим запуском, а про запуск опять надо помнить.
+
+**Тот же скрипт по расписанию у себя.** Cron или systemd timer на домашнем сервере. Токен лежит на моей машине, а не у GitHub. Минус в том, что это ещё один таймер на сервере, за которым надо следить.
+
+**Тот же скрипт по расписанию в GitHub Actions.** Отдельный репозиторий с workflow, который раз в ночь сверяет репозитории с подписками. Сервер не нужен, логи каждого запуска видны в Actions.
+
+Я выбрал последний вариант.
+
+## Почему GitHub Actions и почему приватный репозиторий
+
+Расписание в Actions срабатывает не чаще раза в пять минут, время указывается в UTC. В публичном репозитории запуск по расписанию отключается, если 60 дней в репозитории не было активности[^schedule]. Репозиторий с одним скриптом меняется редко, поэтому публичный однажды тихо перестал бы работать. Отсюда приватный `juev/watch-all`.
+
+У приватного репозитория запуски тратят минуты Actions. На бесплатном плане их 2000 в месяц, а в публичных репозиториях на стандартных раннерах Actions бесплатны[^billing]. Ручной прогон со всеми подписками занял 31 секунду, ночной запуск без новых подписок короче. Раз в ночь — это около 30 запусков в месяц, до лимита далеко. Чаще я запускать не стал: новый репозиторий попадает под подписку не позже следующей ночи, этого хватает.
+
+Расписание выбрано не на начало часа. Документация предупреждает, что под нагрузкой `schedule` задерживается, а в худшем случае задания отбрасываются, и пик нагрузки приходится на начало каждого часа[^schedule].
+
+## Какой нужен токен
+
+Это самая неочевидная часть.
+
+- **`GITHUB_TOKEN` не подходит.** Он выдаётся workflow на один репозиторий, а подписка принадлежит аккаунту.
+- **Fine-grained PAT не подходит.** В его разрешении «Watching» перечислены только `GET /user/subscriptions` и `GET /users/{username}/subscriptions`, оба на чтение[^fine]. `PUT /repos/{owner}/{repo}/subscription` в списке нет.
+- **Остаётся classic PAT** со scope `notifications` и `repo`. `notifications` нужен для записи подписки, `repo` нужен, чтобы видеть приватные репозитории.
+
+Мой обычный токен `gh` тоже не годится: у него scope `admin:public_key`, `gist`, `read:org` и `repo`, без `notifications`. На запрос подписки он получает `404`, и `gh` сам подсказывает, чего не хватает:
+
+```
+gh: This API operation needs the "notifications" scope. To request it, run:  gh auth refresh -h github.com -s notifications
+```
+
+Токен выпускается так:
+
+1. Откройте https://github.com/settings/tokens/new?scopes=repo,notifications&description=watch-all. Это форма classic PAT, scope в ней уже отмечены.
+2. Выберите срок действия.
+3. Нажмите «Generate token» и скопируйте токен.
+4. Сохраните его в секрет репозитория командой `gh secret set WATCH_TOKEN -R juev/watch-all`. Команда попросит вставить токен.
+
+Это широкий токен: `repo` даёт полный доступ ко всем приватным репозиториям. Лежит он в секретах одного приватного репозитория, и workflow отдаёт его только скрипту. Когда срок действия истечёт, ночной запуск начнёт падать, и токен нужно будет выпустить заново.
+
+## Как устроен скрипт
+
+Скрипт `watch-all.sh` подписывается только на те репозитории, где подписки ещё нет:
+
+```bash
+gh api --paginate 'user/repos?affiliation=owner&per_page=100' \
+  -q '.[] | select((.archived or .fork) | not) | .full_name' | sort -u > "$work/owned"
+gh api --paginate 'user/subscriptions?per_page=100' \
+  -q '.[].full_name' | sort -u > "$work/watched"
+{ grep -v -e '^#' -e '^[[:space:]]*$' "$here/exclude.txt" 2>/dev/null || true; } \
+  | sort -u > "$work/excluded"
+
+comm -23 "$work/owned" "$work/watched" | comm -23 - "$work/excluded" > "$work/missing"
+
+while read -r repo; do
+  if (( dry_run )); then
+    echo "would watch $repo"
+  else
+    gh api -X PUT "repos/$repo/subscription" -F subscribed=true -F ignored=false --silent
+    echo "watched $repo"
+  fi
+done < "$work/missing"
+```
+
+Порядок такой:
+
+1. Скрипт берёт мои репозитории без архивных и без форков.
+2. Скрипт берёт текущие подписки.
+3. Скрипт вычитает подписки и `exclude.txt`.
+4. На оставшиеся скрипт ставит подписку.
+
+Запросов на запись получается столько, сколько появилось новых репозиториев, а не 89 каждую ночь. С флагом `--dry-run` скрипт только печатает, на что подписался бы.
+
+Файл исключений нужен из-за одной особенности. `PUT` с `subscribed=true` снимает и ручную отписку, и режим Ignore. Если я сознательно отпишусь от репозитория, ночной запуск подпишет меня обратно. Чтобы этого не было, репозиторий нужно вписать в `exclude.txt`.
+
+Форки я исключил после первого dry-run: среди 53 кандидатов их оказалось 14, и уведомления от них мне не нужны.
+
+Workflow короткий:
+
+```yaml
+name: watch-all
+
+on:
+  schedule:
+    - cron: '17 0 * * *' # 03:17 MSK
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  watch:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v5
+      - run: ./watch-all.sh
+        env:
+          GH_TOKEN: ${{ secrets.WATCH_TOKEN }}
+```
+
+`workflow_dispatch` позволяет запустить его руками, не дожидаясь ночи. `gh` на раннере GitHub уже установлен и берёт токен из `GH_TOKEN`.
+
+## Результат
+
+Первый запуск я сделал вручную. Скрипт нашёл 89 своих репозиториев без форков и архивных, подписки не было у 39 из них, в том числе у `brook`, `claude` и у самого `watch-all`. Все 39 он подписал за 31 секунду. Повторный dry-run после этого показал `to watch: 0`, а API для `juev/brook` ответило `"subscribed": true`.
+
+Всего подписок у меня теперь 144, больше 89. Разница — подписки на форки, архивные и чужие репозитории. Скрипт их не трогает: он только добавляет подписки, но никогда их не снимает.
+
+Дальше workflow запускается каждую ночь в 03:17 по Москве, и новый репозиторий попадает под подписку не позже следующего утра.
+
+[^about]: [About notifications](https://docs.github.com/en/subscriptions-and-notifications/concepts/about-notifications), раздел про автоматическую подписку.
+[^config]: [Configuring notifications](https://docs.github.com/en/account-and-profile/managing-subscriptions-and-notifications-on-github/setting-up-notifications/configuring-notifications).
+[^watching]: [REST API: Watching](https://docs.github.com/en/rest/activity/watching), методы «Set a repository subscription» и «List repositories watched by the authenticated user».
+[^schedule]: [Events that trigger workflows](https://docs.github.com/en/actions/reference/workflows-and-actions/events-that-trigger-workflows), раздел `schedule`.
+[^billing]: [GitHub Actions billing](https://docs.github.com/en/billing/concepts/product-billing/github-actions), таблица включённых минут.
+[^fine]: [Permissions required for fine-grained personal access tokens](https://docs.github.com/en/rest/authentication/permissions-required-for-fine-grained-personal-access-tokens), раздел «User permissions for "Watching"».
