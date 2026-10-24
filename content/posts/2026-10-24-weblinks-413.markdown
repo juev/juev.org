@@ -1,0 +1,51 @@
+---
+title: "Ссылки #413"
+date: 2026-10-24T10:17:50+03:00
+image: https://static.juev.org/images/links.jpg
+tags:
+  - links
+---
+
+На этой неделе в подборке: Claude объясняет происхождение кривой ECDSA, личный самохостинг на Incus OS, почему спекулятивное декодирование быстрое и tmux как пульт для Claude Code.
+
+## 🔐 Безопасность
+
+**[Claude reveals ECDSA curve origins \ Anthropic](https://www.anthropic.com/research/ecdsa-curve-origins)**
+Происхождение кривой ECDSA, одного из самых распространённых криптографических стандартов, удалось объяснить с помощью Claude. Текст сообщает о разгадке давней загадки, но не раскрывает метод и исторические детали объяснения.
+
+## 🖥️ Инфраструктура
+
+**[Solene'% : My self-hosted infrastructure with Incus OS](https://dataswamp.org/~solene/2026-10-15-selfhosting-infrastructure-incus-os.html)**
+Личная инфраструктура для самостоятельного хостинга построена на Incus OS, а её уровни безопасности рассматриваются как взаимосвязанные части системы. Доступное описание не раскрывает конкретные компоненты и меры защиты.
+
+## 🤖 ИИ
+
+**[Why is Speculative Decoding Fast? — Joe Barrow](https://jbarrow.ai/2026-10-08-why-is-speculative-decoding-fast/)**
+Спекулятивное декодирование ускоряет генерацию не за счёт сокращения объёма вычислений, а благодаря изменению характера работы GPU. Текст формулирует этот тезис, но не приводит подробностей о механизме или численных результатах.
+
+## 🤖 Агенты
+
+**[tmux + Claude Code: Sessions, send-keys, and the Ceiling](https://crystl.dev/guides/tmux-for-ai-agents/)**
+Настройка tmux для Claude Code и других ИИ-агентов включает отдельные именованные сессии для проектов, раскладку панелей и мониторинг в строке состояния. Команды send-keys и capture-pane позволяют отправлять агенту инструкции и считывать его вывод, но при запуске четырёх агентов автор отмечает пределы такого подхода.
+
+## А ещё
+
+- [Kimi K3.1 Pro Tech Blog: Advancing Open Intelligence](https://www.kimi.ai/blog/kimi-k3-1-pro)
+- [Mathematics is a subject for the young | What's new](https://terrytao.wordpress.com/2026/10/21/mathematics-is-a-subject-for-the-young/)
+- [Making every harness durable - Vercel](https://vercel.com/blog/making-every-harness-durable?ref=console.dev)
+- [Announcing DuckDB 2.0.0 LTS “Cinnamon Teal” – DuckDB](https://duckdb.org/2026/10/21/announcing-duckdb-200)
+- [Introducing tsrs: a Port of TypeScript to Rust | Cloudflare Blog](https://blog.cloudflare.com/typescript-rust-port)
+- [Home · microg/GmsCore Wiki](https://github.com/microg/GmsCore/wiki)
+- [MiniMax M3.1 Flash: Redefining Agent Performance and Cost - MiniMax Research | MiniMax](https://www.minimax.io/blog/minimax-m31f)
+- [Introducing Clairic, a new System One class of extraction models | Cloudflare Blog](https://blog.cloudflare.com/clairic-extraction-model/)
+- [Pele · Mermaid diagrams as themeable SVG](https://pele.run/)
+- [GitHub - nicoverbruggen/libron: A manually tuned font revision of Readerly, with reduced and altered serifs, optimized for digital reading and e-readers. OFL licensed. · GitHub](https://github.com/nicoverbruggen/libron)
+- [You could have invented transformers from memory | Alex Wang](https://alexwang.ai/posts/associative-memory/)
+- [Neural Networks Are Already Clean](https://already-clean.goodfire.com/)
+- [https://claude.dev/blog/solving-code-review-at-anthropic/](https://claude.dev/blog/solving-code-review-at-anthropic/)
+
+---
+
+За прошедшую неделю собрал 36 ссылок.
+
+Хорошей вам недели!
