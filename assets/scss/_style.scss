@@ -124,9 +124,34 @@ body.wide
 
 .footer
 {
-  padding:5px;
-  height:95px;
+  padding:15px 5px 25px;
   color:#bbb
+}
+
+.footer-grid
+{
+  display:flex;
+  justify-content:space-between;
+  align-items:flex-start;
+  gap:30px
+}
+
+.footer-links
+{
+  list-style:none;
+  margin:10px 0;
+  padding:0
+}
+
+.footer-share p
+{
+  text-align:center
+}
+
+.footer-share img
+{
+  display:block;
+  image-rendering:pixelated
 }
 
 .wide .footer
@@ -147,12 +172,18 @@ body.wide
   text-decoration:none
 }
 
-.footer p
+.footer p,
+.footer-links li
 {
   margin:15px 0 5px;
   text-transform:uppercase;
   letter-spacing:1px;
   font:11px/1.5 Helvetica,sans-serif!important
+}
+
+.footer-links li
+{
+  margin:4px 0
 }
 
 .wide .body
@@ -1012,9 +1043,16 @@ img.error {
     font-size: 24px
   }
 
-  .navigation .width-fix
+  .navigation .width-fix,
+  .footer .width-fix
   {
     padding: 0 20px
+  }
+
+  /* Nobody scans a phone screen with the same phone */
+  .footer-share
+  {
+    display:none
   }
 }
 

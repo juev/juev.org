@@ -60,6 +60,7 @@ rss = '''To subscribe to this RSS feed, copy its address and paste it into your
     favorite feed reader.'''
 description = "My thoughts and findings"
 gitUrl = "https://github.com/juev/juev.org/commit/"
+sourceUrl = "https://github.com/juev/juev.org/blob/master/content/"
 
 [params.social]
 github		= "juev"
