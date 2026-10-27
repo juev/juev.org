@@ -23,6 +23,16 @@ the syndication job.
 - No invented facts. Numbers, dates, ids and model names come from `git log`,
   CI logs, a live `curl` of the deployed page, or the service's own state.
 
+## Images
+
+- Post images live in a separate repository, `juev/static.juev.org`
+  (local clone `~/src/github.com/juev/static.juev.org`), under
+  `public/YYYY/MM/<slug>-<name>.png`, and are served as
+  `https://static.juev.org/YYYY/MM/<slug>-<name>.png`.
+- A push to its `master` deploys them through GitHub Pages; there are no
+  PRs in that repository. Push the images right before merging the post,
+  not earlier, and check that the URLs answer 200.
+
 ## Verify with a real build
 
 - Build with the pinned Hugo, not whatever is on `PATH`: take
