@@ -143,15 +143,58 @@ body.wide
   padding:0
 }
 
-.footer-share p
+.footer-page p
 {
   text-align:center
 }
 
-.footer-share img
+.footer-page img
 {
   display:block;
+  margin:0;
   image-rendering:pixelated
+}
+
+.footer-page button
+{
+  display:block;
+  margin:0 auto;
+  padding:0;
+  border:0;
+  background:none
+}
+
+/* Top aligned with the copyright line, which has the same 15px margin */
+.footer-page .footer-qr-open
+{
+  margin-top:15px;
+  cursor:zoom-in
+}
+
+/* Popover: the same PNG at twice its size, closed by a click on it, Esc or outside */
+/* margin:auto centers the popover: the reset zeroes margins on every div */
+.footer-qr-full
+{
+  margin:auto;
+  padding:0;
+  border:0;
+  background:#fff
+}
+
+.footer-qr-full button
+{
+  cursor:zoom-out
+}
+
+.footer-qr-full::backdrop
+{
+  background:rgba(0, 0, 0, 0.6)
+}
+
+/* Shown only on phones, where the QR is hidden and the links need context */
+.footer-page-label
+{
+  display:none
 }
 
 .wide .footer
@@ -1049,10 +1092,26 @@ img.error {
     padding: 0 20px
   }
 
+  .footer-grid
+  {
+    flex-direction:column;
+    gap:0
+  }
+
+  .footer-page p
+  {
+    text-align:left
+  }
+
   /* Nobody scans a phone screen with the same phone */
-  .footer-share
+  .footer-qr
   {
     display:none
+  }
+
+  .footer-page-label
+  {
+    display:inline
   }
 }
 
