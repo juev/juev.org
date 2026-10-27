@@ -149,12 +149,19 @@ body.wide
 .footer .footer-page p
 {
   text-align:center;
-  font-size:10px!important
+  font-size:13px!important
 }
 
 .footer-page p a
 {
   color:#999
+}
+
+/* Taxonomy pages have no page links: nothing to share a baseline with,
+   the QR lines up with the copyright instead */
+.footer-page:not(:has(p))
+{
+  align-self:flex-start
 }
 
 .footer-page img
@@ -229,13 +236,14 @@ body.wide
   text-decoration:none
 }
 
+/* Small caps, as in the headings */
 .footer p,
 .footer-links li
 {
   margin:15px 0 5px;
-  text-transform:uppercase;
+  text-transform:lowercase;
   letter-spacing:1px;
-  font:11px/1.5 Helvetica,sans-serif!important
+  font:500 15px/1.5 'Alegreya SC', 'Alegreya SC Fallback', serif!important
 }
 
 .footer-links li
@@ -275,7 +283,8 @@ strong
         color:#DEDEDE!important;
         font-weight:700;
         font-size:28px!important;
-        font-family:Helvetica,sans-serif!important
+        font-family:'Alegreya SC', 'Alegreya SC Fallback', serif!important;
+        text-transform:lowercase
     }
     a,
     a:visited
@@ -406,8 +415,11 @@ strong
   display:block;
   color:#f7f6ee;
   text-decoration:none;
-  text-transform:uppercase;
-  font-family:Helvetica,sans-serif!important;
+  text-transform:lowercase;
+  font-family:'Alegreya SC', 'Alegreya SC Fallback', serif!important;
+  font-size:20px;
+  font-weight:500;
+  letter-spacing:1px;
 }
 
 .navigation .width-fix li a:hover
@@ -586,24 +598,24 @@ sup:has(.footnote-ref)
   overflow:hidden;
   text-overflow:ellipsis;
   color:#666!important;
-  text-transform:uppercase;
-  letter-spacing:2px;
-  font-size:10px;
-  font-family:Verdana,Helvetica,Arial,sans-serif;
-  line-height:22px
+  font-size:17px;
+  line-height:1.5
+}
+
+.pagination-label
+{
+  margin-right:.3em;
+  font-family:'Alegreya SC', 'Alegreya SC Fallback', serif;
+  font-weight:500;
+  text-transform:lowercase;
+  letter-spacing:1px
 }
 
 .pagination a
 {
-  height:0;
   border-bottom:none;
   text-decoration:none!important;
-  text-transform:none;
-  letter-spacing:normal;
-  font-weight:700;
-  font-size:12px;
-  font-family:Verdana,Helvetica,Arial,sans-serif;
-  line-height:18px
+  font-weight:500
 }
 
 /* Small caps: lowercase text set in Alegreya SC */
@@ -701,11 +713,27 @@ h3.title
 }
 
 #metainfo .date,
-#metainfo .info,
 #metainfo .tags a
 {
   font-size:inherit;
   font-weight:inherit
+}
+
+#metainfo .tags
+{
+  display:block;
+  margin-top:.2em;
+  font-family:'Alegreya SC', 'Alegreya SC Fallback', serif;
+  font-style:normal;
+  font-weight:500;
+  text-transform:lowercase;
+  letter-spacing:.02rem
+}
+
+#metainfo .tags a
+{
+  margin:0;
+  color:#555
 }
 
 .date
@@ -1137,9 +1165,29 @@ img.error {
     text-align:justify
   }
 
-  #feed,.share,.tag_cloud,.meta,.desktop
+  #feed,.share,.tag_cloud,.desktop
   {
     display:none
+  }
+
+  /* Label on its own line, the title up to two lines */
+  .pagination p
+  {
+    white-space:normal
+  }
+
+  .pagination-label
+  {
+    display:block
+  }
+
+  .pagination a
+  {
+    display:-webkit-box;
+    -webkit-box-orient:vertical;
+    -webkit-line-clamp:2;
+    line-clamp:2;
+    overflow:hidden
   }
 
   a#o2

@@ -2,16 +2,20 @@
 
 {{- define "main" -}}
 <h1 class="title">{{- .Title -}}</h1>
+{{- $n := .ReadingTime -}}
+{{- $minutes := "минут" -}}
+{{- if and (eq (mod $n 10) 1) (ne (mod $n 100) 11) }}{{ $minutes = "минута" }}
+{{- else if and (ge (mod $n 10) 2) (le (mod $n 10) 4) (or (lt (mod $n 100) 12) (gt (mod $n 100) 14)) }}{{ $minutes = "минуты" }}{{ end }}
 <div id="metainfo">
-    <span class="date">{{- if .GitInfo }}
-        <a href="{{ .Site.Params.gitUrl -}}{{ .GitInfo.Hash }}" target="_blank" rel="noopener">{{ .Date.Format "2 January 2006" }}</a>{{- else }}
-        {{ .Date.Format "2 January 2006" }}{{- end }}
-    </span> | 
-    <span class="info">{{ .WordCount }} words </span> | 
-    <span class="info">tags:</span>{{ with .Params.tags }}
-    <span class="tags">{{ range . }}
-        <a href="{{ "tags" | absURL }}/{{ . | urlize }}" title="View posts tagged with &quot;{{ . }}&quot;">#{{ . }}</a>{{ end }}
-    </span>{{ end }}
+    <p class="meta-line">
+        <span class="date">{{- if .GitInfo }}<a href="{{ .Site.Params.gitUrl -}}{{ .GitInfo.Hash }}" target="_blank" rel="noopener">{{ partial "date-ru.html" .Date }}</a>{{- else }}{{ partial "date-ru.html" .Date }}{{- end }}</span>
+        &middot; {{ $n }} {{ $minutes }} чтения
+    </p>
+    {{- with .Params.tags }}
+    <p class="tags">
+        {{- range $i, $tag := . }}{{ if $i }} &middot; {{ end }}<a href="{{ "tags" | absURL }}/{{ $tag | urlize }}">{{ $tag }}</a>{{ end -}}
+    </p>
+    {{- end }}
 </div>
 <div class="post-with-toc">
     <div class="post{{ if in .Params.tags "links" }} weblinks{{ end }}">

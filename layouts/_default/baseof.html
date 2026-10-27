@@ -124,7 +124,7 @@
                     {{- with images.QR .Permalink (dict "targetDir" "images/qr") }}
                     <button type="button" class="footer-qr-open" popovertarget="footer-qr-full" aria-label="Увеличить QR-код">
                         {{- /* Fixed size: the QR fills the column above the page links whatever the URL length */}}
-                        <img src="{{ .RelPermalink }}" width="84" height="84" alt="QR-код со ссылкой на эту страницу" loading="lazy">
+                        <img src="{{ .RelPermalink }}" width="110" height="110" alt="QR-код со ссылкой на эту страницу" loading="lazy">
                     </button>
                     <div id="footer-qr-full" class="footer-qr-full" popover>
                         <button type="button" popovertarget="footer-qr-full" popovertargetaction="hide" aria-label="Закрыть">

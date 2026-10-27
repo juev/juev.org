@@ -1,0 +1,3 @@
+{{- /* A date as "27 октября 2026": the site has no Russian locale */ -}}
+{{- $months := slice "января" "февраля" "марта" "апреля" "мая" "июня" "июля" "августа" "сентября" "октября" "ноября" "декабря" -}}
+{{- printf "%d %s %d" .Day (index $months (sub (int .Month) 1)) .Year -}}

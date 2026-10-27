@@ -49,8 +49,11 @@ html.wf-loading * {
   display: block;
   color: #ffffff;
   text-decoration: none;
-  text-transform: uppercase;
-  font-family: Helvetica, sans-serif !important;
+  text-transform: lowercase;
+  font-family: 'Alegreya SC', 'Alegreya SC Fallback', serif !important;
+  font-size: 20px;
+  font-weight: 500;
+  letter-spacing: 1px;
 }
 
 .navigation .width-fix li a:hover {
