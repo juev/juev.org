@@ -62,6 +62,9 @@
     {{ "<!-- TOC active section tracking -->" | safeHTML }}
     {{ $toc := resources.Get "js/toc.js" | minify | fingerprint }}
     <script src="{{ $toc.Permalink }}" defer></script>
+    {{ "<!-- Footnotes as margin notes -->" | safeHTML }}
+    {{ $sidenotes := resources.Get "js/sidenotes.js" | minify | fingerprint }}
+    <script src="{{ $sidenotes.Permalink }}" defer></script>
     {{ "<!-- Safe page preloading script -->" | safeHTML }}
     <script type="speculationrules">
     {
