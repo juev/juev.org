@@ -1,39 +1,54 @@
 (function () {
   'use strict';
 
-  // The header button flips between light and dark and remembers the pick
-  // in localStorage; until the first click the theme follows the system
-  // setting. The inline script in <head> applies a saved pick before paint.
+  // The header button cycles system → light → dark → system. A light or dark
+  // pick is kept in localStorage; "system" removes it, and the theme follows
+  // the system setting again. The inline script in <head> applies a saved
+  // pick before paint.
+  var NEXT = { system: 'light', light: 'dark', dark: 'system' };
+  var LABELS = {
+    system: 'Тема как в системе. Включить светлую',
+    light: 'Светлая тема. Включить тёмную',
+    dark: 'Тёмная тема. Вернуть тему системы'
+  };
+
   function initTheme() {
     var button = document.querySelector('.theme-toggle');
     if (!button) return;
 
     var root = document.documentElement;
-    var media = window.matchMedia('(prefers-color-scheme: dark)');
 
     function current() {
-      return root.dataset.theme || (media.matches ? 'dark' : 'light');
+      return root.dataset.theme || 'system';
     }
 
-    function updateLabel() {
-      button.setAttribute('aria-label', current() === 'dark'
-        ? 'Включить светлую тему'
-        : 'Включить тёмную тему');
+    function update() {
+      var mode = current();
+      button.dataset.mode = mode;
+      button.setAttribute('aria-label', LABELS[mode]);
+      button.title = LABELS[mode];
     }
 
     button.addEventListener('click', function () {
-      var next = current() === 'dark' ? 'light' : 'dark';
-      root.dataset.theme = next;
+      var next = NEXT[current()];
       try {
-        localStorage.setItem('theme', next);
+        if (next === 'system') {
+          localStorage.removeItem('theme');
+        } else {
+          localStorage.setItem('theme', next);
+        }
       } catch (e) {
         // Storage may be blocked; the pick then lasts until the page closes
       }
-      updateLabel();
+      if (next === 'system') {
+        delete root.dataset.theme;
+      } else {
+        root.dataset.theme = next;
+      }
+      update();
     });
 
-    media.addEventListener('change', updateLabel);
-    updateLabel();
+    update();
     button.hidden = false;
   }
 
