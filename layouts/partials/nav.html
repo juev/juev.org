@@ -1,9 +1,9 @@
 {{- $pages := where site.RegularPages "Section" .Section -}}
 <div class="pagination">
     {{- with .PrevInSection }}
-    <p class="previous">Previous post: <a rel="prev" href="{{.Permalink}}" title="View {{ .Title }}">{{ .Title }}</a></p>
+    <p class="previous"><span class="pagination-label">Предыдущая:</span> <a rel="prev" href="{{.Permalink}}" title="{{ .Title }}">{{ .Title }}</a></p>
     {{ end -}}
 	{{- with .NextInSection }}
-    <p class="next">Next post: <a rel="next" href="{{.Permalink}}" title="View {{ .Title }}">{{ .Title }}</a></p>
+    <p class="next"><span class="pagination-label">Следующая:</span> <a rel="next" href="{{.Permalink}}" title="{{ .Title }}">{{ .Title }}</a></p>
     {{ end -}}
 </div>
