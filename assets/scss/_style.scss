@@ -469,6 +469,19 @@ strong
   color:var(--brand)
 }
 
+/* One icon per mode; data-mode comes from theme.js */
+.theme-toggle svg
+{
+  display:none
+}
+
+.theme-toggle[data-mode="system"] .theme-icon-system,
+.theme-toggle[data-mode="light"] .theme-icon-light,
+.theme-toggle[data-mode="dark"] .theme-icon-dark
+{
+  display:block
+}
+
 /* The focus ring stays for the keyboard, not after a mouse click */
 .theme-toggle:focus:not(:focus-visible)
 {
