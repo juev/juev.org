@@ -38,6 +38,13 @@ the syndication job.
 - Build with the pinned Hugo, not whatever is on `PATH`: take
   `hugo_extended_<version>_linux-amd64.tar.gz` from the Hugo releases, run it
   from a scratch directory against the working tree, output to scratch.
+- On macOS that archive does not run, and the release has no darwin archive,
+  only `hugo_extended_<version>_darwin-universal.pkg`. Unpack it with
+  `pkgutil --expand-full <pkg> <dir>` and run `<dir>/Payload/hugo`.
+- To open the build in a local browser, pass
+  `--baseURL http://127.0.0.1:<port>/`. Scripts and styles use absolute
+  URLs, so without it the page loads them from the live site, not from
+  the build.
 - Check the artifact, not the markdown: the page exists at
   `<build>/YYYY/MM/DD/<slug>/index.html`, the slug appears in `atom.xml` and
   `sitemap.xml`, and the counts of `footnote-ref`, `<table`, `<pre` match what
