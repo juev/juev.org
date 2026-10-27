@@ -4,6 +4,9 @@
 <h1 class="title">{{- .Title -}}</h1>
 <div class="post{{ if in .Params.tags "links" }} weblinks{{ end }}">
     {{ .Content }}
+    {{- if .Params.showLastmod }}
+    <p class="updated">Обновлено <time datetime="{{ .Lastmod.Format "2006-01-02" }}">{{ .Lastmod.Format "2006-01-02" }}</time></p>
+    {{- end }}
 </div>
 <div class="meta">
     {{ partial "nav.html" . }}
