@@ -1,67 +1,82 @@
-/* Optimized fonts - only cyrillic and latin for Russian blog */
+/* Alegreya for text, Alegreya SC for headings: cyrillic and latin only.
+   Alegreya is variable, one file covers weights 400-900. */
 
-/* cyrillic */
+/* Alegreya italic 400 900, cyrillic */
 @font-face {
-    font-family: 'Open Sans';
+    font-family: 'Alegreya';
     font-style: italic;
-    font-weight: 400;
-    font-stretch: 100%;
+    font-weight: 400 900;
     font-display: swap;
-    src: url(https://fonts.gstatic.com/s/opensans/v27/memQYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWq8tWZ0Pw86hd0Rk8ZkWVQexoMUdjFXmSU_.woff) format('woff');
-    unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+    src: url(https://fonts.gstatic.com/s/alegreya/v41/4UaHrEBBsBhlBjvfkSLk967p57F2IwN-Pw.woff2) format('woff2');
+    unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
 }
 
-/* latin */
+/* Alegreya italic 400 900, latin */
 @font-face {
-    font-family: 'Open Sans';
+    font-family: 'Alegreya';
     font-style: italic;
-    font-weight: 400;
-    font-stretch: 100%;
+    font-weight: 400 900;
     font-display: swap;
-    src: url(https://fonts.gstatic.com/s/opensans/v27/memQYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWq8tWZ0Pw86hd0Rk8ZkWVAexoMUdjFXmQ.woff) format('woff');
-    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+    src: url(https://fonts.gstatic.com/s/alegreya/v41/4UaHrEBBsBhlBjvfkSLk96rp57F2IwM.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 }
 
-/* cyrillic */
+/* Alegreya normal 400 900, cyrillic */
 @font-face {
-    font-family: 'Open Sans';
+    font-family: 'Alegreya';
     font-style: normal;
-    font-weight: 400;
-    font-stretch: 100%;
+    font-weight: 400 900;
     font-display: swap;
-    src: url(https://fonts.gstatic.com/s/opensans/v27/memvYaGs126MiZpBA-UvWbX2vVnXBbObj2OVTSumu0SC55K5gw.woff2) format('woff2');
-    unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+    src: url(https://fonts.gstatic.com/s/alegreya/v41/4UaBrEBBsBhlBjvfkSLlx6jj4JN0EwI.woff2) format('woff2');
+    unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
 }
 
-/* latin */
+/* Alegreya normal 400 900, latin */
 @font-face {
-    font-family: 'Open Sans';
+    font-family: 'Alegreya';
     font-style: normal;
-    font-weight: 400;
-    font-stretch: 100%;
+    font-weight: 400 900;
     font-display: swap;
-    src: url(https://fonts.gstatic.com/s/opensans/v27/memvYaGs126MiZpBA-UvWbX2vVnXBbObj2OVTS-mu0SC55I.woff2) format('woff2');
-    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+    src: url(https://fonts.gstatic.com/s/alegreya/v41/4UaBrEBBsBhlBjvfkSLhx6jj4JN0.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 }
 
-/* cyrillic - medium weight only if needed */
+/* Alegreya SC normal 500, cyrillic */
 @font-face {
-    font-family: 'Open Sans';
+    font-family: 'Alegreya SC';
     font-style: normal;
     font-weight: 500;
-    font-stretch: 100%;
     font-display: swap;
-    src: url(https://fonts.gstatic.com/s/opensans/v27/memvYaGs126MiZpBA-UvWbX2vVnXBbObj2OVTSumu0SC55K5gw.woff2) format('woff2');
-    unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+    src: url(https://fonts.gstatic.com/s/alegreyasc/v28/taiTGmRtCJ62-O0HhNEa-ZZc-oUySKqUFmKCJz4.woff2) format('woff2');
+    unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
 }
 
-/* latin - medium weight only if needed */
+/* Alegreya SC normal 500, latin */
 @font-face {
-    font-family: 'Open Sans';
+    font-family: 'Alegreya SC';
     font-style: normal;
     font-weight: 500;
-    font-stretch: 100%;
     font-display: swap;
-    src: url(https://fonts.gstatic.com/s/opensans/v27/memvYaGs126MiZpBA-UvWbX2vVnXBbObj2OVTS-mu0SC55I.woff2) format('woff2');
-    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+    src: url(https://fonts.gstatic.com/s/alegreyasc/v28/taiTGmRtCJ62-O0HhNEa-ZZc-oU2SKqUFmKC.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+/* Alegreya SC normal 700, cyrillic */
+@font-face {
+    font-family: 'Alegreya SC';
+    font-style: normal;
+    font-weight: 700;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/alegreyasc/v28/taiTGmRtCJ62-O0HhNEa-ZYU_IUySKqUFmKCJz4.woff2) format('woff2');
+    unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+
+/* Alegreya SC normal 700, latin */
+@font-face {
+    font-family: 'Alegreya SC';
+    font-style: normal;
+    font-weight: 700;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/alegreyasc/v28/taiTGmRtCJ62-O0HhNEa-ZYU_IU2SKqUFmKC.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 }
