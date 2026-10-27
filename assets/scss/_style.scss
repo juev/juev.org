@@ -576,11 +576,15 @@ sup:has(.footnote-ref)
   font-style:italic
 }
 
-/* No fixed height: a long title wraps instead of running into the next line */
+/* One line each: a long title is cut with an ellipsis, the link's title
+   attribute keeps the full name */
 .pagination p
 {
   display:block;
   margin:0 0 .6em;
+  white-space:nowrap;
+  overflow:hidden;
+  text-overflow:ellipsis;
   color:#666!important;
   text-transform:uppercase;
   letter-spacing:2px;
