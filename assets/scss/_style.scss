@@ -132,14 +132,9 @@ body.wide
 {
   display:flex;
   justify-content:space-between;
+  /* The page links share the baseline of the contacts line */
+  align-items:last baseline;
   gap:30px
-}
-
-/* Stretched to the left column: the page links sit on the contacts line */
-.footer-page
-{
-  display:flex;
-  flex-direction:column
 }
 
 .footer-links
@@ -152,7 +147,6 @@ body.wide
 /* .footer p below sets the font with !important, hence the stronger selector */
 .footer .footer-page p
 {
-  margin-top:auto;
   text-align:center;
   font-size:10px!important
 }
@@ -165,7 +159,12 @@ body.wide
 .footer-page img
 {
   display:block;
-  margin:0;
+  margin:0
+}
+
+/* Twice the PNG size: square modules stay sharp */
+.footer-qr-full img
+{
   image-rendering:pixelated
 }
 
@@ -1112,9 +1111,11 @@ img.error {
     padding: 0 20px
   }
 
+  /* In a column, last baseline falls back to end alignment */
   .footer-grid
   {
     flex-direction:column;
+    align-items:flex-start;
     gap:0
   }
 
