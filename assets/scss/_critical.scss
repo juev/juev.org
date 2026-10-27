@@ -20,8 +20,8 @@ html.wf-loading * {
 /* Critical navigation styles */
 .navigation {
   height: 108px;
-  background-color: rgb(25, 30, 34);
-  color: #fff;
+  background-color: #fff;
+  color: #111;
   vertical-align: middle;
   font-size: 15px;
 }
@@ -47,7 +47,7 @@ html.wf-loading * {
 .navigation .width-fix li a {
   float: left;
   display: block;
-  color: #ffffff;
+  color: #111;
   text-decoration: none;
   text-transform: lowercase;
   font-family: 'Alegreya SC', 'Alegreya SC Fallback', serif !important;
@@ -64,7 +64,7 @@ html.wf-loading * {
 /* Add visual separator between navigation items */
 .navigation .width-fix li:not(:last-child):after {
   content: "|";
-  color: #ffffff;
+  color: #bbb;
   margin-left: 1em;
   float: left;
 }
@@ -79,7 +79,6 @@ html.wf-loading * {
 /* Critical content styles */
 .primary-content {
   padding: 20px;
-  border-bottom: 7px solid #7f808a;
   background: #fff;
 }
 

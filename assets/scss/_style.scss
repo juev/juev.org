@@ -125,8 +125,14 @@ body.wide
 
 .footer
 {
-  padding:15px 5px 25px;
-  color:#bbb
+  padding:0 5px 25px;
+  color:#666
+}
+
+.footer .width-fix
+{
+  padding-top:15px;
+  border-top:1px solid #ddd
 }
 
 .footer-grid
@@ -221,12 +227,12 @@ body.wide
 .wide .footer
 {
   position:relative;
-  background-color:rgb(25, 30, 34);
+  background-color:#fff;
 }
 
 .footer a
 {
-  color:#eee;
+  color:#111;
   text-decoration:none
 }
 
@@ -276,7 +282,6 @@ strong
 .primary-content
 {
     padding:20px;
-    border-bottom:7px solid #7f808a;
     background:#fff;
     .allpostsmeta a
     {
@@ -389,10 +394,19 @@ strong
 .navigation
 {
   height:108px;
-  background-color:rgb(25, 30, 34);
-  color:#fff;
+  background-color:#fff;
+  color:#111;
   vertical-align:middle;
   font-size:15px;
+}
+
+/* Light header and footer: a hairline at the column width separates them
+   from the text */
+.navigation .width-fix
+{
+  height:100%;
+  box-sizing:border-box;
+  border-bottom:1px solid #ddd;
 }
 
 .navigation .width-fix ul
@@ -413,7 +427,7 @@ strong
 {
   float:left;
   display:block;
-  color:#f7f6ee;
+  color:#111;
   text-decoration:none;
   text-transform:lowercase;
   font-family:'Alegreya SC', 'Alegreya SC Fallback', serif!important;
@@ -432,7 +446,7 @@ strong
 .navigation .width-fix li:not(:last-child):after
 {
   content: "|";
-  color: #f7f6ee;
+  color: #bbb;
   margin-left: 1em;
   float: left;
 }
@@ -687,8 +701,18 @@ h3.title
   height:48px;
 }
 
+/* The global img rule frames pictures with a shadow and lifts them on hover;
+   on a light background the icons show it */
+#home img,
+.footer-page img {
+  box-shadow: none;
+  border-radius: 0;
+  transform: none;
+}
+
 #home img {
   display: block;
+  margin: 0;
   width: 32px;
   height: 48px;
 }
@@ -1268,18 +1292,9 @@ select:focus {
 
 /* High contrast focus for navigation */
 .navigation a:focus {
-  outline: 2px solid #fff;
+  outline: 2px solid #BC5007;
   outline-offset: 2px;
-  background-color: rgba(188, 80, 7, 0.2);
-}
-
-/* Ensure sufficient color contrast */
-.navigation .width-fix li a {
-  color: #ffffff; /* Ensure high contrast */
-}
-
-.footer a {
-  color: #ffffff; /* Improve contrast in footer */
+  background-color: rgba(188, 80, 7, 0.1);
 }
 
 /* Screen reader only content */
