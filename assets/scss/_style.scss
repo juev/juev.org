@@ -723,6 +723,41 @@ h3.title
   border-bottom:0
 }
 
+.post-list
+{
+  margin:0 0 1.5em;
+  padding:0;
+  list-style:none
+}
+
+.post-list li
+{
+  display:grid;
+  grid-template-columns:1.6em 1fr;
+  column-gap:.8em;
+  margin:0 0 .6em;
+  line-height:1.4
+}
+
+.post-list a
+{
+  border-bottom:0
+}
+
+.post-list time
+{
+  color:#999;
+  text-align:right;
+  font-variant-numeric:tabular-nums
+}
+
+/* weekly link digests step back so the posts stand out */
+.post-list .is-links a
+{
+  color:#999;
+  font-size:.9em
+}
+
 ol li,ul li
 {
   margin-bottom:10px;
