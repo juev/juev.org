@@ -1,5 +1,43 @@
 /* Critical CSS - Above the fold styles for fast rendering */
 
+/* Colour tokens; the dark set follows the system setting */
+:root {
+  color-scheme: light dark;
+  --bg: #fff;
+  --text: #111;
+  --text-2: #333;
+  --muted: #555;
+  --faint: #999;
+  --sep: #bbb;
+  --rule: #ddd;
+  --surface: #f5f5f5;
+  --stripe-odd: rgba(255, 255, 255, 0.06);
+  --stripe-even: rgba(200, 200, 200, 0.25);
+  --link: #003366;
+  --link-hover-bg: #f0f7ff;
+  --accent: #660000;
+  --brand: #BC5007;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #16161a;
+    --text: #d6d6d6;
+    --text-2: #c2c2c2;
+    --muted: #9a9a9a;
+    --faint: #7c7c7c;
+    --sep: #555;
+    --rule: #3a3a3a;
+    --surface: #1f1f24;
+    --stripe-odd: transparent;
+    --stripe-even: rgba(255, 255, 255, 0.04);
+    --link: #8cb4e8;
+    --link-hover-bg: #1c2533;
+    --accent: #e0928c;
+    --brand: #e0823f;
+  }
+}
+
 html, body.wide {
   height: 100%;
   margin: 0;
@@ -7,9 +45,10 @@ html, body.wide {
 }
 
 body {
-  border-top: 3px solid #BC5007;
+  border-top: 3px solid var(--brand);
   font: 440 18px/27px Alegreya, 'Alegreya Fallback', serif;
-  color: #111 !important;
+  color: var(--text) !important;
+  background: var(--bg);
 }
 
 /* Loading state */
@@ -20,8 +59,8 @@ html.wf-loading * {
 /* Critical navigation styles */
 .navigation {
   height: 108px;
-  background-color: #fff;
-  color: #111;
+  background-color: var(--bg);
+  color: var(--text);
   vertical-align: middle;
   font-size: 15px;
 }
@@ -47,7 +86,7 @@ html.wf-loading * {
 .navigation .width-fix li a {
   float: left;
   display: block;
-  color: #111;
+  color: var(--text);
   text-decoration: none;
   text-transform: lowercase;
   font-family: 'Alegreya SC', 'Alegreya SC Fallback', serif !important;
@@ -57,14 +96,14 @@ html.wf-loading * {
 }
 
 .navigation .width-fix li a:hover {
-  color: #BC5007;
+  color: var(--brand);
   text-decoration: none;
 }
 
 /* Add visual separator between navigation items */
 .navigation .width-fix li:not(:last-child):after {
   content: "|";
-  color: #bbb;
+  color: var(--sep);
   margin-left: 1em;
   float: left;
 }
@@ -73,7 +112,7 @@ html.wf-loading * {
 /* Critical content styles */
 .primary-content {
   padding: 20px;
-  background: #fff;
+  background: var(--bg);
 }
 
 /* Skip navigation - critical for accessibility */
@@ -105,7 +144,7 @@ html.wf-loading * {
   .wide .body {
     margin: 0;
     width: 100%;
-    background: #FFF;
+    background: var(--bg);
     text-align: justify;
   }
   

@@ -9,9 +9,10 @@ html.wf-loading * {
 
 body
 {
-  border-top:3px solid #BC5007;
+  border-top:3px solid var(--brand);
   font:440 18px/27px Alegreya, 'Alegreya Fallback', serif;
-  color:#111 !important;
+  color:var(--text) !important;
+  background:var(--bg);
 }
 
 @media (min-width: 1000px) {
@@ -30,7 +31,7 @@ caption, col, colgroup, table, tbody, td, tfoot, th, thead, tr {
   border-spacing: 0; }
 
 table {
-  border: 1px solid #ddd;
+  border: 1px solid var(--rule);
   border-collapse: collapse;
   border-radius: 6px;
   display: table;
@@ -85,24 +86,24 @@ table th, table td {
 }
 
 table thead {
-  background: #f0f0f0;
-  border-bottom: 2px solid #ddd; }
+  background: var(--surface);
+  border-bottom: 2px solid var(--rule); }
 
 table tbody {
-  background: #fafafa; }
+  background: var(--surface); }
 
 table tfoot {
-  background: #f0f0f0;
-  border-top: 2px solid #ddd; }
+  background: var(--surface);
+  border-top: 2px solid var(--rule); }
 
 dt, th {
   font-weight: 700; }
 
 table tr:nth-child(odd), table th:nth-child(odd), table td:nth-child(odd) {
-  background: rgba(255, 255, 255, 0.06); }
+  background: var(--stripe-odd); }
 
 table tr:nth-child(even), table td:nth-child(even) {
-  background: rgba(200, 200, 200, 0.25); }
+  background: var(--stripe-even); }
 
 caption.t-above { caption-side: top; }
 caption.t-bottom { caption-side: bottom; }
@@ -126,13 +127,13 @@ body.wide
 .footer
 {
   padding:0 5px 25px;
-  color:#666
+  color:var(--muted)
 }
 
 .footer .width-fix
 {
   padding-top:15px;
-  border-top:1px solid #ddd
+  border-top:1px solid var(--rule)
 }
 
 .footer-grid
@@ -160,7 +161,7 @@ body.wide
 
 .footer-page p a
 {
-  color:#999
+  color:var(--faint)
 }
 
 /* Taxonomy pages have no page links: nothing to share a baseline with,
@@ -227,18 +228,18 @@ body.wide
 .wide .footer
 {
   position:relative;
-  background-color:#fff;
+  background-color:var(--bg);
 }
 
 .footer a
 {
-  color:#111;
+  color:var(--text);
   text-decoration:none
 }
 
 .footer a:hover
 {
-  color:#BC5007;
+  color:var(--brand);
   text-decoration:none
 }
 
@@ -261,7 +262,7 @@ body.wide
 {
   margin:0 auto;
   max-width:750px;
-  background:#FFF
+  background:var(--bg)
 }
 
 .body
@@ -282,10 +283,10 @@ strong
 .primary-content
 {
     padding:20px;
-    background:#fff;
+    background:var(--bg);
     .allpostsmeta a
     {
-        color:#DEDEDE!important;
+        color:var(--rule)!important;
         font-weight:700;
         font-size:28px!important;
         font-family:'Alegreya SC', 'Alegreya SC Fallback', serif!important;
@@ -295,12 +296,12 @@ strong
     a:visited
           {
               text-decoration:none;
-              color: #003366;
+              color: var(--link);
           }
     a:hover
           {
               text-decoration:none;
-              background: #f0f7ff;
+              background: var(--link-hover-bg);
               border-radius: 4px;
               transition: background .2s;
           }
@@ -320,7 +321,7 @@ strong
 
 .post p.updated
 {
-  color: #888;
+  color: var(--faint);
   font-size: 0.9em;
 }
 
@@ -394,8 +395,8 @@ strong
 .navigation
 {
   height:108px;
-  background-color:#fff;
-  color:#111;
+  background-color:var(--bg);
+  color:var(--text);
   vertical-align:middle;
   font-size:15px;
 }
@@ -410,7 +411,7 @@ strong
   height:100%;
   box-sizing:border-box;
   padding-top:30px;
-  border-bottom:1px solid #ddd;
+  border-bottom:1px solid var(--rule);
 }
 
 .navigation .width-fix ul
@@ -435,7 +436,7 @@ strong
 {
   float:none;
   display:block;
-  color:#111;
+  color:var(--text);
   text-decoration:none;
   text-transform:lowercase;
   font-family:'Alegreya SC', 'Alegreya SC Fallback', serif!important;
@@ -446,7 +447,7 @@ strong
 
 .navigation .width-fix li a:hover
 {
-  color:#BC5007;
+  color:var(--brand);
   text-decoration:none
 }
 
@@ -454,7 +455,7 @@ strong
 .navigation .width-fix li:not(:last-child):after
 {
   content: "|";
-  color: #bbb;
+  color: var(--sep);
   margin-left: 1em;
 }
 
@@ -476,9 +477,9 @@ pre
 {
   overflow:auto;
   padding: .6em .9em;
-  border: 1px solid #ccc;
-  border-left: 3px solid #ccc;
-  background-color:#fff;
+  border: 1px solid var(--rule);
+  border-left: 3px solid var(--rule);
+  background-color:var(--bg);
   margin-top: 0;
   margin-bottom: 1.2rem;
   line-height: 1.4;
@@ -489,13 +490,13 @@ code
 {
   font-family:monospace, monospace;
   font-size:.85em;
-  color: #660000;
+  color: var(--accent);
 }
 
 pre code
 {
   font-size: 15px;
-  color:#333 !important;
+  color:var(--text-2) !important;
   line-height: 1.4;
 }
 
@@ -520,7 +521,7 @@ blockquote
   position:relative;
   margin:1.61em 0em;
   padding-left:1em;
-  border-left:2px solid #999;
+  border-left:2px solid var(--faint);
   font-style:italic
 }
 
@@ -534,7 +535,7 @@ a#license
 {
   margin-top:10px;
   padding-bottom:15px;
-  border-top:1px dotted #ddd
+  border-top:1px dotted var(--rule)
 }
 
 // .footnotes
@@ -547,10 +548,10 @@ a#license
 {
   font-size: 16px;
   line-height: 1.45;
-  color: #333;
+  color: var(--text-2);
   margin-top: 2em;
   padding-top: 1em;
-  border-top: 1px solid #e0e0e0;
+  border-top: 1px solid var(--rule);
 }
 
 .footnotes > hr
@@ -587,7 +588,7 @@ sup:has(.footnote-ref)
 {
   border: none !important;
   text-decoration: none !important;
-  color: #660000;
+  color: var(--accent);
   padding: 0 1px;
 }
 
@@ -618,7 +619,7 @@ sup:has(.footnote-ref)
   white-space:nowrap;
   overflow:hidden;
   text-overflow:ellipsis;
-  color:#666!important;
+  color:var(--muted)!important;
   font-size:17px;
   line-height:1.5
 }
@@ -651,7 +652,7 @@ h1,h2,h3,h4,h5,h6
 
 h1.title
 {
-  color:#111!important;
+  color:var(--text)!important;
   text-align:center;
   font-weight:500;
   letter-spacing:.06rem;
@@ -661,7 +662,7 @@ h1.title
 h1.title a
 {
   border-bottom:none;
-  color:#111!important;
+  color:var(--text)!important;
   text-decoration:none
 }
 
@@ -681,7 +682,7 @@ h2
   font-size:23px;
   line-height:1.2;
   letter-spacing:-.02rem;
-  color:#111!important;
+  color:var(--text)!important;
 }
 
 h3
@@ -697,7 +698,7 @@ h3.title
 
 .post_hash
 {
-  color:#111!important;
+  color:var(--text)!important;
 }
 
 /* The global img rule frames pictures with a shadow and lifts them on hover;
@@ -721,7 +722,7 @@ h3.title
 {
   display:block;
   margin-bottom:2.2rem;
-  color:#555;
+  color:var(--muted);
   text-align:center;
   font-size:15px;
   font-style:italic
@@ -748,7 +749,7 @@ h3.title
 #metainfo .tags a
 {
   margin:0;
-  color:#555
+  color:var(--muted)
 }
 
 .date
@@ -760,7 +761,7 @@ h3.title
 
 .date a
 {
-  color:#555 !important;
+  color:var(--muted) !important;
   border:none;
   text-decoration:none;
 }
@@ -788,8 +789,8 @@ h3.title
 #tag-cloud a
 {
   text-decoration: none;
-  color: #545454;
-  background-color: #ececec;
+  color: var(--muted);
+  background-color: var(--surface);
   padding: 4px 12px;
   border-radius: 12px;
   border: none !important;
@@ -890,7 +891,7 @@ h3.title
 
 .post-list time
 {
-  color:#999;
+  color:var(--faint);
   text-align:right;
   font-variant-numeric:lining-nums tabular-nums
 }
@@ -898,7 +899,7 @@ h3.title
 /* weekly link digests step back so the posts stand out */
 .post-list .is-links a
 {
-  color:#999;
+  color:var(--faint);
   font-size:.9em
 }
 
@@ -959,7 +960,7 @@ img:hover {
 .image-figure figcaption {
   margin-top: 0.8em;
   font-size: 0.9em;
-  color: #666;
+  color: var(--muted);
   font-style: italic;
   line-height: 1.4;
 }
@@ -982,7 +983,7 @@ img[loading="lazy"].loaded {
 
 /* Image loading animation */
 img.loading {
-  background: linear-gradient(90deg, #f0f0f0 25%, #e0e0e0 50%, #f0f0f0 75%);
+  background: linear-gradient(90deg, var(--surface) 25%, var(--rule) 50%, var(--surface) 75%);
   background-size: 200% 100%;
   animation: loading 1.5s infinite;
 }
@@ -1033,7 +1034,7 @@ img.error {
 {
   margin-top: 10px;
   padding-bottom: 15px;
-  border-top: 1px dotted #ddd;
+  border-top: 1px dotted var(--rule);
 }
 
 .related a
@@ -1115,7 +1116,7 @@ img.error {
   }
 
   .post-toc #TableOfContents a {
-    color: #888;
+    color: var(--faint);
     text-decoration: none;
     display: block;
     padding: 0.2em 0;
@@ -1125,11 +1126,11 @@ img.error {
 
   .post-toc #TableOfContents a:hover,
   .post-toc #TableOfContents a.active {
-    color: #BC5007;
+    color: var(--brand);
   }
 
   .post-toc #TableOfContents a.active {
-    border-left: 2px solid #BC5007;
+    border-left: 2px solid var(--brand);
     padding-left: 0.5em;
   }
 
@@ -1147,14 +1148,14 @@ img.error {
     line-height: 1.45;
     font-style: normal;
     font-weight: 440;
-    color: #333;
+    color: var(--text-2);
     text-align: left;
     hyphens: auto;
   }
 
   .sidenote-number {
     margin-right: .3em;
-    color: #660000;
+    color: var(--accent);
   }
 
   .sidenote-para {
@@ -1176,7 +1177,7 @@ img.error {
   {
     margin:0;
     width:100%;
-    background:#FFF;
+    background:var(--bg);
     text-align:justify
   }
 
@@ -1278,13 +1279,13 @@ button:focus,
 input:focus,
 textarea:focus,
 select:focus {
-  outline: 2px solid #BC5007;
+  outline: 2px solid var(--brand);
   outline-offset: 2px;
 }
 
 /* High contrast focus for navigation */
 .navigation a:focus {
-  outline: 2px solid #BC5007;
+  outline: 2px solid var(--brand);
   outline-offset: 2px;
   background-color: rgba(188, 80, 7, 0.1);
 }
