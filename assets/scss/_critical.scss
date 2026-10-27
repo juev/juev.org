@@ -1,8 +1,28 @@
 /* Critical CSS - Above the fold styles for fast rendering */
 
-/* Colour tokens; the dark set follows the system setting */
+/* Colour tokens. The dark set applies when the system asks for it, unless
+   the reader picked light with the header toggle, or when they picked dark
+   (data-theme on <html>, set by the inline script in baseof.html). */
+@mixin dark-tokens {
+  color-scheme: dark;
+  --bg: #16161a;
+  --text: #d6d6d6;
+  --text-2: #c2c2c2;
+  --muted: #9a9a9a;
+  --faint: #7c7c7c;
+  --sep: #555;
+  --rule: #3a3a3a;
+  --surface: #1f1f24;
+  --stripe-odd: transparent;
+  --stripe-even: rgba(255, 255, 255, 0.04);
+  --link: #8cb4e8;
+  --link-hover-bg: #1c2533;
+  --accent: #e0928c;
+  --brand: #e0823f;
+}
+
 :root {
-  color-scheme: light dark;
+  color-scheme: light;
   --bg: #fff;
   --text: #111;
   --text-2: #333;
@@ -20,22 +40,13 @@
 }
 
 @media (prefers-color-scheme: dark) {
-  :root {
-    --bg: #16161a;
-    --text: #d6d6d6;
-    --text-2: #c2c2c2;
-    --muted: #9a9a9a;
-    --faint: #7c7c7c;
-    --sep: #555;
-    --rule: #3a3a3a;
-    --surface: #1f1f24;
-    --stripe-odd: transparent;
-    --stripe-even: rgba(255, 255, 255, 0.04);
-    --link: #8cb4e8;
-    --link-hover-bg: #1c2533;
-    --accent: #e0928c;
-    --brand: #e0823f;
+  :root:not([data-theme="light"]) {
+    @include dark-tokens;
   }
+}
+
+:root[data-theme="dark"] {
+  @include dark-tokens;
 }
 
 html, body.wide {

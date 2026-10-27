@@ -21,6 +21,8 @@
     <link rel="alternate" type="text/markdown" href="{{ .Permalink }}">
     {{- end }}
     <link rel="manifest" href="/site.webmanifest">
+    {{ "<!-- Theme picked with the header toggle, applied before the first paint -->" | safeHTML }}
+    <script>try{var t=localStorage.getItem('theme');if(t==='light'||t==='dark')document.documentElement.dataset.theme=t}catch(e){}</script>
     {{ $critical := resources.Get "scss/_critical.scss" | toCSS | minify -}}
     <style>{{ $critical.Content | safeCSS }}</style>
     {{ $style := resources.Get "scss/master.scss" | toCSS | minify | fingerprint -}}
@@ -65,6 +67,9 @@
     {{ "<!-- Footnotes as margin notes -->" | safeHTML }}
     {{ $sidenotes := resources.Get "js/sidenotes.js" | minify | fingerprint }}
     <script src="{{ $sidenotes.Permalink }}" defer></script>
+    {{ "<!-- Light/dark toggle in the header -->" | safeHTML }}
+    {{ $theme := resources.Get "js/theme.js" | minify | fingerprint }}
+    <script src="{{ $theme.Permalink }}" defer></script>
     {{ "<!-- Safe page preloading script -->" | safeHTML }}
     <script type="speculationrules">
     {
@@ -94,6 +99,10 @@
                     <li><a href="https://denis.evsyukov.org">Об авторе</a></li>
                 </ul>
             </nav>
+            {{- /* Hidden until theme.js runs: without JavaScript the theme follows the system */}}
+            <button type="button" class="theme-toggle" aria-label="Переключить тему" hidden>
+                <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><circle cx="12" cy="12" r="9" fill="none" stroke="currentColor" stroke-width="2"/><path d="M12 3a9 9 0 0 1 0 18z" fill="currentColor"/></svg>
+            </button>
         </div>
     </header>
     <main class="primary-content width-fix" id="main-content">
@@ -147,7 +156,8 @@
     {{- if .Store.Get "hasMermaid" -}}
     <script type="module">
         import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.esm.min.mjs';
-        const dark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+        const picked = document.documentElement.dataset.theme;
+        const dark = picked ? picked === 'dark' : window.matchMedia('(prefers-color-scheme: dark)').matches;
         mermaid.initialize({ startOnLoad: true, theme: dark ? 'dark' : 'default' });
     </script>
     {{- end -}}

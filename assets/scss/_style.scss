@@ -443,12 +443,36 @@ strong
   font-size:20px;
   font-weight:500;
   letter-spacing:1px;
+  white-space:nowrap;
 }
 
 .navigation .width-fix li a:hover
 {
   color:var(--brand);
   text-decoration:none
+}
+
+/* Light/dark toggle, pushed to the right end of the header */
+.theme-toggle
+{
+  margin-left:auto;
+  padding:4px;
+  border:0;
+  background:none;
+  color:var(--muted);
+  line-height:0;
+  cursor:pointer
+}
+
+.theme-toggle:hover
+{
+  color:var(--brand)
+}
+
+/* The focus ring stays for the keyboard, not after a mouse click */
+.theme-toggle:focus:not(:focus-visible)
+{
+  outline:none
 }
 
 /* Add visual separator between navigation items */
@@ -1225,6 +1249,22 @@ img.error {
   .footer .width-fix
   {
     padding: 0 20px
+  }
+
+  /* Three links and the theme toggle on one line at 360px */
+  .navigation .width-fix li
+  {
+    padding-right: .6em
+  }
+
+  .navigation .width-fix li a
+  {
+    font-size: 17px
+  }
+
+  .navigation .width-fix li:not(:last-child):after
+  {
+    margin-left: .6em
   }
 
   /* In a column, last baseline falls back to end alignment */
