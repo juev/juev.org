@@ -139,7 +139,7 @@ set -gx GOCACHEPROG "$HOME/go/bin/go-cache-lru --dir=$HOME/.cache/go-lru --max-s
 ```
 $ go-cache-lru --dir=$HOME/.cache/go-lru stats
 daemon          pid 12299, version v0.0.0-20261027142116-62b694c9a6b6 62b694c9a6b6, up 25m49s, 0 active sessions
-directory       /Users/denis.evsyukov/.cache/go-lru
+directory       ~/.cache/go-lru
 size            4.4 GiB of 30.0 GiB (target 25.0 GiB), 14.7%
 entries         17740 actions, 6020 objects, 0 pinned
 counters since  2026-10-27 16:38:51
