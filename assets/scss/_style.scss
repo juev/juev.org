@@ -413,12 +413,6 @@ strong
   border-bottom:1px solid #ddd;
 }
 
-.navigation #home
-{
-  float:none !important;
-  margin:0 1em 0 0 !important;
-}
-
 .navigation .width-fix ul
 {
   display:flex;
@@ -706,28 +700,12 @@ h3.title
   color:#111!important;
 }
 
-#home
-{
-  float:left !important;
-  margin:36px 1em 0 0 !important;
-  width:32px;
-  height:48px;
-}
-
 /* The global img rule frames pictures with a shadow and lifts them on hover;
-   on a light background the icons show it */
-#home img,
+   on a light background the QR shows it */
 .footer-page img {
   box-shadow: none;
   border-radius: 0;
   transform: none;
-}
-
-#home img {
-  display: block;
-  margin: 0;
-  width: 32px;
-  height: 48px;
 }
 
 .aligncenter
