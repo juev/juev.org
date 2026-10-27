@@ -111,23 +111,34 @@
                         <li><a href="/posts/">Список статей</a></li>
                         <li><a href="/recommendations.html">Рекомендации</a></li>
                         <li><a href="{{ .Site.BaseURL }}atom.xml">RSS</a></li>
-                        {{- with .OutputFormats.Get "Markdown" }}
-                        <li><a href="{{ .RelPermalink }}" type="text/markdown">Эта страница в Markdown</a></li>
-                        {{- end }}
-                        {{- with .File }}
-                        <li><a href="{{ $.Site.Params.sourceUrl }}{{ .Path }}">Исходник страницы</a></li>
-                        {{- end }}
                     </ul>
                 </nav>
                 <p>Связаться: <a href="&#109;&#97;&#105;&#108;&#116;&#111;&#58;&#100;&#101;&#110;&#105;&#115;&#64;&#101;&#118;&#115;&#121;&#117;&#107;&#111;&#118;&#46;&#111;&#114;&#103;" aria-label="Отправить письмо">email</a> &middot; <a rel="me" href="https://infosec.exchange/@devsyukov" aria-label="Mastodon профиль">Mastodon</a> &middot; <a href="https://github.com/Juev" aria-label="GitHub профиль">github</a></p>
             </div>
             {{- if ne .Kind "404" }}
-            {{- with images.QR .Permalink (dict "targetDir" "images/qr") }}
-            <div class="footer-share">
-                <p>Поделиться:</p>
-                <img src="{{ .RelPermalink }}" width="{{ .Width }}" height="{{ .Height }}" alt="QR-код со ссылкой на эту страницу" loading="lazy">
+            <div class="footer-page">
+                <div class="footer-qr">
+                    {{- with images.QR .Permalink (dict "targetDir" "images/qr") }}
+                    <button type="button" class="footer-qr-open" popovertarget="footer-qr-full" aria-label="Увеличить QR-код">
+                        <img src="{{ .RelPermalink }}" width="{{ div .Width 2 }}" height="{{ div .Height 2 }}" alt="QR-код со ссылкой на эту страницу" loading="lazy">
+                    </button>
+                    <div id="footer-qr-full" class="footer-qr-full" popover>
+                        <button type="button" popovertarget="footer-qr-full" popovertargetaction="hide" aria-label="Закрыть">
+                            <img src="{{ .RelPermalink }}" width="{{ mul .Width 2 }}" height="{{ mul .Height 2 }}" alt="QR-код со ссылкой на эту страницу">
+                        </button>
+                    </div>
+                    {{- end }}
+                </div>
+                {{- $md := .OutputFormats.Get "Markdown" }}
+                {{- if or $md .File }}
+                <p>
+                    <span class="footer-page-label">Эта страница: </span>
+                    {{- with $md }}<a href="{{ .RelPermalink }}" type="text/markdown">Markdown</a>{{ end }}
+                    {{- if and $md .File }} &middot; {{ end }}
+                    {{- with .File }}<a href="{{ $.Site.Params.sourceUrl }}{{ .Path }}">Исходник</a>{{ end -}}
+                </p>
+                {{- end }}
             </div>
-            {{- end }}
             {{- end }}
         </div>
     </footer>
