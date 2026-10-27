@@ -402,30 +402,44 @@ strong
 
 /* Light header and footer: a hairline at the column width separates them
    from the text */
+/* Flex instead of floats: the icon and the links share one centre line */
 .navigation .width-fix
 {
+  display:flex;
+  align-items:center;
   height:100%;
   box-sizing:border-box;
+  padding-top:30px;
   border-bottom:1px solid #ddd;
+}
+
+.navigation #home
+{
+  float:none !important;
+  margin:0 1em 0 0 !important;
 }
 
 .navigation .width-fix ul
 {
-  float:left;
-  margin:50px 0 0;
+  display:flex;
+  align-items:center;
+  float:none;
+  margin:0;
   padding:0;
   list-style-type:none;
 }
 
 .navigation .width-fix li
 {
-  float:left;
-  padding:1em 1em 1em 0;
+  display:flex;
+  align-items:center;
+  float:none;
+  padding:0 1em 0 0;
 }
 
 .navigation .width-fix li a
 {
-  float:left;
+  float:none;
   display:block;
   color:#111;
   text-decoration:none;
@@ -448,7 +462,6 @@ strong
   content: "|";
   color: #bbb;
   margin-left: 1em;
-  float: left;
 }
 
 .width-fix
@@ -1262,9 +1275,10 @@ img.error {
 }
 
 /* Accessibility improvements */
+/* Far enough above the edge that no part of it shows at any font size */
 .skip-nav {
   position: absolute;
-  top: -40px;
+  top: -100px;
   left: 6px;
   background: #000;
   color: #fff;
