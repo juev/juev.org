@@ -1,5 +1,26 @@
-/* Alegreya for text, Alegreya SC for headings: cyrillic and latin only.
+/* Alegreya for text, Alegreya SC for headings, served from /fonts
+   (cyrillic and latin only; licence in static/fonts/*-OFL.txt).
    Alegreya is variable, one file covers weights 400-900. */
+
+/* Times New Roman scaled to Alegreya metrics: if web fonts are blocked,
+   the text keeps the size and line breaks it would have in Alegreya. */
+@font-face {
+    font-family: 'Alegreya Fallback';
+    src: local('Times New Roman');
+    size-adjust: 101.69%;
+    ascent-override: 99.91%;
+    descent-override: 33.93%;
+    line-gap-override: 0%;
+}
+
+@font-face {
+    font-family: 'Alegreya SC Fallback';
+    src: local('Times New Roman');
+    size-adjust: 118.33%;
+    ascent-override: 85.86%;
+    descent-override: 29.16%;
+    line-gap-override: 0%;
+}
 
 /* Alegreya italic 400 900, cyrillic */
 @font-face {
@@ -7,7 +28,7 @@
     font-style: italic;
     font-weight: 400 900;
     font-display: swap;
-    src: url(https://fonts.gstatic.com/s/alegreya/v41/4UaHrEBBsBhlBjvfkSLk967p57F2IwN-Pw.woff2) format('woff2');
+    src: url(/fonts/alegreya-italic-400-900-cyrillic.woff2) format('woff2');
     unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
 }
 
@@ -17,7 +38,7 @@
     font-style: italic;
     font-weight: 400 900;
     font-display: swap;
-    src: url(https://fonts.gstatic.com/s/alegreya/v41/4UaHrEBBsBhlBjvfkSLk96rp57F2IwM.woff2) format('woff2');
+    src: url(/fonts/alegreya-italic-400-900-latin.woff2) format('woff2');
     unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 }
 
@@ -27,7 +48,7 @@
     font-style: normal;
     font-weight: 400 900;
     font-display: swap;
-    src: url(https://fonts.gstatic.com/s/alegreya/v41/4UaBrEBBsBhlBjvfkSLlx6jj4JN0EwI.woff2) format('woff2');
+    src: url(/fonts/alegreya-normal-400-900-cyrillic.woff2) format('woff2');
     unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
 }
 
@@ -37,7 +58,7 @@
     font-style: normal;
     font-weight: 400 900;
     font-display: swap;
-    src: url(https://fonts.gstatic.com/s/alegreya/v41/4UaBrEBBsBhlBjvfkSLhx6jj4JN0.woff2) format('woff2');
+    src: url(/fonts/alegreya-normal-400-900-latin.woff2) format('woff2');
     unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 }
 
@@ -47,7 +68,7 @@
     font-style: normal;
     font-weight: 500;
     font-display: swap;
-    src: url(https://fonts.gstatic.com/s/alegreyasc/v28/taiTGmRtCJ62-O0HhNEa-ZZc-oUySKqUFmKCJz4.woff2) format('woff2');
+    src: url(/fonts/alegreya-sc-normal-500-cyrillic.woff2) format('woff2');
     unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
 }
 
@@ -57,7 +78,7 @@
     font-style: normal;
     font-weight: 500;
     font-display: swap;
-    src: url(https://fonts.gstatic.com/s/alegreyasc/v28/taiTGmRtCJ62-O0HhNEa-ZZc-oU2SKqUFmKC.woff2) format('woff2');
+    src: url(/fonts/alegreya-sc-normal-500-latin.woff2) format('woff2');
     unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 }
 
@@ -67,7 +88,7 @@
     font-style: normal;
     font-weight: 700;
     font-display: swap;
-    src: url(https://fonts.gstatic.com/s/alegreyasc/v28/taiTGmRtCJ62-O0HhNEa-ZYU_IUySKqUFmKCJz4.woff2) format('woff2');
+    src: url(/fonts/alegreya-sc-normal-700-cyrillic.woff2) format('woff2');
     unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
 }
 
@@ -77,6 +98,6 @@
     font-style: normal;
     font-weight: 700;
     font-display: swap;
-    src: url(https://fonts.gstatic.com/s/alegreyasc/v28/taiTGmRtCJ62-O0HhNEa-ZYU_IU2SKqUFmKC.woff2) format('woff2');
+    src: url(/fonts/alegreya-sc-normal-700-latin.woff2) format('woff2');
     unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 }

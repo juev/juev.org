@@ -10,7 +10,7 @@ html.wf-loading * {
 body
 {
   border-top:3px solid #BC5007;
-  font:440 19px/28px Alegreya, Georgia, serif;
+  font:440 19px/28px Alegreya, 'Alegreya Fallback', serif;
   color:#111 !important;
 }
 
@@ -605,7 +605,7 @@ sup:has(.footnote-ref)
 /* Small caps: lowercase text set in Alegreya SC */
 h1,h2,h3,h4,h5,h6
 {
-  font-family: 'Alegreya SC', Alegreya, Georgia, serif;
+  font-family: 'Alegreya SC', 'Alegreya SC Fallback', serif;
   font-weight:700;
   text-transform:lowercase;
   margin-top:1em;
