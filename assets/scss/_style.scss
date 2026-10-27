@@ -576,11 +576,11 @@ sup:has(.footnote-ref)
   font-style:italic
 }
 
+/* No fixed height: a long title wraps instead of running into the next line */
 .pagination p
 {
   display:block;
-  width:606px;
-  height:22px;
+  margin:0 0 .6em;
   color:#666!important;
   text-transform:uppercase;
   letter-spacing:2px;
@@ -1030,11 +1030,18 @@ img.error {
   display: none;
 }
 
+/* Margin notes, built by sidenotes.js; shown only next to a wide column */
+.sidenote {
+  display: none;
+}
+
 @media (min-width: 1280px) {
+  /* The TOC takes the left margin, the right one is for the notes. The 80px
+     gap clears images and tables, which stick out of the column by 60px. */
   .post-toc {
     display: block;
     position: absolute;
-    left: calc(100% + 60px + 2rem);
+    right: calc(100% + 80px);
     top: 0;
     bottom: 0;
     width: 200px;
@@ -1077,6 +1084,43 @@ img.error {
   .post-toc #TableOfContents a.active {
     border-left: 2px solid #BC5007;
     padding-left: 0.5em;
+  }
+
+  /* Floated out of the text column, as in Tufte CSS: the negative margin
+     is wider than the note, so the text keeps its full width. The 70px gap
+     clears tables, which stick out of the column by 60px. */
+  .sidenote {
+    display: block;
+    float: right;
+    clear: right;
+    position: relative;
+    width: 220px;
+    margin: .3em -290px .8em 0;
+    font-size: 15px;
+    line-height: 1.45;
+    font-style: normal;
+    font-weight: 440;
+    color: #333;
+    text-align: left;
+    hyphens: auto;
+  }
+
+  .sidenote-number {
+    margin-right: .3em;
+    color: #660000;
+  }
+
+  .sidenote-para {
+    display: inline;
+  }
+
+  .sidenote-para + .sidenote-para {
+    display: block;
+    margin-top: .4em;
+  }
+
+  .post.has-sidenotes .footnotes {
+    display: none;
   }
 }
 
