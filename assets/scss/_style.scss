@@ -10,16 +10,15 @@ html.wf-loading * {
 body
 {
   border-top:3px solid #BC5007;
-  font:16px arial,serif;
-  line-height: 1.6;
-  color:#333 !important;
+  font:440 19px/28px Alegreya, Georgia, serif;
+  color:#111 !important;
 }
 
 @media (min-width: 1000px) {
   body
   {
-   font:16px 'Open Sans', arial, serif !important;
-   line-height: 1.75 !important;
+   font-size:21px;
+   line-height:30px;
   }
 }
 
@@ -70,10 +69,12 @@ table th, table td {
   line-height: 23px;
   padding: 0 1em; }
 
+/* Alegreya defaults to oldstyle figures; columns of numbers read better lining */
 .post table {
   font-size: 0.9em;
   line-height: 1.5;
   width: 100%;
+  font-variant-numeric: lining-nums tabular-nums;
 }
 
 .post table th,
@@ -279,28 +280,28 @@ strong
     a,
     a:visited
           {
-              /* border-bottom:1px dashed; */
-              /* color:#225E9B; */
               text-decoration:none;
-              color: #4078C0;
-              border-color: rgba(0, 0, 160, 0.15);
-              border-bottom-width: 1px;
-              border-bottom-style: solid;
-              text-decoration: none;
+              color: #003366;
           }
     a:hover
           {
-              /* color:#0097E8; */
               text-decoration:none;
-              color: #d04000;
-              border-color: rgba(208, 64, 0, 0.15);
+              background: #f0f7ff;
+              border-radius: 4px;
+              transition: background .2s;
           }
 }
 
 .post p
 {
-  margin-top: 1.2em;
-  margin-bottom: 1.2em;
+  margin-top: 0;
+  margin-bottom: 1.2rem;
+}
+
+.post p,
+.post li
+{
+  hyphens: auto;
 }
 
 .post p.updated
@@ -441,24 +442,26 @@ p.message
 pre
 {
   overflow:auto;
-  padding: 1.2em;
-  border: 1px solid #e0e0e0;
-  border-radius: 6px;
-  background-color:#F6F6F6;
-  margin-top: 1em;
-  margin-bottom: 1em;
+  padding: .6em .9em;
+  border: 1px solid #ccc;
+  border-left: 3px solid #ccc;
+  background-color:#fff;
+  margin-top: 0;
+  margin-bottom: 1.2rem;
   line-height: 1.4;
 }
 
+/* The doubled family stops browsers from shrinking bare monospace to 13/16 */
 code
 {
-  font-family:monospace;
-  color: #EC4899;
+  font-family:monospace, monospace;
+  font-size:.85em;
+  color: #660000;
 }
 
 pre code
 {
-  font-size: 11pt;
+  font-size: 15px;
   color:#333 !important;
   line-height: 1.4;
 }
@@ -509,8 +512,9 @@ a#license
 
 .footnotes
 {
-  font-size: 14px;
-  color: #555;
+  font-size: 17px;
+  line-height: 1.45;
+  color: #333;
   margin-top: 2em;
   padding-top: 1em;
   border-top: 1px solid #e0e0e0;
@@ -546,22 +550,12 @@ sup:has(.footnote-ref)
   line-height: 0;
 }
 
-.footnote-ref
+.primary-content .footnote-ref
 {
   border: none !important;
   text-decoration: none !important;
-  color: #555;
+  color: #660000;
   padding: 0 1px;
-}
-
-.footnote-ref::before
-{
-  content: "[";
-}
-
-.footnote-ref::after
-{
-  content: "]";
 }
 
 .footnote-backref
@@ -608,27 +602,29 @@ sup:has(.footnote-ref)
   line-height:18px
 }
 
+/* Small caps: lowercase text set in Alegreya SC */
 h1,h2,h3,h4,h5,h6
 {
-  /* color:#444; */
-  /* font-weight:400 */
-  font-family: Arial, Verdana, sans-serif;
-  font-weight:bold;
+  font-family: 'Alegreya SC', Alegreya, Georgia, serif;
+  font-weight:700;
+  text-transform:lowercase;
   margin-top:1em;
   margin-bottom:1em;
 }
 
 h1.title
 {
-/*  width:560px;*/
-  color:#444!important;
-  text-align:left
+  color:#111!important;
+  text-align:center;
+  font-weight:500;
+  letter-spacing:.06rem;
+  text-wrap:balance
 }
 
 h1.title a
 {
   border-bottom:none;
-  color:#444!important;
+  color:#111!important;
   text-decoration:none
 }
 
@@ -639,22 +635,22 @@ h1,h2
 
 h1
 {
-  font-size:28px;
-  line-height:28px
+  font-size:36px;
+  line-height:1.1
 }
 
 h2
 {
   font-size:24px;
-  line-height:30px;
-  color:#444!important;
+  line-height:1.2;
+  letter-spacing:-.02rem;
+  color:#111!important;
 }
 
 h3
 {
-  font-weight:700;
-  font-size:18px;
-  line-height:20px
+  font-size:21px;
+  line-height:1.2
 }
 
 h3.title
@@ -664,7 +660,7 @@ h3.title
 
 .post_hash
 {
-  color:#444!important;
+  color:#111!important;
 }
 
 #home
@@ -693,11 +689,19 @@ h3.title
 #metainfo
 {
   display:block;
-  /*  margin:10px 0 10px 3px;*/
+  margin-bottom:2.2rem;
   color:#555;
-  text-align:left;
-  font-size:10pt;
-  font-family:Verdana,Helvetica,Arial,sans-serif
+  text-align:center;
+  font-size:16px;
+  font-style:italic
+}
+
+#metainfo .date,
+#metainfo .info,
+#metainfo .tags a
+{
+  font-size:inherit;
+  font-weight:inherit
 }
 
 .date
@@ -841,7 +845,7 @@ h3.title
 {
   color:#999;
   text-align:right;
-  font-variant-numeric:tabular-nums
+  font-variant-numeric:lining-nums tabular-nums
 }
 
 /* weekly link digests step back so the posts stand out */
