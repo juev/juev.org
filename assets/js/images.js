@@ -1,65 +1,8 @@
-// Enhanced image loading with Intersection Observer
+// Image enhancements: error placeholder, zoom, lightbox for linked images.
+// Lazy loading is left to the browser (loading="lazy"); images are not hidden
+// until loaded, so a large PNG is drawn as it arrives.
 (function() {
     'use strict';
-
-    // Check for browser support
-    if (!('IntersectionObserver' in window)) {
-        // Fallback for older browsers
-        loadAllImages();
-        return;
-    }
-
-    // Image loading optimization
-    const imageObserver = new IntersectionObserver((entries, observer) => {
-        entries.forEach(entry => {
-            if (entry.isIntersecting) {
-                const img = entry.target;
-                loadImage(img);
-                observer.unobserve(img);
-            }
-        });
-    }, {
-        // Start loading when image is 50px away from viewport
-        rootMargin: '50px 0px',
-        threshold: 0.01
-    });
-
-    function loadImage(img) {
-        // Add loading class
-        img.classList.add('loading');
-        
-        const imageLoaded = () => {
-            img.classList.remove('loading');
-            img.classList.add('loaded');
-            img.style.opacity = '1';
-            img.removeEventListener('load', imageLoaded);
-            img.removeEventListener('error', imageError);
-        };
-
-        const imageError = () => {
-            img.classList.remove('loading');
-            img.classList.add('error');
-            console.warn('Failed to load image:', img.src);
-            img.removeEventListener('load', imageLoaded);
-            img.removeEventListener('error', imageError);
-        };
-
-        img.addEventListener('load', imageLoaded);
-        img.addEventListener('error', imageError);
-
-        // Trigger loading if not already loaded
-        if (img.complete) {
-            imageLoaded();
-        }
-    }
-
-    function loadAllImages() {
-        const images = document.querySelectorAll('img[loading="lazy"]');
-        images.forEach(img => {
-            img.loading = 'eager';
-            loadImage(img);
-        });
-    }
 
     // WebP support detection
     function supportsWebP() {
@@ -69,27 +12,6 @@
                 resolve(webP.height === 2);
             };
             webP.src = 'data:image/webp;base64,UklGRjoAAABXRUJQVlA4IC4AAACyAgCdASoCAAIALmk0mk0iIiIiIgBoSygABc6WWgAA/veff/0PP8bA//LwYAAA';
-        });
-    }
-
-    // Initialize image loading
-    function initImageLoading() {
-        const images = document.querySelectorAll('img[loading="lazy"]');
-        
-        images.forEach(img => {
-            // Always ensure transition is set
-            img.style.transition = 'opacity 0.3s ease';
-            
-            // Check if image is already loaded (common for cached/external images)
-            if (img.complete && (img.naturalHeight !== 0 || img.src.startsWith('https:'))) {
-                // Image is loaded or is external - show immediately
-                img.style.opacity = '1';
-                img.classList.add('loaded');
-            } else {
-                // Only hide images that aren't loaded yet
-                img.style.opacity = '0';
-                imageObserver.observe(img);
-            }
         });
     }
 
@@ -245,7 +167,6 @@
     }
 
     function init() {
-        initImageLoading();
         handleImageErrors();
         initImageZoom();
         initImageLinks();

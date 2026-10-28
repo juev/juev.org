@@ -1013,31 +1013,6 @@ picture img {
   height: auto;
 }
 
-/* Image loading states */
-img[loading="lazy"].loaded {
-  opacity: 1;
-}
-
-/* Image loading animation */
-img.loading {
-  background: linear-gradient(90deg, var(--surface) 25%, var(--rule) 50%, var(--surface) 75%);
-  background-size: 200% 100%;
-  animation: loading 1.5s infinite;
-}
-
-@keyframes loading {
-  0% {
-    background-position: 200% 0;
-  }
-  100% {
-    background-position: -200% 0;
-  }
-}
-
-img.error {
-  display: none;
-}
-
 /* Image zoom functionality */
 .image-figure img {
   cursor: zoom-in;
