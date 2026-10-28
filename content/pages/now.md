@@ -7,7 +7,7 @@ showLastmod: true
 
 Это [now-страница](https://nownownow.com/about): чем я занимаюсь в последнее время.
 
-- [Hermes для Android](/2026/10/28/hermes-android/) — свой клиент для агента Hermes вместо Telegram и Matrix: отдельный чат на каждую задачу, поиск по всем разговорам, управление сервером и встроенный Tailscale. Пока выходят только release candidate. [Репозиторий](https://github.com/juev/hermes).
+- [hermes](/2026/10/28/hermes-android/) — клиент для Android к агенту Hermes вместо Telegram и Matrix: отдельный чат на каждую задачу, поиск по всем разговорам, управление сервером и встроенный Tailscale. Пока выходят только release candidate. [Репозиторий](https://github.com/juev/hermes).
 - [memcue](/2026/10/27/memcue/) — долговременная память для Claude Code и Hermes: факты лежат в SQLite и подтягиваются по словам перед каждым запросом. [Репозиторий](https://github.com/juev/memcue).
 - [freshgo](/2026/10/10/freshgo/) — сервер лент на Go, совместимый с FreshRSS. К нему [brook](https://github.com/juev/brook), читалка для Android, которая работает с freshgo и другими серверами с Google Reader API.
 - [lists](/2026/10/11/lists/) — local-first список дел для macOS и Android с веб-интерфейсом на своём сервере и синхронизацией через WebDAV или CalDAV.
