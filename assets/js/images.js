@@ -120,26 +120,36 @@
         }, true);
     }
 
-    // Image zoom functionality
+    // Image zoom: a copy of the image in a popover over the whole viewport.
+    // Any click on it closes it, Esc too. Closing does not depend on the click
+    // reaching the image itself: in Safari it did not, and the zoomed image stuck.
     function initImageZoom() {
+        if (!HTMLElement.prototype.hasOwnProperty('popover')) {
+            return;
+        }
+
+        const viewer = document.createElement('div');
+        viewer.className = 'image-zoom';
+        viewer.popover = 'auto';
+        const full = document.createElement('img');
+        full.decoding = 'async';
+        viewer.appendChild(full);
+        document.body.appendChild(viewer);
+
+        viewer.addEventListener('click', () => viewer.hidePopover());
+
         document.addEventListener('click', (e) => {
-            if (e.target.tagName === 'IMG' && e.target.closest('.image-figure, .image-container')) {
-                const img = e.target;
-                if (img.naturalWidth > img.clientWidth) {
-                    toggleImageZoom(img);
-                }
+            const img = e.target;
+            // Images inside a link open through initImageLinks
+            if (img.tagName !== 'IMG' || !img.closest('.image-figure, .image-container') || img.closest('a')) {
+                return;
+            }
+            if (img.naturalWidth > img.clientWidth) {
+                full.src = img.currentSrc || img.src;
+                full.alt = img.alt;
+                viewer.showPopover();
             }
         });
-    }
-
-    function toggleImageZoom(img) {
-        if (img.classList.contains('zoomed')) {
-            img.classList.remove('zoomed');
-            img.style.cursor = 'zoom-in';
-        } else {
-            img.classList.add('zoomed');
-            img.style.cursor = 'zoom-out';
-        }
     }
 
     // Handle image links (preview images that link to full size)
