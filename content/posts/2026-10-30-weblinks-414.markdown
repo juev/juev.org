@@ -1,0 +1,46 @@
+---
+title: "Ссылки #414"
+date: 2026-10-30T18:52:28+03:00
+image: https://static.juev.org/images/links.jpg
+tags:
+  - links
+---
+
+На этой неделе в подборке: формальная верификация открытых библиотек с помощью Claude, расследование инцидента в Tailscale SSH, первый стабильный выпуск почтового сервера Stalwart v1.0 и Inbox Zero как практика приватности, а не продуктивности.
+
+## 🤖 ИИ
+
+**[LLMs are making formal software verification feasible at a much larger scale \ Anthropic](https://www.anthropic.com/research/formal-verification)**
+Формальная проверка с помощью Claude доказала свойства безопасности в скомпилированном коде 123 библиотек с открытым исходным кодом. В процессе были обнаружены ошибки, которые оставались незамеченными годами.
+
+## 🖥️ Инфраструктура
+
+**[Stalwart v1.0: The Fastest Mail Server on the Planet | Stalwart](https://stalw.art/blog/stalwart-1-0/)**
+Stalwart v1.0 — первый стабильный выпуск почтового сервера после пяти лет разработки; в нём зафиксирована схема базы данных и переписан поисковый движок. По итогам профилирования и нагрузочных испытаний Stalwart опередил Postfix и Dovecot в 35 из 38 тестов, но результаты относятся только к проведённым сравнениям.
+
+## 🔍 Приватность
+
+**[マリウス . Inbox Zero for Privacy, not Productivity](https://xn--gckvb8fzb.com/inbox-zero-for-privacy-not-productivity/)**
+Inbox Zero здесь рассматривается не как способ повысить продуктивность, а как практика защиты приватности. Её цель — устроить работу с почтой так, чтобы на почтовом сервере не оставалось данных, которые можно украсть.
+
+## А ещё
+
+- [Droid 1.0: Building a Frontier Harness | Factory](https://factory.com/news/frontier-harness)
+- [The sleep framework: A new way for LLMs to retain knowledge in continual learning](https://research.google/blog/the-sleep-framework-a-new-way-for-llms-to-retain-knowledge-in-continual-learning/)
+- [Introducing LFM3: Every Modality for Specialized Intelligence | Blog | Liquid AI](https://www.liquid.ai/blog/lfm3)
+- [Build Your Own Reasoning Model: A Full Video Course](https://magazine.sebastianraschka.com/p/building-reasoning-models)
+- [How do you Read it Later? | The Art Of Not Asking Why](https://taonaw.com/2026/10/26/how-do-you-read-it.html)
+- [How Cerebras Deploys Trillion-Parameter AI Models](https://www.cerebras.ai/blog/how-we-deploy-trillion-parameter-frontier-models-on-cerebras)
+- [The State of Context Engineering](https://www.dbreunig.com/2026/10/24/the-state-of-context-engineering.html)
+- [Какой язык лучше подходит для промптов? — Евгений Степанищев](https://bolknote.ru/all/kakoj-azyk-lucse-podhodit-dla-promptov)
+- [Keep Android Open](https://keepandroidopen.org/?)
+- [GrapheneOS: "@maya@gs.lexinova.eu @OmegaPolice@hachyderm.io @b…" - GrapheneOS Mastodon](https://grapheneos.social/@GrapheneOS/117492375462459244)
+- [UUIDv7 doesn't have the properties you think it does](https://alexsci.com/blog/uuidv7-is-weird/)
+- [Twelve years of distributed SQLite – Philip O'Toole](https://philipotoole.com/twelve-years-of-distributed-sqlite/)
+- [Tailscale SSH: Investigation and remediation update](https://tailscale.com/ssh-investigation-update)
+
+---
+
+За прошедшую неделю собрал 40 ссылок.
+
+Хорошей вам недели!
