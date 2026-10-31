@@ -1,0 +1,52 @@
+---
+title: "Ссылки #414"
+date: 2026-10-31T07:06:23+03:00
+image: https://static.juev.org/images/links.jpg
+tags:
+  - links
+---
+
+На этой неделе в подборке: Claude, формально доказавший безопасность 123 open-source библиотек, почтовый сервер Stalwart v1.0, обогнавший Postfix и Dovecot, расследование инцидента безопасности Tailscale SSH и двенадцать лет распределённого SQLite в rqlite.
+
+## 🤖 ИИ
+
+**[LLMs are making formal software verification feasible at a much larger scale \ Anthropic](https://www.anthropic.com/research/formal-verification)**
+Claude формально доказал свойства безопасности в скомпилированном коде 123 библиотек с открытым исходным кодом. В ходе проверки он обнаружил ошибки, которые годами оставались незамеченными.
+
+## 🖥️ Инфраструктура
+
+**[Stalwart v1.0: The Fastest Mail Server on the Planet | Stalwart](https://stalw.art/blog/stalwart-1-0/)**
+Stalwart v1.0 — первый стабильный выпуск почтового сервера после пяти лет разработки; в нём зафиксирована схема базы данных и переписан поисковый движок. По результатам тестирования с профилированием и нагрузочными испытаниями Stalwart показал более высокую производительность, чем Postfix и Dovecot, в 35 из 38 тестов.
+
+## 🔐 Безопасность
+
+**[Tailscale SSH: Investigation and remediation update](https://tailscale.com/ssh-investigation-update)**
+Обновление посвящено расследованию безопасности Tailscale SSH и ходу работ по устранению проблем. Также в нём говорится, что клиенты могут сделать сейчас, но конкретные меры и результаты в кратком описании не указаны.
+
+## 🗄️ Базы данных
+
+**[Twelve years of distributed SQLite – Philip O'Toole](https://philipotoole.com/twelve-years-of-distributed-sqlite/)**
+rqlite — проект, объявленный в 2014 году: он добавляет журнал Raft перед SQLite и реплицирует каждую запись между узлами кластера. Цель такого подхода — сохранить данные при потере узла, однако в исходном описании представлена идея проекта, а не результаты его дальнейшей работы.
+
+## А ещё
+
+- [GitHub - theconsensuslabs/noalloc: Tooling and libraries to enforce zero heap allocations in Golang · GitHub](https://github.com/theconsensuslabs/noalloc)
+- [Survival LLM](https://www.brangus.io/survival-llm)
+- [マリウス . Inbox Zero for Privacy, not Productivity](https://xn--gckvb8fzb.com/inbox-zero-for-privacy-not-productivity/)
+- [Build Your Own Reasoning Model: A Full Video Course](https://magazine.sebastianraschka.com/p/building-reasoning-models)
+- [GPT-6.1 Terra](https://simonwillison.net/2026/Oct/26/gpt-61-terra/)
+- [How do you Read it Later? | The Art Of Not Asking Why](https://taonaw.com/2026/10/26/how-do-you-read-it.html)
+- [How Cerebras Deploys Trillion-Parameter AI Models](https://www.cerebras.ai/blog/how-we-deploy-trillion-parameter-frontier-models-on-cerebras)
+- [The State of Context Engineering](https://www.dbreunig.com/2026/10/24/the-state-of-context-engineering.html)
+- [Какой язык лучше подходит для промптов? — Евгений Степанищев](https://bolknote.ru/all/kakoj-azyk-lucse-podhodit-dla-promptov)
+- [A coding agent’s harness can triple its cost without making it more accurate, study finds | VentureBeat](https://venturebeat.com/orchestration/a-coding-agents-harness-can-triple-its-cost-without-making-it-more-accurate-study-finds)
+- [Keep Android Open](https://keepandroidopen.org/?)
+- [GrapheneOS: "@maya@gs.lexinova.eu @OmegaPolice@hachyderm.io @b…" - GrapheneOS Mastodon](https://grapheneos.social/@GrapheneOS/117492375462459244)
+- [UUIDv7 doesn't have the properties you think it does](https://alexsci.com/blog/uuidv7-is-weird/)
+- [Jev Meets the Trolley Problem · Zach Landes](https://zachlandes.com/trolley-problem/)
+
+---
+
+За прошедшую неделю собрал 39 ссылок.
+
+Хорошей вам недели!
