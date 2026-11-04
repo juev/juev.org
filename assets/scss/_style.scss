@@ -78,6 +78,15 @@ table th, table td {
   font-variant-numeric: lining-nums tabular-nums;
 }
 
+/* Keep wide tables scrollable without stretching the page on narrow screens. */
+@media (max-width: 999px) {
+  .post table {
+    display: block;
+    overflow-x: auto;
+    box-sizing: border-box;
+  }
+}
+
 .post table th,
 .post table td {
   font-size: inherit;
