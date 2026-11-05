@@ -1097,11 +1097,64 @@ picture img {
   }
 }
 
-/* TOC sidebar */
+/* Article navigation: native disclosure on narrow screens, sidebar on wide ones. */
 .post-with-toc {
   position: relative;
 }
 
+.post-toc-inline {
+  margin: 0 0 1.5em;
+  padding: 0.6em 0.8em;
+  border: 1px solid var(--rule);
+  border-radius: 4px;
+  font-size: 0.9em;
+  line-height: 1.5;
+}
+
+.post-toc-inline summary {
+  cursor: pointer;
+  color: var(--text-2);
+  font-weight: 500;
+}
+
+.post-toc-inline nav {
+  margin-top: 0.6em;
+}
+
+.post-toc-inline ul,
+.post-toc ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.post-toc-inline ul ul,
+.post-toc ul ul {
+  padding-left: 1em;
+  margin-top: 0.2em;
+}
+
+.post-toc-inline a,
+.post-toc a {
+  color: var(--muted);
+  text-decoration: none;
+  display: block;
+  padding: 0.3em 0;
+  border: none;
+}
+
+.post-toc-inline a:hover,
+.post-toc a:hover,
+.post-toc a.active {
+  color: var(--brand);
+}
+
+.post-toc-inline summary:focus-visible,
+.post-toc-inline a:focus-visible,
+.post-toc a:focus-visible {
+  outline: 2px solid var(--brand);
+  outline-offset: 2px;
+}
 
 .post-toc {
   display: none;
@@ -1113,6 +1166,10 @@ picture img {
 }
 
 @media (min-width: 1280px) {
+  .post-toc-inline {
+    display: none;
+  }
+
   /* The TOC takes the left margin, the right one is for the notes. The 80px
      gap clears images and tables, which stick out of the column by 60px. */
   .post-toc {
@@ -1126,41 +1183,27 @@ picture img {
     line-height: 1.4;
   }
 
-  .post-toc nav {
+  .post-toc-inner {
     position: sticky;
     top: 20px;
     max-height: calc(100vh - 40px);
     overflow-y: auto;
   }
 
-  .post-toc #TableOfContents ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
+  .post-toc-title {
+    margin: 0 0 0.6em;
+    color: var(--text-2);
+    font-weight: 500;
   }
 
-  .post-toc #TableOfContents ul ul {
-    padding-left: 1em;
-    margin-top: 0.2em;
-  }
-
-  .post-toc #TableOfContents a {
-    color: var(--faint);
-    text-decoration: none;
-    display: block;
-    padding: 0.2em 0;
-    border: none;
+  .post-toc a {
+    padding: 0.2em 0 0.2em 0.5em;
+    border-left: 2px solid transparent;
     transition: color 0.2s;
   }
 
-  .post-toc #TableOfContents a:hover,
-  .post-toc #TableOfContents a.active {
-    color: var(--brand);
-  }
-
-  .post-toc #TableOfContents a.active {
-    border-left: 2px solid var(--brand);
-    padding-left: 0.5em;
+  .post-toc a.active {
+    border-left-color: var(--brand);
   }
 
   /* Floated out of the text column, as in Tufte CSS: the negative margin

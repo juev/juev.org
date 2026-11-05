@@ -17,16 +17,7 @@
     </p>
     {{- end }}
 </div>
-<div class="post-with-toc">
-    <div class="post{{ if in .Params.tags "links" }} weblinks{{ end }}">
-        {{ .Content }}
-    </div>
-    {{ if .TableOfContents }}{{ if findRE "<li>" .TableOfContents }}
-    <aside class="post-toc" id="post-toc" aria-label="Оглавление">
-        {{ .TableOfContents }}
-    </aside>
-    {{ end }}{{ end }}
-</div>
+{{ partial "post-content.html" . }}
 <div class="meta">
     {{ partial "nav.html" . }}
 </div>
