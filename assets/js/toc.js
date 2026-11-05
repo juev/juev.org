@@ -20,11 +20,10 @@
     var current = null;
 
     function onScroll() {
-      var scrollY = window.scrollY + 60;
       var active = null;
 
       for (var i = headings.length - 1; i >= 0; i--) {
-        if (headings[i].el.offsetTop <= scrollY) {
+        if (headings[i].el.getBoundingClientRect().top <= 60) {
           active = headings[i];
           break;
         }
@@ -33,12 +32,18 @@
       if (active === current) return;
       current = active;
 
-      links.forEach(function (l) { l.classList.remove('active'); });
-      if (active) active.link.classList.add('active');
+      links.forEach(function (l) {
+        l.classList.remove('active');
+        l.removeAttribute('aria-current');
+      });
+      if (active) {
+        active.link.classList.add('active');
+        active.link.setAttribute('aria-current', 'location');
+      }
     }
 
     var ticking = false;
-    window.addEventListener('scroll', function () {
+    function scheduleUpdate() {
       if (!ticking) {
         requestAnimationFrame(function () {
           onScroll();
@@ -46,7 +51,9 @@
         });
         ticking = true;
       }
-    }, { passive: true });
+    }
+    window.addEventListener('scroll', scheduleUpdate, { passive: true });
+    window.addEventListener('resize', scheduleUpdate);
 
     onScroll();
   }

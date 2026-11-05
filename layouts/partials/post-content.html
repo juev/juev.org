@@ -1,0 +1,25 @@
+{{- $content := .Content -}}
+{{- $sections := 0 -}}
+{{- range .Fragments.HeadingsMap -}}
+    {{- if eq .Level 2 }}{{ $sections = add $sections 1 }}{{ end -}}
+{{- end -}}
+{{- $showTOC := and (ge $sections 4) (ge .ReadingTime 5) -}}
+<div class="post-with-toc">
+    {{- if $showTOC }}
+    <details class="post-toc-inline">
+        <summary>В этой статье</summary>
+        {{ replace .TableOfContents `id="TableOfContents"` `id="TableOfContents-inline" aria-label="В этой статье"` | safeHTML }}
+    </details>
+    {{- end }}
+    <div class="post{{ if in .Params.tags "links" }} weblinks{{ end }}">
+        {{ $content }}
+    </div>
+    {{- if $showTOC }}
+    <aside class="post-toc" id="post-toc" aria-label="В этой статье">
+        <div class="post-toc-inner">
+            <p class="post-toc-title">В этой статье</p>
+            {{ .TableOfContents }}
+        </div>
+    </aside>
+    {{- end }}
+</div>
