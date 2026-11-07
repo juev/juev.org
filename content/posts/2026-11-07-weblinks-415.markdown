@@ -1,0 +1,46 @@
+---
+title: "Ссылки #415"
+date: 2026-11-07T07:13:19+03:00
+image: https://static.juev.org/images/links.jpg
+tags:
+  - links
+---
+
+На этой неделе в подборке: автономный конвейер OpenAI для уязвимостей ядра Linux, оптимизация сборки DNS-зон в Cloudflare, новый JSON API в Go 1.27 и LLM, которые читают и пишут веса нейросетей.
+
+## 🔐 Безопасность
+
+**[A thousand fewer paths to root | OpenAI](https://openai.com/index/a-thousand-fewer-paths-to-root)**
+В тексте сказано, что OpenAI создала автономный конвейер для поиска, проверки и подготовки исправлений уязвимостей повышения привилегий в ядре Linux. Он обнаружил 948 таких уязвимостей, но данных о применении подготовленных исправлений нет.
+
+## 🖥️ Инфраструктура
+
+**[How we halved DNS build delay and cut memory use by 85% | Cloudflare Blog](https://blog.cloudflare.com/dns-targeted-zone-builds/)**
+Планировщик DNS выбирает минимальную безопасную сборку зоны при изменении её настроек вместо пересборки всей зоны, включая зоны с десятками миллионов записей. Это сократило число полных сборок на 40%, пиковое потребление памяти — на 85%, а задержку сборки — вдвое.
+
+## 🤖 ИИ
+
+**[Sparks of Weight-Space Programming: LLMs can natively read & write neural network weights](https://rikiyat.github.io/blog/weight-space-programming/)**
+Современные большие языковые модели способны читать и записывать веса нейросетей напрямую, без сведения этой работы к обычному программированию. Статья описывает эксперименты с разными инструментами и алгоритмами, а также с непосредственным редактированием весов.
+
+## А ещё
+
+- [A new Go API for JSON - The Go Programming Language](https://go.dev/blog/jsonv2)
+- [Hex: voice dictation for Mac, Windows, and Linux](https://anoma.ly/hex/)
+- [How to build evidence-grounded agent memory with OpenWiki and Graphs](https://www.langchain.com/blog/building-agent-memory-openwiki-graphs)
+- [Worktrunk — Git worktree management for parallel AI agent workflows](https://worktrunk.dev/)
+- [You don't need long context | alphaXiv](https://www.alphaxiv.org/abs/2611.05306)
+- [Making your site visible to LLMs and AI agents: 6 techniques that work, 8 that don't—Martian Chronicles, Evil Martians’ team blog](https://evilmartians.com/chronicles/how-to-make-your-website-visible-to-llms)
+- [Building agents: When to fold subagents into your main agent loop | Claude by Anthropic](https://claude.com/resources/articles/building-agents-when-to-fold-subagents-into-your-main-agent-loop)
+- [Vivaldi 8.3 for Desktop: make bad ads sad | Vivaldi Browser](https://vivaldi.com/blog/vivaldi-on-desktop-8-3/)
+- [GitHub - deepseek-ai/dsh-superagent-prototype: Towards a More Autonomous Agent System · GitHub](https://github.com/deepseek-ai/dsh-superagent-prototype)
+- [GitHub - google-research/timesfm: TimesFM (Time Series Foundation Model) is a pretrained time-series foundation model developed by Google Research for time-series forecasting. · GitHub](https://github.com/google-research/timesfm)
+- [Scaling Git at OpenAI | OpenAI](https://openai.com/index/scaling-git-at-openai)
+- [AI agent swarms unleashed in Minecraft to ‘build a thriving civilization’ — 50-agent teams fail after falling into paralyzing bureaucracy | Tom's Hardware](https://www.tomshardware.com/tech-industry/artificial-intelligence/ai-agent-swarms-unleashed-in-minecraft-to-build-a-thriving-civilization-50-agent-teams-fail-after-falling-into-paralyzing-bureaucracy)
+- [Prospero: a new coding harness for a more civilized age](https://nullprogram.com/blog/2026/10/31/)
+
+---
+
+За прошедшую неделю собрал 30 ссылок.
+
+Хорошей вам недели!
