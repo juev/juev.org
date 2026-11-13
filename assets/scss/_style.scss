@@ -10,7 +10,7 @@ html.wf-loading * {
 body
 {
   border-top:3px solid var(--brand);
-  font:440 18px/27px Alegreya, 'Alegreya Fallback', serif;
+  font:var(--w-body) 18px/27px Alegreya, 'Alegreya Fallback', serif;
   color:var(--text) !important;
   background:var(--bg);
 }
@@ -42,7 +42,7 @@ table {
 
 caption {
   display: table-caption;
-  font-weight: 700; }
+  font-weight: var(--w-strong); }
 
 col {
   display: table-column; }
@@ -106,7 +106,7 @@ table tfoot {
   border-top: 2px solid var(--rule); }
 
 dt, th {
-  font-weight: 700; }
+  font-weight: var(--w-strong); }
 
 table tr:nth-child(odd), table th:nth-child(odd), table td:nth-child(odd) {
   background: var(--stripe-odd); }
@@ -116,7 +116,7 @@ table tr:nth-child(even), table td:nth-child(even) {
 
 caption.t-above { caption-side: top; }
 caption.t-bottom { caption-side: bottom; }
-th { font-weight: bold; }
+th { font-weight: var(--w-strong); }
 td, th { vertical-align:top;
   padding-left: 20px;
   padding-right: 20px;}
@@ -286,7 +286,7 @@ body.wide
 
 strong
 {
-  font-weight: bold;
+  font-weight: var(--w-strong);
 }
 
 .primary-content
@@ -296,7 +296,7 @@ strong
     .allpostsmeta a
     {
         color:var(--rule)!important;
-        font-weight:700;
+        font-weight:var(--w-head);
         font-size:28px!important;
         font-family:'Alegreya SC', 'Alegreya SC Fallback', serif!important;
         text-transform:lowercase
@@ -516,7 +516,7 @@ p.message
 {
   background-color:#fee;
   color:#900;
-  font-weight:700
+  font-weight:var(--w-strong)
 }
 
 pre
@@ -683,14 +683,14 @@ sup:has(.footnote-ref)
 {
   border-bottom:none;
   text-decoration:none!important;
-  font-weight:500
+  font-weight:var(--w-medium)
 }
 
 /* Small caps: lowercase text set in Alegreya SC */
 h1,h2,h3,h4,h5,h6
 {
   font-family: 'Alegreya SC', 'Alegreya SC Fallback', serif;
-  font-weight:700;
+  font-weight:var(--w-head);
   text-transform:lowercase;
   margin-top:1em;
   margin-bottom:1em;
@@ -801,7 +801,7 @@ h3.title
 .date
 {
   display:inline-block;
-  font-weight:bold;
+  font-weight:var(--w-strong);
   font-size:8pt;
 }
 
@@ -1114,7 +1114,7 @@ picture img {
 .post-toc-inline summary {
   cursor: pointer;
   color: var(--text-2);
-  font-weight: 500;
+  font-weight: var(--w-medium);
 }
 
 .post-toc-inline nav {
@@ -1193,7 +1193,7 @@ picture img {
   .post-toc-title {
     margin: 0 0 0.6em;
     color: var(--text-2);
-    font-weight: 500;
+    font-weight: var(--w-medium);
   }
 
   .post-toc a {
@@ -1219,7 +1219,7 @@ picture img {
     font-size: 15px;
     line-height: 1.45;
     font-style: normal;
-    font-weight: 440;
+    font-weight: var(--w-body);
     color: var(--text-2);
     text-align: left;
     hyphens: auto;

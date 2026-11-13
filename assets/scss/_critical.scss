@@ -19,6 +19,13 @@
   --link-hover-bg: #1c2533;
   --accent: #e0928c;
   --brand: #e0823f;
+  /* Light glyphs on a dark ground bloom and read bolder than they are,
+     so the dark weights run lighter. Alegreya SC ships only 500 and 700:
+     --w-head snaps to the nearest of those two. */
+  --w-body: 400;
+  --w-medium: 420;
+  --w-strong: 520;
+  --w-head: 500;
 }
 
 :root {
@@ -37,6 +44,10 @@
   --link-hover-bg: #f0f7ff;
   --accent: #660000;
   --brand: #BC5007;
+  --w-body: 400;
+  --w-medium: 450;
+  --w-strong: 600;
+  --w-head: 500;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -57,7 +68,7 @@ html, body.wide {
 
 body {
   border-top: 3px solid var(--brand);
-  font: 440 18px/27px Alegreya, 'Alegreya Fallback', serif;
+  font: var(--w-body) 18px/27px Alegreya, 'Alegreya Fallback', serif;
   color: var(--text) !important;
   background: var(--bg);
 }
