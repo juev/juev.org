@@ -1,0 +1,46 @@
+---
+title: "Ссылки #416"
+date: 2026-11-14T07:08:41+03:00
+image: https://static.juev.org/images/links.jpg
+tags:
+  - links
+---
+
+На этой неделе в подборке: формальная верификация протокола Signal в Lean, разбор личного графа знаний Apple, долгоживущие агенты и durable execution и колоночное хранение в DuckDB.
+
+## 🔐 Безопасность
+
+**[Formal Verification of Signal’s Protocol with Gemini — Google DeepMind](https://deepmind.google/blog/introducing-alphaproof-code/)**
+AlphaProof Code использовали для формальной проверки основных криптографических механизмов Signal: агенты создали в Lean более трёх миллионов строк доказательств, проверенных машиной. Проверка охватывает защиту протокола вплоть до машинных инструкций.
+
+## 🔍 Приватность
+
+**[Anatomy of Apple's Personal Knowledge Graph — Eighth Rank](https://8rank.ai/game/apple-intelligence-personal-knowledge-graph)**
+Разбор предполагаемой системы Apple, которая строит граф личных связей, общения, мест и занятий пользователя. В статье исследуются два фоновых процесса, присутствующих, по утверждению источника, на Mac с macOS 13 и новее, и предлагается инструмент для просмотра собственного графа.
+
+## 🗄️ Базы данных
+
+**[Ducks in a Column – DuckDB](https://duckdb.org/2026/11/10/ducks-in-a-column)**
+Колонное хранение ускоряет DuckDB: запрос считывает только те столбцы, которые в нём указаны. Разбор показывает, как эта особенность используется при запросах к файлам на месте, в SQL на уровне столбцов, агрегатах, оконных функциях, соединениях ASOF и подготовке хорошо организованных файлов Parquet.
+
+## А ещё
+
+- [Long-horizon agents and durable execution](https://martinfowler.com/articles/durable-execution-agents.html)
+- [GitHub - FrigadeHQ/yogurt: Private AI meeting notes. Free and open source. · GitHub](https://github.com/FrigadeHQ/yogurt)
+- [Release: llm-gemini 0.37](https://simonwillison.net/2026/Nov/12/llm-gemini/)
+- [Amazon saves millions by replacing Sonnet 4.6 with Strands Decider | Strands Agents](https://strandsagents.com/blog/amazon-saves-millions-replacing-sonnet-with-strands-decider/)
+- [Atuin Threads: All your agent sessions on every machine](https://blog.atuin.sh/threads-agent-sessions/)
+- [Protecting SSH Keys with macOS Secure Enclave (Native Approach) | Serge Gatezh](https://gatezh.com/posts/macos-secure-enclave-ssh-keys/)
+- [Knowledge Graphs - Tim Kellogg](https://timkellogg.me/blog/2026/11/11/knowlege-graphs)
+- [Who Else Gives a F*ck? | Vals AI](https://www.vals.ai/blogs/which-models-swear)
+- [Fable 5.2 and Jagged AGI - by Ethan Mollick](https://www.oneusefulthing.org/p/fable-52-and-jagged-agi?r=57j98&triedRedirect=true)
+- [GitHub - CodeAlive-AI/pragmatic-orchestration: Pragmatic multi-agent orchestration: independent review and steerable delegation across Codex, Claude Code, OpenCode, Grok Build, Gemini, and Devin CLI — porch CLI + Agent Skills · GitHub](https://github.com/CodeAlive-AI/pragmatic-orchestration)
+- [Hide your slop PR descriptions behind &lt;details&gt;&lt;summary&gt;](https://simonwillison.net/2026/Nov/9/details-summary/)
+- [GitHub - bropines/tailsocks: Unofficial Tailscale client for Android — SOCKS5/HTTP proxy, TUN VPN or root routing, exit nodes, Taildrop, Taildrive, Serve & Funnel, multiple accounts, Headscale, built-in DPI bypass. · GitHub](https://github.com/bropines/tailsocks)
+- [Even my keyboard is built reproducibly | F-Droid - Free and Open Source Android App Repository](https://f-droid.org/en/2025/03/04/even-my-keyboard-is-built-reproducibly.html)
+
+---
+
+За прошедшую неделю собрал 37 ссылок.
+
+Хорошей вам недели!
