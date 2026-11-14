@@ -619,6 +619,10 @@ a#license
 .footnotes p
 {
   margin: 0.3em 0;
+  /* A note cited many times, or one holding a long URL, is a single
+     unbreakable run (Goldmark puts &#160; before every ↩︎), and it widened the
+     page past the viewport. Breaking inside it keeps the column. */
+  overflow-wrap: anywhere;
 }
 
 sup:has(.footnote-ref)
