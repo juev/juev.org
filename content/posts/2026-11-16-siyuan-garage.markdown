@@ -304,7 +304,8 @@ backup, вариант Decrypted. Внутри один JSON со всеми о�
 - `sy.py` — минимальный клиент API SiYuan.
 - `strip_yaml.py` убирает блоки front matter, которые SiYuan оставляет после
   импорта.
-- `verify.py` сверяет импорт с бэкапом: заголовки, даты создания и изменения, теги.
+- `verify.py` сверяет импорт с бэкапом: заголовки, даты создания и изменения,
+  теги и текст. Каждое слово заметки должно найтись в документе SiYuan.
 
 SiYuan при импорте Markdown читает из front matter `title`, `date` (из него
 получается время создания), `lastmod` (время изменения) и `tags`. Время в
@@ -520,9 +521,11 @@ class Converter:
         return "\n".join(out)
 
     def code(self, n):
-        text = "".join(
-            "\n" if c.get("type") == "linebreak" else "\t" if c.get("type") == "tab" else c.get("text", "")
-            for c in n.get("children", []))
+        # URLs inside code are autolink nodes whose text lives in their children.
+        def flat(kids):
+            return "".join("\n" if c.get("type") == "linebreak" else "\t" if c.get("type") == "tab"
+                           else c.get("text", "") + flat(c.get("children", [])) for c in kids)
+        text = flat(n.get("children", []))
         fence = "`" * max(3, max((len(m) for m in re.findall(r"`{3,}", text)), default=0) + 1)
         return f"{fence}{n.get('language') or ''}\n{text}\n{fence}"
 
@@ -747,11 +750,13 @@ print("deleted", deleted, "of", len(rows), "| updated restored", restored)
 
 ```python
 """Compare an imported SiYuan notebook with the Standard Notes backup: verify.py BACKUP_JSON NOTEBOOK_ID"""
-import json, sys, collections as C
+import json, re, sys, collections as C
 from datetime import datetime
 from sy import api
 items = json.load(open(sys.argv[1]))["items"]; box = sys.argv[2]
 def loc(iso): return datetime.fromisoformat(iso.replace("Z", "+00:00")).astimezone().strftime("%Y%m%d%H%M%S")
+def text(n): return (n.get("text") or "") + " " + " ".join(text(k) for k in n.get("children") or [])
+WORD = re.compile(r"\w{3,}")
 notes = [i for i in items if i["content_type"] == "Note" and not i["content"].get("trashed") and not i.get("deleted")]
 tags = C.defaultdict(set)
 for t in (i for i in items if i["content_type"] == "Tag"):
@@ -773,7 +778,13 @@ for n in notes:
     if d["updated"] != loc(upd): bad.append(("updated", title, d["updated"], loc(upd)))
     got = set(a for a in (d["ial"].split('tags="')[1].split('"')[0].split(",") if 'tags="' in d["ial"] else []) if a)
     if got != tags.get(n["uuid"], set()): bad.append(("tags", title, got, tags.get(n["uuid"])))
-print("mismatches:", len(bad)); [print("  ", b) for b in bad[:15]]
+    # every word of the note must reach SiYuan; escapes are dropped before counting
+    if (c.get("text") or "").strip():
+        src = C.Counter(WORD.findall(text(json.loads(c["text"])["root"]).lower()))
+        lost = min(({w: k - got[w] for w, k in src.items() if got[w] < k} for got in (C.Counter(WORD.findall(
+            api("/api/export/exportMdContent", {"id": x["id"]})["content"].lower().replace("\\", ""))) for x in cand)), key=len)
+        if lost: bad.append(("lost words", title, sum(lost.values()), list(lost)[:5]))
+print("mismatches:", len(bad), dict(C.Counter(b[0] for b in bad))); [print("  ", b) for b in bad]
 yaml_left = api("/api/query/sql", {"stmt": f"SELECT root_id, substr(content,1,50) c FROM blocks WHERE box='{box}' AND type='c' AND content LIKE '---' || char(10) || 'title:%'"})
 print("front-matter blocks left:", yaml_left)
 assets = api("/api/query/sql", {"stmt": f"SELECT count(DISTINCT a.path) n FROM assets a WHERE a.box='{box}'"})
@@ -806,6 +817,9 @@ print("distinct assets referenced:", assets)
   жирный текст, код в строке, ссылка), такие абзацы идут в SiYuan как есть.
   Одиночный `#` признаком не считается: так часто начинаются комментарии в
   командах shell.
+- В одной заметке из команд пропали URL. Внутри блока кода Lexical хранит URL
+  отдельным узлом, и его текст лежит уровнем ниже, а конвертер брал текст только
+  у непосредственных узлов. Такую потерю находит сверка текста в `verify.py`.
 
 Сначала я перенёс восемь разных заметок в пробный блокнот и проверил их глазами.
 Потом удалил его и импортировал всё.
