@@ -394,6 +394,21 @@ def code_span(text):
     return "`" * ticks + pad + text + pad + "`" * ticks
 
 
+# Markdown pasted into a Super note as plain text: headings from ## (a lone # is
+# usually a shell comment), table separator rows, fences, bold, code spans, links.
+MARKDOWN_SIGN = re.compile(r"^#{2,6} \S|^\|?\s*:?-{3,}:?\s*(?:\|\s*:?-{3,}:?\s*)+\|?\s*$|^```"
+                           r"|\*\*\S(?:[^*\n]*\S)?\*\*|`[^`\n]+`|\[[^\]\n]+\]\([^)\s]+\)", re.M)
+
+
+def plain_text(n):
+    """Text of a paragraph made only of unformatted text, otherwise None."""
+    kids = n.get("children", [])
+    if n.get("type") != "paragraph" or any(
+            k.get("type") not in ("text", "linebreak", "tab") or k.get("format") for k in kids):
+        return None
+    return "".join({"linebreak": "\n", "tab": "\t"}.get(k["type"], k.get("text", "")) for k in kids)
+
+
 class Converter:
     def __init__(self, assets):
         self.assets = assets          # fileUuid -> (asset path, name, mime)
@@ -535,8 +550,22 @@ class Converter:
         return self.inline(n.get("children", [])) or None
 
     def document(self, root):
-        blocks = [self.block(b) for b in root.get("children", [])]
-        return "\n\n".join(b for b in blocks if b)
+        kids = root.get("children", [])
+        plain = [plain_text(b) for b in kids]
+        if len(MARKDOWN_SIGN.findall("\n".join(p for p in plain if p is not None))) < 2:
+            blocks = [self.block(b) for b in kids]
+            return "\n\n".join(b for b in blocks if b)
+        # Pasted Markdown keeps one source line per paragraph, so a run of plain
+        # paragraphs is the original text and goes out unescaped.
+        parts, run = [], []
+        for b, p in zip(kids, plain):
+            if p is not None:
+                run.append(p)
+                continue
+            parts += ["\n".join(run).strip("\n"), self.block(b)]
+            run = []
+        parts.append("\n".join(run).strip("\n"))
+        return "\n\n".join(p for p in parts if p and p.strip())
 
 
 def decrypt(item, enc_dir):
@@ -769,6 +798,14 @@ print("distinct assets referenced:", assets)
   проще достать через `zipfile` в Python.
 - Ссылки без адреса в исходных заметках становятся обычным текстом. У меня такие
   были в заметках, вставленных из ответов чат-бота.
+- В части заметок лежал Markdown, вставленный в Super обычным текстом: каждая
+  строка — отдельный абзац, `### заголовок`, строки таблицы, `**жирный**`.
+  Standard Notes показывал его буквально, и первая версия конвертера тоже его
+  экранировала. Теперь, если в неформатированных абзацах заметки есть хотя бы
+  два признака Markdown (заголовок от `##`, разделитель таблицы, блок кода,
+  жирный текст, код в строке, ссылка), такие абзацы идут в SiYuan как есть.
+  Одиночный `#` признаком не считается: так часто начинаются комментарии в
+  командах shell.
 
 Сначала я перенёс восемь разных заметок в пробный блокнот и проверил их глазами.
 Потом удалил его и импортировал всё.
