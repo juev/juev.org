@@ -143,12 +143,95 @@ public_endpoint = "https://s3.example.org"
 ```
 
 Регион обязателен, и в нём не должно быть подчёркивания: с регионом `zh_cn`
-SiYuan после обновления SDK перестал подключаться[^region]. Сервис в Docker
-Compose запускается командой `/garage server --single-node`. При первом старте
-флаг создаёт layout, при следующих ничего не меняет. Наружу S3 смотрит через
-Caddy с обычным `reverse_proxy` на порт 3900.
+SiYuan после обновления SDK перестал подключаться[^region]. Адресация только
+path-style, поэтому `root_domain` и wildcard-сертификат не нужны.
 
-Ключ и бакет создаются командами внутри контейнера:
+### Запуск
+
+Garage работает в Docker Compose. Каталог проекта выглядит так:
+
+```text
+garage/
+├── compose.yaml
+├── garage.env
+├── config/
+│   └── garage.toml
+├── meta/
+└── data/
+```
+
+`compose.yaml`:
+
+```yaml
+services:
+  garage:
+    image: dxflrs/garage:v2.5.0
+    container_name: garage
+    restart: unless-stopped
+    command: ["/garage", "server", "--single-node"]
+    env_file: garage.env
+    environment:
+      GARAGE_CONFIG_FILE: /etc/garage/garage.toml
+    volumes:
+      - ./config:/etc/garage:ro
+      - ./meta:/var/lib/garage/meta
+      - ./data:/var/lib/garage/data
+    healthcheck:
+      test: ["CMD", "/garage", "status"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+    networks:
+      - default
+      - caddy
+
+networks:
+  caddy:
+    external: true
+```
+
+Порты контейнер наружу не публикует: S3 доступен только через Caddy, а порт
+RPC 3901 нужен самому Garage внутри контейнера. Конфиг смонтирован каталогом,
+а не отдельным файлом. Если монтировать файл, а потом заменить его на хосте
+редактором или `git checkout`, контейнер продолжит видеть старую версию.
+
+Флаг `--single-node` появился в 2.3.0. При первом старте он создаёт layout из
+одного узла, при следующих ничего не меняет. На более старых версиях layout
+задают вручную командами `garage layout assign` и `garage layout apply`.
+
+Секрет RPC — 32 случайных байта в hex:
+
+```bash
+printf 'GARAGE_RPC_SECRET=%s\n' "$(openssl rand -hex 32)" > garage.env
+chmod 600 garage.env
+```
+
+В Caddy достаточно одного блока. Caddy и Garage должны быть в общей внешней
+сети `caddy`, её создают один раз командой `docker network create caddy`:
+
+```text
+s3.example.org {
+    reverse_proxy garage:3900
+}
+```
+
+DNS-записи для домена указывают прямо на сервер, без CDN-прокси. Через прокси
+Cloudflare у пользователей SiYuan запросы к S3 ломались на проверке подписи с
+ошибкой `SignatureDoesNotMatch`[^cloudflare].
+
+Запуск и проверка:
+
+```bash
+docker compose up -d --wait
+docker exec garage /garage status
+```
+
+В журнале первого старта появляется строка `Created initial layout for
+single-node configuration`. `garage status` показывает один узел в разделе
+`HEALTHY NODES`, его ёмкость и свободное место на диске.
+
+Ключ и бакет создаются командами внутри контейнера. `key create` печатает
+`Key ID` и `Secret key`, их потом вводят в SiYuan:
 
 ```bash
 docker exec garage /garage key create siyuan
@@ -313,6 +396,7 @@ Standard Notes пока продолжает работать на сервер�
 [^minio]: [minio/minio](https://github.com/minio/minio), репозиторий в статусе archived.
 [^garage]: [Garage v2.5.0](https://git.deuxfleurs.fr/Deuxfleurs/garage/releases/tag/v2.5.0), заметки к релизу.
 [^replication]: [Configuration file format](https://garagehq.deuxfleurs.fr/documentation/reference-manual/configuration/), описание `replication_factor`.
+[^cloudflare]: [Issue #14223](https://github.com/siyuan-note/siyuan/issues/14223), ошибка `SignatureDoesNotMatch` при S3 за прокси Cloudflare.
 [^region]: [Issue #16550](https://github.com/siyuan-note/siyuan/issues/16550), ошибка подключения к S3 после обновления SDK.
 [^switch]: [Issue #19636](https://github.com/siyuan-note/siyuan/issues/19636), смена источника синхронизации с подтверждением.
 [^decryptor]: [FileDecryptor.ts](https://github.com/standardnotes/app/blob/main/packages/files/src/Domain/UseCase/FileDecryptor.ts), расшифровка файлов в клиенте Standard Notes.
