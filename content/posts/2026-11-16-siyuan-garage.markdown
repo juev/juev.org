@@ -291,5 +291,5 @@ Standard Notes пока продолжает работать на сервер�
 [^region]: [Issue #16550](https://github.com/siyuan-note/siyuan/issues/16550), ошибка подключения к S3 после обновления SDK.
 [^switch]: [Issue #19636](https://github.com/siyuan-note/siyuan/issues/19636), смена источника синхронизации с подтверждением.
 [^decryptor]: [FileDecryptor.ts](https://github.com/standardnotes/app/blob/main/packages/files/src/Domain/UseCase/FileDecryptor.ts), расшифровка файлов в клиенте Standard Notes.
-[^gist]: [Скрипты переноса Standard Notes → SiYuan](https://gist.github.com/juev/TODO).
+[^gist]: [Скрипты переноса Standard Notes → SiYuan](https://gist.github.com/juev/56fa37b7bf70b708f245e0944f6d7a8a).
 [^yaml]: [Issue #16488](https://github.com/siyuan-note/siyuan/issues/16488), YAML в начале Markdown импортируется блоком кода.
