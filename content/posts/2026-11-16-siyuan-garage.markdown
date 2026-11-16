@@ -328,6 +328,431 @@ python3 strip_yaml.py <id>
 python3 verify.py backup.json <id>
 ```
 
+Исходный код тот же, что в gist[^gist]. Его можно раскрыть прямо здесь.
+
+<details>
+<summary>sn2siyuan.py — конвертер бэкапа</summary>
+
+```python
+"""Convert a decrypted Standard Notes backup (Super notes) into Markdown for SiYuan import.
+
+Usage: sn2siyuan.py BACKUP_JSON ENC_DIR OUT_DIR [--only uuid-prefix,...]
+
+- Notes in the trash are skipped.
+- Super (Lexical JSON) is rendered to Markdown; front matter carries title,
+  date (creation, local time), lastmod (client update, local time) and tags.
+- Files are decrypted from ENC_DIR/<remoteIdentifier> (libsodium secretstream,
+  associated data = remoteIdentifier) into OUT_DIR/<notebook>/assets/.
+- Files not linked to any kept note go to one document "Файлы без заметок".
+"""
+import base64
+import json
+import re
+import sys
+import unicodedata
+from datetime import datetime
+from pathlib import Path
+
+from nacl import bindings as sodium
+
+NOTEBOOK = "Standard Notes"
+ORPHANS_TITLE = "Файлы без заметок"
+FORMATS = [(16, "`", "`"), (1, "**", "**"), (2, "*", "*"), (4, "~~", "~~"),
+           (8, "<u>", "</u>"), (128, "==", "=="), (32, "<sub>", "</sub>"), (64, "<sup>", "</sup>")]
+warnings = []
+
+
+def local_time(iso):
+    return datetime.fromisoformat(iso.replace("Z", "+00:00")).astimezone().strftime("%Y-%m-%d %H:%M:%S")
+
+
+def safe_name(name, fallback="file"):
+    name = unicodedata.normalize("NFC", name or "").strip()
+    name = re.sub(r"[^\w.\-]+", "_", name, flags=re.UNICODE).strip("._") or fallback
+    return name[:120]
+
+
+ESCAPE = re.compile(r"([\\`*_\[\]<>~$^|#])")
+
+
+def escape_text(text):
+    text = ESCAPE.sub(r"\\\1", text)
+    return text.replace("==", r"\=\=").replace("((", r"\(\(").replace("{{", r"\{\{")
+
+
+LINE_START = re.compile(r"^(\s*)([-+>]|\d+[.)])(?=\s|$)", re.M)
+
+
+def protect_line_starts(text):
+    return LINE_START.sub(lambda m: m.group(1) + m.group(2).replace(".", r"\.").replace(")", r"\)") if m.group(2)[0].isdigit()
+                          else m.group(1) + "\\" + m.group(2), text)
+
+
+def code_span(text):
+    ticks = max((len(m) for m in re.findall(r"`+", text)), default=0) + 1
+    pad = " " if text.startswith("`") or text.endswith("`") else ""
+    return "`" * ticks + pad + text + pad + "`" * ticks
+
+
+class Converter:
+    def __init__(self, assets):
+        self.assets = assets          # fileUuid -> (asset path, name, mime)
+        self.embedded = set()
+
+    def inline(self, nodes):
+        # Adjacent text runs with the same outer formatting (everything but code)
+        # are wrapped once, otherwise **a** + **`b`** renders as **a****`b`**.
+        groups = []
+        for n in nodes:
+            if n.get("type") in ("text", "hashtag"):
+                outer = (n.get("format") or 0) & ~16
+                if groups and isinstance(groups[-1], list) and groups[-1][0] == outer:
+                    groups[-1][1].append(n)
+                else:
+                    groups.append([outer, [n]])
+            else:
+                groups.append(n)
+        out = []
+        for n in groups:
+            if isinstance(n, list):
+                fmt, runs = n
+                s = "".join(code_span(r.get("text", "")) if (r.get("format") or 0) & 16
+                            else escape_text(r.get("text", "")) for r in runs)
+                # keep surrounding spaces outside of emphasis markers
+                lead, core, trail = re.match(r"^(\s*)(.*?)(\s*)$", s, re.S).groups()
+                if core:
+                    for bit, a, b in FORMATS:
+                        if bit != 16 and fmt & bit:
+                            core = a + core + b
+                out.append(lead + core + trail)
+                continue
+            t = n.get("type")
+            if t == "code-highlight":
+                out.append(code_span(n.get("text", "")))
+            elif t == "linebreak":
+                out.append("\n")
+            elif t == "tab":
+                out.append("\t")
+            elif t in ("link", "autolink"):
+                url = (n.get("url") or "").strip()
+                label = self.inline(n.get("children", [])) or escape_text(url)
+                out.append(f"[{label}](<{url}>)" if url else label)
+            elif t == "snfile":
+                out.append(self.file_ref(n.get("fileUuid")))
+            elif t == "unencrypted-image":
+                out.append(f"![{escape_text(n.get('alt', ''))}](<{n.get('src', '')}>)")
+            elif t == "paragraph":
+                out.append(self.inline(n.get("children", [])) + "\n")
+            elif t == "code":
+                out.append("\n" + self.code(n) + "\n")
+            else:
+                warnings.append(f"inline node {t}")
+                out.append(self.inline(n.get("children", [])))
+        return "".join(out)
+
+    def file_ref(self, uuid):
+        if uuid not in self.assets:
+            warnings.append(f"missing file {uuid}")
+            return ""
+        self.embedded.add(uuid)
+        path, name, mime = self.assets[uuid]
+        return f"{'!' if mime.startswith('image/') else ''}[{escape_text(name)}](<{path}>)"
+
+    def paragraph(self, n):
+        text = self.inline(n.get("children", [])).strip("\n")
+        return protect_line_starts(text).lstrip(" ") if text.strip() else None
+
+    def list_block(self, n, depth=0):
+        lines, typ, num = [], n.get("listType"), n.get("start", 1) or 1
+        pad = "    " * depth
+        for item in n.get("children", []):
+            kids = item.get("children", [])
+            if kids and all(k.get("type") == "list" for k in kids):
+                for k in kids:
+                    lines.extend(self.list_block(k, depth + 1))
+                continue
+            if typ == "number":
+                marker = f"{num}. "
+                num += 1
+            elif typ == "check":
+                marker = "- [x] " if item.get("checked") else "- [ ] "
+            else:
+                marker = "- "
+            inline_kids = [k for k in kids if k.get("type") != "list"]
+            text = protect_line_starts(self.inline(inline_kids).strip("\n")) or "​"
+            body = text.split("\n")
+            lines.append(pad + marker + body[0])
+            lines.extend(pad + " " * len(marker) + b for b in body[1:])
+            for k in kids:
+                if k.get("type") == "list":
+                    lines.extend(self.list_block(k, depth + 1))
+        return lines
+
+    def table(self, n):
+        rows = []
+        for r in n.get("children", []):
+            cells = []
+            for c in r.get("children", []):
+                parts = [self.inline(p.get("children", [])) for p in c.get("children", [])]
+                cells.append("<br>".join(p.replace("\n", "<br>") for p in parts if p.strip()) or " ")
+            rows.append(cells)
+        if not rows:
+            return None
+        width = max(len(r) for r in rows)
+        rows = [r + [" "] * (width - len(r)) for r in rows]
+        out = ["| " + " | ".join(rows[0]) + " |", "|" + " --- |" * width]
+        out += ["| " + " | ".join(r) + " |" for r in rows[1:]]
+        return "\n".join(out)
+
+    def code(self, n):
+        text = "".join(
+            "\n" if c.get("type") == "linebreak" else "\t" if c.get("type") == "tab" else c.get("text", "")
+            for c in n.get("children", []))
+        fence = "`" * max(3, max((len(m) for m in re.findall(r"`{3,}", text)), default=0) + 1)
+        return f"{fence}{n.get('language') or ''}\n{text}\n{fence}"
+
+    def block(self, n):
+        t = n.get("type")
+        if t == "paragraph":
+            return self.paragraph(n)
+        if t == "heading":
+            text = self.inline(n.get("children", [])).replace("\n", " ").strip()
+            return "#" * int(n.get("tag", "h1")[1]) + " " + text if text else None
+        if t == "quote":
+            text = protect_line_starts(self.inline(n.get("children", [])).strip("\n"))
+            return "\n".join("> " + l for l in text.split("\n")) if text.strip() else None
+        if t == "code":
+            return self.code(n)
+        if t == "list":
+            return "\n".join(self.list_block(n))
+        if t == "table":
+            return self.table(n)
+        if t == "horizontalrule":
+            return "---"
+        if t in ("snfile", "unencrypted-image"):
+            return self.inline([n])
+        warnings.append(f"block node {t}")
+        return self.inline(n.get("children", [])) or None
+
+    def document(self, root):
+        blocks = [self.block(b) for b in root.get("children", [])]
+        return "\n\n".join(b for b in blocks if b)
+
+
+def decrypt(item, enc_dir):
+    f = item["content"]
+    data = (enc_dir / f["remoteIdentifier"]).read_bytes()
+    state = sodium.crypto_secretstream_xchacha20poly1305_state()
+    sodium.crypto_secretstream_xchacha20poly1305_init_pull(
+        state, base64.b64decode(f["encryptionHeader"]), bytes.fromhex(f["key"]))
+    parts, pos = [], 0
+    for size in f["encryptedChunkSizes"]:
+        msg, _ = sodium.crypto_secretstream_xchacha20poly1305_pull(
+            state, data[pos:pos + size], f["remoteIdentifier"].encode())
+        parts.append(msg)
+        pos += size
+    plain = b"".join(parts)
+    if len(plain) != f["decryptedSize"]:
+        raise ValueError(f"size mismatch for {f['name']}")
+    return plain
+
+
+def front_matter(title, created, updated, tags):
+    lines = ["---", f"title: {json.dumps(title, ensure_ascii=False)}",
+             f'date: "{created}"', f'lastmod: "{updated}"']
+    if tags:
+        lines.append("tags: " + json.dumps(sorted(tags), ensure_ascii=False))
+    return "\n".join(lines + ["---", ""])
+
+
+def main():
+    backup, enc_dir, out_dir = Path(sys.argv[1]), Path(sys.argv[2]), Path(sys.argv[3])
+    only = sys.argv[sys.argv.index("--only") + 1].split(",") if "--only" in sys.argv else None
+    items = json.loads(backup.read_text())["items"]
+    notes = [i for i in items if i["content_type"] == "Note" and not i.get("deleted")
+             and not i["content"].get("trashed")]
+    if only:
+        notes = [n for n in notes if any(n["uuid"].startswith(p) for p in only)]
+    keep = {n["uuid"] for n in notes}
+    tags = {}
+    for t in (i for i in items if i["content_type"] == "Tag" and not i.get("deleted")):
+        for r in t["content"].get("references", []):
+            if r.get("content_type") == "Note":
+                tags.setdefault(r["uuid"], set()).add(t["content"]["title"])
+
+    book = out_dir / NOTEBOOK
+    (book / "assets").mkdir(parents=True, exist_ok=True)
+    assets, linked, used_names = {}, {}, set()
+    files = [i for i in items if i["content_type"] == "SN|File" and not i.get("deleted")]
+    for f in files:
+        c = f["content"]
+        notes_of_file = [r["uuid"] for r in c.get("references", []) if r.get("reference_type") == "FileToNote"]
+        if only and not set(notes_of_file) & keep:
+            continue
+        name = safe_name(c["name"])
+        if name.casefold() in used_names:   # APFS is case-insensitive
+            stem, dot, ext = name.rpartition(".")
+            name = f"{stem or ext}-{f['uuid'][:8]}{dot + ext if stem else ''}"
+        used_names.add(name.casefold())
+        (book / "assets" / name).write_bytes(decrypt(f, enc_dir))
+        assets[f["uuid"]] = (f"assets/{name}", c["name"], c.get("mimeType") or "")
+        for nu in notes_of_file:
+            linked.setdefault(nu, []).append(f["uuid"])
+
+    conv, used_docs, written = Converter(assets), set(), 0
+    for n in notes:
+        c = n["content"]
+        title = (c.get("title") or "").strip() or "Без названия"
+        body = ""
+        if (c.get("text") or "").strip():
+            try:
+                body = conv.document(json.loads(c["text"])["root"])
+            except (json.JSONDecodeError, KeyError):
+                warnings.append(f"not Super JSON: {title}")
+                body = protect_line_starts(escape_text(c["text"]))
+        extra = [u for u in linked.get(n["uuid"], []) if f"]({assets[u][0]})" not in body
+                 and f"](<{assets[u][0]}>)" not in body]
+        if extra:
+            body += ("\n\n" if body else "") + "Вложения:\n\n" + "\n".join("- " + conv.file_ref(u) for u in extra)
+        updated = (c.get("appData") or {}).get("org.standardnotes.sn", {}).get("client_updated_at") or n["updated_at"]
+        doc = safe_name(title, "note")
+        while doc.casefold() in used_docs:   # APFS is case-insensitive
+            doc += "_"
+        used_docs.add(doc.casefold())
+        (book / f"{doc}.md").write_text(
+            front_matter(title, local_time(n["created_at"]), local_time(updated), tags.get(n["uuid"])) + "\n" + body + "\n")
+        written += 1
+
+    orphans = [u for u in assets if not any(u in v for k, v in linked.items() if k in keep)]
+    if orphans:
+        lines = ["- " + conv.file_ref(u) for u in sorted(orphans, key=lambda u: assets[u][1].lower())]
+        now = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+        (book / f"{ORPHANS_TITLE}.md").write_text(
+            front_matter(ORPHANS_TITLE, now, now, None) + "\nФайлы из Standard Notes, не привязанные ни к одной заметке.\n\n"
+            + "\n".join(lines) + "\n")
+    print(f"notes {written}, files {len(assets)}, orphan files {len(orphans)}")
+    for w in sorted(set(warnings)):
+        print("warning:", w, f"x{warnings.count(w)}")
+
+
+if __name__ == "__main__":
+    main()
+```
+
+</details>
+
+<details>
+<summary>sy.py — клиент API SiYuan</summary>
+
+```python
+"""Minimal SiYuan kernel API client: sy.py PATH [JSON] prints the response data.
+
+SIYUAN_URL defaults to http://127.0.0.1:6806. SIYUAN_TOKEN is the API token from
+Settings -> Authentication -> API token; without it the token is read from the
+desktop app's conf.json on macOS.
+"""
+import json, os, sys, urllib.request
+from pathlib import Path
+
+URL = os.environ.get("SIYUAN_URL", "http://127.0.0.1:6806").rstrip("/")
+TOKEN = os.environ.get("SIYUAN_TOKEN") or json.loads(
+    (Path.home() / "Library/Application Support/SiYuan/conf/conf.json").read_text())["api"]["token"]
+conf = {"api": {"token": TOKEN}}
+
+
+def api(path, body=None):
+    r = urllib.request.Request(URL + path, json.dumps(body or {}).encode(),
+                               {"Authorization": "Token " + TOKEN, "Content-Type": "application/json"})
+    res = json.load(urllib.request.build_opener(urllib.request.ProxyHandler({})).open(r, timeout=600))
+    if res.get("code") != 0:
+        raise SystemExit(f"{path}: {res}")
+    return res.get("data")
+
+
+if __name__ == "__main__":
+    print(json.dumps(api(sys.argv[1], json.loads(sys.argv[2]) if len(sys.argv) > 2 else {}), ensure_ascii=False, indent=1))
+```
+
+</details>
+
+<details>
+<summary>strip_yaml.py — удаление блоков front matter</summary>
+
+```python
+"""Delete the front-matter code block SiYuan inserts at the top of imported docs: strip_yaml.py NOTEBOOK_ID
+
+Deleting the only block of an empty note makes SiYuan insert an empty paragraph
+asynchronously and bump the document's updated time, so the original times are
+restored after all transactions are flushed.
+"""
+import json, sys, time
+from sy import api
+box = sys.argv[1]
+api("/api/sqlite/flushTransaction")
+rows = api("/api/query/sql", {"stmt": f"""SELECT b.id, b.root_id, b.content, d.content AS title FROM blocks b JOIN blocks d ON d.id = b.root_id
+  WHERE b.box = '{box}' AND b.parent_id = b.root_id AND d.type = 'd' AND b.type = 'c'
+  AND b.content LIKE '---' || char(10) || 'title: %' LIMIT 5000"""})
+before, deleted = {}, 0
+for r in rows:
+    first = r["content"].split("\n")[1]
+    if json.loads(first[len("title: "):]) != r["title"]:
+        print("skip, title differs:", r["id"], first, r["title"])
+        continue
+    before[r["root_id"]] = api("/api/attr/getBlockAttrs", {"id": r["root_id"]}).get("updated")
+    api("/api/block/deleteBlock", {"id": r["id"]})
+    deleted += 1
+time.sleep(3)
+api("/api/sqlite/flushTransaction")
+restored = 0
+for doc_id, updated in before.items():
+    if updated and api("/api/attr/getBlockAttrs", {"id": doc_id}).get("updated") != updated:
+        api("/api/attr/setBlockAttrs", {"id": doc_id, "attrs": {"updated": updated}})
+        restored += 1
+print("deleted", deleted, "of", len(rows), "| updated restored", restored)
+```
+
+</details>
+
+<details>
+<summary>verify.py — сверка импорта с бэкапом</summary>
+
+```python
+"""Compare an imported SiYuan notebook with the Standard Notes backup: verify.py BACKUP_JSON NOTEBOOK_ID"""
+import json, sys, collections as C
+from datetime import datetime
+from sy import api
+items = json.load(open(sys.argv[1]))["items"]; box = sys.argv[2]
+def loc(iso): return datetime.fromisoformat(iso.replace("Z", "+00:00")).astimezone().strftime("%Y%m%d%H%M%S")
+notes = [i for i in items if i["content_type"] == "Note" and not i["content"].get("trashed") and not i.get("deleted")]
+tags = C.defaultdict(set)
+for t in (i for i in items if i["content_type"] == "Tag"):
+    for r in t["content"]["references"]:
+        if r["content_type"] == "Note": tags[r["uuid"]].add(t["content"]["title"])
+api("/api/sqlite/flushTransaction")
+docs = api("/api/query/sql", {"stmt": f"SELECT id, content, created, updated, ial, hpath FROM blocks WHERE box='{box}' AND type='d' LIMIT 5000"})
+print("docs in SiYuan:", len(docs), "| notes expected:", len(notes), "+ orphans doc")
+nested = [d["hpath"] for d in docs if d["hpath"].count("/") > 1]; print("nested docs:", nested[:5])
+bytitle = C.defaultdict(list)
+for d in docs: bytitle[d["content"]].append(d)
+bad = []
+for n in notes:
+    c = n["content"]; title = (c.get("title") or "").strip() or "Без названия"
+    upd = (c.get("appData") or {}).get("org.standardnotes.sn", {}).get("client_updated_at") or n["updated_at"]
+    cand = [d for d in bytitle.get(title, []) if d["created"] == loc(n["created_at"])]
+    if not cand: bad.append(("missing/created", title)); continue
+    d = next((x for x in cand if x["updated"] == loc(upd)), cand[0])   # same title and creation time
+    if d["updated"] != loc(upd): bad.append(("updated", title, d["updated"], loc(upd)))
+    got = set(a for a in (d["ial"].split('tags="')[1].split('"')[0].split(",") if 'tags="' in d["ial"] else []) if a)
+    if got != tags.get(n["uuid"], set()): bad.append(("tags", title, got, tags.get(n["uuid"])))
+print("mismatches:", len(bad)); [print("  ", b) for b in bad[:15]]
+yaml_left = api("/api/query/sql", {"stmt": f"SELECT root_id, substr(content,1,50) c FROM blocks WHERE box='{box}' AND type='c' AND content LIKE '---' || char(10) || 'title:%'"})
+print("front-matter blocks left:", yaml_left)
+assets = api("/api/query/sql", {"stmt": f"SELECT count(DISTINCT a.path) n FROM assets a WHERE a.box='{box}'"})
+print("distinct assets referenced:", assets)
+```
+
+</details>
+
 ### На что я наткнулся
 
 - SiYuan вставляет весь front matter ещё и блоком кода в начало каждого
