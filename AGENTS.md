@@ -69,6 +69,15 @@ posts that were **added** under `content/posts/` on Bluesky and Mastodon
 posting, so reruns do not duplicate. `syndicate: false` in a post's front
 matter opts that post out; `draft: true` skips it too.
 
+## Forgejo mirror
+
+`.github/workflows/mirror.yaml` pushes `master` and tags to the copy on
+`git.evsyukov.org` after every push to `master`, on new tags and on manual
+dispatch. It uses a write deploy key of that repository only
+(`FORGEJO_SSH_KEY`) and a pinned host key (`FORGEJO_KNOWN_HOSTS`). Pushes are
+plain, never forced: a failed run means the two copies diverged and must be
+reconciled by hand.
+
 ## Layout notes
 
 - Layouts, SCSS and scripts are local — there is no theme submodule, a plain
