@@ -15,7 +15,6 @@ showLastmod: true
 - [go-cache-lru](/2026/10/27/go-cache-lru/) — демон GOCACHEPROG, который держит кеш сборки Go в заданном размере и вытесняет записи по LRU; локальный диск и, по желанию, S3 или R2. [Репозиторий](https://github.com/juev/go-cache-lru).
 - [freshgo](/2026/10/10/freshgo/) — сервер лент на Go, совместимый с FreshRSS. К нему [brook](https://github.com/juev/brook), читалка для Android, которая работает с freshgo и другими серверами с Google Reader API.
 - [lists](/2026/10/11/lists/) — local-first список дел для macOS и Android с веб-интерфейсом на своём сервере и синхронизацией через WebDAV или CalDAV.
-- things — Things 3 на Mac, задачи на Android и в браузере: приложение на Mac читает базу Things и синхронизирует её через WebDAV или CalDAV на ядре lists. Репозиторий пока закрытый.
 - [linkding на Go](/2026/10/02/linkding-go/) — независимый порт linkding с SQLite и PostgreSQL. К нему [shareding](/2026/09/29/shareding-android/): отправляет ссылки в linkding с Android и держит очередь, пока сервер недоступен.
 - [nebula-mesh](https://github.com/forgekeep/nebula-mesh) — self-hosted control plane для mesh VPN Nebula: сертификаты, хосты и конфигурация из одного места. Пост: [23 уязвимости за четыре с половиной месяца](/2026/10/01/nebula-mesh-advisories/).
 - [hledger-lsp](https://github.com/juev/hledger-lsp) и [hledger-vscode](https://github.com/juev/hledger-vscode) — language server и расширение VS Code для журналов hledger.
