@@ -1,0 +1,47 @@
+---
+title: "Ссылки #417"
+date: 2026-11-21T08:59:51+03:00
+image: https://static.juev.org/images/links.jpg
+tags:
+  - links
+---
+
+На этой неделе в подборке: WireGuard на macOS с обратным давлением и пакетной обработкой, как команда Claude Code проверяет работу своих агентов, деплой NixOS в домашнюю лабораторию через GitLab CI и Tailscale и реверс-инжиниринг с помощью LLM.
+
+## ⚡ Производительность
+
+**[WireGuard on macOS at 5+ Gbit/s | Firezone Blog](https://www.firezone.dev/blog/apple-client-performance)**
+Для высокой пропускной способности VPN нужны обратное давление, предотвращающее потерю пакетов, и пакетная обработка, снижающая накладные расходы на каждый пакет. В статье рассматривается производительность WireGuard-клиента на macOS, но приведённого текста недостаточно, чтобы подтвердить достижение скорости 5 Гбит/с и выше.
+
+## 💻 Разработка
+
+**[How the Claude Code team thinks about verification / claude.dev Blog](https://claude.dev/blog/how-the-claude-code-team-thinks-about-verification/)**
+Команда Claude Code использует сквозные, основанные на свойствах и дифференциальные тесты, чтобы агенты программирования подтверждали свою работу свидетельствами. Отдельная задача — проверять сами средства проверки и следить, чтобы их выводы оставались достоверными.
+
+## 🖥️ Инфраструктура
+
+**[How to Use Tailscale GitLab CI to Deploy to Our Nix Home lab | Haseeb Majid](https://haseebmajid.dev/posts/2025-07-10-how-to-use-tailscale-gitlab-ci-to-deploy-to-our-nix-homelab/)**
+Развёртывание конфигурации NixOS в домашней лаборатории организовано через GitLab CI и Tailscale. Три сервера описаны во flake, настроены с помощью nixos-anywhere, а deploy-rs подключается к ним по SSH для применения конфигурации и обновления пакетов.
+
+## 🤖 ИИ
+
+**[LLM assisted reverse engineering · Slow Chronicle](https://www.slowchronicle.com/posts/llm-assisted-reverse-engineering)**
+Реверс-инжиниринг аппаратуры и программного обеспечения с помощью ИИ представлен как способ ускорить работу по сравнению с прежним ручным подходом. Доступный фрагмент не раскрывает методы, примеры или измерения, поэтому оценить результат по нему нельзя.
+
+## А ещё
+
+- [Turso Sync: Local-First SQLite with Push and Pull](https://turso.tech/blog/turso-sync-local-first-sqlite-with-push-and-pull?ref=localfirstnews.com)
+- [Introducing FrontierHarness Eval v1.1 — RUNTA](https://runta.com/blog/introducing-frontierharness-eval-v1-1/)
+- [Inside the Codex sandbox | OpenAI](https://openai.com/index/inside-the-codex-sandbox)
+- [OpenCode | Browse, your real browser for coding agents](https://opencode.ai/product/browse)
+- [Kitesurf is now open source | Cloudflare Blog](https://blog.cloudflare.com/kitesurf-open-source/)
+- [A step toward defining the Standard Model on a lattice | OpenAI](https://openai.com/index/step-toward-defining-the-standard-model/)
+- [Adapting to AI penetration testing orchestrators: The Modern Security Model | Cloudflare Blog](https://blog.cloudflare.com/adapting-to-ai-penetration-testing-orchestrators/)
+- [My Emacs 31 contributions](https://xenodium.com/my-emacs-31-contributions)
+- [The Home Repo Pattern](https://www.aihero.dev/the-home-repo-pattern)
+
+---
+
+За прошедшую неделю собрал 44 ссылки.
+
+Хорошей вам недели!
