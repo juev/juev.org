@@ -126,6 +126,7 @@
                     const closeLightbox = function() {
                         document.body.removeChild(overlay);
                         document.body.style.overflow = '';
+                        document.removeEventListener('keydown', escapeHandler);
                     };
                     
                     // Click to close
@@ -135,7 +136,6 @@
                     const escapeHandler = function(e) {
                         if (e.key === 'Escape') {
                             closeLightbox();
-                            document.removeEventListener('keydown', escapeHandler);
                         }
                     };
                     document.addEventListener('keydown', escapeHandler);
@@ -180,4 +180,4 @@
         });
     }
 
-})(); 
+})();
