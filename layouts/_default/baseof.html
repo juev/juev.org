@@ -109,7 +109,7 @@
         </div>
     </header>
     <main class="primary-content width-fix" id="main-content">
-        <article class="entry">
+        <article class="entry{{ if .Params.article_typography }} article-typography{{ end }}">
             {{- block "main" . -}}
             {{- end -}}
         </article>
