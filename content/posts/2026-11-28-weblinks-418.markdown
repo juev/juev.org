@@ -1,0 +1,46 @@
+---
+title: "Ссылки #418"
+date: 2026-11-28T07:13:41+03:00
+image: https://static.juev.org/images/links.jpg
+tags:
+  - links
+---
+
+На этой неделе в подборке: установка пакетов nixpkgs без вычислителя Nix, статья о том, что конфликт-свободность не гарантирует корректность, сравнение стоимости промптов на 20 языках и рабочий процесс с несколькими агентами в DoltHub.
+
+## 🖥️ Инфраструктура
+
+**[How nami installs from nixpkgs without evaluating Nix · nami](https://namios.dev/blog/nixpkgs-without-evaluating)**
+nami устанавливает пакеты nixpkgs побайтно, не запуская вычислитель Nix на компьютере пользователя: каталог пакетов заранее вычисляют и подписывают. Для установки используются протокол бинарного кэша и собственный сборщик nixpkgs; статья также разбирает затраты такого подхода.
+
+## 🤖 ИИ
+
+**[Is English really the cheapest language for prompts?](https://blog.alena.rocks/en/token-tax/)**
+Исследование сравнивает стоимость запросов на 20 языках и проверяет, действительно ли английский обходится дешевле. Замеры охватывают 12 словарей токенизации — от GPT-3 до Claude Opus 5.5; отдельно оценивается цена ответов и опечаток.
+
+## 🤖 Агенты
+
+**[My Agentic Workflow | DoltHub Blog](https://dolthub.com/blog/2026-11-23-my-agentic-workflow/)**
+В центре заметки — сравнительно сложный рабочий процесс с агентами и вопрос, дают ли несколько агентов преимущество перед одним. Автор сообщает о впечатляющих результатах, но описание не раскрывает устройство процесса и не приводит измерений.
+
+## А ещё
+
+- [Conflict-free doesn't mean correct · Karol Novljaković](https://karolnov.dev/blog/conflict-free-is-not-correct/?ref=localfirstnews.com)
+- [AI coding subscriptions: what each plan is worth (2026)](https://www.benchleader.com/coding-plans)
+- [AI made self-hosting fun again - Jan-Lukas Else](https://janlukas.blog/posts/ai-self-hosting)
+- [Somebody Else's Safe :: Jay](https://jws.sh/somebody-elses-safe/)
+- [Introducing Search for Agents | Cloudflare Blog](https://blog.cloudflare.com/search-for-agents)
+- [GitHub - sous-labs/songe: A training engine for your local model, using your idle compute · GitHub](https://github.com/sous-labs/songe)
+- [The History of Looping | alphaXiv](https://www.alphaxiv.org/guides/history-of-looping)
+- [You can't afford to keep your SSH keys on disk | jola.dev](https://jola.dev/posts/you-cant-afford-ssh-keys-disk)
+- [GitHub - mjwsolo/localcode: Agentic coding. Local models. On your Mac. · GitHub](https://github.com/mjwsolo/localcode)
+- [I joined the NTP Pool, but not with my Stratum 1 Pi - Jeff Geerling](https://www.jeffgeerling.com/blog/2026/i-joined-the-ntp-pool/)
+- [Deterministic Simulation Testing Is For Everyone - Outdata](https://outdata.net/blog/261120)
+- [Continuous profiling of Go programs · rakyll.org](https://rakyll.org/continuous-profiling/)
+- [Announcing DreamCoder - Mastering Emacs](https://www.masteringemacs.org/article/announcing-dreamcoder)
+
+---
+
+За прошедшую неделю собрал 38 ссылок.
+
+Хорошей вам недели!
